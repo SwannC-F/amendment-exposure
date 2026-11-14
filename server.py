@@ -15,6 +15,7 @@ Everything is indexed by (session, texte), e.g. 2026-2027 / 142.
   POST /api/live/extract[?stream=1]                {session, text_number, number} or {session, text_number, dispositif|text, objet|purpose}
                                                    criteria + exposure + attachment to the closest measure
   POST /api/live/scan[?stream=1]                   {session, text_number, company:{...}} which amendments concern one company
+  POST /api/live/profile                           {session, text_number, company:{...}, roles:[...]} -> {roles[{role, why, confidence}], activities, summary}
 
 SSE events: start, reasoning {t}, token {t}, status {t}, result {...}, error {error}.
 LLM config (.env, via llm.py): LLM_BASE_URL, LLM_API_KEY (or FEATHERLESS_API_KEY), LLM_MODEL.
@@ -801,6 +802,92 @@ def run_scan(session, texte, company, on_event=None):
             "cached": cached, "elapsed_ms": int((time.time() - t0) * 1000)}
 
 
+# ---------- profile: which roles apply to ONE company ----------
+
+PROFILE_TOKENS = 4000
+ROLE_HINTS = {"employeurs": "emploie des salariés", "emetteurs": "émet des titres-restaurant ou titres de paiement",
+              "plateformes": "exploite une plateforme numérique d'intermédiation",
+              "associations": "association loi 1901 ou organisme sans but lucratif",
+              "collectivites": "collectivité territoriale ou établissement public local",
+              "etat": "administration ou établissement public de l'État", "menages": "particulier / ménage"}
+PROFILE_SYSTEM = """Tu identifies les rôles économiques d'UNE entreprise française face à un texte de loi.
+On te donne sa fiche (nom, code NAF, tranche d'effectif, chiffre d'affaires, forme juridique, compléments de l'annuaire) et une liste de rôles.
+Réponds UNIQUEMENT par un objet JSON, sans texte autour :
+{"roles": [{"role": "clé de la liste OU autre:<slug>", "why": "une phrase", "confidence": "haute"|"moyenne"|"faible"}],
+ "activities": ["activité réelle en 2 à 5 mots"], "summary": "une phrase sur ce que fait l'entreprise"}
+Règles :
+- Ne propose un rôle que s'il est plausible au vu des données (nom, NAF, taille, CA, forme juridique, compléments). Sinon, ne le propose pas ; une liste vide est acceptable.
+- "why" s'appuie sur une donnée de la fiche (ex. la tranche d'effectif pour employeurs, la forme juridique pour associations).
+- autre:<slug> est réservé aux rôles hors liste ; reprends si possible un slug déjà utilisé dans les données (fournis plus bas).
+- confidence = "faible" si tu déduis le rôle du seul nom ou d'une hypothèse.
+- activities : 1 à 3 activités réelles probables, pas le libellé NAF recopié. summary : prudent, sans chiffre inventé.
+- N'invente aucun chiffre."""
+
+
+def data_role_slugs(session, texte):
+    c = collections.Counter(r for k in stored_criteria(session, texte).values()
+                            for r in (k.get("roles") or []) if str(r).startswith("autre:"))
+    return [r for r, _ in c.most_common(15)]
+
+
+def profile_prompt(company, roles, slugs):
+    c = company
+    comp = c.get("complements") if isinstance(c.get("complements"), dict) else {}
+    comp = {k: v for k, v in comp.items() if v not in (None, "", [], False) or k.startswith("est_")}
+    return (f"Entreprise : {c.get('name') or '?'} (SIREN {c.get('siren') or '?'})\n"
+            f"Code NAF : {c.get('naf') or '?'} {c.get('naf_label') or ''}\n"
+            f"Tranche d'effectif INSEE : {c.get('headcount_band') or 'inconnue'}\n"
+            f"Chiffre d'affaires : {c.get('ca') if c.get('ca') not in (None, '') else 'inconnu'}\n"
+            f"Nature juridique : {c.get('nature_juridique') or 'inconnue'}\n"
+            f"Ville : {c.get('city') or '?'}\n"
+            f"Compléments (annuaire) : {json.dumps(comp, ensure_ascii=False)[:1500]}\n\n"
+            "Rôles possibles :\n" + "\n".join(f"- {r} : {ROLE_HINTS.get(r, '')}" for r in roles) +
+            "\n\nSlugs autre:<…> déjà utilisés dans les données : " + (", ".join(slugs) or "aucun"))
+
+
+def mock_profile(company, roles):
+    c, comp = company, company.get("complements") or {}
+    nj, naf = str(c.get("nature_juridique") or ""), str(c.get("naf") or "")
+    out = []
+    add = lambda r, why, conf="haute": r in roles and out.append({"role": r, "why": why, "confidence": conf})
+    if str(c.get("headcount_band") or "") not in NO_STAFF:
+        add("employeurs", f"Tranche d'effectif INSEE {c.get('headcount_band')} : l'entreprise a des salariés.")
+    if comp.get("est_association") or nj.startswith("92"):
+        add("associations", "Forme juridique d'association.")
+    if comp.get("collectivite_territoriale") or nj.startswith("72"):
+        add("collectivites", "Collectivité territoriale selon l'annuaire.")
+    if nj.startswith("71"):
+        add("etat", "Forme juridique d'administration de l'État.")
+    if naf.startswith(("56.", "56")):
+        out.append({"role": "autre:restaurateurs", "why": f"Code NAF {naf} (restauration).", "confidence": "haute"})
+    return {"roles": out, "activities": [c.get("naf_label")] if c.get("naf_label") else [],
+            "summary": "Mode mock : rôles déduits par règles (effectif, forme juridique, NAF), sans LLM."}
+
+
+def run_profile(session, texte, company, roles):
+    cfg = config()
+    t0 = time.time()
+    if cfg["mock"]:
+        ans, model, cached = mock_profile(company, roles), "mock (règles)", False
+    else:
+        ans, model, cached = ask(PROFILE_SYSTEM, profile_prompt(company, roles, data_role_slugs(session, texte)),
+                                 PROFILE_TOKENS)
+    ans = ans if isinstance(ans, dict) else {"roles": ans if isinstance(ans, list) else []}
+    out = []
+    for r in ans.get("roles") or []:
+        if not isinstance(r, dict):
+            continue
+        role = str(r.get("role") or "").strip()
+        if role not in roles and not (role.startswith("autre:") and len(role) > 6):
+            continue  # unknown key that is not an autre:<slug>
+        conf = r.get("confidence") if r.get("confidence") in ("haute", "moyenne", "faible") else "faible"
+        if role not in {x["role"] for x in out}:
+            out.append({"role": role, "why": str(r.get("why") or "")[:300], "confidence": conf})
+    acts = [str(a)[:60] for a in (ans.get("activities") or []) if isinstance(a, str) and a.strip()][:3]
+    return {"roles": out, "activities": acts, "summary": str(ans.get("summary") or "")[:400],
+            "model": model, "cached": cached, "elapsed_ms": int((time.time() - t0) * 1000)}
+
+
 # ---------- HTTP ----------
 
 NO_KEY = {"error": "Clé LLM manquante : ajoutez LLM_API_KEY dans .env"}
@@ -901,7 +988,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         u = urllib.parse.urlparse(self.path)
         refresh = re.match(r"^/api/text/([^/]+)/([^/]+)(?:/refresh)?/?$", u.path)
-        if not refresh and u.path not in ("/api/live/extract", "/api/live/scan"):
+        if not refresh and u.path not in ("/api/live/extract", "/api/live/scan", "/api/live/profile"):
             return self.json(404, {"error": "endpoint inconnu"})
         qs = urllib.parse.parse_qs(u.query)
         stream = (qs.get("stream") or ["0"])[0] not in ("0", "")
@@ -923,6 +1010,8 @@ class Handler(SimpleHTTPRequestHandler):
             return self.json(400, {"error": "session au format 2026-2027 et text_number numérique"})
         if u.path == "/api/live/scan":
             return self.scan(session, texte, req, stream)
+        if u.path == "/api/live/profile":
+            return self.profile(session, texte, req)
 
         if req.get("number"):
             try:
@@ -979,6 +1068,18 @@ class Handler(SimpleHTTPRequestHandler):
                              {"status": "error", "error": run["error"]})
         return self.json(202, {"status": "running", "started": started,
                                "status_url": f"/api/text/{session}/{texte}/status"})
+
+    def profile(self, session, texte, req):
+        company = req.get("company")
+        if not isinstance(company, dict) or not (company.get("naf") or company.get("name") or company.get("siren")):
+            return self.json(400, {"error": "Donnez company {name, siren, naf, naf_label, headcount_band, ca, ...}"})
+        roles = [str(r) for r in (req.get("roles") or list(ROLE_HINTS)) if isinstance(r, str)][:20]
+        try:
+            return self.json(200, run_profile(session, texte, company, roles))
+        except LLMError as e:
+            return self.json(503 if str(e) == "NO_KEY" else 502, NO_KEY if str(e) == "NO_KEY" else {"error": str(e)})
+        except Exception as e:
+            return self.json(502, {"error": f"Profil impossible : {e}"})
 
     def scan(self, session, texte, req, stream):
         company = req.get("company")
