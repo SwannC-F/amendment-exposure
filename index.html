@@ -73,13 +73,14 @@
   .expo .k { font-size: 11.5px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700; }
   .expo .num { font-size: 30px; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; margin-top: 4px;
                font-variant-numeric: tabular-nums; }
-  .expo .num.sm { font-size: 22px; }
+  .expo .num.sm { font-size: 19px; white-space: nowrap; }
   .expo .lbl { font-size: 13px; color: var(--muted); }
   .expo .row + .row { margin-top: 8px; }
   .expo .pending { font-size: 15px; color: var(--muted); margin-top: 6px; display: flex; align-items: center; gap: 8px; }
   .expo .pending::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
                            animation: pulse 1.2s ease-in-out infinite; }
   @keyframes pulse { 50% { opacity: .25; } }
+  .expo .nc { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
   .expo .sector { font-size: 12.5px; color: var(--muted); margin-top: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
 
   details { margin-top: 10px; }
@@ -218,16 +219,19 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
 
   function exposure(c) {
     const sector = `<div class="sector">Secteur : ${esc(stripParen(c.matched_sector))}</div>`;
+    const nc = (c.not_counted || []).map(stripParen).filter(Boolean);
     if (c.companies == null) {
-      return `<div class="expo"><div class="k">Exposition</div><div class="pending">comptage en cours</div>${sector}</div>`;
+      const list = nc.length ? `<div class="lbl">${nc.map(esc).join(" · ")} : pas de code NAF propre</div>` : "";
+      return `<div class="expo"><div class="k">Exposition</div><div class="num sm">non chiffré</div>${list}${sector}</div>`;
     }
+    const ncLine = nc.length ? `<div class="nc">+ non chiffré : ${nc.map(esc).join(" · ")}</div>` : "";
     const emp = c.employees_low == null ? "—"
       : c.employees_low === c.employees_high ? fmt(c.employees_low)
       : `${fmt(c.employees_low)} – ${fmt(c.employees_high)}`;
     return `<div class="expo"><div class="k">Exposition</div>
-      <div class="row"><div class="num">${fmt(c.companies)}</div><div class="lbl">entreprises concernées</div></div>
+      <div class="row"><div class="num">${fmt(c.companies)}</div><div class="lbl">entreprises des secteurs visés</div></div>
       <div class="row"><div class="num sm">${emp}</div><div class="lbl">employés concernés</div></div>
-      ${sector}</div>`;
+      ${ncLine}${sector}</div>`;
   }
 
   function card(c, i) {
