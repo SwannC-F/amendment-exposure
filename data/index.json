@@ -2,6 +2,15 @@
   {
     "chamber": "senat",
     "session": "2026-2027",
+    "number": "14",
+    "title": "Proposition de loi : Dispositif des stocks de sécurité des médicaments",
+    "path": "data/2026-2027/14",
+    "generated_at": null,
+    "n_measures": 0
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
     "number": "142",
     "title": "Proposition de loi : Moderniser et rééquilibrer le fonctionnement du titre-restaurant",
     "path": "data/2026-2027/142",
@@ -16,6 +25,24 @@
     "path": "data/2026-2027/168",
     "generated_at": null,
     "n_measures": 12
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "68",
+    "title": "Proposition de loi : Garantir la protection des victimes de violences sexistes et sexuelles",
+    "path": "data/2026-2027/68",
+    "generated_at": null,
+    "n_measures": 0
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "87",
+    "title": "Projet de loi : Réparation des dommages résultant de dégradations commises dans l'espace public",
+    "path": "data/2026-2027/87",
+    "generated_at": null,
+    "n_measures": 0
   },
   {
     "chamber": "an",

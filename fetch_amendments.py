@@ -36,8 +36,10 @@ def download(url):
             with urllib.request.urlopen(url, timeout=60) as r:
                 return r.read().decode("latin-1")
         except (http.client.IncompleteRead, OSError):
-            if attempt == 2:
-                raise
+            if attempt == 2:  # senat.fr sometimes truncates responses: last try with curl
+                import subprocess
+                return subprocess.run(["curl", "-sSf", "--retry", "3", "-m", "120", url],
+                                      capture_output=True, check=True).stdout.decode("latin-1")
 
 
 def senator_groups():

@@ -1,0 +1,28 @@
+[
+  {
+    "number": "3",
+    "criteria_found": false,
+    "effect": "",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "",
+    "quote_verified": false,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "4",
+    "criteria_found": false,
+    "effect": "",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "",
+    "quote_verified": false,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

@@ -1,0 +1,134 @@
+{
+ "session": "2026-2027",
+ "text": "68",
+ "title": "Proposition de loi : Garantir la protection des victimes de violences sexistes et sexuelles",
+ "dossier": "https://www.senat.fr/dossier-legislatif/ppl25-619.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "violences sexistes et sexuelles",
+  "harcèlement sexuel",
+  "agression sexuelle",
+  "violences faites aux femmes",
+  "bracelet anti-rapprochement",
+  "téléphone grave danger",
+  "outrerage sexiste",
+  "injures sexistes"
+ ],
+ "articles": {},
+ "laws": {
+  "JORFTEXT000037284450": {
+   "id": "JORFTEXT000037284450",
+   "title": "LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelles et sexistes (1)",
+   "nor": "JUSD1805895L",
+   "date": "2018-08-03",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037284450",
+   "senat_documents": [
+    {
+     "num": "487",
+     "session": "2017-2018"
+    },
+    {
+     "num": "589",
+     "session": "2017-2018"
+    },
+    {
+     "num": "574",
+     "session": "2017-2018"
+    },
+    {
+     "num": "590",
+     "session": "2017-2018"
+    },
+    {
+     "num": "686",
+     "session": "2017-2018"
+    },
+    {
+     "num": "687",
+     "session": "2017-2018"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000026263463": {
+   "id": "JORFTEXT000026263463",
+   "title": "LOI n° 2012-954 du 6 août 2012 relative au harcèlement sexuel (1)",
+   "nor": "JUSX1224421L",
+   "date": "2012-08-06",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000026263463",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [
+  {
+   "session": "2025-2026",
+   "number": "619",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2025-2026/619/jeu_complet_commission_2025-2026_619.csv",
+   "rows": 28,
+   "relevant": 2
+  },
+  {
+   "session": "2017-2018",
+   "number": "487",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle",
+   "csv": "https://www.senat.fr/amendements/commissions/2017-2018/487/jeu_complet_commission_2017-2018_487.csv",
+   "rows": 74,
+   "relevant": 32
+  },
+  {
+   "session": "2017-2018",
+   "number": "590",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle",
+   "csv": "https://www.senat.fr/amendements/2017-2018/590/jeu_complet_2017-2018_590.csv",
+   "rows": 143,
+   "relevant": 49
+  },
+  {
+   "session": "2017-2018",
+   "number": "687",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle",
+   "csv": "https://www.senat.fr/amendements/2017-2018/687/jeu_complet_2017-2018_687.csv",
+   "rows": 1,
+   "relevant": 0
+  }
+ ],
+ "stats": {
+  "articles": 0,
+  "laws": 2,
+  "senat_texts": 4,
+  "past_relevant": 83,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 52,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {},
+ "refs": {}
+}
