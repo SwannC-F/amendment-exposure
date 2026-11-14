@@ -1,0 +1,2028 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "18.12Z": {
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false
+    },
+    "18.14Z": {
+      "companies": 749,
+      "employees_low": 913,
+      "employees_high": 1886,
+      "open_top": false
+    },
+    "47.11": {
+      "companies": 63020,
+      "employees_low": 470476,
+      "employees_high": 874232,
+      "open_top": true,
+      "subclasses": [
+        "47.11A",
+        "47.11B",
+        "47.11C",
+        "47.11D",
+        "47.11E",
+        "47.11F"
+      ]
+    },
+    "47.11A": {
+      "companies": 318,
+      "employees_low": 8482,
+      "employees_high": 16852,
+      "open_top": false
+    },
+    "47.11B": {
+      "companies": 44671,
+      "employees_low": 38970,
+      "employees_high": 71294,
+      "open_top": false
+    },
+    "47.11C": {
+      "companies": 6712,
+      "employees_low": 18033,
+      "employees_high": 33361,
+      "open_top": false
+    },
+    "47.11E": {
+      "companies": 104,
+      "employees_low": 10566,
+      "employees_high": 11200,
+      "open_top": true
+    },
+    "47.11F": {
+      "companies": 1528,
+      "employees_low": 223308,
+      "employees_high": 396235,
+      "open_top": true
+    },
+    "47.29Z": {
+      "companies": 15522,
+      "employees_low": 25369,
+      "employees_high": 47306,
+      "open_top": false
+    },
+    "53.20Z": {
+      "companies": 175090,
+      "employees_low": 13672,
+      "employees_high": 28208,
+      "open_top": false
+    },
+    "56.10A": {
+      "companies": 163930,
+      "employees_low": 346043,
+      "employees_high": 650818,
+      "open_top": false
+    },
+    "56.10B": {
+      "companies": 457,
+      "employees_low": 6309,
+      "employees_high": 13838,
+      "open_top": false
+    },
+    "56.10C": {
+      "companies": 174495,
+      "employees_low": 251478,
+      "employees_high": 486074,
+      "open_top": false
+    },
+    "63.99Z": {
+      "companies": 1470,
+      "employees_low": 385,
+      "employees_high": 738,
+      "open_top": false
+    },
+    "64.19Z": {
+      "companies": 5618,
+      "employees_low": 224720,
+      "employees_high": 465919,
+      "open_top": true
+    },
+    "64.99": {
+      "companies": 3524,
+      "employees_low": 3536,
+      "employees_high": 6919,
+      "open_top": false,
+      "subclasses": [
+        "64.99Z"
+      ]
+    },
+    "64.99Z": {
+      "companies": 3524,
+      "employees_low": 3536,
+      "employees_high": 6919,
+      "open_top": false
+    },
+    "84.11Z": {
+      "companies": 41200,
+      "employees_low": 1792327,
+      "employees_high": 3625531,
+      "open_top": true
+    },
+    "94.99Z": {
+      "companies": 532162,
+      "employees_low": 153998,
+      "employees_high": 303274,
+      "open_top": false
+    }
+  },
+  "measures": [
+    {
+      "key": "penaliser-fraude-commerces",
+      "theme": "Pénaliser la fraude des commerces",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant (services financiers auxiliaires)",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:commerces acceptant les titres-restaurant",
+        "emetteurs"
+      ],
+      "companies": 343477,
+      "employees_low": 824365,
+      "employees_high": 1540046,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "plafonner-commissions-emetteurs",
+      "theme": "Plafonner les commissions des émetteurs",
+      "sectors": [
+        {
+          "naf": "64.99C",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces de détail alimentaires spécialisés divers",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "64.99B",
+          "label": "Autres intermédiations monétaires"
+        },
+        {
+          "naf": "64.99",
+          "label": "Autres activités de services financiers, hors assurance et caisses de retraite",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false,
+          "subclasses": [
+            "64.99Z"
+          ]
+        },
+        {
+          "naf": "47.11C",
+          "label": "Commerces d'alimentation générale",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.29Z",
+          "label": "Autres commerces de détail alimentaires en magasin spécialisé",
+          "companies": 15522,
+          "employees_low": 25369,
+          "employees_high": 47306,
+          "open_top": false
+        },
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "associations",
+        "autre:commerçants accepteurs",
+        "autre:commerçants habilités",
+        "autre:restaurateurs",
+        "autre:restaurateurs et commerces alimentaires",
+        "autre:restaurateurs et commerçants",
+        "autre:restaurateurs et commerçants alimentaires",
+        "emetteurs",
+        "employeurs",
+        "etat"
+      ],
+      "companies": 903491,
+      "employees_low": 1246485,
+      "employees_high": 2389906,
+      "open_top": true,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite",
+        "Autres intermédiations monétaires"
+      ]
+    },
+    {
+      "key": "supprimer-modulation-plafond-journalier",
+      "theme": "Supprimer la modulation du plafond",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé",
+          "companies": 63020,
+          "employees_low": 470476,
+          "employees_high": 874232,
+          "open_top": true,
+          "subclasses": [
+            "47.11A",
+            "47.11B",
+            "47.11C",
+            "47.11D",
+            "47.11E",
+            "47.11F"
+          ]
+        },
+        {
+          "naf": "64.99B",
+          "label": "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Émission de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre:commerces-alimentaires",
+        "autre:restaurateurs",
+        "emetteurs",
+        "menages"
+      ],
+      "companies": 230474,
+      "employees_low": 820055,
+      "employees_high": 1531969,
+      "open_top": true,
+      "not_counted": [
+        "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+      ]
+    },
+    {
+      "key": "autoriser-usage-tous-jours",
+      "theme": "Autoriser l'usage tous les jours",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11E",
+          "label": "Supermarchés",
+          "companies": 104,
+          "employees_low": 10566,
+          "employees_high": 11200,
+          "open_top": true
+        },
+        {
+          "naf": "47.11A",
+          "label": "Hypermarchés",
+          "companies": 318,
+          "employees_low": 8482,
+          "employees_high": 16852,
+          "open_top": false
+        },
+        {
+          "naf": "64.99B",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "naf": "64.99C",
+          "label": "Monnaie électronique"
+        }
+      ],
+      "roles": [
+        "autre:restaurateurs et commerces alimentaires",
+        "autre:restaurateurs et commerçants",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 340375,
+      "employees_low": 839877,
+      "employees_high": 1561179,
+      "open_top": true,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite",
+        "Monnaie électronique"
+      ]
+    },
+    {
+      "key": "imposer-negociation-syndicats",
+      "theme": "Imposer la négociation avec syndicats",
+      "sectors": [],
+      "roles": [
+        "autre:CSE",
+        "autre:representants-syndicaux",
+        "employeurs"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "maintenir-titres-pendant-conges",
+      "theme": "Maintenir les titres pendant congés",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Tous secteurs (employeurs attribuant des titres-restaurant)"
+        },
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 5618,
+      "employees_low": 224720,
+      "employees_high": 465919,
+      "open_top": true,
+      "not_counted": [
+        "Tous secteurs (employeurs attribuant des titres-restaurant)"
+      ]
+    },
+    {
+      "key": "creer-titre-bonifie",
+      "theme": "Créer le titre-restaurant bonifié",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiation monétaire",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé à prédominance alimentaire",
+          "companies": 63020,
+          "employees_low": 470476,
+          "employees_high": 874232,
+          "open_top": true,
+          "subclasses": [
+            "47.11A",
+            "47.11B",
+            "47.11C",
+            "47.11D",
+            "47.11E",
+            "47.11F"
+          ]
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:commerces alimentaires et restauration",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 407063,
+      "employees_low": 1292717,
+      "employees_high": 2477043,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "creer-pole-public-emission",
+      "theme": "Créer un pôle public d'émission",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a.",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale (ANCV)",
+          "companies": 41200,
+          "employees_low": 1792327,
+          "employees_high": 3625531,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre:restaurateurs et commerçants",
+        "emetteurs",
+        "employeurs",
+        "etat"
+      ],
+      "companies": 215800,
+      "employees_low": 2589934,
+      "employees_high": 5145422,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "instaurer-double-plafond-journalier",
+      "theme": "Instaurer un double plafond journalier",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire (émission de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Supermarchés",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Hypermarchés",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:restaurateurs et commerces acceptant les titres-restaurant",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 395426,
+      "employees_low": 879244,
+      "employees_high": 1707466,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "restreindre-usage-consommables",
+      "theme": "Restreindre l'usage aux consommables",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10B",
+          "label": "Restauration de type rapide",
+          "companies": 457,
+          "employees_low": 6309,
+          "employees_high": 13838,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerce de détail en supermarché",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11G",
+          "label": "Commerce de détail en hypermarché"
+        },
+        {
+          "naf": "64.19B",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:grande distribution",
+        "autre:grande-distribution",
+        "autre:restaurateurs",
+        "emetteurs",
+        "employeurs",
+        "etat",
+        "menages"
+      ],
+      "companies": 340410,
+      "employees_low": 827138,
+      "employees_high": 1546965,
+      "open_top": true,
+      "not_counted": [
+        "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+        "Commerce de détail en hypermarché"
+      ]
+    },
+    {
+      "key": "exclure-plateformes-livraison",
+      "theme": "Exclure les plateformes de livraison",
+      "sectors": [
+        {
+          "naf": "63.99Z",
+          "label": "Plateformes de mise en relation par voie électronique",
+          "companies": 1470,
+          "employees_low": 385,
+          "employees_high": 738,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "53.20Z",
+          "label": "Autres activités de poste et de courrier",
+          "companies": 175090,
+          "employees_low": 13672,
+          "employees_high": 28208,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:restaurateurs",
+        "emetteurs",
+        "plateformes"
+      ],
+      "companies": 518509,
+      "employees_low": 615114,
+      "employees_high": 1172757,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "allonger-duree-validite",
+      "theme": "Allonger la durée de validité",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 349095,
+      "employees_low": 1049085,
+      "employees_high": 2005965,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "reporter-dematerialisation",
+      "theme": "Reporter la dématérialisation",
+      "sectors": [
+        {
+          "naf": "64.19B",
+          "label": "Autre intermédiation monétaire"
+        },
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        },
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "18.14Z",
+          "label": "Impression et services connexes d'impression (filière d'impression des titres papier)",
+          "companies": 749,
+          "employees_low": 913,
+          "employees_high": 1886,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:imprimeurs de titres",
+        "autre:imprimeurs de titres papier",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 15221,
+      "employees_low": 246858,
+      "employees_high": 509919,
+      "open_top": true,
+      "not_counted": [
+        "Autre intermédiation monétaire"
+      ]
+    }
+  ],
+  "amendments": [
+    {
+      "number": "1",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant (services financiers auxiliaires)",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        }
+      ],
+      "companies": 343477,
+      "employees_low": 824365,
+      "employees_high": 1540046,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "2",
+      "sectors": [
+        {
+          "naf": "64.99C",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces de détail alimentaires spécialisés divers",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 165458,
+      "employees_low": 569351,
+      "employees_high": 1047053,
+      "open_top": true,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+      ]
+    },
+    {
+      "number": "3 rect.",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 168982,
+      "employees_low": 572887,
+      "employees_high": 1053972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "4",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a.",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 341949,
+      "employees_low": 601057,
+      "employees_high": 1143811,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "5",
+      "sectors": [
+        {
+          "naf": "64.99B",
+          "label": "Autres intermédiations monétaires"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 338425,
+      "employees_low": 597521,
+      "employees_high": 1136892,
+      "open_top": false,
+      "not_counted": [
+        "Autres intermédiations monétaires"
+      ]
+    },
+    {
+      "number": "6",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé",
+          "companies": 63020,
+          "employees_low": 470476,
+          "employees_high": 874232,
+          "open_top": true,
+          "subclasses": [
+            "47.11A",
+            "47.11B",
+            "47.11C",
+            "47.11D",
+            "47.11E",
+            "47.11F"
+          ]
+        },
+        {
+          "naf": "64.99B",
+          "label": "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+        }
+      ],
+      "companies": 226950,
+      "employees_low": 816519,
+      "employees_high": 1525050,
+      "open_top": true,
+      "not_counted": [
+        "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+      ]
+    },
+    {
+      "number": "7",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11E",
+          "label": "Supermarchés",
+          "companies": 104,
+          "employees_low": 10566,
+          "employees_high": 11200,
+          "open_top": true
+        },
+        {
+          "naf": "47.11A",
+          "label": "Hypermarchés",
+          "companies": 318,
+          "employees_low": 8482,
+          "employees_high": 16852,
+          "open_top": false
+        }
+      ],
+      "companies": 340375,
+      "employees_low": 839877,
+      "employees_high": 1561179,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "9",
+      "sectors": [
+        {
+          "naf": "64.99",
+          "label": "Autres activités de services financiers, hors assurance et caisses de retraite",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false,
+          "subclasses": [
+            "64.99Z"
+          ]
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Commerces d'alimentation générale",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        }
+      ],
+      "companies": 348661,
+      "employees_low": 619090,
+      "employees_high": 1177172,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "10",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Émission de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 168982,
+      "employees_low": 572887,
+      "employees_high": 1053972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "11",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "12",
+      "sectors": [
+        {
+          "naf": "64.99B",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 339953,
+      "employees_low": 820829,
+      "employees_high": 1533127,
+      "open_top": true,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+      ]
+    },
+    {
+      "number": "13",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Tous secteurs (employeurs attribuant des titres-restaurant)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Tous secteurs (employeurs attribuant des titres-restaurant)"
+      ]
+    },
+    {
+      "number": "14",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant / services de paiement",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.29Z",
+          "label": "Autres commerces de détail alimentaires en magasin spécialisé",
+          "companies": 15522,
+          "employees_low": 25369,
+          "employees_high": 47306,
+          "open_top": false
+        }
+      ],
+      "companies": 357471,
+      "employees_low": 626426,
+      "employees_high": 1191117,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "15",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiation monétaire",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé à prédominance alimentaire",
+          "companies": 63020,
+          "employees_low": 470476,
+          "employees_high": 874232,
+          "open_top": true,
+          "subclasses": [
+            "47.11A",
+            "47.11B",
+            "47.11C",
+            "47.11D",
+            "47.11E",
+            "47.11F"
+          ]
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 407063,
+      "employees_low": 1292717,
+      "employees_high": 2477043,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "16",
+      "sectors": [
+        {
+          "naf": "64.99C",
+          "label": "Monnaie électronique"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 339953,
+      "employees_low": 820829,
+      "employees_high": 1533127,
+      "open_top": true,
+      "not_counted": [
+        "Monnaie électronique"
+      ]
+    },
+    {
+      "number": "17",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        }
+      ],
+      "companies": 5618,
+      "employees_low": 224720,
+      "employees_high": 465919,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "18",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        }
+      ],
+      "companies": 5618,
+      "employees_low": 224720,
+      "employees_high": 465919,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "19",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire (émission de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Supermarchés",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Hypermarchés",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        }
+      ],
+      "companies": 395426,
+      "employees_low": 879244,
+      "employees_high": 1707466,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "20",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10B",
+          "label": "Restauration de type rapide",
+          "companies": 457,
+          "employees_low": 6309,
+          "employees_high": 13838,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerce de détail en supermarché",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11G",
+          "label": "Commerce de détail en hypermarché"
+        },
+        {
+          "naf": "64.19B",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+        }
+      ],
+      "companies": 165915,
+      "employees_low": 575660,
+      "employees_high": 1060891,
+      "open_top": true,
+      "not_counted": [
+        "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+        "Commerce de détail en hypermarché"
+      ]
+    },
+    {
+      "number": "21 rect.",
+      "sectors": [
+        {
+          "naf": "63.99Z",
+          "label": "Plateformes de mise en relation par voie électronique",
+          "companies": 1470,
+          "employees_low": 385,
+          "employees_high": 738,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        }
+      ],
+      "companies": 343419,
+      "employees_low": 601442,
+      "employees_high": 1144549,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "22",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 171076,
+      "employees_low": 794071,
+      "employees_high": 1512972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "23",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 168982,
+      "employees_low": 572887,
+      "employees_high": 1053972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "24",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerce de détail en supermarché",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11G",
+          "label": "Commerce de détail en hypermarché"
+        }
+      ],
+      "companies": 339953,
+      "employees_low": 820829,
+      "employees_high": 1533127,
+      "open_top": true,
+      "not_counted": [
+        "Commerce de détail en hypermarché"
+      ]
+    },
+    {
+      "number": "26",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "53.20Z",
+          "label": "Autres activités de poste et de courrier",
+          "companies": 175090,
+          "employees_low": 13672,
+          "employees_high": 28208,
+          "open_top": false
+        }
+      ],
+      "companies": 513515,
+      "employees_low": 611193,
+      "employees_high": 1165100,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "27",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a.",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        }
+      ],
+      "companies": 3524,
+      "employees_low": 3536,
+      "employees_high": 6919,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "28",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "companies": 537780,
+      "employees_low": 378718,
+      "employees_high": 769193,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "29",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 168982,
+      "employees_low": 572887,
+      "employees_high": 1053972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "31",
+      "sectors": [
+        {
+          "naf": "64.99C",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 339953,
+      "employees_low": 820829,
+      "employees_high": 1533127,
+      "open_top": true,
+      "not_counted": [
+        "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+      ]
+    },
+    {
+      "number": "32",
+      "sectors": [
+        {
+          "naf": "64.99Z",
+          "label": "Émetteurs de titres-restaurant",
+          "companies": 3524,
+          "employees_low": 3536,
+          "employees_high": 6919,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 168982,
+      "employees_low": 572887,
+      "employees_high": 1053972,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "33",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restaurants de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 345571,
+      "employees_low": 1045549,
+      "employees_high": 1999046,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "34",
+      "sectors": [
+        {
+          "naf": "64.19B",
+          "label": "Autre intermédiation monétaire"
+        },
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        }
+      ],
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false,
+      "not_counted": [
+        "Autre intermédiation monétaire"
+      ]
+    },
+    {
+      "number": "35",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "18.14Z",
+          "label": "Impression et services connexes d'impression (filière d'impression des titres papier)",
+          "companies": 749,
+          "employees_low": 913,
+          "employees_high": 1886,
+          "open_top": false
+        }
+      ],
+      "companies": 6367,
+      "employees_low": 225633,
+      "employees_high": 467805,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "36",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        }
+      ],
+      "companies": 14472,
+      "employees_low": 245945,
+      "employees_high": 508033,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "37",
+      "sectors": [
+        {
+          "naf": "64.19Z",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+          "companies": 5618,
+          "employees_low": 224720,
+          "employees_high": 465919,
+          "open_top": true
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restaurants traditionnels",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "47.11F",
+          "label": "Commerces d'alimentation générale",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale (ANCV)",
+          "companies": 41200,
+          "employees_low": 1792327,
+          "employees_high": 3625531,
+          "open_top": true
+        }
+      ],
+      "companies": 212276,
+      "employees_low": 2586398,
+      "employees_high": 5138503,
+      "open_top": true,
+      "not_counted": []
+    }
+  ]
+}

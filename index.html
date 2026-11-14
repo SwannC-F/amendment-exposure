@@ -506,10 +506,33 @@ function fromApi(r) {
   };
 }
 
-const LIVE_OK = /^(localhost|127\.0\.0\.1|\[::1\]|::1)$/.test(location.hostname);
-const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
+// Live features (direct, extraction, AI scan) need server.py. Same origin first (Render), then a local server.
+const IS_LOCAL = /^(localhost|127\.0\.0\.1|\[::1\]|::1)$/.test(location.hostname);
+const ONLINE_URL = "";   // public URL of the hosted version (server.py), to fill in
+let LIVE = "", LIVE_OK = false, LIVE_STATE = "probing";   // probing | waking | on | off
+async function probeHealth(base, ms) {
+  const c = new AbortController(); const t = setTimeout(() => c.abort(), ms);
+  try { const r = await fetch(`${base}/api/health`, { signal: c.signal, cache: "no-store" }); return r.ok; }
+  catch { return false; } finally { clearTimeout(t); }
+}
 
 (() => {
+  /* ---------- live server probe (once) ---------- */
+  const liveReady = (async () => {
+    const slow = setTimeout(() => {
+      LIVE_STATE = "waking";
+      const m = document.getElementById("liveMeta");
+      if (m) m.replaceChildren("Serveur en cours de réveil… (jusqu'à une minute)");
+      if (typeof paintScan === "function" && !document.getElementById("scan").hidden) paintScan();
+    }, 3000);
+    let ok = await probeHealth("", 75000);            // same origin: Render (cold start ~50 s) or server.py itself
+    if (!ok && IS_LOCAL && location.port !== "8766") { ok = await probeHealth("http://localhost:8766", 4000); if (ok) LIVE = "http://localhost:8766"; }
+    clearTimeout(slow);
+    LIVE_OK = ok; LIVE_STATE = ok ? "on" : "off";
+    return ok;
+  })();
+  liveReady.then(() => { liveLoad(); if (!document.getElementById("scan").hidden) paintScan(); });
+
   /* ---------- state ---------- */
   let text = { ...DEFAULT_TEXT };
   let engine = null, measures = [], NAF_LABEL = {}, ROLES_IN_DATA = [];
@@ -540,6 +563,7 @@ const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
     catch (e) { if (e.http !== 404) throw e; }
     if (LEGACY[key]) return { engine: await loadJson(LEGACY[key]), from: "ancien format" };
     // Only for a text with no file at all: ask the local server, which runs the pipeline (can take minutes, costs LLM calls).
+    await liveReady;
     if (LIVE_OK) {
       fill($("textNote"), "texte pas encore analysé : le serveur lance le pipeline…");
       try { return { engine: await loadJson(`${LIVE}/api/text/${t.session}/${t.number}`), from: "serveur" }; } catch {}
@@ -1023,7 +1047,11 @@ const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
   function liveReset() { if (liveCtrl) liveCtrl.abort(); liveResult = null; liveSel = null; liveRaw = ""; fill(lRun); fill(lList); }
 
   async function liveLoad() {
-    if (!LIVE_OK) { liveOff("Démo live disponible en local (serveur server.py)"); return; }
+    if (LIVE_STATE === "probing" || LIVE_STATE === "waking") return;   // the probe calls liveLoad when done
+    if (!LIVE_OK) {
+      liveOff("Direct disponible sur la version en ligne", ONLINE_URL ? [" · ", ext(ONLINE_URL, "ouvrir")] : null);
+      return;
+    }
     if (!engine) return;
     const t = text;
     try {
@@ -1122,7 +1150,8 @@ const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
 
   function paintScan() {
     const st = scanState;
-    const btnLabel = !LIVE_OK ? "Disponible en local" : st?.running ? "Analyse en cours…" : st?.result ? "Relancer l'analyse IA" : "Lancer l'analyse IA pour votre activité";
+    const btnLabel = LIVE_STATE === "probing" ? "Connexion au serveur…" : LIVE_STATE === "waking" ? "Serveur en cours de réveil…"
+      : !LIVE_OK ? "Disponible sur la version en ligne" : st?.running ? "Analyse en cours…" : st?.result ? "Relancer l'analyse IA" : "Lancer l'analyse IA pour votre activité";
     const head = h("div", { class: "scan-head" },
       h("p", null, scanN === 0
         ? "Votre secteur n'est visé par aucune mesure de la liste. Le modèle peut relire tous les amendements en attente à la lumière de votre activité."

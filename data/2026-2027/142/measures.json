@@ -1,0 +1,127 @@
+[
+  {
+    "key": "penaliser-fraude-commerces",
+    "theme": "Pénaliser la fraude des commerces",
+    "amendments": [
+      "1"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "plafonner-commissions-emetteurs",
+    "theme": "Plafonner les commissions des émetteurs",
+    "amendments": [
+      "2",
+      "3 rect.",
+      "4",
+      "5",
+      "9",
+      "14",
+      "22",
+      "23",
+      "28",
+      "29"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-modulation-plafond-journalier",
+    "theme": "Supprimer la modulation du plafond",
+    "amendments": [
+      "6",
+      "10"
+    ],
+    "opposes": "instaurer-double-plafond-journalier"
+  },
+  {
+    "key": "autoriser-usage-tous-jours",
+    "theme": "Autoriser l'usage tous les jours",
+    "amendments": [
+      "7",
+      "12",
+      "16",
+      "31"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-negociation-syndicats",
+    "theme": "Imposer la négociation avec syndicats",
+    "amendments": [
+      "11"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "maintenir-titres-pendant-conges",
+    "theme": "Maintenir les titres pendant congés",
+    "amendments": [
+      "13",
+      "18"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "creer-titre-bonifie",
+    "theme": "Créer le titre-restaurant bonifié",
+    "amendments": [
+      "15"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "creer-pole-public-emission",
+    "theme": "Créer un pôle public d'émission",
+    "amendments": [
+      "17",
+      "27",
+      "37"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "instaurer-double-plafond-journalier",
+    "theme": "Instaurer un double plafond journalier",
+    "amendments": [
+      "19"
+    ],
+    "opposes": "supprimer-modulation-plafond-journalier"
+  },
+  {
+    "key": "restreindre-usage-consommables",
+    "theme": "Restreindre l'usage aux consommables",
+    "amendments": [
+      "20",
+      "24"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-plateformes-livraison",
+    "theme": "Exclure les plateformes de livraison",
+    "amendments": [
+      "21 rect.",
+      "26"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "allonger-duree-validite",
+    "theme": "Allonger la durée de validité",
+    "amendments": [
+      "32",
+      "33"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "reporter-dematerialisation",
+    "theme": "Reporter la dématérialisation",
+    "amendments": [
+      "34",
+      "35",
+      "36"
+    ],
+    "opposes": null
+  }
+]

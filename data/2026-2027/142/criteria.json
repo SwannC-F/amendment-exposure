@@ -1,0 +1,1029 @@
+[
+  {
+    "number": "1",
+    "criteria_found": true,
+    "effect": "Crée une amende administrative jusqu'à 15 000 € ou le double de la valeur des titres pour les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes, et oblige les émetteurs à suspendre l'acceptation et à signaler les fraudeurs.",
+    "who": "Commerces acceptant les titres-restaurant (restaurateurs, alimentation générale) et émetteurs de titres-restaurant (Edenred, Sodexo, Upé…)",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": "64.99Z",
+        "label": "Émetteurs de titres-restaurant (services financiers auxiliaires)"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:commerces acceptant les titres-restaurant"
+    ],
+    "regions": [],
+    "quote": "Le fait, pour une personne ou un organisme acceptant des titres‑restaurant, de les accepter en contrepartie d'une somme d'argent ou de présenter au remboursement des titres‑restaurant qui n'ont pas servi au paiement de ses propres ventes est passible d'une amende administrative dont le montant ne peut excéder 15 000 euros ou, si ce montant est plus élevé, le double de la valeur libératoire des titres‑restaurant en cause.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "2",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement à 2,5 % des commissions et frais imposés aux commerçants qui acceptent les titres-restaurant",
+    "who": "Émetteurs de titres-restaurant (ex. Edenred, Sodexo, Up) et restaurateurs indépendants et petits commerces alimentaires qui acceptent ces titres",
+    "sectors": [
+      {
+        "naf": "64.99C",
+        "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces de détail alimentaires spécialisés divers"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:restaurateurs et commerces alimentaires"
+    ],
+    "regions": [],
+    "quote": "Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l'acceptation et du remboursement des titres‑restaurant ainsi que d'une rémunération normale de cette activité.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "3 rect.",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement par décret des commissions, frais et rémunérations supportés par les commerçants acceptant les titres-restaurant, au lieu d'une simple possibilité",
+    "who": "Émetteurs de titres-restaurant (ex. Edenred, Sodexo, Up) et commerçants/restaurants du réseau d'acceptation",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:commerçants accepteurs",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement de repli vise donc à rendre obligatoire la fixation de ce plafond, tout en laissant au pouvoir réglementaire le soin d'en déterminer le niveau par décret en Conseil d'État, après avis de l'Autorité de la concurrence.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "4",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement des frais perçus par les émetteurs de titres-restaurant à 2,5 % du montant réglé, au lieu d'une simple possibilité",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Bimpli) et restaurateurs/commerçants acceptant ces titres",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a."
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:restaurateurs"
+    ],
+    "regions": [],
+    "quote": "Le montant total des frais, des commissions et des rémunérations, directs ou indirects, perçus par un émetteur de titres‑restaurant auprès des personnes ou des organismes mentionnés au deuxième alinéa de l'article L. 3262‑3 est plafonné à un taux déterminé par décret, dans la limite de 2,5 % du montant réglé au moyen de titres‑restaurant.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "5",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement à 3 % du montant des titres-restaurant des frais, commissions et rémunérations perçus par les émetteurs auprès des commerçants accepteurs",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Bimpli) et restaurateurs/commerçants acceptant les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "64.99B",
+        "label": "Autres intermédiations monétaires"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restaurants de type rapide"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:restaurateurs"
+    ],
+    "regions": [],
+    "quote": "Le montant total des frais, des commissions et des rémunérations, directs ou indirects, perçus par un émetteur de titres‑restaurant auprès des personnes ou des organismes mentionnés au deuxième alinéa de l'article L. 3262‑3 est plafonné à un taux déterminé par décret, dans la limite de 3 % du montant réglé au moyen de titres‑restaurant.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "6",
+    "criteria_found": true,
+    "effect": "Supprime la modulation du plafond journalier des titres-restaurant, maintenant un plafond unique quel que soit le type d'achat",
+    "who": "Émetteurs de titres-restaurant, salariés-utilisateurs, restaurateurs, commerces alimentaires (grandes surfaces, magasins de proximité, métiers de bouche)",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "47.11",
+        "label": "Commerce de détail en magasin non spécialisé"
+      },
+      {
+        "naf": "64.99B",
+        "label": "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "menages",
+      "autre:restaurateurs",
+      "autre:commerces-alimentaires"
+    ],
+    "regions": [],
+    "quote": "Cet amendement supprime la modulation du plafond journalier d'utilisation du titre‑restaurant introduite en commission prévoyant la majoration du plafond pour les repas consommés au restaurant, les produits alimentaires directement consommables et les fruits ou légumes.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "7",
+    "criteria_found": true,
+    "effect": "Permet à tous les salariés bénéficiaires d'utiliser leurs titres-restaurant le dimanche, au lieu de réserver cet usage aux seuls salariés travaillant ce jour",
+    "who": "Salariés bénéficiaires de titres-restaurant, employeurs les distribuant, émetteurs de titres-restaurant (Edenred, Sodexo, Up…), restaurants et commerces alimentaires ouverts le dimanche",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": "47.11E",
+        "label": "Supermarchés"
+      },
+      {
+        "naf": "47.11A",
+        "label": "Hypermarchés"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages",
+      "autre:restaurateurs et commerces alimentaires"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l'ensemble des salariés bénéficiaires, auprès de toute personne ou de tout organisme mentionné au deuxième alinéa de l'article L. 3262‑3.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "9",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement à 2,5 % des commissions et frais prélevés par les émetteurs de titres-restaurant auprès des restaurateurs et commerçants",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, Natixis), restaurateurs, commerçants et artisans de proximité acceptant les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "64.99",
+        "label": "Autres activités de services financiers, hors assurance et caisses de retraite"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11C",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:restaurateurs et commerçants"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement vise à plafonner à 2,5 % l'ensemble des commissions et frais prélevés par les émetteurs de titres‑restaurant auprès des restaurateurs et des commerçants.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "10",
+    "criteria_found": true,
+    "effect": "Supprime le double plafond journalier d'utilisation des titres-restaurant pour revenir à un plafond unique pour tous les produits alimentaires éligibles",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up), salariés utilisateurs, restaurateurs, commerces alimentaires",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Émission de titres-restaurant"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "menages",
+      "autre:restaurateurs"
+    ],
+    "regions": [],
+    "quote": "La réforme doit avant tout s'attaquer aux commissions prélevées par les émetteurs et aux déséquilibres du marché, plutôt que de limiter les possibilités d'achat des salariés.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "11",
+    "criteria_found": true,
+    "effect": "Oblige l'employeur à négocier avec les syndicats avant toute mise en place, suppression ou modification du financement des titres-restaurant, et à consulter le CSE à défaut de délégué syndical.",
+    "who": "Employeurs disposant d'au moins un délégué syndical, organisations syndicales représentatives, comités sociaux et économiques (CSE)",
+    "sectors": [],
+    "roles": [
+      "employeurs",
+      "autre:representants-syndicaux",
+      "autre:CSE"
+    ],
+    "regions": [],
+    "quote": "Dans les entreprises pourvues d'au moins un délégué syndical, l'employeur engage, préalablement à la mise en place des titres‑restaurant, à leur suppression ou à toute modification de sa participation à leur financement, une négociation avec les organisations syndicales de salariés représentatives dans l'entreprise.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "12",
+    "criteria_found": true,
+    "effect": "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris dimanches et jours fériés, au lieu de restreindre leur usage aux jours travaillés.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, etc.), employeurs qui les distribuent, salariés qui les utilisent, ainsi que restaurateurs et commerces alimentaires qui les acceptent",
+    "sectors": [
+      {
+        "naf": "64.99B",
+        "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restaurants de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "13",
+    "criteria_found": true,
+    "effect": "Oblige les employeurs à maintenir l'attribution des titres-restaurant pendant les congés de maternité, paternité, adoption et naissance.",
+    "who": "Tous les employeurs attribuant des titres-restaurant à leurs salariés, et les salariés concernés par ces congés",
+    "sectors": [
+      {
+        "naf": "",
+        "label": "Tous secteurs (employeurs attribuant des titres-restaurant)"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "L'attribution de titres‑restaurant ne peut être interrompue durant les périodes d'absence et de congé de maternité mentionnées aux articles L. 1225‑16 à L. 1225‑28 du code du travail, de congé de paternité et d'accueil de l'enfant mentionnées aux articles L. 1225‑35 à L. 1225‑36 du même code, de congé d'adoption mentionnées aux articles L. 1225‑37 à L. 1225‑46‑1 dudit code et de congé supplémentaire de naissance mentionnées aux articles L. 1225‑46‑2 à L. 1225‑46‑7 du même code.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "14",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement à 2 % maximum des commissions prélevées par les émetteurs de titres-restaurant sur les restaurateurs et commerçants",
+    "who": "Émetteurs de titres-restaurant (Edenred, Up, Bimpli, Sodexo) ; restaurateurs et commerces alimentaires acceptant les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Émetteurs de titres-restaurant / services de paiement"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.29Z",
+        "label": "Autres commerces de détail alimentaires en magasin spécialisé"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:restaurateurs et commerces alimentaires"
+    ],
+    "regions": [],
+    "quote": "Cet amendement propose d'encadrer strictement les commissions prélevées aux restaurateurs et commerçants assimilés par les émetteurs de titres‑restaurants.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "15",
+    "criteria_found": true,
+    "effect": "Crée le titre-restaurant bonifié : l'employeur peut accorder un complément au salarié pour l'achat de produits biologiques ou contribuant à la transition agroécologique",
+    "who": "Employeurs mettant en place le dispositif, émetteurs de titres-restaurant, commerces de détail alimentaire et établissements de restauration acceptant le titre, salariés et stagiaires bénéficiaires",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autres intermédiation monétaire"
+      },
+      {
+        "naf": "47.11",
+        "label": "Commerce de détail en magasin non spécialisé à prédominance alimentaire"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages",
+      "autre:commerces alimentaires et restauration"
+    ],
+    "regions": [],
+    "quote": "La bonification, prise en charge par l'employeur, est utilisée par le salarié pour l'acquisition de produits issus de l'agriculture biologique ou d'autres produits contribuant aux objectifs de santé publique et de transition agroécologique mentionnés au II de l'article L. 1 du code rural et de la pêche maritime.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "16",
+    "criteria_found": true,
+    "effect": "Supprime le plafond journalier d'utilisation des titres-restaurant et autorise leur usage tous les jours, y compris dimanches et jours fériés",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up Group), restaurateurs, commerces alimentaires, salariés bénéficiaires, employeurs distributeurs",
+    "sectors": [
+      {
+        "naf": "64.99C",
+        "label": "Monnaie électronique"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restaurants de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages",
+      "autre:restaurateurs et commerçants"
+    ],
+    "regions": [],
+    "quote": "L'utilisation des titres-restaurant n'est limitée à aucun montant maximal journalier.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "17",
+    "criteria_found": true,
+    "effect": "Demande un rapport sur l'opportunité de confier le monopole de l'émission et du remboursement des titres-restaurants à un nouvel établissement public, remplaçant les opérateurs privés actuels",
+    "who": "Opérateurs privés émetteurs de titres-restaurants (Edenred, Sodexo, Up, etc.) dont l'activité serait supprimée ; l'État qui créerait et gérerait le nouvel établissement public",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autres intermédiations monétaires"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport étudiant l'opportunité de confier le monopole de l'émission et du remboursement des titres‑restaurants à un nouvel établissement public à caractère industriel et commercial",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "18",
+    "criteria_found": true,
+    "effect": "Les employeurs doivent maintenir l'attribution des titres-restaurant aux salariés pendant les congés maternité, paternité, adoption et congé supplémentaire de naissance.",
+    "who": "Tous les employeurs attribuant des titres-restaurant à leurs salariés ; les émetteurs de titres-restaurant (Edenred, Sodexo, Up Group) ; les salariés en congé parental",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "L'attribution de titres‑restaurant ne peut être interrompue durant les périodes d'absence et de congé de maternité mentionnées aux articles L. 1225‑16 à L. 1225‑28 du code du travail, de congé de paternité et d'accueil de l'enfant mentionnées aux articles L. 1225‑35 à L. 1225‑36 du même code, de congé d'adoption mentionnées aux articles L. 1225‑37 à L. 1225‑46‑1 dudit code et de congé supplémentaire de naissance mentionnées aux articles L. 1225‑46‑2 à L. 1225‑46‑7 du même code.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "19",
+    "criteria_found": true,
+    "effect": "Instaure un double plafond journalier d'utilisation des titres-restaurant : plafond maximal limité pour les courses alimentaires non directement consommables, plafond au moins double pour les repas et produits directement consommables, avec obligation technique de respect des plafonds par les émetteurs et les accepteurs.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, Swile...), restaurants indépendants et de proximité, grande distribution alimentaire, employeurs financeant les titres-restaurant, salariés-utilisateurs",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autre intermédiation monétaire (émission de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11B",
+        "label": "Supermarchés"
+      },
+      {
+        "naf": "47.11C",
+        "label": "Hypermarchés"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages",
+      "autre:restaurateurs et commerces acceptant les titres-restaurant"
+    ],
+    "regions": [],
+    "quote": "Les émetteurs de titres-restaurant et les personnes ou organismes qui les acceptent mettent en œuvre les dispositifs techniques nécessaires au respect des plafonds prévus au présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "20",
+    "criteria_found": true,
+    "effect": "Restreint l'utilisation des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, supprimant l'élargissement pérenne à tous les produits alimentaires",
+    "who": "Restaurants traditionnels et de type rapide, grande distribution (supermarchés et hypermarchés), émetteurs de titres-restaurant, employeurs et salariés utilisateurs",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10B",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerce de détail en supermarché"
+      },
+      {
+        "naf": "47.11G",
+        "label": "Commerce de détail en hypermarché"
+      },
+      {
+        "naf": "64.19B",
+        "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages",
+      "autre:restaurateurs",
+      "autre:grande distribution"
+    ],
+    "regions": [],
+    "quote": "de préparations alimentaires directement consommables, ainsi que de fruits et légumes, qu'ils soient ou non directement consommables",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "21 rect.",
+    "criteria_found": true,
+    "effect": "Exclut les plateformes de mise en relation par voie électronique du champ des professionnels habilités à accepter les titres-restaurant",
+    "who": "Plateformes de livraison de repas (type Uber Eats, Deliveroo), restaurateurs indépendants et de proximité, émetteurs de titres-restaurant",
+    "sectors": [
+      {
+        "naf": "63.99Z",
+        "label": "Plateformes de mise en relation par voie électronique"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "64.99Z",
+        "label": "Émetteurs de titres-restaurant"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "emetteurs",
+      "autre:restaurateurs"
+    ],
+    "regions": [],
+    "quote": "à l'exclusion des contrats conclus par l'intermédiaire d'une plateforme de mise en relation par voie électronique mentionnée à l'article 242 bis du code général des impôts",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "22",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement des commissions perçues par les émetteurs de titres-restaurant auprès des commerçants accepteurs, avec un taux maximal inscrit dans la loi à 2,5 %",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, Natixis Interepargne), restaurateurs et commerces alimentaires acceptant les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autre intermédiation monétaire"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "etat",
+      "autre:restaurateurs et commerçants alimentaires"
+    ],
+    "regions": [],
+    "quote": "Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l'acceptation et du remboursement des titres‑restaurant ainsi que d'une rémunération normale de cette activité.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "23",
+    "criteria_found": true,
+    "effect": "Rend obligatoire le plafonnement par décret des commissions, frais et rémunérations supportés par les commerçants acceptant les titres-restaurant, au lieu d'une simple possibilité",
+    "who": "Émetteurs de titres-restaurant (ex. Edenred, Sodexo, Up) et commerçants/restaurants du réseau d'acceptation",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "autre:commerçants accepteurs",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement de repli vise donc à rendre obligatoire la fixation de ce plafond, tout en laissant au pouvoir réglementaire le soin d'en déterminer le niveau par décret en Conseil d'État, après avis de l'Autorité de la concurrence.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "24",
+    "criteria_found": true,
+    "effect": "Restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'usage élargi pour tout produit alimentaire en supermarché",
+    "who": "Restaurateurs et commerces assimilés (bénéficiaires du retour au usage restreint), grande distribution (supermarchés et hypermarchés qui perdent l'usage élargi), employeurs qui distribuent les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerce de détail en supermarché"
+      },
+      {
+        "naf": "47.11G",
+        "label": "Commerce de détail en hypermarché"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "etat",
+      "autre:restaurateurs",
+      "autre:grande-distribution"
+    ],
+    "regions": [],
+    "quote": "Les restaurateurs et commerces assimilés sont les premiers touchés : le titre représente 15 % du chiffre d'affaires des restaurants, contre 1 % pour la grande distribution.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "26",
+    "criteria_found": true,
+    "effect": "Exclut les achats de repas réalisés via des plateformes de livraison en ligne du bénéfice de l'aide publique au repas du salarié",
+    "who": "Plateformes de livraison de repas en ligne (type Uber Eats, Deliveroo, Just Eat), restaurateurs et commerçants utilisant ces plateformes, livreurs",
+    "sectors": [
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "53.20Z",
+        "label": "Autres activités de poste et de courrier"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:restaurateurs"
+    ],
+    "regions": [],
+    "quote": "à l'exclusion des achats réalisés par l'intermédiaire d'une plateforme en ligne, au sens du i de l'article 3 du règlement (UE) 2022/2065 du Parlement européen et du Conseil du 19 octobre 2022 relatif à un marché unique des services numériques, permettant aux consommateurs de conclure des contrats à distance avec des restaurateurs ou des commerçant",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "27",
+    "criteria_found": true,
+    "effect": "Crée un pôle public d'émission de titres-restaurant via l'Agence nationale pour les chèques-vacances, avec une commission plafonnée à 2,5 % et les excédents réinvestis dans l'accès à une alimentation durable",
+    "who": "Agence nationale pour les chèques-vacances (nouvel émetteur public), émetteurs privés de titres-restaurant (Edenred, Sodexo, Up, etc.), employeurs acheteurs de titres",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a."
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Soit par l'Agence nationale pour les chèques‑vacances mentionnée à l'article L. 411‑13 du code du tourisme, qui les cède à l'employeur contre paiement de leur valeur libératoire. Les commissions qu'elle perçoit auprès des employeurs et des personnes ou organismes mentionnés au deuxième alinéa de l'article L. 3262‑3 ne peuvent excéder 2,5 % de la valeur des titres.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "28",
+    "criteria_found": true,
+    "effect": "Plafonne à 2,5 % du montant des titres-restaurant les commissions prélevées par les émetteurs sur les associations à gestion désintéressée servant des repas à leurs adhérents, avec obligation de reversement du trop-perçu",
+    "who": "Émetteurs de titres-restaurant (ex. Edenred, Sodexo, Up) et associations loi 1901 à gestion désintéressée proposant une restauration à leurs adhérents",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autres intermédiations monétaires"
+      },
+      {
+        "naf": "94.99Z",
+        "label": "Autres organisations fonctionnant par adhésion volontaire"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "associations"
+    ],
+    "regions": [],
+    "quote": "la somme des commissions, frais ou rémunérations de toute nature mentionnés à l'article L. 3262‑1‑2 appliqués par un émetteur de titres‑restaurant aux associations régies par la loi du 1 er juillet 1901 relative au contrat d'association dont la gestion est désintéressée au sens du d du 1° du 7 de l'article 261 du code général des impôts ne peut excéder 2,5 % de la valeur des titres‑restaurant perçus par ces associations en paiement de repas servis à leurs seuls adhérents au cours de l'année civile",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "29",
+    "criteria_found": true,
+    "effect": "Rend obligatoire et plafonne à 2,5 % du montant des titres-restaurant les commissions et frais facturés aux commerçants habilités par les émetteurs",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, Natixis), restaurateurs indépendants et petits commerces alimentaires acceptant les titres-restaurant",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "autre:commerçants habilités"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement vise à plafonner à 2,5 % du montant des titres‑restaurant la somme des commissions et frais facturés aux commerçants habilités par les émetteurs.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "31",
+    "criteria_found": true,
+    "effect": "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris le dimanche et les jours fériés, au lieu de les restreindre aux jours ouvrés.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, etc.), employeurs qui les distribuent, salariés qui les utilisent, restaurateurs et commerçants qui les acceptent",
+    "sectors": [
+      {
+        "naf": "64.99C",
+        "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restaurants de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "32",
+    "criteria_found": true,
+    "effect": "Supprime la date limite d'utilisation des titres-restaurant, qui deviennent valables sans limitation de durée.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up…), employeurs qui les distribuent, salariés qui les utilisent, commerçants et restaurateurs qui les acceptent",
+    "sectors": [
+      {
+        "naf": "64.99Z",
+        "label": "Émetteurs de titres-restaurant"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant sont valables sans limitation de durée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "33",
+    "criteria_found": true,
+    "effect": "Allonge à trois ans la durée d'utilisation des titres-restaurant et attribue la contre-valeur des titres périmés au budget des activités sociales et culturelles de l'entreprise",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, etc.), employeurs distributeurs, salariés-utilisateurs, commerçants acceptant les titres",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "56.10C",
+        "label": "Restaurants de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "Le délai d'utilisation du titre-restaurant est de trois ans.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "34",
+    "criteria_found": true,
+    "effect": "Reporte l'obligation de dématérialisation des titres-restaurant au 1er janvier 2031, autorisant le maintien du support papier pour les titres émis en 2028, 2029 et 2030.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo/Pluxee, Up Group), filière de fabrication et d'impression de titres papier, petites entreprises et salariés",
+    "sectors": [
+      {
+        "naf": "64.19B",
+        "label": "Autre intermédiation monétaire"
+      },
+      {
+        "naf": "18.12Z",
+        "label": "Autre imprimerie"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant émis au titre des années 2028, 2029 et 2030 peuvent être émis sur support papier.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "35",
+    "criteria_found": true,
+    "effect": "Repousse l'obligation de dématérialisation des titres-restaurant au 1er janvier 2030, autorisant le papier pour les millésimes 2028 et 2029.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up, etc.), filière d'impression de titres papier, petites entreprises employeuses et salariés peu à l'aise avec le numérique",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "18.14Z",
+        "label": "Impression et services connexes d'impression (filière d'impression des titres papier)"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "autre:imprimeurs de titres papier"
+    ],
+    "regions": [],
+    "quote": "Les titres‑restaurant émis au titre des années 2028 et 2029 peuvent être émis sur support papier.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "36",
+    "criteria_found": true,
+    "effect": "Reporte au 1er janvier 2029 l'obligation de dématérialisation des titres-restaurant et autorise l'émission de titres papier pour le millésime 2028",
+    "who": "Émetteurs de titres-restaurant, filière d'impression de titres papier, petites entreprises et salariés",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autre intermédiation monétaire"
+      },
+      {
+        "naf": "18.12Z",
+        "label": "Autre imprimerie"
+      }
+    ],
+    "roles": [
+      "emetteurs",
+      "employeurs",
+      "menages",
+      "autre:imprimeurs de titres"
+    ],
+    "regions": [],
+    "quote": "La condition de dématérialisation prévue au I de l'article L. 3262‑1 du code du travail, dans sa rédaction résultant de la présente loi, entre en vigueur le 1 er janvier 2029 et ne s'applique qu'aux titres‑restaurant émis au titre de l'année 2029 et des années suivantes. Les titres‑restaurant émis au titre de l'année 2028 peuvent être émis sur support papier.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "37",
+    "criteria_found": true,
+    "effect": "Oblige les partenaires sociaux à ouvrir avant juin 2027 une négociation sur l'avenir du titre-restaurant, incluant la création d'un pôle public d'émission, après concertation de tous les acteurs du secteur.",
+    "who": "Émetteurs de titres-restaurant (Edenred, Sodexo, Up), Agence nationale pour les chèques vacances (ANCV), restaurateurs, commerçants alimentaires, organisations syndicales et patronales",
+    "sectors": [
+      {
+        "naf": "64.19Z",
+        "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+      },
+      {
+        "naf": "56.10A",
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": "84.11Z",
+        "label": "Administration publique générale (ANCV)"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "emetteurs",
+      "etat",
+      "autre:restaurateurs et commerçants"
+    ],
+    "regions": [],
+    "quote": "les organisations syndicales de salariés et les organisations professionnelles d'employeurs représentatives au niveau national et interprofessionnel engagent une négociation sur l'avenir du titre-restaurant, son champ d'utilisation et son articulation avec la politique salariale, incluant une réflexion sur la création d'un pôle public d'émission, après une concertation associant l'ensemble des acteurs du titre-restaurant",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

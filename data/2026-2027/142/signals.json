@@ -1,0 +1,577 @@
+{
+  "majority": [
+    "Les Républicains",
+    "UCI"
+  ],
+  "measures": [
+    {
+      "key": "penaliser-fraude-commerces",
+      "theme": "Pénaliser la fraude des commerces",
+      "amendments": [
+        "1"
+      ],
+      "opposes": null,
+      "groups": [
+        "UCI"
+      ],
+      "n_groups": 1,
+      "majority_groups": [
+        "UCI"
+      ]
+    },
+    {
+      "key": "plafonner-commissions-emetteurs",
+      "theme": "Plafonner les commissions des émetteurs",
+      "amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ],
+      "opposes": null,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "RDSE",
+        "SER",
+        "UCI"
+      ],
+      "n_groups": 5,
+      "majority_groups": [
+        "UCI"
+      ]
+    },
+    {
+      "key": "supprimer-modulation-plafond-journalier",
+      "theme": "Supprimer la modulation du plafond",
+      "amendments": [
+        "6",
+        "10"
+      ],
+      "opposes": "instaurer-double-plafond-journalier",
+      "groups": [
+        "CRCE-K",
+        "Les Républicains"
+      ],
+      "n_groups": 2,
+      "majority_groups": [
+        "Les Républicains"
+      ]
+    },
+    {
+      "key": "autoriser-usage-tous-jours",
+      "theme": "Autoriser l'usage tous les jours",
+      "amendments": [
+        "7",
+        "12",
+        "16",
+        "31"
+      ],
+      "opposes": null,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains",
+        "UNT"
+      ],
+      "n_groups": 4,
+      "majority_groups": [
+        "Les Républicains"
+      ]
+    },
+    {
+      "key": "imposer-negociation-syndicats",
+      "theme": "Imposer la négociation avec syndicats",
+      "amendments": [
+        "11"
+      ],
+      "opposes": null,
+      "groups": [
+        "CRCE-K"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "maintenir-titres-pendant-conges",
+      "theme": "Maintenir les titres pendant congés",
+      "amendments": [
+        "13",
+        "18"
+      ],
+      "opposes": null,
+      "groups": [
+        "CRCE-K",
+        "GEST"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "creer-titre-bonifie",
+      "theme": "Créer le titre-restaurant bonifié",
+      "amendments": [
+        "15"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "creer-pole-public-emission",
+      "theme": "Créer un pôle public d'émission",
+      "amendments": [
+        "17",
+        "27",
+        "37"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "instaurer-double-plafond-journalier",
+      "theme": "Instaurer un double plafond journalier",
+      "amendments": [
+        "19"
+      ],
+      "opposes": "supprimer-modulation-plafond-journalier",
+      "groups": [
+        "RDSE"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "restreindre-usage-consommables",
+      "theme": "Restreindre l'usage aux consommables",
+      "amendments": [
+        "20",
+        "24"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "exclure-plateformes-livraison",
+      "theme": "Exclure les plateformes de livraison",
+      "amendments": [
+        "21 rect.",
+        "26"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "allonger-duree-validite",
+      "theme": "Allonger la durée de validité",
+      "amendments": [
+        "32",
+        "33"
+      ],
+      "opposes": null,
+      "groups": [
+        "UNT"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "reporter-dematerialisation",
+      "theme": "Reporter la dématérialisation",
+      "amendments": [
+        "34",
+        "35",
+        "36"
+      ],
+      "opposes": null,
+      "groups": [
+        "UNT"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "1",
+      "measure": "penaliser-fraude-commerces",
+      "author_group": "UCI",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "2",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "3 rect.",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "UCI",
+      "same_measure_amendments": [
+        "2",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "4",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "SER",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "5",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "SER",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "9",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "CRCE-K",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "14",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "22",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "22",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "23",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "23",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "number": "28",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "UCI",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "29"
+      ]
+    },
+    {
+      "number": "29",
+      "measure": "plafonner-commissions-emetteurs",
+      "author_group": "UCI",
+      "same_measure_amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28"
+      ]
+    },
+    {
+      "number": "6",
+      "measure": "supprimer-modulation-plafond-journalier",
+      "author_group": "Les Républicains",
+      "same_measure_amendments": [
+        "10"
+      ]
+    },
+    {
+      "number": "10",
+      "measure": "supprimer-modulation-plafond-journalier",
+      "author_group": "CRCE-K",
+      "same_measure_amendments": [
+        "6"
+      ]
+    },
+    {
+      "number": "7",
+      "measure": "autoriser-usage-tous-jours",
+      "author_group": "Les Républicains",
+      "same_measure_amendments": [
+        "12",
+        "16",
+        "31"
+      ]
+    },
+    {
+      "number": "12",
+      "measure": "autoriser-usage-tous-jours",
+      "author_group": "CRCE-K",
+      "same_measure_amendments": [
+        "7",
+        "16",
+        "31"
+      ]
+    },
+    {
+      "number": "16",
+      "measure": "autoriser-usage-tous-jours",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "7",
+        "12",
+        "31"
+      ]
+    },
+    {
+      "number": "31",
+      "measure": "autoriser-usage-tous-jours",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "7",
+        "12",
+        "16"
+      ]
+    },
+    {
+      "number": "11",
+      "measure": "imposer-negociation-syndicats",
+      "author_group": "CRCE-K",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "13",
+      "measure": "maintenir-titres-pendant-conges",
+      "author_group": "CRCE-K",
+      "same_measure_amendments": [
+        "18"
+      ]
+    },
+    {
+      "number": "18",
+      "measure": "maintenir-titres-pendant-conges",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "13"
+      ]
+    },
+    {
+      "number": "15",
+      "measure": "creer-titre-bonifie",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "17",
+      "measure": "creer-pole-public-emission",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "27",
+        "37"
+      ]
+    },
+    {
+      "number": "27",
+      "measure": "creer-pole-public-emission",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "17",
+        "37"
+      ]
+    },
+    {
+      "number": "37",
+      "measure": "creer-pole-public-emission",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "17",
+        "27"
+      ]
+    },
+    {
+      "number": "19",
+      "measure": "instaurer-double-plafond-journalier",
+      "author_group": "RDSE",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "20",
+      "measure": "restreindre-usage-consommables",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "24"
+      ]
+    },
+    {
+      "number": "24",
+      "measure": "restreindre-usage-consommables",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "20"
+      ]
+    },
+    {
+      "number": "21 rect.",
+      "measure": "exclure-plateformes-livraison",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "26"
+      ]
+    },
+    {
+      "number": "26",
+      "measure": "exclure-plateformes-livraison",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "21 rect."
+      ]
+    },
+    {
+      "number": "32",
+      "measure": "allonger-duree-validite",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "33"
+      ]
+    },
+    {
+      "number": "33",
+      "measure": "allonger-duree-validite",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "32"
+      ]
+    },
+    {
+      "number": "34",
+      "measure": "reporter-dematerialisation",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "35",
+        "36"
+      ]
+    },
+    {
+      "number": "35",
+      "measure": "reporter-dematerialisation",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "34",
+        "36"
+      ]
+    },
+    {
+      "number": "36",
+      "measure": "reporter-dematerialisation",
+      "author_group": "UNT",
+      "same_measure_amendments": [
+        "34",
+        "35"
+      ]
+    }
+  ]
+}
