@@ -1,0 +1,1587 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "10.71C": {
+      "companies": 41361,
+      "employees_low": 137595,
+      "employees_high": 259045,
+      "open_top": false
+    },
+    "18.12Z": {
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false
+    },
+    "47.11B": {
+      "companies": 44671,
+      "employees_low": 38970,
+      "employees_high": 71294,
+      "open_top": false
+    },
+    "47.11C": {
+      "companies": 6712,
+      "employees_low": 18033,
+      "employees_high": 33361,
+      "open_top": false
+    },
+    "47.11D": {
+      "companies": 9687,
+      "employees_low": 171117,
+      "employees_high": 345290,
+      "open_top": true
+    },
+    "47.11F": {
+      "companies": 1528,
+      "employees_low": 223308,
+      "employees_high": 396235,
+      "open_top": true
+    },
+    "47.21Z": {
+      "companies": 7971,
+      "employees_low": 12818,
+      "employees_high": 23594,
+      "open_top": false
+    },
+    "47.24Z": {
+      "companies": 5035,
+      "employees_low": 6760,
+      "employees_high": 12249,
+      "open_top": false
+    },
+    "47.29Z": {
+      "companies": 15522,
+      "employees_low": 25369,
+      "employees_high": 47306,
+      "open_top": false
+    },
+    "56.10A": {
+      "companies": 163930,
+      "employees_low": 346043,
+      "employees_high": 650818,
+      "open_top": false
+    },
+    "56.10C": {
+      "companies": 174495,
+      "employees_low": 251478,
+      "employees_high": 486074,
+      "open_top": false
+    }
+  },
+  "amendments": [
+    {
+      "number": "1",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "2",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "3 rect.",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "4",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "5",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "6",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "7",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "9",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "10",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "11",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "12",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "13",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "14",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "15",
+      "sectors": [
+        {
+          "naf": "47.29Z",
+          "label": "Autres commerces de détail alimentaires (dont magasins bio)",
+          "companies": 15522,
+          "employees_low": 25369,
+          "employees_high": 47306,
+          "open_top": false
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes",
+          "companies": 7971,
+          "employees_low": 12818,
+          "employees_high": 23594,
+          "open_top": false
+        }
+      ],
+      "companies": 23493,
+      "employees_low": 38187,
+      "employees_high": 70900,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "16",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        }
+      ],
+      "companies": 108994,
+      "employees_low": 595783,
+      "employees_high": 1117474,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "17",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "18",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "19",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        }
+      ],
+      "companies": 349640,
+      "employees_low": 991946,
+      "employees_high": 1878417,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "20",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes",
+          "companies": 7971,
+          "employees_low": 12818,
+          "employees_high": 23594,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 357611,
+      "employees_low": 1004764,
+      "employees_high": 1902011,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "21 rect.",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Plateformes de livraison de repas (pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 174495,
+      "employees_low": 251478,
+      "employees_high": 486074,
+      "open_top": false,
+      "not_counted": [
+        "Plateformes de livraison de repas (pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "22",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "23",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "24",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes",
+          "companies": 7971,
+          "employees_low": 12818,
+          "employees_high": 23594,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 357611,
+      "employees_low": 1004764,
+      "employees_high": 1902011,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "26",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Plateformes de livraison de repas (pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 174495,
+      "employees_low": 251478,
+      "employees_high": 486074,
+      "open_top": false,
+      "not_counted": [
+        "Plateformes de livraison de repas (pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "27",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "28",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Associations loi 1901 qui servent des repas à leurs adhérents (sous-ensemble de 94.99Z, non isolable)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Associations loi 1901 qui servent des repas à leurs adhérents (sous-ensemble de 94.99Z, non isolable)"
+      ]
+    },
+    {
+      "number": "29",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 436204,
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "31",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale",
+          "companies": 44671,
+          "employees_low": 38970,
+          "employees_high": 71294,
+          "open_top": false
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes",
+          "companies": 6712,
+          "employees_low": 18033,
+          "employees_high": 33361,
+          "open_top": false
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie",
+          "companies": 5035,
+          "employees_low": 6760,
+          "employees_high": 12249,
+          "open_top": false
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie",
+          "companies": 41361,
+          "employees_low": 137595,
+          "employees_high": 259045,
+          "open_top": false
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle",
+          "companies": 163930,
+          "employees_low": 346043,
+          "employees_high": 650818,
+          "open_top": false
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide",
+          "companies": 174495,
+          "employees_low": 251478,
+          "employees_high": 486074,
+          "open_top": false
+        }
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "32",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "33",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "34",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "35",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "36",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)",
+          "companies": 8854,
+          "employees_low": 21225,
+          "employees_high": 42114,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "companies": 8854,
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "open_top": false,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ]
+    },
+    {
+      "number": "37",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    }
+  ]
+}

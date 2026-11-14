@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exposition — amendements et entreprises</title>
+<style>
+  :root {
+    --bg: #ffffff; --soft: #f5f7fb; --ink: #0b1220; --muted: #5b6475; --line: #e4e8f0;
+    --accent: #1d4ed8; --accent-soft: #eaf0ff; --accent-ink: #1e3a8a;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  header { border-bottom: 1px solid var(--line); }
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; }
+  .brand { font-weight: 800; font-size: 19px; letter-spacing: -.02em; }
+  .brand span { color: var(--accent); }
+  .pill { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); background: var(--accent-soft);
+          border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 650; white-space: nowrap; }
+  .pill .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+  .intro { padding: 22px 0 4px; color: var(--muted); max-width: 720px; margin: 0; font-size: 15px; }
+
+  /* Profile switcher */
+  .profiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0 0; }
+  .profile { position: relative; text-align: left; background: #fff; border: 2px solid var(--line); border-radius: 14px;
+             padding: 12px 14px; cursor: pointer; font: inherit; color: inherit;
+             transition: border-color .15s, background .15s, transform .15s; }
+  .profile:hover { border-color: #b8c6e8; }
+  .profile:active { transform: scale(.98); }
+  .profile:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+  .profile b { display: block; font-size: 16px; letter-spacing: -.01em; line-height: 1.25; padding-right: 22px; }
+  .profile small { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .profile kbd { position: absolute; top: 10px; right: 12px; font: 600 11px/1 ui-monospace, monospace; color: #9aa3b5;
+                 border: 1px solid var(--line); border-radius: 5px; padding: 3px 5px; }
+  .profile[aria-pressed="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
+  .profile[aria-pressed="true"] small { color: #dbe4ff; }
+  .profile[aria-pressed="true"] kbd { color: #dbe4ff; border-color: rgba(255,255,255,.35); }
+
+  /* Headline */
+  .headline { margin: 28px 0 6px; }
+  .headline h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.025em; margin: 0; font-weight: 750; }
+  .headline h1 em { font-style: normal; color: var(--accent); }
+  .headline p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+  .fade { animation: fadeUp .35s ease both; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  /* Cards */
+  .feed { position: relative; margin-top: 18px; }
+  .card { display: grid; grid-template-columns: 52px 1fr 250px; gap: 18px; align-items: start;
+          border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 0 0 12px; background: #fff;
+          will-change: transform; }
+  .card.top1 { border-color: #c9d6f5; box-shadow: 0 1px 0 #c9d6f5, 0 8px 24px -16px rgba(29,78,216,.35); }
+  .rank { width: 44px; height: 44px; border-radius: 12px; background: var(--accent-soft); color: var(--accent);
+          display: grid; place-items: center; font-weight: 800; font-size: 20px; }
+  .card.top1 .rank { background: var(--accent); color: #fff; }
+  .card h2 { font-size: 21px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -.015em; }
+  .effect { margin: 0; color: var(--muted); font-size: 15px; }
+  .effect .more { color: #8a93a6; }
+
+  .support { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; }
+  .support .count { font-weight: 750; font-size: 15px; margin-right: 4px; }
+  .chip { font-size: 12.5px; font-weight: 600; border-radius: 999px; padding: 3px 10px; background: var(--soft);
+          color: #334155; border: 1px solid var(--line); }
+  .chip.maj { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .chip.legend { background: transparent; border: none; color: var(--muted); font-weight: 500; padding-left: 2px; }
+
+  .expo { background: var(--soft); border-radius: 12px; padding: 12px 14px; }
+  .expo .k { font-size: 11.5px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700; }
+  .expo .num { font-size: 30px; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; margin-top: 4px;
+               font-variant-numeric: tabular-nums; }
+  .expo .num.sm { font-size: 22px; }
+  .expo .lbl { font-size: 13px; color: var(--muted); }
+  .expo .row + .row { margin-top: 8px; }
+  .expo .pending { font-size: 15px; color: var(--muted); margin-top: 6px; display: flex; align-items: center; gap: 8px; }
+  .expo .pending::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+                           animation: pulse 1.2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  .expo .sector { font-size: 12.5px; color: var(--muted); margin-top: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
+
+  details { margin-top: 10px; }
+  summary { cursor: pointer; color: var(--accent); font-size: 14px; font-weight: 600; list-style: none; display: inline-flex; gap: 6px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::before { content: "+"; font-weight: 800; }
+  details[open] summary::before { content: "−"; }
+  .det { margin-top: 8px; font-size: 14px; color: #334155; }
+  .det p { margin: 0 0 8px; }
+  .det .k { font-weight: 700; color: var(--ink); }
+  blockquote { margin: 8px 0; padding: 8px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft);
+               border-radius: 0 8px 8px 0; font-size: 13.5px; color: var(--accent-ink); }
+  .amdts a { color: var(--accent); text-decoration: none; margin-right: 8px; white-space: nowrap; }
+  .amdts a:hover { text-decoration: underline; }
+
+  .rest { text-align: center; margin: 6px 0 0; }
+  .rest button { font: inherit; font-size: 14px; font-weight: 600; color: var(--accent); background: none;
+                 border: 1px dashed #b8c6e8; border-radius: 10px; padding: 8px 14px; cursor: pointer; }
+  .enter { animation: enter .38s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes enter { from { opacity: 0; transform: translateY(14px) scale(.985); } to { opacity: 1; transform: none; } }
+
+  footer { color: var(--muted); font-size: 12.5px; padding: 28px 0 40px; border-top: 1px solid var(--line); margin-top: 28px; }
+  footer p { margin: 0 0 6px; }
+  .empty { color: var(--muted); padding: 30px 0; }
+
+  @media (max-width: 900px) {
+    .profiles { grid-template-columns: repeat(2, 1fr); }
+    .card { grid-template-columns: 44px 1fr; }
+    .expo { grid-column: 2; }
+  }
+  @media (max-width: 560px) {
+    .top .pill { font-size: 11.5px; padding: 3px 9px; white-space: normal; text-align: right; }
+    .profile { padding: 10px 12px; }
+    .profile b { font-size: 14.5px; }
+    .profile kbd { display: none; }
+    .headline h1 { font-size: 25px; }
+    .card { grid-template-columns: 34px 1fr; gap: 10px 12px; padding: 16px; }
+    .rank { width: 34px; height: 34px; font-size: 17px; border-radius: 10px; }
+    .expo { grid-column: 1 / -1; }
+    .card h2 { font-size: 19px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .fade, .enter { animation: none; } .card { transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <div class="brand">Exposition<span>.</span></div>
+    <span class="pill"><span class="dot"></span>Sénat · Titres-restaurant · séance jeu. 19/11</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Choisissez une entreprise :
+    voici les amendements en attente qui la concernent, combien d'entreprises et d'employés sont exposés, et qui les porte au Sénat.</p>
+
+  <div class="profiles" id="profiles" role="group" aria-label="Entreprise"></div>
+
+  <section class="headline" id="headline" aria-live="polite"></section>
+
+  <div class="feed" id="feed"></div>
+
+  <footer>
+    <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (unités légales actives, tranches d'effectifs INSEE).</p>
+    <p>Employés concernés : fourchette basse – haute, calculée à partir des tranches d'effectifs INSEE de toute l'entreprise.
+      Critères extraits par IA à partir du texte de l'amendement, citation à l'appui (« détails »).</p>
+    <p>Soutien : nombre de groupes politiques qui déposent la même mesure. Majorité sénatoriale = Les Républicains + Union centriste.
+      C'est un signal descriptif, pas une prévision du vote.</p>
+  </footer>
+</main>
+
+<script>
+const N = "142";
+const TOP = 5;
+const fmt = n => n == null ? "—" : Number(n).toLocaleString("fr-FR");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const GROUP = g => g === "UCI" || g === "UC" ? "Union centriste" : g;
+const shortName = n => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
+const stripParen = s => String(s || "").replace(/\s*\(.*\)\s*$/, "").trim();
+const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
+
+async function load(path) {
+  const r = await fetch(path, { cache: "no-store" });
+  if (!r.ok) throw new Error(path);
+  return r.json();
+}
+function stored(key, fallback) { try { return localStorage.getItem(key) || fallback; } catch { return fallback; } }
+function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
+
+(async () => {
+  const [profiles, feed] = await Promise.all([load("data/profiles.json"), load(`data/feed_${N}.json`)]);
+  let current = stored("profile", profiles[0].siren);
+  if (!feed[current]) current = profiles[0].siren;
+  let showAll = false;
+
+  const pEl = document.getElementById("profiles");
+  const hEl = document.getElementById("headline");
+  const fEl = document.getElementById("feed");
+
+  function profileLabel(p) {
+    const cards = feed[p.siren] || [];
+    if (p.roles && p.roles.length) return p.roles.join(", ");
+    return stripParen(cards[0] && cards[0].matched_sector) || `NAF ${p.naf}`;
+  }
+
+  pEl.innerHTML = profiles.map((p, i) => `
+    <button class="profile" data-siren="${p.siren}" aria-pressed="false">
+      <kbd>${i + 1}</kbd>
+      <b>${esc(shortName(p.name))}</b>
+      <small>${esc(profileLabel(p))} · SIREN ${esc(p.siren)}</small>
+    </button>`).join("");
+  pEl.querySelectorAll("button").forEach(b => b.addEventListener("click", () => select(b.dataset.siren)));
+  document.addEventListener("keydown", e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    const i = parseInt(e.key, 10) - 1;
+    if (i >= 0 && i < profiles.length) select(profiles[i].siren);
+  });
+
+  function select(siren) {
+    if (siren === current) return;
+    current = siren; showAll = false; store("profile", current);
+    render(true);
+  }
+
+  function headline(p, cards) {
+    const name = shortName(p.name);
+    const maj = cards.filter(c => c.majority_groups && c.majority_groups.length).length;
+    const nAmdts = cards.reduce((s, c) => s + c.amendments.length, 0);
+    const multi = cards.filter(c => c.n_groups > 1).length;
+    if (!cards.length) return `<h1>Pour <em>${esc(name)}</em> : aucune mesure en attente.</h1>`;
+    const majTxt = maj === 0 ? "aucune portée par la majorité sénatoriale"
+      : `dont ${maj} ${maj > 1 ? "portées" : "portée"} par la majorité sénatoriale`;
+    return `<h1>Pour <em>${esc(name)}</em> : ${plural(cards.length, "mesure", "mesures")}, ${majTxt}.</h1>
+      <p>${plural(nAmdts, "amendement en attente", "amendements en attente")} · ${plural(multi, "mesure déposée", "mesures déposées")} par plusieurs groupes · classées par soutien</p>`;
+  }
+
+  function exposure(c) {
+    const sector = `<div class="sector">Secteur : ${esc(stripParen(c.matched_sector))}</div>`;
+    if (c.companies == null) {
+      return `<div class="expo"><div class="k">Exposition</div><div class="pending">comptage en cours</div>${sector}</div>`;
+    }
+    const emp = c.employees_low == null ? "—"
+      : c.employees_low === c.employees_high ? fmt(c.employees_low)
+      : `${fmt(c.employees_low)} – ${fmt(c.employees_high)}`;
+    return `<div class="expo"><div class="k">Exposition</div>
+      <div class="row"><div class="num">${fmt(c.companies)}</div><div class="lbl">entreprises concernées</div></div>
+      <div class="row"><div class="num sm">${emp}</div><div class="lbl">employés concernés</div></div>
+      ${sector}</div>`;
+  }
+
+  function card(c, i) {
+    const maj = new Set(c.majority_groups || []);
+    const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a))
+      .map(g => `<span class="chip${maj.has(g) ? " maj" : ""}">${esc(GROUP(g))}</span>`).join("");
+    const legend = maj.size ? `<span class="chip legend">en bleu : majorité sénatoriale</span>` : "";
+    const extra = c.effects.length > 1 ? ` <span class="more">+ ${c.effects.length - 1} variante${c.effects.length > 2 ? "s" : ""}</span>` : "";
+    const links = c.amendments.map(n => {
+      const num = String(n).split(" ")[0];
+      return `<a href="https://www.senat.fr/amendements/2026-2027/${N}/Amdt_${encodeURIComponent(num)}.html" target="_blank" rel="noopener">n°${esc(n)}</a>`;
+    }).join("");
+    return `
+      <article class="card${i === 0 ? " top1" : ""}" data-key="${esc(c.theme)}">
+        <div class="rank">${i + 1}</div>
+        <div>
+          <h2>${esc(c.theme)}</h2>
+          <p class="effect">${esc(c.effects[0])}${extra}</p>
+          <div class="support"><span class="count">${c.n_groups > 1 ? `Portée par ${c.n_groups} groupes` : "Un seul groupe"}</span>${groups}${legend}</div>
+          <details>
+            <summary>détails</summary>
+            <div class="det">
+              <p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>
+              ${c.effects.length > 1 ? `<p><span class="k">Variantes :</span> ${c.effects.map(esc).join(" · ")}</p>` : ""}
+              <blockquote>« ${esc(c.quote)} »</blockquote>
+              <p class="amdts"><span class="k">${plural(c.amendments.length, "amendement", "amendements")} :</span> ${links}</p>
+            </div>
+          </details>
+        </div>
+        ${exposure(c)}
+      </article>`;
+  }
+
+  function render(animate) {
+    pEl.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.siren === current)));
+    const p = profiles.find(x => x.siren === current);
+    const cards = feed[current] || [];
+
+    hEl.innerHTML = headline(p, cards);
+    if (animate) { hEl.classList.remove("fade"); void hEl.offsetWidth; hEl.classList.add("fade"); }
+
+    // FLIP: remember where each measure was, so shared measures visibly move to their new rank.
+    const before = new Map();
+    if (animate) fEl.querySelectorAll(".card").forEach(el => before.set(el.dataset.key, el.getBoundingClientRect().top));
+
+    if (!cards.length) { fEl.innerHTML = `<p class="empty">Aucun amendement en attente ne concerne cette entreprise.</p>`; return; }
+    const shown = showAll ? cards : cards.slice(0, TOP);
+    const rest = cards.length - shown.length;
+    fEl.innerHTML = shown.map(card).join("") +
+      (rest > 0 ? `<div class="rest"><button type="button" id="more">Voir ${plural(rest, "autre mesure", "autres mesures")}</button></div>` : "");
+    const more = document.getElementById("more");
+    if (more) more.onclick = () => { showAll = true; render(false); };
+
+    if (!animate) return;
+    fEl.querySelectorAll(".card").forEach((el, i) => {
+      const old = before.get(el.dataset.key);
+      if (old == null) {
+        el.style.animationDelay = `${i * 45}ms`;
+        el.classList.add("enter");
+        return;
+      }
+      const dy = old - el.getBoundingClientRect().top;
+      if (!dy) return;
+      el.style.transition = "none";
+      el.style.transform = `translateY(${dy}px)`;
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.style.transition = "transform .5s cubic-bezier(.2,.7,.2,1)";
+        el.style.transform = "";
+      }));
+    });
+  }
+  render(false);
+})().catch(e => {
+  document.getElementById("feed").innerHTML =
+    `<p class="empty">Impossible de charger les données (${esc(e.message)}). Lancez un serveur local : python3 -m http.server</p>`;
+});
+</script>
+</body>
+</html>

@@ -1200,8 +1200,8 @@
       "who": "Associations loi 1901 à gestion désintéressée qui servent des repas à leurs adhérents",
       "sectors": [
         {
-          "naf": "94.99Z",
-          "label": "Autres organisations fonctionnant par adhésion volontaire (associations)"
+          "naf": "",
+          "label": "Associations loi 1901 qui servent des repas à leurs adhérents (sous-ensemble de 94.99Z, non isolable)"
         }
       ],
       "employee_min": null,

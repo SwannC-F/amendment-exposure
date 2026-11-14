@@ -1,0 +1,550 @@
+{
+  "322566043": [
+    {
+      "number": "2",
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "author": "M. GOLD",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 5,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "RDSE",
+        "SER",
+        "UCI"
+      ],
+      "majority_groups": [
+        "UCI"
+      ],
+      "companies": 436204,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_2.html",
+      "quote": "ne peut être supérieur à 2,5 %",
+      "theme": "Plafonner les commissions des émetteurs",
+      "amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "29"
+      ],
+      "effects": [
+        "Plafond obligatoire des commissions : 2,5 %",
+        "Plafond des commissions rendu obligatoire (taux fixé par décret)",
+        "Plafond obligatoire des commissions : 3 % (repli)",
+        "Plafond obligatoire des commissions : 2 %"
+      ]
+    },
+    {
+      "number": "7",
+      "effect": "Titres utilisables le dimanche par tous les salariés",
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "author": "M. DOUSSOT",
+      "themes": [
+        "Utilisation le dimanche"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 4,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains",
+        "UNT"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 447419,
+      "not_counted": [],
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_7.html",
+      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires",
+      "theme": "Utilisation le dimanche",
+      "amendments": [
+        "7",
+        "12",
+        "31"
+      ],
+      "effects": [
+        "Titres utilisables le dimanche par tous les salariés",
+        "Titres utilisables tous les jours, dimanches et fériés compris"
+      ]
+    },
+    {
+      "number": "6",
+      "effect": "Supprime le double plafond journalier",
+      "who": "Supermarchés et commerces alimentaires (plafond unique conservé) ; restaurants (perdent le plafond majoré)",
+      "author": "M. DOUSSOT",
+      "themes": [
+        "Supprimer le double plafond journalier"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 3,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 447419,
+      "not_counted": [],
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_6.html",
+      "quote": "Alinéas 38 et 39 Supprimer ces alinéas.",
+      "theme": "Supprimer le double plafond journalier",
+      "amendments": [
+        "6",
+        "10"
+      ],
+      "effects": [
+        "Supprime le double plafond journalier"
+      ]
+    },
+    {
+      "number": "20",
+      "effect": "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement",
+      "who": "Supermarchés (perdent les achats de produits à cuisiner) ; primeurs (fruits et légumes conservés) ; restaurants",
+      "author": "Mme Nathalie DELATTRE",
+      "themes": [
+        "Limiter aux repas et fruits et légumes"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 357611,
+      "not_counted": [],
+      "employees_low": 1004764,
+      "employees_high": 1902011,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_20.html",
+      "quote": "de préparations alimentaires directement consommables, ainsi que de fruits et légumes",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "amendments": [
+        "20",
+        "24"
+      ],
+      "effects": [
+        "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement"
+      ]
+    },
+    {
+      "number": "1",
+      "effect": "Amende administrative jusqu'à 15 000 € (ou double de la valeur des titres)",
+      "who": "Commerces et restaurants qui rachètent des titres contre de l'argent (fraude)",
+      "author": "Mme Nathalie GOULET",
+      "themes": [
+        "Sanctionner le rachat frauduleux"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 1,
+      "groups": [
+        "UCI"
+      ],
+      "majority_groups": [
+        "UCI"
+      ],
+      "companies": 436204,
+      "not_counted": [],
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_1.html",
+      "quote": "Le fait, pour une personne ou un organisme acceptant des titres‑restaurant, de les accepter en contrepartie d’une somme d’argent",
+      "theme": "Sanctionner le rachat frauduleux",
+      "amendments": [
+        "1"
+      ],
+      "effects": [
+        "Amende administrative jusqu'à 15 000 € (ou double de la valeur des titres)"
+      ]
+    },
+    {
+      "number": "27",
+      "effect": "L'ANCV devient émetteur public, commissions ≤ 2,5 %",
+      "who": "Émetteurs privés (nouveau concurrent public, l'ANCV) ; commerçants (commission ANCV ≤ 2,5 %)",
+      "author": "Mme SOUYRIS",
+      "themes": [
+        "Pôle public d'émission (ANCV)"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 436204,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_27.html",
+      "quote": "Soit par l’Agence nationale pour les chèques‑vacances",
+      "theme": "Pôle public d'émission (ANCV)",
+      "amendments": [
+        "27"
+      ],
+      "effects": [
+        "L'ANCV devient émetteur public, commissions ≤ 2,5 %"
+      ]
+    },
+    {
+      "number": "19",
+      "effect": "Rend effectif le double plafond : moins pour les courses, plus pour les repas",
+      "who": "Restaurants (plafond majoré pour les repas) ; supermarchés (plafond réduit pour les produits à cuisiner)",
+      "author": "Mme Nathalie DELATTRE",
+      "themes": [
+        "Rendre effectif le double plafond journalier"
+      ],
+      "matched_sector": "Restauration traditionnelle",
+      "n_groups": 1,
+      "groups": [
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 349640,
+      "not_counted": [],
+      "employees_low": 991946,
+      "employees_high": 1878417,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_19.html",
+      "quote": "L’utilisation des titres‑restaurant est soumise à un plafond journalier différencié selon la nature des produits ou prestations acquis.",
+      "theme": "Rendre effectif le double plafond journalier",
+      "amendments": [
+        "19"
+      ],
+      "effects": [
+        "Rend effectif le double plafond : moins pour les courses, plus pour les repas"
+      ]
+    }
+  ],
+  "451321335": [
+    {
+      "number": "7",
+      "effect": "Titres utilisables le dimanche par tous les salariés",
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "author": "M. DOUSSOT",
+      "themes": [
+        "Utilisation le dimanche"
+      ],
+      "matched_sector": "Hypermarchés",
+      "n_groups": 4,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains",
+        "UNT"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 447419,
+      "not_counted": [],
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_7.html",
+      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires",
+      "theme": "Utilisation le dimanche",
+      "amendments": [
+        "7",
+        "12",
+        "31"
+      ],
+      "effects": [
+        "Titres utilisables le dimanche par tous les salariés",
+        "Titres utilisables tous les jours, dimanches et fériés compris"
+      ]
+    },
+    {
+      "number": "16",
+      "effect": "Supprime tout plafond journalier + utilisation tous les jours",
+      "who": "Supermarchés et commerces alimentaires (plus de plafond journalier, ouverture le dimanche)",
+      "author": "M. GONTARD",
+      "themes": [
+        "Supprimer le double plafond journalier",
+        "Utilisation le dimanche"
+      ],
+      "matched_sector": "Hypermarchés",
+      "n_groups": 4,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains",
+        "UNT"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 108994,
+      "not_counted": [],
+      "employees_low": 595783,
+      "employees_high": 1117474,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_16.html",
+      "quote": "L’utilisation des titres‑restaurant n’est limitée à aucun montant maximal journalier.",
+      "theme": "Supprimer le double plafond journalier",
+      "amendments": [
+        "16",
+        "6",
+        "10"
+      ],
+      "effects": [
+        "Supprime tout plafond journalier + utilisation tous les jours",
+        "Supprime le double plafond journalier"
+      ]
+    },
+    {
+      "number": "20",
+      "effect": "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement",
+      "who": "Supermarchés (perdent les achats de produits à cuisiner) ; primeurs (fruits et légumes conservés) ; restaurants",
+      "author": "Mme Nathalie DELATTRE",
+      "themes": [
+        "Limiter aux repas et fruits et légumes"
+      ],
+      "matched_sector": "Hypermarchés",
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 357611,
+      "not_counted": [],
+      "employees_low": 1004764,
+      "employees_high": 1902011,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_20.html",
+      "quote": "de préparations alimentaires directement consommables, ainsi que de fruits et légumes",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "amendments": [
+        "20",
+        "24"
+      ],
+      "effects": [
+        "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement"
+      ]
+    },
+    {
+      "number": "19",
+      "effect": "Rend effectif le double plafond : moins pour les courses, plus pour les repas",
+      "who": "Restaurants (plafond majoré pour les repas) ; supermarchés (plafond réduit pour les produits à cuisiner)",
+      "author": "Mme Nathalie DELATTRE",
+      "themes": [
+        "Rendre effectif le double plafond journalier"
+      ],
+      "matched_sector": "Hypermarchés",
+      "n_groups": 1,
+      "groups": [
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 349640,
+      "not_counted": [],
+      "employees_low": 991946,
+      "employees_high": 1878417,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_19.html",
+      "quote": "L’utilisation des titres‑restaurant est soumise à un plafond journalier différencié selon la nature des produits ou prestations acquis.",
+      "theme": "Rendre effectif le double plafond journalier",
+      "amendments": [
+        "19"
+      ],
+      "effects": [
+        "Rend effectif le double plafond : moins pour les courses, plus pour les repas"
+      ]
+    }
+  ],
+  "393365135": [
+    {
+      "number": "2",
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "author": "M. GOLD",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "matched_sector": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)",
+      "n_groups": 5,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "RDSE",
+        "SER",
+        "UCI"
+      ],
+      "majority_groups": [
+        "UCI"
+      ],
+      "companies": 436204,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_2.html",
+      "quote": "ne peut être supérieur à 2,5 %",
+      "theme": "Plafonner les commissions des émetteurs",
+      "amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "29"
+      ],
+      "effects": [
+        "Plafond obligatoire des commissions : 2,5 %",
+        "Plafond des commissions rendu obligatoire (taux fixé par décret)",
+        "Plafond obligatoire des commissions : 3 % (repli)",
+        "Plafond obligatoire des commissions : 2 %"
+      ]
+    },
+    {
+      "number": "27",
+      "effect": "L'ANCV devient émetteur public, commissions ≤ 2,5 %",
+      "who": "Émetteurs privés (nouveau concurrent public, l'ANCV) ; commerçants (commission ANCV ≤ 2,5 %)",
+      "author": "Mme SOUYRIS",
+      "themes": [
+        "Pôle public d'émission (ANCV)"
+      ],
+      "matched_sector": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)",
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 436204,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 798879,
+      "employees_high": 1512841,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_27.html",
+      "quote": "Soit par l’Agence nationale pour les chèques‑vacances",
+      "theme": "Pôle public d'émission (ANCV)",
+      "amendments": [
+        "27"
+      ],
+      "effects": [
+        "L'ANCV devient émetteur public, commissions ≤ 2,5 %"
+      ]
+    },
+    {
+      "number": "34",
+      "effect": "Dématérialisation obligatoire repoussée à 2031",
+      "who": "Imprimeurs de titres papier et émetteurs ; petites entreprises qui utilisent encore le papier",
+      "author": "M. HOCHART",
+      "themes": [
+        "Repousser la fin des titres papier"
+      ],
+      "matched_sector": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)",
+      "n_groups": 1,
+      "groups": [
+        "UNT"
+      ],
+      "majority_groups": [],
+      "companies": 8854,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 21225,
+      "employees_high": 42114,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_34.html",
+      "quote": "entre en vigueur le 1 er janvier 2031",
+      "theme": "Repousser la fin des titres papier",
+      "amendments": [
+        "34",
+        "35",
+        "36"
+      ],
+      "effects": [
+        "Dématérialisation obligatoire repoussée à 2031",
+        "Dématérialisation obligatoire repoussée à 2030 (repli)",
+        "Dématérialisation obligatoire repoussée à 2029 (repli)"
+      ]
+    },
+    {
+      "number": "32",
+      "effect": "Titres valables sans limite de durée",
+      "who": "Employeurs (ne récupèrent plus la contre-valeur des titres périmés) ; émetteurs",
+      "author": "M. HOCHART",
+      "themes": [
+        "Durée de validité des titres"
+      ],
+      "matched_sector": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)",
+      "n_groups": 1,
+      "groups": [
+        "UNT"
+      ],
+      "majority_groups": [],
+      "companies": null,
+      "not_counted": [
+        "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+      ],
+      "employees_low": 0,
+      "employees_high": 0,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_32.html",
+      "quote": "Les titres‑restaurant sont valables sans limitation de durée.",
+      "theme": "Durée de validité des titres",
+      "amendments": [
+        "32",
+        "33"
+      ],
+      "effects": [
+        "Titres valables sans limite de durée",
+        "Validité portée à 3 ans ; titres périmés versés au budget social et culturel"
+      ]
+    }
+  ],
+  "841983828": [
+    {
+      "number": "21 rect.",
+      "effect": "Plateformes de livraison exclues des titres-restaurant",
+      "who": "Plateformes de livraison (exclues) ; restaurants qui vendent en livraison",
+      "author": "Mme Nathalie DELATTRE",
+      "themes": [
+        "Exclure les plateformes de livraison"
+      ],
+      "matched_sector": "Plateformes de livraison de repas (pas de code NAF propre)",
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 174495,
+      "not_counted": [
+        "Plateformes de livraison de repas (pas de code NAF propre)"
+      ],
+      "employees_low": 251478,
+      "employees_high": 486074,
+      "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_21.html",
+      "quote": "à l’exclusion des contrats conclus par l’intermédiaire d’une plateforme de mise en relation par voie électronique",
+      "theme": "Exclure les plateformes de livraison",
+      "amendments": [
+        "21 rect.",
+        "26"
+      ],
+      "effects": [
+        "Plateformes de livraison exclues des titres-restaurant"
+      ]
+    }
+  ]
+}

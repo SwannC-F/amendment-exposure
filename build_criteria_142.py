@@ -83,7 +83,7 @@ C = {
  "27": dict(sectors=EMETTEURS + RESTO + COMMERCE, who="Émetteurs privés (nouveau concurrent public, l'ANCV) ; commerçants (commission ANCV ≤ 2,5 %)",
             effect="L'ANCV devient émetteur public, commissions ≤ 2,5 %",
             quote="Soit par l’Agence nationale pour les chèques‑vacances"),
- "28": dict(sectors=[{"naf": "94.99Z", "label": "Autres organisations fonctionnant par adhésion volontaire (associations)"}],
+ "28": dict(sectors=[{"naf": "", "label": "Associations loi 1901 qui servent des repas à leurs adhérents (sous-ensemble de 94.99Z, non isolable)"}],
             who="Associations loi 1901 à gestion désintéressée qui servent des repas à leurs adhérents",
             effect="Commissions plafonnées à 2,5 % pour ces associations",
             quote="aux associations régies par la loi du 1 er juillet 1901"),
