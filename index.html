@@ -300,19 +300,38 @@
     .tot .v { font-size: 21px; }
     .you { font-size: 19px; }
   }
+  .textpick { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 18px 0 0; font-size: 13.5px; color: var(--muted); }
+  .textpick label { display: inline-flex; gap: 6px; align-items: center; }
+  .textpick input { font: inherit; font-size: 14px; color: var(--ink); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; background: #fff; }
+  .textpick input[name="session"] { width: 104px; }
+  .textpick input[name="number"] { width: 72px; }
+  .textpick button { font: inherit; font-size: 13px; font-weight: 700; color: var(--accent); background: var(--accent-soft);
+                     border: 0; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+  .textpick .ttl { color: var(--ink); font-weight: 650; }
+  .textpick .warn { color: var(--loss); }
+  .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap top">
     <div class="brand">Exposition<span>.</span></div>
-    <span class="pill"><span class="dot"></span>Sénat · Titres-restaurant · séance jeu. 19/11</span>
+    <span class="pill"><span class="dot"></span><span id="pillText">chargement du texte…</span></span>
   </div>
 </header>
 
 <main class="wrap">
-  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Cherchez votre entreprise :
-    voici les amendements en attente qui la concernent, ce qu'ils déplacent pour elle en euros, combien d'entreprises et d'employés sont exposés, et qui les porte au Sénat.</p>
+  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Choisissez un texte en discussion au Sénat, puis cherchez votre entreprise :
+    voici les amendements en attente qui la concernent, ce qu'ils déplacent pour elle en euros, combien d'entreprises et d'employés sont exposés, et qui les porte.</p>
+
+  <form class="textpick" id="textpick" autocomplete="off">
+    <span>Texte du Sénat :</span>
+    <label>session <input name="session" inputmode="numeric" pattern="\d{4}-\d{4}" required></label>
+    <label>n° <input name="number" inputmode="numeric" pattern="\d{1,4}" required></label>
+    <button type="submit">Charger</button>
+    <span class="ttl" id="textTitle"></span>
+    <span id="textNote"></span>
+  </form>
 
   <div class="step"><b>1</b> · Votre entreprise</div>
   <div class="search">
@@ -322,13 +341,13 @@
     <div class="status" id="status" aria-live="polite"></div>
     <div class="results" id="results" role="listbox" hidden></div>
   </div>
-  <div class="presets" id="presets"><span>Exemples :</span></div>
+  <div class="presets" id="presets"></div>
   <div id="company"></div>
 
   <section class="live" id="live">
     <button type="button" class="live-head" id="liveHead" aria-expanded="false">
       <span class="pulse" aria-hidden="true"></span>
-      <span class="live-title">Sénat, en direct</span>
+      <span class="live-title" id="liveTitle">Sénat, en direct</span>
       <span class="live-meta" id="liveMeta">connexion…</span>
       <span class="live-toggle">Ouvrir</span>
     </button>
@@ -347,21 +366,47 @@
   <footer>
     <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (recherche-entreprises.api.gouv.fr : unités légales actives, code NAF, tranches d'effectifs INSEE, chiffre d'affaires publié) ;
       Sénat (Ameli, amendements depuis 2001) ; HATVP (répertoire des représentants d'intérêts).</p>
-    <p>Euros : fourchette basse – haute = chiffre d'affaires publié × taux par secteur, chaque taux tiré d'une source citée (« détails »).
+    <p>Euros : fourchette basse – haute = chiffre d'affaires publié × taux par secteur, chaque paramètre tiré d'une citation vérifiée (« détails »).
       Les mesures sont chiffrées séparément ; certaines sont des alternatives, les totaux ne sont donc pas un effet cumulé certain.</p>
     <p>Employés concernés : fourchette basse – haute, calculée à partir des tranches d'effectifs INSEE de toute l'entreprise.
       Critères extraits par IA à partir du texte de l'amendement, citation à l'appui (« détails »).</p>
-    <p>Soutien : nombre de groupes politiques qui déposent la même mesure. Majorité sénatoriale = Les Républicains + Union centriste.
-      C'est un signal descriptif, pas une prévision du vote.</p>
+    <p id="footMajority">Soutien : nombre de groupes politiques qui déposent la même mesure. C'est un signal descriptif, pas une prévision du vote.</p>
   </footer>
 </main>
 
 <script>
-const N = "142";
+/* All data is rendered as text: DOM nodes built with h() + text nodes, never parsed as HTML. */
 const TOP = 5;
 const API = "https://recherche-entreprises.api.gouv.fr/search";
+const DEFAULT_TEXT = { session: "2026-2027", number: "142" };
+const LEGACY = { "2026-2027/142": "data/engine_142.json" };   // only until data/2026-2027/142/engine.json exists
+
+/* ---------- DOM helper ---------- */
+function append(el, kids) {
+  for (const k of kids.flat(Infinity)) {
+    if (k == null || k === false || k === "") continue;
+    el.append(k instanceof Node ? k : String(k));
+  }
+  return el;
+}
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (v == null || v === false) continue;
+    if (k === "class") el.className = v;
+    else if (k === "style") el.style.cssText = v;
+    else if (k === "dataset") Object.assign(el.dataset, v);
+    else if (k.startsWith("on") && typeof v === "function") el.addEventListener(k.slice(2), v);
+    else if (k === "href") { if (/^https?:\/\//.test(String(v))) el.setAttribute("href", v); }
+    else el.setAttribute(k, v === true ? "" : String(v));
+  }
+  return append(el, kids);
+}
+const fill = (el, ...kids) => { el.replaceChildren(); return append(el, kids); };
+const ext = (href, ...kids) => h("a", { href, target: "_blank", rel: "noopener" }, ...kids);
+
+/* ---------- formatting ---------- */
 const fmt = n => n == null ? "—" : Number(n).toLocaleString("fr-FR");
-const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const GROUP = g => g === "UCI" || g === "UC" ? "Union centriste" : g === "LR" ? "Les Républicains" : g;
 const SMALL = new Set(["de", "des", "du", "la", "le", "les", "et", "en", "d", "l", "a", "à", "au", "aux", "pour", "sur"]);
 function titleCase(s) {
@@ -374,23 +419,24 @@ function titleCase(s) {
     });
   }).join("");
 }
+const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const shortName = n => String(n || "").replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
 const stripParen = s => String(s || "").replace(/\s*\(.*\)\s*$/, "").trim();
 const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
 const BANDS = {NN:"non employeur","00":"0 salarié","01":"1–2 salariés","02":"3–5 salariés","03":"6–9 salariés","11":"10–19 salariés",
   "12":"20–49 salariés","21":"50–99 salariés","22":"100–199 salariés","31":"200–249 salariés","32":"250–499 salariés",
   "41":"500–999 salariés","42":"1 000–1 999 salariés","51":"2 000–4 999 salariés","52":"5 000–9 999 salariés","53":"10 000 salariés et plus"};
-const NAF_FALLBACK = {"47.11F":"Hypermarchés","47.11D":"Supermarchés","47.21Z":"Commerce de détail de fruits et légumes",
-  "47.29Z":"Autres commerces de détail alimentaires","18.12Z":"Imprimerie","66.19B":"Autres activités auxiliaires de services financiers",
-  "63.12Z":"Portails internet","56.10A":"Restauration traditionnelle","56.10C":"Restauration de type rapide",
-  "10.71C":"Boulangerie et boulangerie-pâtisserie","47.24Z":"Commerce de détail de pain, pâtisserie"};
-const ROLES = [["Employeurs", "Vous distribuez des titres-restaurant à vos salariés", "Employeurs qui distribuent des titres-restaurant"],
-  ["Émetteurs", "Émetteur de titres"], ["Plateformes", "Plateforme de livraison"], ["Associations", "Association"]];
+// Closed role list (design 2026-11-14). Keys are compared accent- and case-insensitively, so "Émetteurs" == "emetteurs".
+const ROLE_LIST = [["employeurs", "Employeur"], ["emetteurs", "Émetteur"], ["plateformes", "Plateforme"], ["associations", "Association"],
+  ["collectivites", "Collectivité"], ["etat", "État"], ["menages", "Ménage"]];
+const ROLE_LABEL = Object.fromEntries(ROLE_LIST);
+const roleKey = r => norm(r).replace(/[^a-z]/g, "");
 const hasEmployees = c => !!c.band && c.band !== "NN" && c.band !== "00";
+const isNaf = s => /^\d\d\.\d\d[A-Z]$/.test(String(s || ""));
 
-// € range, always as a range, one unit for both bounds: k€ when the high bound is under 1 M€, else M€ (1 decimal).
 const nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 });
 const nf0 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 });
+// € range, one unit for both bounds: € under 1 k€, k€ under 1 M€, else M€ (1 decimal). Never "0 k€" for a non-zero value.
 function eurRange(r, perYear = true) {
   if (!r || r.low == null || r.high == null) return null;
   const max = Math.max(Math.abs(r.low), Math.abs(r.high));
@@ -399,7 +445,7 @@ function eurRange(r, perYear = true) {
     if (unit === "€") return nf0.format(v);
     if (unit === "M€") return nf1.format(v / 1e6);
     if (v === 0) return "0";
-    if (Math.abs(v) < 1e3) return `${nf0.format(v)} €`;   // never "0 k€" for a non-zero value
+    if (Math.abs(v) < 1e3) return `${nf0.format(v)} €`;
     return Math.abs(v) >= 1e4 ? nf0.format(v / 1e3) : nf1.format(v / 1e3);
   };
   const lo = f(r.low), hi = f(r.high);
@@ -415,27 +461,32 @@ function pctRange(r, ca) {
   return `≈ ${lo === hi ? lo : `${lo} – ${hi}`} % du CA`;
 }
 function numRange(lo, hi) {
-  const big = v => Math.abs(v) >= 1e6;
-  const f = v => big(v) ? `${nf1.format(v / 1e9 >= 1 ? v / 1e9 : v / 1e6)} ${v / 1e9 >= 1 ? "Md" : "M"}` : nf1.format(v);
+  const f = v => Math.abs(v) >= 1e6 ? `${nf1.format(v / 1e9 >= 1 ? v / 1e9 : v / 1e6)} ${v / 1e9 >= 1 ? "Md" : "M"}` : nf1.format(v);
   return lo === hi || hi == null ? f(lo) : `${f(lo)} – ${f(hi)}`;
 }
-// "label | https://… | label2 | https://…" → linked labels
-function sourceHtml(s) {
-  const parts = String(s || "").split(/\s*\|\s*/).filter(Boolean);
-  const out = [];
+// "label | https://… | label2 | https://…" → linked labels (nodes)
+function sourceNodes(s) {
+  const parts = String(s || "").split(/\s*\|\s*/).filter(Boolean), out = [];
   for (let i = 0; i < parts.length; i++) {
-    const p = parts[i];
-    if (/^https?:\/\//.test(p)) { out.push(`<a href="${esc(p)}" target="_blank" rel="noopener">lien</a>`); continue; }
-    const next = parts[i + 1];
-    if (next && /^https?:\/\//.test(next)) { out.push(`<a href="${esc(next)}" target="_blank" rel="noopener">${esc(p)}</a>`); i++; }
-    else out.push(esc(p));
+    const p = parts[i], next = parts[i + 1];
+    if (out.length) out.push(" · ");
+    if (/^https?:\/\//.test(p)) out.push(ext(p, "lien"));
+    else if (next && /^https?:\/\//.test(next)) { out.push(ext(next, p)); i++; }
+    else out.push(p);
   }
-  return out.join(" · ");
+  return out;
+}
+const DAYS = ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."];
+function seanceLabel(iso) {
+  const m = /^(\d{4})-(\d\d)-(\d\d)/.exec(String(iso || ""));
+  if (!m) return iso ? `séance ${iso}` : "";
+  const d = new Date(+m[1], +m[2] - 1, +m[3]);
+  return `séance ${DAYS[d.getDay()]} ${m[3]}/${m[2]}`;
 }
 
-async function load(path) {
+async function loadJson(path) {
   const r = await fetch(path, { cache: "no-store" });
-  if (!r.ok) throw new Error(path);
+  if (!r.ok) throw Object.assign(new Error(`${path} : HTTP ${r.status}`), { http: r.status });
   return r.json();
 }
 function stored(key) { try { return JSON.parse(localStorage.getItem(key) || "null"); } catch { return null; } }
@@ -449,93 +500,168 @@ function fromApi(r) {
   return {
     siren: r.siren, name: r.nom_complet || r.nom_raison_sociale, naf: r.activite_principale || "",
     band: r.tranche_effectif_salarie, city: r.siege?.libelle_commune || "",
-    ca: f?.ca ? f.ca : null,   // 0 means "not published", never a real turnover net: f?.resultat_net ?? null, year: y || null, source: "api",
+    ca: f?.ca ? f.ca : null,           // 0 means "not published", never a real turnover
+    net: f?.ca ? (f.resultat_net ?? null) : null,
+    year: f?.ca ? y : null, source: "api",
   };
 }
 
-(async () => {
-  const [engine, profiles] = await Promise.all([load(`data/engine_${N}.json`), load("data/profiles.json")]);
-  const measures = engine.measures || [];
-  const NAF_LABEL = { ...NAF_FALLBACK };
-  measures.forEach(m => (m.sectors || []).forEach(s => { if (/^\d\d\.\d\d[A-Z]$/.test(s.key)) NAF_LABEL[s.key] = s.label; }));
+const LIVE_OK = /^(localhost|127\.0\.0\.1|\[::1\]|::1)$/.test(location.hostname);
+const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
+
+(() => {
+  /* ---------- state ---------- */
+  let text = { ...DEFAULT_TEXT };
+  let engine = null, measures = [], NAF_LABEL = {}, ROLES_IN_DATA = [];
+  let company = null, roles = new Set(), showAll = false;
   const nafLabel = naf => NAF_LABEL[naf] || "";
+  const amdtUrl = n => `https://www.senat.fr/amendements/${text.session}/${text.number}/Amdt_${encodeURIComponent(String(n).split(" ")[0])}.html`;
 
-  let company = null;
-  let roles = new Set();
-  let showAll = false;
-  let activePreset = null;
+  const $ = id => document.getElementById(id);
+  const qEl = $("q"), rEl = $("results"), pEl = $("presets"), cEl = $("company"), hEl = $("headline"), fEl = $("feed");
+  const form = $("textpick");
 
-  const qEl = document.getElementById("q");
-  const rEl = document.getElementById("results");
-  const pEl = document.getElementById("presets");
-  const cEl = document.getElementById("company");
-  const hEl = document.getElementById("headline");
-  const fEl = document.getElementById("feed");
+  /* ---------- text picker + engine loading ---------- */
+  function readHash() {
+    const m = /^#?(\d{4}-\d{4})\/(\d{1,4})$/.exec(location.hash);
+    return m ? { session: m[1], number: m[2] } : null;
+  }
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const t = { session: form.session.value.trim(), number: String(parseInt(form.number.value, 10) || "") };
+    if (!/^\d{4}-\d{4}$/.test(t.session) || !t.number) return;
+    location.hash = `${t.session}/${t.number}`;
+  });
+  window.addEventListener("hashchange", () => { const t = readHash(); if (t) loadText(t); });
+
+  async function fetchEngine(t) {
+    const key = `${t.session}/${t.number}`;
+    try { return { engine: await loadJson(`data/${key}/engine.json`), from: "fichier" }; }
+    catch (e) { if (e.http !== 404) throw e; }
+    if (LEGACY[key]) return { engine: await loadJson(LEGACY[key]), from: "ancien format" };
+    // Only for a text with no file at all: ask the local server, which runs the pipeline (can take minutes, costs LLM calls).
+    if (LIVE_OK) {
+      fill($("textNote"), "texte pas encore analysé : le serveur lance le pipeline…");
+      try { return { engine: await loadJson(`${LIVE}/api/text/${t.session}/${t.number}`), from: "serveur" }; } catch {}
+    }
+    throw new Error(`Le texte n°${t.number} (${t.session}) n'est pas encore analysé. Lancez : python3 pipeline.py ${t.session} ${t.number}`);
+  }
+
+  async function loadText(t) {
+    text = t;
+    form.session.value = t.session; form.number.value = t.number;
+    fill($("textTitle")); fill($("textNote"), "chargement…");
+    try {
+      const res = await fetchEngine(t);
+      engine = res.engine; measures = engine.measures || [];
+      NAF_LABEL = {};
+      measures.forEach(m => (m.sectors || []).forEach(s => {
+        const k = s.naf || s.key; if (isNaf(k) && s.label) NAF_LABEL[k] = s.label;
+      }));
+      const present = new Set();
+      measures.forEach(m => {
+        (m.roles || []).forEach(r => present.add(roleKey(r)));
+        (m.chiffrage?.rates || []).forEach(r => r.role && present.add(roleKey(r.role)));
+      });
+      ROLES_IN_DATA = ROLE_LIST.filter(([k]) => present.has(k));
+      const tx = engine.text || {};
+      const title = tx.title || `Texte n°${t.number}`;
+      fill($("pillText"), [tx.chamber || "Sénat", title, seanceLabel(tx.seance)].filter(Boolean).join(" · "));
+      fill($("liveTitle"), `${tx.chamber || "Sénat"}, en direct`);
+      fill($("textTitle"), title);
+      fill($("textNote"), res.from === "fichier" ? "" : h("span", { class: res.from === "ancien format" ? "" : "" }, `(${res.from})`));
+      document.title = `Exposition — ${title}`;
+      const maj = engine.majority;
+      fill($("footMajority"), "Soutien : nombre de groupes politiques qui déposent la même mesure.",
+        Array.isArray(maj) && maj.length ? ` Majorité sénatoriale = ${maj.map(GROUP).join(" + ")} (en bleu).` : "",
+        " C'est un signal descriptif, pas une prévision du vote.");
+      renderExamples();
+      liveReset(); liveLoad();
+      render(false);
+    } catch (e) {
+      engine = null; measures = []; ROLES_IN_DATA = [];
+      fill($("pillText"), `Sénat · texte n°${t.number}`);
+      fill($("textNote"), h("span", { class: "warn" }, e.message));
+      fill(pEl); fill(hEl); fill(fEl); fill(cEl); $("scan").hidden = true;
+      liveReset(); liveOff("aucun texte chargé");
+    }
+  }
+
+  /* ---------- Examples generated from the data: one NAF per top measure ---------- */
+  function renderExamples() {
+    const seen = new Set(), ex = [];
+    for (const m of measures) {
+      const s = (m.sectors || []).find(x => isNaf(x.naf || x.key) && !seen.has(x.naf || x.key));
+      if (!s) continue;
+      const naf = s.naf || s.key; seen.add(naf);
+      ex.push({ naf, label: s.label || naf });
+      if (ex.length === 3) break;
+    }
+    if (!ex.length) { fill(pEl); return; }
+    fill(pEl, h("span", null, "Exemples de secteurs visés :"),
+      ex.map(x => h("button", { type: "button", class: "preset", title: `Entreprises actives en NAF ${x.naf}`,
+        onclick: () => searchSector(x.naf, x.label) }, stripParen(x.label), " ", h("kbd", null, x.naf))));
+  }
 
   /* ---------- Engine: which measures concern this company, and what they move for it ---------- */
   function evaluate(m) {
     const naf = company.naf;
     const rates = m.chiffrage?.rates || [];
     const nafRate = rates.find(r => r.nafs && r.nafs.includes(naf));
-    const roleRate = rates.find(r => r.role && roles.has(r.role));
-    const roleHit = (m.roles || []).find(r => roles.has(r));
+    const roleRate = rates.find(r => r.role && roles.has(roleKey(r.role)));
+    const roleHit = (m.roles || []).find(r => roles.has(roleKey(r)));
     // a role rate that is only "neutre" without amount does not by itself make the measure concern the company
-    const roleRateCounts = roleRate && !(roleRate.sign === "neutre" && !roleRate.eur);
-    const concerned = (m.nafs || []).includes(naf) || !!nafRate || !!roleHit || roleRateCounts;
-    if (!concerned) return null;
+    const roleRateCounts = roleRate && !(roleRate.sign === "neutre" && !roleRate.eur && roleRate.rate_low == null);
+    const byNaf = (m.nafs || []).includes(naf) || !!nafRate;
+    if (!byNaf && !roleHit && !roleRateCounts) return null;
 
     const rate = nafRate || roleRate || null;
     let you;
     if (!rate) you = { status: "no_rate" };
     else if (rate.rate_low != null) {
-      you = company.ca == null
-        ? { status: "no_ca", sign: rate.sign, method: rate.method, scope: rate.scope }
-        : { status: "ok", sign: rate.sign, method: rate.method, scope: rate.scope,
-            eur: { low: company.ca * rate.rate_low, high: company.ca * rate.rate_high } };
+      const base = { sign: rate.sign, method: rate.method, scope: rate.scope, quote: rate.quote };
+      you = company.ca == null ? { status: "no_ca", ...base }
+        : { status: "ok", ...base, eur: { low: company.ca * rate.rate_low, high: company.ca * (rate.rate_high ?? rate.rate_low) } };
     } else {
-      you = { status: rate.eur ? "ok" : "nd", sign: rate.sign, eur: rate.eur || null, method: rate.method, scope: rate.scope };
+      you = { status: rate.eur ? "ok" : "nd", sign: rate.sign, eur: rate.eur || null, method: rate.method, scope: rate.scope, quote: rate.quote };
     }
 
-    const role = roleHit || (roleRate && roleRate.role);
-    const byNaf = (m.nafs || []).includes(naf) || !!nafRate;
+    const role = roleKey(roleHit || (roleRate && roleRate.role) || "");
     const sectorLabel = byNaf
-      ? (m.sectors || []).find(s => s.key === naf)?.label || nafLabel(naf) || `NAF ${naf}`
-      : stripParen((m.sectors || []).find(s => role && s.key.toLowerCase().startsWith(role.toLowerCase().slice(0, 6)))?.label)
-        || (ROLES.find(r => r[0] === role)?.[2] ?? ROLES.find(r => r[0] === role)?.[1] ?? role);
+      ? (m.sectors || []).find(s => (s.naf || s.key) === naf)?.label || nafLabel(naf) || `NAF ${naf}`
+      : `Rôle : ${ROLE_LABEL[role] || role}`;
 
-    const h = m.history ? { ...m.history } : null;
-    if (h) {
+    const hist = m.history ? { ...m.history } : null;
+    if (hist) {
       const self = norm(shortName(company.name)).split(/[^a-z0-9]+/).find(w => w.length >= 3);
       const notSelf = arr => (arr || []).filter(o => !self || !norm(o).split(/[^a-z0-9]+/).includes(self));
-      h.allies = notSelf(you.sign === "gain" ? h.lobby_pour : you.sign === "perte" ? h.lobby_contre : []);
-      h.opponents = notSelf(you.sign === "gain" ? h.lobby_contre : you.sign === "perte" ? h.lobby_pour : []);
+      hist.allies = notSelf(you.sign === "gain" ? hist.lobby_pour : you.sign === "perte" ? hist.lobby_contre : []);
+      hist.opponents = notSelf(you.sign === "gain" ? hist.lobby_contre : you.sign === "perte" ? hist.lobby_pour : []);
     }
-    return { ...m, you, history: h, matched_sector: sectorLabel, by_role: !byNaf };
+    return { ...m, you, history: hist, matched_sector: sectorLabel, by_role: !byNaf };
   }
 
   /* ---------- Search as you type ---------- */
-  const sEl = document.getElementById("status");
+  const sEl = $("status");
   const wrapEl = qEl.closest(".search");
-  const cache = new Map();          // normalised query → { results, total }
-  let timer = null, ctrl = null, seq = 0, current = [], hi = -1, lastQ = "";
-  const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const cache = new Map();          // query → { results, total }
+  let timer = null, ctrl = null, seq = 0, current = [], hi = -1, lastQ = "", pendingEnter = false;
   const cleanQuery = q => { const d = q.replace(/[\s.]/g, ""); return /^\d{9}$/.test(d) ? d : q.trim().replace(/\s+/g, " "); };
-  const setBusy = on => { wrapEl.classList.toggle("busy", on); };
-  const status = html => { sEl.innerHTML = html || ""; };
+  const setBusy = on => wrapEl.classList.toggle("busy", on);
+  const status = (...kids) => fill(sEl, ...kids);
+  const resMsg = (msg, err) => { rEl.hidden = false; fill(rEl, h("div", { class: `res-msg${err ? " err" : ""}` }, msg)); };
 
-  let pendingEnter = false;
   qEl.addEventListener("input", () => {
-    activePreset = null; renderPresets(); pendingEnter = false;
+    pendingEnter = false;
     clearTimeout(timer);
     const q = cleanQuery(qEl.value);
-    if (q.length < 2) { if (ctrl) ctrl.abort(); setBusy(false); rEl.hidden = true; current = []; status(""); return; }
-    if (cache.has(q)) { show(q, cache.get(q)); return; }   // instant from memory
+    if (q.length < 2) { if (ctrl) ctrl.abort(); setBusy(false); rEl.hidden = true; current = []; status(); return; }
+    if (cache.has(q)) { show(q, cache.get(q)); return; }
     timer = setTimeout(() => search(q), 150);
   });
   qEl.addEventListener("keydown", e => {
     if (e.key === "Escape") { rEl.hidden = true; pendingEnter = false; return; }
-    // Enter typed before the suggestions arrived: pick the first one as soon as they do
-    if (e.key === "Enter" && (!current.length || lastQ !== cleanQuery(qEl.value))) { e.preventDefault(); pendingEnter = true; return; }
+    if (e.key === "Enter" && (!current.length || (lastQ && lastQ !== cleanQuery(qEl.value)))) { e.preventDefault(); pendingEnter = true; return; }
     if (!current.length) return;
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       e.preventDefault(); rEl.hidden = false;
@@ -543,321 +669,282 @@ function fromApi(r) {
       rEl.querySelector(".res.on")?.scrollIntoView({ block: "nearest" });
     } else if (e.key === "Enter") { e.preventDefault(); pick(current[Math.max(hi, 0)]); }
   });
-  document.addEventListener("click", e => { if (!e.target.closest(".search")) rEl.hidden = true; });
+  document.addEventListener("click", e => { if (!e.target.closest(".search") && !e.target.closest(".presets")) rEl.hidden = true; });
   qEl.addEventListener("focus", () => { if (current.length && cleanQuery(qEl.value).length >= 2) rEl.hidden = false; });
-  // A picked company name (or preset SIREN) is selected on focus/click, so typing replaces it instead of appending.
-  // Until the user types, any focus or click on the box selects the whole picked name.
+  // A picked company name is selected on focus/click, so typing replaces it instead of appending.
   const isPicked = () => company && (qEl.value === shortName(company.name) || qEl.value === company.siren);
   const selectPicked = () => { if (isPicked()) requestAnimationFrame(() => { if (isPicked()) qEl.select(); }); };
   qEl.addEventListener("focus", selectPicked);
   qEl.addEventListener("click", selectPicked);
   qEl.addEventListener("mouseup", e => { if (isPicked()) e.preventDefault(); });
 
-  async function apiSearch(q, signal) {
-    const url = `${API}?q=${encodeURIComponent(q)}&per_page=8&etat_administratif=A&minimal=true&include=siege,finances`;
+  async function apiSearch(params, signal) {
+    const usp = new URLSearchParams({ per_page: "8", etat_administratif: "A", minimal: "true", include: "siege,finances", ...params });
     const own = new AbortController();
     const t = setTimeout(() => own.abort(), 6000);
     if (signal) signal.addEventListener("abort", () => own.abort());
     try {
-      const r = await fetch(url, { signal: own.signal });
+      const r = await fetch(`${API}?${usp}`, { signal: own.signal });
       if (!r.ok) throw new Error(r.status === 429 ? "trop de requêtes, réessayez" : `HTTP ${r.status}`);
       const d = await r.json();
       return { results: (d.results || []).map(fromApi), total: d.total_results ?? (d.results || []).length };
     } finally { clearTimeout(t); }
   }
 
-  async function search(q) {
-    if (ctrl) ctrl.abort();           // cancel the stale request
+  async function search(q, params = { q }, label = null) {
+    if (ctrl) ctrl.abort();
     ctrl = new AbortController();
     const my = ++seq;
     setBusy(true);
-    status(`<span class="dim">Recherche dans le répertoire Sirene…</span>`);
+    status(h("span", { class: "dim" }, "Recherche dans le répertoire Sirene…"));
     try {
-      const res = await apiSearch(q, ctrl.signal);
+      const res = await apiSearch(params, ctrl.signal);
       if (my !== seq) return;
       cache.set(q, res);
-      show(q, res);
+      show(q, res, label);
     } catch (e) {
-      if (my !== seq) return;          // superseded: a newer request owns the UI
-      current = []; rEl.hidden = false;
-      rEl.innerHTML = `<div class="res-msg err">La recherche d'entreprises ne répond pas (${esc(e.name === "AbortError" ? "délai dépassé" : e.message || "réseau")}).
-        Les exemples ci-dessous fonctionnent hors ligne.</div>`;
-      status("");
+      if (my !== seq) return;
+      current = [];
+      resMsg(`La recherche d'entreprises ne répond pas (${e.name === "AbortError" ? "délai dépassé" : e.message || "réseau"}).`, true);
+      status();
     } finally { if (my === seq) setBusy(false); }
   }
-
-  function show(q, res) {
-    seq++; setBusy(false);             // a cached answer supersedes anything in flight
-    if (ctrl) ctrl.abort();
-    lastQ = q; current = res.results; hi = current.length ? 0 : -1;
-    rEl.hidden = false;
-    if (!current.length) {
-      rEl.innerHTML = `<div class="res-msg">Aucune entreprise trouvée pour « ${esc(q)} ».</div>`;
-      status(""); return;
-    }
-    if (pendingEnter && q === cleanQuery(qEl.value)) { pendingEnter = false; pick(current[0]); return; }
-    paintResults();
-    const tot = res.total || current.length;
-    status(tot > current.length
-      ? `${fmt(tot)} entreprises actives trouvées · ${current.length} premières affichées`
-      : `${plural(tot, "entreprise active trouvée", "entreprises actives trouvées")}`);
+  function searchSector(naf, label) {
+    qEl.value = stripParen(label); qEl.focus();
+    const key = `naf:${naf}`;
+    if (cache.has(key)) { show(key, cache.get(key), label); return; }
+    search(key, { activite_principale: naf }, label);
   }
 
-  // highlight the typed words (accent- and case-insensitive) in an escaped name
+  function show(q, res, sectorLabel = null) {
+    seq++; setBusy(false);
+    if (ctrl) ctrl.abort();
+    lastQ = sectorLabel ? "" : q; current = res.results; hi = current.length ? 0 : -1;
+    if (!current.length) { resMsg(sectorLabel ? "Aucune entreprise trouvée dans ce secteur." : `Aucune entreprise trouvée pour « ${q} ».`); status(); return; }
+    if (pendingEnter && q === cleanQuery(qEl.value)) { pendingEnter = false; pick(current[0]); return; }
+    rEl.hidden = false;
+    paintResults();
+    const tot = res.total || current.length;
+    status(sectorLabel ? `Secteur ${stripParen(sectorLabel)} · ` : "",
+      tot > current.length ? `${fmt(tot)} entreprises actives trouvées · ${current.length} premières affichées`
+        : plural(tot, "entreprise active trouvée", "entreprises actives trouvées"));
+  }
+
+  // highlight the typed words (accent- and case-insensitive) with text nodes + <mark>
   function mark(text, q) {
-    const words = norm(q).split(/\s+/).filter(w => w.length >= 2)
-      .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    if (!words.length) return esc(text);
+    text = String(text || "");
+    const words = norm(q).split(/\s+/).filter(w => w.length >= 2).map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
     const n = norm(text);
-    if (n.length !== text.length) return esc(text);
-    const re = new RegExp(words.join("|"), "g");
-    let out = "", last = 0, m;
+    if (!words.length || n.length !== text.length) return [text];
+    const re = new RegExp(words.join("|"), "g"), out = [];
+    let last = 0, m;
     while ((m = re.exec(n))) {
       if (!m[0].length) { re.lastIndex++; continue; }
-      out += esc(text.slice(last, m.index)) + `<mark>${esc(text.slice(m.index, m.index + m[0].length))}</mark>`;
+      out.push(text.slice(last, m.index), h("mark", null, text.slice(m.index, m.index + m[0].length)));
       last = m.index + m[0].length;
     }
-    return out + esc(text.slice(last));
+    out.push(text.slice(last));
+    return out;
   }
 
   function paintResults() {
-    rEl.innerHTML = current.map((c, i) => `
-      <button type="button" class="res${i === hi ? " on" : ""}" data-i="${i}" role="option" aria-selected="${i === hi}">
-        <b>${mark(c.name, lastQ)}</b>
-        <small>SIREN ${mark(c.siren, lastQ)} · NAF ${esc(c.naf || "—")}${nafLabel(c.naf) ? ` ${esc(nafLabel(c.naf))}` : ""}${c.city ? ` · ${esc(c.city)}` : ""}${BANDS[c.band] ? ` · ${esc(BANDS[c.band])}` : ""}</small>
-      </button>`).join("");
-    rEl.querySelectorAll(".res").forEach(b => {
-      b.addEventListener("mousedown", e => e.preventDefault()); // keep focus in the input
-      b.addEventListener("click", () => pick(current[+b.dataset.i]));
-      b.addEventListener("mousemove", () => { const i = +b.dataset.i; if (i !== hi) { hi = i; rEl.querySelectorAll(".res").forEach((x, j) => x.classList.toggle("on", j === hi)); } });
-    });
+    fill(rEl, current.map((c, i) => h("button", {
+      type: "button", class: `res${i === hi ? " on" : ""}`, role: "option", "aria-selected": String(i === hi),
+      onmousedown: e => e.preventDefault(), onclick: () => pick(c),
+      onmousemove: () => { if (i !== hi) { hi = i; rEl.querySelectorAll(".res").forEach((x, j) => x.classList.toggle("on", j === hi)); } },
+    }, h("b", null, mark(c.name, lastQ)),
+       h("small", null, "SIREN ", mark(c.siren, lastQ), ` · NAF ${c.naf || "—"}`, nafLabel(c.naf) ? ` ${nafLabel(c.naf)}` : "",
+         c.city ? ` · ${c.city}` : "", BANDS[c.band] ? ` · ${BANDS[c.band]}` : ""))));
   }
 
-  function pick(c, keepRoles = false) {
+  function pick(c) {
     if (!c) return;
-    rEl.hidden = true; current = []; status("");
+    rEl.hidden = true; current = []; status();
     qEl.value = shortName(c.name);
     company = c;
-    if (!keepRoles) roles = new Set();
-    if (hasEmployees(c)) roles.add("Employeurs");
+    roles = new Set();
+    if (hasEmployees(c) && ROLES_IN_DATA.some(([k]) => k === "employeurs")) roles.add("employeurs");
     showAll = false;
-    store("company", { company, roles: [...roles], preset: activePreset });
+    store("company", { company, roles: [...roles] });
     render(true);
   }
 
-  /* ---------- Presets (1–4) ---------- */
-  function renderPresets() {
-    pEl.innerHTML = `<span>Exemples :</span>` + profiles.map((p, i) => `
-      <button type="button" class="preset${activePreset === p.siren ? " on" : ""}" data-i="${i}">
-        ${esc(shortName(p.name))} <kbd>${i + 1}</kbd></button>`).join("");
-    pEl.querySelectorAll(".preset").forEach(b => b.addEventListener("click", () => usePreset(+b.dataset.i)));
-  }
-  async function usePreset(i) {
-    const p = profiles[i]; if (!p) return;
-    activePreset = p.siren; renderPresets();
-    qEl.value = p.siren; rEl.hidden = true; ++seq;
-    let c = null;
-    try { c = (await apiSearch(p.siren)).results.find(x => x.siren === p.siren) || null; } catch {}
-    if (activePreset !== p.siren) return; // another choice happened meanwhile
-    if (!c) c = { siren: p.siren, name: p.name, naf: p.naf, band: p.headcount_band, city: p.city || "",
-                  ca: null, net: null, year: null, source: "offline" };
-    roles = new Set(p.roles || []);
-    pick(c, true);
-  }
-  document.addEventListener("keydown", e => {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.target.closest && e.target.closest("input, textarea")) return;
-    const i = parseInt(e.key, 10) - 1;
-    if (i >= 0 && i < profiles.length) usePreset(i);
-  });
-
   /* ---------- Rendering ---------- */
   function companyCard() {
-    const c = company;
-    const lbl = nafLabel(c.naf);
+    const c = company, lbl = nafLabel(c.naf);
     const fin = c.ca != null
-      ? `<div class="fin"><div class="ca">${eurRange({ low: c.ca, high: c.ca }, false)}</div>
-           <small>chiffre d'affaires ${esc(c.year || "")}${c.net != null ? ` · résultat net ${eurRange({ low: c.net, high: c.net }, false)}` : ""}</small></div>`
-      : `<div class="fin"><small>CA non publié</small></div>`;
-    const roleBtns = ROLES.map(([k, l]) => `<button type="button" class="role" data-role="${esc(k)}" aria-pressed="${roles.has(k)}">${esc(l)}</button>`).join("");
-    return `<div class="company">
-      <div><h3>${esc(shortName(c.name))}</h3>
-        <div class="facts"><span>SIREN <b>${esc(c.siren)}</b></span>
-          <span>NAF <b>${esc(c.naf || "—")}</b>${lbl ? ` ${esc(lbl)}` : ""}</span>
-          ${c.city ? `<span>${esc(c.city)}</span>` : ""}
-          ${BANDS[c.band] ? `<span>${esc(BANDS[c.band])}</span>` : ""}</div></div>
-      ${fin}
-      <div class="roles"><span>Vous êtes aussi :</span>${roleBtns}</div>
-    </div>${c.source === "offline" ? `<p class="notice">Recherche d'entreprises indisponible : données de secours (NAF connu, chiffre d'affaires non disponible).</p>` : ""}`;
+      ? h("div", { class: "fin" }, h("div", { class: "ca" }, eurRange({ low: c.ca, high: c.ca }, false)),
+          h("small", null, `chiffre d'affaires ${c.year || ""}`, c.net != null ? ` · résultat net ${eurRange({ low: c.net, high: c.net }, false)}` : ""))
+      : h("div", { class: "fin" }, h("small", null, "CA non publié"));
+    const roleRow = ROLES_IN_DATA.length ? h("div", { class: "roles" }, h("span", null, "Vous êtes aussi :"),
+      ROLES_IN_DATA.map(([k, l]) => h("button", { type: "button", class: "role", "aria-pressed": String(roles.has(k)),
+        onclick: () => { roles.has(k) ? roles.delete(k) : roles.add(k); store("company", { company, roles: [...roles] }); render(true); } }, l))) : null;
+    return h("div", { class: "company" },
+      h("div", null, h("h3", null, shortName(c.name)),
+        h("div", { class: "facts" }, h("span", null, "SIREN ", h("b", null, c.siren)),
+          h("span", null, "NAF ", h("b", null, c.naf || "—"), lbl ? ` ${lbl}` : ""),
+          c.city ? h("span", null, c.city) : null, BANDS[c.band] ? h("span", null, BANDS[c.band]) : null)),
+      fin, roleRow);
   }
 
   function headline(cards) {
     const name = shortName(company.name);
-    if (!cards.length) return `<h1>Pour <em>${esc(name)}</em> : aucune mesure en attente.</h1>
-      <p>Aucune mesure en attente ne vise votre secteur (NAF ${esc(company.naf || "inconnu")}${nafLabel(company.naf) ? `, ${esc(nafLabel(company.naf))}` : ""}).
-      Si vous distribuez des titres-restaurant, ou êtes émetteur, plateforme ou association, cochez-le ci-dessus.</p>`;
+    if (!cards.length) return [h("h1", null, "Pour ", h("em", null, name), " : aucune mesure en attente."),
+      h("p", null, `Aucune mesure en attente ne vise votre secteur (NAF ${company.naf || "inconnu"}${nafLabel(company.naf) ? `, ${nafLabel(company.naf)}` : ""}).`,
+        ROLES_IN_DATA.length ? " Si l'un des rôles ci-dessus vous correspond, cochez-le." : "")];
     const maj = cards.filter(c => c.majority_groups && c.majority_groups.length).length;
-    const nAmdts = cards.reduce((s, c) => s + c.amendments.length, 0);
-    const majTxt = maj === 0 ? "aucune portée par la majorité sénatoriale"
-      : `dont ${maj} ${maj > 1 ? "portées" : "portée"} par la majorité sénatoriale`;
+    const nAmdts = cards.reduce((s, c) => s + (c.amendments || []).length, 0);
+    const majTxt = maj === 0 ? "aucune portée par la majorité sénatoriale" : `dont ${maj} ${maj > 1 ? "portées" : "portée"} par la majorité sénatoriale`;
     const sum = sign => {
       const xs = cards.filter(c => c.you.sign === sign && c.you.eur);
-      if (!xs.length) return null;
-      return { n: xs.length, low: xs.reduce((s, c) => s + c.you.eur.low, 0), high: xs.reduce((s, c) => s + c.you.eur.high, 0) };
+      return xs.length ? { n: xs.length, low: xs.reduce((s, c) => s + c.you.eur.low, 0), high: xs.reduce((s, c) => s + c.you.eur.high, 0) } : null;
     };
     const tile = (sign, label) => {
-      const s = sum(sign); if (!s) return "";
+      const s = sum(sign); if (!s) return null;
       const pct = pctRange(s, company.ca);
-      return `<div class="tot ${sign}"><small>${label} (${plural(s.n, "mesure chiffrée", "mesures chiffrées")})</small>
-        <div class="v">${eurRange(s)}</div>${pct ? `<div class="pct">${pct}</div>` : ""}</div>`;
+      return h("div", { class: `tot ${sign}` }, h("small", null, `${label} (${plural(s.n, "mesure chiffrée", "mesures chiffrées")})`),
+        h("div", { class: "v" }, eurRange(s)), pct ? h("div", { class: "pct" }, pct) : null);
     };
     const nd = cards.filter(c => !c.you.eur).length;
-    const tiles = tile("gain", "Gains possibles") + tile("perte", "Pertes possibles");
-    return `<h1>Pour <em>${esc(name)}</em> : ${plural(cards.length, "mesure", "mesures")}, ${majTxt}.</h1>
-      <p>${plural(nAmdts, "amendement en attente", "amendements en attente")} · classées par soutien
-        ${nd ? ` · ${plural(nd, "mesure non chiffrée", "mesures non chiffrées")} pour vous` : ""}</p>
-      ${tiles ? `<div class="totals">${tiles}</div>` : ""}`;
+    const tiles = [tile("gain", "Gains possibles"), tile("perte", "Pertes possibles")].filter(Boolean);
+    return [h("h1", null, "Pour ", h("em", null, name), ` : ${plural(cards.length, "mesure", "mesures")}, ${majTxt}.`),
+      h("p", null, `${plural(nAmdts, "amendement en attente", "amendements en attente")} · classées par soutien`,
+        nd ? ` · ${plural(nd, "mesure non chiffrée", "mesures non chiffrées")} pour vous` : ""),
+      tiles.length ? h("div", { class: "totals" }, tiles) : null];
   }
 
   function exposure(c) {
-    const sector = `<div class="sector">Secteur : ${esc(stripParen(c.matched_sector))}</div>`;
-    const nc = (c.not_counted || []).map(stripParen).filter(Boolean);
-    if (c.by_role) {
-      return `<div class="expo"><div class="k">Exposition</div><div class="num sm">non chiffrée pour ce rôle</div>
-        <div class="lbl">Le comptage d'entreprises porte sur les secteurs visés par leur code NAF, pas sur ce rôle.</div>${sector}</div>`;
-    }
-    if (c.companies == null) {
-      const list = nc.length ? `<div class="lbl">${nc.map(esc).join(" · ")} : pas de code NAF propre</div>` : "";
-      return `<div class="expo"><div class="k">Exposition</div><div class="num sm">non chiffré</div>${list}${sector}</div>`;
-    }
-    const ncLine = nc.length ? `<div class="nc">+ non chiffré : ${nc.map(esc).join(" · ")}</div>` : "";
+    const sector = h("div", { class: "sector" }, `Secteur : ${stripParen(c.matched_sector)}`);
+    const nc = (c.not_counted || []).map(x => ROLE_LABEL[roleKey(x)] || stripParen(x)).filter(Boolean);
+    const k = h("div", { class: "k" }, "Exposition");
+    if (c.by_role) return h("div", { class: "expo" }, k, h("div", { class: "num sm" }, "non chiffrée pour ce rôle"),
+      h("div", { class: "lbl" }, "Le comptage d'entreprises porte sur les secteurs visés par leur code NAF, pas sur ce rôle."), sector);
+    if (c.companies == null) return h("div", { class: "expo" }, k, h("div", { class: "num sm" }, "non chiffré"),
+      nc.length ? h("div", { class: "lbl" }, `${nc.join(" · ")} : pas de code NAF propre`) : null, sector);
     const top = c.open_top ? "+" : "";
-    const emp = c.employees_low == null ? "—"
-      : c.employees_low === c.employees_high ? `≈ ${fmt(c.employees_low)}${top}`
+    const emp = c.employees_low == null ? "—" : c.employees_low === c.employees_high ? `≈ ${fmt(c.employees_low)}${top}`
       : `≈ ${fmt(c.employees_low)} – ${fmt(c.employees_high)}${top}`;
-    return `<div class="expo"><div class="k">Exposition</div>
-      <div class="row"><div class="num">≈ ${fmt(c.companies)}</div><div class="lbl">entreprises des secteurs visés</div></div>
-      <div class="row"><div class="num sm">${emp}</div><div class="lbl">employés concernés</div></div>
-      ${ncLine}${sector}</div>`;
+    return h("div", { class: "expo" }, k,
+      h("div", { class: "row" }, h("div", { class: "num" }, `≈ ${fmt(c.companies)}`), h("div", { class: "lbl" }, "entreprises des secteurs visés")),
+      h("div", { class: "row" }, h("div", { class: "num sm" }, emp), h("div", { class: "lbl" }, "employés concernés")),
+      nc.length ? h("div", { class: "nc" }, `+ non chiffré : ${nc.join(" · ")}`) : null, sector);
   }
 
+  const sideLabel = x => typeof x === "string" ? x : x?.label || x?.naf || ROLE_LABEL[roleKey(x?.role)] || "";
+
   function chiffrage(ch, y) {
-    let you = "";
+    const main = [], det = [];
     if (y.status === "no_rate") {
-      you = `<div><div class="you"><span class="lead">Pour vous</span><span class="nd">non chiffré pour votre secteur</span></div></div>`;
+      main.push(h("div", null, h("div", { class: "you" }, h("span", { class: "lead" }, "Pour vous"), h("span", { class: "nd" }, "non chiffré pour votre secteur"))));
     } else if (y.sign) {
       const amt = y.status === "ok" ? eurRange(y.eur) : null;
       const nd = y.status === "no_ca" ? "CA non publié" : `non chiffré${y.sign === "perte" ? "e" : ""}`;
-      const val = y.sign === "neutre" ? "neutre"
-        : `${y.sign === "gain" ? "gain" : "perte"} ${amt ? `de ${amt}` : `<span class="nd">${nd}</span>`}`;
-      const pct = amt && y.sign !== "neutre" ? pctRange(y.eur, company.ca) : null;
-      you = `<div><div class="you ${esc(y.sign)}"><span class="lead">Pour vous</span><span>${val}</span>${pct ? `<span class="nd">${pct}</span>` : ""}</div></div>`;
+      const val = y.sign === "neutre" ? "neutre" : [y.sign === "gain" ? "gain " : "perte ", amt ? `de ${amt}` : h("span", { class: "nd" }, nd)];
+      const pct = amt && y.sign !== "neutre" ? pctRange(y.eur, company?.ca) : null;
+      main.push(h("div", null, h("div", { class: `you ${y.sign === "gain" || y.sign === "perte" ? y.sign : ""}` },
+        h("span", { class: "lead" }, "Pour vous"), h("span", null, val), pct ? h("span", { class: "nd" }, pct) : null)));
     }
-    const how = y.method || y.scope
-      ? `<p class="how" title="${esc([y.method, y.scope].filter(Boolean).join(" — "))}"><b>Comment on calcule :</b> ${esc(y.method || "")}${y.scope ? ` <span>(${esc(y.scope)})</span>` : ""}</p>` : "";
-    if (!ch) return { main: you + how, det: "" };
+    if (y.method || y.scope) main.push(h("p", { class: "how", title: [y.method, y.scope].filter(Boolean).join(" — ") },
+      h("b", null, "Comment on calcule : "), y.method || "", y.scope ? ` (${y.scope})` : ""));
+    if (!ch) return { main, det };
     const tot = eurRange(ch.total_eur_per_year);
-    const total = tot ? `<p class="total">Au total : <b>${tot}</b> déplacés</p>`
-                      : `<p class="total">Au total : <b>montant non chiffrable</b></p>`;
-    const chips = (arr, cls) => (arr || []).map(x =>
-      `<span class="chip ${cls}" title="${esc(x)}">${esc(stripParen(x) || x)}</span>`).join("");
-    const sides = (ch.winners?.length || ch.losers?.length) ? `<div class="sides">
-        ${ch.winners?.length ? `<span class="lab">Gagnants :</span>${chips(ch.winners, "w")}` : ""}
-        ${ch.winners?.length && ch.losers?.length ? `<span class="sep"></span>` : ""}
-        ${ch.losers?.length ? `<span class="lab">Perdants :</span>${chips(ch.losers, "l")}` : ""}</div>` : "";
-    const params = (ch.parameters || []).map(p => `<li>${esc(p.name)} : <span class="pv">${numRange(p.low, p.high)} ${esc(p.unit || "")}</span>
-        ${p.quote ? `<i>« ${esc(p.quote)} »</i>` : ""}${p.source ? `<span class="src">Source : ${sourceHtml(p.source)}</span>` : ""}</li>`).join("");
-    const det = `
-      ${ch.mechanism ? `<p><span class="k">Mécanisme :</span> ${esc(ch.mechanism)}</p>` : ""}
-      ${y.method ? `<p><span class="k">Calcul pour vous :</span> ${esc(y.method)}${y.scope ? ` (${esc(y.scope)})` : ""}</p>` : ""}
-      ${ch.not_computable ? `<p><span class="k">${tot ? "Note sur le total" : "Pourquoi non chiffrable"} :</span> ${esc(ch.not_computable)}</p>` : ""}
-      ${ch.winners?.length || ch.losers?.length ? `<p><span class="k">Gagnants :</span> ${(ch.winners || []).map(esc).join(" ; ") || "—"}<br>
-        <span class="k">Perdants :</span> ${(ch.losers || []).map(esc).join(" ; ") || "—"}</p>` : ""}
-      ${params ? `<p class="k" style="margin-bottom:0">Paramètres sourcés</p><ul class="params">${params}</ul>` : ""}`;
-    return { main: you + how + total + sides, det };
+    main.push(h("p", { class: "total" }, "Au total : ", h("b", null, tot || "montant non chiffrable"), tot ? " déplacés" : ""));
+    const W = (ch.winners || []).map(sideLabel).filter(Boolean), L = (ch.losers || []).map(sideLabel).filter(Boolean);
+    const chips = (arr, cls) => arr.map(x => h("span", { class: `chip ${cls}`, title: x }, stripParen(x) || x));
+    if (W.length || L.length) main.push(h("div", { class: "sides" },
+      W.length ? [h("span", { class: "lab" }, "Gagnants :"), chips(W, "w")] : null,
+      W.length && L.length ? h("span", { class: "sep" }) : null,
+      L.length ? [h("span", { class: "lab" }, "Perdants :"), chips(L, "l")] : null));
+    const kv = (k, ...v) => h("p", null, h("span", { class: "k" }, `${k} : `), ...v);
+    if (ch.mechanism) det.push(kv("Mécanisme", ch.mechanism));
+    if (y.method) det.push(kv("Calcul pour vous", y.method, y.scope ? ` (${y.scope})` : ""));
+    if (y.quote) det.push(h("blockquote", null, `« ${y.quote} »`));
+    if (ch.not_computable) det.push(kv(tot ? "Note sur le total" : "Pourquoi non chiffrable", ch.not_computable));
+    if (W.length || L.length) det.push(h("p", null, h("span", { class: "k" }, "Gagnants : "), W.join(" ; ") || "—", h("br"),
+      h("span", { class: "k" }, "Perdants : "), L.join(" ; ") || "—"));
+    // parameters: old shape (parameters[]) or design shape (base, delta, shares[])
+    const params = [...(ch.parameters || [])];
+    if (ch.base) params.push({ ...ch.base, name: ch.base.name || "Assiette" });
+    if (ch.delta) params.push({ ...ch.delta, name: ch.delta.name || "Écart" });
+    (ch.shares || []).forEach(s => params.push({ ...s, name: `Part ${s.nafs?.length ? `NAF ${s.nafs.join(", ")}` : ROLE_LABEL[roleKey(s.role)] || s.role || ""}`, unit: s.unit || "part" }));
+    if (params.length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Paramètres sourcés"),
+      h("ul", { class: "params" }, params.map(p => h("li", null, `${p.name} : `,
+        h("span", { class: "pv" }, `${numRange(p.low, p.high)} ${p.unit || ""}`),
+        p.quote ? h("i", null, `« ${p.quote} »`) : null,
+        p.source ? h("span", { class: "src" }, "Source : ", sourceNodes(p.source)) : null,
+        p.amendment ? h("span", { class: "src" }, "Source : ", ext(amdtUrl(p.amendment), `amendement n°${p.amendment}`)) : null))));
+    return { main, det };
   }
 
-  function history(h) {
-    if (!h) return { main: "", det: "" };
+  function history(hh) {
+    if (!hh) return { main: [], det: [] };
     const list = (arr, cls) => {
       const names = (arr || []).map(titleCase);
-      const shown = names.slice(0, 4).map(n => `<span class="chip ${cls}">${esc(n)}</span>`).join("");
-      return shown + (names.length > 4 ? `<span class="chip legend" title="${esc(names.slice(4).join(", "))}">+${names.length - 4}</span>` : "");
+      return [names.slice(0, 4).map(n => h("span", { class: `chip ${cls}` }, n)),
+        names.length > 4 ? h("span", { class: "chip legend", title: names.slice(4).join(", ") }, `+${names.length - 4}`) : null];
     };
     const rows = [];
-    if (h.allies?.length) rows.push(`<div class="sides"><span class="lab">Vos alliés :</span>${list(h.allies, "w")}</div>`);
-    if (h.opponents?.length) rows.push(`<div class="sides"><span class="lab">Vos adversaires :</span>${list(h.opponents, "l")}</div>`);
-    const lobby = rows.length ? `<div class="lobby">${rows.join("")}</div>` : "";
-    const f = h.findings?.[0];
-    const deja = f?.text ? `<p class="deja" title="${esc(f.text)}"><b>Déjà au Sénat :</b> ${esc(f.text)}</p>` : "";
-
-    const groups = Object.entries(h.senate_by_group || {});
-    const table = groups.length ? `<p class="k" style="margin-bottom:0">Amendements déjà déposés au Sénat, par groupe</p>
-      <table class="hist"><thead><tr><th>Groupe</th><th>Déposés</th><th>Adoptés</th><th>Rejetés</th><th>Pour la mesure</th><th>Contre</th><th>Années</th></tr></thead><tbody>
-      ${groups.map(([g, s]) => `<tr><td>${esc(GROUP(g))}</td><td>${s.filed ?? "—"}</td><td>${s.adopted ?? "—"}</td><td>${s.rejected ?? "—"}</td>
-        <td class="pc w">${s.pour ?? "—"}</td><td class="pc l">${s.contre ?? "—"}</td><td>${esc((s.years || []).join(", "))}</td></tr>`).join("")}</tbody></table>` : "";
-    const findings = (h.findings || []).length ? `<p class="k" style="margin-bottom:0">Ce qui s'est déjà passé</p><ul class="params">
-      ${h.findings.map(x => `<li>${esc(x.text)}${x.source ? `<span class="src"> — ${sourceHtml(x.source)}</span>` : ""}</li>`).join("")}</ul>` : "";
-    const quotes = (h.lobby_quotes || []).length ? `<p class="k" style="margin-bottom:0">Positions déclarées à la HATVP</p><ul class="params">
-      ${h.lobby_quotes.map(q => `<li><b>${esc(titleCase(q.org))}</b> · ${esc(q.year ?? "")} ·
-        <span class="side ${q.side === "contre" ? "l" : "w"}">${esc(q.side)}</span>
-        ${q.quote ? `<i>« ${esc(q.quote)} »</i>` : ""}${q.fiche ? `<span class="src">fiche HATVP ${esc(q.fiche)}</span>` : ""}</li>`).join("")}</ul>` : "";
-    return { main: lobby + deja, det: findings + table + quotes };
+    if (hh.allies?.length) rows.push(h("div", { class: "sides" }, h("span", { class: "lab" }, "Vos alliés :"), list(hh.allies, "w")));
+    if (hh.opponents?.length) rows.push(h("div", { class: "sides" }, h("span", { class: "lab" }, "Vos adversaires :"), list(hh.opponents, "l")));
+    const main = [];
+    if (rows.length) main.push(h("div", { class: "lobby" }, rows));
+    const f = hh.findings?.[0];
+    if (f?.text) main.push(h("p", { class: "deja", title: f.text }, h("b", null, "Déjà au Sénat : "), f.text));
+    const det = [];
+    if ((hh.findings || []).length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Ce qui s'est déjà passé"),
+      h("ul", { class: "params" }, hh.findings.map(x => h("li", null, x.text, x.source ? h("span", { class: "src" }, " — ", sourceNodes(x.source)) : null))));
+    const groups = Object.entries(hh.senate_by_group || {});
+    if (groups.length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Amendements déjà déposés au Sénat, par groupe"),
+      h("table", { class: "hist" },
+        h("thead", null, h("tr", null, ["Groupe", "Déposés", "Adoptés", "Rejetés", "Pour la mesure", "Contre", "Années"].map(t => h("th", null, t)))),
+        h("tbody", null, groups.map(([g, s]) => h("tr", null, h("td", null, GROUP(g)), h("td", null, s.filed ?? "—"), h("td", null, s.adopted ?? "—"),
+          h("td", null, s.rejected ?? "—"), h("td", { class: "pc w" }, s.pour ?? "—"), h("td", { class: "pc l" }, s.contre ?? "—"),
+          h("td", null, (s.years || []).join(", ")))))));
+    if ((hh.lobby_quotes || []).length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Positions déclarées à la HATVP"),
+      h("ul", { class: "params" }, hh.lobby_quotes.map(q => h("li", null, h("b", null, titleCase(q.org)), ` · ${q.year ?? ""} · `,
+        h("span", { class: `side ${q.side === "contre" ? "l" : "w"}` }, q.side || ""),
+        q.quote ? h("i", null, `« ${q.quote} »`) : null, q.fiche ? h("span", { class: "src" }, `fiche HATVP ${q.fiche}`) : null))));
+    return { main, det };
   }
 
   function card(c, i, rank) {
-    const ch = chiffrage(c.chiffrage, c.you);
-    const hi = history(c.history);
+    const ch = chiffrage(c.chiffrage, c.you || {});
+    const hs = history(c.history);
     const maj = new Set(c.majority_groups || []);
-    const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a))
-      .map(g => `<span class="chip${maj.has(g) ? " maj" : ""}">${esc(GROUP(g))}</span>`).join("");
-    const legend = maj.size ? `<span class="chip legend">en bleu : majorité sénatoriale</span>` : "";
+    const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a));
     const effects = c.effects || [];
-    const extra = effects.length > 1 ? ` <span class="more">+ ${effects.length - 1} variante${effects.length > 2 ? "s" : ""}</span>` : "";
-    const links = (c.amendments || []).map(n => {
-      const num = String(n).split(" ")[0];
-      return `<a href="https://www.senat.fr/amendements/2026-2027/${N}/Amdt_${encodeURIComponent(num)}.html" target="_blank" rel="noopener">n°${esc(n)}</a>`;
-    }).join("");
-    return `
-      <article class="card${i === 0 ? " top1" : ""}" data-key="${esc(c.theme)}">
-        <div class="rank">${rank ?? i + 1}</div>
-        <div>
-          <h2>${esc(c.theme)}</h2>
-          <p class="effect">${esc(effects[0] || "")}${extra}</p>
-          ${ch.main}
-          ${hi.main}
-          <div class="support"><span class="count">${c.n_groups > 1 ? `Portée par ${c.n_groups} groupes` : "Un seul groupe"}</span>${groups}${legend}</div>
-          <details>
-            <summary>détails</summary>
-            <div class="det">
-              ${ch.det}
-              ${hi.det}
-              ${c.who ? `<p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>` : ""}
-              ${effects.length > 1 ? `<p><span class="k">Variantes :</span> ${effects.map(esc).join(" · ")}</p>` : ""}
-              ${c.quote ? `<blockquote>« ${esc(c.quote)} »</blockquote>` : ""}
-              <p class="amdts"><span class="k">${plural((c.amendments || []).length, "amendement", "amendements")} :</span> ${links}</p>
-            </div>
-          </details>
-        </div>
-        ${exposure(c)}
-      </article>`;
+    const n = c.n_groups ?? groups.length;
+    return h("article", { class: `card${i === 0 ? " top1" : ""}`, dataset: { key: c.key || c.theme || "" } },
+      h("div", { class: "rank" }, rank ?? i + 1),
+      h("div", null,
+        h("h2", null, c.theme || ""),
+        h("p", { class: "effect" }, effects[0] || "",
+          effects.length > 1 ? h("span", { class: "more" }, ` + ${effects.length - 1} variante${effects.length > 2 ? "s" : ""}`) : null),
+        ch.main, hs.main,
+        h("div", { class: "support" }, h("span", { class: "count" }, n > 1 ? `Portée par ${n} groupes` : "Un seul groupe"),
+          groups.map(g => h("span", { class: `chip${maj.has(g) ? " maj" : ""}` }, GROUP(g))),
+          maj.size ? h("span", { class: "chip legend" }, "en bleu : majorité sénatoriale") : null),
+        h("details", null, h("summary", null, "détails"),
+          h("div", { class: "det" }, ch.det, hs.det,
+            c.who ? h("p", null, h("span", { class: "k" }, "Qui est concerné : "), c.who) : null,
+            effects.length > 1 ? h("p", null, h("span", { class: "k" }, "Variantes : "), effects.join(" · ")) : null,
+            c.quote ? h("blockquote", null, `« ${c.quote} »`) : null,
+            h("p", { class: "amdts" }, h("span", { class: "k" }, `${plural((c.amendments || []).length, "amendement", "amendements")} : `),
+              (c.amendments || []).map(a => ext(amdtUrl(a), `n°${a}`)))))),
+      exposure(c));
   }
 
   function render(animate) {
-    if (!company) {
-      cEl.innerHTML = ""; hEl.innerHTML = ""; fEl.innerHTML = "";
+    if (!company || !engine) {
+      fill(cEl, engine && !company ? h("p", { class: "empty-company" }, "Cherchez votre entreprise par son nom ou son SIREN, ou partez d'un secteur visé ci-dessus.") : null);
+      fill(hEl); fill(fEl); scanPanel(-1);
       return;
     }
-    cEl.innerHTML = companyCard();
+    fill(cEl, companyCard());
     liveConcern();
-    cEl.querySelectorAll(".role").forEach(b => b.addEventListener("click", () => {
-      const k = b.dataset.role; roles.has(k) ? roles.delete(k) : roles.add(k);
-      store("company", { company, roles: [...roles], preset: activePreset });
-      render(true);
-    }));
 
     const cards = measures.map(evaluate).filter(Boolean);
-    hEl.innerHTML = headline(cards);
+    fill(hEl, headline(cards));
     if (animate) { hEl.classList.remove("fade"); void hEl.offsetWidth; hEl.classList.add("fade"); }
 
     // FLIP: remember where each measure was, so shared measures visibly move to their new rank.
@@ -865,13 +952,12 @@ function fromApi(r) {
     if (animate) fEl.querySelectorAll(".card").forEach(el => before.set(el.dataset.key, el.getBoundingClientRect().top));
 
     scanPanel(cards.length);
-    if (!cards.length) { fEl.innerHTML = ""; return; }
+    if (!cards.length) { fill(fEl); return; }
     const shown = showAll ? cards : cards.slice(0, TOP);
     const rest = cards.length - shown.length;
-    fEl.innerHTML = shown.map((c, i) => card(c, i)).join("") +
-      (rest > 0 ? `<div class="rest"><button type="button" id="more">Voir ${plural(rest, "autre mesure", "autres mesures")}</button></div>` : "");
-    const more = document.getElementById("more");
-    if (more) more.onclick = () => { showAll = true; render(false); };
+    fill(fEl, shown.map((c, i) => card(c, i)),
+      rest > 0 ? h("div", { class: "rest" }, h("button", { type: "button", onclick: () => { showAll = true; render(false); } },
+        `Voir ${plural(rest, "autre mesure", "autres mesures")}`)) : null);
 
     if (!animate) return;
     fEl.querySelectorAll(".card").forEach((el, i) => {
@@ -888,159 +974,146 @@ function fromApi(r) {
     });
   }
 
-  /* ---------- Live panel: Sénat amendments fetched now, criteria extracted on click ---------- */
-  const LIVE_OK = /^(localhost|127\.0\.0\.1|\[::1\]|::1)$/.test(location.hostname);
-  const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
-  const liveEl = document.getElementById("live");
-  const lHead = document.getElementById("liveHead");
-  const lMeta = document.getElementById("liveMeta");
-  const lBody = document.getElementById("liveBody");
-  const lList = document.getElementById("liveList");
-  const lRun = document.getElementById("liveRun");
-  let liveData = null, liveResult = null, liveCtrl = null, liveSel = null;
+  /* ---------- SSE over fetch (EventSource cannot POST) ---------- */
+  async function sse(url, body, signal, onEvent) {
+    const r = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
+      body: JSON.stringify(body), signal });
+    if (!r.ok) {
+      let msg = `HTTP ${r.status}`;
+      try { const j = await r.json(); if (j.error) msg = j.error; } catch {}
+      throw Object.assign(new Error(msg), { http: r.status });
+    }
+    const reader = r.body.getReader(), dec = new TextDecoder();
+    let buf = "";
+    for (;;) {
+      const { value, done } = await reader.read();
+      if (done) return;
+      buf += dec.decode(value, { stream: true }).replace(/\r\n/g, "\n");
+      let i;
+      while ((i = buf.indexOf("\n\n")) >= 0) {
+        const block = buf.slice(0, i); buf = buf.slice(i + 2);
+        let ev = "message", data = "";
+        block.split("\n").forEach(line => {
+          if (line.startsWith("event:")) ev = line.slice(6).trim();
+          else if (line.startsWith("data:")) data += (data ? "\n" : "") + line.slice(5).replace(/^ /, "");
+        });
+        if (!data) continue;
+        let d; try { d = JSON.parse(data); } catch { d = { t: data }; }
+        if (ev === "error") throw new Error(d.error || d.t || "erreur du serveur");
+        if (onEvent(ev, d) === false) return;
+      }
+    }
+  }
+  const streamBox = (id, raw) => h("pre", { class: "stream", id }, raw || "", h("span", { class: "cur" }));
+  function setStream(el, raw) { if (!el) return; fill(el, raw, h("span", { class: "cur" })); el.scrollTop = el.scrollHeight; }
 
-  lHead.addEventListener("click", () => {
+  /* ---------- Live panel: Sénat amendments fetched now, criteria extracted on click ---------- */
+  const liveEl = $("live"), lHead = $("liveHead"), lMeta = $("liveMeta"), lBody = $("liveBody"), lList = $("liveList"), lRun = $("liveRun");
+  const lToggle = lHead.querySelector(".live-toggle");
+  let liveData = null, liveResult = null, liveCtrl = null, liveSel = null, liveRaw = "";
+
+  lHead.addEventListener("click", e => {
+    if (e.target.closest(".retry")) return;
     if (!liveData) return;
     const open = lBody.hidden;
     lBody.hidden = !open;
     lHead.setAttribute("aria-expanded", String(open));
-    lHead.querySelector(".live-toggle").textContent = open ? "Fermer" : "Ouvrir";
+    lToggle.textContent = open ? "Fermer" : "Ouvrir";
   });
+  function liveReset() { if (liveCtrl) liveCtrl.abort(); liveResult = null; liveSel = null; liveRaw = ""; fill(lRun); fill(lList); }
 
   async function liveLoad() {
     if (!LIVE_OK) { liveOff("Démo live disponible en local (serveur server.py)"); return; }
+    if (!engine) return;
+    const t = text;
     try {
-      const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 8000);
-      const r = await fetch(`${LIVE}/api/live/amendments?text=${N}`, { signal: ctrl.signal, cache: "no-store" });
-      clearTimeout(t);
+      const c = new AbortController(); const tm = setTimeout(() => c.abort(), 8000);
+      const r = await fetch(`${LIVE}/api/live/amendments?text=${encodeURIComponent(t.number)}&session=${encodeURIComponent(t.session)}`, { signal: c.signal, cache: "no-store" });
+      clearTimeout(tm);
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      liveData = await r.json();
+      const d = await r.json();
+      if (t !== text) return;
+      liveData = d;
       liveEl.classList.remove("off");
-      const hhmm = String(liveData.fetched_at || "").slice(11, 16) ||
-        new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
-      const nNew = liveData.new || 0;
-      lMeta.innerHTML = `mis à jour à <b>${esc(hhmm)}</b> · <b>${fmt(liveData.pending ?? liveData.amendments.length)}</b> amendements en attente`
-        + ` · <b>${fmt(nNew)}</b> nouveau${nNew > 1 ? "x" : ""}`;
-      const list = [...(liveData.amendments || [])].sort((a, b) =>
+      if (lToggle.textContent === "") lToggle.textContent = lBody.hidden ? "Ouvrir" : "Fermer";
+      const hhmm = String(d.fetched_at || "").slice(11, 16) || new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+      const nNew = d.new || 0;
+      fill(lMeta, "mis à jour à ", h("b", null, hhmm), " · ", h("b", null, fmt(d.pending ?? (d.amendments || []).length)),
+        " amendements en attente · ", h("b", null, fmt(nNew)), ` nouveau${nNew > 1 ? "x" : ""}`);
+      const list = [...(d.amendments || [])].sort((a, b) =>
         String(b.filed || "").localeCompare(String(a.filed || "")) || (parseInt(b.number, 10) || 0) - (parseInt(a.number, 10) || 0));
-      lList.innerHTML = list.map(a => `
-        <button type="button" class="amd${liveSel === a.number ? " on" : ""}" data-n="${esc(a.number)}">
-          <div class="l1"><b>n°${esc(a.number)}</b>${a.known === false ? `<span class="new">Nouveau</span>` : ""}
-            <span>${esc(a.author || "")}${a.author_group ? ` (${esc(GROUP(a.author_group))})` : ""}</span></div>
-          <div class="l2">${esc(a.article || "")}${a.filed ? ` · déposé le ${esc(a.filed.split("-").reverse().join("/"))}` : ""} · ${esc(a.purpose || "")}</div>
-        </button>`).join("");
-      lList.querySelectorAll(".amd").forEach(b => b.addEventListener("click", () => liveExtract(b.dataset.n)));
-      if (!lRun.innerHTML) lRun.innerHTML = `<p class="hint">Cliquez un amendement : le modèle lit son texte maintenant, en extrait les entreprises visées, puis on les compte dans le répertoire Sirene.</p>`;
+      fill(lList, list.map(a => h("button", { type: "button", class: `amd${liveSel === a.number ? " on" : ""}`, dataset: { n: a.number },
+        onclick: () => liveExtract(a.number) },
+        h("div", { class: "l1" }, h("b", null, `n°${a.number}`), a.known === false ? h("span", { class: "new" }, "Nouveau") : null,
+          h("span", null, a.author || "", a.author_group ? ` (${GROUP(a.author_group)})` : "")),
+        h("div", { class: "l2" }, a.article || "", a.filed ? ` · déposé le ${a.filed.split("-").reverse().join("/")}` : "", ` · ${a.purpose || ""}`))));
+      if (!lRun.firstChild) fill(lRun, h("p", { class: "hint" },
+        "Cliquez un amendement : le modèle lit son texte maintenant, en extrait les entreprises visées, puis on les compte dans le répertoire Sirene."));
     } catch (e) {
-      liveOff(`serveur live injoignable <button type="button" class="retry" id="liveRetry">Réessayer</button>`);
-      document.getElementById("liveRetry")?.addEventListener("click", ev => { ev.stopPropagation(); lMeta.textContent = "connexion…"; liveLoad(); });
+      liveOff("serveur live injoignable ", h("button", { type: "button", class: "retry",
+        onclick: ev => { ev.stopPropagation(); fill(lMeta, "connexion…"); liveLoad(); } }, "Réessayer"));
     }
   }
-  function liveOff(html) {
+  function liveOff(...msg) {
     liveEl.classList.add("off"); liveData = null;
     lBody.hidden = true; lHead.setAttribute("aria-expanded", "false");
-    lHead.querySelector(".live-toggle").textContent = "";
-    lMeta.innerHTML = html;
+    lToggle.textContent = "";
+    fill(lMeta, ...msg);
   }
 
   async function liveExtract(number) {
     if (liveCtrl) liveCtrl.abort();
-    liveCtrl = new AbortController();
-    const ctrl = liveCtrl;
-    liveSel = number; liveResult = null;
+    const c = liveCtrl = new AbortController();
+    liveSel = number; liveResult = null; liveRaw = "";
     lList.querySelectorAll(".amd").forEach(b => b.classList.toggle("on", b.dataset.n === number));
-    lRun.innerHTML = `<div class="stream-k"><span class="spin2"></span><span id="lk">Le modèle lit l'amendement n°${esc(number)}…</span></div>
-      <div class="live-status" id="lst"></div>
-      <pre class="stream" id="lstream"><span class="cur"></span></pre>`;
-    const out = document.getElementById("lstream");
-    const setStatus = t => { const el = document.getElementById("lst"); if (el) el.textContent = t; };
-    let raw = "";
+    const lk = h("span", null, `Le modèle lit l'amendement n°${number}…`);
+    const lst = h("div", { class: "live-status" });
+    const out = streamBox("lstream", "");
+    fill(lRun, h("div", { class: "stream-k" }, h("span", { class: "spin2" }), lk), lst, out);
+    let got = false;
     try {
-      const r = await fetch(`${LIVE}/api/live/extract?stream=1`, {
-        method: "POST", headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
-        body: JSON.stringify({ text_number: N, number: String(number) }), signal: ctrl.signal });
-      if (!r.ok) {
-        let msg = `HTTP ${r.status}`;
-        try { const j = await r.json(); if (j.error) msg = j.error; } catch {}
-        throw Object.assign(new Error(msg), { http: r.status });
-      }
-      const reader = r.body.getReader();
-      const dec = new TextDecoder();
-      let buf = "", gotResult = false;
-      for (;;) {
-        const { value, done } = await reader.read();
-        if (done) break;
-        buf += dec.decode(value, { stream: true }).replace(/\r\n/g, "\n");
-        let i;
-        while ((i = buf.indexOf("\n\n")) >= 0) {
-          const block = buf.slice(0, i); buf = buf.slice(i + 2);
-          let ev = "message", data = "";
-          block.split("\n").forEach(line => {
-            if (line.startsWith("event:")) ev = line.slice(6).trim();
-            else if (line.startsWith("data:")) data += (data ? "\n" : "") + line.slice(5).replace(/^ /, "");
-          });
-          if (!data) continue;
-          let d; try { d = JSON.parse(data); } catch { d = { t: data }; }
-          if (ctrl !== liveCtrl) return;
-          if (ev === "start") {
-            document.getElementById("lk").textContent =
-              `Le modèle lit l'amendement n°${d.number || number}${d.author ? ` (${d.author}${d.author_group ? `, ${GROUP(d.author_group)}` : ""})` : ""} · modèle : ${d.model || "?"}`;
-          } else if (ev === "token") {
-            raw += d.t || "";
-            out.textContent = raw; out.insertAdjacentHTML("beforeend", `<span class="cur"></span>`);
-            out.scrollTop = out.scrollHeight;
-          } else if (ev === "status") {
-            setStatus(d.t || "");
-          } else if (ev === "error") {
-            throw new Error(d.error || d.t || "erreur du serveur");
-          } else if (ev === "result") {
-            gotResult = true; liveResult = d; renderLiveResult(raw);
-          }
-        }
-      }
-      if (!gotResult && ctrl === liveCtrl) throw new Error("flux interrompu avant le résultat");
+      await sse(`${LIVE}/api/live/extract?stream=1`, { text_number: text.number, session: text.session, number: String(number) }, c.signal, (ev, d) => {
+        if (c !== liveCtrl) return false;
+        if (ev === "start") lk.textContent = `Le modèle lit l'amendement n°${d.number || number}${d.author ? ` (${d.author}${d.author_group ? `, ${GROUP(d.author_group)}` : ""})` : ""} · modèle : ${d.model || "?"}`;
+        else if (ev === "token") { liveRaw += d.t || ""; setStream(out, liveRaw); }
+        else if (ev === "status") lst.textContent = d.t || "";
+        else if (ev === "result") { got = true; liveResult = d; renderLiveResult(); }
+      });
+      if (!got && c === liveCtrl) throw new Error("flux interrompu avant le résultat");
     } catch (e) {
-      if (e.name === "AbortError" || ctrl !== liveCtrl) return;
-      const net = !e.http && /fetch|network|interrompu/i.test(e.message || "");
-      lRun.innerHTML = `<p class="live-err">${e.http === 503 ? "Extraction indisponible : " : "Erreur : "}${esc(e.message || "réseau")}
-        ${e.http === 503 ? "" : `<button type="button" id="lretry">Réessayer</button>`}</p>`;
-      document.getElementById("lretry")?.addEventListener("click", () => liveExtract(number));
-      void net;
+      if (e.name === "AbortError" || c !== liveCtrl) return;
+      fill(lRun, h("p", { class: "live-err" }, e.http === 503 ? "Extraction indisponible : " : "Erreur : ", e.message || "réseau",
+        e.http === 503 ? null : h("button", { type: "button", onclick: () => liveExtract(number) }, "Réessayer")));
     }
   }
 
-  function liveCard(res) {
-    if (company) {
-      const ev = evaluate(res);
-      if (ev) return { card: ev, concerns: true };
-    }
-    const label = (res.sectors || []).map(s => stripParen(s.label)).filter(Boolean).join(", ");
-    return { card: { ...res, you: {}, history: null, matched_sector: label || "—", by_role: false }, concerns: false };
-  }
-
-  function renderLiveResult(raw) {
+  function renderLiveResult() {
     const res = liveResult; if (!res) return;
-    const { card: c, concerns } = liveCard(res);
-    const how = c.by_role ? "par son rôle" : `par son code NAF ${company?.naf || ""}`;
-    const concern = company
-      ? (concerns ? `<p class="concern yes">✓ Cet amendement concerne ${esc(shortName(company.name))} (${esc(how)}).</p>`
-                  : `<p class="concern no">Cet amendement ne vise pas ${esc(shortName(company.name))} (NAF ${esc(company.naf || "—")}).</p>`)
-      : "";
-    const verif = `<div class="verif">${res.quote_verified ? `<span class="badge-ok">✓ citation vérifiée mot pour mot</span>` : `<span>citation non vérifiée</span>`}
-      <span>modèle : ${esc(res.model || "?")}${res.elapsed_ms != null ? ` · ${fmt(res.elapsed_ms)} ms` : ""}</span>
-      ${res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">texte sur senat.fr</a>` : ""}</div>`;
-    const rawBox = raw ? `<details><summary>sortie brute du modèle</summary><pre class="stream">${esc(raw)}</pre></details>` : "";
-    lRun.innerHTML = concern + verif + (res.criteria_found === false && !res.theme
-      ? `<p class="hint">Le modèle n'a trouvé aucun critère d'entreprise dans cet amendement.</p>`
-      : card({ ...c, theme: c.theme || `Amendement n°${res.amendments?.[0] || liveSel}` }, 1, "live")) + rawBox;
+    const ev = company && engine ? evaluate(res) : null;
+    const c = ev || { ...res, you: {}, history: null, by_role: false,
+      matched_sector: (res.sectors || []).map(s => stripParen(s.label)).filter(Boolean).join(", ") || "—" };
+    const concern = company ? (ev
+      ? h("p", { class: "concern yes" }, `✓ Cet amendement concerne ${shortName(company.name)} (${ev.by_role ? "par son rôle" : `par son code NAF ${company.naf}`}).`)
+      : h("p", { class: "concern no" }, `Cet amendement ne vise pas ${shortName(company.name)} (NAF ${company.naf || "—"}).`)) : null;
+    const verif = h("div", { class: "verif" },
+      res.quote_verified ? h("span", { class: "badge-ok" }, "✓ citation vérifiée mot pour mot") : h("span", null, "citation non vérifiée"),
+      h("span", null, `modèle : ${res.model || "?"}`, res.elapsed_ms != null ? ` · ${fmt(res.elapsed_ms)} ms` : ""),
+      res.url ? ext(res.url, "texte sur senat.fr") : null);
+    const body = res.criteria_found === false && !res.theme
+      ? h("p", { class: "hint" }, "Le modèle n'a trouvé aucun critère d'entreprise dans cet amendement.")
+      : card({ ...c, theme: c.theme || `Amendement n°${res.amendments?.[0] || liveSel}` }, 1, "live");
+    fill(lRun, concern, verif, body,
+      liveRaw ? h("details", null, h("summary", null, "sortie brute du modèle"), h("pre", { class: "stream" }, liveRaw)) : null);
   }
+  function liveConcern() { if (liveResult && !lBody.hidden) renderLiveResult(); }
+
   /* ---------- AI scan: the model reads every pending amendment against this company's activity ---------- */
-  const scanEl = document.getElementById("scan");
-  let scanKey = null, scanCtrl = null, scanState = null, scanN = 1; // scanState: {raw, result, error, running}
+  const scanEl = $("scan");
+  let scanKey = null, scanCtrl = null, scanState = null, scanN = 1;
 
   function scanPanel(nCards) {
-    if (!company) { scanEl.hidden = true; return; }
-    const key = `${company.siren}|${[...roles].sort().join(",")}`;
+    if (!company || !engine || nCards < 0) { scanEl.hidden = true; return; }
+    const key = `${text.session}/${text.number}|${company.siren}|${[...roles].sort().join(",")}`;
     if (key !== scanKey) { if (scanCtrl) scanCtrl.abort(); scanKey = key; scanState = null; }
     scanEl.hidden = false;
     scanEl.classList.toggle("strong", nCards === 0);
@@ -1048,124 +1121,87 @@ function fromApi(r) {
   }
 
   function paintScan() {
-    const nCards = scanN;
-    const head = `<div class="scan-head">
-      <p>${nCards === 0 ? "Votre secteur n'est visé par aucune mesure de la liste. Le modèle peut relire tous les amendements en attente à la lumière de votre activité."
-        : "Une mesure peut vous concerner sans viser votre code NAF : le modèle peut relire tous les amendements en attente pour votre activité."}</p>
-      <button type="button" class="scan-btn" id="scanBtn" ${!LIVE_OK || scanState?.running ? "disabled" : ""}>
-        ${!LIVE_OK ? "Disponible en local" : scanState?.running ? "Analyse en cours…" : scanState?.result ? "Relancer l'analyse IA" : "Lancer l'analyse IA pour votre activité"}</button></div>`;
-    let body = "";
     const st = scanState;
-    if (st?.running || (st?.raw && !st.result && !st.error)) {
-      body = `<div class="stream-k" style="margin-top:12px"><span class="spin2"></span><span>${esc(st.label || "Le modèle lit les amendements…")}</span></div>
-        <pre class="stream" id="scanStream">${esc(st.raw || "")}<span class="cur"></span></pre>`;
+    const btnLabel = !LIVE_OK ? "Disponible en local" : st?.running ? "Analyse en cours…" : st?.result ? "Relancer l'analyse IA" : "Lancer l'analyse IA pour votre activité";
+    const head = h("div", { class: "scan-head" },
+      h("p", null, scanN === 0
+        ? "Votre secteur n'est visé par aucune mesure de la liste. Le modèle peut relire tous les amendements en attente à la lumière de votre activité."
+        : "Une mesure peut vous concerner sans viser votre code NAF : le modèle peut relire tous les amendements en attente pour votre activité."),
+      h("button", { type: "button", class: "scan-btn", disabled: !LIVE_OK || !!st?.running, onclick: runScan }, btnLabel));
+    let body = null;
+    if (st?.running) {
+      body = [h("div", { class: "stream-k", style: "margin-top:12px" }, h("span", { class: "spin2" }), h("span", null, st.label || "Le modèle lit les amendements…")),
+        streamBox("scanStream", st.raw)];
     } else if (st?.error) {
-      body = `<p class="live-err" style="margin-top:10px">${esc(st.error)}${st.http === 503 ? "" : ` <button type="button" id="scanRetry">Réessayer</button>`}</p>`;
+      body = h("p", { class: "live-err", style: "margin-top:10px" }, st.error,
+        st.http === 503 ? null : [" ", h("button", { type: "button", onclick: runScan }, "Réessayer")]);
     } else if (st?.result) {
       const r = st.result, ms = r.matches || [];
       const nRead = st.n || r.n_amendments || (liveData?.pending ?? "");
-      const meta = `<span>modèle : ${esc(r.model || st.model || "?")}${r.elapsed_ms != null ? ` · ${fmt(r.elapsed_ms)} ms` : ""}${r.dropped ? ` · ${fmt(Array.isArray(r.dropped) ? r.dropped.length : r.dropped)} écarté(s) (citation introuvable)` : ""}</span>`;
+      const meta = h("span", null, `modèle : ${r.model || st.model || "?"}`, r.elapsed_ms != null ? ` · ${fmt(r.elapsed_ms)} ms` : "",
+        r.dropped ? ` · ${fmt(Array.isArray(r.dropped) ? r.dropped.length : r.dropped)} écarté(s) (citation introuvable)` : "");
       body = !ms.length
-        ? `<p class="hint" style="margin-top:10px">Le modèle n'a trouvé aucun amendement qui concerne votre activité (${esc(nRead)} lus).</p><div class="match foot">${meta}</div>`
-        : `<div style="margin-top:12px"><span class="ai-label">Analyse IA — à vérifier, non chiffrée</span>
-            <span class="live-status">&nbsp;${plural(ms.length, "amendement trouvé", "amendements trouvés")}${nRead ? ` sur ${esc(nRead)} lus` : ""} · ${meta}</span></div>
-          <div class="matches">${ms.map(m => {
-            const dir = m.direction === "gain" ? "gain" : m.direction === "perte" ? "perte" : "incertain";
-            const num = String(m.number || "");
-            const url = `https://www.senat.fr/amendements/2026-2027/${N}/Amdt_${encodeURIComponent(num.split(" ")[0])}.html`;
-            return `<article class="match"><h4>${esc(m.theme || `Amendement n°${num}`)} <span class="dir ${dir}">${dir}</span></h4>
-              ${m.how ? `<p class="howm">${esc(m.how)}</p>` : ""}
-              ${m.quote ? `<blockquote>« ${esc(m.quote)} »</blockquote>` : ""}
-              <div class="foot">${m.quote_verified ? `<span class="badge-ok">✓ vérifiée</span>` : m.quote ? `<span>citation non vérifiée</span>` : ""}
-                <a href="${esc(url)}" target="_blank" rel="noopener">amendement n°${esc(num)}</a>
-                ${m.author_group ? `<span>${esc(GROUP(m.author_group))}</span>` : ""}</div></article>`;
-          }).join("")}</div>`;
+        ? [h("p", { class: "hint", style: "margin-top:10px" }, `Le modèle n'a trouvé aucun amendement qui concerne votre activité (${nRead} lus).`),
+           h("div", { class: "match foot" }, meta)]
+        : [h("div", { style: "margin-top:12px" }, h("span", { class: "ai-label" }, "Analyse IA — à vérifier, non chiffrée"),
+             h("span", { class: "live-status" }, ` ${plural(ms.length, "amendement trouvé", "amendements trouvés")}${nRead ? ` sur ${nRead} lus` : ""} · `, meta)),
+           h("div", { class: "matches" }, ms.map(m => {
+             const dir = m.direction === "gain" ? "gain" : m.direction === "perte" ? "perte" : "incertain";
+             const num = String(m.number || "");
+             return h("article", { class: "match" },
+               h("h4", null, m.theme || `Amendement n°${num}`, " ", h("span", { class: `dir ${dir}` }, dir)),
+               m.how ? h("p", { class: "howm" }, m.how) : null,
+               m.quote ? h("blockquote", null, `« ${m.quote} »`) : null,
+               h("div", { class: "foot" }, m.quote_verified ? h("span", { class: "badge-ok" }, "✓ vérifiée") : m.quote ? h("span", null, "citation non vérifiée") : null,
+                 ext(amdtUrl(num), `amendement n°${num}`), m.author_group ? h("span", null, GROUP(m.author_group)) : null));
+           }))];
     }
-    scanEl.innerHTML = head + body;
-    document.getElementById("scanBtn")?.addEventListener("click", runScan);
-    document.getElementById("scanRetry")?.addEventListener("click", runScan);
-    const out = document.getElementById("scanStream"); if (out) out.scrollTop = out.scrollHeight;
+    fill(scanEl, head, body);
+    const out = $("scanStream"); if (out) out.scrollTop = out.scrollHeight;
   }
 
   async function runScan() {
     if (!company || !LIVE_OK) return;
     if (scanCtrl) scanCtrl.abort();
-    const ctrl = scanCtrl = new AbortController();
+    const c = scanCtrl = new AbortController();
     const st = scanState = { raw: "", running: true, label: "Le modèle lit les amendements en attente…" };
     paintScan();
-    const body = { text_number: N, company: { name: company.name, siren: company.siren, naf: company.naf,
+    const body = { text_number: text.number, session: text.session, company: { name: company.name, siren: company.siren, naf: company.naf,
       naf_label: nafLabel(company.naf) || "", headcount_band: company.band || null, roles: [...roles] } };
+    let last = 0;
     try {
-      const r = await fetch(`${LIVE}/api/live/scan?stream=1`, { method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "text/event-stream" }, body: JSON.stringify(body), signal: ctrl.signal });
-      if (!r.ok) {
-        let msg = `HTTP ${r.status}`;
-        try { const j = await r.json(); if (j.error) msg = j.error; } catch {}
-        throw Object.assign(new Error(msg), { http: r.status });
-      }
-      const reader = r.body.getReader(); const dec = new TextDecoder();
-      let buf = "", last = 0;
-      for (;;) {
-        const { value, done } = await reader.read();
-        if (done) break;
-        buf += dec.decode(value, { stream: true }).replace(/\r\n/g, "\n");
-        let i;
-        while ((i = buf.indexOf("\n\n")) >= 0) {
-          const block = buf.slice(0, i); buf = buf.slice(i + 2);
-          let ev = "message", data = "";
-          block.split("\n").forEach(line => {
-            if (line.startsWith("event:")) ev = line.slice(6).trim();
-            else if (line.startsWith("data:")) data += (data ? "\n" : "") + line.slice(5).replace(/^ /, "");
-          });
-          if (!data || ctrl !== scanCtrl) continue;
-          let d; try { d = JSON.parse(data); } catch { d = { t: data }; }
-          if (ev === "start") {
-            st.n = d.n_amendments; st.model = d.model;
-            st.label = `Le modèle lit les ${d.n_amendments ?? ""} amendements pour ${shortName(company.name)} · modèle : ${d.model || "?"}`;
-            paintScan();
-          } else if (ev === "token") {
-            st.raw += d.t || "";
-            const out = document.getElementById("scanStream");
-            if (out) { out.textContent = st.raw; out.insertAdjacentHTML("beforeend", `<span class="cur"></span>`); out.scrollTop = out.scrollHeight; }
-          } else if (ev === "status") {
-            st.label = d.t || st.label;
-            const now = Date.now(); if (now - last > 200) { last = now; paintScan(); }
-          } else if (ev === "error") {
-            throw new Error(d.error || d.t || "erreur du serveur");
-          } else if (ev === "result") {
-            st.result = d; st.running = false; paintScan();
-          }
-        }
-      }
-      if (ctrl === scanCtrl && !st.result) throw new Error("flux interrompu avant le résultat");
+      await sse(`${LIVE}/api/live/scan?stream=1`, body, c.signal, (ev, d) => {
+        if (c !== scanCtrl) return false;
+        if (ev === "start") {
+          st.n = d.n_amendments; st.model = d.model;
+          st.label = `Le modèle lit les ${d.n_amendments ?? ""} amendements pour ${shortName(company.name)} · modèle : ${d.model || "?"}`;
+          paintScan();
+        } else if (ev === "token") { st.raw += d.t || ""; setStream($("scanStream"), st.raw); }
+        else if (ev === "status") { st.label = d.t || st.label; const now = Date.now(); if (now - last > 200) { last = now; paintScan(); } }
+        else if (ev === "result") { st.result = d; st.running = false; paintScan(); }
+      });
+      if (c === scanCtrl && !st.result) throw new Error("flux interrompu avant le résultat");
     } catch (e) {
-      if (e.name === "AbortError" || ctrl !== scanCtrl) return;
+      if (e.name === "AbortError" || c !== scanCtrl) return;
       st.running = false;
       st.error = e.http === 503 ? `Analyse IA indisponible : ${e.message}`
-        : e.http === 404 ? "Analyse IA pas encore disponible sur ce serveur."
-        : `Erreur : ${e.message || "réseau"}`;
+        : e.http === 404 ? "Analyse IA pas encore disponible sur ce serveur." : `Erreur : ${e.message || "réseau"}`;
       st.http = e.http;
       paintScan();
     }
   }
 
-  function liveConcern() { if (liveResult && !lBody.hidden) renderLiveResult(""); }
-
-  liveLoad();
-  setInterval(() => { if (liveData && !document.hidden) liveLoad(); }, 60000);
-
-  renderPresets();
+  /* ---------- start ---------- */
   const saved = stored("company");
   if (saved && saved.company && saved.company.siren) {
-    company = saved.company; if (!company.ca) company.ca = null; roles = new Set(saved.roles || []); activePreset = saved.preset || null;
-    qEl.value = shortName(company.name); renderPresets(); render(false);
-  } else {
-    usePreset(0);
+    company = saved.company; if (!company.ca) { company.ca = null; company.net = null; company.year = null; }
+    roles = new Set((saved.roles || []).map(roleKey));
+    qEl.value = shortName(company.name);
   }
-})().catch(e => {
-  document.getElementById("feed").innerHTML =
-    `<p class="empty">Impossible de charger les données (${esc(e.message)}). Lancez un serveur local : python3 -m http.server</p>`;
-});
+  setInterval(() => { if (liveData && !document.hidden) liveLoad(); }, 60000);
+  loadText(readHash() || stored("text") || DEFAULT_TEXT).then(() => store("text", text));
+  window.addEventListener("hashchange", () => store("text", text));
+})();
 </script>
 </body>
 </html>
