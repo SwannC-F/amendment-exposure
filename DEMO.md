@@ -6,7 +6,7 @@ Site : https://amendment-exposure-eu.onrender.com · répété en ligne le 14/11
 > « Un projet de loi a une étude d'impact. Un amendement n'en a pas : en ce moment, 34 amendements sur les titres-restaurant attendent leur vote au Sénat, et personne ne dit aux entreprises lesquelles les visent. »
 
 **Phrase de fin**
-> « Chaque texte, chaque entreprise, avant le vote. Aujourd'hui 3 textes calculés de bout en bout, d'autres en route, demain tous les textes en discussion : le pipeline tourne seul, pour quelques centimes à quelques dollars par texte. »
+> « Chaque texte, chaque entreprise, avant le vote. Aujourd'hui 9 textes calculés de bout en bout, Sénat et Assemblée, soit tous ceux qui ont des amendements en attente ; demain, chaque nouveau texte dès son dépôt : le pipeline tourne seul, pour quelques centimes à quelques dollars par texte. »
 
 ## Le script
 
@@ -20,7 +20,7 @@ Site : https://amendment-exposure-eu.onrender.com · répété en ligne le 14/11
 | 1:05–1:45 | **ouvrir le texte →** (carte 1) → **Sénat, en direct → Ouvrir** → cliquer **n°21 rect.** (Mme Delattre, RDSE) | « Ça, c'est le Sénat maintenant : 34 amendements en attente, lus sur senat.fr il y a une seconde. Je clique un amendement déposé hier : un modèle le lit, extrait les secteurs visés, et on compte les entreprises dans Sirene. » *(pendant l'attente, ~20 s)* « Le modèle doit recopier la phrase qui justifie sa réponse ; le code vérifie qu'elle existe dans l'amendement. » → montrer **✓ citation vérifiée mot pour mot** et « Cet amendement concerne HIPPO EXPLOITATION ». |
 | 1:45–2:00 | Passer à la **2e fenêtre** (navigation privée) déjà ouverte sur l'Assemblée n°2864 | « Même code, autre chambre : la proposition de loi IA et contenus culturels, calculée de bout en bout, 39 mesures. Pour un éditeur de logiciels, 35 le visent. » |
 | 2:00–2:28 | Revenir à la 1re fenêtre → onglet **Sénat** (liste des textes en discussion) | **Pourquoi nous.** « Pappers Politique, Contexte, Dixit, POLITICO Pro, FiscalNote, Quorum, Datapolitics font de la veille : vous choisissez des mots-clés, ils vous envoient des alertes et des résumés IA. Nous, on part de l'entreprise, SIREN, NAF, chiffre d'affaires, et on en déduit les amendements qui la visent, avec les entreprises et les salariés exposés, et des euros quand le texte le permet. Y compris ceux que vous n'auriez pas pensé à surveiller. » |
-| 2:28–2:48 | Rester sur l'onglet **Sénat**, montrer un bouton « Analyser ce texte (≈ 0,01 $) » **sans cliquer** | « Hémicycle annonce un service d'exposition par SIREN ; son propre guide indique qu'il n'est pas encore ouvert, avec un niveau fort, moyen ou faible prévu. Notre démo est une brique qui fonctionne déjà, en euros et en entreprises comptées, et qui se branche sur leur API. Chaque texte en discussion se lance d'un clic, coût affiché. » |
+| 2:28–2:48 | Rester sur l'onglet **Sénat**, montrer un bouton « Analyser ce texte (≈ 0,01 $) » **sans cliquer** | « Hémicycle annonce un service d'exposition par SIREN ; son propre guide indique qu'il n'est pas encore ouvert, avec un niveau fort, moyen ou faible prévu. Notre démo est une brique qui fonctionne déjà, en euros et en entreprises comptées, et elle utilise déjà leur API : la prédiction de vote Orcet d'Hémicycle est calculée pour chaque mesure du texte de l'Assemblée. Chaque texte en discussion se lance d'un clic, coût affiché. » |
 | 2:48–3:00 | Rien | La phrase de fin. |
 
 **Les 3 phrases à placer quoi qu'il arrive** (tirées de COMPETITION.md) :
