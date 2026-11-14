@@ -108,6 +108,10 @@
   .hist { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0 10px; font-variant-numeric: tabular-nums; }
   .hist th, .hist td { text-align: left; padding: 4px 6px; border-top: 1px solid var(--line); }
   .hist th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .hist td.pc.w { color: var(--gain); font-weight: 700; }
+  .hist td.pc.l { color: var(--loss); font-weight: 700; }
+  .det { overflow-x: auto; }
+  .card > div { min-width: 0; }
   .side { font-size: 12px; font-weight: 700; padding: 1px 7px; border-radius: 999px; }
   .side.w { background: var(--gain-soft); color: var(--gain); }
   .side.l { background: var(--loss-soft); color: var(--loss); }
@@ -154,6 +158,78 @@
     .card h2 { font-size: 19px; }
   }
   @media (prefers-reduced-motion: reduce) { .fade, .enter { animation: none; } .card { transition: none !important; } }
+  /* Step 1: company search */
+  .step { font-size: 12px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700; margin: 22px 0 8px; }
+  .step b { color: var(--accent); }
+  .search { position: relative; }
+  .search input { width: 100%; font: inherit; font-size: 18px; padding: 14px 16px 14px 46px; border: 2px solid var(--line);
+                  border-radius: 14px; outline: none; background: #fff; color: var(--ink); }
+  .search input:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .search svg { position: absolute; left: 16px; top: 29px; transform: translateY(-50%); color: var(--muted); }
+  .results { position: absolute; left: 0; right: 0; top: calc(100% + 2px); z-index: 10; background: #fff; border: 1px solid var(--line);
+             border-radius: 14px; box-shadow: 0 16px 40px -20px rgba(15,23,42,.35); overflow: hidden; }
+  .results[hidden] { display: none; }
+  .res { display: block; width: 100%; text-align: left; font: inherit; background: none; border: 0; border-top: 1px solid var(--line);
+         padding: 10px 16px; cursor: pointer; color: inherit; }
+  .res:first-child { border-top: 0; }
+  .res:hover, .res.on { background: var(--accent-soft); }
+  .res b { display: block; font-size: 15px; }
+  .res small { color: var(--muted); font-size: 12.5px; }
+  .res-msg { padding: 12px 16px; color: var(--muted); font-size: 14px; }
+  .res-msg.err { color: var(--loss); }
+  .res mark { background: #fff3a3; color: inherit; border-radius: 3px; padding: 0 1px; }
+  .results { max-height: 430px; overflow-y: auto; }
+  .spin { position: absolute; right: 16px; top: 29px; width: 18px; height: 18px; margin-top: -9px; border-radius: 50%;
+          border: 2.5px solid var(--accent-soft); border-top-color: var(--accent); opacity: 0; pointer-events: none;
+          transition: opacity .15s; animation: spin .7s linear infinite; }
+  .search.busy .spin { opacity: 1; }
+  .search input::-webkit-search-cancel-button { margin-right: 26px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .status { min-height: 20px; margin-top: 6px; font-size: 13px; color: var(--muted); }
+  .status .dim { opacity: .85; }
+  .presets { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; font-size: 13px; color: var(--muted); }
+  .preset { font: inherit; font-size: 13px; font-weight: 600; background: #fff; color: var(--ink); border: 1px solid var(--line);
+            border-radius: 999px; padding: 5px 12px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+  .preset:hover { border-color: #b8c6e8; }
+  .preset.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .preset kbd { font: 600 10.5px/1 ui-monospace, monospace; opacity: .6; }
+
+  .company { margin-top: 14px; border: 2px solid var(--accent); border-radius: 16px; padding: 14px 18px; display: grid;
+             grid-template-columns: 1fr auto; gap: 8px 18px; align-items: start; }
+  .company h3 { margin: 0; font-size: 20px; letter-spacing: -.015em; }
+  .company .facts { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13.5px; color: var(--muted); margin-top: 4px; }
+  .company .facts b { color: var(--ink); font-weight: 650; }
+  .company .fin { text-align: right; font-variant-numeric: tabular-nums; }
+  .company .fin .ca { font-size: 22px; font-weight: 800; letter-spacing: -.02em; }
+  .company .fin small { display: block; color: var(--muted); font-size: 12.5px; }
+  .roles { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; color: var(--muted);
+           border-top: 1px solid var(--line); padding-top: 10px; }
+  .role { font: inherit; font-size: 13px; font-weight: 600; border: 1px solid var(--line); background: #fff; color: #334155;
+          border-radius: 999px; padding: 4px 11px; cursor: pointer; }
+  .role[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: var(--accent); }
+  .role[aria-pressed="true"]::before { content: "✓ "; }
+  .notice { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+
+  .totals { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .tot { border-radius: 14px; padding: 10px 16px; background: var(--soft); }
+  .tot .v { font-size: 26px; font-weight: 800; letter-spacing: -.025em; font-variant-numeric: tabular-nums; line-height: 1.15; }
+  .tot .pct { font-size: 15px; font-weight: 700; }
+  .tot small { display: block; font-size: 12.5px; color: var(--muted); }
+  .tot.gain { background: var(--gain-soft); color: var(--gain); }
+  .tot.perte { background: var(--loss-soft); color: var(--loss); }
+  .tot.gain small, .tot.perte small { color: inherit; opacity: .8; }
+  .how { margin: 6px 0 0; font-size: 12.5px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical; overflow: hidden; max-width: 640px; }
+  .how b { color: #334155; }
+
+  @media (max-width: 560px) {
+    .search input { font-size: 16px; padding: 12px 14px 12px 42px; }
+    .search svg { top: 26px; } .spin { top: 26px; }
+    .company { grid-template-columns: 1fr; padding: 12px 14px; }
+    .company .fin { text-align: left; }
+    .tot .v { font-size: 21px; }
+    .you { font-size: 19px; }
+  }
 </style>
 </head>
 <body>
@@ -165,18 +241,29 @@
 </header>
 
 <main class="wrap">
-  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Choisissez une entreprise :
-    voici les amendements en attente qui la concernent, combien d'entreprises et d'employés sont exposés, et qui les porte au Sénat.</p>
+  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Cherchez votre entreprise :
+    voici les amendements en attente qui la concernent, ce qu'ils déplacent pour elle en euros, combien d'entreprises et d'employés sont exposés, et qui les porte au Sénat.</p>
 
-  <div class="profiles" id="profiles" role="group" aria-label="Entreprise"></div>
+  <div class="step"><b>1</b> · Votre entreprise</div>
+  <div class="search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Nom de l'entreprise ou SIREN" aria-label="Nom de l'entreprise ou SIREN">
+    <span class="spin" aria-hidden="true"></span>
+    <div class="status" id="status" aria-live="polite"></div>
+    <div class="results" id="results" role="listbox" hidden></div>
+  </div>
+  <div class="presets" id="presets"><span>Exemples :</span></div>
+  <div id="company"></div>
 
   <section class="headline" id="headline" aria-live="polite"></section>
 
   <div class="feed" id="feed"></div>
 
   <footer>
-    <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (unités légales actives, tranches d'effectifs INSEE) ;
+    <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (recherche-entreprises.api.gouv.fr : unités légales actives, code NAF, tranches d'effectifs INSEE, chiffre d'affaires publié) ;
       Sénat (Ameli, amendements depuis 2001) ; HATVP (répertoire des représentants d'intérêts).</p>
+    <p>Euros : fourchette basse – haute = chiffre d'affaires publié × taux par secteur, chaque taux tiré d'une source citée (« détails »).
+      Les mesures sont chiffrées séparément ; certaines sont des alternatives, les totaux ne sont donc pas un effet cumulé certain.</p>
     <p>Employés concernés : fourchette basse – haute, calculée à partir des tranches d'effectifs INSEE de toute l'entreprise.
       Critères extraits par IA à partir du texte de l'amendement, citation à l'appui (« détails »).</p>
     <p>Soutien : nombre de groupes politiques qui déposent la même mesure. Majorité sénatoriale = Les Républicains + Union centriste.
@@ -187,6 +274,7 @@
 <script>
 const N = "142";
 const TOP = 5;
+const API = "https://recherche-entreprises.api.gouv.fr/search";
 const fmt = n => n == null ? "—" : Number(n).toLocaleString("fr-FR");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const GROUP = g => g === "UCI" || g === "UC" ? "Union centriste" : g === "LR" ? "Les Républicains" : g;
@@ -201,9 +289,19 @@ function titleCase(s) {
     });
   }).join("");
 }
-const shortName = n => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
+const shortName = n => String(n || "").replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
 const stripParen = s => String(s || "").replace(/\s*\(.*\)\s*$/, "").trim();
 const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
+const BANDS = {NN:"non employeur","00":"0 salarié","01":"1–2 salariés","02":"3–5 salariés","03":"6–9 salariés","11":"10–19 salariés",
+  "12":"20–49 salariés","21":"50–99 salariés","22":"100–199 salariés","31":"200–249 salariés","32":"250–499 salariés",
+  "41":"500–999 salariés","42":"1 000–1 999 salariés","51":"2 000–4 999 salariés","52":"5 000–9 999 salariés","53":"10 000 salariés et plus"};
+const NAF_FALLBACK = {"47.11F":"Hypermarchés","47.11D":"Supermarchés","47.21Z":"Commerce de détail de fruits et légumes",
+  "47.29Z":"Autres commerces de détail alimentaires","18.12Z":"Imprimerie","66.19B":"Autres activités auxiliaires de services financiers",
+  "63.12Z":"Portails internet","56.10A":"Restauration traditionnelle","56.10C":"Restauration de type rapide",
+  "10.71C":"Boulangerie et boulangerie-pâtisserie","47.24Z":"Commerce de détail de pain, pâtisserie"};
+const ROLES = [["Employeurs", "Vous distribuez des titres-restaurant à vos salariés", "Employeurs qui distribuent des titres-restaurant"],
+  ["Émetteurs", "Émetteur de titres"], ["Plateformes", "Plateforme de livraison"], ["Associations", "Association"]];
+const hasEmployees = c => !!c.band && c.band !== "NN" && c.band !== "00";
 
 // € range, always as a range, one unit for both bounds: k€ when the high bound is under 1 M€, else M€ (1 decimal).
 const nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 });
@@ -214,6 +312,15 @@ function eurRange(r, perYear = true) {
   const f = v => k ? nf0.format(v / 1e3) : nf1.format(v / 1e6);
   const lo = f(r.low), hi = f(r.high);
   return `${lo === hi ? lo : `${lo} – ${hi}`} ${k ? "k€" : "M€"}${perYear ? "/an" : ""}`;
+}
+function pctRange(r, ca) {
+  if (!r || !ca) return null;
+  const p = v => {
+    const x = v / ca * 100;
+    return x === 0 ? "0" : x < 0.01 ? "< 0,01" : new Intl.NumberFormat("fr-FR", { maximumFractionDigits: x < 1 ? 2 : 1 }).format(x);
+  };
+  const lo = p(r.low), hi = p(r.high);
+  return `≈ ${lo === hi ? lo : `${lo} – ${hi}`} % du CA`;
 }
 function numRange(lo, hi) {
   const big = v => Math.abs(v) >= 1e6;
@@ -239,83 +346,313 @@ async function load(path) {
   if (!r.ok) throw new Error(path);
   return r.json();
 }
-function stored(key, fallback) { try { return localStorage.getItem(key) || fallback; } catch { return fallback; } }
-function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
+function stored(key) { try { return JSON.parse(localStorage.getItem(key) || "null"); } catch { return null; } }
+function store(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); } catch {} }
+
+// Normalise one API result into the company object the engine needs.
+function fromApi(r) {
+  const years = Object.keys(r.finances || {}).sort();
+  const y = years[years.length - 1];
+  const f = y ? r.finances[y] : null;
+  return {
+    siren: r.siren, name: r.nom_complet || r.nom_raison_sociale, naf: r.activite_principale || "",
+    band: r.tranche_effectif_salarie, city: r.siege?.libelle_commune || "",
+    ca: f?.ca ?? null, net: f?.resultat_net ?? null, year: y || null, source: "api",
+  };
+}
 
 (async () => {
-  const [profiles, feed] = await Promise.all([load("data/profiles.json"), load(`data/feed_${N}.json`)]);
-  let current = stored("profile", profiles[0].siren);
-  if (!feed[current]) current = profiles[0].siren;
-  let showAll = false;
+  const [engine, profiles] = await Promise.all([load(`data/engine_${N}.json`), load("data/profiles.json")]);
+  const measures = engine.measures || [];
+  const NAF_LABEL = { ...NAF_FALLBACK };
+  measures.forEach(m => (m.sectors || []).forEach(s => { if (/^\d\d\.\d\d[A-Z]$/.test(s.key)) NAF_LABEL[s.key] = s.label; }));
+  const nafLabel = naf => NAF_LABEL[naf] || "";
 
-  const pEl = document.getElementById("profiles");
+  let company = null;
+  let roles = new Set();
+  let showAll = false;
+  let activePreset = null;
+
+  const qEl = document.getElementById("q");
+  const rEl = document.getElementById("results");
+  const pEl = document.getElementById("presets");
+  const cEl = document.getElementById("company");
   const hEl = document.getElementById("headline");
   const fEl = document.getElementById("feed");
 
-  function profileLabel(p) {
-    const cards = feed[p.siren] || [];
-    if (p.roles && p.roles.length) return p.roles.join(", ");
-    return stripParen(cards[0] && cards[0].matched_sector) || `NAF ${p.naf}`;
+  /* ---------- Engine: which measures concern this company, and what they move for it ---------- */
+  function evaluate(m) {
+    const naf = company.naf;
+    const rates = m.chiffrage?.rates || [];
+    const nafRate = rates.find(r => r.nafs && r.nafs.includes(naf));
+    const roleRate = rates.find(r => r.role && roles.has(r.role));
+    const roleHit = (m.roles || []).find(r => roles.has(r));
+    // a role rate that is only "neutre" without amount does not by itself make the measure concern the company
+    const roleRateCounts = roleRate && !(roleRate.sign === "neutre" && !roleRate.eur);
+    const concerned = (m.nafs || []).includes(naf) || !!nafRate || !!roleHit || roleRateCounts;
+    if (!concerned) return null;
+
+    const rate = nafRate || roleRate || null;
+    let you;
+    if (!rate) you = { status: "no_rate" };
+    else if (rate.rate_low != null) {
+      you = company.ca == null
+        ? { status: "no_ca", sign: rate.sign, method: rate.method, scope: rate.scope }
+        : { status: "ok", sign: rate.sign, method: rate.method, scope: rate.scope,
+            eur: { low: company.ca * rate.rate_low, high: company.ca * rate.rate_high } };
+    } else {
+      you = { status: rate.eur ? "ok" : "nd", sign: rate.sign, eur: rate.eur || null, method: rate.method, scope: rate.scope };
+    }
+
+    const role = roleHit || (roleRate && roleRate.role);
+    const byNaf = (m.nafs || []).includes(naf) || !!nafRate;
+    const sectorLabel = byNaf
+      ? (m.sectors || []).find(s => s.key === naf)?.label || nafLabel(naf) || `NAF ${naf}`
+      : stripParen((m.sectors || []).find(s => role && s.key.toLowerCase().startsWith(role.toLowerCase().slice(0, 6)))?.label)
+        || (ROLES.find(r => r[0] === role)?.[2] ?? ROLES.find(r => r[0] === role)?.[1] ?? role);
+
+    const h = m.history ? { ...m.history } : null;
+    if (h) {
+      const self = norm(shortName(company.name)).split(/[^a-z0-9]+/).find(w => w.length >= 3);
+      const notSelf = arr => (arr || []).filter(o => !self || !norm(o).split(/[^a-z0-9]+/).includes(self));
+      h.allies = notSelf(you.sign === "gain" ? h.lobby_pour : you.sign === "perte" ? h.lobby_contre : []);
+      h.opponents = notSelf(you.sign === "gain" ? h.lobby_contre : you.sign === "perte" ? h.lobby_pour : []);
+    }
+    return { ...m, you, history: h, matched_sector: sectorLabel, by_role: !byNaf };
   }
 
-  pEl.innerHTML = profiles.map((p, i) => `
-    <button class="profile" data-siren="${p.siren}" aria-pressed="false">
-      <kbd>${i + 1}</kbd>
-      <b>${esc(shortName(p.name))}</b>
-      <small>${esc(profileLabel(p))} · SIREN ${esc(p.siren)}</small>
-    </button>`).join("");
-  pEl.querySelectorAll("button").forEach(b => b.addEventListener("click", () => select(b.dataset.siren)));
-  document.addEventListener("keydown", e => {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    const i = parseInt(e.key, 10) - 1;
-    if (i >= 0 && i < profiles.length) select(profiles[i].siren);
-  });
+  /* ---------- Search as you type ---------- */
+  const sEl = document.getElementById("status");
+  const wrapEl = qEl.closest(".search");
+  const cache = new Map();          // normalised query → { results, total }
+  let timer = null, ctrl = null, seq = 0, current = [], hi = -1, lastQ = "";
+  const norm = s => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const cleanQuery = q => { const d = q.replace(/[\s.]/g, ""); return /^\d{9}$/.test(d) ? d : q.trim().replace(/\s+/g, " "); };
+  const setBusy = on => { wrapEl.classList.toggle("busy", on); };
+  const status = html => { sEl.innerHTML = html || ""; };
 
-  function select(siren) {
-    if (siren === current) return;
-    current = siren; showAll = false; store("profile", current);
+  qEl.addEventListener("input", () => {
+    activePreset = null; renderPresets();
+    clearTimeout(timer);
+    const q = cleanQuery(qEl.value);
+    if (q.length < 2) { if (ctrl) ctrl.abort(); setBusy(false); rEl.hidden = true; current = []; status(""); return; }
+    if (cache.has(q)) { show(q, cache.get(q)); return; }   // instant from memory
+    timer = setTimeout(() => search(q), 150);
+  });
+  qEl.addEventListener("keydown", e => {
+    if (e.key === "Escape") { rEl.hidden = true; return; }
+    if (!current.length) return;
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+      e.preventDefault(); rEl.hidden = false;
+      hi = (hi + (e.key === "ArrowDown" ? 1 : -1) + current.length) % current.length; paintResults();
+      rEl.querySelector(".res.on")?.scrollIntoView({ block: "nearest" });
+    } else if (e.key === "Enter") { e.preventDefault(); pick(current[Math.max(hi, 0)]); }
+  });
+  document.addEventListener("click", e => { if (!e.target.closest(".search")) rEl.hidden = true; });
+  qEl.addEventListener("focus", () => { if (current.length && cleanQuery(qEl.value).length >= 2) rEl.hidden = false; });
+
+  async function apiSearch(q, signal) {
+    const url = `${API}?q=${encodeURIComponent(q)}&per_page=8&etat_administratif=A&minimal=true&include=siege,finances`;
+    const own = new AbortController();
+    const t = setTimeout(() => own.abort(), 6000);
+    if (signal) signal.addEventListener("abort", () => own.abort());
+    try {
+      const r = await fetch(url, { signal: own.signal });
+      if (!r.ok) throw new Error(r.status === 429 ? "trop de requêtes, réessayez" : `HTTP ${r.status}`);
+      const d = await r.json();
+      return { results: (d.results || []).map(fromApi), total: d.total_results ?? (d.results || []).length };
+    } finally { clearTimeout(t); }
+  }
+
+  async function search(q) {
+    if (ctrl) ctrl.abort();           // cancel the stale request
+    ctrl = new AbortController();
+    const my = ++seq;
+    setBusy(true);
+    status(`<span class="dim">Recherche dans le répertoire Sirene…</span>`);
+    try {
+      const res = await apiSearch(q, ctrl.signal);
+      if (my !== seq) return;
+      cache.set(q, res);
+      show(q, res);
+    } catch (e) {
+      if (my !== seq) return;          // superseded: a newer request owns the UI
+      current = []; rEl.hidden = false;
+      rEl.innerHTML = `<div class="res-msg err">La recherche d'entreprises ne répond pas (${esc(e.name === "AbortError" ? "délai dépassé" : e.message || "réseau")}).
+        Les exemples ci-dessous fonctionnent hors ligne.</div>`;
+      status("");
+    } finally { if (my === seq) setBusy(false); }
+  }
+
+  function show(q, res) {
+    seq++; setBusy(false);             // a cached answer supersedes anything in flight
+    if (ctrl) ctrl.abort();
+    lastQ = q; current = res.results; hi = current.length ? 0 : -1;
+    rEl.hidden = false;
+    if (!current.length) {
+      rEl.innerHTML = `<div class="res-msg">Aucune entreprise trouvée pour « ${esc(q)} ».</div>`;
+      status(""); return;
+    }
+    paintResults();
+    const tot = res.total || current.length;
+    status(tot > current.length
+      ? `${fmt(tot)} entreprises actives trouvées · ${current.length} premières affichées`
+      : `${plural(tot, "entreprise active trouvée", "entreprises actives trouvées")}`);
+  }
+
+  // highlight the typed words (accent- and case-insensitive) in an escaped name
+  function mark(text, q) {
+    const words = norm(q).split(/\s+/).filter(w => w.length >= 2)
+      .map(w => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    if (!words.length) return esc(text);
+    const n = norm(text);
+    if (n.length !== text.length) return esc(text);
+    const re = new RegExp(words.join("|"), "g");
+    let out = "", last = 0, m;
+    while ((m = re.exec(n))) {
+      if (!m[0].length) { re.lastIndex++; continue; }
+      out += esc(text.slice(last, m.index)) + `<mark>${esc(text.slice(m.index, m.index + m[0].length))}</mark>`;
+      last = m.index + m[0].length;
+    }
+    return out + esc(text.slice(last));
+  }
+
+  function paintResults() {
+    rEl.innerHTML = current.map((c, i) => `
+      <button type="button" class="res${i === hi ? " on" : ""}" data-i="${i}" role="option" aria-selected="${i === hi}">
+        <b>${mark(c.name, lastQ)}</b>
+        <small>SIREN ${mark(c.siren, lastQ)} · NAF ${esc(c.naf || "—")}${nafLabel(c.naf) ? ` ${esc(nafLabel(c.naf))}` : ""}${c.city ? ` · ${esc(c.city)}` : ""}${BANDS[c.band] ? ` · ${esc(BANDS[c.band])}` : ""}</small>
+      </button>`).join("");
+    rEl.querySelectorAll(".res").forEach(b => {
+      b.addEventListener("mousedown", e => e.preventDefault()); // keep focus in the input
+      b.addEventListener("click", () => pick(current[+b.dataset.i]));
+      b.addEventListener("mousemove", () => { const i = +b.dataset.i; if (i !== hi) { hi = i; rEl.querySelectorAll(".res").forEach((x, j) => x.classList.toggle("on", j === hi)); } });
+    });
+  }
+
+  function pick(c, keepRoles = false) {
+    if (!c) return;
+    rEl.hidden = true; current = []; status("");
+    qEl.value = shortName(c.name);
+    company = c;
+    if (!keepRoles) roles = new Set();
+    if (hasEmployees(c)) roles.add("Employeurs");
+    showAll = false;
+    store("company", { company, roles: [...roles], preset: activePreset });
     render(true);
   }
 
-  function headline(p, cards) {
-    const name = shortName(p.name);
+  /* ---------- Presets (1–4) ---------- */
+  function renderPresets() {
+    pEl.innerHTML = `<span>Exemples :</span>` + profiles.map((p, i) => `
+      <button type="button" class="preset${activePreset === p.siren ? " on" : ""}" data-i="${i}">
+        ${esc(shortName(p.name))} <kbd>${i + 1}</kbd></button>`).join("");
+    pEl.querySelectorAll(".preset").forEach(b => b.addEventListener("click", () => usePreset(+b.dataset.i)));
+  }
+  async function usePreset(i) {
+    const p = profiles[i]; if (!p) return;
+    activePreset = p.siren; renderPresets();
+    qEl.value = p.siren; rEl.hidden = true; ++seq;
+    let c = null;
+    try { c = (await apiSearch(p.siren)).results.find(x => x.siren === p.siren) || null; } catch {}
+    if (activePreset !== p.siren) return; // another choice happened meanwhile
+    if (!c) c = { siren: p.siren, name: p.name, naf: p.naf, band: p.headcount_band, city: p.city || "",
+                  ca: null, net: null, year: null, source: "offline" };
+    roles = new Set(p.roles || []);
+    pick(c, true);
+  }
+  document.addEventListener("keydown", e => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target.closest && e.target.closest("input, textarea")) return;
+    const i = parseInt(e.key, 10) - 1;
+    if (i >= 0 && i < profiles.length) usePreset(i);
+  });
+
+  /* ---------- Rendering ---------- */
+  function companyCard() {
+    const c = company;
+    const lbl = nafLabel(c.naf);
+    const fin = c.ca != null
+      ? `<div class="fin"><div class="ca">${eurRange({ low: c.ca, high: c.ca }, false)}</div>
+           <small>chiffre d'affaires ${esc(c.year || "")}${c.net != null ? ` · résultat net ${eurRange({ low: c.net, high: c.net }, false)}` : ""}</small></div>`
+      : `<div class="fin"><small>CA non publié</small></div>`;
+    const roleBtns = ROLES.map(([k, l]) => `<button type="button" class="role" data-role="${esc(k)}" aria-pressed="${roles.has(k)}">${esc(l)}</button>`).join("");
+    return `<div class="company">
+      <div><h3>${esc(shortName(c.name))}</h3>
+        <div class="facts"><span>SIREN <b>${esc(c.siren)}</b></span>
+          <span>NAF <b>${esc(c.naf || "—")}</b>${lbl ? ` ${esc(lbl)}` : ""}</span>
+          ${c.city ? `<span>${esc(c.city)}</span>` : ""}
+          ${BANDS[c.band] ? `<span>${esc(BANDS[c.band])}</span>` : ""}</div></div>
+      ${fin}
+      <div class="roles"><span>Vous êtes aussi :</span>${roleBtns}</div>
+    </div>${c.source === "offline" ? `<p class="notice">Recherche d'entreprises indisponible : données de secours (NAF connu, chiffre d'affaires non disponible).</p>` : ""}`;
+  }
+
+  function headline(cards) {
+    const name = shortName(company.name);
+    if (!cards.length) return `<h1>Pour <em>${esc(name)}</em> : aucune mesure en attente.</h1>
+      <p>Aucune mesure en attente ne vise votre secteur (NAF ${esc(company.naf || "inconnu")}${nafLabel(company.naf) ? `, ${esc(nafLabel(company.naf))}` : ""}).
+      Si vous distribuez des titres-restaurant, ou êtes émetteur, plateforme ou association, cochez-le ci-dessus.</p>`;
     const maj = cards.filter(c => c.majority_groups && c.majority_groups.length).length;
     const nAmdts = cards.reduce((s, c) => s + c.amendments.length, 0);
-    const multi = cards.filter(c => c.n_groups > 1).length;
-    if (!cards.length) return `<h1>Pour <em>${esc(name)}</em> : aucune mesure en attente.</h1>`;
     const majTxt = maj === 0 ? "aucune portée par la majorité sénatoriale"
       : `dont ${maj} ${maj > 1 ? "portées" : "portée"} par la majorité sénatoriale`;
+    const sum = sign => {
+      const xs = cards.filter(c => c.you.sign === sign && c.you.eur);
+      if (!xs.length) return null;
+      return { n: xs.length, low: xs.reduce((s, c) => s + c.you.eur.low, 0), high: xs.reduce((s, c) => s + c.you.eur.high, 0) };
+    };
+    const tile = (sign, label) => {
+      const s = sum(sign); if (!s) return "";
+      const pct = pctRange(s, company.ca);
+      return `<div class="tot ${sign}"><small>${label} (${plural(s.n, "mesure chiffrée", "mesures chiffrées")})</small>
+        <div class="v">${eurRange(s)}</div>${pct ? `<div class="pct">${pct}</div>` : ""}</div>`;
+    };
+    const nd = cards.filter(c => !c.you.eur).length;
+    const tiles = tile("gain", "Gains possibles") + tile("perte", "Pertes possibles");
     return `<h1>Pour <em>${esc(name)}</em> : ${plural(cards.length, "mesure", "mesures")}, ${majTxt}.</h1>
-      <p>${plural(nAmdts, "amendement en attente", "amendements en attente")} · ${plural(multi, "mesure déposée", "mesures déposées")} par plusieurs groupes · classées par soutien</p>`;
+      <p>${plural(nAmdts, "amendement en attente", "amendements en attente")} · classées par soutien
+        ${nd ? ` · ${plural(nd, "mesure non chiffrée", "mesures non chiffrées")} pour vous` : ""}</p>
+      ${tiles ? `<div class="totals">${tiles}</div>` : ""}`;
   }
 
   function exposure(c) {
     const sector = `<div class="sector">Secteur : ${esc(stripParen(c.matched_sector))}</div>`;
     const nc = (c.not_counted || []).map(stripParen).filter(Boolean);
+    if (c.by_role) {
+      return `<div class="expo"><div class="k">Exposition</div><div class="num sm">non chiffrée pour ce rôle</div>
+        <div class="lbl">Le comptage d'entreprises porte sur les secteurs visés par leur code NAF, pas sur ce rôle.</div>${sector}</div>`;
+    }
     if (c.companies == null) {
       const list = nc.length ? `<div class="lbl">${nc.map(esc).join(" · ")} : pas de code NAF propre</div>` : "";
       return `<div class="expo"><div class="k">Exposition</div><div class="num sm">non chiffré</div>${list}${sector}</div>`;
     }
     const ncLine = nc.length ? `<div class="nc">+ non chiffré : ${nc.map(esc).join(" · ")}</div>` : "";
+    const top = c.open_top ? "+" : "";
     const emp = c.employees_low == null ? "—"
-      : c.employees_low === c.employees_high ? fmt(c.employees_low)
-      : `${fmt(c.employees_low)} – ${fmt(c.employees_high)}`;
+      : c.employees_low === c.employees_high ? `≈ ${fmt(c.employees_low)}${top}`
+      : `≈ ${fmt(c.employees_low)} – ${fmt(c.employees_high)}${top}`;
     return `<div class="expo"><div class="k">Exposition</div>
-      <div class="row"><div class="num">${fmt(c.companies)}</div><div class="lbl">entreprises des secteurs visés</div></div>
+      <div class="row"><div class="num">≈ ${fmt(c.companies)}</div><div class="lbl">entreprises des secteurs visés</div></div>
       <div class="row"><div class="num sm">${emp}</div><div class="lbl">employés concernés</div></div>
       ${ncLine}${sector}</div>`;
   }
 
-  function chiffrage(ch) {
-    if (!ch) return { main: "", det: "" };
-    const y = ch.you || {};
+  function chiffrage(ch, y) {
     let you = "";
-    if (y.sign) {
-      const amt = eurRange(y.eur_per_year);
+    if (y.status === "no_rate") {
+      you = `<div><div class="you"><span class="lead">Pour vous</span><span class="nd">non chiffré pour votre secteur</span></div></div>`;
+    } else if (y.sign) {
+      const amt = y.status === "ok" ? eurRange(y.eur) : null;
+      const nd = y.status === "no_ca" ? "CA non publié" : `non chiffré${y.sign === "perte" ? "e" : ""}`;
       const val = y.sign === "neutre" ? "neutre"
-        : `${y.sign === "gain" ? "gain" : "perte"} ${amt ? `de ${amt}` : `<span class="nd">non chiffré${y.sign === "perte" ? "e" : ""}</span>`}`;
-      you = `<div><div class="you ${esc(y.sign)}"><span class="lead">Pour vous</span><span>${val}</span></div></div>`;
+        : `${y.sign === "gain" ? "gain" : "perte"} ${amt ? `de ${amt}` : `<span class="nd">${nd}</span>`}`;
+      const pct = amt && y.sign !== "neutre" ? pctRange(y.eur, company.ca) : null;
+      you = `<div><div class="you ${esc(y.sign)}"><span class="lead">Pour vous</span><span>${val}</span>${pct ? `<span class="nd">${pct}</span>` : ""}</div></div>`;
     }
+    const how = y.method || y.scope
+      ? `<p class="how" title="${esc([y.method, y.scope].filter(Boolean).join(" — "))}"><b>Comment on calcule :</b> ${esc(y.method || "")}${y.scope ? ` <span>(${esc(y.scope)})</span>` : ""}</p>` : "";
+    if (!ch) return { main: you + how, det: "" };
     const tot = eurRange(ch.total_eur_per_year);
     const total = tot ? `<p class="total">Au total : <b>${tot}</b> déplacés</p>`
                       : `<p class="total">Au total : <b>montant non chiffrable</b></p>`;
@@ -329,12 +666,12 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
         ${p.quote ? `<i>« ${esc(p.quote)} »</i>` : ""}${p.source ? `<span class="src">Source : ${sourceHtml(p.source)}</span>` : ""}</li>`).join("");
     const det = `
       ${ch.mechanism ? `<p><span class="k">Mécanisme :</span> ${esc(ch.mechanism)}</p>` : ""}
-      ${y.method ? `<p><span class="k">Calcul pour vous :</span> ${esc(y.method)}</p>` : ""}
+      ${y.method ? `<p><span class="k">Calcul pour vous :</span> ${esc(y.method)}${y.scope ? ` (${esc(y.scope)})` : ""}</p>` : ""}
       ${ch.not_computable ? `<p><span class="k">${tot ? "Note sur le total" : "Pourquoi non chiffrable"} :</span> ${esc(ch.not_computable)}</p>` : ""}
       ${ch.winners?.length || ch.losers?.length ? `<p><span class="k">Gagnants :</span> ${(ch.winners || []).map(esc).join(" ; ") || "—"}<br>
         <span class="k">Perdants :</span> ${(ch.losers || []).map(esc).join(" ; ") || "—"}</p>` : ""}
       ${params ? `<p class="k" style="margin-bottom:0">Paramètres sourcés</p><ul class="params">${params}</ul>` : ""}`;
-    return { main: you + total + sides, det };
+    return { main: you + how + total + sides, det };
   }
 
   function history(h) {
@@ -353,9 +690,9 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
 
     const groups = Object.entries(h.senate_by_group || {});
     const table = groups.length ? `<p class="k" style="margin-bottom:0">Amendements déjà déposés au Sénat, par groupe</p>
-      <table class="hist"><thead><tr><th>Groupe</th><th>Déposés</th><th>Adoptés</th><th>Rejetés</th><th>Années</th></tr></thead><tbody>
+      <table class="hist"><thead><tr><th>Groupe</th><th>Déposés</th><th>Adoptés</th><th>Rejetés</th><th>Pour la mesure</th><th>Contre</th><th>Années</th></tr></thead><tbody>
       ${groups.map(([g, s]) => `<tr><td>${esc(GROUP(g))}</td><td>${s.filed ?? "—"}</td><td>${s.adopted ?? "—"}</td><td>${s.rejected ?? "—"}</td>
-        <td>${esc((s.years || []).join(", "))}</td></tr>`).join("")}</tbody></table>` : "";
+        <td class="pc w">${s.pour ?? "—"}</td><td class="pc l">${s.contre ?? "—"}</td><td>${esc((s.years || []).join(", "))}</td></tr>`).join("")}</tbody></table>` : "";
     const findings = (h.findings || []).length ? `<p class="k" style="margin-bottom:0">Ce qui s'est déjà passé</p><ul class="params">
       ${h.findings.map(x => `<li>${esc(x.text)}${x.source ? `<span class="src"> — ${sourceHtml(x.source)}</span>` : ""}</li>`).join("")}</ul>` : "";
     const quotes = (h.lobby_quotes || []).length ? `<p class="k" style="margin-bottom:0">Positions déclarées à la HATVP</p><ul class="params">
@@ -366,14 +703,15 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
   }
 
   function card(c, i) {
-    const ch = chiffrage(c.chiffrage);
+    const ch = chiffrage(c.chiffrage, c.you);
     const hi = history(c.history);
     const maj = new Set(c.majority_groups || []);
     const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a))
       .map(g => `<span class="chip${maj.has(g) ? " maj" : ""}">${esc(GROUP(g))}</span>`).join("");
     const legend = maj.size ? `<span class="chip legend">en bleu : majorité sénatoriale</span>` : "";
-    const extra = c.effects.length > 1 ? ` <span class="more">+ ${c.effects.length - 1} variante${c.effects.length > 2 ? "s" : ""}</span>` : "";
-    const links = c.amendments.map(n => {
+    const effects = c.effects || [];
+    const extra = effects.length > 1 ? ` <span class="more">+ ${effects.length - 1} variante${effects.length > 2 ? "s" : ""}</span>` : "";
+    const links = (c.amendments || []).map(n => {
       const num = String(n).split(" ")[0];
       return `<a href="https://www.senat.fr/amendements/2026-2027/${N}/Amdt_${encodeURIComponent(num)}.html" target="_blank" rel="noopener">n°${esc(n)}</a>`;
     }).join("");
@@ -382,7 +720,7 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
         <div class="rank">${i + 1}</div>
         <div>
           <h2>${esc(c.theme)}</h2>
-          <p class="effect">${esc(c.effects[0])}${extra}</p>
+          <p class="effect">${esc(effects[0] || "")}${extra}</p>
           ${ch.main}
           ${hi.main}
           <div class="support"><span class="count">${c.n_groups > 1 ? `Portée par ${c.n_groups} groupes` : "Un seul groupe"}</span>${groups}${legend}</div>
@@ -391,10 +729,10 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
             <div class="det">
               ${ch.det}
               ${hi.det}
-              <p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>
-              ${c.effects.length > 1 ? `<p><span class="k">Variantes :</span> ${c.effects.map(esc).join(" · ")}</p>` : ""}
-              <blockquote>« ${esc(c.quote)} »</blockquote>
-              <p class="amdts"><span class="k">${plural(c.amendments.length, "amendement", "amendements")} :</span> ${links}</p>
+              ${c.who ? `<p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>` : ""}
+              ${effects.length > 1 ? `<p><span class="k">Variantes :</span> ${effects.map(esc).join(" · ")}</p>` : ""}
+              ${c.quote ? `<blockquote>« ${esc(c.quote)} »</blockquote>` : ""}
+              <p class="amdts"><span class="k">${plural((c.amendments || []).length, "amendement", "amendements")} :</span> ${links}</p>
             </div>
           </details>
         </div>
@@ -403,18 +741,26 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
   }
 
   function render(animate) {
-    pEl.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.siren === current)));
-    const p = profiles.find(x => x.siren === current);
-    const cards = feed[current] || [];
+    if (!company) {
+      cEl.innerHTML = ""; hEl.innerHTML = ""; fEl.innerHTML = "";
+      return;
+    }
+    cEl.innerHTML = companyCard();
+    cEl.querySelectorAll(".role").forEach(b => b.addEventListener("click", () => {
+      const k = b.dataset.role; roles.has(k) ? roles.delete(k) : roles.add(k);
+      store("company", { company, roles: [...roles], preset: activePreset });
+      render(true);
+    }));
 
-    hEl.innerHTML = headline(p, cards);
+    const cards = measures.map(evaluate).filter(Boolean);
+    hEl.innerHTML = headline(cards);
     if (animate) { hEl.classList.remove("fade"); void hEl.offsetWidth; hEl.classList.add("fade"); }
 
     // FLIP: remember where each measure was, so shared measures visibly move to their new rank.
     const before = new Map();
     if (animate) fEl.querySelectorAll(".card").forEach(el => before.set(el.dataset.key, el.getBoundingClientRect().top));
 
-    if (!cards.length) { fEl.innerHTML = `<p class="empty">Aucun amendement en attente ne concerne cette entreprise.</p>`; return; }
+    if (!cards.length) { fEl.innerHTML = ""; return; }
     const shown = showAll ? cards : cards.slice(0, TOP);
     const rest = cards.length - shown.length;
     fEl.innerHTML = shown.map(card).join("") +
@@ -425,11 +771,7 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
     if (!animate) return;
     fEl.querySelectorAll(".card").forEach((el, i) => {
       const old = before.get(el.dataset.key);
-      if (old == null) {
-        el.style.animationDelay = `${i * 45}ms`;
-        el.classList.add("enter");
-        return;
-      }
+      if (old == null) { el.style.animationDelay = `${i * 45}ms`; el.classList.add("enter"); return; }
       const dy = old - el.getBoundingClientRect().top;
       if (!dy) return;
       el.style.transition = "none";
@@ -440,7 +782,15 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
       }));
     });
   }
-  render(false);
+
+  renderPresets();
+  const saved = stored("company");
+  if (saved && saved.company && saved.company.siren) {
+    company = saved.company; roles = new Set(saved.roles || []); activePreset = saved.preset || null;
+    qEl.value = shortName(company.name); renderPresets(); render(false);
+  } else {
+    usePreset(0);
+  }
 })().catch(e => {
   document.getElementById("feed").innerHTML =
     `<p class="empty">Impossible de charger les données (${esc(e.message)}). Lancez un serveur local : python3 -m http.server</p>`;
