@@ -2,9 +2,10 @@
 # Secrets are set in the Render dashboard (sync: false), never committed.
 services:
   - type: web
-    name: amendment-exposure
+    name: amendment-exposure-eu
     runtime: python
     plan: free
+    region: frankfurt  # EU: French public sites (senat.fr) did not answer from the default US region
     branch: live-pipeline
     buildCommand: "true"
     startCommand: python3 server.py
