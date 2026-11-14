@@ -321,62 +321,119 @@
   .runbox[hidden] { display: none; }
   .runbox .stream { max-height: 180px; margin-bottom: 0; }
   .runbox .live-err { margin: 6px 0 0; }
+  .pchip { font-size: 13px; font-weight: 650; color: var(--accent); background: var(--accent-soft); border-radius: 999px;
+           padding: 5px 12px; text-decoration: none; max-width: 60%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pchip b { color: var(--ink); }
+  a.brand { color: inherit; text-decoration: none; }
+  .tabs { border-top: 1px solid var(--line); background: #fff; position: sticky; top: 0; z-index: 20; }
+  .tabs-in { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .tabs-in::-webkit-scrollbar { display: none; }
+  .tabs a { flex: none; padding: 12px 14px; font-weight: 650; font-size: 15px; color: var(--muted); text-decoration: none;
+            border-bottom: 3px solid transparent; white-space: nowrap; }
+  .tabs a:hover { color: var(--ink); }
+  .tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+  .view { padding-top: 6px; }
+  .view[hidden] { display: none; }
+  .vh { font-size: 28px; line-height: 1.2; letter-spacing: -.02em; margin: 22px 0 6px; }
+  .crumb { margin: 18px 0 0; font-size: 14px; }
+  .crumb a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .tlist { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-top: 16px; }
+  .tcard { display: block; border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; text-decoration: none; color: inherit; background: #fff; }
+  .tcard:hover { border-color: var(--accent); box-shadow: 0 8px 24px -18px rgba(29,78,216,.5); }
+  .tcard .n { font-size: 12.5px; color: var(--muted); font-weight: 650; text-transform: uppercase; letter-spacing: .05em; }
+  .tcard h3 { margin: 4px 0 8px; font-size: 17px; line-height: 1.3; letter-spacing: -.01em; }
+  .tcard .m { font-size: 13.5px; color: var(--muted); }
+  .tcard .m b { color: var(--accent); }
+  .emptybox { border: 1px dashed #b8c6e8; border-radius: 14px; padding: 18px; color: var(--muted); margin-top: 16px; background: #fbfcff; }
+  .emptybox a { color: var(--accent); font-weight: 650; }
+  .nafform { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; font-size: 14px; color: var(--muted); }
+  .nafform input { font: inherit; font-size: 15px; width: 110px; border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; color: var(--ink); text-transform: uppercase; }
+  .nafform button { font: inherit; font-size: 13px; font-weight: 700; color: var(--accent); background: var(--accent-soft); border: 0; border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+  .nafform .ok { color: var(--gain); font-weight: 650; } .nafform .warn { color: var(--loss); }
+  .moi-src { font-size: 12.5px; color: var(--muted); margin-bottom: 4px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .moi-src .ch { font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+  .moi-src a { color: var(--accent); }
+  .cta { display: inline-block; margin-top: 12px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 10px; padding: 9px 14px; text-decoration: none; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
 <body>
 <header>
   <div class="wrap top">
-    <div class="brand">Exposition<span>.</span></div>
-    <span class="pill"><span class="dot"></span><span id="pillText">chargement du texte…</span></span>
+    <a class="brand" href="#senat">Exposition<span>.</span></a>
+    <a class="pchip" id="pchip" href="#profil">Définir mon profil</a>
   </div>
+  <nav class="tabs" aria-label="Sections">
+    <div class="wrap tabs-in" id="tabs">
+      <a href="#senat" data-tab="senat">Sénat</a>
+      <a href="#an" data-tab="an">Assemblée nationale</a>
+      <a href="#moi" data-tab="moi">Ce qui me vise</a>
+      <a href="#profil" data-tab="profil">Mon profil</a>
+    </div>
+  </nav>
 </header>
 
 <main class="wrap">
-  <p class="intro">Un projet de loi a une étude d'impact, pas un amendement. Choisissez un texte en discussion au Sénat, puis cherchez votre entreprise :
-    voici les amendements en attente qui la concernent, ce qu'ils déplacent pour elle en euros, combien d'entreprises et d'employés sont exposés, et qui les porte.</p>
-
-  <form class="textpick" id="textpick" autocomplete="off">
-    <span>Texte du Sénat :</span>
-    <label>session <input name="session" inputmode="numeric" pattern="\d{4}-\d{4}" required></label>
-    <label>n° <input name="number" inputmode="numeric" pattern="\d{1,4}" required></label>
-    <button type="submit">Charger</button>
-    <span class="ttl" id="textTitle"></span>
-    <span id="textNote"></span>
-    <button type="button" id="recalc" class="recalc" hidden>Recalculer ce texte</button>
-    <span class="gen" id="textGen"></span>
-  </form>
-  <div class="runbox" id="runbox" hidden></div>
-
-  <div class="step"><b>1</b> · Votre entreprise</div>
-  <div class="search">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-    <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Nom de l'entreprise ou SIREN" aria-label="Nom de l'entreprise ou SIREN">
-    <span class="spin" aria-hidden="true"></span>
-    <div class="status" id="status" aria-live="polite"></div>
-    <div class="results" id="results" role="listbox" hidden></div>
-  </div>
-  <div class="presets" id="presets"></div>
-  <div id="company"></div>
-
-  <section class="live" id="live">
-    <button type="button" class="live-head" id="liveHead" aria-expanded="false">
-      <span class="pulse" aria-hidden="true"></span>
-      <span class="live-title" id="liveTitle">Sénat, en direct</span>
-      <span class="live-meta" id="liveMeta">connexion…</span>
-      <span class="live-toggle">Ouvrir</span>
-    </button>
-    <div class="live-body" id="liveBody" hidden>
-      <div class="live-list" id="liveList"></div>
-      <div class="live-run" id="liveRun"></div>
-    </div>
+  <section id="v-list" class="view" hidden>
+    <h1 class="vh" id="listTitle"></h1>
+    <p class="intro" id="listIntro"></p>
+    <div class="tlist" id="textList"></div>
   </section>
 
-  <section class="headline" id="headline" aria-live="polite"></section>
+  <section id="v-text" class="view" hidden>
+    <p class="crumb"><a id="backLink" href="#senat">← Textes du Sénat</a></p>
+    <h1 class="vh" id="textTitle"></h1>
+    <div class="textpick" id="textpick">
+      <span class="pill"><span class="dot"></span><span id="pillText">chargement du texte…</span></span>
+      <span id="textNote"></span>
+      <button type="button" id="recalc" class="recalc" hidden>Recalculer ce texte</button>
+      <span class="gen" id="textGen"></span>
+    </div>
+    <div class="runbox" id="runbox" hidden></div>
 
-  <div class="feed" id="feed"></div>
+    <section class="live" id="live">
+      <button type="button" class="live-head" id="liveHead" aria-expanded="false">
+        <span class="pulse" aria-hidden="true"></span>
+        <span class="live-title" id="liveTitle">Sénat, en direct</span>
+        <span class="live-meta" id="liveMeta">connexion…</span>
+        <span class="live-toggle">Ouvrir</span>
+      </button>
+      <div class="live-body" id="liveBody" hidden>
+        <div class="live-list" id="liveList"></div>
+        <div class="live-run" id="liveRun"></div>
+      </div>
+    </section>
 
-  <section class="scan" id="scan" hidden></section>
+    <section class="headline" id="headline" aria-live="polite"></section>
+    <div class="feed" id="feed"></div>
+    <section class="scan" id="scan" hidden></section>
+  </section>
+
+  <section id="v-moi" class="view" hidden>
+    <section class="headline" id="moiHead" aria-live="polite"></section>
+    <div class="feed" id="moiFeed"></div>
+  </section>
+
+  <section id="v-profil" class="view" hidden>
+    <h1 class="vh">Mon profil</h1>
+    <p class="intro">Votre entreprise (par nom ou SIREN) ou seulement votre code NAF, et vos rôles. Le profil reste dans ce navigateur : rien n'est envoyé au serveur.</p>
+    <div class="step"><b>1</b> · Votre entreprise</div>
+    <div class="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Nom de l'entreprise ou SIREN" aria-label="Nom de l'entreprise ou SIREN">
+      <span class="spin" aria-hidden="true"></span>
+      <div class="status" id="status" aria-live="polite"></div>
+      <div class="results" id="results" role="listbox" hidden></div>
+    </div>
+    <div class="presets" id="presets"></div>
+    <form class="nafform" id="nafForm" autocomplete="off">
+      <span>ou seulement un code NAF :</span>
+      <input id="nafIn" placeholder="56.10A" maxlength="7" aria-label="Code NAF">
+      <button type="submit">Utiliser ce code</button>
+      <span id="nafMsg"></span>
+    </form>
+    <div id="company"></div>
+  </section>
 
   <footer>
     <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (recherche-entreprises.api.gouv.fr : unités légales actives, code NAF, tranches d'effectifs INSEE, chiffre d'affaires publié) ;
@@ -412,7 +469,7 @@ function h(tag, attrs, ...kids) {
     else if (k === "style") el.style.cssText = v;
     else if (k === "dataset") Object.assign(el.dataset, v);
     else if (k.startsWith("on") && typeof v === "function") el.addEventListener(k.slice(2), v);
-    else if (k === "href") { if (/^https?:\/\//.test(String(v))) el.setAttribute("href", v); }
+    else if (k === "href") { if (/^(https?:\/\/|#)/.test(String(v))) el.setAttribute("href", v); }
     else el.setAttribute(k, v === true ? "" : String(v));
   }
   return append(el, kids);
@@ -550,14 +607,21 @@ async function probeHealth(base, ms) {
   })();
   liveReady.then(ok => {
     liveLoad(); if (!document.getElementById("scan").hidden) paintScan();
-    if (ok) { document.getElementById("recalc").hidden = false; checkRun(true); }
+    if (ok && text.chamber === "senat") { document.getElementById("recalc").hidden = false; if (engine) checkRun(true); }
   });
 
   /* ---------- state ---------- */
-  let text = { ...DEFAULT_TEXT };
+  let text = { chamber: "senat", ...DEFAULT_TEXT, path: null };
+  let INDEX = null;                         // data/index.json
+  const ENGINES = new Map();                // path → engine (for "Ce qui me vise")
+  const ALL_NAF = {};                       // NAF labels gathered from every engine read
+  const CHAMBER = { senat: "Sénat", an: "Assemblée nationale" };
   let engine = null, measures = [], NAF_LABEL = {}, ROLES_IN_DATA = [];
   let company = null, roles = new Set(), showAll = false;
-  const nafLabel = naf => NAF_LABEL[naf] || "";
+  const nafLabel = naf => NAF_LABEL[naf] || ALL_NAF[naf] || "";
+  const learnNaf = eng => (eng.measures || []).forEach(m => (m.sectors || []).forEach(s => {
+    const k = s.naf || s.key; if (isNaf(k) && s.label && !ALL_NAF[k]) ALL_NAF[k] = s.label; }));
+  const profName = () => !company ? "" : company.nafOnly ? `${stripParen(nafLabel(company.naf)) || "Secteur"} (${company.naf})` : shortName(company.name);
   // "libellé (code)" for a NAF, French word for a role, "Autre : xxx" for free roles; never a bare code
   function target(x, label) {
     const raw = typeof x === "string" ? x : x?.naf || x?.key || x?.role || "";
@@ -568,33 +632,78 @@ async function probeHealth(base, ms) {
     if (ROLE_PLURAL[rk]) return ROLE_PLURAL[rk];
     return stripParen(lbl || raw);
   }
-  const amdtUrl = n => `https://www.senat.fr/amendements/${text.session}/${text.number}/Amdt_${encodeURIComponent(String(n).split(" ")[0])}.html`;
+  const amdtUrl = (n, t = text) => t.chamber === "an" ? null
+    : `https://www.senat.fr/amendements/${t.session}/${t.number}/Amdt_${encodeURIComponent(String(n).split(" ")[0])}.html`;
 
   const $ = id => document.getElementById(id);
   const qEl = $("q"), rEl = $("results"), pEl = $("presets"), cEl = $("company"), hEl = $("headline"), fEl = $("feed");
-  const form = $("textpick");
 
-  /* ---------- text picker + engine loading ---------- */
-  function readHash() {
-    const m = /^#?(\d{4}-\d{4})\/(\d{1,4})$/.exec(location.hash);
-    return m ? { session: m[1], number: m[2] } : null;
+
+  /* ---------- index of computed texts + hash router ---------- */
+  async function loadIndex() {
+    if (INDEX) return INDEX;
+    try { INDEX = await loadJson("data/index.json"); if (!Array.isArray(INDEX)) INDEX = []; }
+    catch { INDEX = [{ chamber: "senat", ...DEFAULT_TEXT, title: null, path: null }]; }
+    return INDEX;
   }
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    const t = { session: form.session.value.trim(), number: String(parseInt(form.number.value, 10) || "") };
-    if (!/^\d{4}-\d{4}$/.test(t.session) || !t.number) return;
-    location.hash = `${t.session}/${t.number}`;
-  });
-  window.addEventListener("hashchange", () => { const t = readHash(); if (t) loadText(t); });
+  const textHash = t => `#${t.chamber}/${t.session}/${t.number}`;
+
+  function parseHash() {
+    const hs = decodeURIComponent(location.hash.replace(/^#/, ""));
+    let m = /^(\d{4}-\d{4})\/(\d{1,4})$/.exec(hs);                       // old links: #2026-2027/142
+    if (m) return { view: "text", chamber: "senat", session: m[1], number: m[2] };
+    m = /^(senat|an)(?:\/([^/]+)\/([^/]+))?$/.exec(hs);
+    if (m) return m[2] ? { view: "text", chamber: m[1], session: m[2], number: m[3] } : { view: "list", chamber: m[1] };
+    if (hs === "moi" || hs === "profil") return { view: hs };
+    return { view: "list", chamber: "senat" };
+  }
+
+  async function route() {
+    const r = parseHash();
+    const tab = r.view === "text" || r.view === "list" ? r.chamber : r.view;
+    document.querySelectorAll("#tabs a").forEach(a => a.toggleAttribute("aria-current", false) || (a.dataset.tab === tab && a.setAttribute("aria-current", "page")));
+    ["list", "text", "moi", "profil"].forEach(v => { $(`v-${v}`).hidden = v !== r.view; });
+    rEl.hidden = true;
+    if (r.view === "list") await renderList(r.chamber);
+    else if (r.view === "text") {
+      const idx = await loadIndex();
+      const entry = idx.find(x => x.chamber === r.chamber && String(x.session) === r.session && String(x.number) === r.number);
+      const t = { chamber: r.chamber, session: r.session, number: r.number, path: entry?.path || null, title: entry?.title || null };
+      if (!engine || textHash(t) !== textHash(text)) await loadText(t); else render(false);
+    } else if (r.view === "moi") await renderMoi();
+    else renderProfil();
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", route);
+
+  async function renderList(chamber) {
+    const idx = await loadIndex();
+    const list = idx.filter(x => x.chamber === chamber);
+    fill($("listTitle"), chamber === "an" ? "Assemblée nationale" : "Sénat");
+    fill($("listIntro"), `Textes dont les amendements ont été analysés : mesures, entreprises et employés exposés, soutien des groupes`,
+      chamber === "senat" ? ", direct depuis le Sénat." : ".");
+    if (!list.length) {
+      fill($("textList"), h("div", { class: "emptybox" }, chamber === "an"
+        ? "Premier texte de l'Assemblée en cours de calcul : le même pipeline lit ses amendements, il apparaîtra ici dès qu'il sera prêt."
+        : "Aucun texte calculé pour l'instant."));
+      return;
+    }
+    fill($("textList"), list.map(x => h("a", { class: "tcard", href: textHash(x) },
+      h("div", { class: "n" }, `${CHAMBER[x.chamber] || x.chamber} · n°${x.number} · ${x.session}`),
+      h("h3", null, x.title || `Texte n°${x.number}`),
+      h("div", { class: "m" }, h("b", null, plural(x.n_measures ?? 0, "mesure", "mesures")),
+        x.generated_at ? ` · calculé le ${fmtDate(x.generated_at)}` : ""))));
+  }
 
   async function fetchEngine(t) {
     const key = `${t.session}/${t.number}`;
-    try { return { engine: await loadJson(`data/${key}/engine.json`), from: "fichier" }; }
+    const base = t.path || (t.chamber === "an" ? `data/an/${key}` : `data/${key}`);
+    try { return { engine: await loadJson(`${base}/engine.json`), from: "fichier" }; }
     catch (e) { if (e.http !== 404) throw e; }
-    if (LEGACY[key]) return { engine: await loadJson(LEGACY[key]), from: "ancien format" };
+    if (t.chamber === "senat" && LEGACY[key]) return { engine: await loadJson(LEGACY[key]), from: "ancien format" };
     // No static file: the server may have one (GET never recomputes; a recompute is the explicit button below).
     await liveReady;
-    if (LIVE_OK) {
+    if (LIVE_OK && t.chamber === "senat") {
       try { return { engine: await loadJson(`${LIVE}/api/text/${t.session}/${t.number}`), from: "serveur" }; } catch {}
     }
     throw new Error(`Le texte n°${t.number} (${t.session}) n'est pas encore analysé.` +
@@ -603,11 +712,13 @@ async function probeHealth(base, ms) {
 
   async function loadText(t) {
     text = t;
-    form.session.value = t.session; form.number.value = t.number;
-    fill($("textTitle")); fill($("textNote"), "chargement…");
+    const ch = CHAMBER[t.chamber] || "Sénat";
+    $("backLink").href = `#${t.chamber}`; fill($("backLink"), `← Textes ${t.chamber === "an" ? "de l'Assemblée nationale" : "du Sénat"}`);
+    fill($("textTitle"), t.title || `Texte n°${t.number}`); fill($("pillText"), `${ch} · n°${t.number}`); fill($("textNote"), "chargement…");
+    $("recalc").hidden = !(LIVE_OK && t.chamber === "senat");
     try {
       const res = await fetchEngine(t);
-      engine = res.engine; measures = engine.measures || [];
+      engine = res.engine; measures = engine.measures || []; learnNaf(engine);
       NAF_LABEL = {};
       measures.forEach(m => (m.sectors || []).forEach(s => {
         const k = s.naf || s.key; if (isNaf(k) && s.label) NAF_LABEL[k] = s.label;
@@ -619,28 +730,27 @@ async function probeHealth(base, ms) {
       });
       ROLES_IN_DATA = ROLE_LIST.filter(([k]) => present.has(k));
       const tx = engine.text || {};
-      const title = tx.title || `Texte n°${t.number} (${t.session})`;
-      fill($("pillText"), [tx.chamber || "Sénat", title, seanceLabel(tx.seance)].filter(Boolean).join(" · "));
-      fill($("liveTitle"), `${tx.chamber || "Sénat"}, en direct`);
+      const title = tx.title || t.title || `Texte n°${t.number} (${t.session})`;
+      fill($("pillText"), [ch, `n°${t.number}`, t.session, seanceLabel(tx.seance)].filter(Boolean).join(" · "));
+      fill($("liveTitle"), `${ch}, en direct`);
       fill($("textTitle"), title);
       fill($("textNote"), res.from === "ancien format" ? h("span", { class: "demo" }, "Données de démonstration (ancien format)")
         : res.from === "serveur" ? "(lu sur le serveur)" : "");
       showGenerated(engine);
       if (!runFor) $("runbox").hidden = true;
-      if (LIVE_OK) checkRun(true);
+      if (LIVE_OK && t.chamber === "senat") checkRun(true);
       document.title = `Exposition — ${title}`;
       const maj = engine.majority;
       fill($("footMajority"), "Soutien : nombre de groupes politiques qui déposent la même mesure.",
-        Array.isArray(maj) && maj.length ? ` Majorité sénatoriale = ${maj.map(GROUP).join(" + ")} (en bleu).` : "",
+        t.chamber === "senat" && Array.isArray(maj) && maj.length ? ` Majorité sénatoriale = ${maj.map(GROUP).join(" + ")} (en bleu).` : "",
         " C'est un signal descriptif, pas une prévision du vote.");
-      renderExamples();
       liveReset(); liveLoad();
       render(false);
     } catch (e) {
       engine = null; measures = []; ROLES_IN_DATA = [];
-      fill($("pillText"), `Sénat · texte n°${t.number}`);
+      fill($("pillText"), `${ch} · texte n°${t.number}`);
       fill($("textNote"), h("span", { class: "warn" }, e.message));
-      fill(pEl); fill(hEl); fill(fEl); fill(cEl); $("scan").hidden = true;
+      fill(hEl); fill(fEl); $("scan").hidden = true;
       liveReset(); liveOff("aucun texte chargé");
     }
   }
@@ -649,7 +759,8 @@ async function probeHealth(base, ms) {
   function renderExamples() {
     // Rank NAF sectors by exposed companies: per-NAF counts when the data has them, else the measure's total.
     const score = new Map(), label = new Map();
-    for (const m of measures) {
+    const pool = [...ENGINES.values()].flatMap(e => e.measures || []);
+    for (const m of (pool.length ? pool : measures)) {
       const perNaf = Object.fromEntries((m.per_naf || []).map(x => [x.naf, x.companies]));
       for (const s of m.sectors || []) {
         const naf = s.naf || s.key; if (!isNaf(naf)) continue;
@@ -712,7 +823,7 @@ async function probeHealth(base, ms) {
 
     const hist = m.history ? { ...m.history } : null;
     if (hist) {
-      const self = norm(shortName(company.name)).split(/[^a-z0-9]+/).find(w => w.length >= 3);
+      const self = company.nafOnly ? null : norm(profName()).split(/[^a-z0-9]+/).find(w => w.length >= 3);
       const notSelf = arr => (arr || []).filter(o => !self || !norm(o).split(/[^a-z0-9]+/).includes(self));
       hist.allies = notSelf(you.sign === "gain" ? hist.lobby_pour : you.sign === "perte" ? hist.lobby_contre : []);
       hist.opponents = notSelf(you.sign === "gain" ? hist.lobby_contre : you.sign === "perte" ? hist.lobby_pour : []);
@@ -751,7 +862,7 @@ async function probeHealth(base, ms) {
   document.addEventListener("click", e => { if (!e.target.closest(".search") && !e.target.closest(".presets")) rEl.hidden = true; });
   qEl.addEventListener("focus", () => { if (current.length && cleanQuery(qEl.value).length >= 2) rEl.hidden = false; });
   // A picked company name is selected on focus/click, so typing replaces it instead of appending.
-  const isPicked = () => company && (qEl.value === shortName(company.name) || qEl.value === company.siren);
+  const isPicked = () => company && !company.nafOnly && (qEl.value === profName() || qEl.value === company.siren);
   const selectPicked = () => { if (isPicked()) requestAnimationFrame(() => { if (isPicked()) qEl.select(); }); };
   qEl.addEventListener("focus", selectPicked);
   qEl.addEventListener("click", selectPicked);
@@ -842,32 +953,30 @@ async function probeHealth(base, ms) {
     qEl.value = shortName(c.name);
     company = c;
     roles = new Set();
-    if (hasEmployees(c) && ROLES_IN_DATA.some(([k]) => k === "employeurs")) roles.add("employeurs");
-    showAll = false;
-    store("company", { company, roles: [...roles] });
-    render(true);
+    if (hasEmployees(c)) roles.add("employeurs");
+    profileChanged();
   }
 
   /* ---------- Rendering ---------- */
   function companyCard() {
     const c = company, lbl = nafLabel(c.naf);
-    const fin = c.ca != null
+    const fin = c.nafOnly ? h("div", { class: "fin" }, h("small", null, "profil par code NAF : pas de CA, pas de chiffrage en €")) : c.ca != null
       ? h("div", { class: "fin" }, h("div", { class: "ca" }, eurRange({ low: c.ca, high: c.ca }, false)),
           h("small", null, `chiffre d'affaires ${c.year || ""}`, c.net != null ? ` · résultat net ${eurRange({ low: c.net, high: c.net }, false)}` : ""))
       : h("div", { class: "fin" }, h("small", null, "CA non publié"));
-    const roleRow = ROLES_IN_DATA.length ? h("div", { class: "roles" }, h("span", null, "Vous êtes aussi :"),
-      ROLES_IN_DATA.map(([k, l]) => h("button", { type: "button", class: "role", "aria-pressed": String(roles.has(k)),
-        onclick: () => { roles.has(k) ? roles.delete(k) : roles.add(k); store("company", { company, roles: [...roles] }); render(true); } }, l))) : null;
+    const roleRow = h("div", { class: "roles" }, h("span", null, "Vous êtes aussi :"),
+      ROLE_LIST.map(([k, l]) => h("button", { type: "button", class: "role", "aria-pressed": String(roles.has(k)),
+        onclick: () => { roles.has(k) ? roles.delete(k) : roles.add(k); profileChanged(); } }, l)));
     return h("div", { class: "company" },
-      h("div", null, h("h3", null, shortName(c.name)),
-        h("div", { class: "facts" }, h("span", null, "SIREN ", h("b", null, c.siren)),
+      h("div", null, h("h3", null, profName()),
+        h("div", { class: "facts" }, c.siren ? h("span", null, "SIREN ", h("b", null, c.siren)) : null,
           h("span", null, "NAF ", h("b", null, c.naf || "—"), lbl ? ` ${lbl}` : ""),
           c.city ? h("span", null, c.city) : null, BANDS[c.band] ? h("span", null, BANDS[c.band]) : null)),
       fin, roleRow);
   }
 
   function headline(cards) {
-    const name = shortName(company.name);
+    const name = profName();
     if (!cards.length) return [h("h1", null, "Pour ", h("em", null, name), " : aucune mesure en attente."),
       h("p", null, `Aucune mesure en attente ne vise votre secteur (NAF ${company.naf || "inconnu"}${nafLabel(company.naf) ? `, ${nafLabel(company.naf)}` : ""}).`,
         ROLES_IN_DATA.length ? " Si l'un des rôles ci-dessus vous correspond, cochez-le." : "")];
@@ -1012,28 +1121,25 @@ async function probeHealth(base, ms) {
             effects.length > 1 ? h("p", null, h("span", { class: "k" }, "Variantes : "), effects.join(" · ")) : null,
             c.quote ? h("blockquote", null, `« ${c.quote} »`) : null,
             h("p", { class: "amdts" }, h("span", { class: "k" }, `${plural((c.amendments || []).length, "amendement", "amendements")} : `),
-              (c.amendments || []).map(a => ext(amdtUrl(a), `n°${a}`)))))),
+              (c.amendments || []).map(a => { const u = amdtUrl(a, c._text || text); return u ? ext(u, `n°${a}`) : h("span", null, `n°${a} `); }))))),
       exposure(c));
   }
 
   function render(animate) {
-    if (!company || !engine) {
-      fill(cEl, engine && !company ? h("p", { class: "empty-company" }, "Cherchez votre entreprise par son nom ou son SIREN, ou partez d'un secteur visé ci-dessus.") : null);
-      fill(hEl); fill(fEl); scanPanel(-1);
-      return;
-    }
-    fill(cEl, companyCard());
+    if (!engine) { fill(hEl); fill(fEl); scanPanel(-1); return; }
     liveConcern();
-
-    const cards = measures.map(evaluate).filter(Boolean);
-    fill(hEl, headline(cards));
+    const generic = m => ({ ...m, you: {}, by_role: false,
+      matched_sector: (m.sectors || []).map(x => target(x.naf || x.key, x.label)).filter(Boolean).slice(0, 3).join(", ") || "—" });
+    const cards = company ? measures.map(evaluate).filter(Boolean) : measures.map(generic);
+    fill(hEl, company ? headline(cards) : [h("h1", null, `${plural(cards.length, "mesure", "mesures")} dans ce texte`),
+      h("p", null, "Classées par soutien. ", h("a", { href: "#profil" }, "Définissez votre profil"), " pour ne garder que ce qui vous vise et l'estimer en euros.")]);
     if (animate) { hEl.classList.remove("fade"); void hEl.offsetWidth; hEl.classList.add("fade"); }
 
     // FLIP: remember where each measure was, so shared measures visibly move to their new rank.
     const before = new Map();
     if (animate) fEl.querySelectorAll(".card").forEach(el => before.set(el.dataset.key, el.getBoundingClientRect().top));
 
-    scanPanel(cards.length);
+    scanPanel(company ? cards.length : -1);
     if (!cards.length) { fill(fEl); return; }
     const shown = showAll ? cards : cards.slice(0, TOP);
     const rest = cards.length - shown.length;
@@ -1106,6 +1212,7 @@ async function probeHealth(base, ms) {
 
   async function liveLoad() {
     if (LIVE_STATE === "probing" || LIVE_STATE === "waking") return;   // the probe calls liveLoad when done
+    if (text.chamber !== "senat") { liveOff("Direct disponible pour les textes du Sénat"); return; }
     if (!LIVE_OK) {
       liveOff("Direct disponible sur la version en ligne", ONLINE_URL ? [" · ", ext(ONLINE_URL, "ouvrir")] : null);
       return;
@@ -1191,7 +1298,7 @@ async function probeHealth(base, ms) {
     const ev = company && engine ? evaluate(res) : null;
     const c = ev || { ...res, you: {}, history: null, by_role: false,
       matched_sector: (res.sectors || []).map(s => target(s.naf || s.key, s.label)).filter(Boolean).join(", ") || "—" };
-    const who = company ? shortName(company.name) : "";
+    const who = company ? profName() : "";
     const concern = !company ? null
       : !ev ? h("p", { class: "concern no" }, `Cet amendement ne vise pas ${who} (${target(company.naf) || "NAF —"}).`)
       : ev.via === "group" ? h("p", { class: "concern maybe" }, `≈ Secteur proche (groupe ${ev.group}) — à vérifier : l'amendement vise ${
@@ -1278,7 +1385,7 @@ async function probeHealth(base, ms) {
         if (c !== scanCtrl) return false;
         if (ev === "start") {
           st.n = d.n_amendments; st.model = d.model;
-          st.label = `Le modèle lit les ${d.n_amendments ?? ""} amendements pour ${shortName(company.name)} · modèle : ${d.model || "?"}`;
+          st.label = `Le modèle lit les ${d.n_amendments ?? ""} amendements pour ${profName()} · modèle : ${d.model || "?"}`;
           paintScan();
         } else if (ev === "token") { st.raw += d.t || ""; setStream($("scanStream"), st.raw); }
         else if (ev === "status") { st.label = d.t || st.label; const now = Date.now(); if (now - last > 200) { last = now; paintScan(); } }
@@ -1372,16 +1479,88 @@ async function probeHealth(base, ms) {
     } else runEl.hidden = true;
   }
 
+  /* ---------- Profile: company or NAF only + roles, kept in this browser ---------- */
+  function saveProfile() { store("profile", company ? { company, roles: [...roles] } : null); }
+  function renderChip() {
+    fill($("pchip"), company ? ["Profil : ", h("b", null, profName()), " · changer"] : "Définir mon profil");
+  }
+  function profileChanged() {
+    showAll = false; saveProfile(); renderChip();
+    if (!$("v-profil").hidden) renderProfil();
+    if (!$("v-text").hidden) render(true);
+  }
+  function renderProfil() {
+    renderExamples();
+    if (company && !company.nafOnly) qEl.value = shortName(company.name);
+    fill(cEl, company ? [companyCard(),
+      h("a", { class: "cta", href: "#moi" }, "Voir ce qui me vise →"),
+      h("button", { type: "button", class: "retry", style: "margin-left:10px", onclick: () => { company = null; roles = new Set(); qEl.value = ""; profileChanged(); } }, "Effacer le profil")]
+      : h("p", { class: "empty-company" }, "Aucun profil : cherchez votre entreprise, ou entrez seulement votre code NAF."));
+  }
+  const readNaf = () => { let v = $("nafIn").value.trim().toUpperCase().replace(/\s/g, ""); if (/^\d{4}[A-Z]$/.test(v)) v = `${v.slice(0, 2)}.${v.slice(2)}`; return v; };
+  $("nafForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const v = readNaf();
+    if (!isNaf(v)) { fill($("nafMsg"), h("span", { class: "warn" }, "Format attendu : NN.NNL, par exemple 56.10A")); return; }
+    fill($("nafMsg"), nafLabel(v) ? h("span", { class: "ok" }, `✓ ${nafLabel(v)}`) : h("span", null, "code valide (libellé inconnu des textes calculés)"));
+    company = { nafOnly: true, naf: v, siren: null, name: null, ca: null, net: null, year: null, band: null };
+    roles = new Set(); qEl.value = "";
+    profileChanged();
+  });
+  $("nafIn").addEventListener("input", () => { const v = readNaf(); fill($("nafMsg"), isNaf(v) && nafLabel(v) ? h("span", { class: "ok" }, nafLabel(v)) : ""); });
+
+  /* ---------- Ce qui me vise: every measure of every computed text that concerns the profile ---------- */
+  async function loadAllEngines() {
+    const idx = await loadIndex();
+    await Promise.all(idx.map(async x => {
+      const t = { chamber: x.chamber, session: String(x.session), number: String(x.number), path: x.path, title: x.title };
+      const key = textHash(t);
+      if (ENGINES.has(key)) return;
+      try { const r = await fetchEngine(t); r.engine._t = t; ENGINES.set(key, r.engine); learnNaf(r.engine); } catch {}
+    }));
+    return [...ENGINES.values()];
+  }
+  async function renderMoi() {
+    const mh = $("moiHead"), mf = $("moiFeed");
+    if (!company) {
+      fill(mh, h("h1", null, "Ce qui me vise"));
+      fill(mf, h("div", { class: "emptybox" }, "Définissez d'abord votre profil (entreprise ou code NAF) : on cherchera ensuite, dans tous les textes calculés, les mesures qui vous visent. ",
+        h("a", { href: "#profil" }, "Définir mon profil →")));
+      return;
+    }
+    fill(mh, h("h1", null, "Pour ", h("em", null, profName()), " : lecture de tous les textes…"));
+    fill(mf);
+    const engines = await loadAllEngines();
+    const out = [];
+    for (const e of engines) for (const m of e.measures || []) {
+      const c = evaluate(m); if (c) out.push({ ...c, _text: e._t, _title: e.text?.title || e._t.title || `Texte n°${e._t.number}` });
+    }
+    const eur = c => c.you?.eur ? Math.max(Math.abs(c.you.eur.low), Math.abs(c.you.eur.high)) : -1;
+    out.sort((a, b) => eur(b) - eur(a) || (b.n_groups || 0) - (a.n_groups || 0));
+    const nTexts = new Set(out.map(c => textHash(c._text))).size;
+    fill(mh, h("h1", null, "Pour ", h("em", null, profName()), ` : ${plural(out.length, "mesure", "mesures")} dans ${plural(nTexts, "texte", "textes")}`),
+      h("p", null, `${plural(engines.length, "texte calculé lu", "textes calculés lus")} (Sénat et Assemblée) · classées par montant estimé pour vous, puis par soutien.`));
+    if (!out.length) { fill(mf, h("div", { class: "emptybox" }, "Aucune mesure des textes calculés ne vise ce profil. Vérifiez vos rôles dans ", h("a", { href: "#profil" }, "Mon profil"), ".")); return; }
+    fill(mf, out.map((c, i) => {
+      const el = card(c, i);
+      el.children[1].prepend(h("div", { class: "moi-src" }, h("span", { class: "ch" }, CHAMBER[c._text.chamber] || ""),
+        h("span", null, `n°${c._text.number} · ${c._title}`), h("a", { href: textHash(c._text) }, "ouvrir le texte →")));
+      return el;
+    }));
+  }
+
   /* ---------- start ---------- */
-  const saved = stored("company");
-  if (saved && saved.company && saved.company.siren) {
+  const legacy = stored("company");
+  const saved = stored("profile") || (legacy ? { company: legacy.company, roles: legacy.roles } : null);
+  if (saved && saved.company && (saved.company.siren || saved.company.nafOnly)) {
     company = saved.company; if (!company.ca) { company.ca = null; company.net = null; company.year = null; }
     roles = new Set((saved.roles || []).map(roleKey));
-    qEl.value = shortName(company.name);
   }
+  renderChip();
   setInterval(() => { if (liveData && !document.hidden) liveLoad(); }, 60000);
-  loadText(readHash() || stored("text") || DEFAULT_TEXT).then(() => store("text", text));
-  window.addEventListener("hashchange", () => store("text", text));
+  loadIndex().then(() => loadAllEngines()).then(() => { if (!$("v-profil").hidden) renderExamples(); });
+  if (!location.hash) { try { history.replaceState(null, "", "#senat"); } catch {} }
+  route();
 })();
 </script>
 </body>
