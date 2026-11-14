@@ -22,7 +22,7 @@ def main(n):
     themes = {}
     for c in criteria:
         a = amendments.get(c["number"], {})
-        for t in c["criteria"].get("themes", []):
+        for t in c["criteria"].get("themes", [])[:1]:
             entry = themes.setdefault(t, {"amendments": [], "groups": set()})
             entry["amendments"].append(c["number"])
             if a.get("author_group"):
@@ -33,13 +33,13 @@ def main(n):
         a = amendments.get(c["number"], {})
         support = set()
         same = set()
-        for t in c["criteria"].get("themes", []):
+        for t in c["criteria"].get("themes", [])[:1]:
             support |= themes[t]["groups"]
             same |= set(themes[t]["amendments"])
         out.append({
             "number": c["number"],
             "author_group": a.get("author_group", ""),
-            "themes": c["criteria"].get("themes", []),
+            "themes": c["criteria"].get("themes", [])[:1],
             "same_theme_amendments": sorted(same - {c["number"]}),
             "groups": sorted(support),
             "n_groups": len(support),

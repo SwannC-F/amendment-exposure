@@ -33,7 +33,17 @@ Exemple : le plafonnement des commissions des émetteurs déplace 108 à 330 M�
 | Profils et classement | `profiles.py` | Tout ce qui précède → `data/feed_142.json` |
 | Page | `index.html` | Lit `data/` |
 
-Relancer : `python3 fetch_amendments.py 142 && python3 build_criteria_142.py && python3 signals.py 142 && python3 exposure.py 142 && python3 profiles.py 142`, puis `python3 -m http.server`.
+Relancer (dans cet ordre) :
+
+```bash
+python3 fetch_amendments.py 142 && python3 build_criteria_142.py && python3 signals.py 142 && python3 exposure.py 142
+python3 chiffrage_a.py && python3 chiffrage_b.py
+python3 history_ameli.py && python3 history_hatvp.py && python3 history_legifrance.py   # Légifrance : PISTE_CLIENT_ID / PISTE_CLIENT_SECRET dans .env
+python3 profiles.py 142 && python3 build_engine.py 142
+python3 -m http.server
+```
+
+Les chiffrages sont figés sur les amendements en attente au 14/11 : après la séance du 19/11, les amendements votés disparaissent du fil.
 
 ## Règles et limites
 

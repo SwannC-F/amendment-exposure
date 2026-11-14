@@ -270,15 +270,15 @@ def papier():
     write("papier", {
         "theme": "Repousser la fin des titres papier",
         "amendments": ["34", "35", "36"],
-        "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur revient à l'employeur. Repousser l'obligation de dématérialisation prolonge ces pertes des salariés au profit des employeurs, et l'activité des imprimeurs de titres.",
-        "winners": ["Employeurs (contre-valeur des titres périmés)", "Imprimeurs de titres papier (18.12Z, non chiffré)"],
+        "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur va au budget des activités sociales et culturelles (CSE ; l'entreprise à défaut de CSE), après un prélèvement de l'émetteur (L. 3262-5, R. 3262-13 et R. 3262-14). Repousser l'obligation de dématérialisation prolonge ces pertes des salariés, et l'activité des imprimeurs de titres.",
+        "winners": ["CSE / budget des activités sociales et culturelles (entreprise à défaut de CSE)", "Émetteurs (prélèvement sur les titres périmés, R. 3262-13)", "Imprimeurs de titres papier (18.12Z, non chiffré)"],
         "losers": ["Salariés bénéficiaires de titres papier"],
         "parameters": [lost, share_lost_paper, share_paper, vol, trend, dest],
         "total_eur_per_year": tot,
         "per_profile": {
             HIPPO: {"eur_per_year": None, "sign": "perte", "method": "continue à traiter des titres papier (envois, délais) ; coût par commerçant non publié", "inputs": ca_input(HIPPO)},
             CARREFOUR: {"eur_per_year": None, "sign": "perte", "method": "continue à traiter des titres papier en caisse ; coût non publié", "inputs": ca_input(CARREFOUR)},
-            EDENRED: {"eur_per_year": None, "sign": "neutre", "method": "garde une offre papier ; la contre-valeur des titres périmés revient à l'employeur, pas à l'émetteur (amendement n° 32)", "inputs": ca_input(EDENRED)},
+            EDENRED: {"eur_per_year": None, "sign": "neutre", "method": "garde une offre papier ; prélève une part de la contre-valeur des titres périmés (R. 3262-13), montant non publié", "inputs": ca_input(EDENRED)},
             UBER: {"eur_per_year": None, "sign": "neutre", "method": "titres papier non utilisables en ligne : pas d'effet direct", "inputs": ca_input(UBER)},
         },
         "variants": [

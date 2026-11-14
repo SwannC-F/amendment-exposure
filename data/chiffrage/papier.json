@@ -5,9 +5,10 @@
     "35",
     "36"
   ],
-  "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur revient à l'employeur. Repousser l'obligation de dématérialisation prolonge ces pertes des salariés au profit des employeurs, et l'activité des imprimeurs de titres.",
+  "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur va au budget des activités sociales et culturelles (CSE ; l'entreprise à défaut de CSE), après un prélèvement de l'émetteur (L. 3262-5, R. 3262-13 et R. 3262-14). Repousser l'obligation de dématérialisation prolonge ces pertes des salariés, et l'activité des imprimeurs de titres.",
   "winners": [
-    "Employeurs (contre-valeur des titres périmés)",
+    "CSE / budget des activités sociales et culturelles (entreprise à défaut de CSE)",
+    "Émetteurs (prélèvement sur les titres périmés, R. 3262-13)",
     "Imprimeurs de titres papier (18.12Z, non chiffré)"
   ],
   "losers": [
@@ -91,7 +92,7 @@
     "393365135": {
       "eur_per_year": null,
       "sign": "neutre",
-      "method": "garde une offre papier ; la contre-valeur des titres périmés revient à l'employeur, pas à l'émetteur (amendement n° 32)",
+      "method": "garde une offre papier ; prélève une part de la contre-valeur des titres périmés (R. 3262-13), montant non publié",
       "inputs": {
         "ca_eur": 711301164,
         "ca_year": "2025",

@@ -14,6 +14,7 @@ Ranking, for amendments that concern the profile:
   3. number of exposed companies (exposure.py), if available
 """
 import json
+import re
 import sys
 import time
 import urllib.request
@@ -38,6 +39,35 @@ def company(siren):
     return {"siren": siren, "name": res["nom_complet"], "naf": res["activite_principale"],
             "headcount_band": res["tranche_effectif_salarie"],
             "city": (res.get("siege") or {}).get("libelle_commune")}
+
+
+FLIP = {"gain": "perte", "perte": "gain"}
+
+
+def mirror_measure(ch, amendment):
+    """Opposite measure (e.g. 'Rendre effectif' vs 'Supprimer' the double cap): same money
+    moving the other way. Signs flipped, winners/losers swapped, total = the variant of the
+    given amendment if the chiffrage has one, else null."""
+    variant = next((v for v in ch.get("variants", [])
+                    if str(amendment) in [str(a) for a in v.get("amendments", [])]), None)
+    return {**ch,
+            "mechanism": (variant or {}).get("label") or ch["mechanism"],
+            "winners": [re.sub(r"\s*\(.*\)$", "", w) for w in ch["losers"]],
+            "losers": [re.sub(r"\s*\(.*\)$", "", w) for w in ch["winners"]],
+            "total_eur_per_year": (variant or {}).get("total_eur_per_year"),
+            "per_profile": {s: {**p, "sign": FLIP.get(p.get("sign"), p.get("sign"))}
+                            for s, p in ch.get("per_profile", {}).items()}}
+
+
+def chiffrage_by_theme():
+    out = {}
+    for f in sorted(Path("data/chiffrage").glob("*.json")):
+        ch = json.loads(f.read_text())
+        out[ch["theme"]] = ch
+    if "Supprimer le double plafond journalier" in out:
+        out.setdefault("Rendre effectif le double plafond journalier",
+                       mirror_measure(out["Supprimer le double plafond journalier"], 19))
+    return out
 
 
 def load_history():
@@ -71,6 +101,13 @@ def load_history():
                     e[key].append(o["name"])
                     e["lobby_quotes"].append({"org": o["name"], "side": s["side"], "year": s.get("year"),
                                               "quote": s["quote"], "fiche": s.get("fiche")})
+    # An organisation that declared both positions (opposite mandates of a consultancy, or a
+    # change over the years) is neither an ally nor an opponent; its quotes stay in details.
+    for e in out.values():
+        both = set(e["lobby_pour"]) & set(e["lobby_contre"])
+        e["lobby_pour"] = [o for o in e["lobby_pour"] if o not in both]
+        e["lobby_contre"] = [o for o in e["lobby_contre"] if o not in both]
+        e["lobby_both"] = sorted(both)
     return out
 
 
@@ -91,13 +128,7 @@ def main(n):
                 if exp_path.exists() else {})
 
     # Sourced € estimates per measure (chiffrage_a.py / chiffrage_b.py), keyed by theme.
-    chiffrage = {}
-    for f in sorted(Path("data/chiffrage").glob("*.json")):
-        ch = json.loads(f.read_text())
-        chiffrage[ch["theme"]] = ch
-    if "Supprimer le double plafond journalier" in chiffrage:  # same file covers both sides
-        chiffrage.setdefault("Rendre effectif le double plafond journalier",
-                             chiffrage["Supprimer le double plafond journalier"])
+    chiffrage = chiffrage_by_theme()  # "Rendre effectif" = mirror of "Supprimer"
 
     history = load_history()
 

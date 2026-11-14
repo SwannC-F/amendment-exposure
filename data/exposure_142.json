@@ -147,6 +147,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -183,10 +199,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -211,6 +227,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -247,10 +279,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -275,6 +307,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -311,10 +359,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -339,6 +387,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -375,10 +439,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -551,6 +615,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -587,10 +667,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -781,6 +861,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -817,10 +913,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -1070,6 +1166,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -1106,10 +1218,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -1134,6 +1246,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -1170,10 +1298,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]
@@ -1352,6 +1480,22 @@
           "open_top": false
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés",
+          "companies": 9687,
+          "employees_low": 171117,
+          "employees_high": 345290,
+          "open_top": true
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés",
+          "companies": 1528,
+          "employees_low": 223308,
+          "employees_high": 396235,
+          "open_top": true
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale",
           "companies": 44671,
@@ -1388,10 +1532,10 @@
           "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
         }
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
-      "open_top": false,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "open_top": true,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ]

@@ -33,6 +33,8 @@
         "10.71C",
         "47.11B",
         "47.11C",
+        "47.11D",
+        "47.11F",
         "47.24Z",
         "56.10A",
         "56.10C"
@@ -48,6 +50,14 @@
         {
           "key": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "key": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "key": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "key": "47.11B",
@@ -81,9 +91,9 @@
       "majority_groups": [
         "UCI"
       ],
-      "companies": 436204,
-      "employees_low": 798879,
-      "employees_high": 1512841,
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
       "not_counted": [
         "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
       ],
@@ -335,158 +345,8 @@
             "quote": "proposer un plafonnement des commissions titre-restaurant",
             "fiche": "DVS14Y6H"
           }
-        ]
-      }
-    },
-    {
-      "theme": "Utilisation le dimanche",
-      "amendments": [
-        "7",
-        "12",
-        "31"
-      ],
-      "effects": [
-        "Titres utilisables le dimanche par tous les salariés",
-        "Titres utilisables tous les jours, dimanches et fériés compris"
-      ],
-      "nafs": [
-        "10.71C",
-        "47.11B",
-        "47.11C",
-        "47.11D",
-        "47.11F",
-        "47.24Z",
-        "56.10A",
-        "56.10C"
-      ],
-      "roles": [],
-      "sectors": [
-        {
-          "key": "47.11D",
-          "label": "Supermarchés"
-        },
-        {
-          "key": "47.11F",
-          "label": "Hypermarchés"
-        },
-        {
-          "key": "47.11B",
-          "label": "Commerce d'alimentation générale"
-        },
-        {
-          "key": "47.11C",
-          "label": "Supérettes"
-        },
-        {
-          "key": "47.24Z",
-          "label": "Commerce de détail de pain, pâtisserie"
-        },
-        {
-          "key": "10.71C",
-          "label": "Boulangerie et boulangerie-pâtisserie"
-        },
-        {
-          "key": "56.10A",
-          "label": "Restauration traditionnelle"
-        },
-        {
-          "key": "56.10C",
-          "label": "Restauration de type rapide"
-        }
-      ],
-      "n_groups": 4,
-      "groups": [
-        "CRCE-K",
-        "GEST",
-        "Les Républicains",
-        "UNT"
-      ],
-      "majority_groups": [
-        "Les Républicains"
-      ],
-      "companies": 447419,
-      "employees_low": 1193304,
-      "employees_high": 2254366,
-      "not_counted": [],
-      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
-      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires",
-      "chiffrage": {
-        "mechanism": "Le montant de titres émis ne change pas : une partie des dépenses se déplace vers les commerces et restaurants ouverts le dimanche (et les jours fériés pour n° 12 et 31), au détriment de ceux qui ferment ce jour-là.",
-        "winners": [
-          "Commerces alimentaires et grandes surfaces ouverts le dimanche (47.11*)",
-          "Restaurants ouverts le dimanche (56.10A, 56.10C)"
         ],
-        "losers": [
-          "Commerces fermés le dimanche (report de dépenses, non chiffré)"
-        ],
-        "total_eur_per_year": null,
-        "rates": [
-          {
-            "role": "Émetteurs",
-            "scope": "grands émetteurs (part de marché 10 à 40 %, Autorité de la concurrence)",
-            "sign": "neutre",
-            "eur": null,
-            "method": "volume de titres émis inchangé (amendement n° 7)"
-          },
-          {
-            "role": "Plateformes",
-            "scope": "plateformes de livraison (sens seulement, montant non sourcé)",
-            "sign": "neutre",
-            "eur": null,
-            "method": "pas d'effet direct identifié"
-          }
-        ],
-        "parameters": [
-          {
-            "name": "Employeurs ayant déjà ouvert l'usage dominical",
-            "low": 20,
-            "high": 30,
-            "unit": "% des employeurs",
-            "quote": "De 20 à 30 % des employeurs ont ouvert la possibilité",
-            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
-          },
-          {
-            "name": "Employeurs ayant déjà ouvert l'usage dominical (amendement)",
-            "low": 20,
-            "high": 30,
-            "unit": "% des employeurs",
-            "quote": "20 à 30 % des employeurs ont déjà ouvert l’usage dominical à leurs salariés",
-            "source": "amendement n°31 | https://www.senat.fr/amendements/2026-2027/142/Amdt_31.html"
-          },
-          {
-            "name": "Nombre de titres inchangé",
-            "low": 0,
-            "high": 0,
-            "unit": "titres supplémentaires",
-            "quote": "Seul le jour d’utilisation est assoupli, sans incidence sur le nombre de titres ni sur leur régime social et fiscal.",
-            "source": "amendement n°7 | https://www.senat.fr/amendements/2026-2027/142/Amdt_7.html"
-          }
-        ],
-        "not_computable": "Mesure de répartition : le volume total ne change pas. Aucune source publique ne donne la part des dépenses en titres qui se ferait le dimanche, donc le montant déplacé entre commerces n'est pas chiffrable. Seul chiffre disponible : 20 à 30 % des employeurs l'autorisent déjà."
-      },
-      "history": {
-        "senate_by_group": {
-          "LR": {
-            "filed": 1,
-            "adopted": 1,
-            "rejected": 0,
-            "other": 0,
-            "pour": 0,
-            "contre": 1,
-            "years": [
-              2026
-            ]
-          }
-        },
-        "findings": [
-          {
-            "text": "En commission (amendements déposés le 02/11/2026), la rapporteure LR a fait supprimer l'usage le dimanche, l'exclusion des plateformes de livraison, la validité de trois ans et le maintien pendant les congés familiaux présents dans le texte transmis par l'Assemblée : le texte de la commission arrive en séance sans ces quatre mesures.",
-            "source": "Sénat (Ameli)"
-          }
-        ],
-        "lobby_pour": [],
-        "lobby_contre": [],
-        "lobby_quotes": []
+        "lobby_both": []
       }
     },
     {
@@ -759,7 +619,159 @@
             "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
             "fiche": "SVFGO5U3"
           }
-        ]
+        ],
+        "lobby_both": []
+      }
+    },
+    {
+      "theme": "Utilisation le dimanche",
+      "amendments": [
+        "7",
+        "12",
+        "31"
+      ],
+      "effects": [
+        "Titres utilisables le dimanche par tous les salariés",
+        "Titres utilisables tous les jours, dimanches et fériés compris"
+      ],
+      "nafs": [
+        "10.71C",
+        "47.11B",
+        "47.11C",
+        "47.11D",
+        "47.11F",
+        "47.24Z",
+        "56.10A",
+        "56.10C"
+      ],
+      "roles": [],
+      "sectors": [
+        {
+          "key": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "key": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "key": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "key": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "key": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "key": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "n_groups": 3,
+      "groups": [
+        "CRCE-K",
+        "Les Républicains",
+        "UNT"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 447419,
+      "employees_low": 1193304,
+      "employees_high": 2254366,
+      "not_counted": [],
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires",
+      "chiffrage": {
+        "mechanism": "Le montant de titres émis ne change pas : une partie des dépenses se déplace vers les commerces et restaurants ouverts le dimanche (et les jours fériés pour n° 12 et 31), au détriment de ceux qui ferment ce jour-là.",
+        "winners": [
+          "Commerces alimentaires et grandes surfaces ouverts le dimanche (47.11*)",
+          "Restaurants ouverts le dimanche (56.10A, 56.10C)"
+        ],
+        "losers": [
+          "Commerces fermés le dimanche (report de dépenses, non chiffré)"
+        ],
+        "total_eur_per_year": null,
+        "rates": [
+          {
+            "role": "Émetteurs",
+            "scope": "grands émetteurs (part de marché 10 à 40 %, Autorité de la concurrence)",
+            "sign": "neutre",
+            "eur": null,
+            "method": "volume de titres émis inchangé (amendement n° 7)"
+          },
+          {
+            "role": "Plateformes",
+            "scope": "plateformes de livraison (sens seulement, montant non sourcé)",
+            "sign": "neutre",
+            "eur": null,
+            "method": "pas d'effet direct identifié"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "De 20 à 30 % des employeurs ont ouvert la possibilité",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical (amendement)",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "20 à 30 % des employeurs ont déjà ouvert l’usage dominical à leurs salariés",
+            "source": "amendement n°31 | https://www.senat.fr/amendements/2026-2027/142/Amdt_31.html"
+          },
+          {
+            "name": "Nombre de titres inchangé",
+            "low": 0,
+            "high": 0,
+            "unit": "titres supplémentaires",
+            "quote": "Seul le jour d’utilisation est assoupli, sans incidence sur le nombre de titres ni sur leur régime social et fiscal.",
+            "source": "amendement n°7 | https://www.senat.fr/amendements/2026-2027/142/Amdt_7.html"
+          }
+        ],
+        "not_computable": "Mesure de répartition : le volume total ne change pas. Aucune source publique ne donne la part des dépenses en titres qui se ferait le dimanche, donc le montant déplacé entre commerces n'est pas chiffrable. Seul chiffre disponible : 20 à 30 % des employeurs l'autorisent déjà."
+      },
+      "history": {
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "findings": [
+          {
+            "text": "En commission (amendements déposés le 02/11/2026), la rapporteure LR a fait supprimer l'usage le dimanche, l'exclusion des plateformes de livraison, la validité de trois ans et le maintien pendant les congés familiaux présents dans le texte transmis par l'Assemblée : le texte de la commission arrive en séance sans ces quatre mesures.",
+            "source": "Sénat (Ameli)"
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_quotes": [],
+        "lobby_both": []
       }
     },
     {
@@ -991,25 +1003,21 @@
           }
         ],
         "lobby_pour": [
-          "IMAGE 7",
           "UP",
           "SWILE",
           "UNION METIERS & INDUSTRIES HOTELLERIE",
           "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
           "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE",
           "GROUPEMENT NATIONAL DES INDEPENDANTS",
-          "SAVEURS COMMERCE",
           "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
           "UNION DES ENTREPRISES DE PROXIMITE",
           "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
           "TADDEO"
         ],
         "lobby_contre": [
-          "IMAGE 7",
           "FEDERATION ENTREP COMMERCE DISTRIBUTION",
           "COMMSTRAT",
           "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
-          "SAVEURS COMMERCE",
           "CARREFOUR",
           "CARREFOUR MANAGEMENT",
           "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
@@ -1179,6 +1187,10 @@
             "quote": "Proroger le dérogation instaurer par l’art 6 de la loi du 16 août 2022",
             "fiche": "LV1D2PQ3"
           }
+        ],
+        "lobby_both": [
+          "IMAGE 7",
+          "SAVEURS COMMERCE"
         ]
       }
     },
@@ -1289,7 +1301,8 @@
         ],
         "lobby_pour": [],
         "lobby_contre": [],
-        "lobby_quotes": []
+        "lobby_quotes": [],
+        "lobby_both": []
       }
     },
     {
@@ -1302,7 +1315,9 @@
         "Titres maintenus pendant les congés maternité, paternité, adoption, naissance"
       ],
       "nafs": [],
-      "roles": [],
+      "roles": [
+        "Employeurs"
+      ],
       "sectors": [],
       "n_groups": 2,
       "groups": [
@@ -1417,7 +1432,8 @@
         ],
         "lobby_pour": [],
         "lobby_contre": [],
-        "lobby_quotes": []
+        "lobby_quotes": [],
+        "lobby_both": []
       }
     },
     {
@@ -1619,18 +1635,15 @@
       "who": "Restaurants (plafond majoré pour les repas) ; supermarchés (plafond réduit pour les produits à cuisiner)",
       "quote": "L’utilisation des titres‑restaurant est soumise à un plafond journalier différencié selon la nature des produits ou prestations acquis.",
       "chiffrage": {
-        "mechanism": "Le double plafond (texte de la commission) réduit la part des titres payable en produits à cuisiner, ce qui peut ramener vers les restaurants une partie des titres aujourd'hui dépensés en grande distribution ; le supprimer (n° 6, 10, 16) laisse ce flux en grande distribution, le rendre effectif (n° 19) l'en retire.",
+        "mechanism": "Double plafond rendu effectif (≤ 12,20 € pour les produits à cuisiner) : flux vers les restaurants plafonné par le glissement observé (1,0 à 1,3 Md€/an), borne basse non chiffrable",
         "winners": [
-          "Grande distribution et commerces alimentaires (si suppression)",
-          "Salariés qui cuisinent leurs repas (si suppression)"
+          "Restaurants"
         ],
         "losers": [
-          "Restaurants (si suppression : manque à gagner par rapport au texte de la commission)"
+          "Grande distribution et commerces alimentaires",
+          "Salariés qui cuisinent leurs repas"
         ],
-        "total_eur_per_year": {
-          "low": 0,
-          "high": 1342000000
-        },
+        "total_eur_per_year": null,
         "rates": [
           {
             "nafs": [
@@ -1664,7 +1677,7 @@
           {
             "role": "Plateformes",
             "scope": "plateformes de livraison (sens seulement, montant non sourcé)",
-            "sign": "perte",
+            "sign": "gain",
             "eur": null,
             "method": "Les repas livrés relèvent du plafond « repas » ; la suppression leur retire un report possible de dépenses, mais aucune source ne donne la part des titres dépensée via les plateformes."
           }
@@ -1847,7 +1860,8 @@
             "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
             "fiche": "SVFGO5U3"
           }
-        ]
+        ],
+        "lobby_both": []
       }
     },
     {
@@ -1899,7 +1913,8 @@
             "quote": "des chèques verts ou des tickets-restaurants bonifiés",
             "fiche": "DVS2UMLV"
           }
-        ]
+        ],
+        "lobby_both": []
       }
     },
     {
@@ -1944,9 +1959,10 @@
       "who": "Imprimeurs de titres papier et émetteurs ; petites entreprises qui utilisent encore le papier",
       "quote": "entre en vigueur le 1 er janvier 2031",
       "chiffrage": {
-        "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur revient à l'employeur. Repousser l'obligation de dématérialisation prolonge ces pertes des salariés au profit des employeurs, et l'activité des imprimeurs de titres.",
+        "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur va au budget des activités sociales et culturelles (CSE ; l'entreprise à défaut de CSE), après un prélèvement de l'émetteur (L. 3262-5, R. 3262-13 et R. 3262-14). Repousser l'obligation de dématérialisation prolonge ces pertes des salariés, et l'activité des imprimeurs de titres.",
         "winners": [
-          "Employeurs (contre-valeur des titres périmés)",
+          "CSE / budget des activités sociales et culturelles (entreprise à défaut de CSE)",
+          "Émetteurs (prélèvement sur les titres périmés, R. 3262-13)",
           "Imprimeurs de titres papier (18.12Z, non chiffré)"
         ],
         "losers": [
@@ -1962,7 +1978,7 @@
             "scope": "grands émetteurs (part de marché 10 à 40 %, Autorité de la concurrence)",
             "sign": "neutre",
             "eur": null,
-            "method": "garde une offre papier ; la contre-valeur des titres périmés revient à l'employeur, pas à l'émetteur (amendement n° 32)"
+            "method": "garde une offre papier ; prélève une part de la contre-valeur des titres périmés (R. 3262-13), montant non publié"
           },
           {
             "role": "Plateformes",
@@ -2087,7 +2103,8 @@
             "quote": "Transformer intégralement le titre-restaurant en version dématérialisé",
             "fiche": "JA3YZR6H"
           }
-        ]
+        ],
+        "lobby_both": []
       }
     },
     {
@@ -2099,7 +2116,9 @@
         "Négociation obligatoire avant de mettre en place, supprimer ou modifier les titres"
       ],
       "nafs": [],
-      "roles": [],
+      "roles": [
+        "Employeurs"
+      ],
       "sectors": [],
       "n_groups": 1,
       "groups": [
@@ -2129,7 +2148,8 @@
         "findings": [],
         "lobby_pour": [],
         "lobby_contre": [],
-        "lobby_quotes": []
+        "lobby_quotes": [],
+        "lobby_both": []
       }
     },
     {
@@ -2144,6 +2164,7 @@
       ],
       "nafs": [],
       "roles": [
+        "Employeurs",
         "Émetteurs"
       ],
       "sectors": [
@@ -2166,14 +2187,15 @@
       "who": "Employeurs (ne récupèrent plus la contre-valeur des titres périmés) ; émetteurs",
       "quote": "Les titres‑restaurant sont valables sans limitation de durée.",
       "chiffrage": {
-        "mechanism": "Les titres non utilisés à l'échéance sont perdus pour le salarié ; sans date limite (n° 32) ou avec 3 ans et contre-valeur au budget des activités sociales et culturelles (n° 33), cette valeur reste aux salariés et est dépensée chez les commerçants au lieu de revenir à l'employeur.",
+        "mechanism": "Les titres non utilisés à l'échéance sont perdus pour le salarié ; sans date limite (n° 32) ou avec 3 ans et contre-valeur au budget des activités sociales et culturelles (n° 33), cette valeur reste aux salariés et est dépensée chez les commerçants au lieu d'aller, après prélèvement de l'émetteur, au budget des activités sociales et culturelles (CSE ; l'entreprise à défaut de CSE : L. 3262-5, R. 3262-13 et R. 3262-14).",
         "winners": [
           "Salariés bénéficiaires",
           "Budget des activités sociales et culturelles / CSE (n° 33)",
           "Restaurants et commerces qui encaissent les titres"
         ],
         "losers": [
-          "Employeurs qui récupèrent la contre-valeur des titres périmés (selon n° 32)"
+          "CSE / budget des activités sociales et culturelles (entreprise à défaut de CSE)",
+          "Émetteurs (prélèvement sur les titres périmés, R. 3262-13)"
         ],
         "total_eur_per_year": {
           "low": 7644000,
@@ -2331,7 +2353,8 @@
         ],
         "lobby_pour": [],
         "lobby_contre": [],
-        "lobby_quotes": []
+        "lobby_quotes": [],
+        "lobby_both": []
       }
     }
   ]

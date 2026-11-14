@@ -154,16 +154,14 @@
     ],
     "same_theme_amendments": [
       "12",
-      "16",
       "31"
     ],
     "groups": [
       "CRCE-K",
-      "GEST",
       "Les Républicains",
       "UNT"
     ],
-    "n_groups": 4,
+    "n_groups": 3,
     "majority_groups": [
       "Les Républicains"
     ]
@@ -236,17 +234,15 @@
       "Utilisation le dimanche"
     ],
     "same_theme_amendments": [
-      "16",
       "31",
       "7"
     ],
     "groups": [
       "CRCE-K",
-      "GEST",
       "Les Républicains",
       "UNT"
     ],
-    "n_groups": 4,
+    "n_groups": 3,
     "majority_groups": [
       "Les Républicains"
     ]
@@ -312,23 +308,18 @@
     "number": "16",
     "author_group": "GEST",
     "themes": [
-      "Supprimer le double plafond journalier",
-      "Utilisation le dimanche"
+      "Supprimer le double plafond journalier"
     ],
     "same_theme_amendments": [
       "10",
-      "12",
-      "31",
-      "6",
-      "7"
+      "6"
     ],
     "groups": [
       "CRCE-K",
       "GEST",
-      "Les Républicains",
-      "UNT"
+      "Les Républicains"
     ],
-    "n_groups": 4,
+    "n_groups": 3,
     "majority_groups": [
       "Les Républicains"
     ]
@@ -565,16 +556,14 @@
     ],
     "same_theme_amendments": [
       "12",
-      "16",
       "7"
     ],
     "groups": [
       "CRCE-K",
-      "GEST",
       "Les Républicains",
       "UNT"
     ],
-    "n_groups": 4,
+    "n_groups": 3,
     "majority_groups": [
       "Les Républicains"
     ]

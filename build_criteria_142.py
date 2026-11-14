@@ -18,7 +18,7 @@ FRUITS = [{"naf": "47.21Z", "label": "Commerce de détail de fruits et légumes"
 EMETTEURS = [{"naf": "", "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"}]
 PLATEFORMES = [{"naf": "", "label": "Plateformes de livraison de repas (pas de code NAF propre)"}]
 
-COMMISSION_CAP = dict(sectors=RESTO + COMMERCE + EMETTEURS,
+COMMISSION_CAP = dict(sectors=RESTO + GMS + COMMERCE + EMETTEURS,
                       who="Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)")
 DOUBLE_CAP_REMOVED = dict(sectors=GMS + COMMERCE + RESTO,
                           who="Supermarchés et commerces alimentaires (plafond unique conservé) ; restaurants (perdent le plafond majoré)")

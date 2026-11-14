@@ -16,7 +16,7 @@ import json
 import sys
 from pathlib import Path
 
-from profiles import load_history
+from profiles import chiffrage_by_theme, load_history
 
 # Which NAF codes a demo profile's rate generalises to, and why (the parameter's scope).
 RATE_SCOPE = {
@@ -28,6 +28,11 @@ ROLE_SCOPE = {
     "841983828": {"role": "Plateformes", "scope": "plateformes de livraison (sens seulement, montant non sourcé)"},
 }
 SIGN_FLIP = {"gain": "perte", "perte": "gain"}
+
+# Measures that apply to every employer that hands out titres-restaurant, whatever its sector
+# (criteria: "Employeurs qui attribuent des titres-restaurant (tous secteurs)").
+EMPLOYER_THEMES = {"Maintien pendant les congés familiaux", "Négociation syndicale avant mise en place",
+                   "Durée de validité des titres"}
 
 
 def revenue_by_siren(chiffrage):
@@ -45,13 +50,7 @@ def main(n):
     criteria = json.loads(Path(f"data/criteria_{n}.json").read_text())
     signals = {s["number"]: s for s in json.loads(Path(f"data/signals_{n}.json").read_text())}
     exposure = {e["number"]: e for e in json.loads(Path(f"data/exposure_{n}.json").read_text())["amendments"]}
-    chiffrage = {}
-    for f in sorted(Path("data/chiffrage").glob("*.json")):
-        ch = json.loads(f.read_text())
-        chiffrage[ch["theme"]] = ch
-    if "Supprimer le double plafond journalier" in chiffrage:
-        chiffrage.setdefault("Rendre effectif le double plafond journalier",
-                             chiffrage["Supprimer le double plafond journalier"])
+    chiffrage = chiffrage_by_theme()  # "Rendre effectif" = mirror of "Supprimer" (signs flipped)
     history = load_history()
     revenue = revenue_by_siren(chiffrage)
 
@@ -85,9 +84,6 @@ def main(n):
             for siren, p in ch.get("per_profile", {}).items():
                 eur, sign = p.get("eur_per_year"), p.get("sign")
                 if siren in RATE_SCOPE and eur and revenue.get(siren):
-                    # "Rendre effectif" is the opposite of "Supprimer": same money, flipped sign.
-                    if theme == "Rendre effectif le double plafond journalier":
-                        sign = SIGN_FLIP.get(sign, sign)
                     rates.append({"nafs": RATE_SCOPE[siren]["nafs"], "scope": RATE_SCOPE[siren]["scope"],
                                   "sign": sign, "rate_low": eur["low"] / revenue[siren],
                                   "rate_high": eur["high"] / revenue[siren], "method": p.get("method")})
@@ -102,6 +98,8 @@ def main(n):
 
     out = []
     for m in measures.values():
+        if m["theme"] in EMPLOYER_THEMES:
+            m["roles"].add("Employeurs")
         m["nafs"], m["roles"] = sorted(m["nafs"]), sorted(m["roles"])
         m["sectors"] = [{"key": k, "label": v} for k, v in m["sectors"].items()]
         out.append(m)

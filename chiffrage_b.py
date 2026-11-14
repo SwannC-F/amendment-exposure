@@ -160,9 +160,9 @@ c_lo, c_hi = acceptor_share(CARREFOUR_TR)
 write("validite", {
     "theme": "Durée de validité des titres",
     "amendments": [32, 33],
-    "mechanism": "Les titres non utilisés à l'échéance sont perdus pour le salarié ; sans date limite (n° 32) ou avec 3 ans et contre-valeur au budget des activités sociales et culturelles (n° 33), cette valeur reste aux salariés et est dépensée chez les commerçants au lieu de revenir à l'employeur.",
+    "mechanism": "Les titres non utilisés à l'échéance sont perdus pour le salarié ; sans date limite (n° 32) ou avec 3 ans et contre-valeur au budget des activités sociales et culturelles (n° 33), cette valeur reste aux salariés et est dépensée chez les commerçants au lieu d'aller, après prélèvement de l'émetteur, au budget des activités sociales et culturelles (CSE ; l'entreprise à défaut de CSE : L. 3262-5, R. 3262-13 et R. 3262-14).",
     "winners": ["Salariés bénéficiaires", "Budget des activités sociales et culturelles / CSE (n° 33)", "Restaurants et commerces qui encaissent les titres"],
-    "losers": ["Employeurs qui récupèrent la contre-valeur des titres périmés (selon n° 32)"],
+    "losers": ["CSE / budget des activités sociales et culturelles (entreprise à défaut de CSE)", "Émetteurs (prélèvement sur les titres périmés, R. 3262-13)"],
     "parameters": [
         P("Titres perdus ou périmés par an (2024)", EXPIRED, EXPIRED, "€/an",
           "Cela représentait 54,6 millions d’euros en 2024, soit 0,5 % de la valeur des titres émis, dont 86 % sur les seuls titres papier.", src(32)),

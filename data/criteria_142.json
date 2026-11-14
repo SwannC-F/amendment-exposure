@@ -74,6 +74,14 @@
           "label": "Restauration de type rapide"
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale"
         },
@@ -127,6 +135,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
@@ -184,6 +200,14 @@
           "label": "Restauration de type rapide"
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale"
         },
@@ -237,6 +261,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
@@ -410,6 +442,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
@@ -635,6 +675,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
@@ -961,6 +1009,14 @@
           "label": "Restauration de type rapide"
         },
         {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
           "naf": "47.11B",
           "label": "Commerce d'alimentation générale"
         },
@@ -1014,6 +1070,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
@@ -1237,6 +1301,14 @@
         {
           "naf": "56.10C",
           "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
         },
         {
           "naf": "47.11B",
