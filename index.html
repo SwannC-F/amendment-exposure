@@ -309,6 +309,15 @@
                      border: 0; border-radius: 8px; padding: 6px 12px; cursor: pointer; }
   .textpick .ttl { color: var(--ink); font-weight: 650; }
   .textpick .warn { color: var(--loss); }
+  .textpick .demo { color: #92400e; background: #fef3c7; border-radius: 999px; padding: 2px 10px; font-weight: 700; font-size: 12.5px; }
+  .textpick .recalc { color: #fff; background: var(--ink); }
+  .textpick .recalc:disabled { background: #c6cfe0; cursor: not-allowed; }
+  .textpick .gen { flex-basis: 100%; font-size: 12.5px; color: var(--muted); }
+  .textpick .gen:empty { display: none; }
+  .runbox { margin-top: 10px; border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; background: #fff; }
+  .runbox[hidden] { display: none; }
+  .runbox .stream { max-height: 180px; margin-bottom: 0; }
+  .runbox .live-err { margin: 6px 0 0; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
@@ -331,7 +340,10 @@
     <button type="submit">Charger</button>
     <span class="ttl" id="textTitle"></span>
     <span id="textNote"></span>
+    <button type="button" id="recalc" class="recalc" hidden>Recalculer ce texte</button>
+    <span class="gen" id="textGen"></span>
   </form>
+  <div class="runbox" id="runbox" hidden></div>
 
   <div class="step"><b>1</b> · Votre entreprise</div>
   <div class="search">
@@ -531,7 +543,10 @@ async function probeHealth(base, ms) {
     LIVE_OK = ok; LIVE_STATE = ok ? "on" : "off";
     return ok;
   })();
-  liveReady.then(() => { liveLoad(); if (!document.getElementById("scan").hidden) paintScan(); });
+  liveReady.then(ok => {
+    liveLoad(); if (!document.getElementById("scan").hidden) paintScan();
+    if (ok) { document.getElementById("recalc").hidden = false; checkRun(true); }
+  });
 
   /* ---------- state ---------- */
   let text = { ...DEFAULT_TEXT };
@@ -562,13 +577,13 @@ async function probeHealth(base, ms) {
     try { return { engine: await loadJson(`data/${key}/engine.json`), from: "fichier" }; }
     catch (e) { if (e.http !== 404) throw e; }
     if (LEGACY[key]) return { engine: await loadJson(LEGACY[key]), from: "ancien format" };
-    // Only for a text with no file at all: ask the local server, which runs the pipeline (can take minutes, costs LLM calls).
+    // No static file: the server may have one (GET never recomputes; a recompute is the explicit button below).
     await liveReady;
     if (LIVE_OK) {
-      fill($("textNote"), "texte pas encore analysé : le serveur lance le pipeline…");
       try { return { engine: await loadJson(`${LIVE}/api/text/${t.session}/${t.number}`), from: "serveur" }; } catch {}
     }
-    throw new Error(`Le texte n°${t.number} (${t.session}) n'est pas encore analysé. Lancez : python3 pipeline.py ${t.session} ${t.number}`);
+    throw new Error(`Le texte n°${t.number} (${t.session}) n'est pas encore analysé.` +
+      (LIVE_OK ? " Cliquez « Recalculer ce texte » pour lancer le pipeline." : ` Lancez : python3 pipeline.py ${t.session} ${t.number}`));
   }
 
   async function loadText(t) {
@@ -593,7 +608,11 @@ async function probeHealth(base, ms) {
       fill($("pillText"), [tx.chamber || "Sénat", title, seanceLabel(tx.seance)].filter(Boolean).join(" · "));
       fill($("liveTitle"), `${tx.chamber || "Sénat"}, en direct`);
       fill($("textTitle"), title);
-      fill($("textNote"), res.from === "fichier" ? "" : h("span", { class: res.from === "ancien format" ? "" : "" }, `(${res.from})`));
+      fill($("textNote"), res.from === "ancien format" ? h("span", { class: "demo" }, "Données de démonstration (ancien format)")
+        : res.from === "serveur" ? "(lu sur le serveur)" : "");
+      showGenerated(engine);
+      if (!runFor) $("runbox").hidden = true;
+      if (LIVE_OK) checkRun(true);
       document.title = `Exposition — ${title}`;
       const maj = engine.majority;
       fill($("footMajority"), "Soutien : nombre de groupes politiques qui déposent la même mesure.",
@@ -1218,6 +1237,83 @@ async function probeHealth(base, ms) {
       st.http = e.http;
       paintScan();
     }
+  }
+
+  /* ---------- "tout recalculable": full pipeline rerun on the server ---------- */
+  const recalcBtn = $("recalc"), runEl = $("runbox");
+  let pollTimer = null, runFor = null;
+  const fmtDate = iso => { const d = new Date(iso); return isNaN(d) ? String(iso) : d.toLocaleString("fr-FR", { dateStyle: "short", timeStyle: "short" }); };
+
+  function showGenerated(e) {
+    const g = e.generated_at || e.generated || e.built_at || e.text?.generated_at || e.text?.generated;
+    const model = e.model || e.text?.model || e.llm_model || e.text?.llm_model;
+    fill($("textGen"), g ? `Généré le ${fmtDate(g)}${model ? ` par ${model}` : ""}` : model ? `Généré par ${model}` : "");
+  }
+
+  recalcBtn.addEventListener("click", async () => {
+    if (!LIVE_OK) return;
+    const t = { ...text };
+    if (!confirm(`Relancer tout le pipeline pour le texte n°${t.number} (${t.session}) : amendements, IA, comptages, chiffrage, historique — quelques minutes, ~0,30 $`)) return;
+    recalcBtn.disabled = true;
+    paintRun({ status: "starting" });
+    try {
+      const r = await fetch(`${LIVE}/api/text/${encodeURIComponent(t.session)}/${encodeURIComponent(t.number)}?refresh=1`, {
+        method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ confirm: true }) });
+      let j = {}; try { j = await r.json(); } catch {}
+      if (r.status === 409) throw new Error(j.error || "Un recalcul est déjà en cours sur le serveur (un seul à la fois).");
+      if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
+      runFor = t; poll();
+    } catch (e) {
+      recalcBtn.disabled = false;
+      paintRun({ status: "error", error: e.message || "réseau" });
+    }
+  });
+
+  // On load (and after a reload mid-run), pick up a run already going for this text.
+  async function checkRun(silent) {
+    const t = { ...text };
+    try {
+      const st = await loadJson(`${LIVE}/api/text/${encodeURIComponent(t.session)}/${encodeURIComponent(t.number)}/status`);
+      if (st.status === "running") { runFor = t; recalcBtn.disabled = true; paintRun(st); clearTimeout(pollTimer); pollTimer = setTimeout(poll, 3000); }
+      else if (!silent) paintRun(st);
+      if (!engine?.generated_at && st.engine_updated && !$("textGen").textContent) fill($("textGen"), `Fichier généré le ${fmtDate(st.engine_updated)}`);
+    } catch {}
+  }
+
+  async function poll() {
+    clearTimeout(pollTimer);
+    const t = runFor; if (!t) return;
+    try {
+      const st = await loadJson(`${LIVE}/api/text/${encodeURIComponent(t.session)}/${encodeURIComponent(t.number)}/status`);
+      paintRun(st);
+      if (st.status === "running") { pollTimer = setTimeout(poll, 3000); return; }
+      runFor = null; recalcBtn.disabled = false;
+      if (st.status === "done" && t.session === text.session && t.number === text.number) {
+        await loadText(text);
+        paintRun(st);   // loadText hides the box; keep the "done" message visible
+        if (st.engine_updated) fill($("textGen"), `Recalculé le ${fmtDate(st.engine_updated)}`);
+      }
+    } catch (e) {
+      pollTimer = setTimeout(poll, 3000);   // transient (cold server): keep polling
+    }
+  }
+
+  function paintRun(st) {
+    runEl.hidden = false;
+    const tail = (st.tail || []).slice(-14).join("\n");
+    const elapsed = st.elapsed_s != null ? ` · ${fmt(Math.round(st.elapsed_s))} s` : "";
+    if (st.status === "starting" || st.status === "running") {
+      fill(runEl, h("div", { class: "stream-k" }, h("span", { class: "spin2" }),
+        h("span", null, `Pipeline en cours${elapsed} : amendements → IA → comptages → chiffrage → historique`)),
+        h("pre", { class: "stream" }, tail || "démarrage…", h("span", { class: "cur" })));
+      const pre = runEl.querySelector("pre"); if (pre) pre.scrollTop = pre.scrollHeight;
+    } else if (st.status === "done") {
+      fill(runEl, h("div", { class: "stream-k" }, `✓ Recalcul terminé${elapsed} — données rechargées`),
+        tail ? h("details", null, h("summary", null, "journal"), h("pre", { class: "stream" }, tail)) : null);
+    } else if (st.status === "error") {
+      fill(runEl, h("p", { class: "live-err" }, `Recalcul en échec : ${st.error || `code ${st.returncode ?? "?"}`}`),
+        tail ? h("pre", { class: "stream" }, tail) : null);
+    } else runEl.hidden = true;
   }
 
   /* ---------- start ---------- */
