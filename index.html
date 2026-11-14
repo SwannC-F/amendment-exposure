@@ -1281,22 +1281,25 @@ async function probeHealth(base, ms) {
     if (!vp && !refs.length) return null;
     const pick = (o, re, test) => { for (const [k, v] of Object.entries(o || {})) if (re.test(k) && test(v)) return v; return null; };
     const isP = v => typeof v === "number" && isFinite(v) && v >= 0 && v <= 100;
-    let p = vp ? (pick(vp, /^(mean_?)?(p|prob|probability)_?(pour|for|yes)|mean_?prob|proba.*(pour|for)|p_?pour|prob_?for/i, isP)
+    let p = vp ? (vp.moyenne_probabilites_pour ?? pick(vp, /^(mean_?)?(p|prob|probability)_?(pour|for|yes)|mean_?prob|proba.*(pour|for)|p_?pour|prob_?for/i, isP)
       ?? pick(vp, /prob|mean/i, isP)) : null;
     if (p != null && p <= 1) p *= 100;
-    let conf = vp ? pick(vp, /confi/i, v => typeof v === "number" || typeof v === "string") : null;
+    let conf = vp ? vp.confiance ?? pick(vp, /confi/i, v => typeof v === "number" || typeof v === "string") : null;
     if (typeof conf === "number") conf = conf <= 1 ? `${nf0.format(conf * 100)} %` : String(conf);
     const n = vp ? pick(vp, /deput|depute|n_?voters|count|n_?members/i, v => typeof v === "number") : null;
-    const refNodes = refs.map(r => typeof r === "string" ? (/^https?:/.test(r) ? ext(r, "réf.") : r)
-      : r.url ? ext(r.url, r.label || r.title || r.id || "réf.") : (r.label || r.title || r.id || ""));
+    const refLabel = r => r.label || r.title || (r.numero ? `${r.type === "amendement" ? "amendement " : ""}n°${r.numero}${r.sort ? ` (${r.sort})` : ""}` : r.id) || "réf.";
+    const refNodes = refs.slice(0, 8).map(r => typeof r === "string" ? (/^https?:/.test(r) ? ext(r, "réf.") : r)
+      : r.url ? ext(r.url, refLabel(r)) : refLabel(r));
     return h("div", { class: "hemi" },
       h("div", { class: "hk" }, "Prédiction de vote — Hémicycle (Orcet)"),
       p != null ? [h("div", { class: "hv" }, `${nf0.format(p)} %`),
         h("div", { class: "hl" }, "moyenne des probabilités de vote pour, selon Orcet (Hémicycle)",
-          conf != null ? ` · confiance ${conf}` : "", n != null ? ` · ${fmt(n)} députés` : "")]
+          vp.numero ? ` · amendement n°${vp.numero}` : "", conf != null ? ` · confiance ${conf}` : "", n != null ? ` · ${fmt(n)} députés` : ""),
+        vp.definition ? h("div", { class: "hl dim" }, vp.definition) : null]
         : vp ? h("div", { class: "hl" }, "prédiction présente mais sans probabilité lisible") : null,
       refNodes.length ? h("div", { class: "hl" }, "Références Hémicycle : ", refNodes.map((x, i) => [i ? " · " : "", x])) : null,
-      h("div", { class: "hl dim" }, vp?.source || "Hémicycle · Orcet", " — estimation, pas un résultat de vote."));
+      h("div", { class: "hl dim" }, vp?.source || "Hémicycle · Orcet", vp?.modele ? ` · modèle ${vp.modele}` : "",
+        vp?.predit_le ? ` · prédit le ${fmtDate(vp.predit_le)}` : "", " — estimation, pas un résultat de vote."));
   }
 
   function card(c, i, rank) {
