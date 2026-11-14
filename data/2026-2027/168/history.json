@@ -1,0 +1,341 @@
+{
+ "session": "2026-2027",
+ "text": "168",
+ "title": "Reconnaître une présomption de légitime défense pour les forces de l'ordre",
+ "dossier": "https://www.senat.fr/dossier-legislatif/ppl25-866.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "présomption de légitime défense",
+  "présomption d'usage légal",
+  "usage d'armes forces de l'ordre",
+  "légitime défense policiers",
+  "légitime défense gendarmes",
+  "doctrine d'emploi armes",
+  "tir forces de l'ordre",
+  "formation au tir police",
+  "garde à vue tir policier"
+ ],
+ "articles": {
+  "Code de la sécurité intérieure|L435-1": {
+   "code": "Code de la sécurité intérieure",
+   "num": "L435-1",
+   "label": "article L. 435-1 du code de la sécurité intérieure",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  }
+ },
+ "laws": {},
+ "senat_texts_scanned": [
+  {
+   "session": "2025-2026",
+   "number": "866",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2025-2026/866/jeu_complet_commission_2025-2026_866.csv",
+   "rows": 2,
+   "relevant": 1
+  }
+ ],
+ "stats": {
+  "articles": 1,
+  "laws": 0,
+  "senat_texts": 1,
+  "past_relevant": 1,
+  "past_attached": 1,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 0,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {
+  "supprimer-presomption-usage-legal": {
+   "theme": "Supprimer la présomption d'usage légal",
+   "amendments": [
+    "2",
+    "6",
+    "7"
+   ],
+   "effects": [
+    "Supprime l'article instaurant une présomption d'usage légal des armes par les policiers et gendarmes, qui inversait la charge de la preuve en matière de recours à une arme létale.",
+    "Supprime l'article instaurant une présomption d'usage légitime des armes pour la police et la gendarmerie, maintenant ainsi le cadre juridique actuel d'enquête après un tir.",
+    "Supprime la présomption d'usage légal d'une arme par les forces de l'ordre lors de leurs interventions."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {
+    "GEST": {
+     "filed": 1,
+     "adopted": 0,
+     "rejected": 1,
+     "other": 0,
+     "pour": 1,
+     "contre": 0,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2025-2026/866/COM-1",
+     "session": "2025-2026",
+     "text_number": "866",
+     "stage": "commission",
+     "number": "COM-1",
+     "filed": "2026-11-09",
+     "year": 2026,
+     "author": "Mme SOUYRIS",
+     "group": "GEST",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2025-2026/866/Amdt_COM-1.html",
+     "cites": [],
+     "measure": "supprimer-presomption-usage-legal",
+     "stance": "pour",
+     "quote": "Le groupe Écologiste - Solidarité et Territoires s'oppose à la présomption d'usage légal d'une arme par les agents de la police nationale et les militaires de la gendarmerie nationale."
+    }
+   ],
+   "findings": [
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient en faveur de cette mesure : 0 adopté(s), 1 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : GEST (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2025-2026/866/COM-1"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-presomption-cas-blessures-deces": {
+   "theme": "Exclure la présomption en cas de blessures ou décès",
+   "amendments": [
+    "5",
+    "11",
+    "12"
+   ],
+   "effects": [
+    "Exclut la présomption d'usage légal de l'arme pour les policiers et gendarmes lorsque cet usage a entraîné la mort ou des blessures graves d'une personne",
+    "Exclut la présomption d'usage légal de l'arme à feu lorsque le tir a blessé ou tué une personne, rétablissant le droit commun de la charge de la preuve.",
+    "Exclut la présomption d'usage légal des armes par les forces de l'ordre lorsqu'une personne est décédée des suites du tir."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "supprimer-usage-arme-vehicule-refus-obtemperer": {
+   "theme": "Supprimer l'usage d'armes contre véhicules",
+   "amendments": [
+    "8"
+   ],
+   "effects": [
+    "Supprime la possibilité pour les policiers et gendarmes de faire usage de leur arme contre un véhicule en cas de refus d'obtempérer"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 435-1 du code de la sécurité intérieure"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "imposer-garde-vue-systematique-tir": {
+   "theme": "Imposer une garde à vue systématique après tir",
+   "amendments": [
+    "9"
+   ],
+   "effects": [
+    "Impose une garde-à-vue systématique pour tout policier ou gendarme auteur d'un tir, même sous présomption de légitime défense."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "imposer-enquete-judiciaire-systematique": {
+   "theme": "Imposer une enquête judiciaire systématique",
+   "amendments": [
+    "10"
+   ],
+   "effects": [
+    "Rend obligatoire une enquête judiciaire systématique pour tout usage d'une arme par un agent des forces de l'ordre, contournant la présomption de légalité"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-presomption-defaut-entrainement": {
+   "theme": "Exclure la présomption sans entraînement au tir",
+   "amendments": [
+    "13"
+   ],
+   "effects": [
+    "La présomption d'usage légal de l'arme ne s'applique pas aux policiers et gendarmes n'ayant pas rempli leurs obligations d'entraînement au tir l'année précédant le tir."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "limiter-presomption-anciennete-10-ans": {
+   "theme": "Limiter la présomption aux agents de plus de 10 ans",
+   "amendments": [
+    "14"
+   ],
+   "effects": [
+    "Limite une présomption liée à l'usage des armes aux seuls policiers et gendarmes justifiant d'au moins 10 ans de service effectif."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "conditionner-presomption-armes-intermediaires": {
+   "theme": "Conditionner la présomption aux armes intermédiaires",
+   "amendments": [
+    "15"
+   ],
+   "effects": [
+    "Conditionne la présomption de légitimité de l'usage de l'arme au recours préalable à des armes de force intermédiaire en cas de refus d'obtempérer."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "supprimer-presomption-absence-images-camera": {
+   "theme": "Supprimer la présomption sans images caméra",
+   "amendments": [
+    "16"
+   ],
+   "effects": [
+    "Supprime la présomption prévue au III lorsque les images des caméras-piétons sont absentes, inexploitables ou non communiquées à l'autorité judiciaire"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "imposer-rapport-doctrine-refus-obtemperer": {
+   "theme": "Imposer un rapport sur la doctrine d'emploi",
+   "amendments": [
+    "17"
+   ],
+   "effects": [
+    "Impose au Gouvernement un rapport au Parlement dans les six mois sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis la loi de 2017."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "imposer-rapport-formation-continue": {
+   "theme": "Imposer un rapport sur la formation continue",
+   "amendments": [
+    "18"
+   ],
+   "effects": [
+    "Impose au Gouvernement un rapport au Parlement sur l'effectivité de la formation continue des forces de l'ordre au maniement des armes et aux techniques de sécurité en intervention (TSI)."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "imposer-rapport-formation-tir": {
+   "theme": "Imposer un rapport sur la formation au tir",
+   "amendments": [
+    "19"
+   ],
+   "effects": [
+    "Impose au Gouvernement un rapport dans les six mois sur l'état des lieux et les pistes d'amélioration de la formation au tir des policiers et gendarmes."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  }
+ },
+ "refs": {
+  "senat:2025-2026/866/COM-1": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-1 (commission, texte n° 866, 2025-2026)",
+   "url": "https://www.senat.fr/amendements/commissions/2025-2026/866/Amdt_COM-1.html",
+   "date": "2026-11-09"
+  }
+ }
+}

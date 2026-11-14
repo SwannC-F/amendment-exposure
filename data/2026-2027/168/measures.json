@@ -1,0 +1,102 @@
+[
+  {
+    "key": "supprimer-presomption-usage-legal",
+    "theme": "Supprimer la présomption d'usage légal",
+    "amendments": [
+      "2",
+      "6",
+      "7"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-presomption-cas-blessures-deces",
+    "theme": "Exclure la présomption en cas de blessures ou décès",
+    "amendments": [
+      "5",
+      "11",
+      "12"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-usage-arme-vehicule-refus-obtemperer",
+    "theme": "Supprimer l'usage d'armes contre véhicules",
+    "amendments": [
+      "8"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-garde-vue-systematique-tir",
+    "theme": "Imposer une garde à vue systématique après tir",
+    "amendments": [
+      "9"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-enquete-judiciaire-systematique",
+    "theme": "Imposer une enquête judiciaire systématique",
+    "amendments": [
+      "10"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-presomption-defaut-entrainement",
+    "theme": "Exclure la présomption sans entraînement au tir",
+    "amendments": [
+      "13"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "limiter-presomption-anciennete-10-ans",
+    "theme": "Limiter la présomption aux agents de plus de 10 ans",
+    "amendments": [
+      "14"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "conditionner-presomption-armes-intermediaires",
+    "theme": "Conditionner la présomption aux armes intermédiaires",
+    "amendments": [
+      "15"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-presomption-absence-images-camera",
+    "theme": "Supprimer la présomption sans images caméra",
+    "amendments": [
+      "16"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-rapport-doctrine-refus-obtemperer",
+    "theme": "Imposer un rapport sur la doctrine d'emploi",
+    "amendments": [
+      "17"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-rapport-formation-continue",
+    "theme": "Imposer un rapport sur la formation continue",
+    "amendments": [
+      "18"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "imposer-rapport-formation-tir",
+    "theme": "Imposer un rapport sur la formation au tir",
+    "amendments": [
+      "19"
+    ],
+    "opposes": null
+  }
+]

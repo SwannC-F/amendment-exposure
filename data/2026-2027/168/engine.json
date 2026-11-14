@@ -1,0 +1,996 @@
+{
+  "text": {
+    "session": "2026-2027",
+    "number": "168",
+    "title": null
+  },
+  "majority": [
+    "Les Républicains",
+    "UCI"
+  ],
+  "measures": [
+    {
+      "key": "supprimer-presomption-usage-legal",
+      "theme": "Supprimer la présomption d'usage légal",
+      "amendments": [
+        "2",
+        "6",
+        "7"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime l'article instaurant une présomption d'usage légitime des armes pour la police et la gendarmerie, maintenant ainsi le cadre juridique actuel d'enquête après un tir.",
+        "Supprime l'article instaurant une présomption d'usage légal des armes par les policiers et gendarmes, qui inversait la charge de la preuve en matière de recours à une arme létale.",
+        "Supprime la présomption d'usage légal d'une arme par les forces de l'ordre lors de leurs interventions."
+      ],
+      "nafs": [
+        "84.10Z",
+        "84.12Z",
+        "84.29Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.29Z",
+          "label": "Activités de sécurité publique"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "84.12Z",
+          "label": "Administration publique générale"
+        },
+        {
+          "key": "84.10Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "SER"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Activités de sécurité publique",
+        "Administration publique générale"
+      ],
+      "quote": "Ce texte propose de créer un régime de présomption d’usage légitime des armes pour la police et la gendarmerie.",
+      "history": {
+        "theme": "Supprimer la présomption d'usage légal",
+        "amendments": [
+          "2",
+          "6",
+          "7"
+        ],
+        "effects": [
+          "Supprime l'article instaurant une présomption d'usage légal des armes par les policiers et gendarmes, qui inversait la charge de la preuve en matière de recours à une arme létale.",
+          "Supprime l'article instaurant une présomption d'usage légitime des armes pour la police et la gendarmerie, maintenant ainsi le cadre juridique actuel d'enquête après un tir.",
+          "Supprime la présomption d'usage légal d'une arme par les forces de l'ordre lors de leurs interventions."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {
+          "GEST": {
+            "filed": 1,
+            "adopted": 0,
+            "rejected": 1,
+            "other": 0,
+            "pour": 1,
+            "contre": 0,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2025-2026/866/COM-1",
+            "session": "2025-2026",
+            "text_number": "866",
+            "stage": "commission",
+            "number": "COM-1",
+            "filed": "2026-11-09",
+            "year": 2026,
+            "author": "Mme SOUYRIS",
+            "group": "GEST",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2025-2026/866/Amdt_COM-1.html",
+            "cites": [],
+            "measure": "supprimer-presomption-usage-legal",
+            "stance": "pour",
+            "quote": "Le groupe Écologiste - Solidarité et Territoires s'oppose à la présomption d'usage légal d'une arme par les agents de la police nationale et les militaires de la gendarmerie nationale."
+          }
+        ],
+        "findings": [
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient en faveur de cette mesure : 0 adopté(s), 1 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : GEST (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2025-2026/866/COM-1"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime l'article instaurant une présomption d'usage légal des armes par les policiers et gendarmes. Il s'agit d'un changement juridique sur la charge de la preuve, sans transfert monétaire.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Parquet et victimes potentielles : maintien du cadre d'enquête existant"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Forces de l'ordre : absence de la présomption de légalité du recours à l'arme"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est juridique et procédurale (charge de la preuve, régime d'enquête). Aucun flux monétaire n'est concerné. Les textes ne contiennent ni assiette en euros ni écart chiffré exprimable en part d'un flux financier."
+      }
+    },
+    {
+      "key": "exclure-presomption-cas-blessures-deces",
+      "theme": "Exclure la présomption en cas de blessures ou décès",
+      "amendments": [
+        "5",
+        "11",
+        "12"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut la présomption d'usage légal de l'arme pour les policiers et gendarmes lorsque cet usage a entraîné la mort ou des blessures graves d'une personne",
+        "Exclut la présomption d'usage légal de l'arme à feu lorsque le tir a blessé ou tué une personne, rétablissant le droit commun de la charge de la preuve.",
+        "Exclut la présomption d'usage légal des armes par les forces de l'ordre lorsqu'une personne est décédée des suites du tir."
+      ],
+      "nafs": [
+        "84.10Z",
+        "84.22Z",
+        "84.24Z"
+      ],
+      "roles": [
+        "autre:forces_de_l_ordre",
+        "etat",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "84.22Z",
+          "label": "Activités de police"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "84.10Z",
+          "label": "Administration générale de l'État"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "84.24Z",
+          "label": "Sécurité et ordre public"
+        },
+        {
+          "key": "autre:forces_de_l_ordre",
+          "label": "autre:forces_de_l_ordre"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Activités de police",
+        "Administration générale de l'État",
+        "Sécurité et ordre public"
+      ],
+      "quote": "Elle ne s'applique pas lorsque l'usage de l'arme a entraîné la mort d'une personne ou l'a grièvement blessée.",
+      "history": {
+        "theme": "Exclure la présomption en cas de blessures ou décès",
+        "amendments": [
+          "5",
+          "11",
+          "12"
+        ],
+        "effects": [
+          "Exclut la présomption d'usage légal de l'arme pour les policiers et gendarmes lorsque cet usage a entraîné la mort ou des blessures graves d'une personne",
+          "Exclut la présomption d'usage légal de l'arme à feu lorsque le tir a blessé ou tué une personne, rétablissant le droit commun de la charge de la preuve.",
+          "Exclut la présomption d'usage légal des armes par les forces de l'ordre lorsqu'une personne est décédée des suites du tir."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime la présomption d'usage légal de l'arme par les policiers et gendarmes lorsque cet usage a entraîné la mort ou des blessures graves. Aucun transfert monétaire n'est en jeu : il s'agit d'une modification de la charge de la preuve en procédure pénale.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Victimes de tirs policiers et leurs familles"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "84.22Z",
+            "role": "etat",
+            "label": "Policiers nationaux et gendarmes"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Cette mesure est de nature procédurale et pénale : elle modifie la charge de la preuve sans provoquer de transfert d'argent. Aucune assiette financière ni écart chiffré ne figure dans les amendements."
+      }
+    },
+    {
+      "key": "supprimer-usage-arme-vehicule-refus-obtemperer",
+      "theme": "Supprimer l'usage d'armes contre véhicules",
+      "amendments": [
+        "8"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime la possibilité pour les policiers et gendarmes de faire usage de leur arme contre un véhicule en cas de refus d'obtempérer"
+      ],
+      "nafs": [
+        "84.10Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.10Z",
+          "label": "Administration publique générale"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Administration publique générale"
+      ],
+      "quote": "Le 4° de l'article L. 435‑1 du code de la sécurité intérieure est abrogé.",
+      "history": {
+        "theme": "Supprimer l'usage d'armes contre véhicules",
+        "amendments": [
+          "8"
+        ],
+        "effects": [
+          "Supprime la possibilité pour les policiers et gendarmes de faire usage de leur arme contre un véhicule en cas de refus d'obtempérer"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 435-1 du code de la sécurité intérieure"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime la possibilité pour les policiers et gendarmes de faire usage de leur arme contre un véhicule en cas de refus d'obtempérer. Il n'y a aucun transfert d'argent associé à cette mesure.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Cette mesure est une modification du cadre légal encadrant l'usage des armes à feu par les forces de l'ordre. Elle ne provoque aucun transfert monétaire entre agents économiques : ni assiette, ni écart chiffré ne sont identifiables dans les textes."
+      }
+    },
+    {
+      "key": "imposer-garde-vue-systematique-tir",
+      "theme": "Imposer une garde à vue systématique après tir",
+      "amendments": [
+        "9"
+      ],
+      "opposes": null,
+      "effects": [
+        "Impose une garde-à-vue systématique pour tout policier ou gendarme auteur d'un tir, même sous présomption de légitime défense."
+      ],
+      "nafs": [
+        "84.22Z",
+        "84.23Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.23Z",
+          "label": "Justice et ordre public"
+        },
+        {
+          "key": "84.22Z",
+          "label": "Défense nationale"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Défense nationale",
+        "Justice et ordre public"
+      ],
+      "quote": "En dépit de la présomption prévue au III, tout usage de l'arme est suivi de la garde‑à‑vue du policier ou du gendarme auteur du tir.",
+      "history": {
+        "theme": "Imposer une garde à vue systématique après tir",
+        "amendments": [
+          "9"
+        ],
+        "effects": [
+          "Impose une garde-à-vue systématique pour tout policier ou gendarme auteur d'un tir, même sous présomption de légitime défense."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose une garde à vue systématique pour tout policier ou gendarme auteur d'un tir, même sous présomption de légitime défense. Il s'agit d'une mesure procédurale et pénale sans transfert monétaire identifiable.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux financier n'est concerné par cette mesure : il s'agit d'une obligation procédurale (garde à vue systématique) sans assiette monétaire ni écart chiffré dans les textes."
+      }
+    },
+    {
+      "key": "imposer-enquete-judiciaire-systematique",
+      "theme": "Imposer une enquête judiciaire systématique",
+      "amendments": [
+        "10"
+      ],
+      "opposes": null,
+      "effects": [
+        "Rend obligatoire une enquête judiciaire systématique pour tout usage d'une arme par un agent des forces de l'ordre, contournant la présomption de légalité"
+      ],
+      "nafs": [
+        "84.22Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.22Z",
+          "label": "Activités de police"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Activités de police"
+      ],
+      "quote": "En dépit de la présomption prévue au III, tout usage d'une arme par un agent fait l'objet d'une enquête judiciaire systématique.",
+      "history": {
+        "theme": "Imposer une enquête judiciaire systématique",
+        "amendments": [
+          "10"
+        ],
+        "effects": [
+          "Rend obligatoire une enquête judiciaire systématique pour tout usage d'une arme par un agent des forces de l'ordre, contournant la présomption de légalité"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose une enquête judiciaire systématique pour tout usage d'une arme par un agent des forces de l'ordre. Il s'agit d'une obligation procédurale sans flux monétaire identifiable.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire n'est identifiable dans cet amendement. Il n'existe ni assiette en euros ni écart chiffré permettant de calculer un transfert financier."
+      }
+    },
+    {
+      "key": "exclure-presomption-defaut-entrainement",
+      "theme": "Exclure la présomption sans entraînement au tir",
+      "amendments": [
+        "13"
+      ],
+      "opposes": null,
+      "effects": [
+        "La présomption d'usage légal de l'arme ne s'applique pas aux policiers et gendarmes n'ayant pas rempli leurs obligations d'entraînement au tir l'année précédant le tir."
+      ],
+      "nafs": [],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption n’est pas applicable lorsque le policier ou le gendarme auteur du tir n’a pas rempli ses obligations réglementaires en matière d’entraînement au tir l’année précédant le tir concerné.",
+      "history": {
+        "theme": "Exclure la présomption sans entraînement au tir",
+        "amendments": [
+          "13"
+        ],
+        "effects": [
+          "La présomption d'usage légal de l'arme ne s'applique pas aux policiers et gendarmes n'ayant pas rempli leurs obligations d'entraînement au tir l'année précédant le tir."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime la présomption d'usage légal de l'arme pour les policiers et gendarmes n'ayant pas rempli leurs obligations d'entraînement au tir l'année précédant le tir. Il s'agit d'un mécanisme juridique et pénal, sans flux monétaire quantifié dans le texte.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Personnes faisant l'objet d'un tir par un policier ou gendarme non entraîné"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Policiers et gendarmes n'ayant pas rempli leurs obligations de tir"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire n'est décrit dans l'amendement. La mesure modifie une présomption légale (protection juridique), pas un transfert financier. Les chiffres présents (63 % de policiers entraînés, 90 cartouches, 30 cartouches) concernent des taux de conformité à une obligation réglementaire, pas une assiette en euros ni un écart tarifaire."
+      }
+    },
+    {
+      "key": "limiter-presomption-anciennete-10-ans",
+      "theme": "Limiter la présomption aux agents de plus de 10 ans",
+      "amendments": [
+        "14"
+      ],
+      "opposes": null,
+      "effects": [
+        "Limite une présomption liée à l'usage des armes aux seuls policiers et gendarmes justifiant d'au moins 10 ans de service effectif."
+      ],
+      "nafs": [
+        "84.22Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.22Z",
+          "label": "Activités de police"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Activités de police"
+      ],
+      "quote": "qui justifient d'au moins dix années effectives de service dans l'exercice de fonctions de policier national ou de gendarme",
+      "history": {
+        "theme": "Limiter la présomption aux agents de plus de 10 ans",
+        "amendments": [
+          "14"
+        ],
+        "effects": [
+          "Limite une présomption liée à l'usage des armes aux seuls policiers et gendarmes justifiant d'au moins 10 ans de service effectif."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure limite une présomption juridique liée à l'usage des armes aux seuls policiers et gendarmes justifiant d'au moins 10 ans de service effectif. Aucun transfert monétaire n'est décrit dans les amendements.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Citoyens face aux forces de l'ordre"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "84.22Z",
+            "role": "etat",
+            "label": "Policiers et gendarmes de moins de 10 ans de service, et l'État comme employeur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure modifie une présomption juridique sans créer de transfert monétaire. Aucune assiette financière ni écart chiffré en euros ne figure dans les amendements."
+      }
+    },
+    {
+      "key": "conditionner-presomption-armes-intermediaires",
+      "theme": "Conditionner la présomption aux armes intermédiaires",
+      "amendments": [
+        "15"
+      ],
+      "opposes": null,
+      "effects": [
+        "Conditionne la présomption de légitimité de l'usage de l'arme au recours préalable à des armes de force intermédiaire en cas de refus d'obtempérer."
+      ],
+      "nafs": [
+        "84.11Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.11Z",
+          "label": "Administration publique générale"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Administration publique générale"
+      ],
+      "quote": "Cette présomption n'est pas applicable lorsque les agents de la police nationale et les militaires de la gendarmerie nationale n’ont pas eu préalablement recours à des armes de forces intermédiaires en cas de refus d’obtempérer avant l’usage de leur arme.",
+      "history": {
+        "theme": "Conditionner la présomption aux armes intermédiaires",
+        "amendments": [
+          "15"
+        ],
+        "effects": [
+          "Conditionne la présomption de légitimité de l'usage de l'arme au recours préalable à des armes de force intermédiaire en cas de refus d'obtempérer."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure conditionne la présomption de légitimité de l'usage de l'arme par les forces de l'ordre au recours préalable à des armes de force intermédiaire en cas de refus d'obtempérer. Il s'agit d'une modification juridique de la charge de la preuve, sans flux monétaire identifié.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire n'est décrit dans les amendements. La mesure modifie une règle juridique de présomption sans transfert financier identifiable. Aucune assiette en euros ni écart chiffré ne figure dans les textes."
+      }
+    },
+    {
+      "key": "supprimer-presomption-absence-images-camera",
+      "theme": "Supprimer la présomption sans images caméra",
+      "amendments": [
+        "16"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime la présomption prévue au III lorsque les images des caméras-piétons sont absentes, inexploitables ou non communiquées à l'autorité judiciaire"
+      ],
+      "nafs": [
+        "84.22Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.22Z",
+          "label": "Activités des services de sécurité (police, gendarmerie)"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Activités des services de sécurité (police, gendarmerie)"
+      ],
+      "quote": "La présomption prévue au III ne s’applique pas lorsque les images issues des caméras‑piétons sont absentes, inexploitables ou non communiquées à l’autorité judiciaire.",
+      "history": {
+        "theme": "Supprimer la présomption sans images caméra",
+        "amendments": [
+          "16"
+        ],
+        "effects": [
+          "Supprime la présomption prévue au III lorsque les images des caméras-piétons sont absentes, inexploitables ou non communiquées à l'autorité judiciaire"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime la présomption prévue au III lorsque les images des caméras-piétons sont absentes, inexploitables ou non communiquées à l'autorité judiciaire. Il s'agit d'une modification juridique et procédurale sans transfert monétaire.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Personnes faisant l'objet d'une intervention policière"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "84.22Z",
+            "role": "etat",
+            "label": "Police nationale et militaires portant caméras-piétons"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est de nature juridique et procédurale : elle modifie une présomption légale liée à la disponibilité des images de caméras-piétons. Aucun flux monétaire n'est concerné, aucune assiette ni écart chiffré ne figure dans les amendements."
+      }
+    },
+    {
+      "key": "imposer-rapport-doctrine-refus-obtemperer",
+      "theme": "Imposer un rapport sur la doctrine d'emploi",
+      "amendments": [
+        "17"
+      ],
+      "opposes": null,
+      "effects": [
+        "Impose au Gouvernement un rapport au Parlement dans les six mois sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis la loi de 2017."
+      ],
+      "nafs": [
+        "84.23Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.23Z",
+          "label": "Justice et ordre public"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ],
+      "quote": "le Gouvernement remet au Parlement un rapport sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis l'application de la loi n° 2017‑258 du 28 février 2017 relative à la sécurité publique.",
+      "history": {
+        "theme": "Imposer un rapport sur la doctrine d'emploi",
+        "amendments": [
+          "17"
+        ],
+        "effects": [
+          "Impose au Gouvernement un rapport au Parlement dans les six mois sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis la loi de 2017."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose au Gouvernement la rédaction d'un rapport au Parlement dans les six mois sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer. Aucun transfert monétaire n'est prévu.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est une obligation de rapport sans flux financier. Aucune assiette ni aucun écart monétaire ne sont identifiables dans les textes."
+      }
+    },
+    {
+      "key": "imposer-rapport-formation-continue",
+      "theme": "Imposer un rapport sur la formation continue",
+      "amendments": [
+        "18"
+      ],
+      "opposes": null,
+      "effects": [
+        "Impose au Gouvernement un rapport au Parlement sur l'effectivité de la formation continue des forces de l'ordre au maniement des armes et aux techniques de sécurité en intervention (TSI)."
+      ],
+      "nafs": [
+        "84.23Z"
+      ],
+      "roles": [
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.23Z",
+          "label": "Ordre public et sécurité"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Ordre public et sécurité"
+      ],
+      "quote": "le Gouvernement remet au Parlement un rapport sur la formation continue des forces de l'ordre à l'usage des armes et aux techniques et à la sécurité en intervention (TSI).",
+      "history": {
+        "theme": "Imposer un rapport sur la formation continue",
+        "amendments": [
+          "18"
+        ],
+        "effects": [
+          "Impose au Gouvernement un rapport au Parlement sur l'effectivité de la formation continue des forces de l'ordre au maniement des armes et aux techniques de sécurité en intervention (TSI)."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Le Gouvernement doit remettre au Parlement un rapport sur la formation continue des forces de l'ordre au maniement des armes et aux TSI. Aucun transfert monétaire n'est prévu.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure impose uniquement la production d'un rapport au Parlement. Aucun flux financier, aucune assiette en euros et aucun écart tarifaire ou fiscal ne sont définis dans le dispositif."
+      }
+    },
+    {
+      "key": "imposer-rapport-formation-tir",
+      "theme": "Imposer un rapport sur la formation au tir",
+      "amendments": [
+        "19"
+      ],
+      "opposes": null,
+      "effects": [
+        "Impose au Gouvernement un rapport dans les six mois sur l'état des lieux et les pistes d'amélioration de la formation au tir des policiers et gendarmes."
+      ],
+      "nafs": [
+        "84.23Z"
+      ],
+      "roles": [
+        "employeurs",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.23Z",
+          "label": "Justice et ordre public"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ],
+      "quote": "le Gouvernement remet au Parlement un rapport dressant un état des lieux et des pistes d'amélioration sur la formation au tir des policiers et des gendarmes.",
+      "history": {
+        "theme": "Imposer un rapport sur la formation au tir",
+        "amendments": [
+          "19"
+        ],
+        "effects": [
+          "Impose au Gouvernement un rapport dans les six mois sur l'état des lieux et les pistes d'amélioration de la formation au tir des policiers et gendarmes."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose au Gouvernement de remettre au Parlement, dans un délai de six mois, un rapport sur l'état des lieux et les pistes d'amélioration de la formation au tir des policiers et gendarmes. Aucun transfert financier n'est prévu.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure impose uniquement la rédaction d'un rapport par le Gouvernement. Aucun flux financier n'est mis en jeu : pas d'assiette ni d'écart chiffré identifiable dans le texte."
+      }
+    }
+  ]
+}

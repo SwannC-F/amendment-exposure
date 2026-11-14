@@ -1,0 +1,286 @@
+{
+  "majority": [
+    "Les Républicains",
+    "UCI"
+  ],
+  "measures": [
+    {
+      "key": "supprimer-presomption-usage-legal",
+      "theme": "Supprimer la présomption d'usage légal",
+      "amendments": [
+        "2",
+        "6",
+        "7"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST",
+        "SER"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "exclure-presomption-cas-blessures-deces",
+      "theme": "Exclure la présomption en cas de blessures ou décès",
+      "amendments": [
+        "5",
+        "11",
+        "12"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "supprimer-usage-arme-vehicule-refus-obtemperer",
+      "theme": "Supprimer l'usage d'armes contre véhicules",
+      "amendments": [
+        "8"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "imposer-garde-vue-systematique-tir",
+      "theme": "Imposer une garde à vue systématique après tir",
+      "amendments": [
+        "9"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "imposer-enquete-judiciaire-systematique",
+      "theme": "Imposer une enquête judiciaire systématique",
+      "amendments": [
+        "10"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "exclure-presomption-defaut-entrainement",
+      "theme": "Exclure la présomption sans entraînement au tir",
+      "amendments": [
+        "13"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "limiter-presomption-anciennete-10-ans",
+      "theme": "Limiter la présomption aux agents de plus de 10 ans",
+      "amendments": [
+        "14"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "conditionner-presomption-armes-intermediaires",
+      "theme": "Conditionner la présomption aux armes intermédiaires",
+      "amendments": [
+        "15"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "supprimer-presomption-absence-images-camera",
+      "theme": "Supprimer la présomption sans images caméra",
+      "amendments": [
+        "16"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "imposer-rapport-doctrine-refus-obtemperer",
+      "theme": "Imposer un rapport sur la doctrine d'emploi",
+      "amendments": [
+        "17"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "imposer-rapport-formation-continue",
+      "theme": "Imposer un rapport sur la formation continue",
+      "amendments": [
+        "18"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "imposer-rapport-formation-tir",
+      "theme": "Imposer un rapport sur la formation au tir",
+      "amendments": [
+        "19"
+      ],
+      "opposes": null,
+      "groups": [
+        "GEST"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "2",
+      "measure": "supprimer-presomption-usage-legal",
+      "author_group": "SER",
+      "same_measure_amendments": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "number": "6",
+      "measure": "supprimer-presomption-usage-legal",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "2",
+        "7"
+      ]
+    },
+    {
+      "number": "7",
+      "measure": "supprimer-presomption-usage-legal",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "2",
+        "6"
+      ]
+    },
+    {
+      "number": "5",
+      "measure": "exclure-presomption-cas-blessures-deces",
+      "author_group": "RDSE",
+      "same_measure_amendments": [
+        "11",
+        "12"
+      ]
+    },
+    {
+      "number": "11",
+      "measure": "exclure-presomption-cas-blessures-deces",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "5",
+        "12"
+      ]
+    },
+    {
+      "number": "12",
+      "measure": "exclure-presomption-cas-blessures-deces",
+      "author_group": "GEST",
+      "same_measure_amendments": [
+        "5",
+        "11"
+      ]
+    },
+    {
+      "number": "8",
+      "measure": "supprimer-usage-arme-vehicule-refus-obtemperer",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "9",
+      "measure": "imposer-garde-vue-systematique-tir",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "10",
+      "measure": "imposer-enquete-judiciaire-systematique",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "13",
+      "measure": "exclure-presomption-defaut-entrainement",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "14",
+      "measure": "limiter-presomption-anciennete-10-ans",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "15",
+      "measure": "conditionner-presomption-armes-intermediaires",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "16",
+      "measure": "supprimer-presomption-absence-images-camera",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "17",
+      "measure": "imposer-rapport-doctrine-refus-obtemperer",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "18",
+      "measure": "imposer-rapport-formation-continue",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "19",
+      "measure": "imposer-rapport-formation-tir",
+      "author_group": "GEST",
+      "same_measure_amendments": []
+    }
+  ]
+}

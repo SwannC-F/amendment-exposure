@@ -1,0 +1,556 @@
+{
+  "penaliser-fraude-commerces": {
+    "key": "penaliser-fraude-commerces",
+    "theme": "Pénaliser la fraude des commerces",
+    "mechanism": "Les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes s'exposent à une amende administrative pouvant atteindre 15 000 € ou le double de la valeur des titres. Les émetteurs doivent suspendre l'acceptation et signaler les fraudeurs. L'amende est versée à l'État.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "État (perçoit l'amende administrative)"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restaurants traditionnels fraudeurs"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide fraudeurs"
+      },
+      {
+        "naf": "47.11F",
+        "role": null,
+        "label": "Commerces d'alimentation générale fraudeurs"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne fournit pas le montant annuel des titres-restaurant fraudés, nécessaire pour calculer l'assiette. Le texte mentionne onze milliards d'euros de titres émis au total, mais pas la part faisant l'objet de fraude.",
+    "dropped": [
+      {
+        "parameter": "delta",
+        "reason": "Taux de l'amende administrative : valeur hors bornes (2.0–2.0)"
+      }
+    ],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "plafonner-commissions-emetteurs": {
+    "key": "plafonner-commissions-emetteurs",
+    "theme": "Plafonner les commissions des émetteurs",
+    "mechanism": null,
+    "winners": [],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "dropped": [],
+    "mirror_of": null,
+    "error": "LLM failed: IncompleteRead(15745 bytes read)",
+    "not_computable": "Non chiffrable : échec de l'appel au modèle (LLM failed: IncompleteRead(15745 bytes read))"
+  },
+  "supprimer-modulation-plafond-journalier": {
+    "key": "supprimer-modulation-plafond-journalier",
+    "theme": "Supprimer la modulation du plafond",
+    "mechanism": "La mesure supprime la modulation du plafond journalier des titres-restaurant et revient à un plafond unique pour tous les produits alimentaires éligibles. Cela retire l'avantage concurrentiel qu'aurait procuré un plafond majoré aux restaurateurs par rapport aux commerces alimentaires.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés-utilisateurs de titres-restaurant"
+      },
+      {
+        "naf": "47.11F",
+        "role": null,
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": "47.11B",
+        "role": null,
+        "label": "Supermarchés"
+      },
+      {
+        "naf": "47.11C",
+        "role": null,
+        "label": "Hypermarchés"
+      },
+      {
+        "naf": "64.99Z",
+        "role": "emetteurs",
+        "label": "Émetteurs de titres-restaurant"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes des amendements 6 et 10 ne précisent ni le volume annuel total des transactions en titres-restaurant, ni les montants des plafonds journaliers (unique ou modulé), qui sont fixés par voie réglementaire.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "autoriser-usage-tous-jours": {
+    "key": "autoriser-usage-tous-jours",
+    "theme": "Autoriser l'usage tous les jours",
+    "mechanism": "La mesure autorise l'utilisation des titres-restaurant le dimanche et les jours fériés pour tous les salariés bénéficiaires, au lieu de réserver cet usage aux seuls salariés travaillant ces jours. Un amendement (n°16) supprime en outre le plafond journalier d'utilisation. Les titres restent attribués par repas travaillé : le nombre de titres et le régime social et fiscal ne changent pas. Le transfert porte sur une réallocation temporelle des dépenses vers les commerces ouverts le dimanche et les jours fériés.",
+    "winners": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "47.11F",
+        "role": null,
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": "47.11E",
+        "role": null,
+        "label": "Supermarchés"
+      },
+      {
+        "naf": "47.11A",
+        "role": null,
+        "label": "Hypermarchés"
+      },
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés bénéficiaires de titres-restaurant"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs distributeurs (sans changement de coût, assouplissement d'usage uniquement)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne fournissent ni le montant total annuel des titres-restaurant en circulation (assiette) ni la part supplémentaire de dépenses transférée vers le dimanche et jours fériés (écart). Les textes précisent explicitement que « le nombre de titres » n'est pas modifié et qu'il n'y a pas « d'incidence sur le nombre de titres ni sur leur régime social et fiscal ». Le seul chiffre monétaire présent (25 € par jour, amendement n°16) correspond au plafond actuel que l'amendement supprime, sans donner de nouveau plafond ni de dépense moyenne attendue. Aucun paramètre chiffré ne permet de calculer un transfert annuel.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "imposer-negociation-syndicats": {
+    "key": "imposer-negociation-syndicats",
+    "theme": "Imposer la négociation avec syndicats",
+    "mechanism": "L'amendement impose aux employeurs disposant d'au moins un délégué syndical de négocier avec les organisations syndicales avant toute mise en place, suppression ou modification du financement des titres-restaurant. À défaut de délégué syndical, le CSE doit être informé et consulté. Il s'agit d'une obligation procédurale, sans transfert monétaire direct.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés via leurs représentants syndicaux et le CSE"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs pourvus d'au moins un délégué syndical"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte impose une obligation de négociation procédurale mais ne fixe aucun montant, taux ou part de financement. Aucune assiette ni aucun écart chiffré ne figure dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "maintenir-titres-pendant-conges": {
+    "key": "maintenir-titres-pendant-conges",
+    "theme": "Maintenir les titres pendant congés",
+    "mechanism": "Les employeurs doivent continuer à attribuer des titres-restaurant aux salariés pendant les congés de maternité, paternité, adoption et naissance, alors qu'aujourd'hui l'attribution est suspendue. Le coût supplémentaire pour l'employeur devient un gain de pouvoir d'achat pour le salarié en congé.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés en congé de maternité, paternité, adoption ou naissance"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs attribuant des titres-restaurant"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes d'amendements ne contiennent aucun chiffre monétaire, aucun montant de titre-restaurant, aucun nombre de salariés concernés ni aucune durée de congé chiffrée. L'assiette et l'écart ne peuvent être déterminés.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "creer-titre-bonifie": {
+    "key": "creer-titre-bonifie",
+    "theme": "Créer le titre-restaurant bonifié",
+    "mechanism": "L'employeur verse volontairement une bonification au salarié sur la valeur libératoire du titre-restaurant lorsque celui-ci est utilisé pour acheter des produits biologiques ou contribuant à la transition agroécologique. La mesure crée seulement la base législative ; les montants et conditions d'application sont renvoyés à un décret.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés et stagiaires bénéficiaires de la bonification"
+      },
+      {
+        "naf": "47.11",
+        "role": null,
+        "label": "Commerce de détail alimentaire acceptant le titre bonifié"
+      },
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle acceptant le titre bonifié"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide acceptant le titre bonifié"
+      },
+      {
+        "naf": "64.19Z",
+        "role": "emetteurs",
+        "label": "Émetteurs de titres-restaurant"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs mettant en place le dispositif bonifié"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun montant de bonification ni aucun taux. Les conditions d'émission, les catégories de produits éligibles et les montants sont renvoyés à un décret. L'assiette et l'écart ne sont pas chiffrés dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "creer-pole-public-emission": {
+    "key": "creer-pole-public-emission",
+    "theme": "Créer un pôle public d'émission",
+    "mechanism": "La mesure crée un pôle public d'émission de titres-restaurant via l'ANCV, plafonnant les commissions à 2,5 % de la valeur des titres contre environ 4 % actuellement prélevés par les opérateurs privés. Les excédents de gestion sont affectés à des actions d'accès à une alimentation durable. Les émetteurs privés perdent leur activité.",
+    "winners": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restaurants traditionnels"
+      },
+      {
+        "naf": "47.11F",
+        "role": null,
+        "label": "Commerces d'alimentation générale"
+      },
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs acheteurs de titres"
+      },
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "ANCV – nouvel émetteur public"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "64.19Z",
+        "role": "emetteurs",
+        "label": "Émetteurs privés de titres-restaurant"
+      },
+      {
+        "naf": "64.99Z",
+        "role": "emetteurs",
+        "label": "Émetteurs privés de titres-restaurant"
+      }
+    ],
+    "base": null,
+    "delta": {
+      "name": "Réduction de commission sur les titres-restaurant (de environ 4 % à 2,5 %)",
+      "low": 0.015,
+      "high": 0.015,
+      "unit": "part",
+      "quote": "prélèvent environ 4 % aux restaurateurs et commerçants | ne peuvent excéder 2,5 % de la valeur des titres",
+      "amendment": "27"
+    },
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € absent des amendements ou citation non vérifiée. La valeur totale annuelle des titres-restaurant émis (assiette) n'est pas mentionnée dans les amendements, ce qui empêche de chiffrer le transfert.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "instaurer-double-plafond-journalier": {
+    "key": "instaurer-double-plafond-journalier",
+    "theme": "Instaurer un double plafond journalier",
+    "mechanism": "La mesure plafonne l'utilisation quotidienne des titres-restaurant à 12,20 € maximum pour les courses alimentaires non directement consommables, contre 25 € actuellement, et impose un plafond au moins double pour les repas. Elle redirige une partie des dépenses de titres-restaurant de la grande distribution vers la restauration.",
+    "winners": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "47.11B",
+        "role": null,
+        "label": "Supermarchés"
+      },
+      {
+        "naf": "47.11C",
+        "role": null,
+        "label": "Hypermarchés"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte fixe les plafonds journaliers (12,20 € et 25 €) mais ne fournit ni le volume annuel total des titres-restaurant ni la part actuellement dépensée en grande distribution, nécessaires pour calculer l'assiette et l'écart.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-usage-consommables": {
+    "key": "restreindre-usage-consommables",
+    "theme": "Restreindre l'usage aux consommables",
+    "mechanism": "La mesure restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'élargissement à tous les produits alimentaires. Les dépenses de titres-restaurant se redirigent de la grande distribution vers la restauration.",
+    "winners": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10B",
+        "role": null,
+        "label": "Restauration de type rapide"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "47.11F",
+        "role": null,
+        "label": "Commerce de détail en supermarché"
+      },
+      {
+        "naf": "47.11G",
+        "role": null,
+        "label": "Commerce de détail en hypermarché"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [
+      {
+        "nafs": [
+          "56.10A",
+          "56.10B",
+          "56.10C"
+        ],
+        "role": null,
+        "name": "share",
+        "low": 0.15,
+        "high": 0.15,
+        "unit": "part",
+        "quote": "le titre représente 15 % du chiffre d'affaires des restaurants",
+        "amendment": "24"
+      },
+      {
+        "nafs": [
+          "47.11F",
+          "47.11G"
+        ],
+        "role": null,
+        "name": "share",
+        "low": 0.01,
+        "high": 0.01,
+        "unit": "part",
+        "quote": "contre 1 % pour la grande distribution",
+        "amendment": "24"
+      }
+    ],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne fournit ni la valeur totale annuelle des titres-restaurant (assiette) ni la part des dépenses de titres-restaurant redirigée par la restriction (écart). Les parts de marché historiques des restaurateurs dans la valeur des titres (46,5 % et 34,3 %) décrivent une évolution passée, non l'effet chiffré de la mesure.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-plateformes-livraison": {
+    "key": "exclure-plateformes-livraison",
+    "theme": "Exclure les plateformes de livraison",
+    "mechanism": "Les amendements excluent les plateformes de livraison de repas du champ des professionnels habilités à accepter les titres-restaurant. Les salariés ne peuvent plus utiliser leurs titres-restaurant pour payer des commandes passées via ces plateformes. Les restaurateurs n'ont plus à payer les commissions des plateformes sur les transactions réglées en titres-restaurant, mais les plateformes perdent ce flux de transactions.",
+    "winners": [
+      {
+        "naf": "56.10A",
+        "role": null,
+        "label": "Restauration traditionnelle"
+      },
+      {
+        "naf": "56.10C",
+        "role": null,
+        "label": "Restauration de type rapide"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "63.99Z",
+        "role": "plateformes",
+        "label": "Plateformes de mise en relation par voie électronique"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes des amendements ne contiennent aucun chiffre : ni montant des commissions prélevées par les plateformes, ni volume des transactions en titres-restaurant passant par les plateformes, ni part du chiffre d'affaires concernée. Aucune assiette ni aucun écart ne peut être extrait.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "allonger-duree-validite": {
+    "key": "allonger-duree-validite",
+    "theme": "Allonger la durée de validité",
+    "mechanism": "Chaque année, 54,6 millions d'euros de titres-restaurant périmés reviennent aux employeurs. La mesure supprime l'expiration (n°32) ou l'allonge à trois ans avec redirection vers les activités sociales et culturelles (n°33). Les employeurs perdent cette récupération ; les salariés conservent ou récupèrent la valeur.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés utilisant les titres-restaurant"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Employeurs distribuant les titres-restaurant"
+      }
+    ],
+    "base": {
+      "name": "Valeur des titres-restaurant périmés par an",
+      "low": 54600000.0,
+      "high": 54600000.0,
+      "unit": "€/an",
+      "quote": "Cela représentait 54,6 millions d'euros en 2024, soit 0,5 % de la valeur des titres émis",
+      "amendment": "32"
+    },
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : écart absent des amendements ou citation non vérifiée.",
+    "dropped": [
+      {
+        "parameter": "delta",
+        "reason": "Part de la valeur périmée redirigée vers les salariés : le chiffre 1 ne se retrouve pas dans la citation"
+      }
+    ],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "reporter-dematerialisation": {
+    "key": "reporter-dematerialisation",
+    "theme": "Reporter la dématérialisation",
+    "mechanism": "Les amendements reportent l'obligation de dématérialisation des titres-restaurant (au 1er janvier 2029, 2030 ou 2031 selon l'amendement), autorisant le maintien du support papier. Cela prolonge l'activité de la filière d'impression papier et repousse les coûts de dématérialisation pour les petites entreprises.",
+    "winners": [
+      {
+        "naf": "18.12Z",
+        "role": null,
+        "label": "Filière d'impression de titres papier"
+      },
+      {
+        "naf": "18.14Z",
+        "role": null,
+        "label": "Filière d'impression de titres papier"
+      },
+      {
+        "naf": null,
+        "role": "employeurs",
+        "label": "Petites entreprises employeuses"
+      },
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Salariés peu à l'aise avec le numérique"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "64.19B",
+        "role": "emetteurs",
+        "label": "Émetteurs de titres-restaurant (voie dématérialisée)"
+      },
+      {
+        "naf": "64.19Z",
+        "role": "emetteurs",
+        "label": "Émetteurs de titres-restaurant (voie dématérialisée)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes ne contiennent aucun montant en euros pour l'assiette (valeur des titres émis ou chiffre d'affaires de la filière) ni aucun écart de coût chiffré entre support papier et support dématérialisé. Le seul chiffre présent, « 80 % des titres en 2024 », indique le taux de dématérialisation déjà atteint, ce qui ne permet pas de calculer un transfert financier.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  }
+}

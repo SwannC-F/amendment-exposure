@@ -114,12 +114,6 @@
       "employees_high": 6919,
       "open_top": false
     },
-    "84.11Z": {
-      "companies": 41200,
-      "employees_low": 1792327,
-      "employees_high": 3625531,
-      "open_top": true
-    },
     "94.99Z": {
       "companies": 532162,
       "employees_low": 153998,
@@ -556,11 +550,7 @@
         },
         {
           "naf": "84.11Z",
-          "label": "Administration publique générale (ANCV)",
-          "companies": 41200,
-          "employees_low": 1792327,
-          "employees_high": 3625531,
-          "open_top": true
+          "label": "Administration publique générale (ANCV)"
         }
       ],
       "roles": [
@@ -569,11 +559,13 @@
         "employeurs",
         "etat"
       ],
-      "companies": 215800,
-      "employees_low": 2589934,
-      "employees_high": 5145422,
+      "companies": 174600,
+      "employees_low": 797607,
+      "employees_high": 1519891,
       "open_top": true,
-      "not_counted": []
+      "not_counted": [
+        "Administration publique générale (ANCV)"
+      ]
     },
     {
       "key": "instaurer-double-plafond-journalier",
@@ -2011,18 +2003,16 @@
         },
         {
           "naf": "84.11Z",
-          "label": "Administration publique générale (ANCV)",
-          "companies": 41200,
-          "employees_low": 1792327,
-          "employees_high": 3625531,
-          "open_top": true
+          "label": "Administration publique générale (ANCV)"
         }
       ],
-      "companies": 212276,
-      "employees_low": 2586398,
-      "employees_high": 5138503,
+      "companies": 171076,
+      "employees_low": 794071,
+      "employees_high": 1512972,
       "open_top": true,
-      "not_counted": []
+      "not_counted": [
+        "Administration publique générale (ANCV)"
+      ]
     }
   ]
 }

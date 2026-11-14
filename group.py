@@ -93,6 +93,10 @@ def main(session, n):
     expected = [c["number"] for c in criteria]
     effects = {c["number"]: c["effect"] or c["who"] for c in criteria}
     items = [{"number": c["number"], "effect": c["effect"], "who": c["who"]} for c in criteria]
+    if not items:
+        (d / "measures.json").write_text("[]")
+        print(f"aucun amendement ne vise d'acteur identifiable -> 0 mesure -> {d / 'measures.json'}")
+        return
     user = json.dumps(items, ensure_ascii=False, indent=1)
 
     raw = chat_json(SYSTEM, user, max_tokens=8000)

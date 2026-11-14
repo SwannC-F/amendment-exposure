@@ -1,0 +1,389 @@
+[
+  {
+    "number": "1",
+    "criteria_found": false,
+    "effect": "Motion d'irrecevabilité déclarant irrecevable une proposition de loi instaurant une présomption de légitime défense pour les forces de l'ordre",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "le Sénat déclare irrecevable la proposition de loi visant à reconnaître une présomption de légitime défense pour les forces de l'ordre",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "2",
+    "criteria_found": true,
+    "effect": "Supprime l'article instaurant une présomption d'usage légitime des armes pour la police et la gendarmerie, maintenant ainsi le cadre juridique actuel d'enquête après un tir.",
+    "who": "Forces de l'ordre (police nationale, gendarmerie nationale), parquet, victimes potentielles et leurs familles",
+    "sectors": [
+      {
+        "naf": "84.29Z",
+        "label": "Activités de sécurité publique"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Ce texte propose de créer un régime de présomption d’usage légitime des armes pour la police et la gendarmerie.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "3",
+    "criteria_found": false,
+    "effect": "Supprime l'article unique qui instaurerait une présomption de conformité à la loi pour l'usage d'une arme par un policier ou un gendarme",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "cet amendement propose de supprimer l'article unique",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "4",
+    "criteria_found": false,
+    "effect": "Motion de rejet préalable visant à empêcher l'examen de la proposition de loi instaurant une présomption de légitime défense pour les forces de l'ordre",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "le Sénat décide qu'il n'y a pas lieu de poursuivre la délibération sur la proposition de loi visant à reconnaître une présomption de légitime défense pour les forces de l'ordre dans l'exercice de leurs fonctions",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "5",
+    "criteria_found": true,
+    "effect": "Exclut la présomption d'usage légal de l'arme pour les policiers et gendarmes lorsque cet usage a entraîné la mort ou des blessures graves d'une personne",
+    "who": "Policiers nationaux, gendarmes, autorité judiciaire",
+    "sectors": [
+      {
+        "naf": "84.22Z",
+        "label": "Activités de police"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Elle ne s'applique pas lorsque l'usage de l'arme a entraîné la mort d'une personne ou l'a grièvement blessée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "6",
+    "criteria_found": true,
+    "effect": "Supprime l'article instaurant une présomption d'usage légal des armes par les policiers et gendarmes, qui inversait la charge de la preuve en matière de recours à une arme létale.",
+    "who": "Agents de la police nationale, militaires de la gendarmerie nationale, parquet, familles des victimes",
+    "sectors": [
+      {
+        "naf": "84.12Z",
+        "label": "Administration publique générale"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Le groupe Écologiste – Solidarité et Territoires s'oppose à la présomption d'usage légal d'une arme par les agents de la police nationale et les militaires de la gendarmerie nationale.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "7",
+    "criteria_found": true,
+    "effect": "Supprime la présomption d'usage légal d'une arme par les forces de l'ordre lors de leurs interventions.",
+    "who": "Forces de l'ordre (policiers et gendarmes), victimes et familles de victimes",
+    "sectors": [
+      {
+        "naf": "84.10Z",
+        "label": "Administration publique générale"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Alinéa 8 Supprimer cet alinéa.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "8",
+    "criteria_found": true,
+    "effect": "Supprime la possibilité pour les policiers et gendarmes de faire usage de leur arme contre un véhicule en cas de refus d'obtempérer",
+    "who": "Forces de l'ordre : policiers et gendarmes nationaux",
+    "sectors": [
+      {
+        "naf": "84.10Z",
+        "label": "Administration publique générale"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Le 4° de l'article L. 435‑1 du code de la sécurité intérieure est abrogé.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "9",
+    "criteria_found": true,
+    "effect": "Impose une garde-à-vue systématique pour tout policier ou gendarme auteur d'un tir, même sous présomption de légitime défense.",
+    "who": "Policiers et gendarmes (agents de l'État) auteurs d'un tir avec leur arme de service",
+    "sectors": [
+      {
+        "naf": "84.23Z",
+        "label": "Justice et ordre public"
+      },
+      {
+        "naf": "84.22Z",
+        "label": "Défense nationale"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "En dépit de la présomption prévue au III, tout usage de l'arme est suivi de la garde‑à‑vue du policier ou du gendarme auteur du tir.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "10",
+    "criteria_found": true,
+    "effect": "Rend obligatoire une enquête judiciaire systématique pour tout usage d'une arme par un agent des forces de l'ordre, contournant la présomption de légalité",
+    "who": "Forces de l'ordre (policiers, gendarmes), autorité judiciaire",
+    "sectors": [
+      {
+        "naf": "84.22Z",
+        "label": "Activités de police"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "En dépit de la présomption prévue au III, tout usage d'une arme par un agent fait l'objet d'une enquête judiciaire systématique.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "11",
+    "criteria_found": true,
+    "effect": "Exclut la présomption d'usage légal de l'arme à feu lorsque le tir a blessé ou tué une personne, rétablissant le droit commun de la charge de la preuve.",
+    "who": "Policiers et gendarmes armés ; victimes de tirs policiers et leurs familles",
+    "sectors": [
+      {
+        "naf": "84.10Z",
+        "label": "Administration générale de l'État"
+      }
+    ],
+    "roles": [
+      "etat",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "en dehors des cas où l'intégrité physique ou la vie d'autrui a été atteinte",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "12",
+    "criteria_found": true,
+    "effect": "Exclut la présomption d'usage légal des armes par les forces de l'ordre lorsqu'une personne est décédée des suites du tir.",
+    "who": "Forces de l'ordre (policiers, gendarmes) dans le cadre de l'usage de leur arme de service",
+    "sectors": [
+      {
+        "naf": "84.24Z",
+        "label": "Sécurité et ordre public"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:forces_de_l_ordre"
+    ],
+    "regions": [],
+    "quote": "en dehors des cas où une personne est décédée des suites du tir",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "13",
+    "criteria_found": true,
+    "effect": "La présomption d'usage légal de l'arme ne s'applique pas aux policiers et gendarmes n'ayant pas rempli leurs obligations d'entraînement au tir l'année précédant le tir.",
+    "who": "Policiers nationaux et gendarmes auteurs d'un tir",
+    "sectors": [],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "La présomption n’est pas applicable lorsque le policier ou le gendarme auteur du tir n’a pas rempli ses obligations réglementaires en matière d’entraînement au tir l’année précédant le tir concerné.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "14",
+    "criteria_found": true,
+    "effect": "Limite une présomption liée à l'usage des armes aux seuls policiers et gendarmes justifiant d'au moins 10 ans de service effectif.",
+    "who": "Policiers nationaux et gendarmes en activité, ainsi que l'État en tant qu'employeur et autorité de encadrement",
+    "sectors": [
+      {
+        "naf": "84.22Z",
+        "label": "Activités de police"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "qui justifient d'au moins dix années effectives de service dans l'exercice de fonctions de policier national ou de gendarme",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "15",
+    "criteria_found": true,
+    "effect": "Conditionne la présomption de légitimité de l'usage de l'arme au recours préalable à des armes de force intermédiaire en cas de refus d'obtempérer.",
+    "who": "Police nationale et gendarmerie nationale (forces de l'ordre)",
+    "sectors": [
+      {
+        "naf": "84.11Z",
+        "label": "Administration publique générale"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Cette présomption n'est pas applicable lorsque les agents de la police nationale et les militaires de la gendarmerie nationale n’ont pas eu préalablement recours à des armes de forces intermédiaires en cas de refus d’obtempérer avant l’usage de leur arme.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "16",
+    "criteria_found": true,
+    "effect": "Supprime la présomption prévue au III lorsque les images des caméras-piétons sont absentes, inexploitables ou non communiquées à l'autorité judiciaire",
+    "who": "Police nationale, militaires portant caméras-piétons, autorité judiciaire",
+    "sectors": [
+      {
+        "naf": "84.22Z",
+        "label": "Activités des services de sécurité (police, gendarmerie)"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au III ne s’applique pas lorsque les images issues des caméras‑piétons sont absentes, inexploitables ou non communiquées à l’autorité judiciaire.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "17",
+    "criteria_found": true,
+    "effect": "Impose au Gouvernement un rapport au Parlement dans les six mois sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis la loi de 2017.",
+    "who": "Gouvernement et forces de sécurité intérieure (police, gendarmerie)",
+    "sectors": [
+      {
+        "naf": "84.23Z",
+        "label": "Justice et ordre public"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport sur l'évolution de la doctrine d'emploi des forces de sécurité intérieure en matière de refus d'obtempérer depuis l'application de la loi n° 2017‑258 du 28 février 2017 relative à la sécurité publique.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "18",
+    "criteria_found": true,
+    "effect": "Impose au Gouvernement un rapport au Parlement sur l'effectivité de la formation continue des forces de l'ordre au maniement des armes et aux techniques de sécurité en intervention (TSI).",
+    "who": "Police nationale et gendarmerie nationale (forces de l'ordre sous tutelle de l'État)",
+    "sectors": [
+      {
+        "naf": "84.23Z",
+        "label": "Ordre public et sécurité"
+      }
+    ],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport sur la formation continue des forces de l'ordre à l'usage des armes et aux techniques et à la sécurité en intervention (TSI).",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "19",
+    "criteria_found": true,
+    "effect": "Impose au Gouvernement un rapport dans les six mois sur l'état des lieux et les pistes d'amélioration de la formation au tir des policiers et gendarmes.",
+    "who": "Forces de l'ordre : police nationale (DGPN, préfecture de police de Paris) et gendarmerie nationale",
+    "sectors": [
+      {
+        "naf": "84.23Z",
+        "label": "Justice et ordre public"
+      }
+    ],
+    "roles": [
+      "etat",
+      "employeurs"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport dressant un état des lieux et des pistes d'amélioration sur la formation au tir des policiers et des gendarmes.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "20",
+    "criteria_found": false,
+    "effect": "Modifie l'intitulé de la proposition de loi pour y indiquer qu'elle aggrave la détérioration de la confiance entre la police et la population.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "visant à rédiger ainsi la fin de l'intitulé : aggraver la détérioration de la confiance entre la police et la population",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "21",
+    "criteria_found": false,
+    "effect": "Modifie l'intitulé de la proposition de loi pour rappeler l'opposition citoyenne exprimée via une pétition de plus de 700 000 signatures",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "mépriser l'opposition citoyenne exprimée dans les plus de 700 000 signatures de la pétition déposée sur le site de l'Assemblée nationale",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

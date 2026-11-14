@@ -1,0 +1,522 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {},
+  "measures": [
+    {
+      "key": "supprimer-presomption-usage-legal",
+      "theme": "Supprimer la présomption d'usage légal",
+      "sectors": [
+        {
+          "naf": "84.29Z",
+          "label": "Activités de sécurité publique"
+        },
+        {
+          "naf": "84.12Z",
+          "label": "Administration publique générale"
+        },
+        {
+          "naf": "84.10Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de sécurité publique",
+        "Administration publique générale"
+      ]
+    },
+    {
+      "key": "exclure-presomption-cas-blessures-deces",
+      "theme": "Exclure la présomption en cas de blessures ou décès",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        },
+        {
+          "naf": "84.10Z",
+          "label": "Administration générale de l'État"
+        },
+        {
+          "naf": "84.24Z",
+          "label": "Sécurité et ordre public"
+        }
+      ],
+      "roles": [
+        "autre:forces_de_l_ordre",
+        "etat",
+        "menages"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police",
+        "Administration générale de l'État",
+        "Sécurité et ordre public"
+      ]
+    },
+    {
+      "key": "supprimer-usage-arme-vehicule-refus-obtemperer",
+      "theme": "Supprimer l'usage d'armes contre véhicules",
+      "sectors": [
+        {
+          "naf": "84.10Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "key": "imposer-garde-vue-systematique-tir",
+      "theme": "Imposer une garde à vue systématique après tir",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        },
+        {
+          "naf": "84.22Z",
+          "label": "Défense nationale"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Défense nationale",
+        "Justice et ordre public"
+      ]
+    },
+    {
+      "key": "imposer-enquete-judiciaire-systematique",
+      "theme": "Imposer une enquête judiciaire systématique",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police"
+      ]
+    },
+    {
+      "key": "exclure-presomption-defaut-entrainement",
+      "theme": "Exclure la présomption sans entraînement au tir",
+      "sectors": [],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "limiter-presomption-anciennete-10-ans",
+      "theme": "Limiter la présomption aux agents de plus de 10 ans",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police"
+      ]
+    },
+    {
+      "key": "conditionner-presomption-armes-intermediaires",
+      "theme": "Conditionner la présomption aux armes intermédiaires",
+      "sectors": [
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "key": "supprimer-presomption-absence-images-camera",
+      "theme": "Supprimer la présomption sans images caméra",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités des services de sécurité (police, gendarmerie)"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités des services de sécurité (police, gendarmerie)"
+      ]
+    },
+    {
+      "key": "imposer-rapport-doctrine-refus-obtemperer",
+      "theme": "Imposer un rapport sur la doctrine d'emploi",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ]
+    },
+    {
+      "key": "imposer-rapport-formation-continue",
+      "theme": "Imposer un rapport sur la formation continue",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Ordre public et sécurité"
+        }
+      ],
+      "roles": [
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Ordre public et sécurité"
+      ]
+    },
+    {
+      "key": "imposer-rapport-formation-tir",
+      "theme": "Imposer un rapport sur la formation au tir",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        }
+      ],
+      "roles": [
+        "employeurs",
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ]
+    }
+  ],
+  "amendments": [
+    {
+      "number": "2",
+      "sectors": [
+        {
+          "naf": "84.29Z",
+          "label": "Activités de sécurité publique"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de sécurité publique"
+      ]
+    },
+    {
+      "number": "5",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police"
+      ]
+    },
+    {
+      "number": "6",
+      "sectors": [
+        {
+          "naf": "84.12Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "number": "7",
+      "sectors": [
+        {
+          "naf": "84.10Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "number": "8",
+      "sectors": [
+        {
+          "naf": "84.10Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "number": "9",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        },
+        {
+          "naf": "84.22Z",
+          "label": "Défense nationale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Défense nationale",
+        "Justice et ordre public"
+      ]
+    },
+    {
+      "number": "10",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police"
+      ]
+    },
+    {
+      "number": "11",
+      "sectors": [
+        {
+          "naf": "84.10Z",
+          "label": "Administration générale de l'État"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration générale de l'État"
+      ]
+    },
+    {
+      "number": "12",
+      "sectors": [
+        {
+          "naf": "84.24Z",
+          "label": "Sécurité et ordre public"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Sécurité et ordre public"
+      ]
+    },
+    {
+      "number": "13",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "14",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités de police"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités de police"
+      ]
+    },
+    {
+      "number": "15",
+      "sectors": [
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    },
+    {
+      "number": "16",
+      "sectors": [
+        {
+          "naf": "84.22Z",
+          "label": "Activités des services de sécurité (police, gendarmerie)"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Activités des services de sécurité (police, gendarmerie)"
+      ]
+    },
+    {
+      "number": "17",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ]
+    },
+    {
+      "number": "18",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Ordre public et sécurité"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Ordre public et sécurité"
+      ]
+    },
+    {
+      "number": "19",
+      "sectors": [
+        {
+          "naf": "84.23Z",
+          "label": "Justice et ordre public"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Justice et ordre public"
+      ]
+    }
+  ]
+}

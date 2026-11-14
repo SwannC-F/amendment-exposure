@@ -1,0 +1,4862 @@
+{
+  "text": {
+    "session": "2026-2027",
+    "number": "142",
+    "title": null
+  },
+  "majority": [
+    "Les Républicains",
+    "UCI"
+  ],
+  "measures": [
+    {
+      "key": "plafonner-commissions-emetteurs",
+      "theme": "Plafonner les commissions des émetteurs",
+      "amendments": [
+        "2",
+        "3 rect.",
+        "4",
+        "5",
+        "9",
+        "14",
+        "22",
+        "23",
+        "28",
+        "29"
+      ],
+      "opposes": null,
+      "effects": [
+        "Rend obligatoire le plafonnement à 2,5 % des commissions et frais imposés aux commerçants qui acceptent les titres-restaurant",
+        "Rend obligatoire le plafonnement par décret des commissions, frais et rémunérations supportés par les commerçants acceptant les titres-restaurant, au lieu d'une simple possibilité",
+        "Rend obligatoire le plafonnement des frais perçus par les émetteurs de titres-restaurant à 2,5 % du montant réglé, au lieu d'une simple possibilité",
+        "Rend obligatoire le plafonnement à 3 % du montant des titres-restaurant des frais, commissions et rémunérations perçus par les émetteurs auprès des commerçants accepteurs",
+        "Rend obligatoire le plafonnement à 2,5 % des commissions et frais prélevés par les émetteurs de titres-restaurant auprès des restaurateurs et commerçants",
+        "Rend obligatoire le plafonnement à 2 % maximum des commissions prélevées par les émetteurs de titres-restaurant sur les restaurateurs et commerçants",
+        "Rend obligatoire le plafonnement des commissions perçues par les émetteurs de titres-restaurant auprès des commerçants accepteurs, avec un taux maximal inscrit dans la loi à 2,5 %",
+        "Plafonne à 2,5 % du montant des titres-restaurant les commissions prélevées par les émetteurs sur les associations à gestion désintéressée servant des repas à leurs adhérents, avec obligation de reversement du trop-perçu",
+        "Rend obligatoire et plafonne à 2,5 % du montant des titres-restaurant les commissions et frais facturés aux commerçants habilités par les émetteurs"
+      ],
+      "nafs": [
+        "47.11C",
+        "47.11F",
+        "47.29Z",
+        "56.10A",
+        "56.10C",
+        "64.19Z",
+        "64.99",
+        "64.99B",
+        "64.99C",
+        "64.99Z",
+        "94.99Z"
+      ],
+      "roles": [
+        "associations",
+        "autre:commerçants accepteurs",
+        "autre:commerçants habilités",
+        "autre:restaurateurs",
+        "autre:restaurateurs et commerces alimentaires",
+        "autre:restaurateurs et commerçants",
+        "autre:restaurateurs et commerçants alimentaires",
+        "emetteurs",
+        "employeurs",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "64.99C",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restaurants traditionnels"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces de détail alimentaires spécialisés divers"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "autre:restaurateurs et commerces alimentaires",
+          "label": "autre:restaurateurs et commerces alimentaires"
+        },
+        {
+          "key": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers (émetteurs de titres-restaurant)"
+        },
+        {
+          "key": "autre:commerçants accepteurs",
+          "label": "autre:commerçants accepteurs"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "autre:restaurateurs",
+          "label": "autre:restaurateurs"
+        },
+        {
+          "key": "64.99B",
+          "label": "Autres intermédiations monétaires"
+        },
+        {
+          "key": "64.99",
+          "label": "Autres activités de services financiers, hors assurance et caisses de retraite"
+        },
+        {
+          "key": "47.11C",
+          "label": "Commerces d'alimentation générale"
+        },
+        {
+          "key": "autre:restaurateurs et commerçants",
+          "label": "autre:restaurateurs et commerçants"
+        },
+        {
+          "key": "47.29Z",
+          "label": "Autres commerces de détail alimentaires en magasin spécialisé"
+        },
+        {
+          "key": "64.19Z",
+          "label": "Autre intermédiation monétaire"
+        },
+        {
+          "key": "autre:restaurateurs et commerçants alimentaires",
+          "label": "autre:restaurateurs et commerçants alimentaires"
+        },
+        {
+          "key": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        },
+        {
+          "key": "associations",
+          "label": "associations"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "autre:commerçants habilités",
+          "label": "autre:commerçants habilités"
+        }
+      ],
+      "n_groups": 5,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "RDSE",
+        "SER",
+        "UCI"
+      ],
+      "majority_groups": [
+        "UCI"
+      ],
+      "companies": 903491,
+      "employees_low": 1246485,
+      "employees_high": 2389906,
+      "approx": false,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite",
+        "Autres intermédiations monétaires"
+      ],
+      "quote": "Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l'acceptation et du remboursement des titres‑restaurant ainsi que d'une rémunération normale de cette activité.",
+      "history": {
+        "theme": "Plafonner les commissions des émetteurs",
+        "amendments": [
+          "2",
+          "3 rect.",
+          "4",
+          "5",
+          "9",
+          "14",
+          "22",
+          "23",
+          "28",
+          "29"
+        ],
+        "effects": [
+          "Plafonne à 2,5 % du montant des titres-restaurant les commissions prélevées par les émetteurs sur les associations à gestion désintéressée servant des repas à leurs adhérents, avec obligation de reversement du trop-perçu",
+          "Rend obligatoire et plafonne à 2,5 % du montant des titres-restaurant les commissions et frais facturés aux commerçants habilités par les émetteurs",
+          "Rend obligatoire le plafonnement des commissions perçues par les émetteurs de titres-restaurant auprès des commerçants accepteurs, avec un taux maximal inscrit dans la loi à 2,5 %",
+          "Rend obligatoire le plafonnement des frais perçus par les émetteurs de titres-restaurant à 2,5 % du montant réglé, au lieu d'une simple possibilité",
+          "Rend obligatoire le plafonnement par décret des commissions, frais et rémunérations supportés par les commerçants acceptant les titres-restaurant, au lieu d'une simple possibilité",
+          "Rend obligatoire le plafonnement à 2 % maximum des commissions prélevées par les émetteurs de titres-restaurant sur les restaurateurs et commerçants",
+          "Rend obligatoire le plafonnement à 2,5 % des commissions et frais imposés aux commerçants qui acceptent les titres-restaurant",
+          "Rend obligatoire le plafonnement à 2,5 % des commissions et frais prélevés par les émetteurs de titres-restaurant auprès des restaurateurs et commerçants",
+          "Rend obligatoire le plafonnement à 3 % du montant des titres-restaurant des frais, commissions et rémunérations perçus par les émetteurs auprès des commerçants accepteurs"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-1-3 du code du travail",
+          "article 261 du code général des impôts",
+          "article L. 3262-1-4 du code du travail"
+        ],
+        "senate_by_group": {
+          "UCI": {
+            "filed": 2,
+            "adopted": 0,
+            "rejected": 2,
+            "other": 0,
+            "pour": 2,
+            "contre": 0,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2026-2027/32/COM-1",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-1",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "M. LONGEOT",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-1.html",
+            "cites": [],
+            "measure": "plafonner-commissions-emetteurs",
+            "stance": "pour",
+            "quote": "remplacer : peut être plafonnée par les mots : est plafonnée"
+          },
+          {
+            "id": "senat:2026-2027/32/COM-2",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-2",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "M. LONGEOT",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-2.html",
+            "cites": [],
+            "measure": "plafonner-commissions-emetteurs",
+            "stance": "pour",
+            "quote": "remplacer les mots : peut être plafonnée par les mots : est plafonnée"
+          }
+        ],
+        "findings": [
+          {
+            "text": "Au Sénat, 2 amendement(s) déposé(s) de 2026 allaient en faveur de cette mesure : 0 adopté(s), 2 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (2).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-1",
+              "senat:2026-2027/32/COM-2"
+            ]
+          },
+          {
+            "text": "10 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : CONFEDER NAT CHARCUTERI FRANCE, GROUPEMENT NATIONAL DES INDEPENDANTS, SAVEURS COMMERCE, BOURY TALLON & ASSOCIES, CONFEDERATION GENERALE ALIMENTAT.DETAIL et 5 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:2VRW615H",
+              "hatvp:QV7OWEXV",
+              "hatvp:A3YPU0G3",
+              "hatvp:EVJF69KH",
+              "hatvp:O3862LAH",
+              "hatvp:Q36SZW8V",
+              "hatvp:PVX9AO1H",
+              "hatvp:0V5DEB7V",
+              "hatvp:Q36K42Z3",
+              "hatvp:PVX9WOKH",
+              "hatvp:LV1DPFR3",
+              "hatvp:OHZABTM3",
+              "hatvp:DVS14Y6H"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "CONFEDER NAT CHARCUTERI FRANCE",
+            "hatvp_id": "775691850",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "2VRW615H",
+              "QV7OWEXV"
+            ],
+            "years": [
+              2022,
+              2023
+            ]
+          },
+          {
+            "name": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+            "hatvp_id": "822829727",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "A3YPU0G3",
+              "EVJF69KH"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "category": "Fédération professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "O3862LAH",
+              "Q36SZW8V"
+            ],
+            "years": [
+              2020,
+              2025
+            ]
+          },
+          {
+            "name": "BOURY TALLON & ASSOCIES",
+            "hatvp_id": "502999626",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "PVX9AO1H"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+            "hatvp_id": "784717225",
+            "category": "Fédération professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "0V5DEB7V"
+            ],
+            "years": [
+              2023
+            ]
+          },
+          {
+            "name": "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT)",
+            "hatvp_id": "W442015468",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "Q36K42Z3"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "LUCCA",
+            "hatvp_id": "441637691",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "PVX9WOKH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+            "hatvp_id": "422477224",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "LV1DPFR3"
+            ],
+            "years": [
+              2023
+            ]
+          },
+          {
+            "name": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+            "hatvp_id": "422477356",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "OHZABTM3"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "WORKLIFE",
+            "hatvp_id": "533592051",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "DVS14Y6H"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "BOURY TALLON & ASSOCIES",
+            "hatvp_id": "502999626",
+            "side": "pour",
+            "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+            "fiche": "PVX9AO1H",
+            "year": 2025,
+            "on_behalf_of": [
+              "CONTAKT",
+              "COUP DE POUSSE",
+              "EKIP'",
+              "LUCCA",
+              "WORKLIFE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "LUCCA",
+            "hatvp_id": "441637691",
+            "side": "pour",
+            "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+            "fiche": "PVX9WOKH",
+            "year": 2025,
+            "on_behalf_of": [
+              "LUCCA (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "side": "pour",
+            "quote": "Prévoir un plafonnement tarifaire des commissions pour les titres restaurant",
+            "fiche": "O3862LAH",
+            "year": 2025,
+            "on_behalf_of": [
+              "SAVEURS COMMERCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "WORKLIFE",
+            "hatvp_id": "533592051",
+            "side": "pour",
+            "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+            "fiche": "DVS14Y6H",
+            "year": 2025,
+            "on_behalf_of": [
+              "WORKLIFE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDER NAT CHARCUTERI FRANCE",
+            "hatvp_id": "775691850",
+            "side": "pour",
+            "quote": "titres restaurant : demander plafonnement des commissions sur les cartes à puce",
+            "fiche": "2VRW615H",
+            "year": 2023,
+            "on_behalf_of": [
+              "CONFEDER NAT CHARCUTERI FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+            "hatvp_id": "784717225",
+            "side": "pour",
+            "quote": "Demande d'encadrement des commissions des titres restaurant",
+            "fiche": "0V5DEB7V",
+            "year": 2023,
+            "on_behalf_of": [
+              "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+            "hatvp_id": "422477224",
+            "side": "pour",
+            "quote": "Demander la prise en compte des dysfonctionnements de marché des titres-restaurants dans le cadre d'une hausse de taux de commission injustifiée des émetteurs.",
+            "fiche": "LV1DPFR3",
+            "year": 2023,
+            "on_behalf_of": [
+              "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDER NAT CHARCUTERI FRANCE",
+            "hatvp_id": "775691850",
+            "side": "pour",
+            "quote": "Obtenir le plafonnement des commissions des émetteurs de titres restaurant",
+            "fiche": "QV7OWEXV",
+            "year": 2022,
+            "on_behalf_of": [
+              "CONFEDER NAT CHARCUTERI FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT)",
+            "hatvp_id": "W442015468",
+            "side": "pour",
+            "quote": "Encadrer le montant des commissions exigées par les émetteurs de titres restaurant et leurs pratiques",
+            "fiche": "Q36K42Z3",
+            "year": 2022,
+            "on_behalf_of": [
+              "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT) (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+            "hatvp_id": "822829727",
+            "side": "pour",
+            "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+            "fiche": "A3YPU0G3",
+            "year": 2022,
+            "on_behalf_of": [
+              "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+            "hatvp_id": "822829727",
+            "side": "pour",
+            "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+            "fiche": "EVJF69KH",
+            "year": 2022,
+            "on_behalf_of": [
+              "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+            "hatvp_id": "422477356",
+            "side": "pour",
+            "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+            "fiche": "OHZABTM3",
+            "year": 2022,
+            "on_behalf_of": [
+              "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "side": "pour",
+            "quote": "C'est pour cette raison que nous avons demandé aux pouvoirs publics un encadrement de ces commissions.",
+            "fiche": "Q36SZW8V",
+            "year": 2020,
+            "on_behalf_of": [
+              "SAVEURS COMMERCE (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": null,
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : échec de l'appel au modèle (LLM failed: IncompleteRead(15745 bytes read))"
+      }
+    },
+    {
+      "key": "autoriser-usage-tous-jours",
+      "theme": "Autoriser l'usage tous les jours",
+      "amendments": [
+        "7",
+        "12",
+        "16",
+        "31"
+      ],
+      "opposes": null,
+      "effects": [
+        "Permet à tous les salariés bénéficiaires d'utiliser leurs titres-restaurant le dimanche, au lieu de réserver cet usage aux seuls salariés travaillant ce jour",
+        "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris dimanches et jours fériés, au lieu de restreindre leur usage aux jours travaillés.",
+        "Supprime le plafond journalier d'utilisation des titres-restaurant et autorise leur usage tous les jours, y compris dimanches et jours fériés",
+        "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris le dimanche et les jours fériés, au lieu de les restreindre aux jours ouvrés."
+      ],
+      "nafs": [
+        "47.11A",
+        "47.11E",
+        "47.11F",
+        "56.10A",
+        "56.10C",
+        "64.99B",
+        "64.99C"
+      ],
+      "roles": [
+        "autre:restaurateurs et commerces alimentaires",
+        "autre:restaurateurs et commerçants",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces d'alimentation générale"
+        },
+        {
+          "key": "47.11E",
+          "label": "Supermarchés"
+        },
+        {
+          "key": "47.11A",
+          "label": "Hypermarchés"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "autre:restaurateurs et commerces alimentaires",
+          "label": "autre:restaurateurs et commerces alimentaires"
+        },
+        {
+          "key": "64.99B",
+          "label": "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite"
+        },
+        {
+          "key": "64.99C",
+          "label": "Monnaie électronique"
+        },
+        {
+          "key": "autre:restaurateurs et commerçants",
+          "label": "autre:restaurateurs et commerçants"
+        }
+      ],
+      "n_groups": 4,
+      "groups": [
+        "CRCE-K",
+        "GEST",
+        "Les Républicains",
+        "UNT"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 340375,
+      "employees_low": 839877,
+      "employees_high": 1561179,
+      "approx": false,
+      "not_counted": [
+        "Autres activités auxiliaires de services financiers hors assurance et caisse de retraite",
+        "Monnaie électronique"
+      ],
+      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l'ensemble des salariés bénéficiaires, auprès de toute personne ou de tout organisme mentionné au deuxième alinéa de l'article L. 3262‑3.",
+      "history": {
+        "theme": "Autoriser l'usage tous les jours",
+        "amendments": [
+          "7",
+          "12",
+          "16",
+          "31"
+        ],
+        "effects": [
+          "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris dimanches et jours fériés, au lieu de restreindre leur usage aux jours travaillés.",
+          "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris le dimanche et les jours fériés, au lieu de les restreindre aux jours ouvrés.",
+          "Permet à tous les salariés bénéficiaires d'utiliser leurs titres-restaurant le dimanche, au lieu de réserver cet usage aux seuls salariés travaillant ce jour",
+          "Supprime le plafond journalier d'utilisation des titres-restaurant et autorise leur usage tous les jours, y compris dimanches et jours fériés"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-5-2 du code du travail",
+          "article L. 3262-1 du code du travail"
+        ],
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2026-2027/32/COM-11",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-11",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "Mme PUISSAT, rapporteur",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-11.html",
+            "cites": [],
+            "measure": "autoriser-usage-tous-jours",
+            "stance": "contre",
+            "quote": "Supprimer la phrase : Les titres-restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés."
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article L. 3262-1 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902943",
+              "legifrance:JORFTEXT000035607348",
+              "senat:current/16"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-11"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-11 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Supprimer la phrase : Les titres-restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-11"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : EDENRED.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:UVPUPC5H"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [
+          {
+            "name": "EDENRED",
+            "hatvp_id": "493322978",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "UVPUPC5H"
+            ],
+            "years": [
+              2022
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "EDENRED",
+            "hatvp_id": "493322978",
+            "side": "contre",
+            "quote": "la suppression de l'extension de l'utilisation des titres-restaurant les dimanche et jours fériés",
+            "fiche": "UVPUPC5H",
+            "year": 2022,
+            "on_behalf_of": [
+              "EDENRED (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "La mesure autorise l'utilisation des titres-restaurant le dimanche et les jours fériés pour tous les salariés bénéficiaires, au lieu de réserver cet usage aux seuls salariés travaillant ces jours. Un amendement (n°16) supprime en outre le plafond journalier d'utilisation. Les titres restent attribués par repas travaillé : le nombre de titres et le régime social et fiscal ne changent pas. Le transfert porte sur une réallocation temporelle des dépenses vers les commerces ouverts le dimanche et les jours fériés.",
+        "winners": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide"
+          },
+          {
+            "naf": "47.11F",
+            "role": null,
+            "label": "Commerces d'alimentation générale"
+          },
+          {
+            "naf": "47.11E",
+            "role": null,
+            "label": "Supermarchés"
+          },
+          {
+            "naf": "47.11A",
+            "role": null,
+            "label": "Hypermarchés"
+          },
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés bénéficiaires de titres-restaurant"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs distributeurs (sans changement de coût, assouplissement d'usage uniquement)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne fournissent ni le montant total annuel des titres-restaurant en circulation (assiette) ni la part supplémentaire de dépenses transférée vers le dimanche et jours fériés (écart). Les textes précisent explicitement que « le nombre de titres » n'est pas modifié et qu'il n'y a pas « d'incidence sur le nombre de titres ni sur leur régime social et fiscal ». Le seul chiffre monétaire présent (25 € par jour, amendement n°16) correspond au plafond actuel que l'amendement supprime, sans donner de nouveau plafond ni de dépense moyenne attendue. Aucun paramètre chiffré ne permet de calculer un transfert annuel."
+      }
+    },
+    {
+      "key": "supprimer-modulation-plafond-journalier",
+      "theme": "Supprimer la modulation du plafond",
+      "amendments": [
+        "6",
+        "10"
+      ],
+      "opposes": "instaurer-double-plafond-journalier",
+      "effects": [
+        "Supprime la modulation du plafond journalier des titres-restaurant, maintenant un plafond unique quel que soit le type d'achat",
+        "Supprime le double plafond journalier d'utilisation des titres-restaurant pour revenir à un plafond unique pour tous les produits alimentaires éligibles"
+      ],
+      "nafs": [
+        "47.11",
+        "47.11F",
+        "56.10A",
+        "64.99B",
+        "64.99Z"
+      ],
+      "roles": [
+        "autre:commerces-alimentaires",
+        "autre:restaurateurs",
+        "emetteurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé"
+        },
+        {
+          "key": "64.99B",
+          "label": "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "autre:restaurateurs",
+          "label": "autre:restaurateurs"
+        },
+        {
+          "key": "autre:commerces-alimentaires",
+          "label": "autre:commerces-alimentaires"
+        },
+        {
+          "key": "64.99Z",
+          "label": "Émission de titres-restaurant"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces d'alimentation générale"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "CRCE-K",
+        "Les Républicains"
+      ],
+      "majority_groups": [
+        "Les Républicains"
+      ],
+      "companies": 230474,
+      "employees_low": 820055,
+      "employees_high": 1531969,
+      "approx": false,
+      "not_counted": [
+        "Activités auxiliaires de services financiers hors assurance et caisses de retraite"
+      ],
+      "quote": "Cet amendement supprime la modulation du plafond journalier d'utilisation du titre‑restaurant introduite en commission prévoyant la majoration du plafond pour les repas consommés au restaurant, les produits alimentaires directement consommables et les fruits ou légumes.",
+      "history": {
+        "theme": "Supprimer la modulation du plafond",
+        "amendments": [
+          "6",
+          "10"
+        ],
+        "effects": [
+          "Supprime la modulation du plafond journalier des titres-restaurant, maintenant un plafond unique quel que soit le type d'achat",
+          "Supprime le double plafond journalier d'utilisation des titres-restaurant pour revenir à un plafond unique pour tous les produits alimentaires éligibles"
+        ],
+        "opposes": "instaurer-double-plafond-journalier",
+        "articles": [
+          "article L. 3262-5-2 du code du travail"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:W3UNA42V"
+            ]
+          },
+          {
+            "text": "6 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FLINT FRANCE SAS, IMAGE 7, SWILE, UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR, UNION METIERS & INDUSTRIES HOTELLERIE et 1 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:0V2L6UBH",
+              "hatvp:0V2LXKSH",
+              "hatvp:SVFGPSI3",
+              "hatvp:SVFGO5U3",
+              "hatvp:5HASE8EH",
+              "hatvp:Y3GQN05H"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "W3UNA42V"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
+        "lobby_contre": [
+          {
+            "name": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2L6UBH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2LXKSH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "SWILE",
+            "hatvp_id": "824012173",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "SVFGPSI3"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+            "hatvp_id": "778212779",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "SVFGO5U3"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "5HASE8EH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UP",
+            "hatvp_id": "642044366",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "Y3GQN05H"
+            ],
+            "years": [
+              2022
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "side": "pour",
+            "quote": "s'opposer à différencier les plafonds d'utilisation en fonction des types de commerce",
+            "fiche": "W3UNA42V",
+            "year": 2025,
+            "on_behalf_of": [
+              "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "side": "contre",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant dans le cadre de la réforme du titre",
+            "fiche": "0V2L6UBH",
+            "year": 2025,
+            "on_behalf_of": [
+              "PLUXEE FRANCE"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+            "fiche": "0V2LXKSH",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "contre",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+            "fiche": "SVFGPSI3",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+            "hatvp_id": "778212779",
+            "side": "contre",
+            "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
+            "fiche": "SVFGO5U3",
+            "year": 2025,
+            "on_behalf_of": [
+              "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR (en propre)"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "side": "contre",
+            "quote": "Inscrire dans la réforme du titre-restaurant le double plafond",
+            "fiche": "5HASE8EH",
+            "year": 2025,
+            "on_behalf_of": [
+              "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "UP",
+            "hatvp_id": "642044366",
+            "side": "contre",
+            "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+            "fiche": "Y3GQN05H",
+            "year": 2022,
+            "on_behalf_of": [
+              "UP (en propre)"
+            ],
+            "derived_from": "instaurer-double-plafond-journalier"
+          },
+          {
+            "org": "UP",
+            "hatvp_id": "642044366",
+            "side": "contre",
+            "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+            "fiche": "Y3GQN05H",
+            "year": 2022,
+            "on_behalf_of": [
+              "UP (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime la modulation du plafond journalier des titres-restaurant et revient à un plafond unique pour tous les produits alimentaires éligibles. Cela retire l'avantage concurrentiel qu'aurait procuré un plafond majoré aux restaurateurs par rapport aux commerces alimentaires.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés-utilisateurs de titres-restaurant"
+          },
+          {
+            "naf": "47.11F",
+            "role": null,
+            "label": "Commerces d'alimentation générale"
+          },
+          {
+            "naf": "47.11B",
+            "role": null,
+            "label": "Supermarchés"
+          },
+          {
+            "naf": "47.11C",
+            "role": null,
+            "label": "Hypermarchés"
+          },
+          {
+            "naf": "64.99Z",
+            "role": "emetteurs",
+            "label": "Émetteurs de titres-restaurant"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes des amendements 6 et 10 ne précisent ni le volume annuel total des transactions en titres-restaurant, ni les montants des plafonds journaliers (unique ou modulé), qui sont fixés par voie réglementaire."
+      }
+    },
+    {
+      "key": "exclure-plateformes-livraison",
+      "theme": "Exclure les plateformes de livraison",
+      "amendments": [
+        "21 rect.",
+        "26"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut les plateformes de mise en relation par voie électronique du champ des professionnels habilités à accepter les titres-restaurant",
+        "Exclut les achats de repas réalisés via des plateformes de livraison en ligne du bénéfice de l'aide publique au repas du salarié"
+      ],
+      "nafs": [
+        "53.20Z",
+        "56.10A",
+        "56.10C",
+        "63.99Z",
+        "64.99Z"
+      ],
+      "roles": [
+        "autre:restaurateurs",
+        "emetteurs",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "63.99Z",
+          "label": "Plateformes de mise en relation par voie électronique"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "64.99Z",
+          "label": "Émetteurs de titres-restaurant"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "autre:restaurateurs",
+          "label": "autre:restaurateurs"
+        },
+        {
+          "key": "53.20Z",
+          "label": "Autres activités de poste et de courrier"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 518509,
+      "employees_low": 615114,
+      "employees_high": 1172757,
+      "approx": false,
+      "not_counted": [],
+      "quote": "à l'exclusion des contrats conclus par l'intermédiaire d'une plateforme de mise en relation par voie électronique mentionnée à l'article 242 bis du code général des impôts",
+      "history": {
+        "theme": "Exclure les plateformes de livraison",
+        "amendments": [
+          "21 rect.",
+          "26"
+        ],
+        "effects": [
+          "Exclut les achats de repas réalisés via des plateformes de livraison en ligne du bénéfice de l'aide publique au repas du salarié",
+          "Exclut les plateformes de mise en relation par voie électronique du champ des professionnels habilités à accepter les titres-restaurant"
+        ],
+        "opposes": null,
+        "articles": [
+          "article 242 bis du code général des impôts",
+          "article L. 3262-1 du code du travail"
+        ],
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2026-2027/32/COM-10",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-10",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "Mme PUISSAT, rapporteur",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-10.html",
+            "cites": [
+              "article 242 bis du code général des impôts"
+            ],
+            "measure": "exclure-plateformes-livraison",
+            "stance": "contre",
+            "quote": "Supprimer les mots : , à l'exclusion des plateformes de mise en relation par voie électronique mentionnées à l'article 242 bis du code général des impôts"
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article 242 bis du code général des impôts, visé par 1 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2023-01-01 vient de : LOI n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000044981558",
+              "legifrance:JORFTEXT000044637640",
+              "senat:current/21 rect."
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902943",
+              "legifrance:JORFTEXT000035607348",
+              "senat:current/21 rect.",
+              "senat:current/26"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-10"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-10 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Supprimer les mots : , à l'exclusion des plateformes de mise en relation par voie électronique mentionnées à l'article 242 bis du code général des impôts ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-10"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:6VBOEZJ3"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [
+          {
+            "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "6VBOEZJ3"
+            ],
+            "years": [
+              2022
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "side": "contre",
+            "quote": "Permettre l'utilisation des titres-restaurant dans le cadre de paiements effectués à distance : ventes à emporter (click & collect et drive) ou achats en ligne livrés",
+            "fiche": "6VBOEZJ3",
+            "year": 2022,
+            "on_behalf_of": [
+              "ALDI",
+              "AUCHAN HOLDING",
+              "BAILLY SA",
+              "BJORG BONNETERRE ET COMPAGNIE",
+              "BOULANGER",
+              "CARREFOUR",
+              "CENTRE DISTRIBUTION ALIMENTAIRE DU S. O.",
+              "COLRUYT RETAIL FRANCE",
+              "COOPERATIVE U ENSEIGNE",
+              "DARTY HOLDINGS",
+              "DECATHLON FRANCE",
+              "DISTRIBUTION ALIMENTAIRE PARISIENNE",
+              "DISTRIBUTION CASINO FRANCE",
+              "ELECTRO DEPOT FRANCE",
+              "ETABLISSEMENTS SEGUREL ET FILS",
+              "FLINK",
+              "FRANCAP DISTRIBUTION",
+              "GALERIES LAFAYETTE HAUSSMANN - GL HAUSSMANN",
+              "GETIR FRANCE",
+              "GROUPE 20",
+              "KINGFISHER FRANCE",
+              "LA VIE CLAIRE",
+              "LEROY MERLIN FRANCE",
+              "LIDL",
+              "LOUIS DELHAIZE SA",
+              "LUDERIX INTERNATIONAL",
+              "MAXIMO",
+              "METRO FRANCE",
+              "MEUBLES IKEA FRANCE",
+              "MIGROS FRANCE",
+              "MONOPRIX",
+              "NICOLAS DIRECT",
+              "NORMA SARL",
+              "PICARD SURGELES",
+              "RALLYE",
+              "RELATIONS MARCHANDISES SERVICES DISTRIBU",
+              "S.A.V SCHIEVER",
+              "SOC ETS BENSOUSSAN COMPTOIR D'ORIENT",
+              "SOCIETE D'EXPLOITATION DE LA GRANDE EPICERIE DE PARIS",
+              "SOCIETE D'EXPLOITATION PROVENCIA",
+              "SYSTEME U - CENTRALE REGIONALE EST",
+              "TANG FRERES",
+              "TRANSGOURMET OPERATIONS"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "Les amendements excluent les plateformes de livraison de repas du champ des professionnels habilités à accepter les titres-restaurant. Les salariés ne peuvent plus utiliser leurs titres-restaurant pour payer des commandes passées via ces plateformes. Les restaurateurs n'ont plus à payer les commissions des plateformes sur les transactions réglées en titres-restaurant, mais les plateformes perdent ce flux de transactions.",
+        "winners": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "63.99Z",
+            "role": "plateformes",
+            "label": "Plateformes de mise en relation par voie électronique"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes des amendements ne contiennent aucun chiffre : ni montant des commissions prélevées par les plateformes, ni volume des transactions en titres-restaurant passant par les plateformes, ni part du chiffre d'affaires concernée. Aucune assiette ni aucun écart ne peut être extrait."
+      }
+    },
+    {
+      "key": "restreindre-usage-consommables",
+      "theme": "Restreindre l'usage aux consommables",
+      "amendments": [
+        "20",
+        "24"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint l'utilisation des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, supprimant l'élargissement pérenne à tous les produits alimentaires",
+        "Restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'usage élargi pour tout produit alimentaire en supermarché"
+      ],
+      "nafs": [
+        "47.11F",
+        "47.11G",
+        "56.10A",
+        "56.10B",
+        "56.10C",
+        "64.19B"
+      ],
+      "roles": [
+        "autre:grande distribution",
+        "autre:grande-distribution",
+        "autre:restaurateurs",
+        "emetteurs",
+        "employeurs",
+        "etat",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10B",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerce de détail en supermarché"
+        },
+        {
+          "key": "47.11G",
+          "label": "Commerce de détail en hypermarché"
+        },
+        {
+          "key": "64.19B",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "autre:restaurateurs",
+          "label": "autre:restaurateurs"
+        },
+        {
+          "key": "autre:grande distribution",
+          "label": "autre:grande distribution"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:grande-distribution",
+          "label": "autre:grande-distribution"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "GEST",
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 340410,
+      "employees_low": 827138,
+      "employees_high": 1546965,
+      "approx": false,
+      "not_counted": [
+        "Autre intermédiation monétaire (émetteurs de titres-restaurant)",
+        "Commerce de détail en hypermarché"
+      ],
+      "quote": "de préparations alimentaires directement consommables, ainsi que de fruits et légumes, qu'ils soient ou non directement consommables",
+      "history": {
+        "theme": "Restreindre l'usage aux consommables",
+        "amendments": [
+          "20",
+          "24"
+        ],
+        "effects": [
+          "Restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'usage élargi pour tout produit alimentaire en supermarché",
+          "Restreint l'utilisation des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, supprimant l'élargissement pérenne à tous les produits alimentaires"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-1 du code du travail",
+          "article L. 3262-5-2 du code du travail"
+        ],
+        "senate_by_group": {
+          "RDSE": {
+            "filed": 2,
+            "adopted": 1,
+            "rejected": 1,
+            "other": 0,
+            "pour": 0,
+            "contre": 2,
+            "years": [
+              2009,
+              2025
+            ]
+          },
+          "UCI": {
+            "filed": 2,
+            "adopted": 1,
+            "rejected": 1,
+            "other": 0,
+            "pour": 1,
+            "contre": 1,
+            "years": [
+              2023,
+              2025
+            ]
+          },
+          "GEST": {
+            "filed": 2,
+            "adopted": 0,
+            "rejected": 2,
+            "other": 0,
+            "pour": 2,
+            "contre": 0,
+            "years": [
+              2023
+            ]
+          },
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 1,
+            "contre": 0,
+            "years": [
+              2024
+            ]
+          },
+          "RDPI": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2025
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2008-2009/381/646 rect.",
+            "session": "2008-2009",
+            "text_number": "381",
+            "stage": "seance",
+            "number": "646 rect.",
+            "filed": "2009-05-12",
+            "year": 2009,
+            "author": "M. BARBIER",
+            "group": "RDSE",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/2008-2009/381/Amdt_646.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "contre",
+            "quote": "Il est proposé ici de supprimer la disposition concernant la possibilité d'utiliser les tickets restaurants auprès des détaillants de fruits et légumes."
+          },
+          {
+            "id": "senat:2023-2024/143/COM-1 rect.",
+            "session": "2023-2024",
+            "text_number": "143",
+            "stage": "commission",
+            "number": "COM-1 rect.",
+            "filed": "2023-12-04",
+            "year": 2023,
+            "author": "Mme PONCET MONGE",
+            "group": "GEST",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2023-2024/143/Amdt_COM-1.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "pour",
+            "quote": "Le titre restaurant a fait l'objet de dérogations dans son principe du fait d'abord de la crise COVID (télétravail, fermeture des restaurants) puis lors de la loi sur le pouvoir d'achat."
+          },
+          {
+            "id": "senat:2023-2024/173/2 rect.",
+            "session": "2023-2024",
+            "text_number": "173",
+            "stage": "seance",
+            "number": "2 rect.",
+            "filed": "2023-12-17",
+            "year": 2023,
+            "author": "M. CANÉVET",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_2.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "pour",
+            "quote": "Cet amendement vise à réduire la prolongation de l'utilisation des titres-restaurant pour l'achat de produits alimentaires non directement consommables au 30 juin 2024."
+          },
+          {
+            "id": "senat:2023-2024/173/3 rect.",
+            "session": "2023-2024",
+            "text_number": "173",
+            "stage": "seance",
+            "number": "3 rect.",
+            "filed": "2023-12-18",
+            "year": 2023,
+            "author": "Mme PONCET MONGE",
+            "group": "GEST",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_3.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "pour",
+            "quote": "Au risque désormais d'une forme d'irréversibilité, le texte propose de prolonger de nouveau cette dérogation au 31 décembre 2024 pour des raisons de pouvoir d'achat."
+          },
+          {
+            "id": "senat:2024-2025/160/COM-1",
+            "session": "2024-2025",
+            "text_number": "160",
+            "stage": "commission",
+            "number": "COM-1",
+            "filed": "2024-12-02",
+            "year": 2024,
+            "author": "Mme AESCHLIMANN, rapporteure",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-1.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "pour",
+            "quote": "la dérogation d'usage des titres-restaurant pour tout produit alimentaire propose une prolongation jusqu'au 1er janvier 2026 de ce régime dérogatoire. Cet amendement vise à réduire à un an la"
+          },
+          {
+            "id": "senat:2024-2025/183/4",
+            "session": "2024-2025",
+            "text_number": "183",
+            "stage": "seance",
+            "number": "4",
+            "filed": "2025-01-10",
+            "year": 2025,
+            "author": "M. IACOVELLI",
+            "group": "RDPI",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_4.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "contre",
+            "quote": "Cet amendement propose de proroger la dérogation d'usage des titres-restaurant pour les produits alimentaires non directement consommables de deux ans, c'est-à-dire jusqu'au 1er janvier 2026."
+          },
+          {
+            "id": "senat:2024-2025/183/2 rect.",
+            "session": "2024-2025",
+            "text_number": "183",
+            "stage": "seance",
+            "number": "2 rect.",
+            "filed": "2025-01-14",
+            "year": 2025,
+            "author": "Mme GUILLOTIN",
+            "group": "RDSE",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_2.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "contre",
+            "quote": "Cet amendement vise à porter à deux ans la durée de la dérogation permettant d'acheter tout produit alimentaire en grande surface avec des tickets-restaurant"
+          },
+          {
+            "id": "senat:2024-2025/183/3 rect. quater",
+            "session": "2024-2025",
+            "text_number": "183",
+            "stage": "seance",
+            "number": "3 rect. quater",
+            "filed": "2025-01-14",
+            "year": 2025,
+            "author": "Mme SOLLOGOUB",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_3.html",
+            "cites": [],
+            "measure": "restreindre-usage-consommables",
+            "stance": "contre",
+            "quote": "le report de l'examen de ce texte en raison de la censure du gouvernement a eu pour effet de suspendre l'expérimentation autorisée par la loi jusqu'au 31 décembre dernier."
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article L. 3262-1 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902943",
+              "legifrance:JORFTEXT000035607348",
+              "senat:current/20",
+              "senat:current/24"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "Au Sénat, 4 amendement(s) déposé(s) de 2023 à 2024 allaient en faveur de cette mesure : 1 adopté(s), 3 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : GEST (2), UCI (1), LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2023-2024/143/COM-1 rect.",
+              "senat:2023-2024/173/2 rect.",
+              "senat:2023-2024/173/3 rect.",
+              "senat:2024-2025/160/COM-1"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2024-12-02 : n° COM-1 (commission, texte n° 160 de 2024-2025) de Mme AESCHLIMANN, rapporteure (LR), en faveur de la mesure : « la dérogation d'usage des titres-restaurant pour tout produit alimentaire propose une prolongation jusqu'au 1er janvier 2026 de ce régime dérogatoire. Cet amendement vise à réduire à un an la ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/160/COM-1"
+            ]
+          },
+          {
+            "text": "Au Sénat, 4 amendement(s) déposé(s) de 2009 à 2025 allaient contre cette mesure : 3 adopté(s), 1 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : RDSE (2), RDPI (1), UCI (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2008-2009/381/646 rect.",
+              "senat:2024-2025/183/4",
+              "senat:2024-2025/183/2 rect.",
+              "senat:2024-2025/183/3 rect. quater"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2025-01-10 : n° 4 (seance, texte n° 183 de 2024-2025) de M. IACOVELLI (RDPI), contre la mesure : « Cet amendement propose de proroger la dérogation d'usage des titres-restaurant pour les produits alimentaires non directement consommables de deux ans, c'est-à-dire jusqu'au 1er janvier 2026. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/183/4"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2025-01-14 : n° 2 rect. (seance, texte n° 183 de 2024-2025) de Mme GUILLOTIN (RDSE), contre la mesure : « Cet amendement vise à porter à deux ans la durée de la dérogation permettant d'acheter tout produit alimentaire en grande surface avec des tickets-restaurant ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/183/2 rect."
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2025-01-14 : n° 3 rect. quater (seance, texte n° 183 de 2024-2025) de Mme SOLLOGOUB (UCI), contre la mesure : « le report de l'examen de ce texte en raison de la censure du gouvernement a eu pour effet de suspendre l'expérimentation autorisée par la loi jusqu'au 31 décembre dernier. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/183/3 rect. quater"
+            ]
+          },
+          {
+            "text": "9 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : CONFEDERATION GENERALE ALIMENTAT.DETAIL, SYND NAT ALIMENTAT.RESTAURATION RAPIDE, UNION METIERS & INDUSTRIES HOTELLERIE, GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE, GROUPEMENT NATIONAL DES INDEPENDANTS et 4 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:A3YPGDY3",
+              "hatvp:O386NIEH",
+              "hatvp:DVS2W6ZV",
+              "hatvp:Y3G7DR2V",
+              "hatvp:5HASE8EH",
+              "hatvp:EVJFRPFH",
+              "hatvp:9V0PIPSH",
+              "hatvp:DVSJ2CFV",
+              "hatvp:X3CF9YI3",
+              "hatvp:UVPEBWD3",
+              "hatvp:DHMQ4XBV",
+              "hatvp:UVPEED23"
+            ]
+          },
+          {
+            "text": "9 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : SYNDIC NATION VENTE ET SERVICES AUTOMAT, CARREFOUR, CARREFOUR MANAGEMENT, FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE, FEDERATION ENTREP COMMERCE DISTRIBUTION et 4 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:9V0KZ1KV",
+              "hatvp:SVFGQKM3",
+              "hatvp:YVNFAOJ3",
+              "hatvp:BHOW7JI3",
+              "hatvp:O3WIWQIH",
+              "hatvp:OHZUXTKV",
+              "hatvp:ZV9R0E13",
+              "hatvp:0V5X579H",
+              "hatvp:PVXI2I2V",
+              "hatvp:O3WIZ60H",
+              "hatvp:Y3G7BC8V",
+              "hatvp:0V2LCCZH",
+              "hatvp:DVS2AZDV",
+              "hatvp:UVPUL1XH",
+              "hatvp:Y3GQ0M4H",
+              "hatvp:LV1D2PQ3"
+            ]
+          },
+          {
+            "text": "3 organisation(s) ont déclaré les deux positions sur cette mesure (souvent des cabinets agissant pour des clients différents) : IMAGE 7, SAVEURS COMMERCE, SWILE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:0VESNIWH",
+              "hatvp:6VBQUMUV",
+              "hatvp:JVDFK60H",
+              "hatvp:Y3K4MPFH",
+              "hatvp:Q36KU1P3",
+              "hatvp:UHQ1SWMV",
+              "hatvp:2VRNAL2H",
+              "hatvp:W3UNS4JV"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+            "hatvp_id": "784717225",
+            "category": "Fédération professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "A3YPGDY3",
+              "O386NIEH"
+            ],
+            "years": [
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+            "hatvp_id": "422477224",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "DVS2W6ZV",
+              "Y3G7DR2V"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "5HASE8EH",
+              "EVJFRPFH"
+            ],
+            "years": [
+              2023,
+              2025
+            ]
+          },
+          {
+            "name": "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE",
+            "hatvp_id": "923291454",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "9V0PIPSH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+            "hatvp_id": "822829727",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "DVSJ2CFV"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+            "hatvp_id": "422477356",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "X3CF9YI3"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "TADDEO",
+            "hatvp_id": "534389309",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "UVPEBWD3"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UNION DES ENTREPRISES DE PROXIMITE",
+            "hatvp_id": "349681098",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "DHMQ4XBV"
+            ],
+            "years": [
+              2023
+            ]
+          },
+          {
+            "name": "UP",
+            "hatvp_id": "642044366",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "UVPEED23"
+            ],
+            "years": [
+              2024
+            ]
+          }
+        ],
+        "lobby_contre": [
+          {
+            "name": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+            "hatvp_id": "784717498",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "9V0KZ1KV",
+              "SVFGQKM3",
+              "YVNFAOJ3"
+            ],
+            "years": [
+              2023,
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "CARREFOUR",
+            "hatvp_id": "652014051",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "BHOW7JI3",
+              "O3WIWQIH"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "CARREFOUR MANAGEMENT",
+            "hatvp_id": "403245061",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "OHZUXTKV",
+              "ZV9R0E13"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+            "hatvp_id": "801316951",
+            "category": "Fédération professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "0V5X579H",
+              "PVXI2I2V"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "O3WIZ60H",
+              "Y3G7BC8V"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "LES MOUSQUETAIRES",
+            "hatvp_id": "789169323",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "0V2LCCZH",
+              "DVS2AZDV"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "UVPUL1XH"
+            ],
+            "years": [
+              2023
+            ]
+          },
+          {
+            "name": "CONFEDERATION DES GROSSISTES DE FRANCE",
+            "hatvp_id": "784669152",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "Y3GQ0M4H"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "FAMILLES RURALES FEDERATION NATIONALE",
+            "hatvp_id": "784672792",
+            "category": "Association",
+            "consultancy": false,
+            "fiches": [
+              "LV1D2PQ3"
+            ],
+            "years": [
+              2023
+            ]
+          }
+        ],
+        "lobby_both": [
+          {
+            "name": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0VESNIWH",
+              "6VBQUMUV",
+              "JVDFK60H",
+              "Y3K4MPFH"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "category": "Fédération professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "Q36KU1P3",
+              "UHQ1SWMV"
+            ],
+            "years": [
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "SWILE",
+            "hatvp_id": "824012173",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "2VRNAL2H",
+              "W3UNS4JV"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          }
+        ],
+        "lobby_quotes": [
+          {
+            "org": "CARREFOUR",
+            "hatvp_id": "652014051",
+            "side": "contre",
+            "quote": "prolonger la dérogation de l'usage des titres restaurant pour les produits alimentaires jusqu'au 31 décembre 2026 et demander la pérennisation du dispositif",
+            "fiche": "O3WIWQIH",
+            "year": 2025,
+            "on_behalf_of": [
+              "CARREFOUR (en propre)",
+              "CARREFOUR FRANCE",
+              "CARREFOUR MANAGEMENT"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CARREFOUR MANAGEMENT",
+            "hatvp_id": "403245061",
+            "side": "contre",
+            "quote": "prolonger la dérogation de l'usage des titres restaurant pour les produits alimentaires jusqu'au 31 décembre 2026 et demander la pérennisation du dispositif",
+            "fiche": "ZV9R0E13",
+            "year": 2025,
+            "on_behalf_of": [
+              "CARREFOUR",
+              "CARREFOUR FRANCE",
+              "CARREFOUR MANAGEMENT (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+            "hatvp_id": "801316951",
+            "side": "contre",
+            "quote": "Prolonger et pérenniser la possibilité d'utiliser ses titres-restaurant pour un salarié pour l'ensemble des achats alimentaires",
+            "fiche": "0V5X579H",
+            "year": 2025,
+            "on_behalf_of": [
+              "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "side": "contre",
+            "quote": "soutenir la prorogation du dispositif jusqu'au 31.12.2026",
+            "fiche": "O3WIZ60H",
+            "year": 2025,
+            "on_behalf_of": [
+              "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE",
+            "hatvp_id": "923291454",
+            "side": "pour",
+            "quote": "Demander la révision des règles d'agrément des titres-restaurant et la suspension des autorisations pour les enseignes non spécialisées",
+            "fiche": "9V0PIPSH",
+            "year": 2025,
+            "on_behalf_of": [
+              "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Défendre le prolongement de l'usage des tickets restaurants dans les grandes surfaces",
+            "fiche": "6VBQUMUV",
+            "year": 2025,
+            "on_behalf_of": [
+              "LES MOUSQUETAIRES"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "pour",
+            "quote": "Défendre le modèle du titre restaurant en alertant sur les risques de la possible pérennisation d'usage des titres pour acheter tout produit alimentaire qu'il soit ou non immédiatement consommable.",
+            "fiche": "Y3K4MPFH",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "LES MOUSQUETAIRES",
+            "hatvp_id": "789169323",
+            "side": "contre",
+            "quote": "DÉFENDRE LE PROLONGEMENT DE L'USAGE DES TICKETS RESTAURANTS DANS LES GRANDES SURFACES",
+            "fiche": "0V2LCCZH",
+            "year": 2025,
+            "on_behalf_of": [
+              "LES MOUSQUETAIRES (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "pour",
+            "quote": "DÉFENDRE LE MODÈLE DU TITRE-RESTAURANT EN ALERTANT SUR LES RISQUES DE LA POSSIBLE PERENNISATION D'USAGE DES TR POUR ACHETER TOUT PRODUIT ALIMENTAIRE QU'IL SOIT OU NON IMMÉDIATEMENT CONSOMMABLE",
+            "fiche": "W3UNS4JV",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+            "hatvp_id": "422477224",
+            "side": "pour",
+            "quote": "DEMANDER QUE LE REGIME DEROGATOIRE PERMETTANT L'UTILISATION DES TITRES-RESTAURANTS POUR L'ACHAT DE PRODUITS NON DIRECTEMENT CONSOMMABLES NE FASSE PAS L'OBJET D'UNE RECONDUCTION",
+            "fiche": "Y3G7DR2V",
+            "year": 2025,
+            "on_behalf_of": [
+              "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+            "hatvp_id": "784717498",
+            "side": "contre",
+            "quote": "Inscrire dans la loi la prolongation de la dérogation d'usage du titre-restaurant",
+            "fiche": "9V0KZ1KV",
+            "year": 2025,
+            "on_behalf_of": [
+              "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "TADDEO",
+            "hatvp_id": "534389309",
+            "side": "pour",
+            "quote": "Demander que le régime dérogatoire permettant l'utilisation des titres-restaurant pour l'achat de produits non directement consommables ne fasse pas l'objet d'une reconduction.",
+            "fiche": "UVPEBWD3",
+            "year": 2025,
+            "on_behalf_of": [
+              "SYND NAT ALIMENTAT.RESTAURATION RAPIDE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "side": "pour",
+            "quote": "y supprimerl'extension du titre à la grande distribution",
+            "fiche": "5HASE8EH",
+            "year": 2025,
+            "on_behalf_of": [
+              "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CARREFOUR",
+            "hatvp_id": "652014051",
+            "side": "contre",
+            "quote": "DEMANDER LA PROLONGATION LE DISPOSITIF DES TITRES RESTAURANTS JUSQU' EN 2026 AFIN d'agir en faveur du POUVOIR D'ACHAT DES Consommateurs",
+            "fiche": "BHOW7JI3",
+            "year": 2024,
+            "on_behalf_of": [
+              "CARREFOUR (en propre)",
+              "CARREFOUR FRANCE",
+              "CARREFOUR MANAGEMENT"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CARREFOUR MANAGEMENT",
+            "hatvp_id": "403245061",
+            "side": "contre",
+            "quote": "Demander la prolongation le dispositif des titres restaurants jusqu'en 2026 afin d'agir en faveur du pouvoir d'achat des consommateurs",
+            "fiche": "OHZUXTKV",
+            "year": 2024,
+            "on_behalf_of": [
+              "CARREFOUR",
+              "CARREFOUR FRANCE",
+              "CARREFOUR MANAGEMENT (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+            "hatvp_id": "784717225",
+            "side": "pour",
+            "quote": "La CGAD est opposée à la poursuite de la dérogation qui a avant tout bénéficié à la grande distribution et mis en difficulté les restaurants et commerces de proximité.",
+            "fiche": "O386NIEH",
+            "year": 2024,
+            "on_behalf_of": [
+              "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+            "hatvp_id": "801316951",
+            "side": "contre",
+            "quote": "Inscrire dans la loi la prolongation et la pérennisation de l'usage des titres-restaurant pour l'ensemble des achats alimentaires (PPL sur la dérogation d'usage des titres restaurant)",
+            "fiche": "PVXI2I2V",
+            "year": 2024,
+            "on_behalf_of": [
+              "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "side": "contre",
+            "quote": "Soutenir une proposition de loi pérennisant l'usage des titres-restaurant pour tout aliment ou, à défaut, prolonger cette possibilité après 2025",
+            "fiche": "Y3G7BC8V",
+            "year": 2024,
+            "on_behalf_of": [
+              "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Défendre le prolongement de l'autorisation d'usage des tickets restaurants dans les grandes surfaces",
+            "fiche": "0VESNIWH",
+            "year": 2024,
+            "on_behalf_of": [
+              "LES MOUSQUETAIRES"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Contribuer à la PPL visant à prolonger la dérogation d'usage des titres-restaurant pour tout produit alimentaire, en sensibilisant sur les risques d'une prorogation excessive de la dérogation.",
+            "fiche": "JVDFK60H",
+            "year": 2024,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "LES MOUSQUETAIRES",
+            "hatvp_id": "789169323",
+            "side": "contre",
+            "quote": "DÉFENDRE LE PROLONGEMENT DE L'AUTORISATION D'USAGE DES TICKETS RESTAURANTS EN SUPERMARCHE",
+            "fiche": "DVS2AZDV",
+            "year": 2024,
+            "on_behalf_of": [
+              "LES MOUSQUETAIRES (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "side": "contre",
+            "quote": "Saveurs Commerce donne sa position favorable à la proposition de loi visant à prolonger d'un an la dérogation d'usage des titres restaurant pour l'achat de produits alimentaires non directement consommables.",
+            "fiche": "UHQ1SWMV",
+            "year": 2024,
+            "on_behalf_of": [
+              "SAVEURS COMMERCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "contre",
+            "quote": "Contribuer à la proposition de loi prolongeant la dérogation d'usage des titres-restaurant pour tout produit alimentaire, en sensibilisant sur les risques d'une prorogation excessive de la dérogation",
+            "fiche": "2VRNAL2H",
+            "year": 2024,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+            "hatvp_id": "422477224",
+            "side": "pour",
+            "quote": "Demander que le régime dérogatoire permettant l'utilisation des titres-restaurants pour l'achat de produits non directement consommables ne fasse pas l'objet d'une reconduction",
+            "fiche": "DVS2W6ZV",
+            "year": 2024,
+            "on_behalf_of": [
+              "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+            "hatvp_id": "784717498",
+            "side": "contre",
+            "quote": "Inscrire dans la loi une prolongation de la dérogation d'usage du titre-restaurant",
+            "fiche": "SVFGQKM3",
+            "year": 2024,
+            "on_behalf_of": [
+              "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UP",
+            "hatvp_id": "642044366",
+            "side": "pour",
+            "quote": "limiter la prolongation dans le temps pour préserver sa vocation sociale et économique",
+            "fiche": "UVPEED23",
+            "year": 2024,
+            "on_behalf_of": [
+              "UP (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "side": "contre",
+            "quote": "Demander la prolongation de l'utilisation dérogatoire des titres restaurants",
+            "fiche": "UVPUL1XH",
+            "year": 2023,
+            "on_behalf_of": [
+              "EDENRED FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+            "hatvp_id": "784717225",
+            "side": "pour",
+            "quote": "Réduire dans la loi la prolongation de l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables et la borner au 30 juin 2024",
+            "fiche": "A3YPGDY3",
+            "year": 2023,
+            "on_behalf_of": [
+              "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FAMILLES RURALES FEDERATION NATIONALE",
+            "hatvp_id": "784672792",
+            "side": "contre",
+            "quote": "Proroger le dérogation instaurer par l'art 6 de la loi du 16 août 2022 qui prévoit que les tickets-restaurant puissent être utilisés pour acheter tout produit alimentaire.",
+            "fiche": "LV1D2PQ3",
+            "year": 2023,
+            "on_behalf_of": [
+              "FAMILLES RURALES FEDERATION NATIONALE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SAVEURS COMMERCE",
+            "hatvp_id": "308961978",
+            "side": "pour",
+            "quote": "Revenir à la liste de 2021 des produits éligibles aux titres restaurants",
+            "fiche": "Q36KU1P3",
+            "year": 2023,
+            "on_behalf_of": [
+              "SAVEURS COMMERCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+            "hatvp_id": "784717498",
+            "side": "contre",
+            "quote": "Prises de position en faveur de la prolongation de l'élargissement de l'utilisation du titre-restaurant",
+            "fiche": "YVNFAOJ3",
+            "year": 2023,
+            "on_behalf_of": [
+              "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION DES ENTREPRISES DE PROXIMITE",
+            "hatvp_id": "349681098",
+            "side": "pour",
+            "quote": "Réduire dans la loi la prolongation de l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables et la borner au 30 juin 2024",
+            "fiche": "DHMQ4XBV",
+            "year": 2023,
+            "on_behalf_of": [
+              "UNION DES ENTREPRISES DE PROXIMITE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "side": "pour",
+            "quote": "METTRE FIN A L EXTENSION DE L' UTILISATION DU TITRE RESTAURANT A LA GRANDE DISTRIBUTION ET LE RESERVER A LA RESTAURATION",
+            "fiche": "EVJFRPFH",
+            "year": 2023,
+            "on_behalf_of": [
+              "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "CONFEDERATION DES GROSSISTES DE FRANCE",
+            "hatvp_id": "784669152",
+            "side": "contre",
+            "quote": "demander l'élargissement du champ d'application des tickets restaurants à tous les produits alimentaires",
+            "fiche": "Y3GQ0M4H",
+            "year": 2022,
+            "on_behalf_of": [
+              "CONFEDERATION DES GROSSISTES DE FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+            "hatvp_id": "822829727",
+            "side": "pour",
+            "quote": "Présenter un plaidoyer contre l'élargissement de l'utilisation des titres-restaurant à l'achat de tous les produits alimentaires, même s'ils ne sont pas directement consommables",
+            "fiche": "DVSJ2CFV",
+            "year": 2022,
+            "on_behalf_of": [
+              "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+            "hatvp_id": "422477356",
+            "side": "pour",
+            "quote": "Présenter un plaidoyer contre l'élargissement de l'utilisation des titres-restaurant à l'achat de tous les produits alimentaires, même s'ils ne sont pas directement consommables",
+            "fiche": "X3CF9YI3",
+            "year": 2022,
+            "on_behalf_of": [
+              "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'élargissement à tous les produits alimentaires. Les dépenses de titres-restaurant se redirigent de la grande distribution vers la restauration.",
+        "winners": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle"
+          },
+          {
+            "naf": "56.10B",
+            "role": null,
+            "label": "Restauration de type rapide"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "47.11F",
+            "role": null,
+            "label": "Commerce de détail en supermarché"
+          },
+          {
+            "naf": "47.11G",
+            "role": null,
+            "label": "Commerce de détail en hypermarché"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [
+          {
+            "nafs": [
+              "56.10A",
+              "56.10B",
+              "56.10C"
+            ],
+            "role": null,
+            "name": "share",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part",
+            "quote": "le titre représente 15 % du chiffre d'affaires des restaurants",
+            "amendment": "24",
+            "kind": "share"
+          },
+          {
+            "nafs": [
+              "47.11F",
+              "47.11G"
+            ],
+            "role": null,
+            "name": "share",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part",
+            "quote": "contre 1 % pour la grande distribution",
+            "amendment": "24",
+            "kind": "share"
+          }
+        ],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne fournit ni la valeur totale annuelle des titres-restaurant (assiette) ni la part des dépenses de titres-restaurant redirigée par la restriction (écart). Les parts de marché historiques des restaurateurs dans la valeur des titres (46,5 % et 34,3 %) décrivent une évolution passée, non l'effet chiffré de la mesure."
+      }
+    },
+    {
+      "key": "maintenir-titres-pendant-conges",
+      "theme": "Maintenir les titres pendant congés",
+      "amendments": [
+        "13",
+        "18"
+      ],
+      "opposes": null,
+      "effects": [
+        "Oblige les employeurs à maintenir l'attribution des titres-restaurant pendant les congés de maternité, paternité, adoption et naissance.",
+        "Les employeurs doivent maintenir l'attribution des titres-restaurant aux salariés pendant les congés maternité, paternité, adoption et congé supplémentaire de naissance."
+      ],
+      "nafs": [
+        "64.19Z"
+      ],
+      "roles": [
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "CRCE-K",
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 5618,
+      "employees_low": 224720,
+      "employees_high": 465919,
+      "approx": false,
+      "not_counted": [
+        "Tous secteurs (employeurs attribuant des titres-restaurant)"
+      ],
+      "quote": "L'attribution de titres‑restaurant ne peut être interrompue durant les périodes d'absence et de congé de maternité mentionnées aux articles L. 1225‑16 à L. 1225‑28 du code du travail, de congé de paternité et d'accueil de l'enfant mentionnées aux articles L. 1225‑35 à L. 1225‑36 du même code, de congé d'adoption mentionnées aux articles L. 1225‑37 à L. 1225‑46‑1 dudit code et de congé supplémentaire de naissance mentionnées aux articles L. 1225‑46‑2 à L. 1225‑46‑7 du même code.",
+      "history": {
+        "theme": "Maintenir les titres pendant congés",
+        "amendments": [
+          "13",
+          "18"
+        ],
+        "effects": [
+          "Les employeurs doivent maintenir l'attribution des titres-restaurant aux salariés pendant les congés maternité, paternité, adoption et congé supplémentaire de naissance.",
+          "Oblige les employeurs à maintenir l'attribution des titres-restaurant pendant les congés de maternité, paternité, adoption et naissance."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 1225-16 du code du travail",
+          "article L. 1225-28 du code du travail",
+          "article L. 1225-35 du code du travail",
+          "article L. 1225-36 du code du travail",
+          "article L. 1225-46-2 du code du travail",
+          "article L. 1225-46-7 du code du travail"
+        ],
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2026-2027/32/COM-16",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-16",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "Mme PUISSAT, rapporteur",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-16.html",
+            "cites": [],
+            "measure": "maintenir-titres-pendant-conges",
+            "stance": "contre",
+            "quote": "Cet amendement vise à supprimer l'article 2 bis, qui prévoit l'attribution obligatoire de titres-restaurant aux salariés bénéficiant d'un congé en lien avec l'arrivée d'un enfant dans leur foyer."
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article L. 1225-28 du code du travail, visé par 2 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2012-12-19 vient de : LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013.",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000026799916",
+              "legifrance:JORFTEXT000026785322",
+              "senat:current/13",
+              "senat:current/18"
+            ]
+          },
+          {
+            "text": "L'article L. 1225-35 du code du travail, visé par 2 amendement(s) de cette mesure, compte 4 version(s) ; celle en vigueur depuis le 2012-12-19 vient de : LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013.",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000026799935",
+              "legifrance:JORFTEXT000026785322",
+              "senat:current/13",
+              "senat:current/18"
+            ]
+          },
+          {
+            "text": "L'article L. 1225-46-2 du code du travail, visé par 2 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2025-12-31 vient de : LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000053271696",
+              "legifrance:JORFTEXT000053226384",
+              "senat:current/13",
+              "senat:current/18"
+            ]
+          },
+          {
+            "text": "L'article L. 1225-46-7 du code du travail, visé par 2 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2025-12-31 vient de : LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000053271706",
+              "legifrance:JORFTEXT000053226384",
+              "senat:current/13",
+              "senat:current/18"
+            ]
+          },
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-16"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-16 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Cet amendement vise à supprimer l'article 2 bis, qui prévoit l'attribution obligatoire de titres-restaurant aux salariés bénéficiant d'un congé en lien avec l'arrivée d'un enfant dans leur foyer. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-16"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Les employeurs doivent continuer à attribuer des titres-restaurant aux salariés pendant les congés de maternité, paternité, adoption et naissance, alors qu'aujourd'hui l'attribution est suspendue. Le coût supplémentaire pour l'employeur devient un gain de pouvoir d'achat pour le salarié en congé.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés en congé de maternité, paternité, adoption ou naissance"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs attribuant des titres-restaurant"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes d'amendements ne contiennent aucun chiffre monétaire, aucun montant de titre-restaurant, aucun nombre de salariés concernés ni aucune durée de congé chiffrée. L'assiette et l'écart ne peuvent être déterminés."
+      }
+    },
+    {
+      "key": "penaliser-fraude-commerces",
+      "theme": "Pénaliser la fraude des commerces",
+      "amendments": [
+        "1"
+      ],
+      "opposes": null,
+      "effects": [
+        "Crée une amende administrative jusqu'à 15 000 € ou le double de la valeur des titres pour les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes, et oblige les émetteurs à suspendre l'acceptation et à signaler les fraudeurs."
+      ],
+      "nafs": [
+        "47.11F",
+        "56.10A",
+        "56.10C",
+        "64.99Z"
+      ],
+      "roles": [
+        "autre:commerces acceptant les titres-restaurant",
+        "emetteurs"
+      ],
+      "sectors": [
+        {
+          "key": "56.10A",
+          "label": "Restaurants traditionnels"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces d'alimentation générale"
+        },
+        {
+          "key": "64.99Z",
+          "label": "Émetteurs de titres-restaurant (services financiers auxiliaires)"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "autre:commerces acceptant les titres-restaurant",
+          "label": "autre:commerces acceptant les titres-restaurant"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "UCI"
+      ],
+      "majority_groups": [
+        "UCI"
+      ],
+      "companies": 343477,
+      "employees_low": 824365,
+      "employees_high": 1540046,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le fait, pour une personne ou un organisme acceptant des titres‑restaurant, de les accepter en contrepartie d'une somme d'argent ou de présenter au remboursement des titres‑restaurant qui n'ont pas servi au paiement de ses propres ventes est passible d'une amende administrative dont le montant ne peut excéder 15 000 euros ou, si ce montant est plus élevé, le double de la valeur libératoire des titres‑restaurant en cause.",
+      "history": {
+        "theme": "Pénaliser la fraude des commerces",
+        "amendments": [
+          "1"
+        ],
+        "effects": [
+          "Crée une amende administrative jusqu'à 15 000 € ou le double de la valeur des titres pour les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes, et oblige les émetteurs à suspendre l'acceptation et à signaler les fraudeurs."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-3 du code du travail",
+          "article L. 561-23 du code monétaire et financier"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "L'article L. 3262-3 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 2 version(s) depuis le 2008-05-01, issues de 1 texte(s) ; la dernière modification vient de : LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires (version en vigueur depuis le 2009-07-23).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000020886898",
+              "legifrance:JORFTEXT000020879475",
+              "senat:current/1"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-3 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "L'article L. 561-23 du code monétaire et financier, visé par 1 amendement(s) de cette mesure, compte 5 version(s) ; celle en vigueur depuis le 2025-06-15 vient de : LOI n° 2025-532 du 13 juin 2025 visant à sortir la France du piège du narcotrafic (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051752361",
+              "legifrance:JORFTEXT000051734851",
+              "senat:current/1"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes s'exposent à une amende administrative pouvant atteindre 15 000 € ou le double de la valeur des titres. Les émetteurs doivent suspendre l'acceptation et signaler les fraudeurs. L'amende est versée à l'État.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "État (perçoit l'amende administrative)"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restaurants traditionnels fraudeurs"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide fraudeurs"
+          },
+          {
+            "naf": "47.11F",
+            "role": null,
+            "label": "Commerces d'alimentation générale fraudeurs"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [
+          {
+            "parameter": "delta",
+            "reason": "Taux de l'amende administrative : valeur hors bornes (2.0–2.0)"
+          }
+        ],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne fournit pas le montant annuel des titres-restaurant fraudés, nécessaire pour calculer l'assiette. Le texte mentionne onze milliards d'euros de titres émis au total, mais pas la part faisant l'objet de fraude."
+      }
+    },
+    {
+      "key": "creer-titre-bonifie",
+      "theme": "Créer le titre-restaurant bonifié",
+      "amendments": [
+        "15"
+      ],
+      "opposes": null,
+      "effects": [
+        "Crée le titre-restaurant bonifié : l'employeur peut accorder un complément au salarié pour l'achat de produits biologiques ou contribuant à la transition agroécologique"
+      ],
+      "nafs": [
+        "47.11",
+        "56.10A",
+        "56.10C",
+        "64.19Z"
+      ],
+      "roles": [
+        "autre:commerces alimentaires et restauration",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "64.19Z",
+          "label": "Autres intermédiation monétaire"
+        },
+        {
+          "key": "47.11",
+          "label": "Commerce de détail en magasin non spécialisé à prédominance alimentaire"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "autre:commerces alimentaires et restauration",
+          "label": "autre:commerces alimentaires et restauration"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 407063,
+      "employees_low": 1292717,
+      "employees_high": 2477043,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La bonification, prise en charge par l'employeur, est utilisée par le salarié pour l'acquisition de produits issus de l'agriculture biologique ou d'autres produits contribuant aux objectifs de santé publique et de transition agroécologique mentionnés au II de l'article L. 1 du code rural et de la pêche maritime.",
+      "history": {
+        "theme": "Créer le titre-restaurant bonifié",
+        "amendments": [
+          "15"
+        ],
+        "effects": [
+          "Crée le titre-restaurant bonifié : l'employeur peut accorder un complément au salarié pour l'achat de produits biologiques ou contribuant à la transition agroécologique"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 1 du code rural et de la pêche maritime",
+          "article L. 124-13 du code de l'éducation",
+          "article L. 3262-1-5 du code de l'éducation",
+          "article L. 3262-1-4 du code du travail"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "L'article L. 124-13 du code de l'éducation, visé par 1 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2014-07-12 vient de : LOI n° 2014-788 du 10 juillet 2014 tendant au développement, à l'encadrement des stages et à l'amélioration du statut des stagiaires (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000029234215",
+              "legifrance:JORFTEXT000029223331",
+              "senat:current/15"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : ECOLOGIC COMING OUT.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:DVS2UMLV"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "ECOLOGIC COMING OUT",
+            "hatvp_id": "894289990",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "DVS2UMLV"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "ECOLOGIC COMING OUT",
+            "hatvp_id": "894289990",
+            "side": "pour",
+            "quote": "mettre en place des incitations économiques comme des chèques verts ou des tickets-restaurants bonifiés",
+            "fiche": "DVS2UMLV",
+            "year": 2025,
+            "on_behalf_of": [
+              "LA MAISON DE LA BIO"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "L'employeur verse volontairement une bonification au salarié sur la valeur libératoire du titre-restaurant lorsque celui-ci est utilisé pour acheter des produits biologiques ou contribuant à la transition agroécologique. La mesure crée seulement la base législative ; les montants et conditions d'application sont renvoyés à un décret.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés et stagiaires bénéficiaires de la bonification"
+          },
+          {
+            "naf": "47.11",
+            "role": null,
+            "label": "Commerce de détail alimentaire acceptant le titre bonifié"
+          },
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle acceptant le titre bonifié"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide acceptant le titre bonifié"
+          },
+          {
+            "naf": "64.19Z",
+            "role": "emetteurs",
+            "label": "Émetteurs de titres-restaurant"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs mettant en place le dispositif bonifié"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun montant de bonification ni aucun taux. Les conditions d'émission, les catégories de produits éligibles et les montants sont renvoyés à un décret. L'assiette et l'écart ne sont pas chiffrés dans l'amendement."
+      }
+    },
+    {
+      "key": "instaurer-double-plafond-journalier",
+      "theme": "Instaurer un double plafond journalier",
+      "amendments": [
+        "19"
+      ],
+      "opposes": "supprimer-modulation-plafond-journalier",
+      "effects": [
+        "Instaure un double plafond journalier d'utilisation des titres-restaurant : plafond maximal limité pour les courses alimentaires non directement consommables, plafond au moins double pour les repas et produits directement consommables, avec obligation technique de respect des plafonds par les émetteurs et les accepteurs."
+      ],
+      "nafs": [
+        "47.11B",
+        "47.11C",
+        "56.10A",
+        "56.10C",
+        "64.19Z"
+      ],
+      "roles": [
+        "autre:restaurateurs et commerces acceptant les titres-restaurant",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "64.19Z",
+          "label": "Autre intermédiation monétaire (émission de titres-restaurant)"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "key": "47.11B",
+          "label": "Supermarchés"
+        },
+        {
+          "key": "47.11C",
+          "label": "Hypermarchés"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "autre:restaurateurs et commerces acceptant les titres-restaurant",
+          "label": "autre:restaurateurs et commerces acceptant les titres-restaurant"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "RDSE"
+      ],
+      "majority_groups": [],
+      "companies": 395426,
+      "employees_low": 879244,
+      "employees_high": 1707466,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Les émetteurs de titres-restaurant et les personnes ou organismes qui les acceptent mettent en œuvre les dispositifs techniques nécessaires au respect des plafonds prévus au présent article.",
+      "history": {
+        "theme": "Instaurer un double plafond journalier",
+        "amendments": [
+          "19"
+        ],
+        "effects": [
+          "Instaure un double plafond journalier d'utilisation des titres-restaurant : plafond maximal limité pour les courses alimentaires non directement consommables, plafond au moins double pour les repas et produits directement consommables, avec obligation technique de respect des plafonds par les émetteurs et les accepteurs."
+        ],
+        "opposes": "supprimer-modulation-plafond-journalier",
+        "articles": [
+          "article 81 du code général des impôts",
+          "article L. 3262-5-2 du code du travail"
+        ],
+        "senate_by_group": {
+          "UCI": {
+            "filed": 2,
+            "adopted": 0,
+            "rejected": 1,
+            "other": 1,
+            "pour": 2,
+            "contre": 0,
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 1,
+            "contre": 0,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2024-2025/160/COM-2",
+            "session": "2024-2025",
+            "text_number": "160",
+            "stage": "commission",
+            "number": "COM-2",
+            "filed": "2024-11-27",
+            "year": 2024,
+            "author": "M. CAMBIER",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-2.html",
+            "cites": [],
+            "measure": "instaurer-double-plafond-journalier",
+            "stance": "pour",
+            "quote": "Le présent amendement vise à inscrire dans la loi le principe d'un plafond quotidien différencié, selon qu'il est utilisé dans le secteur de la restauration / assimilés restaurateurs et dans les grandes et moyennes surfaces"
+          },
+          {
+            "id": "senat:2024-2025/183/1 rect.",
+            "session": "2024-2025",
+            "text_number": "183",
+            "stage": "seance",
+            "number": "1 rect.",
+            "filed": "2025-01-13",
+            "year": 2025,
+            "author": "M. CAMBIER",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "non soutenu",
+            "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_1.html",
+            "cites": [],
+            "measure": "instaurer-double-plafond-journalier",
+            "stance": "pour",
+            "quote": "Le présent amendement vise à inscrire dans la loi le principe d'un plafond quotidien différencié, selon qu'il est utilisé dans le secteur de la restauration / assimilés restaurateurs et dans les grandes et moyennes surfaces"
+          },
+          {
+            "id": "senat:2026-2027/32/COM-12",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-12",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "Mme PUISSAT, rapporteur",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-12.html",
+            "cites": [],
+            "measure": "instaurer-double-plafond-journalier",
+            "stance": "pour",
+            "quote": "L'utilisation des titres-restaurant est limitée à un plafond journalier, majoré pour l'acquittement en tout ou en partie du prix de repas"
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article 81 du code général des impôts, visé par 1 amendement(s) de cette mesure, compte 98 version(s) ; celle en vigueur depuis le 2015-06-06 vient de : Décret n° 2015-608 du 3 juin 2015 portant incorporation au code général des impôts de divers textes modifiant et complétant certaines dispositions de ce code.",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000030700497",
+              "legifrance:JORFTEXT000030673448",
+              "senat:current/19"
+            ]
+          },
+          {
+            "text": "Au Sénat, 3 amendement(s) déposé(s) de 2024 à 2026 allaient en faveur de cette mesure : 1 adopté(s), 1 rejeté(s), 1 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (2), LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/160/COM-2",
+              "senat:2024-2025/183/1 rect.",
+              "senat:2026-2027/32/COM-12"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-12 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), en faveur de la mesure : « L'utilisation des titres-restaurant est limitée à un plafond journalier, majoré pour l'acquittement en tout ou en partie du prix de repas ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-12"
+            ]
+          },
+          {
+            "text": "6 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FLINT FRANCE SAS, IMAGE 7, SWILE, UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR, UNION METIERS & INDUSTRIES HOTELLERIE et 1 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:0V2L6UBH",
+              "hatvp:0V2LXKSH",
+              "hatvp:SVFGPSI3",
+              "hatvp:SVFGO5U3",
+              "hatvp:5HASE8EH",
+              "hatvp:Y3GQN05H"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:W3UNA42V"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2L6UBH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2LXKSH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "SWILE",
+            "hatvp_id": "824012173",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "SVFGPSI3"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+            "hatvp_id": "778212779",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "SVFGO5U3"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "5HASE8EH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "UP",
+            "hatvp_id": "642044366",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "Y3GQN05H"
+            ],
+            "years": [
+              2022
+            ]
+          }
+        ],
+        "lobby_contre": [
+          {
+            "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "W3UNA42V"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+            "hatvp_id": "784855876",
+            "side": "contre",
+            "quote": "s'opposer à différencier les plafonds d'utilisation en fonction des types de commerce",
+            "fiche": "W3UNA42V",
+            "year": 2025,
+            "on_behalf_of": [
+              "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "side": "pour",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant dans le cadre de la réforme du titre",
+            "fiche": "0V2L6UBH",
+            "year": 2025,
+            "on_behalf_of": [
+              "PLUXEE FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "pour",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+            "fiche": "0V2LXKSH",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "pour",
+            "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+            "fiche": "SVFGPSI3",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+            "hatvp_id": "778212779",
+            "side": "pour",
+            "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
+            "fiche": "SVFGO5U3",
+            "year": 2025,
+            "on_behalf_of": [
+              "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "side": "pour",
+            "quote": "Inscrire dans la réforme du titre-restaurant le double plafond",
+            "fiche": "5HASE8EH",
+            "year": 2025,
+            "on_behalf_of": [
+              "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UP",
+            "hatvp_id": "642044366",
+            "side": "pour",
+            "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+            "fiche": "Y3GQN05H",
+            "year": 2022,
+            "on_behalf_of": [
+              "UP (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UP",
+            "hatvp_id": "642044366",
+            "side": "pour",
+            "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+            "fiche": "Y3GQN05H",
+            "year": 2022,
+            "on_behalf_of": [
+              "UP (en propre)"
+            ],
+            "derived_from": "supprimer-modulation-plafond-journalier"
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "La mesure plafonne l'utilisation quotidienne des titres-restaurant à 12,20 € maximum pour les courses alimentaires non directement consommables, contre 25 € actuellement, et impose un plafond au moins double pour les repas. Elle redirige une partie des dépenses de titres-restaurant de la grande distribution vers la restauration.",
+        "winners": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restauration traditionnelle"
+          },
+          {
+            "naf": "56.10C",
+            "role": null,
+            "label": "Restauration de type rapide"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "47.11B",
+            "role": null,
+            "label": "Supermarchés"
+          },
+          {
+            "naf": "47.11C",
+            "role": null,
+            "label": "Hypermarchés"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte fixe les plafonds journaliers (12,20 € et 25 €) mais ne fournit ni le volume annuel total des titres-restaurant ni la part actuellement dépensée en grande distribution, nécessaires pour calculer l'assiette et l'écart."
+      }
+    },
+    {
+      "key": "allonger-duree-validite",
+      "theme": "Allonger la durée de validité",
+      "amendments": [
+        "32",
+        "33"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime la date limite d'utilisation des titres-restaurant, qui deviennent valables sans limitation de durée.",
+        "Allonge à trois ans la durée d'utilisation des titres-restaurant et attribue la contre-valeur des titres périmés au budget des activités sociales et culturelles de l'entreprise"
+      ],
+      "nafs": [
+        "47.11F",
+        "56.10A",
+        "56.10C",
+        "64.19Z",
+        "64.99Z"
+      ],
+      "roles": [
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "64.99Z",
+          "label": "Émetteurs de titres-restaurant"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restaurants traditionnels"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces d'alimentation générale"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "64.19Z",
+          "label": "Autres intermédiations monétaires (émetteurs de titres-restaurant)"
+        },
+        {
+          "key": "56.10C",
+          "label": "Restaurants de type rapide"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "UNT"
+      ],
+      "majority_groups": [],
+      "companies": 349095,
+      "employees_low": 1049085,
+      "employees_high": 2005965,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Les titres‑restaurant sont valables sans limitation de durée.",
+      "history": {
+        "theme": "Allonger la durée de validité",
+        "amendments": [
+          "32",
+          "33"
+        ],
+        "effects": [
+          "Allonge à trois ans la durée d'utilisation des titres-restaurant et attribue la contre-valeur des titres périmés au budget des activités sociales et culturelles de l'entreprise",
+          "Supprime la date limite d'utilisation des titres-restaurant, qui deviennent valables sans limitation de durée."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-5 du code du travail"
+        ],
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2026-2027/32/COM-13",
+            "session": "2026-2027",
+            "text_number": "32",
+            "stage": "commission",
+            "number": "COM-13",
+            "filed": "2026-11-02",
+            "year": 2026,
+            "author": "Mme PUISSAT, rapporteur",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-13.html",
+            "cites": [],
+            "measure": "allonger-duree-validite",
+            "stance": "contre",
+            "quote": "Cet amendement vise à revenir sur l'extension à trois ans de la durée de validité du titre-restaurant, insérée en séance publique à l'Assemblée nationale."
+          }
+        ],
+        "findings": [
+          {
+            "text": "L'article L. 3262-5 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 3 version(s) depuis le 2008-05-01, issues de 2 texte(s) ; la dernière modification vient de : LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires (version en vigueur depuis le 2009-07-23).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902947",
+              "legifrance:JORFTEXT000020879475",
+              "senat:current/32",
+              "senat:current/33"
+            ]
+          },
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-13"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-13 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Cet amendement vise à revenir sur l'extension à trois ans de la durée de validité du titre-restaurant, insérée en séance publique à l'Assemblée nationale. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2026-2027/32/COM-13"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Chaque année, 54,6 millions d'euros de titres-restaurant périmés reviennent aux employeurs. La mesure supprime l'expiration (n°32) ou l'allonge à trois ans avec redirection vers les activités sociales et culturelles (n°33). Les employeurs perdent cette récupération ; les salariés conservent ou récupèrent la valeur.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés utilisant les titres-restaurant"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs distribuant les titres-restaurant"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [
+          {
+            "name": "Valeur des titres-restaurant périmés par an",
+            "low": 54600000.0,
+            "high": 54600000.0,
+            "unit": "€/an",
+            "quote": "Cela représentait 54,6 millions d'euros en 2024, soit 0,5 % de la valeur des titres émis",
+            "amendment": "32",
+            "kind": "base"
+          }
+        ],
+        "dropped": [
+          {
+            "parameter": "delta",
+            "reason": "Part de la valeur périmée redirigée vers les salariés : le chiffre 1 ne se retrouve pas dans la citation"
+          }
+        ],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : écart absent des amendements ou citation non vérifiée."
+      }
+    },
+    {
+      "key": "creer-pole-public-emission",
+      "theme": "Créer un pôle public d'émission",
+      "amendments": [
+        "17",
+        "27",
+        "37"
+      ],
+      "opposes": null,
+      "effects": [
+        "Demande un rapport sur l'opportunité de confier le monopole de l'émission et du remboursement des titres-restaurants à un nouvel établissement public, remplaçant les opérateurs privés actuels",
+        "Crée un pôle public d'émission de titres-restaurant via l'Agence nationale pour les chèques-vacances, avec une commission plafonnée à 2,5 % et les excédents réinvestis dans l'accès à une alimentation durable",
+        "Oblige les partenaires sociaux à ouvrir avant juin 2027 une négociation sur l'avenir du titre-restaurant, incluant la création d'un pôle public d'émission, après concertation de tous les acteurs du secteur."
+      ],
+      "nafs": [
+        "47.11F",
+        "56.10A",
+        "64.19Z",
+        "64.99Z",
+        "84.11Z"
+      ],
+      "roles": [
+        "autre:restaurateurs et commerçants",
+        "emetteurs",
+        "employeurs",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "64.19Z",
+          "label": "Autres intermédiations monétaires"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "64.99Z",
+          "label": "Autres activités auxiliaires de services financiers, hors assurance et caisses de retraite, n.c.a."
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "56.10A",
+          "label": "Restaurants traditionnels"
+        },
+        {
+          "key": "47.11F",
+          "label": "Commerces d'alimentation générale"
+        },
+        {
+          "key": "84.11Z",
+          "label": "Administration publique générale (ANCV)"
+        },
+        {
+          "key": "autre:restaurateurs et commerçants",
+          "label": "autre:restaurateurs et commerçants"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "GEST"
+      ],
+      "majority_groups": [],
+      "companies": 215800,
+      "employees_low": 2589934,
+      "employees_high": 5145422,
+      "approx": false,
+      "not_counted": [],
+      "quote": "le Gouvernement remet au Parlement un rapport étudiant l'opportunité de confier le monopole de l'émission et du remboursement des titres‑restaurants à un nouvel établissement public à caractère industriel et commercial",
+      "history": {
+        "theme": "Créer un pôle public d'émission",
+        "amendments": [
+          "17",
+          "27",
+          "37"
+        ],
+        "effects": [
+          "Crée un pôle public d'émission de titres-restaurant via l'Agence nationale pour les chèques-vacances, avec une commission plafonnée à 2,5 % et les excédents réinvestis dans l'accès à une alimentation durable",
+          "Demande un rapport sur l'opportunité de confier le monopole de l'émission et du remboursement des titres-restaurants à un nouvel établissement public, remplaçant les opérateurs privés actuels",
+          "Oblige les partenaires sociaux à ouvrir avant juin 2027 une négociation sur l'avenir du titre-restaurant, incluant la création d'un pôle public d'émission, après concertation de tous les acteurs du secteur."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 411-13 du code du tourisme",
+          "article L. 3262-1 du code du travail"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "L'article L. 3262-1 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902943",
+              "legifrance:JORFTEXT000035607348",
+              "senat:current/27"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : PLUXEE FRANCE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:POHZDAG3"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [
+          {
+            "name": "PLUXEE FRANCE",
+            "hatvp_id": "340393065",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "POHZDAG3"
+            ],
+            "years": [
+              2019
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "PLUXEE FRANCE",
+            "hatvp_id": "340393065",
+            "side": "contre",
+            "quote": "Obtenir fin monopole ANCV (chèque vacances)",
+            "fiche": "POHZDAG3",
+            "year": 2019,
+            "on_behalf_of": [
+              "SODEXO PASS FRANCE (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "La mesure crée un pôle public d'émission de titres-restaurant via l'ANCV, plafonnant les commissions à 2,5 % de la valeur des titres contre environ 4 % actuellement prélevés par les opérateurs privés. Les excédents de gestion sont affectés à des actions d'accès à une alimentation durable. Les émetteurs privés perdent leur activité.",
+        "winners": [
+          {
+            "naf": "56.10A",
+            "role": null,
+            "label": "Restaurants traditionnels"
+          },
+          {
+            "naf": "47.11F",
+            "role": null,
+            "label": "Commerces d'alimentation générale"
+          },
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs acheteurs de titres"
+          },
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "ANCV – nouvel émetteur public"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "64.19Z",
+            "role": "emetteurs",
+            "label": "Émetteurs privés de titres-restaurant"
+          },
+          {
+            "naf": "64.99Z",
+            "role": "emetteurs",
+            "label": "Émetteurs privés de titres-restaurant"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [
+          {
+            "name": "Réduction de commission sur les titres-restaurant (de environ 4 % à 2,5 %)",
+            "low": 0.015,
+            "high": 0.015,
+            "unit": "part",
+            "quote": "prélèvent environ 4 % aux restaurateurs et commerçants | ne peuvent excéder 2,5 % de la valeur des titres",
+            "amendment": "27",
+            "kind": "delta"
+          }
+        ],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € absent des amendements ou citation non vérifiée. La valeur totale annuelle des titres-restaurant émis (assiette) n'est pas mentionnée dans les amendements, ce qui empêche de chiffrer le transfert."
+      }
+    },
+    {
+      "key": "reporter-dematerialisation",
+      "theme": "Reporter la dématérialisation",
+      "amendments": [
+        "34",
+        "35",
+        "36"
+      ],
+      "opposes": null,
+      "effects": [
+        "Reporte l'obligation de dématérialisation des titres-restaurant au 1er janvier 2031, autorisant le maintien du support papier pour les titres émis en 2028, 2029 et 2030.",
+        "Repousse l'obligation de dématérialisation des titres-restaurant au 1er janvier 2030, autorisant le papier pour les millésimes 2028 et 2029.",
+        "Reporte au 1er janvier 2029 l'obligation de dématérialisation des titres-restaurant et autorise l'émission de titres papier pour le millésime 2028"
+      ],
+      "nafs": [
+        "18.12Z",
+        "18.14Z",
+        "64.19B",
+        "64.19Z"
+      ],
+      "roles": [
+        "autre:imprimeurs de titres",
+        "autre:imprimeurs de titres papier",
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "64.19B",
+          "label": "Autre intermédiation monétaire"
+        },
+        {
+          "key": "18.12Z",
+          "label": "Autre imprimerie"
+        },
+        {
+          "key": "emetteurs",
+          "label": "emetteurs"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "64.19Z",
+          "label": "Autre intermédiation monétaire (émetteurs de titres-restaurant)"
+        },
+        {
+          "key": "18.14Z",
+          "label": "Impression et services connexes d'impression (filière d'impression des titres papier)"
+        },
+        {
+          "key": "autre:imprimeurs de titres papier",
+          "label": "autre:imprimeurs de titres papier"
+        },
+        {
+          "key": "autre:imprimeurs de titres",
+          "label": "autre:imprimeurs de titres"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "UNT"
+      ],
+      "majority_groups": [],
+      "companies": 15221,
+      "employees_low": 246858,
+      "employees_high": 509919,
+      "approx": false,
+      "not_counted": [
+        "Autre intermédiation monétaire"
+      ],
+      "quote": "Les titres‑restaurant émis au titre des années 2028, 2029 et 2030 peuvent être émis sur support papier.",
+      "history": {
+        "theme": "Reporter la dématérialisation",
+        "amendments": [
+          "34",
+          "35",
+          "36"
+        ],
+        "effects": [
+          "Reporte au 1er janvier 2029 l'obligation de dématérialisation des titres-restaurant et autorise l'émission de titres papier pour le millésime 2028",
+          "Reporte l'obligation de dématérialisation des titres-restaurant au 1er janvier 2031, autorisant le maintien du support papier pour les titres émis en 2028, 2029 et 2030.",
+          "Repousse l'obligation de dématérialisation des titres-restaurant au 1er janvier 2030, autorisant le papier pour les millésimes 2028 et 2029."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-1 du code du travail",
+          "article L. 3262-1-3 du code du travail"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "L'article L. 3262-1 du code du travail, visé par 3 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000006902943",
+              "legifrance:JORFTEXT000035607348",
+              "senat:current/34",
+              "senat:current/35",
+              "senat:current/36"
+            ]
+          },
+          {
+            "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000051018968",
+              "legifrance:JORFTEXT000046186723",
+              "legifrance:JORFTEXT000048668803",
+              "legifrance:JORFTEXT000051018078"
+            ]
+          },
+          {
+            "text": "11 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : IMAGE 7, EDENRED FRANCE, EDENRED, COMMSTRAT, GLADY et 6 autres.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:0V2LXKSH",
+              "hatvp:5HABWNYV",
+              "hatvp:EHLFUZ9H",
+              "hatvp:LV1D15E3",
+              "hatvp:O3WX0CTH",
+              "hatvp:QEVJ1A7H",
+              "hatvp:0V2P11QV",
+              "hatvp:2VRN1ZTH",
+              "hatvp:O38S0423",
+              "hatvp:W3U97L5V",
+              "hatvp:YVNTG9MV",
+              "hatvp:2VRQPFOH",
+              "hatvp:DHMQSMIV",
+              "hatvp:Q36A8TLV",
+              "hatvp:YVNFMQQ3",
+              "hatvp:0V2PF5NV",
+              "hatvp:0VES60NH",
+              "hatvp:GVT2YQBH",
+              "hatvp:O3W8D27V",
+              "hatvp:UHQ18Z2V",
+              "hatvp:QV7T2G5H",
+              "hatvp:ZV92BZIH",
+              "hatvp:BHOWS473",
+              "hatvp:SVFGPSI3",
+              "hatvp:0VEST8UH",
+              "hatvp:OHZABKO3",
+              "hatvp:JA3YZR6H",
+              "hatvp:W3UWGFQV"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [
+          {
+            "name": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2LXKSH",
+              "5HABWNYV",
+              "EHLFUZ9H",
+              "LV1D15E3",
+              "O3WX0CTH",
+              "QEVJ1A7H"
+            ],
+            "years": [
+              2019,
+              2020,
+              2021,
+              2023,
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "0V2P11QV",
+              "2VRN1ZTH",
+              "O38S0423",
+              "W3U97L5V",
+              "YVNTG9MV"
+            ],
+            "years": [
+              2020,
+              2022,
+              2023,
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "EDENRED",
+            "hatvp_id": "493322978",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "2VRQPFOH",
+              "DHMQSMIV",
+              "Q36A8TLV",
+              "YVNFMQQ3"
+            ],
+            "years": [
+              2020,
+              2021,
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0V2PF5NV",
+              "0VES60NH",
+              "GVT2YQBH"
+            ],
+            "years": [
+              2022,
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "GLADY",
+            "hatvp_id": "799025234",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "O3W8D27V",
+              "UHQ18Z2V"
+            ],
+            "years": [
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "PLUXEE FRANCE",
+            "hatvp_id": "340393065",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "QV7T2G5H",
+              "ZV92BZIH"
+            ],
+            "years": [
+              2023,
+              2024
+            ]
+          },
+          {
+            "name": "SWILE",
+            "hatvp_id": "824012173",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "BHOWS473",
+              "SVFGPSI3"
+            ],
+            "years": [
+              2024,
+              2025
+            ]
+          },
+          {
+            "name": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "0VEST8UH"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "GEN-G",
+            "hatvp_id": "750513376",
+            "category": "Société commerciale",
+            "consultancy": false,
+            "fiches": [
+              "OHZABKO3"
+            ],
+            "years": [
+              2022
+            ]
+          },
+          {
+            "name": "RIVINGTON",
+            "hatvp_id": "533445318",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "JA3YZR6H"
+            ],
+            "years": [
+              2019
+            ]
+          },
+          {
+            "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "W3UWGFQV"
+            ],
+            "years": [
+              2023
+            ]
+          }
+        ],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "side": "contre",
+            "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif",
+            "fiche": "2VRN1ZTH",
+            "year": 2025,
+            "on_behalf_of": [
+              "EDENRED FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FLINT FRANCE SAS",
+            "hatvp_id": "918136367",
+            "side": "contre",
+            "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier dans le cadre de la réforme du titre",
+            "fiche": "0VEST8UH",
+            "year": 2025,
+            "on_behalf_of": [
+              "PLUXEE FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier.",
+            "fiche": "0V2LXKSH",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "contre",
+            "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier.",
+            "fiche": "SVFGPSI3",
+            "year": 2025,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "side": "contre",
+            "quote": "Demander l'accélération de la dématérialisation des titres restaurants",
+            "fiche": "0VES60NH",
+            "year": 2024,
+            "on_behalf_of": [
+              "EDENRED FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED",
+            "hatvp_id": "493322978",
+            "side": "contre",
+            "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+            "fiche": "Q36A8TLV",
+            "year": 2024,
+            "on_behalf_of": [
+              "EDENRED (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "side": "contre",
+            "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif",
+            "fiche": "O38S0423",
+            "year": 2024,
+            "on_behalf_of": [
+              "EDENRED FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GLADY",
+            "hatvp_id": "799025234",
+            "side": "contre",
+            "quote": "Soutenir la fin du titre-restaurant papier",
+            "fiche": "UHQ18Z2V",
+            "year": 2024,
+            "on_behalf_of": [
+              "GLADY (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Généraliser la dématérialisation des titres restaurants.",
+            "fiche": "5HABWNYV",
+            "year": 2024,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "PLUXEE FRANCE",
+            "hatvp_id": "340393065",
+            "side": "contre",
+            "quote": "Soutenir la fin du titre-restaurant papier",
+            "fiche": "QV7T2G5H",
+            "year": 2024,
+            "on_behalf_of": [
+              "PLUXEE FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SWILE",
+            "hatvp_id": "824012173",
+            "side": "contre",
+            "quote": "Généraliser la dématérialisation des titres-restaurant",
+            "fiche": "BHOWS473",
+            "year": 2024,
+            "on_behalf_of": [
+              "SWILE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "side": "contre",
+            "quote": "Demander l'accélération de la dématérialisation des titres restaurants",
+            "fiche": "0V2PF5NV",
+            "year": 2023,
+            "on_behalf_of": [
+              "EDENRED FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED",
+            "hatvp_id": "493322978",
+            "side": "contre",
+            "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+            "fiche": "YVNFMQQ3",
+            "year": 2023,
+            "on_behalf_of": [
+              "EDENRED (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "side": "contre",
+            "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+            "fiche": "0V2P11QV",
+            "year": 2023,
+            "on_behalf_of": [
+              "EDENRED FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GLADY",
+            "hatvp_id": "799025234",
+            "side": "contre",
+            "quote": "Soutenir la fin du titre-restaurant papier",
+            "fiche": "O3W8D27V",
+            "year": 2023,
+            "on_behalf_of": [
+              "GLADY (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Demander la mise en oeuvre de la dématérialisation généralisée des titres restaurants.",
+            "fiche": "LV1D15E3",
+            "year": 2023,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "PLUXEE FRANCE",
+            "hatvp_id": "340393065",
+            "side": "contre",
+            "quote": "Soutenir la fin du titre-restaurant papier",
+            "fiche": "ZV92BZIH",
+            "year": 2023,
+            "on_behalf_of": [
+              "PLUXEE FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+            "hatvp_id": "784357857",
+            "side": "contre",
+            "quote": "ACCOMPAGNER LE TITRE RESTAURANT 100 % DEMATERIALISE, NOTAMMENT L'INSTRUCTION ET LA DELIVRANCE DES AGREMENTS AUX PROFESSIONNELS DE LA RESTAURATION",
+            "fiche": "W3UWGFQV",
+            "year": 2023,
+            "on_behalf_of": [
+              "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "COMMSTRAT",
+            "hatvp_id": "H457716271",
+            "side": "contre",
+            "quote": "Acter la dématérialisation complète des titres restaurants pour accélérer la transition écologique du dispositif",
+            "fiche": "GVT2YQBH",
+            "year": 2022,
+            "on_behalf_of": [
+              "EDENRED FRANCE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "side": "contre",
+            "quote": "Acter la dématérialisation complète des titres-restaurants pour accélérer la transition écologique du dispositif",
+            "fiche": "YVNTG9MV",
+            "year": 2022,
+            "on_behalf_of": [
+              "EDENRED FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "GEN-G",
+            "hatvp_id": "750513376",
+            "side": "contre",
+            "quote": "Obtenir une modernisation et une refonte de la loi encadrant les titres restaurants pour faire passer ce marché à l'ère du digital.",
+            "fiche": "OHZABKO3",
+            "year": 2022,
+            "on_behalf_of": [
+              "OPEN"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED",
+            "hatvp_id": "493322978",
+            "side": "contre",
+            "quote": "Encourager la digitalisation des titres restaurants et la définition de modalités réglementaires pour accélérer la transition vers du 100% digital",
+            "fiche": "DHMQSMIV",
+            "year": 2021,
+            "on_behalf_of": [
+              "EDENRED (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Promouvoir la dématérialisation des titres restaurants",
+            "fiche": "O3WX0CTH",
+            "year": 2021,
+            "on_behalf_of": [
+              "SWILE"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED",
+            "hatvp_id": "493322978",
+            "side": "contre",
+            "quote": "encourager la digitalisation des titres restaurants",
+            "fiche": "2VRQPFOH",
+            "year": 2020,
+            "on_behalf_of": [
+              "EDENRED (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "EDENRED FRANCE",
+            "hatvp_id": "393365135",
+            "side": "contre",
+            "quote": "Titre-restaurant : basculer intégralement à la dématérialisation",
+            "fiche": "W3U97L5V",
+            "year": 2020,
+            "on_behalf_of": [
+              "EDENRED FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Inscrire dans la loi le principe de dématérialisation à 100 % des titres restaurants.",
+            "fiche": "EHLFUZ9H",
+            "year": 2020,
+            "on_behalf_of": [
+              "LUNCHR"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "INSCRIRE DANS LA LOI le principe de DEMATERIALISATION à 100 % DES TITRES RESTAURANTS",
+            "fiche": "QEVJ1A7H",
+            "year": 2019,
+            "on_behalf_of": [
+              "LUNCHR"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "RIVINGTON",
+            "hatvp_id": "533445318",
+            "side": "contre",
+            "quote": "Transformer intégralement le titre-restaurant en version dématérialisé",
+            "fiche": "JA3YZR6H",
+            "year": 2019,
+            "on_behalf_of": [
+              "EDENRED FRANCE"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "Les amendements reportent l'obligation de dématérialisation des titres-restaurant (au 1er janvier 2029, 2030 ou 2031 selon l'amendement), autorisant le maintien du support papier. Cela prolonge l'activité de la filière d'impression papier et repousse les coûts de dématérialisation pour les petites entreprises.",
+        "winners": [
+          {
+            "naf": "18.12Z",
+            "role": null,
+            "label": "Filière d'impression de titres papier"
+          },
+          {
+            "naf": "18.14Z",
+            "role": null,
+            "label": "Filière d'impression de titres papier"
+          },
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Petites entreprises employeuses"
+          },
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés peu à l'aise avec le numérique"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "64.19B",
+            "role": "emetteurs",
+            "label": "Émetteurs de titres-restaurant (voie dématérialisée)"
+          },
+          {
+            "naf": "64.19Z",
+            "role": "emetteurs",
+            "label": "Émetteurs de titres-restaurant (voie dématérialisée)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les textes ne contiennent aucun montant en euros pour l'assiette (valeur des titres émis ou chiffre d'affaires de la filière) ni aucun écart de coût chiffré entre support papier et support dématérialisé. Le seul chiffre présent, « 80 % des titres en 2024 », indique le taux de dématérialisation déjà atteint, ce qui ne permet pas de calculer un transfert financier."
+      }
+    },
+    {
+      "key": "imposer-negociation-syndicats",
+      "theme": "Imposer la négociation avec syndicats",
+      "amendments": [
+        "11"
+      ],
+      "opposes": null,
+      "effects": [
+        "Oblige l'employeur à négocier avec les syndicats avant toute mise en place, suppression ou modification du financement des titres-restaurant, et à consulter le CSE à défaut de délégué syndical."
+      ],
+      "nafs": [],
+      "roles": [
+        "autre:CSE",
+        "autre:representants-syndicaux",
+        "employeurs"
+      ],
+      "sectors": [
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "autre:representants-syndicaux",
+          "label": "autre:representants-syndicaux"
+        },
+        {
+          "key": "autre:CSE",
+          "label": "autre:CSE"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "CRCE-K"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Dans les entreprises pourvues d'au moins un délégué syndical, l'employeur engage, préalablement à la mise en place des titres‑restaurant, à leur suppression ou à toute modification de sa participation à leur financement, une négociation avec les organisations syndicales de salariés représentatives dans l'entreprise.",
+      "history": {
+        "theme": "Imposer la négociation avec syndicats",
+        "amendments": [
+          "11"
+        ],
+        "effects": [
+          "Oblige l'employeur à négocier avec les syndicats avant toute mise en place, suppression ou modification du financement des titres-restaurant, et à consulter le CSE à défaut de délégué syndical."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 3262-1-4 du code du travail"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "L'amendement impose aux employeurs disposant d'au moins un délégué syndical de négocier avec les organisations syndicales avant toute mise en place, suppression ou modification du financement des titres-restaurant. À défaut de délégué syndical, le CSE doit être informé et consulté. Il s'agit d'une obligation procédurale, sans transfert monétaire direct.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Salariés via leurs représentants syndicaux et le CSE"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "employeurs",
+            "label": "Employeurs pourvus d'au moins un délégué syndical"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte impose une obligation de négociation procédurale mais ne fixe aucun montant, taux ou part de financement. Aucune assiette ni aucun écart chiffré ne figure dans l'amendement."
+      }
+    }
+  ]
+}

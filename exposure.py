@@ -36,6 +36,8 @@ DEPARTEMENTS = ([f"{i:02d}" for i in range(1, 20)] + ["2A", "2B"]
                 + ["971", "972", "973", "974", "976"])
 
 CACHE = Path("data/raw/counts.json")  # shared across texts
+# NAF section O (84.xx) = administrations publiques, pas des entreprises : jamais comptées.
+PUBLIC_SECTION = "84."
 NAF_RE = re.compile(r"^\d{2}\.\d{1,2}[A-Z]?$")
 
 
@@ -132,6 +134,9 @@ def main(session, n):
     codes = valid_codes()
     by_naf, by_sub = {}, {}
     for naf in nafs:
+        if naf.startswith(PUBLIC_SECTION):
+            print(f"{naf}: administration publique (section O), pas comptée comme entreprise")
+            continue
         subs = expand(naf, codes) if NAF_RE.match(naf) else []
         if not subs:
             print(f"{naf}: code NAF non reconnu, non compté")
