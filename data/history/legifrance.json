@@ -1,0 +1,2265 @@
+{
+ "source": "Légifrance, API PISTE lf-engine-app (routes /search, /consult/getArticle, /consult/jorf)",
+ "generated": "2026-11-14",
+ "scope": "Code du travail, chapitre « Titres-restaurant » : L. 3262-1 à L. 3262-7 et R. 3262-1 à R. 3262-46 (aucun autre L. 3262-x ou R. 3262-x trouvé), plus les articles de loi non codifiés qui dérogent à ces articles.",
+ "method": "Toutes les versions de chaque article ; le texte modificateur d'une version est son lien « cible » publié le plus récemment avant le début de la version. Le résumé de chaque texte est rédigé à partir du diff mot à mot entre versions ; les mots cités dans « evidence » sont vérifiés dans ce diff.",
+ "articles": {
+  "L3262-1": [
+   {
+    "version_id": "LEGIARTI000006902943",
+    "version_start": "2008-05-01",
+    "version_end": "2009-07-23",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902943",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000020886893",
+    "version_start": "2009-07-23",
+    "version_end": "2010-07-29",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886893",
+    "modified_by": {
+     "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+     "id": "JORFTEXT000020879475",
+     "nor": "SASX0822640L",
+     "date": "2009-07-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+     "article": "art. 113 (V)",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000022657455",
+    "version_start": "2010-07-29",
+    "version_end": "2018-01-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000022657455",
+    "modified_by": {
+     "title": "LOI n° 2010-874 du 27 juillet 2010 de modernisation de l'agriculture et de la pêche (1)",
+     "id": "JORFTEXT000022521587",
+     "nor": "AGRS0928330L",
+     "date": "2010-07-27",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022521587",
+     "article": "art. 2",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000035652827",
+    "version_start": "2018-01-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035652827",
+    "modified_by": {
+     "title": "Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales",
+     "id": "JORFTEXT000035607348",
+     "nor": "MTRT1724789R",
+     "date": "2017-09-22",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035607348",
+     "article": "art. 4",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "L3262-2": [
+   {
+    "version_id": "LEGIARTI000006902944",
+    "version_start": "2008-05-01",
+    "version_end": "2020-01-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902944",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000038610160",
+    "version_start": "2020-01-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038610160",
+    "modified_by": {
+     "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+     "id": "JORFTEXT000038496102",
+     "nor": "ECOT1810669L",
+     "date": "2019-05-22",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102",
+     "article": "art. 11 (V)",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "L3262-3": [
+   {
+    "version_id": "LEGIARTI000006902945",
+    "version_start": "2008-05-01",
+    "version_end": "2009-07-23",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902945",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000020886898",
+    "version_start": "2009-07-23",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886898",
+    "modified_by": {
+     "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+     "id": "JORFTEXT000020879475",
+     "nor": "SASX0822640L",
+     "date": "2009-07-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+     "article": "art. 113 (V)",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "L3262-4": [
+   {
+    "version_id": "LEGIARTI000006902946",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902946",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   }
+  ],
+  "L3262-5": [
+   {
+    "version_id": "LEGIARTI000006902947",
+    "version_start": "2008-05-01",
+    "version_end": "2008-05-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902947",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000018764792",
+    "version_start": "2008-05-01",
+    "version_end": "2009-07-23",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018764792",
+    "modified_by": {
+     "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+     "id": "JORFTEXT000017942034",
+     "nor": "MTSX0700051L",
+     "date": "2008-01-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034",
+     "article": "art. 3",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000020886895",
+    "version_start": "2009-07-23",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886895",
+    "modified_by": {
+     "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+     "id": "JORFTEXT000020879475",
+     "nor": "SASX0822640L",
+     "date": "2009-07-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+     "article": "art. 113 (V)",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "L3262-6": [
+   {
+    "version_id": "LEGIARTI000006902950",
+    "version_start": "2008-05-01",
+    "version_end": "2008-05-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902950",
+    "modified_by": {
+     "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+     "id": "JORFTEXT000000465978",
+     "nor": "SOCX0700017R",
+     "date": "2007-03-12",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+     "article": null,
+     "link_type": "CODIFICATION"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000018765374",
+    "version_start": "2008-05-01",
+    "version_end": "2009-01-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018765374",
+    "modified_by": {
+     "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+     "id": "JORFTEXT000017942034",
+     "nor": "MTSX0700051L",
+     "date": "2008-01-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034",
+     "article": "art. 3",
+     "link_type": "TRANSFERE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000020052276",
+    "version_start": "2009-01-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020052276",
+    "modified_by": {
+     "title": "LOI n° 2008-1443 du 30 décembre 2008 de finances rectificative pour 2008 (1)",
+     "id": "JORFTEXT000020014790",
+     "nor": "BCFX0826279L",
+     "date": "2008-12-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020014790",
+     "article": "art. 61",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "L3262-7": [
+   {
+    "version_id": "LEGIARTI000018765380",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018765380",
+    "modified_by": {
+     "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+     "id": "JORFTEXT000017942034",
+     "nor": "MTSX0700051L",
+     "date": "2008-01-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034",
+     "article": "art. 3",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-1": [
+   {
+    "version_id": "LEGIARTI000018533530",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533530",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926395",
+    "version_start": "2010-03-05",
+    "version_end": "2014-04-02",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926395",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000028699405",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028699405",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-2": [
+   {
+    "version_id": "LEGIARTI000018533528",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533528",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926392",
+    "version_start": "2010-03-05",
+    "version_end": "2014-04-02",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926392",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000028699411",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028699411",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 3",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-3": [
+   {
+    "version_id": "LEGIARTI000018533526",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533526",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-4": [
+   {
+    "version_id": "LEGIARTI000018533522",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533522",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926390",
+    "version_start": "2010-03-05",
+    "version_end": "2010-12-03",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926390",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000023155179",
+    "version_start": "2010-12-03",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023155179",
+    "modified_by": {
+     "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+     "id": "JORFTEXT000023152756",
+     "nor": "EFIC1025214D",
+     "date": "2010-11-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-5": [
+   {
+    "version_id": "LEGIARTI000018533520",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533520",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926388",
+    "version_start": "2010-03-05",
+    "version_end": "2014-04-02",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926388",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000028699414",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028699414",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 4",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-6": [
+   {
+    "version_id": "LEGIARTI000018533518",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533518",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-7": [
+   {
+    "version_id": "LEGIARTI000018533516",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533516",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-8": [
+   {
+    "version_id": "LEGIARTI000018533514",
+    "version_start": "2008-05-01",
+    "version_end": "2014-04-02",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533514",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000028699416",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028699416",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 5",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-9": [
+   {
+    "version_id": "LEGIARTI000018533512",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533512",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-10": [
+   {
+    "version_id": "LEGIARTI000018533510",
+    "version_start": "2008-05-01",
+    "version_end": "2014-04-02",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533510",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000028699418",
+    "version_start": "2014-04-02",
+    "version_end": "2022-10-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028699418",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 6",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000046346263",
+    "version_start": "2022-10-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046346263",
+    "modified_by": {
+     "title": "Décret n° 2022-1266 du 29 septembre 2022 relevant le plafond d'utilisation des titres-restaurant",
+     "id": "JORFTEXT000046343485",
+     "nor": "ECOC2224802D",
+     "date": "2022-09-29",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046343485",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-11": [
+   {
+    "version_id": "LEGIARTI000018533508",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533508",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-12": [
+   {
+    "version_id": "LEGIARTI000018533504",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533504",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-13": [
+   {
+    "version_id": "LEGIARTI000018533502",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533502",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-14": [
+   {
+    "version_id": "LEGIARTI000018533500",
+    "version_start": "2008-05-01",
+    "version_end": "2018-01-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533500",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000036483134",
+    "version_start": "2018-01-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036483134",
+    "modified_by": {
+     "title": "Décret n° 2017-1819 du 29 décembre 2017 relatif au comité social et économique",
+     "id": "JORFTEXT000036336033",
+     "nor": "MTRT1732438D",
+     "date": "2017-12-29",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036336033",
+     "article": "art. 3",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-15": [
+   {
+    "version_id": "LEGIARTI000018533498",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533498",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926385",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926385",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-16": [
+   {
+    "version_id": "LEGIARTI000018533492",
+    "version_start": "2008-05-01",
+    "version_end": "2014-05-30",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533492",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000029007676",
+    "version_start": "2014-05-30",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029007676",
+    "modified_by": {
+     "title": "Décret n° 2014-551 du 27 mai 2014 portant adaptation de dispositions pour faire suite à la fusion de la direction générale des impôts et de la direction générale de la comptabilité publique",
+     "id": "JORFTEXT000029001649",
+     "nor": "FCPE1228065D",
+     "date": "2014-05-27",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029001649",
+     "article": "art. 29",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-17": [
+   {
+    "version_id": "LEGIARTI000018533490",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533490",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926383",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926383",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-18": [
+   {
+    "version_id": "LEGIARTI000018533488",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533488",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-19": [
+   {
+    "version_id": "LEGIARTI000018533486",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533486",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926379",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926379",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-20": [
+   {
+    "version_id": "LEGIARTI000018533484",
+    "version_start": "2008-05-01",
+    "version_end": "2020-01-01",
+    "etat": "ABROGE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533484",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": null,
+    "version_start": "2020-01-01",
+    "version_end": null,
+    "etat": "ABROGE",
+    "url": null,
+    "modified_by": {
+     "title": "Décret n° 2019-1586 du 31 décembre 2019 relatif aux seuils d'effectif",
+     "id": "JORFTEXT000039727052",
+     "nor": "ECOI1919172D",
+     "date": "2019-12-31",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000039727052",
+     "article": "art. 2",
+     "link_type": "ABROGE"
+    }
+   }
+  ],
+  "R3262-21": [
+   {
+    "version_id": "LEGIARTI000018533482",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533482",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-22": [
+   {
+    "version_id": "LEGIARTI000018533480",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533480",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-23": [
+   {
+    "version_id": "LEGIARTI000018533478",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533478",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-24": [
+   {
+    "version_id": "LEGIARTI000018533476",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533476",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-25": [
+   {
+    "version_id": "LEGIARTI000018533474",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533474",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926377",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926377",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-26": [
+   {
+    "version_id": "LEGIARTI000018533470",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533470",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926372",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926372",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-27": [
+   {
+    "version_id": "LEGIARTI000018533468",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533468",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926369",
+    "version_start": "2010-03-05",
+    "version_end": "2010-12-03",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926369",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000023155176",
+    "version_start": "2010-12-03",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023155176",
+    "modified_by": {
+     "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+     "id": "JORFTEXT000023152756",
+     "nor": "EFIC1025214D",
+     "date": "2010-11-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-28": [
+   {
+    "version_id": "LEGIARTI000018533466",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533466",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-29": [
+   {
+    "version_id": "LEGIARTI000018533464",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533464",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-30": [
+   {
+    "version_id": "LEGIARTI000018533462",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533462",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-31": [
+   {
+    "version_id": "LEGIARTI000018533460",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533460",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-32": [
+   {
+    "version_id": "LEGIARTI000018533458",
+    "version_start": "2008-05-01",
+    "version_end": "2010-12-03",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533458",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000023155171",
+    "version_start": "2010-12-03",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023155171",
+    "modified_by": {
+     "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+     "id": "JORFTEXT000023152756",
+     "nor": "EFIC1025214D",
+     "date": "2010-11-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-33": [
+   {
+    "version_id": "LEGIARTI000018533454",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533454",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-34": [
+   {
+    "version_id": "LEGIARTI000018533452",
+    "version_start": "2008-05-01",
+    "version_end": "2018-01-01",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533452",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000036483130",
+    "version_start": "2018-01-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000036483130",
+    "modified_by": {
+     "title": "Décret n° 2017-1819 du 29 décembre 2017 relatif au comité social et économique",
+     "id": "JORFTEXT000036336033",
+     "nor": "MTRT1732438D",
+     "date": "2017-12-29",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036336033",
+     "article": "art. 3",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-35": [
+   {
+    "version_id": "LEGIARTI000018533450",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533450",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-36": [
+   {
+    "version_id": "LEGIARTI000018533444",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533444",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926366",
+    "version_start": "2010-03-05",
+    "version_end": "2010-12-03",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926366",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000023155181",
+    "version_start": "2010-12-03",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023155181",
+    "modified_by": {
+     "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+     "id": "JORFTEXT000023152756",
+     "nor": "EFIC1025214D",
+     "date": "2010-11-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-37": [
+   {
+    "version_id": "LEGIARTI000018533442",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533442",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-38": [
+   {
+    "version_id": "LEGIARTI000018533440",
+    "version_start": "2008-05-01",
+    "version_end": "2010-03-05",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533440",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000021926364",
+    "version_start": "2010-03-05",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000021926364",
+    "modified_by": {
+     "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+     "id": "JORFTEXT000021902986",
+     "nor": "SASP0931209D",
+     "date": "2010-03-03",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-39": [
+   {
+    "version_id": "LEGIARTI000018533438",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533438",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-40": [
+   {
+    "version_id": "LEGIARTI000018533434",
+    "version_start": "2008-05-01",
+    "version_end": "2010-12-03",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533434",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000023155185",
+    "version_start": "2010-12-03",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000023155185",
+    "modified_by": {
+     "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+     "id": "JORFTEXT000023152756",
+     "nor": "EFIC1025214D",
+     "date": "2010-11-30",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+     "article": "art. 1",
+     "link_type": "MODIFIE"
+    }
+   }
+  ],
+  "R3262-41": [
+   {
+    "version_id": "LEGIARTI000018533432",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533432",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-42": [
+   {
+    "version_id": "LEGIARTI000018533430",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533430",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-43": [
+   {
+    "version_id": "LEGIARTI000018533428",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533428",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-44": [
+   {
+    "version_id": "LEGIARTI000018533425",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533425",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-45": [
+   {
+    "version_id": "LEGIARTI000018533423",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533423",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-46": [
+   {
+    "version_id": "LEGIARTI000018533419",
+    "version_start": "2008-05-01",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018533419",
+    "modified_by": {
+     "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+     "id": "JORFTEXT000018442415",
+     "nor": "MTST0804938D",
+     "date": "2008-03-07",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+     "article": "art. (V)",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-1-1": [
+   {
+    "version_id": "LEGIARTI000028695589",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028695589",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 2",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "R3262-1-2": [
+   {
+    "version_id": "LEGIARTI000028695608",
+    "version_start": "2014-04-02",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000028695608",
+    "modified_by": {
+     "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+     "id": "JORFTEXT000028690805",
+     "nor": "EFIC1328728D",
+     "date": "2014-03-06",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+     "article": "art. 2",
+     "link_type": "CREE"
+    }
+   }
+  ],
+  "Loi n° 2022-1158 du 16 août 2022 - art. 6": [
+   {
+    "version_id": "LEGIARTI000046188467",
+    "version_start": "2022-08-18",
+    "version_end": "2023-12-28",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000046188467",
+    "modified_by": {
+     "title": "LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du pouvoir d'achat (1)",
+     "id": "JORFTEXT000046186723",
+     "nor": "ECOX2217989L",
+     "date": "2022-08-16",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046186723",
+     "article": "art. 6 (V)",
+     "link_type": null
+    }
+   },
+   {
+    "version_id": "LEGIARTI000048672945",
+    "version_start": "2023-12-28",
+    "version_end": "2025-01-23",
+    "etat": "MODIFIE",
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000048672945",
+    "modified_by": {
+     "title": "LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation des titres restaurant pour des achats de produits alimentaires non directement consommables (1)",
+     "id": "JORFTEXT000048668803",
+     "nor": "ECOX2331267L",
+     "date": "2023-12-26",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048668803",
+     "article": "art. unique (V)",
+     "link_type": "MODIFIE"
+    }
+   },
+   {
+    "version_id": "LEGIARTI000051018968",
+    "version_start": "2025-01-23",
+    "version_end": null,
+    "etat": "VIGUEUR",
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051018968",
+    "modified_by": {
+     "title": "LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1)",
+     "id": "JORFTEXT000051018078",
+     "nor": "ECOX2429776L",
+     "date": "2025-01-21",
+     "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051018078",
+     "article": "art. unique",
+     "link_type": "MODIFIE"
+    }
+   }
+  ]
+ },
+ "texts": [
+  {
+   "title": "LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1)",
+   "id": "JORFTEXT000051018078",
+   "nor": "ECOX2429776L",
+   "date": "2025-01-21",
+   "in_force": "2025-01-23",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051018078",
+   "articles": [
+    "Loi n° 2022-1158 du 16 août 2022 - art. 6"
+   ],
+   "change": "Prolonge la dérogation « tout produit alimentaire » (art. 6 de la loi n° 2022-1158) du 31 décembre 2024 au 31 décembre 2026.",
+   "evidence": [
+    "31 décembre 2024",
+    "31 décembre 2026"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "160",
+     "session": "2024-2025"
+    },
+    {
+     "num": "182",
+     "session": "2024-2025"
+    },
+    {
+     "num": "183",
+     "session": "2024-2025"
+    }
+   ],
+   "prep_work": "(1) Travaux préparatoires : loi n° 2025-56. Assemblée nationale : Proposition de loi n° 532 ; Rapport de Mme Anne-Laure Blin, au nom de la commission des affaires économiques, n° 552 ; Discussion et adoption, après engagement de la procédure accélérée, le 20 novembre 2024 (TA n° 12). Sénat : Proposition de loi, adoptée par l'Assemblée nationale, n° 160 (2024-2025) ; Rapport de Mme Marie-Do Aeschlimann, au nom de la commission des affaires sociales, n° 182 (2024-2025) ; Texte de la commission n° 183 (2024-2025) ; Discussion et adoption le 14 janvier 2025 (TA n° 34, 2024-2025)."
+  },
+  {
+   "title": "LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation des titres restaurant pour des achats de produits alimentaires non directement consommables (1)",
+   "id": "JORFTEXT000048668803",
+   "nor": "ECOX2331267L",
+   "date": "2023-12-26",
+   "in_force": "2023-12-28",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048668803",
+   "articles": [
+    "Loi n° 2022-1158 du 16 août 2022 - art. 6"
+   ],
+   "change": "Prolonge la dérogation « tout produit alimentaire » (art. 6 de la loi n° 2022-1158) du 31 décembre 2023 au 31 décembre 2024.",
+   "evidence": [
+    "31 décembre 2023",
+    "31 décembre 2024"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "143",
+     "session": "2023-2024"
+    },
+    {
+     "num": "172",
+     "session": "2023-2024"
+    },
+    {
+     "num": "173",
+     "session": "2023-2024"
+    }
+   ],
+   "prep_work": "(1) Travaux préparatoires : loi n° 2023-1252. Assemblée nationale : Proposition de loi n° 1870 ; Rapport de Mme Anne-Laure Babault, au nom de la commission des affaires économiques, n° 1898 ; Discussion et adoption, après engagement de la procédure accélérée, le 23 novembre 2023 (TA n° 192). Sénat : Proposition de loi adoptée par l'Assemblée nationale n° 143 (2023-2024) ; Rapport de Mme Marie-Do Aeschlimann, au nom de la commission des affaires sociales, n° 172 (2023-2024) ; Texte de la commission n° 173 (2023-2024) ; Discussion et adoption le 18 décembre 2023 (TA n° 39, 2023-2024)."
+  },
+  {
+   "title": "Décret n° 2022-1266 du 29 septembre 2022 relevant le plafond d'utilisation des titres-restaurant",
+   "id": "JORFTEXT000046343485",
+   "nor": "ECOC2224802D",
+   "date": "2022-09-29",
+   "in_force": "2022-10-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046343485",
+   "articles": [
+    "R3262-10"
+   ],
+   "change": "Relève le plafond d'utilisation journalier des titres-restaurant (R. 3262-10) de dix-neuf à vingt-cinq euros par jour.",
+   "evidence": [
+    "dix-neuf",
+    "vingt-cinq"
+   ],
+   "themes": [
+    "Rendre effectif le double plafond journalier",
+    "Supprimer le double plafond journalier"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du pouvoir d'achat (1)",
+   "id": "JORFTEXT000046186723",
+   "nor": "ECOX2217989L",
+   "date": "2022-08-16",
+   "in_force": "2022-08-18",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046186723",
+   "articles": [
+    "Loi n° 2022-1158 du 16 août 2022 - art. 6"
+   ],
+   "change": "Crée, sans la codifier, une dérogation à L. 3262-1 : jusqu'au 31 décembre 2023, les titres paient tout produit alimentaire, directement consommable ou non, chez les commerces mentionnés à L. 3262-3.",
+   "evidence": [
+    "Par dérogation à l'article L. 3262-1 du code du travail",
+    "jusqu'au 31 décembre 2023",
+    "tout produit alimentaire"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "817",
+     "session": "2021-2022"
+    },
+    {
+     "num": "827",
+     "session": "2021-2022"
+    },
+    {
+     "num": "825",
+     "session": "2021-2022"
+    },
+    {
+     "num": "826",
+     "session": "2021-2022"
+    },
+    {
+     "num": "822",
+     "session": "2021-2022"
+    },
+    {
+     "num": "828",
+     "session": "2021-2022"
+    },
+    {
+     "num": "850",
+     "session": "2021-2022"
+    },
+    {
+     "num": "851",
+     "session": "2021-2022"
+    }
+   ],
+   "prep_work": "(1) Travaux préparatoires : loi n° 2022-1158. Assemblée nationale : Projet de loi n° 19 ; Rapport de Mme Charlotte Parmentier-Lecocq, au nom de la commission des affaires sociales, n° 144 ; Discussion les 18, 19, 20 et 21 juillet 2022 et adoption, après engagement de la procédure accélérée, le 21 juillet 2022 (TA n° 3). Sénat : Projet de loi, adopté par l'Assemblée nationale, n° 817 (2021-2022) ; Rapport de Mme Frédérique Puissat, au nom de la commission des affaires sociales, n° 827 (2021-2022) ; Avis de M. Daniel Gremillet, au nom de la commission des affaires économiques, n° 825 (2021-2022) ; Avis de M. Bruno Belin, au nom de la commission de l'aménagement du territoire et du développement durable, n° 826 (2021-2022) ; Avis de Mme Christine Lavarde, au nom de la commission des finances, n° 822 (2021-2022) ; Texte de la commission n° 828 (2021-2022) ; Discussion les 28 et 29 juillet 2022 et adoption le 29 juillet 2022 (TA n° 142, 2021-2022). Assemblée nationale : Projet de loi, modifié par le Sénat, n° 176 ; Rapport de Mmes Maud Bregeon et Charlotte Parmentier-Lecocq, au nom de la commission mixte paritaire, n° 177 ; Discussion et adoption le 3 août 2022 (TA n° 12). Sénat : Rapport de Mme Frédérique Puissat et M. Daniel Gremillet, au nom de la commission mixte paritaire, n° 850 (2021-2022) ; Texte de la commission n° 851 (2021-2022) ; Discussion et adoption le 3 août 2022 (TA n° 147, 2021-2022). Conseil constitutionnel : Décision n° 2022-843 DC du 12 août 2022 publiée au Journal officiel de ce jour."
+  },
+  {
+   "title": "Décret n° 2019-1586 du 31 décembre 2019 relatif aux seuils d'effectif",
+   "id": "JORFTEXT000039727052",
+   "nor": "ECOI1919172D",
+   "date": "2019-12-31",
+   "in_force": "2020-01-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000039727052",
+   "articles": [
+    "R3262-20"
+   ],
+   "change": "Abroge R. 3262-20, qui obligeait l'employeur émettant lui-même ses titres, dans les entreprises de plus de vingt-cinq salariés, à verser les fonds sur son compte sous huit jours.",
+   "evidence": [
+    "Dans les entreprises de plus de vingt-cinq salariés",
+    "huit jours"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+   "id": "JORFTEXT000038496102",
+   "nor": "ECOT1810669L",
+   "date": "2019-05-22",
+   "in_force": "2020-01-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102",
+   "articles": [
+    "L3262-2"
+   ],
+   "change": "L. 3262-2 : l'employeur émettant ses propres titres est dispensé du compte dédié quel que soit son effectif (le seuil de vingt-cinq salariés est supprimé).",
+   "evidence": [
+    "salariés lorsque l'effectif n'excède par vingt-cinq"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "28",
+     "session": "2018-2019"
+    },
+    {
+     "num": "254",
+     "session": "2018-2019"
+    },
+    {
+     "num": "207",
+     "session": "2018-2019"
+    },
+    {
+     "num": "255",
+     "session": "2018-2019"
+    },
+    {
+     "num": "341",
+     "session": "2018-2019"
+    },
+    {
+     "num": "342",
+     "session": "2018-2019"
+    },
+    {
+     "num": "382",
+     "session": "2018-2019"
+    },
+    {
+     "num": "415",
+     "session": "2018-2019"
+    },
+    {
+     "num": "416",
+     "session": "2018-2019"
+    }
+   ],
+   "prep_work": "(1) Loi n° 2019-486. - Travaux préparatoires : Assemblée nationale : Projet de loi n° 1088 ; Rapport de M. Roland Lescure, M. Jean-Noël Barrot, Mme Coralie Dubost, Mme Marie Lebec et M. Denis Sommer, au nom de la commission spéciale, n° 1237 ; Discussion les 25, 26, 27 et 28 septembre et les 2, 3 et 4 octobre 2018 et adoption, après engagement de la procédure accélérée, le 9 octobre 2018 (TA n° 179). Sénat : Projet de loi, adopté par l'Assemblée nationale, n° 28 (2018-2019) ; Rapport de M. Michel Canevet, M. Jean-François Husson et Mme Elisabeth Lamure, au nom de la commission spéciale, n° 254 (2018-2019) ; Rapport d'information de M. Jean-François Rapin, au nom de la commission des affaires européennes, n° 207 (2018-2019) ; Texte de la commission n° 255 (2018-2019) ; Discussion les 29, 30 et 31 janvier et les 5, 6, 7 et 12 février 2019 et adoption le 12 février 2019 (TA n° 60, 2018-2019). Assemblée nationale : Projet de loi, modifié par le Sénat, n° 1673 ; Rapport de M. Roland Lescure, au nom de la commission mixte paritaire, n° 1703 ; Sénat : Rapport de M. Michel Canevet, M. Jean-François Husson et Mme Elisabeth Lamure, au nom de la commission mixte paritaire, n° 341 (2018-2019) ; Résultat des travaux de la commission n° 342 (2018-2019). Assemblée nationale : Projet de loi, modifié par le Sénat, n° 1673 ; Rapport de M. Roland Lescure, M. Jean-Noël Barrot, Mme Coralie Dubost, Mme Marie Lebec et M. Denis Sommer, au nom de la commission spéciale, n° 1761 rect. ; Discussion les 13, 14 et 15 mars 2019 et adoption le 15 mars 2019 (TA n° 244). Sénat : Projet de loi, adopté par l'Assemblée nationale en nouvelle lecture, n° 382 (2018-2019) ; Rapport de M. Michel Canevet, M. Jean-François Husson et Mme Elisabeth Lamure, au nom de la commission spéciale, n° 415 (2018-2019) ; Résultat des travaux de la commission n° 416 (2018-2019) ; Discussion et rejet le 9 avril 2019 (TA n° 89, 2018-2019). Assemblée nationale : Projet de loi, rejeté par le Sénat en nouvelle lecture, n° 1846 ; Discussion et adoption, en lecture définitive, le 11 avril 2018 (TA n° 258). - Conseil constitutionnel : Décision n° 2019-781 DC du 16 mai 2019 publiée au Journal officiel de ce jour."
+  },
+  {
+   "title": "Décret n° 2017-1819 du 29 décembre 2017 relatif au comité social et économique",
+   "id": "JORFTEXT000036336033",
+   "nor": "MTRT1732438D",
+   "date": "2017-12-29",
+   "in_force": "2018-01-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000036336033",
+   "articles": [
+    "R3262-14",
+    "R3262-34"
+   ],
+   "change": "R. 3262-14 et R. 3262-34 : remplace le comité d'entreprise par le comité social et économique pour le reversement des titres perdus ou périmés.",
+   "evidence": [
+    "d'entreprise",
+    "social et économique"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales",
+   "id": "JORFTEXT000035607348",
+   "nor": "MTRT1724789R",
+   "date": "2017-09-22",
+   "in_force": "2018-01-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035607348",
+   "articles": [
+    "L3262-1"
+   ],
+   "change": "L. 3262-1 : remplace le comité d'entreprise par le comité social et économique comme intermédiaire d'émission.",
+   "evidence": [
+    "d'entreprise",
+    "social et économique"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "Décret n° 2014-551 du 27 mai 2014 portant adaptation de dispositions pour faire suite à la fusion de la direction générale des impôts et de la direction générale de la comptabilité publique",
+   "id": "JORFTEXT000029001649",
+   "nor": "FCPE1228065D",
+   "date": "2014-05-27",
+   "in_force": "2014-05-30",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029001649",
+   "articles": [
+    "R3262-16"
+   ],
+   "change": "R. 3262-16 : l'attestation d'ouverture du compte titres-restaurant est remise au directeur départemental ou régional des finances publiques et non plus au directeur des impôts.",
+   "evidence": [
+    "impôts",
+    "finances publiques"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "Décret n° 2014-294 du 6 mars 2014 relatif aux conditions d'émission et de validité et à l'utilisation des titres-restaurant",
+   "id": "JORFTEXT000028690805",
+   "nor": "EFIC1328728D",
+   "date": "2014-03-06",
+   "in_force": "2014-04-02",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028690805",
+   "articles": [
+    "R3262-1",
+    "R3262-2",
+    "R3262-5",
+    "R3262-8",
+    "R3262-10",
+    "R3262-1-1",
+    "R3262-1-2"
+   ],
+   "change": "Autorise les titres dématérialisés (R. 3262-1, R. 3262-1-1, R. 3262-1-2) ; fixe la validité à l'année civile plus deux mois (R. 3262-5) ; plafonne l'usage à dix-neuf euros par jour avec débit de la somme exacte en dématérialisé (R. 3262-10) ; maintient l'interdiction le dimanche et les jours fériés sauf décision de l'employeur (R. 3262-8).",
+   "evidence": [
+    "sous forme dématérialisée",
+    "et durant une période de deux mois à compter du 1er janvier de l'année suivante",
+    "est limitée à un montant maximum de dix-neuf euros par jour",
+    "décision contraire"
+   ],
+   "themes": [
+    "Durée de validité des titres",
+    "Utilisation le dimanche",
+    "Rendre effectif le double plafond journalier",
+    "Supprimer le double plafond journalier"
+   ],
+   "context_themes": [
+    "Repousser la fin des titres papier"
+   ],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "Décret n° 2010-1460 du 30 novembre 2010 relatif aux conditions d'utilisation du titre-restaurant",
+   "id": "JORFTEXT000023152756",
+   "nor": "EFIC1025214D",
+   "date": "2010-11-30",
+   "in_force": "2010-12-03",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000023152756",
+   "articles": [
+    "R3262-4",
+    "R3262-27",
+    "R3262-32",
+    "R3262-36",
+    "R3262-40"
+   ],
+   "change": "R. 3262-4 : le repas payé en titres peut être composé de préparations directement consommables, à réchauffer ou à décongeler, notamment de produits laitiers, et de fruits et légumes consommables ou non ; ajoute les détaillants en fruits et légumes à la Commission nationale (R. 3262-40).",
+   "evidence": [
+    "préparations alimentaires directement consommables , le cas échéant à réchauffer ou à décongeler , notamment de produits laitiers",
+    "de détaillants de fruits et légumes"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "LOI n° 2010-874 du 27 juillet 2010 de modernisation de l'agriculture et de la pêche (1)",
+   "id": "JORFTEXT000022521587",
+   "nor": "AGRS0928330L",
+   "date": "2010-07-27",
+   "in_force": "2010-07-29",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022521587",
+   "articles": [
+    "L3262-1"
+   ],
+   "change": "L. 3262-1 : le repas peut être acheté auprès de tout commerce mentionné à L. 3262-3 et être composé de fruits et légumes, directement consommables ou non.",
+   "evidence": [
+    "auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L . 3262-3",
+    "qu'ils soient ou non directement consommables"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "Décret n° 2010-220 du 3 mars 2010 relatif à l'utilisation des titres-restaurant auprès des détaillants de fruits et légumes",
+   "id": "JORFTEXT000021902986",
+   "nor": "SASP0931209D",
+   "date": "2010-03-03",
+   "in_force": "2010-03-05",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021902986",
+   "articles": [
+    "R3262-1",
+    "R3262-2",
+    "R3262-4",
+    "R3262-5",
+    "R3262-15",
+    "R3262-17",
+    "R3262-19",
+    "R3262-25",
+    "R3262-26",
+    "R3262-27",
+    "R3262-36",
+    "R3262-38"
+   ],
+   "change": "Étend la partie réglementaire aux détaillants en fruits et légumes (mentions, utilisation, remboursement, Commission nationale) et soumet les préparations vendues par les assimilés à un arrêté de composition et de prix (R. 3262-4).",
+   "evidence": [
+    "ou les détaillants en fruits et légumes",
+    "préparation alimentaire immédiatement consommable dont la composition et le prix sont fixés par"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+   "id": "JORFTEXT000020879475",
+   "nor": "SASX0822640L",
+   "date": "2009-07-21",
+   "in_force": "2009-07-23",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+   "articles": [
+    "L3262-1",
+    "L3262-3",
+    "L3262-5"
+   ],
+   "change": "Ouvre les titres-restaurant aux détaillants en fruits et légumes (L. 3262-1, L. 3262-3, L. 3262-5).",
+   "evidence": [
+    "ou acheté chez un détaillant en fruits et légumes",
+    "ou la profession de détaillant en fruits et légumes"
+   ],
+   "themes": [
+    "Limiter aux repas et fruits et légumes"
+   ],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "290",
+     "session": "2008-2009"
+    },
+    {
+     "num": "380",
+     "session": "2008-2009"
+    },
+    {
+     "num": "381",
+     "session": "2008-2009"
+    },
+    {
+     "num": "463",
+     "session": "2008-2009"
+    }
+   ],
+   "prep_work": "(1) Loi n° 2009-879. ― Travaux préparatoires : Assemblée nationale : Projet de loi n° 1210 ; Rapport de M. Jean-Marie Rolland, au nom de la commission des affaires culturelles, n° 1441 ; Avis de M. André Flajolet, au nom de la commission des affaires économiques, n° 1435 (2007-2008) ; Discussion les 10, 11, 12, 16, 17, 18 et 19 février 2009, les 2, 3, 4, 5, 9, 10 et 18 mars 2009 et adoption, après déclaration d'urgence, le 18 mars 2009 (TA n° 245). Sénat : Projet de loi, adopté par l'Assemblée nationale, n° 290 (2008-2009) ; Rapport de M. Alain Milon, au nom de la commission des affaires sociales, n° 380 (2008-2009) ; Texte de la commission n° 381 (2008-2009) ; Discussion les 12, 13, 14, 15, 18, 19, 20, 25, 26, 27, 28, 29 mai 2009, 3, 4, et 5 juin 2009 et adoption le 5 juin 2009 (TA n° 88). Assemblée nationale : Projet de loi n° 1723 ; Rapport de M. Jean-Marie Rolland, rapporteur, au nom de la commission mixte paritaire, n° 1739 ; Discussion et adoption le 23 juin 2009 (TA n° 305). Sénat : Rapport de M. Alain Milon, rapporteur, au nom de la commission mixte paritaire, n° 463 (2008-2009) ; Discussion et adoption le 24 juin 2009 (TA n° 99). ― Conseil constitutionnel : Décision n° 2009-584 DC du 16 juillet 2009 publiée au Journal officiel de ce jour."
+  },
+  {
+   "title": "LOI n° 2008-1443 du 30 décembre 2008 de finances rectificative pour 2008 (1)",
+   "id": "JORFTEXT000020014790",
+   "nor": "BCFX0826279L",
+   "date": "2008-12-30",
+   "in_force": "2009-01-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020014790",
+   "articles": [
+    "L3262-6"
+   ],
+   "change": "L. 3262-6 : l'exonération d'impôt sur le revenu de la contribution patronale renvoie désormais à la limite fixée au 19° de l'article 81 du CGI (le montant de 0,46 euro par titre disparaît du code du travail).",
+   "evidence": [
+    "de 0 , 46 euros par titre",
+    "prévue au 19 ° dudit article"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "134",
+     "session": "2008-2009"
+    },
+    {
+     "num": "135",
+     "session": "2008-2009"
+    },
+    {
+     "num": "140",
+     "session": "2008-2009"
+    },
+    {
+     "num": "141",
+     "session": "2008-2009"
+    },
+    {
+     "num": "149",
+     "session": "2008-2009"
+    }
+   ],
+   "prep_work": "__________ (1) Loi n° 2008-1443. ― Travaux préparatoires : Assemblée nationale : Projet de loi n° 1266 ; Rapport de M. Gilles Carrez, rapporteur général, au nom de la commission des finances, n° 1297 ; Avis de M. Jacques Lamblin, au nom de la commission de la défense, n° 1290 ; Discussion les 9 à 11 décembre 2008 et adoption le 11 décembre 2008 (TA n° 215). Sénat : Projet de loi, adopté par l'Assemblée nationale, n° 134 (2008-2009) ; Rapport de M. Philippe Marini, rapporteur général, au nom de la commission des finances, n° 135 (2008-2009) ; Avis de M. Alain Vasselle, au nom de la commission des affaires sociales, n° 140 (2008-2009) ; Avis de Mme Catherine Morin-Desailly et M. Michel Thiollière, au nom de la commission des affaires culturelles, n° 141 (2008-2009) ; Discussion les 18 et 19 décembre 2008 et adoption le 19 décembre 2008 (TA n° 36). Assemblée nationale : Projet de loi n° 1362 ; Rapport de M. Gilles Carrez, rapporteur général, au nom de la commission mixte paritaire, n° 1363 ; Discussion et adoption le 22 décembre 2008 (TA n° 224). Sénat : Rapport de M. Philippe Marini, rapporteur général, au nom de la commission mixte paritaire, n° 149 (2008-2009) ; Discussion et adoption le 22 décembre 2008 (TA n° 37). ― Conseil constitutionnel : Décision n° 2008-574 DC du 29 décembre 2008 publiée au Journal officiel de ce jour."
+  },
+  {
+   "title": "Décret n° 2008-244 du 7 mars 2008 relatif au code du travail (partie réglementaire)",
+   "id": "JORFTEXT000018442415",
+   "nor": "MTST0804938D",
+   "date": "2008-03-07",
+   "in_force": "2008-05-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000018442415",
+   "articles": [
+    "R3262-1",
+    "R3262-2",
+    "R3262-3",
+    "R3262-4",
+    "R3262-5",
+    "R3262-6",
+    "R3262-7",
+    "R3262-8",
+    "R3262-9",
+    "R3262-10",
+    "R3262-11",
+    "R3262-12",
+    "R3262-13",
+    "R3262-14",
+    "R3262-15",
+    "R3262-16",
+    "R3262-17",
+    "R3262-18",
+    "R3262-19",
+    "R3262-20",
+    "R3262-21",
+    "R3262-22",
+    "R3262-23",
+    "R3262-24",
+    "R3262-25",
+    "R3262-26",
+    "R3262-27",
+    "R3262-28",
+    "R3262-29",
+    "R3262-30",
+    "R3262-31",
+    "R3262-32",
+    "R3262-33",
+    "R3262-34",
+    "R3262-35",
+    "R3262-36",
+    "R3262-37",
+    "R3262-38",
+    "R3262-39",
+    "R3262-40",
+    "R3262-41",
+    "R3262-42",
+    "R3262-43",
+    "R3262-44",
+    "R3262-45",
+    "R3262-46"
+   ],
+   "change": "Recodification de la partie réglementaire : crée R. 3262-1 à R. 3262-46 (dont l'interdiction le dimanche sauf mention de l'employeur, R. 3262-8, et un titre par repas, R. 3262-10).",
+   "evidence": [
+    "ne sont pas utilisables les dimanches et jours fériés",
+    "Un même repas ne peut être payé avec plusieurs titres-restaurant"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": true,
+   "senat_documents": [],
+   "prep_work": null
+  },
+  {
+   "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+   "id": "JORFTEXT000017942034",
+   "nor": "MTSX0700051L",
+   "date": "2008-01-21",
+   "in_force": "2008-05-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034",
+   "articles": [
+    "L3262-5",
+    "L3262-6",
+    "L3262-7"
+   ],
+   "change": "Ratifie la recodification : L. 3262-5 verse les titres périmés au budget des activités sociales et culturelles ; L. 3262-6 devient l'article d'exonération fiscale et sociale ; crée L. 3262-7 (décret en Conseil d'État).",
+   "evidence": [
+    "du comité d'entreprise , consacré aux",
+    "est exonéré",
+    "Un décret en Conseil d'Etat détermine les modalités d'application du présent titre"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": false,
+   "senat_documents": [
+    {
+     "num": "293",
+     "session": "2006-2007"
+    },
+    {
+     "num": "459",
+     "session": "2006-2007"
+    },
+    {
+     "num": "129",
+     "session": "2007-2008"
+    },
+    {
+     "num": "130",
+     "session": "2007-2008"
+    }
+   ],
+   "prep_work": "(1) Loi n° 2008-67 . ― Travaux préparatoires : Sénat : Projet de loi n° 293 (2006-2007) ; Rapport de Mme Catherine Procaccia, au nom de la commission des affaires sociales, n° 459 (2006-2007) ; Discussion et adoption le 26 septembre 2007 (TA n° 147, 2006-2007). Assemblée nationale : Projet de loi, adopté par le Sénat, n° 190 ; Rapport de Mme Jacqueline Irles, au nom de la commission des affaires culturelles, n° 436 ; Discussion les 4, 5 et 11 décembre 2007 et adoption le 11 décembre 2007 (TA n° 64). Sénat : Projet de loi n° 129 (2007-2008) ; Rapport de Mme Catherine Procaccia, au nom de la commission des affaires sociales, n° 130 (2007-2008) ; Discussion et adoption le 19 décembre 2007 (TA n° 42, 2007-2008). ― Conseil constitutionnel : Décision n° 2007-561 DC du 17 janvier 2008 publiée au Journal officiel de ce jour."
+  },
+  {
+   "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+   "id": "JORFTEXT000000465978",
+   "nor": "SOCX0700017R",
+   "date": "2007-03-12",
+   "in_force": "2008-05-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+   "articles": [
+    "L3262-1",
+    "L3262-2",
+    "L3262-3",
+    "L3262-4",
+    "L3262-5",
+    "L3262-6"
+   ],
+   "change": "Recodification de la partie législative : crée L. 3262-1 à L. 3262-6 à partir de l'ordonnance n° 67-830, en vigueur le 1er mai 2008.",
+   "evidence": [
+    "Le titre-restaurant est un titre spécial de paiement remis par l'employeur aux salariés"
+   ],
+   "themes": [],
+   "context_themes": [],
+   "codification": true,
+   "senat_documents": [],
+   "prep_work": null
+  }
+ ],
+ "findings": [
+  "Depuis leur codification en 2008, les articles L. 3262-1 à L. 3262-7 n'ont été modifiés que par 6 textes ; le dernier est la loi PACTE n° 2019-486 (L. 3262-2, en vigueur le 1er janvier 2020) : aucune loi de 2022 à 2025 n'a modifié ces articles.",
+  "L'utilisation des titres pour tout produit alimentaire repose sur l'article 6 de la loi n° 2022-1158 du 16 août 2022, non codifié, prolongé deux fois (jusqu'au 31 décembre 2024 par la loi n° 2023-1252, puis jusqu'au 31 décembre 2026 par la loi n° 2025-56) ; dans sa version en vigueur, la dérogation prend fin le 31 décembre 2026.",
+  "Le plafond journalier d'utilisation (R. 3262-10) est fixé par décret : créé à dix-neuf euros par le décret n° 2014-294 du 6 mars 2014, porté à vingt-cinq euros par le décret n° 2022-1266 du 29 septembre 2022 à compter du 1er octobre 2022.",
+  "L'interdiction d'usage le dimanche et les jours fériés sauf décision de l'employeur (R. 3262-8) et la validité limitée à l'année civile plus deux mois (R. 3262-5) sont fixées par décret, dans la rédaction du décret n° 2014-294, inchangée depuis le 2 avril 2014.",
+  "Les deux prolongations de la dérogation ont été examinées au Sénat sur les textes de commission n° 173 (2023-2024) et n° 183 (2024-2025), avec Mme Marie-Do Aeschlimann pour rapporteure (commission des affaires sociales) les deux fois.",
+  "L'ouverture des titres aux fruits et légumes vient de la loi HPST n° 2009-879 (détaillants en fruits et légumes), élargie par la loi n° 2010-874 (fruits et légumes consommables ou non) et le décret n° 2010-1460 (préparations à réchauffer, produits laitiers)."
+ ]
+}
