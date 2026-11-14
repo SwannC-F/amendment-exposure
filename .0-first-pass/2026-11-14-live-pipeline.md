@@ -67,6 +67,8 @@ index.html
   rendu en texte (DOM + textContent), aucun innerHTML
 ```
 
+**Mise en ligne du direct (décision 14/11, 14h30) : Render.** Un seul service web Render exécute `server.py`, qui sert la page ET l'API sur la même adresse (pas d'appel croisé entre domaines). Déploiement par `render.yaml` depuis le repo GitHub (branche `live-pipeline` jusqu'à la fusion, puis `main`). `server.py` écoute `0.0.0.0:$PORT` ; la page appelle l'API sur sa propre origine quand elle est servie par `server.py`, et affiche « direct indisponible » sur GitHub Pages. Secrets (`LLM_API_KEY`, `PISTE_CLIENT_ID`, `PISTE_CLIENT_SECRET`) en variables d'environnement Render, jamais dans le repo. Le disque Render est éphémère : les caches (`data/cache/`, comptages) se reconstruisent ; les sorties du pipeline versionnées dans le repo servent de point de départ. Limite connue : l'offre gratuite s'endort après 15 min sans visite (réveil ~50 s) — on la réveille avant la démo. Coût LLM borné par les 25 $ de crédits ; le recalcul complet d'un texte est déclenché à la demande, jamais par une simple visite.
+
 **Passage à l'échelle.** Le coût est linéaire en nombre d'amendements : 34 pour les titres-restaurant, plusieurs milliers pour un projet de loi de finances. Le cache par empreinte et le parallélisme borné (4) gardent un texte moyen sous quelques minutes. Les comptages d'entreprises sont mis en cache par `(naf, tranche)` et partagés entre textes. Sur GitHub Pages, la page lit les fichiers générés ; le direct n'existe qu'avec `server.py`.
 
 ## Données de production

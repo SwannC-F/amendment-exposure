@@ -1,0 +1,24 @@
+# Render blueprint: one web service runs server.py, which serves the page and the live API.
+# Secrets are set in the Render dashboard (sync: false), never committed.
+services:
+  - type: web
+    name: amendment-exposure
+    runtime: python
+    plan: free
+    branch: live-pipeline
+    buildCommand: "true"
+    startCommand: python3 server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: LLM_BASE_URL
+        value: https://api.featherless.ai/v1
+      - key: LLM_MODEL
+        value: zai-org/GLM-5.2
+      - key: LLM_API_KEY
+        sync: false
+      - key: PISTE_CLIENT_ID
+        sync: false
+      - key: PISTE_CLIENT_SECRET
+        sync: false
