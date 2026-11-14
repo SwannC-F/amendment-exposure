@@ -1,6 +1,6 @@
 """Adoption signal per measure: which political groups filed amendments carrying it.
 
-Usage: python3 signals.py <session> <texte>
+Usage: python3 signals.py <session> <texte>     (Assemblée: session = an/<législature>)
 Reads data/<session>/<texte>/amendments.json (author_group) and measures.json,
 writes signals.json: {majority, measures: [...], amendments: [...]}.
 
@@ -20,8 +20,9 @@ def main(session, n):
     d = text_dir(session, n)
     amendments = {a["number"]: a for a in json.loads((d / "amendments.json").read_text())}
     measures = json.loads((d / "measures.json").read_text())
-    majority = set(MAJORITY.get(session, []))
-    if not majority:
+    # Assemblée (session "an/<législature>"): no absolute majority, groups only, no majority flag.
+    majority = set() if session.startswith("an/") else set(MAJORITY.get(session, []))
+    if not majority and not session.startswith("an/"):
         print(f"attention : majorité du Sénat inconnue pour la session {session}")
 
     out_m, out_a = [], []

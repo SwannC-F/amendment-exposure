@@ -1,0 +1,4329 @@
+{
+  "text": {
+    "session": "an/17",
+    "number": "2864",
+    "title": "Proposition de loi relative à l'instauration d'une présomption d'exploitation des contenus culturels par les fournisseurs d'intelligence artificielle",
+    "chamber": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?examen=EXANR5L17PO838901BTC2864P0D1",
+    "examen": "EXANR5L17PO838901BTC2864P0D1"
+  },
+  "majority": [],
+  "measures": [
+    {
+      "key": "durcir-seuil-preuve-presomption",
+      "theme": "Durcir le seuil de preuve de la présomption",
+      "amendments": [
+        "93",
+        "97",
+        "2",
+        "9",
+        "45",
+        "6",
+        "55",
+        "81"
+      ],
+      "opposes": null,
+      "effects": [
+        "Durcit les conditions de déclenchement de la présomption en exigeant du demandeur qu'il identifie précisément l'œuvre protégée et produise des éléments objectifs et vérifiables d'atteinte vraisemblable",
+        "Durcit la présomption d'utilisation d'œuvres par les IA en exigeant des éléments précis, graves et concordants prouvant la présence de l'œuvre dans le corpus d'entraînement, au lieu d'un simple indice rendant l'usage vraisemblable.",
+        "Relève le seuil probatoire pour déclencher la présomption d'utilisation d'œuvres par les fournisseurs d'IA, passant d'un simple indice à un faisceau d'indices concordants et sérieux.",
+        "Relève le standard probatoire passant d'un simple indice à un faisceau d'indices concordants et sérieux pour déclencher la présomption pesant sur les fournisseurs d'IA.",
+        "Durcit le seuil de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, en exigeant des indices « précis, graves et concordants »",
+        "Durcit les conditions de déclenchement de la présomption d'utilisation d'une œuvre par un système d'IA en exigeant des indices « non équivoques et concordants ».",
+        "Relève le seuil de preuve pour déclencher la présomption d'utilisation d'une œuvre par une IA, en exigeant des indices « non équivoques et concordants ».",
+        "Durcit le standard de preuve exigé pour renverser la charge de la preuve, passant de « vraisemblable » à « hautement probable », afin de mieux protéger la sécurité juridique des fournisseurs d'IA."
+      ],
+      "nafs": [
+        "62.01A",
+        "62.01Z",
+        "62.02A",
+        "63.11Z",
+        "72.19Z"
+      ],
+      "roles": [
+        "autre: titulaires de droits d'auteur",
+        "autre:auteurs",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs d'intelligence artificielle",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "autre: titulaires de droits d'auteur",
+          "label": "autre: titulaires de droits d'auteur"
+        },
+        {
+          "key": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:developpeurs IA",
+          "label": "autre:developpeurs IA"
+        },
+        {
+          "key": "autre:auteurs",
+          "label": "autre:auteurs"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "autre:fournisseurs d'intelligence artificielle",
+          "label": "autre:fournisseurs d'intelligence artificielle"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "Ensemble pour la République",
+        "Les Démocrates"
+      ],
+      "majority_groups": [],
+      "companies": 218855,
+      "employees_low": 471890,
+      "employees_high": 902540,
+      "approx": false,
+      "not_counted": [
+        "Programmation informatique"
+      ],
+      "quote": "Le présent amendement exige que le demandeur identifie précisément l'œuvre protégée qu'il allègue avoir été utilisée et produise des éléments objectifs à l'appui, conformément à l'équilibre procédural en vigueur.",
+      "history": {
+        "theme": "Durcir le seuil de preuve de la présomption",
+        "amendments": [
+          "93",
+          "97",
+          "2",
+          "9",
+          "45",
+          "6",
+          "55",
+          "81"
+        ],
+        "effects": [
+          "Durcit la présomption d'utilisation d'œuvres par les IA en exigeant des éléments précis, graves et concordants prouvant la présence de l'œuvre dans le corpus d'entraînement, au lieu d'un simple indice rendant l'usage vraisemblable.",
+          "Durcit le seuil de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, en exigeant des indices « précis, graves et concordants »",
+          "Durcit le standard de preuve exigé pour renverser la charge de la preuve, passant de « vraisemblable » à « hautement probable », afin de mieux protéger la sécurité juridique des fournisseurs d'IA.",
+          "Durcit les conditions de déclenchement de la présomption d'utilisation d'une œuvre par un système d'IA en exigeant des indices « non équivoques et concordants ».",
+          "Durcit les conditions de déclenchement de la présomption en exigeant du demandeur qu'il identifie précisément l'œuvre protégée et produise des éléments objectifs et vérifiables d'atteinte vraisemblable",
+          "Relève le seuil de preuve pour déclencher la présomption d'utilisation d'une œuvre par une IA, en exigeant des indices « non équivoques et concordants ».",
+          "Relève le seuil probatoire pour déclencher la présomption d'utilisation d'œuvres par les fournisseurs d'IA, passant d'un simple indice à un faisceau d'indices concordants et sérieux.",
+          "Relève le standard probatoire passant d'un simple indice à un faisceau d'indices concordants et sérieux pour déclencher la présomption pesant sur les fournisseurs d'IA."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure durcit le standard de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, passant d'un simple « indice » rendant l'usage « vraisemblable » à des exigences plus strictes (indices précis, graves et concordants, ou faisceau d'indices, ou preuve de présence dans le corpus). Il s'agit d'un changement procédural sans transfert monétaire direct.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": "62.02A",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Conseil en systèmes et logiciels informatiques"
+          },
+          {
+            "naf": "72.19Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Recherche-développement en autres sciences"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:auteurs",
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est un changement de standard probatoire (juridique et procédural) sans flux monétaire identifiable. Aucune assiette en euros ni aucun écart chiffré ne figure dans les amendements."
+      }
+    },
+    {
+      "key": "exclure-retroactivite",
+      "theme": "Exclure ou limiter la rétroactivité du dispositif",
+      "amendments": [
+        "8",
+        "5"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime l'application rétroactive du dispositif aux instances en cours, protégeant les fournisseurs d'IA contre des exigences probatoires et techniques imposées a posteriori.",
+        "Préserve les droits contractuels acquis avant l'entrée en vigueur de la loi lors de l'application rétroactive de la présomption aux instances en cours"
+      ],
+      "nafs": [
+        "62.01Z",
+        "62.02A",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:entreprises d'IA",
+        "autre:fournisseurs de systèmes d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:entreprises d'IA",
+          "label": "autre:entreprises d'IA"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "Ensemble pour la République",
+        "Les Démocrates"
+      ],
+      "majority_groups": [],
+      "companies": 209842,
+      "employees_low": 377195,
+      "employees_high": 739471,
+      "approx": false,
+      "not_counted": [],
+      "quote": "les fournisseurs de systèmes d'intelligence artificielle pourraient se voir imposer, a posteriori, des exigences probatoires et techniques qui n'existaient pas au moment des faits litigieux ou au moment de la conception des dispositifs concernés.",
+      "history": {
+        "theme": "Exclure ou limiter la rétroactivité du dispositif",
+        "amendments": [
+          "8",
+          "5"
+        ],
+        "effects": [
+          "Préserve les droits contractuels acquis avant l'entrée en vigueur de la loi lors de l'application rétroactive de la présomption aux instances en cours",
+          "Supprime l'application rétroactive du dispositif aux instances en cours, protégeant les fournisseurs d'IA contre des exigences probatoires et techniques imposées a posteriori."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure limite ou supprime l'application rétroactive d'une présomption légale aux instances judiciaires en cours. Les fournisseurs de systèmes d'IA évitent que des exigences probatoires et techniques nouvelles s'appliquent à des faits antérieurs à la loi. Les détenteurs de droits qui auraient pu bénéficier de cette présomption dans des instances en cours perdent cet avantage procédural.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "62.02A",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Conseil en systèmes et logiciels informatiques"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:entreprises d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Détenteurs de droits ayant des instances en cours à la date d'entrée en vigueur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. Il s'agit d'une modification procédurale sur la rétroactivité d'une présomption, sans paramètre chiffré dans les textes."
+      }
+    },
+    {
+      "key": "assouplir-moyens-preuve",
+      "theme": "Assouplir les moyens de preuve des fournisseurs",
+      "amendments": [
+        "4",
+        "48"
+      ],
+      "opposes": null,
+      "effects": [
+        "Assouplit les moyens de preuve pour les fournisseurs d'IA, qui peuvent apporter la preuve contraire par tout moyen sans devoir produire une documentation technique exhaustive",
+        "Assouplit les moyens de preuve permettant aux fournisseurs d'IA de contester la présomption d'utilisation d'œuvres protégées par le droit d'auteur"
+      ],
+      "nafs": [
+        "58.21Z",
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:<fournisseurs d'IA>",
+        "autre:fournisseurs de systèmes d'IA",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:<fournisseurs d'IA>",
+          "label": "autre:<fournisseurs d'IA>"
+        },
+        {
+          "key": "58.21Z",
+          "label": "Édition de logiciels système et de réseau"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "Ensemble pour la République",
+        "Les Démocrates"
+      ],
+      "majority_groups": [],
+      "companies": 116711,
+      "employees_low": 131534,
+      "employees_high": 265267,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La preuve contraire peut être rapportée par tout moyen, notamment par la production d’éléments techniques, organisationnels ou contractuels permettant d’établir que l’œuvre ou l’objet protégé n’a pas été utilisé dans le cadre du développement ou du déploiement du système d’intelligence artificielle.",
+      "history": {
+        "theme": "Assouplir les moyens de preuve des fournisseurs",
+        "amendments": [
+          "4",
+          "48"
+        ],
+        "effects": [
+          "Assouplit les moyens de preuve permettant aux fournisseurs d'IA de contester la présomption d'utilisation d'œuvres protégées par le droit d'auteur",
+          "Assouplit les moyens de preuve pour les fournisseurs d'IA, qui peuvent apporter la preuve contraire par tout moyen sans devoir produire une documentation technique exhaustive"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure assouplit les moyens de preuve des fournisseurs d'IA : ils peuvent rapporter la preuve contraire par tout moyen au lieu de produire une documentation technique exhaustive. Aucun flux monétaire n'est chiffré dans les amendements.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA"
+          },
+          {
+            "naf": "58.21Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "associations",
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent un assouplissement procédural des moyens de preuve, sans chiffrer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart en euros ne figure dans les textes."
+      }
+    },
+    {
+      "key": "restreindre-qualite-agir",
+      "theme": "Restreindre la qualité à agir et les voies procédurales",
+      "amendments": [
+        "90",
+        "79",
+        "96",
+        "80"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint une action en justice civile aux seuls organismes de gestion collective des droits d'auteur (sociétés de perception et de répartition), excluant les œuvres mises en ligne par les internautes.",
+        "Conditionne le bénéfice de la présomption à la preuve de la qualité pour agir et de l'identité du titulaire des droits sur l'œuvre concernée",
+        "Restreint la présomption aux actions individuelles et interdit les mesures provisoires avant décision sur le fond",
+        "Interdit le recours aux actions de groupe ou collectives fondées sur la présomption prévue, imposant un examen individualisé des situations."
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.11Z",
+        "60.10A",
+        "62.01Z",
+        "63.11Z",
+        "90.0",
+        "94.69Z",
+        "94.99Z"
+      ],
+      "roles": [
+        "associations",
+        "autre: développeurs d'IA",
+        "autre: titulaires de droits",
+        "autre:organismes de gestion collective",
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "94.69Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        },
+        {
+          "key": "autre:organismes de gestion collective",
+          "label": "autre:organismes de gestion collective"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "60.10A",
+          "label": "Édition et diffusion d'œuvres musicales"
+        },
+        {
+          "key": "autre: titulaires de droits",
+          "label": "autre: titulaires de droits"
+        },
+        {
+          "key": "autre: développeurs d'IA",
+          "label": "autre: développeurs d'IA"
+        },
+        {
+          "key": "90.0",
+          "label": "Activités créatives, artistiques et de spectacle"
+        },
+        {
+          "key": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "associations",
+          "label": "associations"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 1042206,
+      "employees_low": 360701,
+      "employees_high": 715327,
+      "approx": false,
+      "not_counted": [
+        "Autres organisations fonctionnant par adhésion volontaire",
+        "Production de films cinématographiques",
+        "Édition et diffusion d'œuvres musicales"
+      ],
+      "quote": "dans laquelle le demandeur est un organisme défini à l'article L. 321‑1 du présent code",
+      "history": {
+        "theme": "Restreindre la qualité à agir et les voies procédurales",
+        "amendments": [
+          "90",
+          "79",
+          "96",
+          "80"
+        ],
+        "effects": [
+          "Conditionne le bénéfice de la présomption à la preuve de la qualité pour agir et de l'identité du titulaire des droits sur l'œuvre concernée",
+          "Interdit le recours aux actions de groupe ou collectives fondées sur la présomption prévue, imposant un examen individualisé des situations.",
+          "Restreint la présomption aux actions individuelles et interdit les mesures provisoires avant décision sur le fond",
+          "Restreint une action en justice civile aux seuls organismes de gestion collective des droits d'auteur (sociétés de perception et de répartition), excluant les œuvres mises en ligne par les internautes."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Ces amendements restreignent les voies procédurales ouvertes par la présomption instaurée par la loi : seuls les organismes de gestion collective peuvent agir en justice civile, la présomption est limitée aux actions individuelles, les actions de groupe sont exclues, et les mesures provisoires sont interdites avant une décision sur le fond. Aucun transfert monétaire direct n'est décrit dans les textes.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "autre:développeurs d'ia",
+            "label": "Développeurs de systèmes d'IA"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "autre:développeurs d'ia",
+            "label": "Programmation informatique"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "90.0",
+            "role": "autre:titulaires de droits",
+            "label": "Activités créatives, artistiques et de spectacle"
+          },
+          {
+            "naf": "94.69Z",
+            "role": "autre:organismes de gestion collective",
+            "label": "Organismes de gestion collective des droits"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements sont de nature procédurale et ne contiennent aucun paramètre monétaire chiffré. Aucune assiette ni aucun écart quantifiable ne peut être extrait des textes."
+      }
+    },
+    {
+      "key": "gestion-collective-obligatoire",
+      "theme": "Instaurer la gestion collective obligatoire",
+      "amendments": [
+        "84"
+      ],
+      "opposes": null,
+      "effects": [
+        "Instaure la gestion collective obligatoire des rémunérations dues aux auteurs lorsque leurs œuvres sont utilisées par les fournisseurs d'intelligence artificielle"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "94.99Z"
+      ],
+      "roles": [
+        "associations",
+        "autre:auteurs et titulaires de droits voisins",
+        "autre:fournisseurs d'intelligence artificielle"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        },
+        {
+          "key": "associations",
+          "label": "associations"
+        },
+        {
+          "key": "autre:fournisseurs d'intelligence artificielle",
+          "label": "autre:fournisseurs d'intelligence artificielle"
+        },
+        {
+          "key": "autre:auteurs et titulaires de droits voisins",
+          "label": "autre:auteurs et titulaires de droits voisins"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 646940,
+      "employees_low": 282207,
+      "employees_high": 561888,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Les droits à rémunération des auteurs et titulaires de droits voisins résultant de l'utilisation de leurs œuvres par les fournisseurs d'intelligence artificielle sont gérés collectivement par les organismes de gestion collective agréés en application de l'article L. 324‑1.",
+      "history": {
+        "theme": "Instaurer la gestion collective obligatoire",
+        "amendments": [
+          "84"
+        ],
+        "effects": [
+          "Instaure la gestion collective obligatoire des rémunérations dues aux auteurs lorsque leurs œuvres sont utilisées par les fournisseurs d'intelligence artificielle"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Les fournisseurs d'intelligence artificielle doivent rémunérer les auteurs pour l'utilisation de leurs œuvres lors de l'entraînement des modèles. La mesure rend obligatoire la gestion collective de ces rémunérations par des organismes agréés (SACEM, SCAM, ADAGP, etc.), qui perçoivent les sommes et les répartissent entre les créateurs.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "autre:auteurs et titulaires de droits voisins",
+            "label": "Auteurs et titulaires de droits voisins"
+          },
+          {
+            "naf": "94.99Z",
+            "role": "associations",
+            "label": "Organismes de gestion collective du droit d'auteur"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'intelligence artificielle",
+            "label": "Fournisseurs d'intelligence artificielle"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'intelligence artificielle",
+            "label": "Fournisseurs d'intelligence artificielle"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant ou l'assiette de la rémunération due par les fournisseurs d'IA, ni un taux ou pourcentage applicable. Il se contente d'instaurer le principe de la gestion collective obligatoire sans définir les paramètres financiers du transfert."
+      }
+    },
+    {
+      "key": "permettre-suspension-procedure",
+      "theme": "Permettre la suspension pour négociations",
+      "amendments": [
+        "89"
+      ],
+      "opposes": null,
+      "effects": [
+        "Permet au juge de suspendre jusqu'à 12 mois les actions en contrefaçon pour laisser les titulaires de droits et les fournisseurs d'IA négocier des accords sectoriels"
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.11A",
+        "59.20Z",
+        "62.01Z",
+        "90.03A"
+      ],
+      "roles": [
+        "autre:fournisseurs_d_ia",
+        "autre:titulaires_de_droits",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique (fournisseurs d'IA)"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.11A",
+          "label": "Production de films et de programmes audiovisuels"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "90.03A",
+          "label": "Création artistique relevant des arts plastiques"
+        },
+        {
+          "key": "autre:fournisseurs_d_ia",
+          "label": "autre:fournisseurs_d_ia"
+        },
+        {
+          "key": "autre:titulaires_de_droits",
+          "label": "autre:titulaires_de_droits"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 274701,
+      "employees_low": 110727,
+      "employees_high": 219365,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Lorsqu'une négociation collective est engagée entre les représentants des titulaires de droits et les fournisseurs de systèmes d'intelligence artificielle concernant l'utilisation des œuvres concernées, le juge peut suspendre l'examen des actions fondées sur l'article L. 331‑4-1 pour une durée maximale de douze mois.",
+      "history": {
+        "theme": "Permettre la suspension pour négociations",
+        "amendments": [
+          "89"
+        ],
+        "effects": [
+          "Permet au juge de suspendre jusqu'à 12 mois les actions en contrefaçon pour laisser les titulaires de droits et les fournisseurs d'IA négocier des accords sectoriels"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Le juge peut suspendre jusqu'à 12 mois les actions en contrefaçon pour permettre aux titulaires de droits et aux fournisseurs d'IA de négocier des accords sectoriels. Aucun transfert monétaire direct n'est prévu par le dispositif.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA (suspension des actions en contrefaçon)"
+          },
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Justice (désengorgement des contentieux)"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "58.11Z",
+            "role": null,
+            "label": "Éditeurs de livres (suspension de leurs actions en contrefaçon)"
+          },
+          {
+            "naf": "59.11A",
+            "role": null,
+            "label": "Producteurs audiovisuels (suspension de leurs actions en contrefaçon)"
+          },
+          {
+            "naf": "59.20Z",
+            "role": null,
+            "label": "Éditeurs musicaux (suspension de leurs actions en contrefaçon)"
+          },
+          {
+            "naf": "90.03A",
+            "role": null,
+            "label": "Créateurs artistiques (suspension de leurs actions en contrefaçon)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le dispositif crée une faculté de suspension judiciaire sans fixer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart chiffré ne figure dans l'amendement."
+      }
+    },
+    {
+      "key": "restreindre-oeuvres-culturelles-presse",
+      "theme": "Restreindre aux œuvres culturelles et de presse",
+      "amendments": [
+        "91"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint le champ de la protection aux seules œuvres culturelles, artistiques et de presse en excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques du périmètre de la loi"
+      ],
+      "nafs": [
+        "58.11Z",
+        "58.13Z",
+        "58.14Z",
+        "59.20Z",
+        "60.10Z",
+        "60.20A",
+        "90.01Z"
+      ],
+      "roles": [
+        "autre:<ayants droit des industries culturelles et de presse>"
+      ],
+      "sectors": [
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "58.13Z",
+          "label": "Édition de journaux"
+        },
+        {
+          "key": "58.14Z",
+          "label": "Édition de revues et périodiques"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "60.10Z",
+          "label": "Programmation et diffusion de programmes audiovisuels"
+        },
+        {
+          "key": "60.20A",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "90.01Z",
+          "label": "Arts du spectacle vivant"
+        },
+        {
+          "key": "autre:<ayants droit des industries culturelles et de presse>",
+          "label": "autre:<ayants droit des industries culturelles et de presse>"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 221488,
+      "employees_low": 105789,
+      "employees_high": 205393,
+      "approx": false,
+      "not_counted": [],
+      "quote": "la protection des œuvres de création, des contenus culturels et de presse face aux usages de l'intelligence artificielle",
+      "history": {
+        "theme": "Restreindre aux œuvres culturelles et de presse",
+        "amendments": [
+          "91"
+        ],
+        "effects": [
+          "Restreint le champ de la protection aux seules œuvres culturelles, artistiques et de presse en excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques du périmètre de la loi"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint le champ de la protection légale aux seules œuvres culturelles et de presse, excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques. Les créateurs des contenus exclus perdent le bénéfice du mécanisme de protection, tandis que les plateformes d'IA n'ont plus à les indemniser pour ces catégories.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "plateformes",
+            "label": "Plateformes d'IA utilisant logiciels, bases de données, écrits scientifiques et cartes"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "emetteurs",
+            "label": "Éditeurs de logiciels, bases de données, écrits scientifiques et cartes géographiques"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette du flux concerné, l'écart imposé par la mesure ou la part du chiffre d'affaires des secteurs affectés."
+      }
+    },
+    {
+      "key": "exclure-ia-usage-professionnel",
+      "theme": "Exclure les IA à usage professionnel",
+      "amendments": [
+        "15"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut les systèmes d'IA à usage professionnel du champ d'une présomption, levant une contrainte pour les organisations publiques et privées qui développent ou utilisent l'IA au travail."
+      ],
+      "nafs": [
+        "62.01Z",
+        "62.02A",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:developpeurs IA",
+        "employeurs",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:developpeurs IA",
+          "label": "autre:developpeurs IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 209842,
+      "employees_low": 377195,
+      "employees_high": 739471,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption ne s'applique pas aux systèmes d'intelligence artificielle développés ou utilisés pour un usage professionnel par des organisations publiques ou privées.",
+      "history": {
+        "theme": "Exclure les IA à usage professionnel",
+        "amendments": [
+          "15"
+        ],
+        "effects": [
+          "Exclut les systèmes d'IA à usage professionnel du champ d'une présomption, levant une contrainte pour les organisations publiques et privées qui développent ou utilisent l'IA au travail."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure exclut les systèmes d'IA à usage professionnel du champ d'une présomption liée au droit d'auteur. Les organisations publiques et privées qui développent ou utilisent l'IA au travail n'ont plus à supporter la contrainte financière ou juridique associée à cette présomption.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "employeurs",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "62.02A",
+            "role": "employeurs",
+            "label": "Conseil en systèmes et logiciels informatiques"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "employeurs",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Organisations publiques utilisatrices d'IA"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Titulaires de droits d'auteur bénéficiaires de la présomption"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni montant d'assiette, ni taux ni part de chiffre d'affaires. Le coût ou l'avantage financier de la présomption exclue n'est pas quantifié dans l'amendement."
+      }
+    },
+    {
+      "key": "creer-registre-opt-out",
+      "theme": "Créer un registre de réserve de droit",
+      "amendments": [
+        "29"
+      ],
+      "opposes": null,
+      "effects": [
+        "Crée un registre de réserve de droit permettant aux auteurs de s'opposer à l'utilisation de leur œuvre pour l'entraînement d'IA, obligeant les développeurs d'IA à le consulter en amont"
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.11Z",
+        "59.20Z",
+        "62.01Z",
+        "74.20Z",
+        "90.03Z"
+      ],
+      "roles": [
+        "autre:auteurs et titulaires de droits",
+        "autre:développeurs d'IA",
+        "autre:organisme tiers gestionnaire",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "74.20Z",
+          "label": "Activités photographiques"
+        },
+        {
+          "key": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        },
+        {
+          "key": "autre:développeurs d'IA",
+          "label": "autre:développeurs d'IA"
+        },
+        {
+          "key": "autre:auteurs et titulaires de droits",
+          "label": "autre:auteurs et titulaires de droits"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:organisme tiers gestionnaire",
+          "label": "autre:organisme tiers gestionnaire"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 194829,
+      "employees_low": 102819,
+      "employees_high": 203463,
+      "approx": false,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques",
+        "Production de films cinématographiques"
+      ],
+      "quote": "Les développeurs d'IA auront donc l'obligation de consulter le registre en amont de l'entrainement de modèles et de systèmes d'IA afin de s'assurer qu'aucune des œuvres présentent dans le registre, et donc ayant fait l'objet d'une réserve de droits, ne soit utilisée.",
+      "history": {
+        "theme": "Créer un registre de réserve de droit",
+        "amendments": [
+          "29"
+        ],
+        "effects": [
+          "Crée un registre de réserve de droit permettant aux auteurs de s'opposer à l'utilisation de leur œuvre pour l'entraînement d'IA, obligeant les développeurs d'IA à le consulter en amont"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 122-5-3 du code de la propriété intellectuelle"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure crée un registre où les auteurs déposent leurs œuvres pour s'opposer à leur utilisation par les développeurs d'IA. Les développeurs doivent consulter le registre avant l'entraînement de leurs modèles. Aucun transfert monétaire n'est chiffré dans le texte.",
+        "winners": [
+          {
+            "naf": "58.11Z",
+            "role": "autre:auteurs et titulaires de droits",
+            "label": "Éditeurs de livres"
+          },
+          {
+            "naf": "59.20Z",
+            "role": "autre:auteurs et titulaires de droits",
+            "label": "Enregistrement sonore et édition musicale"
+          },
+          {
+            "naf": "59.11Z",
+            "role": "autre:auteurs et titulaires de droits",
+            "label": "Production de films cinématographiques"
+          },
+          {
+            "naf": "74.20Z",
+            "role": "autre:auteurs et titulaires de droits",
+            "label": "Activités photographiques"
+          },
+          {
+            "naf": "90.03Z",
+            "role": "autre:auteurs et titulaires de droits",
+            "label": "Création artistique relevant des arts plastiques"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:développeurs d'ia",
+            "label": "Programmation informatique"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun paramètre chiffré : ni assiette monétaire, ni taux, ni coût de consultation du registre. Les modalités financières sont renvoyées à un décret."
+      }
+    },
+    {
+      "key": "rapports-gouvernement",
+      "theme": "Demander des rapports gouvernementaux d'évaluation",
+      "amendments": [
+        "1",
+        "53",
+        "21",
+        "50",
+        "51"
+      ],
+      "opposes": null,
+      "effects": [
+        "Demande un rapport gouvernemental sur la faisabilité d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'IA",
+        "Le Gouvernement devra remettre au Parlement un rapport évaluant l'impact du dispositif sur le développement de modèles d'IA souverains en France et dans l'UE.",
+        "Le Gouvernement devra remettre un rapport évaluant la compatibilité de la présomption de contrefaçon avec le droit européen, notamment au regard des charges probatoires imposées aux fournisseurs d'IA",
+        "Oblige le Gouvernement à remettre au Parlement un rapport évaluant l'impact économique de l'utilisation non autorisée d'œuvres protégées par l'IA générative sur les filières culturelles et informationnelles françaises",
+        "Le Gouvernement devra remettre au Parlement un rapport sur les risques d'exclusion préventive des œuvres culturelles françaises des corpus d'entraînement des systèmes d'intelligence artificielle"
+      ],
+      "nafs": [
+        "58.11Z",
+        "58.13Z",
+        "59.11Z",
+        "59.20Z",
+        "60.11Z",
+        "62.01Z",
+        "63.11Z",
+        "72.19Z",
+        "90.03Z"
+      ],
+      "roles": [
+        "autre:auteurs",
+        "autre:ayants droit",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:secteurs culturels",
+        "autre:éditeurs IA",
+        "etat",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique (développement de modèles d'IA)"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:ayants droit",
+          "label": "autre:ayants droit"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        },
+        {
+          "key": "autre:developpeurs IA",
+          "label": "autre:developpeurs IA"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "58.13Z",
+          "label": "Édition de journaux"
+        },
+        {
+          "key": "60.11Z",
+          "label": "Production de films et de programmes pour la télévision"
+        },
+        {
+          "key": "autre:secteurs culturels",
+          "label": "autre:secteurs culturels"
+        },
+        {
+          "key": "autre:éditeurs IA",
+          "label": "autre:éditeurs IA"
+        },
+        {
+          "key": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:auteurs",
+          "label": "autre:auteurs"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 160263,
+      "employees_low": 250914,
+      "employees_high": 475154,
+      "approx": false,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques",
+        "Production de films cinématographiques",
+        "Production de films et de programmes pour la télévision"
+      ],
+      "quote": "le Gouvernement remet au Parlement un rapport évaluant la faisabilité technique et économique d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'intelligence artificielle",
+      "history": {
+        "theme": "Demander des rapports gouvernementaux d'évaluation",
+        "amendments": [
+          "1",
+          "53",
+          "21",
+          "50",
+          "51"
+        ],
+        "effects": [
+          "Demande un rapport gouvernemental sur la faisabilité d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'IA",
+          "Le Gouvernement devra remettre au Parlement un rapport sur les risques d'exclusion préventive des œuvres culturelles françaises des corpus d'entraînement des systèmes d'intelligence artificielle",
+          "Le Gouvernement devra remettre au Parlement un rapport évaluant l'impact du dispositif sur le développement de modèles d'IA souverains en France et dans l'UE.",
+          "Le Gouvernement devra remettre un rapport évaluant la compatibilité de la présomption de contrefaçon avec le droit européen, notamment au regard des charges probatoires imposées aux fournisseurs d'IA",
+          "Oblige le Gouvernement à remettre au Parlement un rapport évaluant l'impact économique de l'utilisation non autorisée d'œuvres protégées par l'IA générative sur les filières culturelles et informationnelles françaises"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 331-4-1 du code de la propriété intellectuelle"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure oblige le Gouvernement à remettre plusieurs rapports d'évaluation au Parlement sur les effets de la loi (faisabilité d'une licence préalable, développement de l'IA souveraine, compatibilité avec le droit européen, conséquences économiques sur les filières culturelles, risques d'exclusion des œuvres françaises). Aucun transfert financier n'est prévu.",
+        "winners": [],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Ces amendements imposent uniquement la production de rapports gouvernementaux. Aucun flux monétaire, aucune assiette ni aucun écart chiffré ne sont présents dans les textes."
+      }
+    },
+    {
+      "key": "permettre-attestation-tiers",
+      "theme": "Permettre l'attestation d'un tiers de confiance",
+      "amendments": [
+        "76",
+        "95"
+      ],
+      "opposes": null,
+      "effects": [
+        "Permet aux fournisseurs de modèles ou systèmes d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée, via documentation technique ou attestation de conformité d'un tiers, sans divulguer tout le corpus d'entraînement.",
+        "Permet aux fournisseurs de systèmes d'IA de recourir à une attestation d'un tiers de confiance accrédité pour prouver l'absence d'une œuvre dans leur corpus d'entraînement, sans devoir communiquer l'intégralité de ce corpus."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "69.20Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:tiers de confiance"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "69.20Z",
+          "label": "Activités comptables"
+        },
+        {
+          "key": "autre:tiers de confiance",
+          "label": "autre:tiers de confiance"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 151120,
+      "employees_low": 270777,
+      "employees_high": 544546,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le fournisseur du modèle ou du système d'intelligence artificielle peut établir la preuve contraire par tout moyen, notamment par la production d'une documentation technique relative aux procédures de sélection et de filtrage des données d'entraînement, d'attestations de conformité établies par un organisme tiers indépendant, ou par toute autre pièce de nature à établir l'absence d'utilisation de l'œuvre alléguée.",
+      "history": {
+        "theme": "Permettre l'attestation d'un tiers de confiance",
+        "amendments": [
+          "76",
+          "95"
+        ],
+        "effects": [
+          "Permet aux fournisseurs de modèles ou systèmes d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée, via documentation technique ou attestation de conformité d'un tiers, sans divulguer tout le corpus d'entraînement.",
+          "Permet aux fournisseurs de systèmes d'IA de recourir à une attestation d'un tiers de confiance accrédité pour prouver l'absence d'une œuvre dans leur corpus d'entraînement, sans devoir communiquer l'intégralité de ce corpus."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure permet aux fournisseurs d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée via une documentation technique ou une attestation d'un tiers de confiance, sans devoir divulguer l'intégralité de leur corpus d'entraînement. Aucun transfert monétaire direct n'est institué ; la mesure est de nature procédurale.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs de modèles et systèmes d'IA"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Hébergeurs et prestataires de traitement de données"
+          },
+          {
+            "naf": "69.20Z",
+            "role": "autre:tiers de confiance",
+            "label": "Organismes tiers accrédités délivrant des attestations de conformité"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Titulaires de droits d'auteur (auteurs, ayants droit)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, un taux ou une part de chiffre d'affaires. La mesure modifie uniquement les modalités de preuve admises devant le juge ; aucun transfert d'argent n'est directement institué."
+      }
+    },
+    {
+      "key": "exclure-accessibilite-en-ligne-seul",
+      "theme": "Exclure la seule accessibilité en ligne comme indice",
+      "amendments": [
+        "10",
+        "37"
+      ],
+      "opposes": null,
+      "effects": [
+        "La simple accessibilité en ligne d'une œuvre ne suffit pas à présumer son utilisation dans l'entraînement d'un système d'IA",
+        "Exonère le fournisseur de la présomption d'utilisation illicite lorsque l'œuvre était accessible en ligne sans mesure d'opt-out du titulaire de droits."
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.20Z",
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de services d'IA",
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "autre:fournisseurs de services d'IA",
+          "label": "autre:fournisseurs de services d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "approx": false,
+      "not_counted": [],
+      "quote": "une rédaction trop large risquerait de conduire à une présomption quasi automatique applicable à l'ensemble des fournisseurs de systèmes d'intelligence artificielle, créant ainsi une charge probatoire disproportionnée et difficilement soutenable pour les acteurs économiques concernés",
+      "history": {
+        "theme": "Exclure la seule accessibilité en ligne comme indice",
+        "amendments": [
+          "10",
+          "37"
+        ],
+        "effects": [
+          "Exonère le fournisseur de la présomption d'utilisation illicite lorsque l'œuvre était accessible en ligne sans mesure d'opt-out du titulaire de droits.",
+          "La simple accessibilité en ligne d'une œuvre ne suffit pas à présumer son utilisation dans l'entraînement d'un système d'IA"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure empêche qu'une œuvre simplement accessible en ligne soit présumée utilisée pour l'entraînement d'un système d'IA. Elle exonère le fournisseur de la présomption lorsque l'œuvre était en ligne sans mesure d'opt-out du titulaire de droits. Cela réduit l'exposition juridique des fournisseurs d'IA et affaiblit la position des titulaires de droits n'ayant pas mis en place d'opposition à la fouille de textes et de données.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Programmation informatique"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "58.11Z",
+            "role": "autre:titulaires de droits",
+            "label": "Édition de livres"
+          },
+          {
+            "naf": "59.20Z",
+            "role": "autre:titulaires de droits",
+            "label": "Enregistrement sonore et édition musicale"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni montant d'assiette, ni taux, ni part de chiffre d'affaires. La mesure est de nature probatoire et juridique, sans paramètre monétaire quantifié dans les textes."
+      }
+    },
+    {
+      "key": "exclure-oeuvres-sous-licence",
+      "theme": "Exclure les œuvres utilisées sous licence ou accord",
+      "amendments": [
+        "65",
+        "92",
+        "26"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut de la présomption les fournisseurs d'IA disposant d'une licence, autorisation ou accord contractuel couvrant l'utilisation alléguée d'une œuvre protégée",
+        "Permet aux fournisseurs d'IA de renverser la présomption de litige en prouvant l'existence d'un contrat autorisant l'usage des contenus avec le titulaire des droits.",
+        "Exclut du champ de la loi les cas où un accord autorisant la fouille de textes et de données a été conclu entre une organisation représentative des titulaires de droits et un fournisseur d'IA."
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.11Z",
+        "59.20Z",
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "associations",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA",
+        "autre:titulaires de droits",
+        "autre:titulaires de droits culturels"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de modèles d'IA",
+          "label": "autre:fournisseurs de modèles d'IA"
+        },
+        {
+          "key": "autre:titulaires de droits culturels",
+          "label": "autre:titulaires de droits culturels"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "associations",
+          "label": "associations"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "approx": false,
+      "not_counted": [
+        "Acteurs culturels / titulaires de droits d'auteur",
+        "Production de films cinématographiques"
+      ],
+      "quote": "La présomption prévue au présent article ne s’applique pas lorsque le fournisseur justifie bénéficier d’une licence, d’une autorisation ou d’un accord contractuel couvrant l’utilisation alléguée.",
+      "history": {
+        "theme": "Exclure les œuvres utilisées sous licence ou accord",
+        "amendments": [
+          "65",
+          "92",
+          "26"
+        ],
+        "effects": [
+          "Exclut de la présomption les fournisseurs d'IA disposant d'une licence, autorisation ou accord contractuel couvrant l'utilisation alléguée d'une œuvre protégée",
+          "Exclut du champ de la loi les cas où un accord autorisant la fouille de textes et de données a été conclu entre une organisation représentative des titulaires de droits et un fournisseur d'IA.",
+          "Permet aux fournisseurs d'IA de renverser la présomption de litige en prouvant l'existence d'un contrat autorisant l'usage des contenus avec le titulaire des droits."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 122-5-3 du code de la propriété intellectuelle"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure exclut du mécanisme de présomption les cas où le fournisseur d'IA dispose d'une licence, d'une autorisation ou d'un accord contractuel couvrant l'utilisation de l'œuvre. Aucun transfert monétaire direct n'est quantifié dans les amendements.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de modèles d'IA disposant de licences"
+          },
+          {
+            "naf": "62.01Z",
+            "role": null,
+            "label": "Fournisseurs d'IA ayant conclu des accords contractuels"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "associations",
+            "label": "Titulaires de droits sans contrat, dont la présomption voit son champ réduit"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent sur une exception à une présomption légale et ne contiennent aucun chiffre permettant de quantifier un flux monétaire (assiette), un taux ou un écart. Aucune assiette ni aucun delta ne peut être extrait des textes."
+      }
+    },
+    {
+      "key": "definir-utilisation-reproduction",
+      "theme": "Définir l'utilisation comme reproduction dans le corpus",
+      "amendments": [
+        "7",
+        "40"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint la notion d'utilisation d'une œuvre par un système d'IA aux cas où elle a été utilisée de manière directe, identifiable et substantielle lors de l'entraînement du modèle, réduisant les obligations des fournisseurs d'IA.",
+        "Définit l'« utilisation » d'une œuvre par une IA comme sa reproduction ou communication dans le corpus d'entraînement, excluant les résultats générés par inférence statistique sans reproduction identifiable"
+      ],
+      "nafs": [
+        "58.29C",
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "58.29C",
+          "label": "Édition de logiciels"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:titulaires de droits d'auteur",
+          "label": "autre:titulaires de droits d'auteur"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 127541,
+      "employees_low": 188168,
+      "employees_high": 378282,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Cet amendement vise à recentrer la notion d'utilisation sur les seules hypothèses dans lesquelles l'œuvre concernée a été utilisée de manière directe, identifiable et substantielle dans le cadre de l'entraînement du modèle.",
+      "history": {
+        "theme": "Définir l'utilisation comme reproduction dans le corpus",
+        "amendments": [
+          "7",
+          "40"
+        ],
+        "effects": [
+          "Définit l'« utilisation » d'une œuvre par une IA comme sa reproduction ou communication dans le corpus d'entraînement, excluant les résultats générés par inférence statistique sans reproduction identifiable",
+          "Restreint la notion d'utilisation d'une œuvre par un système d'IA aux cas où elle a été utilisée de manière directe, identifiable et substantielle lors de l'entraînement du modèle, réduisant les obligations des fournisseurs d'IA."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint la notion d'« utilisation » d'une œuvre par un système d'IA à sa reproduction directe, identifiable et substantielle dans le corpus d'entraînement. Les fournisseurs d'IA voient leurs obligations envers les titulaires de droits réduites.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Hébergeurs et traiteurs de données pour l'IA"
+          },
+          {
+            "naf": "58.29C",
+            "role": "plateformes",
+            "label": "Éditeurs de logiciels d'IA"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:titulaires de droits d'auteur",
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements modifient une définition juridique sans introduire de chiffre. Aucune assiette monétaire, aucun écart quantifié et aucune part sectorielle ne figurent dans les textes. Le transfert financier dépend d'obligations dont le montant n'est pas spécifié ici."
+      }
+    },
+    {
+      "key": "restreindre-champ-fournisseurs-modeles",
+      "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+      "amendments": [
+        "13",
+        "63",
+        "94",
+        "19",
+        "32",
+        "64",
+        "33",
+        "23",
+        "31"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint le champ d'application de la présomption aux seuls fournisseurs de modèles d'IA à usage général, excluant les déployeurs, intégrateurs, distributeurs et utilisateurs professionnels.",
+        "Limite l'obligation de transparence aux seuls fournisseurs de modèles d'IA visés par l'article 53 du règlement européen sur l'IA, excluant les fournisseurs de systèmes d'IA qui affinent des modèles ou utilisent des architectures RAG.",
+        "Restreint la responsabilité du débiteur présumé aux seuls fournisseurs de modèles d'IA à usage général ayant intégré l'œuvre dans leur corpus d'entraînement, excluant les autres acteurs du cycle de vie de l'IA",
+        "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les fournisseurs de systèmes d'IA en aval.",
+        "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seuls modèles d'IA, en excluant les systèmes d'IA qui les exploitent",
+        "Restreint le champ de la loi aux seuls fournisseurs de modèles d'IA générative, excluant les acteurs en aval comme les fournisseurs de systèmes",
+        "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les acteurs en aval comme les fournisseurs de systèmes."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "72.19Z",
+        "72.20Z"
+      ],
+      "roles": [
+        "autre:développeurs de systèmes d'IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de modèles d'IA",
+          "label": "autre:fournisseurs de modèles d'IA"
+        },
+        {
+          "key": "72.20Z",
+          "label": "Recherche-développement en sciences naturelles et ingénierie"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:développeurs de systèmes d'IA",
+          "label": "autre:développeurs de systèmes d'IA"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 127346,
+      "employees_low": 228117,
+      "employees_high": 433085,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le présent amendement vise à recentrer le champ d'application de la présomption sur les seuls fournisseurs de modèles d'intelligence artificielle à usage général au sens du règlement (UE) 2024/1689 sur l'intelligence artificielle.",
+      "history": {
+        "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+        "amendments": [
+          "13",
+          "63",
+          "94",
+          "19",
+          "32",
+          "64",
+          "33",
+          "23",
+          "31"
+        ],
+        "effects": [
+          "Limite l'obligation de transparence aux seuls fournisseurs de modèles d'IA visés par l'article 53 du règlement européen sur l'IA, excluant les fournisseurs de systèmes d'IA qui affinent des modèles ou utilisent des architectures RAG.",
+          "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les acteurs en aval comme les fournisseurs de systèmes.",
+          "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les fournisseurs de systèmes d'IA en aval.",
+          "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seuls modèles d'IA, en excluant les systèmes d'IA qui les exploitent",
+          "Restreint la responsabilité du débiteur présumé aux seuls fournisseurs de modèles d'IA à usage général ayant intégré l'œuvre dans leur corpus d'entraînement, excluant les autres acteurs du cycle de vie de l'IA",
+          "Restreint le champ d'application de la présomption aux seuls fournisseurs de modèles d'IA à usage général, excluant les déployeurs, intégrateurs, distributeurs et utilisateurs professionnels.",
+          "Restreint le champ de la loi aux seuls fournisseurs de modèles d'IA générative, excluant les acteurs en aval comme les fournisseurs de systèmes"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint le champ de la présomption liée à l'utilisation d'œuvres protégées dans l'entraînement de l'IA aux seuls fournisseurs de modèles d'IA à usage général. Les fournisseurs de systèmes, déployeurs, intégrateurs et utilisateurs professionnels sont exclus de l'obligation.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA, intégrateurs, déployeurs"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de systèmes d'IA, intégrateurs, déployeurs"
+          },
+          {
+            "naf": "72.20Z",
+            "role": null,
+            "label": "Entreprises affinant des modèles sur données métier ou utilisant des architectures RAG"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de modèles d'ia",
+            "label": "Fournisseurs de modèles d'IA à usage général (restent seuls soumis à la présomption)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert financier. Aucune assiette en euros, aucun écart exprimé en proportion et aucune part de chiffre d'affaires ne figurent dans les textes. La mesure est un changement de champ d'application qualitatif."
+      }
+    },
+    {
+      "key": "proteger-secret-affaires",
+      "theme": "Protéger le secret des affaires dans la preuve",
+      "amendments": [
+        "71",
+        "68",
+        "36",
+        "72",
+        "99"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exonère les fournisseurs d'IA de l'obligation de produire des données protégées par le RGPD ou le secret des affaires pour renverser une présomption liée aux corpus d'entraînement.",
+        "Interdit aux juridictions d'ordonner la communication intégrale des jeux de données d'entraînement d'un système d'IA dans le cadre d'une mesure d'instruction.",
+        "Protège les fournisseurs de systèmes d'IA contre l'obligation de divulguer des informations couvertes par le secret des affaires dans le cadre du mécanisme de présomption.",
+        "Encadre la divulgation d'informations protégées par le secret des affaires (notamment les corpus d'entraînement d'IA) lors d'une preuve contraire, en imposant des garanties de confidentialité sous contrôle du juge.",
+        "Renvoie à un décret en Conseil d'État la définition des règles de protection du secret des affaires pour les informations divulguées dans le cadre de la preuve contraire, incluant le tiers de confiance et les sanctions"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "72.19Z",
+        "72.20Z"
+      ],
+      "roles": [
+        "autre:developpeurs IA",
+        "autre:entreprises",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:tiers de confiance",
+        "autre:titulaires de droits",
+        "etat",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        },
+        {
+          "key": "autre:developpeurs IA",
+          "label": "autre:developpeurs IA"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:tiers de confiance",
+          "label": "autre:tiers de confiance"
+        },
+        {
+          "key": "autre:entreprises",
+          "label": "autre:entreprises"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 127346,
+      "employees_low": 228117,
+      "employees_high": 433085,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Exiger du fournisseur qu'il communique ces données pour renverser la présomption le place dans une situation juridiquement impossible : satisfaire à la présomption l'exposerait à violer d'autres règlements européens.",
+      "history": {
+        "theme": "Protéger le secret des affaires dans la preuve",
+        "amendments": [
+          "71",
+          "68",
+          "36",
+          "72",
+          "99"
+        ],
+        "effects": [
+          "Encadre la divulgation d'informations protégées par le secret des affaires (notamment les corpus d'entraînement d'IA) lors d'une preuve contraire, en imposant des garanties de confidentialité sous contrôle du juge.",
+          "Exonère les fournisseurs d'IA de l'obligation de produire des données protégées par le RGPD ou le secret des affaires pour renverser une présomption liée aux corpus d'entraînement.",
+          "Interdit aux juridictions d'ordonner la communication intégrale des jeux de données d'entraînement d'un système d'IA dans le cadre d'une mesure d'instruction.",
+          "Protège les fournisseurs de systèmes d'IA contre l'obligation de divulguer des informations couvertes par le secret des affaires dans le cadre du mécanisme de présomption.",
+          "Renvoie à un décret en Conseil d'État la définition des règles de protection du secret des affaires pour les informations divulguées dans le cadre de la preuve contraire, incluant le tiers de confiance et les sanctions"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 151-1 du code de commerce"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Ces amendements encadrent ou suppriment l'obligation pour les fournisseurs de systèmes d'IA de divulguer leurs données d'entraînement et informations couvertes par le secret des affaires lors des procédures de preuve. Aucun transfert monétaire n'est prévu ; la mesure porte sur des obligations procédurales et juridiques.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": "72.20Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Recherche-développement en sciences exactes et naturelles"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:titulaires de droits",
+            "label": "Titulaires de droits cherchant à obtenir communication des données d'entraînement"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale et juridique : elle encadre la divulgation d'informations en justice. Aucun flux monétaire n'est identifié dans les amendements, donc aucune assiette ni écart chiffré ne peut être extrait."
+      }
+    },
+    {
+      "key": "exclure-recours-exception-tdm",
+      "theme": "Exclure le recours à l'exception de fouille de données",
+      "amendments": [
+        "25",
+        "69"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut du mécanisme de présomption d'utilisation les fournisseurs de modèles ou systèmes d'IA qui ne peuvent techniquement prouver la non-utilisation d'une œuvre en raison de l'obligation de destruction des données issue de l'exception pour fouilles de données.",
+        "La présomption d'exploitation des œuvres par l'IA ne s'applique pas lorsque le fournisseur a légalement recouru à l'exception de fouille de textes et de données."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "72.19Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 123791,
+      "employees_low": 222904,
+      "employees_high": 421683,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Cet amendement a donc pour vocation d'exclure du mécanisme de présomption le cas où le fournisseur du modèle ou du système d'IA est dans l'incapacité technique d'apporter la preuve recherchée.",
+      "history": {
+        "theme": "Exclure le recours à l'exception de fouille de données",
+        "amendments": [
+          "25",
+          "69"
+        ],
+        "effects": [
+          "Exclut du mécanisme de présomption d'utilisation les fournisseurs de modèles ou systèmes d'IA qui ne peuvent techniquement prouver la non-utilisation d'une œuvre en raison de l'obligation de destruction des données issue de l'exception pour fouilles de données.",
+          "La présomption d'exploitation des œuvres par l'IA ne s'applique pas lorsque le fournisseur a légalement recouru à l'exception de fouille de textes et de données."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure exclut du mécanisme de présomption d'utilisation des œuvres par l'IA les fournisseurs ayant légalement recouru à l'exception de fouille de textes et de données (TDM). Ces fournisseurs n'auraient plus à verser la compensation prévue par la présomption pour les œuvres concernées.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": null,
+            "label": "Fournisseurs de modèles ou systèmes d'IA (programmation informatique)"
+          },
+          {
+            "naf": "63.11Z",
+            "role": null,
+            "label": "Fournisseurs de modèles ou systèmes d'IA (traitement de données, hébergement)"
+          },
+          {
+            "naf": "72.19Z",
+            "role": null,
+            "label": "Fournisseurs de modèles ou systèmes d'IA (recherche-développement)"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Auteurs et titulaires de droits d'auteur bénéficiaires de la présomption"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire, pourcentage ou quantité permettant d'estimer l'assiette du flux financier concerné, l'écart induit par la mesure, ou la part du chiffre d'affaires des secteurs concernés. La mesure modifie uniquement le champ d'application d'une présomption légale sans préciser de montant."
+      }
+    },
+    {
+      "key": "reporter-etude-impact",
+      "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+      "amendments": [
+        "14",
+        "47"
+      ],
+      "opposes": null,
+      "effects": [
+        "Reporte l'entrée en vigueur du mécanisme de présomption d'utilisation jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses effets économiques, juridiques et technologiques.",
+        "Reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses conséquences économiques, juridiques et technologiques."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "72.19Z"
+      ],
+      "roles": [
+        "autre:fournisseurs de systèmes d'IA",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 123791,
+      "employees_low": 222904,
+      "employees_high": 421683,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Une analyse de la charge procédurale et financière imposée aux fournisseurs de systèmes d'intelligence artificielle établis en France ou y exerçant leurs activités pour renverser la présomption",
+      "history": {
+        "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+        "amendments": [
+          "14",
+          "47"
+        ],
+        "effects": [
+          "Reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses conséquences économiques, juridiques et technologiques.",
+          "Reporte l'entrée en vigueur du mécanisme de présomption d'utilisation jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses effets économiques, juridiques et technologiques."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 331-4-1 du code de la propriété intellectuelle"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Le mesure reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact au Parlement, dans un délai maximal de trois mois. Pendant ce délai, les fournisseurs de systèmes d'IA ne supportent pas la charge procédurale et financière liée au renversement de la présomption.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": "72.19Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Recherche-développement en autres sciences"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Titulaires de droits de propriété intellectuelle"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire permettant d'estimer l'assiette (valeur des œuvres concernées ou montant des charges procédurales) ni aucun taux ou pourcentage pour l'écart. Le seul élément chiffré est le délai de trois mois, qui ne permet pas de calculer un transfert annuel."
+      }
+    },
+    {
+      "key": "exclure-hebergeurs-integrateurs",
+      "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+      "amendments": [
+        "100"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement, en recentrant celle-ci sur les développeurs des modèles."
+      ],
+      "nafs": [
+        "47.41Z",
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:distributeurs de solutions IA",
+        "autre:hébergeurs",
+        "autre:intégrateurs techniques"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "47.41Z",
+          "label": "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"
+        },
+        {
+          "key": "autre:hébergeurs",
+          "label": "autre:hébergeurs"
+        },
+        {
+          "key": "autre:intégrateurs techniques",
+          "label": "autre:intégrateurs techniques"
+        },
+        {
+          "key": "autre:distributeurs de solutions IA",
+          "label": "autre:distributeurs de solutions IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 121258,
+      "employees_low": 140780,
+      "employees_high": 284845,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption prévue au présent article ne s'applique pas aux personnes assurant exclusivement des fonctions d'hébergement, d'intégration technique ou de distribution d'un système développé par un tiers.",
+      "history": {
+        "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+        "amendments": [
+          "100"
+        ],
+        "effects": [
+          "Exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement, en recentrant celle-ci sur les développeurs des modèles."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement. Cette présomption reste sur les développeurs des modèles. Aucun flux monétaire chiffré n'est identifiable dans le texte.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "autre:hébergeurs",
+            "label": "Hébergeurs de solutions IA"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "autre:intégrateurs techniques",
+            "label": "Intégrateurs techniques"
+          },
+          {
+            "naf": "47.41Z",
+            "role": "autre:distributeurs de solutions ia",
+            "label": "Distributeurs et revendeurs de solutions IA"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:développeurs de modèles d'ia",
+            "label": "Développeurs de modèles d'IA (maintiennent la présomption de responsabilité)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre : ni assiette monétaire, ni taux ni part de chiffre d'affaires. La mesure est un transfert de responsabilité juridique, pas un transfert monétaire chiffré."
+      }
+    },
+    {
+      "key": "assouplir-pme",
+      "theme": "Assouplir les exigences probatoires pour les PME",
+      "amendments": [
+        "74"
+      ],
+      "opposes": null,
+      "effects": [
+        "Assouplit les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques limitées."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z",
+        "72.20Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 118333,
+      "employees_low": 133422,
+      "employees_high": 270016,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Lorsque la présomption est invoquée à l'encontre d'un fournisseur répondant à la définition des petites et moyennes entreprises au sens de l'annexe I du règlement (UE) 651/2014, le juge tient compte de ses capacités techniques et économiques dans l'appréciation des modalités de la preuve contraire.",
+      "history": {
+        "theme": "Assouplir les exigences probatoires pour les PME",
+        "amendments": [
+          "74"
+        ],
+        "effects": [
+          "Assouplit les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques limitées."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure permet au juge de moduler les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques. Aucun flux monétaire direct n'est quantifié dans le texte.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "PME de programmation informatique"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "PME de traitement de données et hébergement"
+          },
+          {
+            "naf": "72.20Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "PME de R&D en sciences exactes"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Titulaires de droits"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier un transfert monétaire. Il s'agit d'une modification procédurale (modulation des exigences probatoires) sans assiette financière ni écart chiffré identifiable dans l'amendement."
+      }
+    },
+    {
+      "key": "proportionnalite-mesures-instruction",
+      "theme": "Encadrer la proportionnalité des mesures d'instruction",
+      "amendments": [
+        "67",
+        "73"
+      ],
+      "opposes": null,
+      "effects": [
+        "Impose le principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'intelligence artificielle",
+        "Le juge peut modérer les mesures d'instruction demandées contre un fournisseur en fonction de la protection de ses droits fondamentaux (données personnelles, secret des affaires, procès équitable)."
+      ],
+      "nafs": [
+        "62.01Z",
+        "72.19Z"
+      ],
+      "roles": [
+        "autre:entreprises IA",
+        "autre:fournisseurs"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "72.19Z",
+          "label": "Recherche-développement en autres sciences"
+        },
+        {
+          "key": "autre:entreprises IA",
+          "label": "autre:entreprises IA"
+        },
+        {
+          "key": "autre:fournisseurs",
+          "label": "autre:fournisseurs"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Une mesure d'instruction excessive pourrait conduire à imposer des charges disproportionnées aux entreprises concernées, notamment lorsqu'il s'agit d'acteurs européens ou français en phase de croissance.",
+      "history": {
+        "theme": "Encadrer la proportionnalité des mesures d'instruction",
+        "amendments": [
+          "67",
+          "73"
+        ],
+        "effects": [
+          "Impose le principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'intelligence artificielle",
+          "Le juge peut modérer les mesures d'instruction demandées contre un fournisseur en fonction de la protection de ses droits fondamentaux (données personnelles, secret des affaires, procès équitable)."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Ces amendements imposent un principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'IA et permettent au juge de les modérer au regard des droits fondamentaux du fournisseur. Aucun flux monétaire chiffré n'est créé ou modifié par ces dispositions, qui relèvent du droit procédural.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:entreprises ia",
+            "label": "Entreprises de programmation informatique développant des systèmes d'IA"
+          },
+          {
+            "naf": "72.19Z",
+            "role": "autre:entreprises ia",
+            "label": "Entreprises de R&D en sciences développant des systèmes d'IA"
+          },
+          {
+            "naf": null,
+            "role": "autre:fournisseurs",
+            "label": "Fournisseurs mis en cause dans une procédure"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Plaignants dans les litiges liés à l'IA, dont les demandes d'instruction peuvent être réduites"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent uniquement sur des principes procéduraux (proportionnalité et modération des mesures d'instruction). Aucun flux monétaire, aucun montant, aucun taux ni aucune part de chiffre d'affaires ne figure dans les textes, ce qui rend le calcul d'un transfert impossible."
+      }
+    },
+    {
+      "key": "memorisation-comme-reproduction",
+      "theme": "Considérer la mémorisation comme une reproduction",
+      "amendments": [
+        "24"
+      ],
+      "opposes": null,
+      "effects": [
+        "La mémorisation d'œuvres protégées dans les modèles d'IA générative est explicitement considérée comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des poursuites pour contrefaçon."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:titulaires de droits d'auteur",
+          "label": "autre:titulaires de droits d'auteur"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La mémorisation dans les modèles de langage d'intelligence artificielle générative peut être considérée comme une reproduction.",
+      "history": {
+        "theme": "Considérer la mémorisation comme une reproduction",
+        "amendments": [
+          "24"
+        ],
+        "effects": [
+          "La mémorisation d'œuvres protégées dans les modèles d'IA générative est explicitement considérée comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des poursuites pour contrefaçon."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure qualifie juridiquement la mémorisation d'œuvres dans les modèles d'IA générative comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des actions en contrefaçon et dommages-intérêts de la part des titulaires de droits.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "autre:titulaires de droits d'auteur",
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Entreprises d'hébergement et traitement de données développant des modèles d'IA"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Entreprises de programmation informatique développant des modèles d'IA"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est une qualification juridique sans aucun paramètre chiffré : aucun flux monétaire annuel (assiette) ni aucune variation tarifaire ou proportionnelle (écart) ne figure dans le texte. Le transfert financier potentiel (dommages-intérêts ou redevances) dépendrait de contentieux futurs non quantifiés."
+      }
+    },
+    {
+      "key": "restreindre-litiges-droit-auteur",
+      "theme": "Restreindre aux litiges de droit d'auteur",
+      "amendments": [
+        "34"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint le champ de la présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:acteurs IA"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:acteurs IA",
+          "label": "autre:acteurs IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Une telle imprécision est susceptible de créer une insécurité juridique importante pour les acteurs du secteur de l'intelligence artificielle",
+      "history": {
+        "theme": "Restreindre aux litiges de droit d'auteur",
+        "amendments": [
+          "34"
+        ],
+        "effects": [
+          "Restreint le champ de la présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "L'amendement restreint le champ d'application d'une présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil. Cela réduit l'exposition juridique des acteurs de l'intelligence artificielle dans les litiges non liés à la propriété intellectuelle.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "autre:acteurs ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "autre:acteurs ia",
+            "label": "Programmation informatique"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Plaignants potentiels dans des litiges civils non liés au droit d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni flux monétaire (assiette), ni variation quantitative (écart), ni part de chiffre d'affaires. Il s'agit d'une modification purement procédurale et qualitative du champ d'application d'une présomption juridique, sans transfert monétaire identifiable."
+      }
+    },
+    {
+      "key": "exiger-identification-oeuvre",
+      "theme": "Exiger l'identification précise de l'œuvre",
+      "amendments": [
+        "35",
+        "39"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exige que l'œuvre protégée invoquée soit identifiée avec un degré raisonnable de précision pour déclencher la présomption prévue par l'article",
+        "Le titulaire de droits doit prouver que son œuvre était effectivement accessible au fournisseur d'IA pour pouvoir invoquer la présomption d'utilisation"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de systèmes d'IA",
+          "label": "autre:fournisseurs de systèmes d'IA"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le présent amendement vise donc à exiger que l'œuvre ou l'objet protégé invoqué soit identifié avec un degré raisonnable de précision.",
+      "history": {
+        "theme": "Exiger l'identification précise de l'œuvre",
+        "amendments": [
+          "35",
+          "39"
+        ],
+        "effects": [
+          "Exige que l'œuvre protégée invoquée soit identifiée avec un degré raisonnable de précision pour déclencher la présomption prévue par l'article",
+          "Le titulaire de droits doit prouver que son œuvre était effectivement accessible au fournisseur d'IA pour pouvoir invoquer la présomption d'utilisation"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure durcit les conditions d'invocation de la présomption d'utilisation d'une œuvre protégée par un système d'IA : le titulaire de droits doit identifier précisément l'œuvre et prouver qu'elle était effectivement accessible au fournisseur d'IA. Cela réduit l'exposition juridique des fournisseurs d'IA et alourdit la charge probatoire des titulaires de droits.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Fournisseurs de systèmes d'intelligence artificielle"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs de systèmes d'ia",
+            "label": "Fournisseurs de modèles et systèmes d'intelligence artificielle"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:titulaires de droits",
+            "label": "Titulaires de droits d'auteur et droits voisins"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni assiette monétaire, ni écart quantifié, ni part d'un secteur. La mesure est de nature procédurale et juridique, sans flux financier identifiable dans le texte."
+      }
+    },
+    {
+      "key": "restreindre-presomption-entrainement",
+      "theme": "Restreindre la présomption à la phase d'entraînement",
+      "amendments": [
+        "27",
+        "11"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA aux seuls indices relatifs au développement, excluant ceux liés au déploiement",
+        "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seules opérations d'entraînement des modèles d'IA, sans tenir compte de la similarité des contenus générés"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "associations",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "associations",
+          "label": "associations"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        },
+        {
+          "key": "autre:developpeurs IA",
+          "label": "autre:developpeurs IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Cet amendement vise à supprimer la possibilité pour les titulaires de droit, en apportant un indice relatif au déploiement du modèle ou du système, de présumer que le fournisseur du modèle ou du système d'IA a utilisé un contenu protégé par le droit d'auteur.",
+      "history": {
+        "theme": "Restreindre la présomption à la phase d'entraînement",
+        "amendments": [
+          "27",
+          "11"
+        ],
+        "effects": [
+          "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA aux seuls indices relatifs au développement, excluant ceux liés au déploiement",
+          "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seules opérations d'entraînement des modèles d'IA, sans tenir compte de la similarité des contenus générés"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA : elle supprime les indices liés au déploiement et au résultat généré, ne conservant que ceux liés au développement. Les titulaires de droits perdent deux motifs de déclenchement de la présomption, ce qui réduit leurs chances d'obtenir réparation.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs et développeurs de modèles d'IA"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Hébergeurs et prestataires de traitement de données pour l'IA"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "associations",
+            "label": "Titulaires de droits d'auteur"
+          },
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Auteurs et ayants droit"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire chiffré n'apparaît dans les amendements. La mesure modifie les conditions juridiques de déclenchement d'une présomption, sans quantifier de montant, de taux ou de part de chiffre d'affaires. L'assiette et l'écart ne sont pas identifiables dans les textes."
+      }
+    },
+    {
+      "key": "exclure-similarite-style-seul",
+      "theme": "Exclure la seule similarité de style comme indice",
+      "amendments": [
+        "42",
+        "46",
+        "56"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut la seule similarité de style, ton ou registre comme indice suffisant pour présumer une violation du droit d'auteur par une IA générative",
+        "La simple similarité stylistique, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne suffit plus, à elle seule, à constituer un indice d'utilisation de cette œuvre",
+        "La simple similarité entre un contenu généré par IA et une œuvre protégée ne suffit plus à présumer l'utilisation de cette œuvre lors de l'entraînement du système."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs et déployeurs d'IA",
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs et déployeurs d'IA",
+          "label": "autre:fournisseurs et déployeurs d'IA"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:titulaires de droits d'auteur",
+          "label": "autre:titulaires de droits d'auteur"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Permettre que cette seule similarité constitue un « indice » suffisant pour déclencher la présomption créerait une insécurité juridique massive pour l'ensemble des fournisseurs et déployeurs",
+      "history": {
+        "theme": "Exclure la seule similarité de style comme indice",
+        "amendments": [
+          "42",
+          "46",
+          "56"
+        ],
+        "effects": [
+          "Exclut la seule similarité de style, ton ou registre comme indice suffisant pour présumer une violation du droit d'auteur par une IA générative",
+          "La simple similarité entre un contenu généré par IA et une œuvre protégée ne suffit plus à présumer l'utilisation de cette œuvre lors de l'entraînement du système.",
+          "La simple similarité stylistique, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne suffit plus, à elle seule, à constituer un indice d'utilisation de cette œuvre"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Ces amendements modifient les conditions juridiques de preuve : la seule similarité de style, de ton, de registre, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne peut plus constituer un indice suffisant pour présumer une violation du droit d'auteur. Aucun transfert monétaire n'est prévu.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs et déployeurs de systèmes d'IA générative"
+          },
+          {
+            "naf": "62.01Z",
+            "role": null,
+            "label": "Éditeurs de logiciels d'IA générative"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure modifie uniquement les conditions juridiques de preuve en matière de présomption de contrefaçon par l'IA générative. Aucun flux monétaire, assiette financière ou taux chiffré n'est mentionné dans les amendements."
+      }
+    },
+    {
+      "key": "adapter-presomption-transparence",
+      "theme": "Adapter la présomption au niveau de transparence",
+      "amendments": [
+        "17"
+      ],
+      "opposes": null,
+      "effects": [
+        "Adapte la présomption (de violation du droit d'auteur) selon le niveau de transparence et de documentation fourni par le fournisseur du modèle d'IA, encourageant les audits indépendants des données d'entraînement."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs de modèles et systèmes d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de modèles et systèmes d'IA",
+          "label": "autre:fournisseurs de modèles et systèmes d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption tient compte du niveau de transparence et de documentation mis à disposition par le fournisseur du modèle ou du système, notamment lorsque celle-ci permet un audit indépendant des sources de données et modalités d'entraînement.",
+      "history": {
+        "theme": "Adapter la présomption au niveau de transparence",
+        "amendments": [
+          "17"
+        ],
+        "effects": [
+          "Adapte la présomption (de violation du droit d'auteur) selon le niveau de transparence et de documentation fourni par le fournisseur du modèle d'IA, encourageant les audits indépendants des données d'entraînement."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure adapte la présomption de violation du droit d'auteur pour les fournisseurs de modèles d'IA en fonction de leur niveau de transparence et de documentation. Aucun transfert monétaire chiffré n'est identifiable dans le texte.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de modèles et systèmes d'ia",
+            "label": "Fournisseurs de modèles d'IA transparents"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Titulaires de droits d'auteur (à hauteur de l'adaptation de la présomption)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni assiette monétaire, ni taux ou écart quantifié, ni part de chiffre d'affaires. La mesure est de nature juridique (adaptation d'une présomption) sans paramètre chiffré permettant de calculer un transfert."
+      }
+    },
+    {
+      "key": "exclure-domaine-public",
+      "theme": "Exclure les œuvres du domaine public",
+      "amendments": [
+        "22"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut explicitement les œuvres du domaine public de la présomption, sécurisant leur utilisation par les fournisseurs d'IA."
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption ne s'applique pas aux œuvres tombées dans le domaine public au sens de l'article L. 123‑1 du présent code.",
+      "history": {
+        "theme": "Exclure les œuvres du domaine public",
+        "amendments": [
+          "22"
+        ],
+        "effects": [
+          "Exclut explicitement les œuvres du domaine public de la présomption, sécurisant leur utilisation par les fournisseurs d'IA."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "Les œuvres du domaine public sont exclues de la présomption prévue par le texte. Les fournisseurs d'IA peuvent utiliser ces œuvres sans déclencher la présomption, ce qui les dispense d'une éventuelle rémunération ou obligation liée à cette présomption.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de services d'IA utilisant des œuvres culturelles"
+          },
+          {
+            "naf": "62.01Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de services d'IA utilisant des œuvres culturelles"
+          }
+        ],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette (valeur des œuvres du domaine public utilisées par les fournisseurs d'IA), l'écart (taux de la présomption ou rémunération évitée) ou la part du chiffre d'affaires concernée."
+      }
+    },
+    {
+      "key": "prendre-compte-conformite-ai-act",
+      "theme": "Prendre en compte la conformité à l'AI Act",
+      "amendments": [
+        "109",
+        "44"
+      ],
+      "opposes": null,
+      "effects": [
+        "Le respect des obligations de l'AI Act (documentation et transparence) peut être pris en compte par le juge pour apprécier la preuve contraire",
+        "Exempte du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et respectant les obligations de transparence de l'AI Act"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de modèles d'IA",
+          "label": "autre:fournisseurs de modèles d'IA"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le règlement européen impose déjà aux fournisseurs de modèles d'intelligence artificielle à usage général des obligations substantielles en matière de documentation et de transparence.",
+      "history": {
+        "theme": "Prendre en compte la conformité à l'AI Act",
+        "amendments": [
+          "109",
+          "44"
+        ],
+        "effects": [
+          "Exempte du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et respectant les obligations de transparence de l'AI Act",
+          "Le respect des obligations de l'AI Act (documentation et transparence) peut être pris en compte par le juge pour apprécier la preuve contraire"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure facilite la preuve contraire (amendement n°109) et exonère du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et conformes à l'AI Act (amendement n°44). Les fournisseurs d'IA conformes voient leur exposition juridique réduite.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de modèles d'ia",
+            "label": "Fournisseurs de modèles d'IA conformes à l'AI Act"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs de modèles d'ia",
+            "label": "Fournisseurs de modèles d'IA conformes à l'AI Act"
+          }
+        ],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert monétaire. Aucune assiette (montant des dommages, amendes, ou valeur concernée) ni aucun écart chiffré ne figure dans les textes. Le dispositif principal auquel ces amendements s'appliquent n'est pas fourni."
+      }
+    },
+    {
+      "key": "autoriser-conservation-copies-tdm",
+      "theme": "Autoriser la conservation des copies de fouille de données",
+      "amendments": [
+        "30"
+      ],
+      "opposes": null,
+      "effects": [
+        "Autorise la conservation des copies issues de la fouille de textes et de données au-delà de la fouille, notamment pour servir de preuve en justice"
+      ],
+      "nafs": [
+        "62.01Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs de modèles d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "autre:fournisseurs de modèles d'IA",
+          "label": "autre:fournisseurs de modèles d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "approx": false,
+      "not_counted": [],
+      "quote": "afin de laisser notamment la possibilité aux fournisseurs de modèles ou de systèmes d'IA de conserver les données d'entrainement à des fins d'établissement de la preuve",
+      "history": {
+        "theme": "Autoriser la conservation des copies de fouille de données",
+        "amendments": [
+          "30"
+        ],
+        "effects": [
+          "Autorise la conservation des copies issues de la fouille de textes et de données au-delà de la fouille, notamment pour servir de preuve en justice"
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 122-5-3 du code de la propriété intellectuelle"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure autorise les acteurs recourant à la fouille de textes et de données (TDM) à conserver les copies issues de cette fouille au-delà de la phase de fouille, notamment pour servir de preuve en justice. Auparavant, la loi imposait la destruction des données après la fouille. Il s'agit d'un assouplissement réglementaire sans flux monétaire explicite.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs de modèles d'ia",
+            "label": "Programmation informatique"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "autre:fournisseurs de modèles d'ia",
+            "label": "Traitement de données, hébergement et activités connexes"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Titulaires de droits (auteurs, éditeurs) dont les œuvres sont conservées plus longtemps sans contrepartie"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. La mesure est de nature réglementaire (autorisation de conservation de données) et ne décrit pas de transfert financier chiffré."
+      }
+    },
+    {
+      "key": "limiter-fournisseurs-ue",
+      "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+      "amendments": [
+        "82"
+      ],
+      "opposes": "etendre-obligations-tous-fournisseurs",
+      "effects": [
+        "Limite une présomption probatoire aux fournisseurs d'IA établis ou opérant dans l'UE pour éviter un avantage concurrentiel aux acteurs extra-européens."
+      ],
+      "nafs": [
+        "62.01Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption doit être limitée aux fournisseurs établis ou opérant dans l'Union européenne afin d'éviter de créer un avantage concurrentiel au profit des acteurs extra-européens qui ne seraient pas soumis au même régime probatoire.",
+      "history": {
+        "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+        "amendments": [
+          "82"
+        ],
+        "effects": [
+          "Limite une présomption probatoire aux fournisseurs d'IA établis ou opérant dans l'UE pour éviter un avantage concurrentiel aux acteurs extra-européens."
+        ],
+        "opposes": "etendre-obligations-tous-fournisseurs",
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure limite une présomption probatoire aux seuls fournisseurs d'IA établis ou commercialisant dans l'Union européenne, excluant de fait les acteurs extra-européens du régime probatoire. Aucun transfert monétaire direct n'est identifiable dans les textes.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs d'IA établis ou opérant dans l'UE"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs d'IA extra-européens commercialisant dans l'UE"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. La mesure est de nature réglementaire et ne provoque pas de transfert monétaire directement mesurable à partir des textes fournis."
+      }
+    },
+    {
+      "key": "exclure-ia-open-source",
+      "theme": "Exclure les modèles et systèmes IA open source",
+      "amendments": [
+        "16"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés."
+      ],
+      "nafs": [
+        "62.01Z"
+      ],
+      "roles": [
+        "autre:editeurs-ia-opensource"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:editeurs-ia-opensource",
+          "label": "autre:editeurs-ia-opensource"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présomption prévue au présent article ne s’applique pas aux modèles ou aux systèmes d’intelligence artificielle publiés en source ouverte.",
+      "history": {
+        "theme": "Exclure les modèles et systèmes IA open source",
+        "amendments": [
+          "16"
+        ],
+        "effects": [
+          "Exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés. Les éditeurs d'IA open source ne seraient plus redevables d'une compensation au titre de cette présomption, au détriment des titulaires de droits sur ces contenus.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:editeurs-ia-opensource",
+            "label": "Éditeurs et développeurs de modèles et systèmes d'IA open source"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Titulaires de droits sur les contenus protégés (auteurs, créateurs)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni le montant ou la valeur des contenus protégés concernés (assiette), ni le taux de compensation ou de redevance associé à la présomption (écart), ni la part du chiffre d'affaires des éditeurs d'IA open source concernée par ce flux. Aucun paramètre chiffré ne permet de calculer le transfert."
+      }
+    },
+    {
+      "key": "exiger-elements-factuels-demandeur",
+      "theme": "Exiger des éléments factuels du demandeur",
+      "amendments": [
+        "66"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exige du demandeur d'apporter des éléments factuels et techniques suffisamment circonstanciés pour justifier le recours à la présomption légale, afin d'éviter des actions exploratoires visant à accéder à des informations sensibles des fournisseurs d'IA."
+      ],
+      "nafs": [
+        "62.01Z"
+      ],
+      "roles": [
+        "autre:demandeurs",
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        },
+        {
+          "key": "autre:demandeurs",
+          "label": "autre:demandeurs"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Le demandeur expose de manière suffisamment circonstanciée les éléments de fait et les éléments techniques sur lesquels repose la présomption prévue au présent article.",
+      "history": {
+        "theme": "Exiger des éléments factuels du demandeur",
+        "amendments": [
+          "66"
+        ],
+        "effects": [
+          "Exige du demandeur d'apporter des éléments factuels et techniques suffisamment circonstanciés pour justifier le recours à la présomption légale, afin d'éviter des actions exploratoires visant à accéder à des informations sensibles des fournisseurs d'IA."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose au demandeur qui invoque une présomption légale d'apporter des éléments factuels et techniques circonstanciés. Elle ne crée pas de transfert monétaire direct mais modifie les conditions d'accès à un mécanisme juridique. Les fournisseurs d'IA sont protégés contre des actions exploratoires visant leurs informations sensibles.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs de systèmes d'intelligence artificielle"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:demandeurs",
+            "label": "Demandeurs souhaitant invoquer la présomption légale"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est de nature procédurale : il impose une exigence de motivation au demandeur sans créer de flux monétaire ni de taux, prix ou part chiffrés. Aucune assiette ni aucun écart en euros ne sont identifiables dans le texte."
+      }
+    },
+    {
+      "key": "differer-entree-vigueur",
+      "theme": "Différer de six mois l'entrée en vigueur",
+      "amendments": [
+        "3",
+        "18"
+      ],
+      "opposes": null,
+      "effects": [
+        "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA un temps d'adaptation.",
+        "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA le temps de s'adapter."
+      ],
+      "nafs": [
+        "62.01Z"
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "sectors": [
+        {
+          "key": "62.01Z",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "autre:fournisseurs d'IA",
+          "label": "autre:fournisseurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "approx": false,
+      "not_counted": [],
+      "quote": "afin de garantir aux fournisseurs de modèles et de systèmes d'intelligences artificielle la prévisibilité juridique nécessaire à l'adaptation de leurs pratiques.",
+      "history": {
+        "theme": "Différer de six mois l'entrée en vigueur",
+        "amendments": [
+          "3",
+          "18"
+        ],
+        "effects": [
+          "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA le temps de s'adapter.",
+          "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA un temps d'adaptation."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure reporte de six mois l'entrée en vigueur de la loi. Aucun flux monétaire n'est décrit dans les amendements ; il s'agit d'un délai procédural, pas d'un transfert d'argent.",
+        "winners": [
+          {
+            "naf": "62.01Z",
+            "role": "autre:fournisseurs d'ia",
+            "label": "Fournisseurs de modèles et de systèmes d'intelligence artificielle"
+          }
+        ],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent uniquement un report de six mois de l'entrée en vigueur. Aucun flux financier (assiette) ni aucune variation tarifaire ou fiscale (écart) n'est mentionné, ce qui rend le calcul d'un transfert monétaire impossible."
+      }
+    },
+    {
+      "key": "plafonder-dommages-interets",
+      "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+      "amendments": [
+        "78"
+      ],
+      "opposes": null,
+      "effects": [
+        "Plafonne les dommages et intérêts au préjudice effectivement démontré par le titulaire des droits, interdisant toute indemnisation excédentaire ou punitive."
+      ],
+      "nafs": [
+        "58.11Z",
+        "59.11Z",
+        "59.20Z",
+        "60.10Z",
+        "63.99Z"
+      ],
+      "roles": [
+        "autre:titulaires de droits"
+      ],
+      "sectors": [
+        {
+          "key": "58.11Z",
+          "label": "Édition de livres"
+        },
+        {
+          "key": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "key": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale"
+        },
+        {
+          "key": "60.10Z",
+          "label": "Programmation cinématographique"
+        },
+        {
+          "key": "63.99Z",
+          "label": "Activités des agences de presse"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 35657,
+      "employees_low": 22141,
+      "employees_high": 42152,
+      "approx": false,
+      "not_counted": [
+        "Production de films cinématographiques"
+      ],
+      "quote": "Les dommages et intérêts accordés sur le fondement du présent article ne peuvent excéder le préjudice effectivement subi et démontré par le titulaire des droits.",
+      "history": {
+        "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+        "amendments": [
+          "78"
+        ],
+        "effects": [
+          "Plafonne les dommages et intérêts au préjudice effectivement démontré par le titulaire des droits, interdisant toute indemnisation excédentaire ou punitive."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure plafonne les dommages et intérêts versés en cas de contrefaçon au préjudice effectivement démontré par le titulaire des droits. Les personnes assignées au titre de la contrefaçon paient moins ; les titulaires de droits perçoivent moins.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "autre:personnes assignées au titre de la contrefaçon",
+            "label": "Personnes assignées pour contrefaçon"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "58.11Z",
+            "role": "autre:titulaires de droits",
+            "label": "Édition de livres"
+          },
+          {
+            "naf": "59.11Z",
+            "role": "autre:titulaires de droits",
+            "label": "Production de films cinématographiques"
+          },
+          {
+            "naf": "59.20Z",
+            "role": "autre:titulaires de droits",
+            "label": "Enregistrement sonore et édition musicale"
+          },
+          {
+            "naf": "60.10Z",
+            "role": "autre:titulaires de droits",
+            "label": "Programmation cinématographique"
+          },
+          {
+            "naf": "63.99Z",
+            "role": "autre:titulaires de droits",
+            "label": "Activités des agences de presse"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant annuel des dommages et intérêts versés au titre de la contrefaçon (assiette), ni la part de ces sommes qui excède le préjudice démontré (écart), ni la part du chiffre d'affaires des secteurs concernés passant par ce flux."
+      }
+    },
+    {
+      "key": "exclure-recherche-enseignement-tdm",
+      "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+      "amendments": [
+        "88"
+      ],
+      "opposes": null,
+      "effects": [
+        "Exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données"
+      ],
+      "nafs": [
+        "72.1",
+        "85.2",
+        "85.3"
+      ],
+      "roles": [
+        "autre:organismes de recherche",
+        "autre:établissements d'enseignement",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "72.1",
+          "label": "Recherche-développement"
+        },
+        {
+          "key": "85.3",
+          "label": "Enseignement supérieur"
+        },
+        {
+          "key": "85.2",
+          "label": "Enseignement secondaire"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:organismes de recherche",
+          "label": "autre:organismes de recherche"
+        },
+        {
+          "key": "autre:établissements d'enseignement",
+          "label": "autre:établissements d'enseignement"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 29720,
+      "employees_low": 728042,
+      "employees_high": 1420343,
+      "approx": false,
+      "not_counted": [],
+      "quote": null,
+      "history": {
+        "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+        "amendments": [
+          "88"
+        ],
+        "effects": [
+          "Exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "L'amendement exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données. Il n'y a pas de transfert monétaire chiffré.",
+        "winners": [
+          {
+            "naf": "72.1",
+            "role": "autre:organismes de recherche",
+            "label": "Recherche-développement"
+          },
+          {
+            "naf": "85.3",
+            "role": "autre:établissements d'enseignement",
+            "label": "Enseignement supérieur"
+          },
+          {
+            "naf": "85.2",
+            "role": "autre:établissements d'enseignement",
+            "label": "Enseignement secondaire"
+          }
+        ],
+        "losers": [],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. Il s'agit d'une exclusion de champ sans paramètre monétaire."
+      }
+    },
+    {
+      "key": "etendre-obligations-tous-fournisseurs",
+      "theme": "Étendre les obligations à tous les fournisseurs en France",
+      "amendments": [
+        "38"
+      ],
+      "opposes": "limiter-fournisseurs-ue",
+      "effects": [
+        "Étend les obligations de la loi à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement."
+      ],
+      "nafs": [
+        "58.29C",
+        "62.01A",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:fournisseurs et développeurs d'IA",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "58.29C",
+          "label": "Édition de logiciels"
+        },
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:fournisseurs et développeurs d'IA",
+          "label": "autre:fournisseurs et développeurs d'IA"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 21290,
+      "employees_low": 102893,
+      "employees_high": 207566,
+      "approx": false,
+      "not_counted": [
+        "Programmation informatique"
+      ],
+      "quote": "Les obligations prévues par la présente loi s'appliquent à tout fournisseur ou développeur commercialisant en France un système d'intelligence artificielle générative, quel que soit son lieu d'établissement.",
+      "history": {
+        "theme": "Étendre les obligations à tous les fournisseurs en France",
+        "amendments": [
+          "38"
+        ],
+        "effects": [
+          "Étend les obligations de la loi à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement."
+        ],
+        "opposes": "limiter-fournisseurs-ue",
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure étend les obligations légales à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement. Le texte ne quantifie aucun transfert financier.",
+        "winners": [
+          {
+            "naf": "62.01A",
+            "role": "plateformes",
+            "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+          },
+          {
+            "naf": "58.29C",
+            "role": "plateformes",
+            "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+          },
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "plateformes",
+            "label": "Fournisseurs et développeurs d'IA extra-européens commercialisant en France"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette ou l'écart du transfert."
+      }
+    },
+    {
+      "key": "mise-en-demeure-prealable",
+      "theme": "Imposer une mise en demeure préalable",
+      "amendments": [
+        "75"
+      ],
+      "opposes": null,
+      "effects": [
+        "Instaure une mise en demeure préalable obligatoire de trois mois avant toute action judiciaire fondée sur la présomption, pour favoriser les solutions amiables"
+      ],
+      "nafs": [
+        "61.30Z",
+        "63.11Z"
+      ],
+      "roles": [
+        "autre:titulaires de droits",
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes"
+        },
+        {
+          "key": "61.30Z",
+          "label": "Activités de télécommunication"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        },
+        {
+          "key": "autre:titulaires de droits",
+          "label": "autre:titulaires de droits"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 8634,
+      "employees_low": 44846,
+      "employees_high": 91583,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Préalablement à toute action fondée sur la présente présomption, le titulaire de droits est tenu d'adresser au fournisseur une mise en demeure précisant l'œuvre alléguée et les indices invoqués, et de respecter un délai de réponse de trois mois.",
+      "history": {
+        "theme": "Imposer une mise en demeure préalable",
+        "amendments": [
+          "75"
+        ],
+        "effects": [
+          "Instaure une mise en demeure préalable obligatoire de trois mois avant toute action judiciaire fondée sur la présomption, pour favoriser les solutions amiables"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose aux titulaires de droits d'adresser une mise en demeure préalable aux fournisseurs (hébergeurs, FAI) et d'attendre trois mois avant toute action judiciaire fondée sur la présomption. Aucun transfert financier n'est prévu.",
+        "winners": [
+          {
+            "naf": "63.11Z",
+            "role": "plateformes",
+            "label": "Hébergeurs et fournisseurs d'accès"
+          },
+          {
+            "naf": "61.30Z",
+            "role": "plateformes",
+            "label": "Fournisseurs de télécommunications"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "autre:titulaires de droits",
+            "label": "Titulaires de droits d'auteur"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle instaure un délai de mise en demeure préalable de trois mois, sans transfert financier identifiable ni paramètre chiffré monétaire."
+      }
+    },
+    {
+      "key": "restreindre-ia-contenu-artistique",
+      "theme": "Restreindre aux IA produisant des contenus artistiques",
+      "amendments": [
+        "28"
+      ],
+      "opposes": null,
+      "effects": [
+        "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels."
+      ],
+      "nafs": [
+        "62.01A"
+      ],
+      "roles": [
+        "plateformes"
+      ],
+      "sectors": [
+        {
+          "key": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "key": "plateformes",
+          "label": "plateformes"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Ensemble pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Programmation informatique"
+      ],
+      "quote": "seuls ces modèles ou systèmes d'IA sont susceptibles d'entrer en concurrence avec les artistes et créateurs",
+      "history": {
+        "theme": "Restreindre aux IA produisant des contenus artistiques",
+        "amendments": [
+          "28"
+        ],
+        "effects": [
+          "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels. Les autres fournisseurs d'IA sortent du champ de cette présomption.",
+        "winners": [
+          {
+            "naf": "62.01A",
+            "role": "plateformes",
+            "label": "Fournisseurs d'IA non artistiques ou non génératives"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": null,
+            "label": "Artistes et créateurs"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette, l'écart ou la part d'un secteur. Aucun montant, taux ou proportion n'est mentionné dans l'amendement."
+      }
+    }
+  ]
+}

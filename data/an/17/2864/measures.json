@@ -1,0 +1,356 @@
+[
+  {
+    "key": "memorisation-comme-reproduction",
+    "theme": "Considérer la mémorisation comme une reproduction",
+    "amendments": [
+      "24"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-recours-exception-tdm",
+    "theme": "Exclure le recours à l'exception de fouille de données",
+    "amendments": [
+      "25",
+      "69"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "durcir-seuil-preuve-presomption",
+    "theme": "Durcir le seuil de preuve de la présomption",
+    "amendments": [
+      "93",
+      "97",
+      "2",
+      "9",
+      "45",
+      "6",
+      "55",
+      "81"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "restreindre-qualite-agir",
+    "theme": "Restreindre la qualité à agir et les voies procédurales",
+    "amendments": [
+      "90",
+      "79",
+      "96",
+      "80"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "restreindre-litiges-droit-auteur",
+    "theme": "Restreindre aux litiges de droit d'auteur",
+    "amendments": [
+      "34"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "restreindre-oeuvres-culturelles-presse",
+    "theme": "Restreindre aux œuvres culturelles et de presse",
+    "amendments": [
+      "91"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exiger-identification-oeuvre",
+    "theme": "Exiger l'identification précise de l'œuvre",
+    "amendments": [
+      "35",
+      "39"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "definir-utilisation-reproduction",
+    "theme": "Définir l'utilisation comme reproduction dans le corpus",
+    "amendments": [
+      "7",
+      "40"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "restreindre-champ-fournisseurs-modeles",
+    "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+    "amendments": [
+      "13",
+      "63",
+      "94",
+      "19",
+      "32",
+      "64",
+      "33",
+      "23",
+      "31"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "restreindre-ia-contenu-artistique",
+    "theme": "Restreindre aux IA produisant des contenus artistiques",
+    "amendments": [
+      "28"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "limiter-fournisseurs-ue",
+    "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+    "amendments": [
+      "82"
+    ],
+    "opposes": "etendre-obligations-tous-fournisseurs"
+  },
+  {
+    "key": "restreindre-presomption-entrainement",
+    "theme": "Restreindre la présomption à la phase d'entraînement",
+    "amendments": [
+      "27",
+      "11"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-similarite-style-seul",
+    "theme": "Exclure la seule similarité de style comme indice",
+    "amendments": [
+      "42",
+      "46",
+      "56"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "assouplir-moyens-preuve",
+    "theme": "Assouplir les moyens de preuve des fournisseurs",
+    "amendments": [
+      "4",
+      "48"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-accessibilite-en-ligne-seul",
+    "theme": "Exclure la seule accessibilité en ligne comme indice",
+    "amendments": [
+      "10",
+      "37"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-ia-usage-professionnel",
+    "theme": "Exclure les IA à usage professionnel",
+    "amendments": [
+      "15"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-ia-open-source",
+    "theme": "Exclure les modèles et systèmes IA open source",
+    "amendments": [
+      "16"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "adapter-presomption-transparence",
+    "theme": "Adapter la présomption au niveau de transparence",
+    "amendments": [
+      "17"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-domaine-public",
+    "theme": "Exclure les œuvres du domaine public",
+    "amendments": [
+      "22"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-oeuvres-sous-licence",
+    "theme": "Exclure les œuvres utilisées sous licence ou accord",
+    "amendments": [
+      "65",
+      "92",
+      "26"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-hebergeurs-integrateurs",
+    "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+    "amendments": [
+      "100"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "proteger-secret-affaires",
+    "theme": "Protéger le secret des affaires dans la preuve",
+    "amendments": [
+      "71",
+      "68",
+      "36",
+      "72",
+      "99"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exiger-elements-factuels-demandeur",
+    "theme": "Exiger des éléments factuels du demandeur",
+    "amendments": [
+      "66"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "permettre-attestation-tiers",
+    "theme": "Permettre l'attestation d'un tiers de confiance",
+    "amendments": [
+      "76",
+      "95"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "plafonder-dommages-interets",
+    "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+    "amendments": [
+      "78"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "prendre-compte-conformite-ai-act",
+    "theme": "Prendre en compte la conformité à l'AI Act",
+    "amendments": [
+      "109",
+      "44"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "proportionnalite-mesures-instruction",
+    "theme": "Encadrer la proportionnalité des mesures d'instruction",
+    "amendments": [
+      "67",
+      "73"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "assouplir-pme",
+    "theme": "Assouplir les exigences probatoires pour les PME",
+    "amendments": [
+      "74"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "mise-en-demeure-prealable",
+    "theme": "Imposer une mise en demeure préalable",
+    "amendments": [
+      "75"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "gestion-collective-obligatoire",
+    "theme": "Instaurer la gestion collective obligatoire",
+    "amendments": [
+      "84"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-retroactivite",
+    "theme": "Exclure ou limiter la rétroactivité du dispositif",
+    "amendments": [
+      "8",
+      "5"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "differer-entree-vigueur",
+    "theme": "Différer de six mois l'entrée en vigueur",
+    "amendments": [
+      "3",
+      "18"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "exclure-recherche-enseignement-tdm",
+    "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+    "amendments": [
+      "88"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "autoriser-conservation-copies-tdm",
+    "theme": "Autoriser la conservation des copies de fouille de données",
+    "amendments": [
+      "30"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "creer-registre-opt-out",
+    "theme": "Créer un registre de réserve de droit",
+    "amendments": [
+      "29"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "etendre-obligations-tous-fournisseurs",
+    "theme": "Étendre les obligations à tous les fournisseurs en France",
+    "amendments": [
+      "38"
+    ],
+    "opposes": "limiter-fournisseurs-ue"
+  },
+  {
+    "key": "permettre-suspension-procedure",
+    "theme": "Permettre la suspension pour négociations",
+    "amendments": [
+      "89"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "rapports-gouvernement",
+    "theme": "Demander des rapports gouvernementaux d'évaluation",
+    "amendments": [
+      "1",
+      "53",
+      "21",
+      "50",
+      "51"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "reporter-etude-impact",
+    "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+    "amendments": [
+      "14",
+      "47"
+    ],
+    "opposes": null
+  }
+]

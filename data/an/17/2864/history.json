@@ -1,0 +1,948 @@
+{
+ "session": "an/17",
+ "text": "2864",
+ "title": "Proposition de loi relative à l'instauration d'une présomption d'exploitation des contenus culturels par les fournisseurs d'intelligence artificielle",
+ "dossier": null,
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "présomption d'exploitation",
+  "fournisseurs d'intelligence artificielle",
+  "intelligence artificielle contenus culturels",
+  "droit d'auteur intelligence artificielle",
+  "fouille de données intelligence artificielle",
+  "modèles d'intelligence artificielle œuvres culturelles",
+  "entraînement des modèles droit d'auteur",
+  "AI Act"
+ ],
+ "articles": {
+  "Code de procédure civile|138": {
+   "code": "Code de procédure civile",
+   "num": "138",
+   "label": "article 138 du code de procédure civile",
+   "found": true,
+   "id": "LEGIARTI000006410261",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410261",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006410261",
+     "start": "1976-01-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410261",
+     "modified_by": {
+      "id": "JORFTEXT000000507244",
+      "link_type": "CODIFICATION",
+      "article": "Décret 75-1123 1975-12-05 JORF 9 décembre 1975 rectificatif JORF 27 janvier 1976",
+      "title": "Décret n° 75-1123 du 5 décembre 1975 instituant un nouveau code de procédure civile ‎ Le nouveau code de procédure civile et son annexe font l'objet d'une publication spéciale ‎‎(C.P.C. 1 à ‎‎60) annexée au Journal officiel de ce jour.‎",
+      "date": "1975-12-05",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000507244"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code de procédure civile|142": {
+   "code": "Code de procédure civile",
+   "num": "142",
+   "label": "article 142 du code de procédure civile",
+   "found": true,
+   "id": "LEGIARTI000006410265",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410265",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006410265",
+     "start": "1976-01-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410265",
+     "modified_by": {
+      "id": "JORFTEXT000000507244",
+      "link_type": "CODIFICATION",
+      "article": "Décret 75-1123 1975-12-05 JORF 9 décembre 1975 rectificatif JORF 27 janvier 1976",
+      "title": "Décret n° 75-1123 du 5 décembre 1975 instituant un nouveau code de procédure civile ‎ Le nouveau code de procédure civile et son annexe font l'objet d'une publication spéciale ‎‎(C.P.C. 1 à ‎‎60) annexée au Journal officiel de ce jour.‎",
+      "date": "1975-12-05",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000507244"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code de commerce|L151-1": {
+   "code": "Code de commerce",
+   "num": "L151-1",
+   "label": "article L. 151-1 du code de commerce",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code de la propriété intellectuelle|L122-5-3": {
+   "code": "Code de la propriété intellectuelle",
+   "num": "L122-5-3",
+   "label": "article L. 122-5-3 du code de la propriété intellectuelle",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code de la propriété intellectuelle|L331-4-1": {
+   "code": "Code de la propriété intellectuelle",
+   "num": "L331-4-1",
+   "label": "article L. 331-4-1 du code de la propriété intellectuelle",
+   "found": false
+  }
+ },
+ "laws": {
+  "JORFTEXT000000507244": {
+   "id": "JORFTEXT000000507244",
+   "title": "Décret n° 75-1123 du 5 décembre 1975 instituant un nouveau code de procédure civile ‎ Le nouveau code de procédure civile et son annexe font l'objet d'une publication spéciale ‎‎(C.P.C. 1 à ‎‎60) annexée au Journal officiel de ce jour.‎",
+   "nor": null,
+   "date": "1975-12-05",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000507244",
+   "senat_documents": [],
+   "articles": [
+    "Code de procédure civile|138",
+    "Code de procédure civile|142"
+   ],
+   "on_subject": false
+  }
+ },
+ "senat_texts_scanned": [],
+ "stats": {
+  "articles": 5,
+  "laws": 1,
+  "senat_texts": 0,
+  "past_relevant": 0,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 53,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {
+  "memorisation-comme-reproduction": {
+   "theme": "Considérer la mémorisation comme une reproduction",
+   "amendments": [
+    "24"
+   ],
+   "effects": [
+    "La mémorisation d'œuvres protégées dans les modèles d'IA générative est explicitement considérée comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des poursuites pour contrefaçon."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-recours-exception-tdm": {
+   "theme": "Exclure le recours à l'exception de fouille de données",
+   "amendments": [
+    "25",
+    "69"
+   ],
+   "effects": [
+    "Exclut du mécanisme de présomption d'utilisation les fournisseurs de modèles ou systèmes d'IA qui ne peuvent techniquement prouver la non-utilisation d'une œuvre en raison de l'obligation de destruction des données issue de l'exception pour fouilles de données.",
+    "La présomption d'exploitation des œuvres par l'IA ne s'applique pas lorsque le fournisseur a légalement recouru à l'exception de fouille de textes et de données."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "durcir-seuil-preuve-presomption": {
+   "theme": "Durcir le seuil de preuve de la présomption",
+   "amendments": [
+    "93",
+    "97",
+    "2",
+    "9",
+    "45",
+    "6",
+    "55",
+    "81"
+   ],
+   "effects": [
+    "Durcit la présomption d'utilisation d'œuvres par les IA en exigeant des éléments précis, graves et concordants prouvant la présence de l'œuvre dans le corpus d'entraînement, au lieu d'un simple indice rendant l'usage vraisemblable.",
+    "Durcit le seuil de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, en exigeant des indices « précis, graves et concordants »",
+    "Durcit le standard de preuve exigé pour renverser la charge de la preuve, passant de « vraisemblable » à « hautement probable », afin de mieux protéger la sécurité juridique des fournisseurs d'IA.",
+    "Durcit les conditions de déclenchement de la présomption d'utilisation d'une œuvre par un système d'IA en exigeant des indices « non équivoques et concordants ».",
+    "Durcit les conditions de déclenchement de la présomption en exigeant du demandeur qu'il identifie précisément l'œuvre protégée et produise des éléments objectifs et vérifiables d'atteinte vraisemblable",
+    "Relève le seuil de preuve pour déclencher la présomption d'utilisation d'une œuvre par une IA, en exigeant des indices « non équivoques et concordants ».",
+    "Relève le seuil probatoire pour déclencher la présomption d'utilisation d'œuvres par les fournisseurs d'IA, passant d'un simple indice à un faisceau d'indices concordants et sérieux.",
+    "Relève le standard probatoire passant d'un simple indice à un faisceau d'indices concordants et sérieux pour déclencher la présomption pesant sur les fournisseurs d'IA."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-qualite-agir": {
+   "theme": "Restreindre la qualité à agir et les voies procédurales",
+   "amendments": [
+    "90",
+    "79",
+    "96",
+    "80"
+   ],
+   "effects": [
+    "Conditionne le bénéfice de la présomption à la preuve de la qualité pour agir et de l'identité du titulaire des droits sur l'œuvre concernée",
+    "Interdit le recours aux actions de groupe ou collectives fondées sur la présomption prévue, imposant un examen individualisé des situations.",
+    "Restreint la présomption aux actions individuelles et interdit les mesures provisoires avant décision sur le fond",
+    "Restreint une action en justice civile aux seuls organismes de gestion collective des droits d'auteur (sociétés de perception et de répartition), excluant les œuvres mises en ligne par les internautes."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-litiges-droit-auteur": {
+   "theme": "Restreindre aux litiges de droit d'auteur",
+   "amendments": [
+    "34"
+   ],
+   "effects": [
+    "Restreint le champ de la présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-oeuvres-culturelles-presse": {
+   "theme": "Restreindre aux œuvres culturelles et de presse",
+   "amendments": [
+    "91"
+   ],
+   "effects": [
+    "Restreint le champ de la protection aux seules œuvres culturelles, artistiques et de presse en excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques du périmètre de la loi"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exiger-identification-oeuvre": {
+   "theme": "Exiger l'identification précise de l'œuvre",
+   "amendments": [
+    "35",
+    "39"
+   ],
+   "effects": [
+    "Exige que l'œuvre protégée invoquée soit identifiée avec un degré raisonnable de précision pour déclencher la présomption prévue par l'article",
+    "Le titulaire de droits doit prouver que son œuvre était effectivement accessible au fournisseur d'IA pour pouvoir invoquer la présomption d'utilisation"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "definir-utilisation-reproduction": {
+   "theme": "Définir l'utilisation comme reproduction dans le corpus",
+   "amendments": [
+    "7",
+    "40"
+   ],
+   "effects": [
+    "Définit l'« utilisation » d'une œuvre par une IA comme sa reproduction ou communication dans le corpus d'entraînement, excluant les résultats générés par inférence statistique sans reproduction identifiable",
+    "Restreint la notion d'utilisation d'une œuvre par un système d'IA aux cas où elle a été utilisée de manière directe, identifiable et substantielle lors de l'entraînement du modèle, réduisant les obligations des fournisseurs d'IA."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-champ-fournisseurs-modeles": {
+   "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+   "amendments": [
+    "13",
+    "63",
+    "94",
+    "19",
+    "32",
+    "64",
+    "33",
+    "23",
+    "31"
+   ],
+   "effects": [
+    "Limite l'obligation de transparence aux seuls fournisseurs de modèles d'IA visés par l'article 53 du règlement européen sur l'IA, excluant les fournisseurs de systèmes d'IA qui affinent des modèles ou utilisent des architectures RAG.",
+    "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les acteurs en aval comme les fournisseurs de systèmes.",
+    "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les fournisseurs de systèmes d'IA en aval.",
+    "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seuls modèles d'IA, en excluant les systèmes d'IA qui les exploitent",
+    "Restreint la responsabilité du débiteur présumé aux seuls fournisseurs de modèles d'IA à usage général ayant intégré l'œuvre dans leur corpus d'entraînement, excluant les autres acteurs du cycle de vie de l'IA",
+    "Restreint le champ d'application de la présomption aux seuls fournisseurs de modèles d'IA à usage général, excluant les déployeurs, intégrateurs, distributeurs et utilisateurs professionnels.",
+    "Restreint le champ de la loi aux seuls fournisseurs de modèles d'IA générative, excluant les acteurs en aval comme les fournisseurs de systèmes"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-ia-contenu-artistique": {
+   "theme": "Restreindre aux IA produisant des contenus artistiques",
+   "amendments": [
+    "28"
+   ],
+   "effects": [
+    "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "limiter-fournisseurs-ue": {
+   "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+   "amendments": [
+    "82"
+   ],
+   "effects": [
+    "Limite une présomption probatoire aux fournisseurs d'IA établis ou opérant dans l'UE pour éviter un avantage concurrentiel aux acteurs extra-européens."
+   ],
+   "opposes": "etendre-obligations-tous-fournisseurs",
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "restreindre-presomption-entrainement": {
+   "theme": "Restreindre la présomption à la phase d'entraînement",
+   "amendments": [
+    "27",
+    "11"
+   ],
+   "effects": [
+    "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA aux seuls indices relatifs au développement, excluant ceux liés au déploiement",
+    "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seules opérations d'entraînement des modèles d'IA, sans tenir compte de la similarité des contenus générés"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-similarite-style-seul": {
+   "theme": "Exclure la seule similarité de style comme indice",
+   "amendments": [
+    "42",
+    "46",
+    "56"
+   ],
+   "effects": [
+    "Exclut la seule similarité de style, ton ou registre comme indice suffisant pour présumer une violation du droit d'auteur par une IA générative",
+    "La simple similarité entre un contenu généré par IA et une œuvre protégée ne suffit plus à présumer l'utilisation de cette œuvre lors de l'entraînement du système.",
+    "La simple similarité stylistique, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne suffit plus, à elle seule, à constituer un indice d'utilisation de cette œuvre"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "assouplir-moyens-preuve": {
+   "theme": "Assouplir les moyens de preuve des fournisseurs",
+   "amendments": [
+    "4",
+    "48"
+   ],
+   "effects": [
+    "Assouplit les moyens de preuve permettant aux fournisseurs d'IA de contester la présomption d'utilisation d'œuvres protégées par le droit d'auteur",
+    "Assouplit les moyens de preuve pour les fournisseurs d'IA, qui peuvent apporter la preuve contraire par tout moyen sans devoir produire une documentation technique exhaustive"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-accessibilite-en-ligne-seul": {
+   "theme": "Exclure la seule accessibilité en ligne comme indice",
+   "amendments": [
+    "10",
+    "37"
+   ],
+   "effects": [
+    "Exonère le fournisseur de la présomption d'utilisation illicite lorsque l'œuvre était accessible en ligne sans mesure d'opt-out du titulaire de droits.",
+    "La simple accessibilité en ligne d'une œuvre ne suffit pas à présumer son utilisation dans l'entraînement d'un système d'IA"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-ia-usage-professionnel": {
+   "theme": "Exclure les IA à usage professionnel",
+   "amendments": [
+    "15"
+   ],
+   "effects": [
+    "Exclut les systèmes d'IA à usage professionnel du champ d'une présomption, levant une contrainte pour les organisations publiques et privées qui développent ou utilisent l'IA au travail."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-ia-open-source": {
+   "theme": "Exclure les modèles et systèmes IA open source",
+   "amendments": [
+    "16"
+   ],
+   "effects": [
+    "Exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "adapter-presomption-transparence": {
+   "theme": "Adapter la présomption au niveau de transparence",
+   "amendments": [
+    "17"
+   ],
+   "effects": [
+    "Adapte la présomption (de violation du droit d'auteur) selon le niveau de transparence et de documentation fourni par le fournisseur du modèle d'IA, encourageant les audits indépendants des données d'entraînement."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-domaine-public": {
+   "theme": "Exclure les œuvres du domaine public",
+   "amendments": [
+    "22"
+   ],
+   "effects": [
+    "Exclut explicitement les œuvres du domaine public de la présomption, sécurisant leur utilisation par les fournisseurs d'IA."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-oeuvres-sous-licence": {
+   "theme": "Exclure les œuvres utilisées sous licence ou accord",
+   "amendments": [
+    "65",
+    "92",
+    "26"
+   ],
+   "effects": [
+    "Exclut de la présomption les fournisseurs d'IA disposant d'une licence, autorisation ou accord contractuel couvrant l'utilisation alléguée d'une œuvre protégée",
+    "Exclut du champ de la loi les cas où un accord autorisant la fouille de textes et de données a été conclu entre une organisation représentative des titulaires de droits et un fournisseur d'IA.",
+    "Permet aux fournisseurs d'IA de renverser la présomption de litige en prouvant l'existence d'un contrat autorisant l'usage des contenus avec le titulaire des droits."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 122-5-3 du code de la propriété intellectuelle"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-hebergeurs-integrateurs": {
+   "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+   "amendments": [
+    "100"
+   ],
+   "effects": [
+    "Exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement, en recentrant celle-ci sur les développeurs des modèles."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "proteger-secret-affaires": {
+   "theme": "Protéger le secret des affaires dans la preuve",
+   "amendments": [
+    "71",
+    "68",
+    "36",
+    "72",
+    "99"
+   ],
+   "effects": [
+    "Encadre la divulgation d'informations protégées par le secret des affaires (notamment les corpus d'entraînement d'IA) lors d'une preuve contraire, en imposant des garanties de confidentialité sous contrôle du juge.",
+    "Exonère les fournisseurs d'IA de l'obligation de produire des données protégées par le RGPD ou le secret des affaires pour renverser une présomption liée aux corpus d'entraînement.",
+    "Interdit aux juridictions d'ordonner la communication intégrale des jeux de données d'entraînement d'un système d'IA dans le cadre d'une mesure d'instruction.",
+    "Protège les fournisseurs de systèmes d'IA contre l'obligation de divulguer des informations couvertes par le secret des affaires dans le cadre du mécanisme de présomption.",
+    "Renvoie à un décret en Conseil d'État la définition des règles de protection du secret des affaires pour les informations divulguées dans le cadre de la preuve contraire, incluant le tiers de confiance et les sanctions"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 151-1 du code de commerce"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exiger-elements-factuels-demandeur": {
+   "theme": "Exiger des éléments factuels du demandeur",
+   "amendments": [
+    "66"
+   ],
+   "effects": [
+    "Exige du demandeur d'apporter des éléments factuels et techniques suffisamment circonstanciés pour justifier le recours à la présomption légale, afin d'éviter des actions exploratoires visant à accéder à des informations sensibles des fournisseurs d'IA."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "permettre-attestation-tiers": {
+   "theme": "Permettre l'attestation d'un tiers de confiance",
+   "amendments": [
+    "76",
+    "95"
+   ],
+   "effects": [
+    "Permet aux fournisseurs de modèles ou systèmes d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée, via documentation technique ou attestation de conformité d'un tiers, sans divulguer tout le corpus d'entraînement.",
+    "Permet aux fournisseurs de systèmes d'IA de recourir à une attestation d'un tiers de confiance accrédité pour prouver l'absence d'une œuvre dans leur corpus d'entraînement, sans devoir communiquer l'intégralité de ce corpus."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "plafonder-dommages-interets": {
+   "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+   "amendments": [
+    "78"
+   ],
+   "effects": [
+    "Plafonne les dommages et intérêts au préjudice effectivement démontré par le titulaire des droits, interdisant toute indemnisation excédentaire ou punitive."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "prendre-compte-conformite-ai-act": {
+   "theme": "Prendre en compte la conformité à l'AI Act",
+   "amendments": [
+    "109",
+    "44"
+   ],
+   "effects": [
+    "Exempte du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et respectant les obligations de transparence de l'AI Act",
+    "Le respect des obligations de l'AI Act (documentation et transparence) peut être pris en compte par le juge pour apprécier la preuve contraire"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "proportionnalite-mesures-instruction": {
+   "theme": "Encadrer la proportionnalité des mesures d'instruction",
+   "amendments": [
+    "67",
+    "73"
+   ],
+   "effects": [
+    "Impose le principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'intelligence artificielle",
+    "Le juge peut modérer les mesures d'instruction demandées contre un fournisseur en fonction de la protection de ses droits fondamentaux (données personnelles, secret des affaires, procès équitable)."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "assouplir-pme": {
+   "theme": "Assouplir les exigences probatoires pour les PME",
+   "amendments": [
+    "74"
+   ],
+   "effects": [
+    "Assouplit les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques limitées."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "mise-en-demeure-prealable": {
+   "theme": "Imposer une mise en demeure préalable",
+   "amendments": [
+    "75"
+   ],
+   "effects": [
+    "Instaure une mise en demeure préalable obligatoire de trois mois avant toute action judiciaire fondée sur la présomption, pour favoriser les solutions amiables"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "gestion-collective-obligatoire": {
+   "theme": "Instaurer la gestion collective obligatoire",
+   "amendments": [
+    "84"
+   ],
+   "effects": [
+    "Instaure la gestion collective obligatoire des rémunérations dues aux auteurs lorsque leurs œuvres sont utilisées par les fournisseurs d'intelligence artificielle"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-retroactivite": {
+   "theme": "Exclure ou limiter la rétroactivité du dispositif",
+   "amendments": [
+    "8",
+    "5"
+   ],
+   "effects": [
+    "Préserve les droits contractuels acquis avant l'entrée en vigueur de la loi lors de l'application rétroactive de la présomption aux instances en cours",
+    "Supprime l'application rétroactive du dispositif aux instances en cours, protégeant les fournisseurs d'IA contre des exigences probatoires et techniques imposées a posteriori."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "differer-entree-vigueur": {
+   "theme": "Différer de six mois l'entrée en vigueur",
+   "amendments": [
+    "3",
+    "18"
+   ],
+   "effects": [
+    "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA le temps de s'adapter.",
+    "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA un temps d'adaptation."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "exclure-recherche-enseignement-tdm": {
+   "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+   "amendments": [
+    "88"
+   ],
+   "effects": [
+    "Exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "autoriser-conservation-copies-tdm": {
+   "theme": "Autoriser la conservation des copies de fouille de données",
+   "amendments": [
+    "30"
+   ],
+   "effects": [
+    "Autorise la conservation des copies issues de la fouille de textes et de données au-delà de la fouille, notamment pour servir de preuve en justice"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 122-5-3 du code de la propriété intellectuelle"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "creer-registre-opt-out": {
+   "theme": "Créer un registre de réserve de droit",
+   "amendments": [
+    "29"
+   ],
+   "effects": [
+    "Crée un registre de réserve de droit permettant aux auteurs de s'opposer à l'utilisation de leur œuvre pour l'entraînement d'IA, obligeant les développeurs d'IA à le consulter en amont"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 122-5-3 du code de la propriété intellectuelle"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "etendre-obligations-tous-fournisseurs": {
+   "theme": "Étendre les obligations à tous les fournisseurs en France",
+   "amendments": [
+    "38"
+   ],
+   "effects": [
+    "Étend les obligations de la loi à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement."
+   ],
+   "opposes": "limiter-fournisseurs-ue",
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "permettre-suspension-procedure": {
+   "theme": "Permettre la suspension pour négociations",
+   "amendments": [
+    "89"
+   ],
+   "effects": [
+    "Permet au juge de suspendre jusqu'à 12 mois les actions en contrefaçon pour laisser les titulaires de droits et les fournisseurs d'IA négocier des accords sectoriels"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "rapports-gouvernement": {
+   "theme": "Demander des rapports gouvernementaux d'évaluation",
+   "amendments": [
+    "1",
+    "53",
+    "21",
+    "50",
+    "51"
+   ],
+   "effects": [
+    "Demande un rapport gouvernemental sur la faisabilité d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'IA",
+    "Le Gouvernement devra remettre au Parlement un rapport sur les risques d'exclusion préventive des œuvres culturelles françaises des corpus d'entraînement des systèmes d'intelligence artificielle",
+    "Le Gouvernement devra remettre au Parlement un rapport évaluant l'impact du dispositif sur le développement de modèles d'IA souverains en France et dans l'UE.",
+    "Le Gouvernement devra remettre un rapport évaluant la compatibilité de la présomption de contrefaçon avec le droit européen, notamment au regard des charges probatoires imposées aux fournisseurs d'IA",
+    "Oblige le Gouvernement à remettre au Parlement un rapport évaluant l'impact économique de l'utilisation non autorisée d'œuvres protégées par l'IA générative sur les filières culturelles et informationnelles françaises"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 331-4-1 du code de la propriété intellectuelle"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "reporter-etude-impact": {
+   "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+   "amendments": [
+    "14",
+    "47"
+   ],
+   "effects": [
+    "Reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses conséquences économiques, juridiques et technologiques.",
+    "Reporte l'entrée en vigueur du mécanisme de présomption d'utilisation jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses effets économiques, juridiques et technologiques."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 331-4-1 du code de la propriété intellectuelle"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  }
+ },
+ "refs": {
+  "legifrance:LEGIARTI000006410261": {
+   "source": "Légifrance",
+   "label": "article 138 du code de procédure civile",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410261"
+  },
+  "legifrance:LEGIARTI000006410265": {
+   "source": "Légifrance",
+   "label": "article 142 du code de procédure civile",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410265"
+  }
+ }
+}

@@ -98,8 +98,8 @@ def engine_chiffrage(ch):
     delta = ch.get("delta")
     rates = []
     for s in ch.get("shares") or []:
-        if not delta:
-            break
+        if not delta or delta["high"] >= 1:
+            break  # no delta, or the whole flow changes hands: share × delta is not a rate on revenue
         sign = sign_of(s.get("nafs"), s.get("role"), ch.get("winners", []), ch.get("losers", []))
         if not sign:
             continue  # sector is neither a winner nor a loser in the text: no rate

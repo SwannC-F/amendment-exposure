@@ -16,5 +16,14 @@
     "path": "data/2026-2027/168",
     "generated_at": null,
     "n_measures": 12
+  },
+  {
+    "chamber": "an",
+    "session": "17",
+    "number": "2864",
+    "title": "Proposition de loi relative à l'instauration d'une présomption d'exploitation des contenus culturels par les fournisseurs d'intelligence artificielle",
+    "path": "data/an/17/2864",
+    "generated_at": null,
+    "n_measures": 39
   }
 ]

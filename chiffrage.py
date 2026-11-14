@@ -296,7 +296,8 @@ def mirror(entry, measure, answer):
 def one(m, opp, session, texte, amendments, criteria):
     """One LLM call for measure m (with its opposite measure's texts if opp). Returns (entry, answer)."""
     nums = [str(n) for n in m["amendments"]]
-    user = f"Texte : Sénat {session} n°{texte}\nMESURE : {m.get('theme')}\n\n" + \
+    chamber = "Assemblée nationale, législature " + session.split("/")[-1] if session.startswith("an/") else "Sénat " + session
+    user = f"Texte : {chamber} n°{texte}\nMESURE : {m.get('theme')}\n\n" + \
         render_amendments(nums, amendments, criteria)
     system, allowed = SYSTEM, nums
     if opp:

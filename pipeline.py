@@ -1,9 +1,12 @@
-"""Recompute everything for one Sénat text, from scratch, by code.
+"""Recompute everything for one text (Sénat or Assemblée nationale), from scratch, by code.
 
-Usage: python3 pipeline.py <session> <texte> [--from step] [--until step]
+Usage: python3 pipeline.py <session> <texte> [--from step] [--until step]        Sénat, data/<session>/<texte>/
+       python3 pipeline.py an <législature> <texte> [--from step] [--until step]  Assemblée, data/an/<lég>/<texte>/
 Steps, in order: fetch extract group signals exposure chiffrage history engine.
 Each step is a script with the same CLI (python3 <script> <session> <texte>) that reads and
-writes data/<session>/<texte>/. A step whose script is missing is skipped with a warning.
+writes data/<session>/<texte>/; for the Assemblée, session is "an/<législature>" (so the same
+data/an/<lég>/<texte>/ folder), except fetch (fetch_amendments_an.py <lég> <texte>). History is
+built for the Sénat; at the Assemblée a failure there is a warning, not a stop. A step whose script is missing is skipped with a warning.
 LLM answers and company counts are cached, so a rerun only pays for what changed.
 """
 import subprocess
@@ -19,7 +22,14 @@ STEPS = [("fetch", "fetch_amendments.py"), ("extract", "extract.py"), ("group", 
 def main(args):
     if len(args) < 2:
         sys.exit(__doc__)
-    session, n = args[0], args[1]
+    an = args[0] == "an"
+    if an:
+        if len(args) < 3:
+            sys.exit(__doc__)
+        leg, n = args[1], args[2]
+        session = f"an/{leg}"
+    else:
+        session, n = args[0], args[1]
     names = [s for s, _ in STEPS]
     start = args[args.index("--from") + 1] if "--from" in args else "fetch"
     end = args[args.index("--until") + 1] if "--until" in args else "engine"
@@ -32,12 +42,20 @@ def main(args):
             print(f"\n== {name} : {script} absent, étape sautée")
             skipped.append(name)
             continue
-        print(f"\n== {name} ({script} {session} {n})", flush=True)
+        if an and name == "fetch":
+            script, cli = "fetch_amendments_an.py", [leg, n]
+        else:
+            cli = [session, n]
+        print(f"\n== {name} ({script} {' '.join(cli)})", flush=True)
         t = time.time()
-        r = subprocess.run([sys.executable, script, session, n])
+        r = subprocess.run([sys.executable, script, *cli])
+        if r.returncode and an and name == "history":
+            print(f"   attention : history a échoué à l'Assemblée (code {r.returncode}), on continue sans")
+            skipped.append(name)
+            continue
         if r.returncode:
             sys.exit(f"\nÉchec à l'étape {name} (code {r.returncode}). "
-                     f"Reprendre avec : python3 pipeline.py {session} {n} --from {name}")
+                     f"Reprendre avec : python3 pipeline.py {'an ' + leg if an else session} {n} --from {name}")
         print(f"   {name} : {time.time() - t:.0f} s")
     print(f"\nTerminé -> data/{session}/{n}/" + (f" (sautées : {', '.join(skipped)})" if skipped else ""))
 

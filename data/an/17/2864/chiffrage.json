@@ -1,0 +1,1363 @@
+{
+  "memorisation-comme-reproduction": {
+    "key": "memorisation-comme-reproduction",
+    "theme": "Considérer la mémorisation comme une reproduction",
+    "mechanism": "La mesure qualifie juridiquement la mémorisation d'œuvres dans les modèles d'IA générative comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des actions en contrefaçon et dommages-intérêts de la part des titulaires de droits.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "autre:titulaires de droits d'auteur",
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Entreprises d'hébergement et traitement de données développant des modèles d'IA"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Entreprises de programmation informatique développant des modèles d'IA"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est une qualification juridique sans aucun paramètre chiffré : aucun flux monétaire annuel (assiette) ni aucune variation tarifaire ou proportionnelle (écart) ne figure dans le texte. Le transfert financier potentiel (dommages-intérêts ou redevances) dépendrait de contentieux futurs non quantifiés.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-recours-exception-tdm": {
+    "key": "exclure-recours-exception-tdm",
+    "theme": "Exclure le recours à l'exception de fouille de données",
+    "mechanism": "La mesure exclut du mécanisme de présomption d'utilisation des œuvres par l'IA les fournisseurs ayant légalement recouru à l'exception de fouille de textes et de données (TDM). Ces fournisseurs n'auraient plus à verser la compensation prévue par la présomption pour les œuvres concernées.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": null,
+        "label": "Fournisseurs de modèles ou systèmes d'IA (programmation informatique)"
+      },
+      {
+        "naf": "63.11Z",
+        "role": null,
+        "label": "Fournisseurs de modèles ou systèmes d'IA (traitement de données, hébergement)"
+      },
+      {
+        "naf": "72.19Z",
+        "role": null,
+        "label": "Fournisseurs de modèles ou systèmes d'IA (recherche-développement)"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Auteurs et titulaires de droits d'auteur bénéficiaires de la présomption"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire, pourcentage ou quantité permettant d'estimer l'assiette du flux financier concerné, l'écart induit par la mesure, ou la part du chiffre d'affaires des secteurs concernés. La mesure modifie uniquement le champ d'application d'une présomption légale sans préciser de montant.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "durcir-seuil-preuve-presomption": {
+    "key": "durcir-seuil-preuve-presomption",
+    "theme": "Durcir le seuil de preuve de la présomption",
+    "mechanism": "La mesure durcit le standard de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, passant d'un simple « indice » rendant l'usage « vraisemblable » à des exigences plus strictes (indices précis, graves et concordants, ou faisceau d'indices, ou preuve de présence dans le corpus). Il s'agit d'un changement procédural sans transfert monétaire direct.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.02A",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      },
+      {
+        "naf": "72.19Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:auteurs",
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est un changement de standard probatoire (juridique et procédural) sans flux monétaire identifiable. Aucune assiette en euros ni aucun écart chiffré ne figure dans les amendements.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-qualite-agir": {
+    "key": "restreindre-qualite-agir",
+    "theme": "Restreindre la qualité à agir et les voies procédurales",
+    "mechanism": "Ces amendements restreignent les voies procédurales ouvertes par la présomption instaurée par la loi : seuls les organismes de gestion collective peuvent agir en justice civile, la présomption est limitée aux actions individuelles, les actions de groupe sont exclues, et les mesures provisoires sont interdites avant une décision sur le fond. Aucun transfert monétaire direct n'est décrit dans les textes.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "autre:développeurs d'ia",
+        "label": "Développeurs de systèmes d'IA"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "autre:développeurs d'ia",
+        "label": "Programmation informatique"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "90.0",
+        "role": "autre:titulaires de droits",
+        "label": "Activités créatives, artistiques et de spectacle"
+      },
+      {
+        "naf": "94.69Z",
+        "role": "autre:organismes de gestion collective",
+        "label": "Organismes de gestion collective des droits"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements sont de nature procédurale et ne contiennent aucun paramètre monétaire chiffré. Aucune assiette ni aucun écart quantifiable ne peut être extrait des textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-litiges-droit-auteur": {
+    "key": "restreindre-litiges-droit-auteur",
+    "theme": "Restreindre aux litiges de droit d'auteur",
+    "mechanism": "L'amendement restreint le champ d'application d'une présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil. Cela réduit l'exposition juridique des acteurs de l'intelligence artificielle dans les litiges non liés à la propriété intellectuelle.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "autre:acteurs ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "autre:acteurs ia",
+        "label": "Programmation informatique"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Plaignants potentiels dans des litiges civils non liés au droit d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni flux monétaire (assiette), ni variation quantitative (écart), ni part de chiffre d'affaires. Il s'agit d'une modification purement procédurale et qualitative du champ d'application d'une présomption juridique, sans transfert monétaire identifiable.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-oeuvres-culturelles-presse": {
+    "key": "restreindre-oeuvres-culturelles-presse",
+    "theme": "Restreindre aux œuvres culturelles et de presse",
+    "mechanism": "La mesure restreint le champ de la protection légale aux seules œuvres culturelles et de presse, excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques. Les créateurs des contenus exclus perdent le bénéfice du mécanisme de protection, tandis que les plateformes d'IA n'ont plus à les indemniser pour ces catégories.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "plateformes",
+        "label": "Plateformes d'IA utilisant logiciels, bases de données, écrits scientifiques et cartes"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "emetteurs",
+        "label": "Éditeurs de logiciels, bases de données, écrits scientifiques et cartes géographiques"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette du flux concerné, l'écart imposé par la mesure ou la part du chiffre d'affaires des secteurs affectés.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exiger-identification-oeuvre": {
+    "key": "exiger-identification-oeuvre",
+    "theme": "Exiger l'identification précise de l'œuvre",
+    "mechanism": "La mesure durcit les conditions d'invocation de la présomption d'utilisation d'une œuvre protégée par un système d'IA : le titulaire de droits doit identifier précisément l'œuvre et prouver qu'elle était effectivement accessible au fournisseur d'IA. Cela réduit l'exposition juridique des fournisseurs d'IA et alourdit la charge probatoire des titulaires de droits.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Fournisseurs de systèmes d'intelligence artificielle"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Fournisseurs de modèles et systèmes d'intelligence artificielle"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:titulaires de droits",
+        "label": "Titulaires de droits d'auteur et droits voisins"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni assiette monétaire, ni écart quantifié, ni part d'un secteur. La mesure est de nature procédurale et juridique, sans flux financier identifiable dans le texte.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "definir-utilisation-reproduction": {
+    "key": "definir-utilisation-reproduction",
+    "theme": "Définir l'utilisation comme reproduction dans le corpus",
+    "mechanism": "La mesure restreint la notion d'« utilisation » d'une œuvre par un système d'IA à sa reproduction directe, identifiable et substantielle dans le corpus d'entraînement. Les fournisseurs d'IA voient leurs obligations envers les titulaires de droits réduites.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Hébergeurs et traiteurs de données pour l'IA"
+      },
+      {
+        "naf": "58.29C",
+        "role": "plateformes",
+        "label": "Éditeurs de logiciels d'IA"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:titulaires de droits d'auteur",
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements modifient une définition juridique sans introduire de chiffre. Aucune assiette monétaire, aucun écart quantifié et aucune part sectorielle ne figurent dans les textes. Le transfert financier dépend d'obligations dont le montant n'est pas spécifié ici.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-champ-fournisseurs-modeles": {
+    "key": "restreindre-champ-fournisseurs-modeles",
+    "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+    "mechanism": "La mesure restreint le champ de la présomption liée à l'utilisation d'œuvres protégées dans l'entraînement de l'IA aux seuls fournisseurs de modèles d'IA à usage général. Les fournisseurs de systèmes, déployeurs, intégrateurs et utilisateurs professionnels sont exclus de l'obligation.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA, intégrateurs, déployeurs"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA, intégrateurs, déployeurs"
+      },
+      {
+        "naf": "72.20Z",
+        "role": null,
+        "label": "Entreprises affinant des modèles sur données métier ou utilisant des architectures RAG"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de modèles d'ia",
+        "label": "Fournisseurs de modèles d'IA à usage général (restent seuls soumis à la présomption)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert financier. Aucune assiette en euros, aucun écart exprimé en proportion et aucune part de chiffre d'affaires ne figurent dans les textes. La mesure est un changement de champ d'application qualitatif.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-ia-contenu-artistique": {
+    "key": "restreindre-ia-contenu-artistique",
+    "theme": "Restreindre aux IA produisant des contenus artistiques",
+    "mechanism": "La mesure restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels. Les autres fournisseurs d'IA sortent du champ de cette présomption.",
+    "winners": [
+      {
+        "naf": "62.01A",
+        "role": "plateformes",
+        "label": "Fournisseurs d'IA non artistiques ou non génératives"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Artistes et créateurs"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette, l'écart ou la part d'un secteur. Aucun montant, taux ou proportion n'est mentionné dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "limiter-fournisseurs-ue": {
+    "key": "limiter-fournisseurs-ue",
+    "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+    "mechanism": "La mesure limite une présomption probatoire aux seuls fournisseurs d'IA établis ou commercialisant dans l'Union européenne, excluant de fait les acteurs extra-européens du régime probatoire. Aucun transfert monétaire direct n'est identifiable dans les textes.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs d'IA établis ou opérant dans l'UE"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs d'IA extra-européens commercialisant dans l'UE"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. La mesure est de nature réglementaire et ne provoque pas de transfert monétaire directement mesurable à partir des textes fournis.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "restreindre-presomption-entrainement": {
+    "key": "restreindre-presomption-entrainement",
+    "theme": "Restreindre la présomption à la phase d'entraînement",
+    "mechanism": "La mesure restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA : elle supprime les indices liés au déploiement et au résultat généré, ne conservant que ceux liés au développement. Les titulaires de droits perdent deux motifs de déclenchement de la présomption, ce qui réduit leurs chances d'obtenir réparation.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs et développeurs de modèles d'IA"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Hébergeurs et prestataires de traitement de données pour l'IA"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "associations",
+        "label": "Titulaires de droits d'auteur"
+      },
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Auteurs et ayants droit"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire chiffré n'apparaît dans les amendements. La mesure modifie les conditions juridiques de déclenchement d'une présomption, sans quantifier de montant, de taux ou de part de chiffre d'affaires. L'assiette et l'écart ne sont pas identifiables dans les textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-similarite-style-seul": {
+    "key": "exclure-similarite-style-seul",
+    "theme": "Exclure la seule similarité de style comme indice",
+    "mechanism": "Ces amendements modifient les conditions juridiques de preuve : la seule similarité de style, de ton, de registre, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne peut plus constituer un indice suffisant pour présumer une violation du droit d'auteur. Aucun transfert monétaire n'est prévu.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs et déployeurs de systèmes d'IA générative"
+      },
+      {
+        "naf": "62.01Z",
+        "role": null,
+        "label": "Éditeurs de logiciels d'IA générative"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure modifie uniquement les conditions juridiques de preuve en matière de présomption de contrefaçon par l'IA générative. Aucun flux monétaire, assiette financière ou taux chiffré n'est mentionné dans les amendements.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "assouplir-moyens-preuve": {
+    "key": "assouplir-moyens-preuve",
+    "theme": "Assouplir les moyens de preuve des fournisseurs",
+    "mechanism": "La mesure assouplit les moyens de preuve des fournisseurs d'IA : ils peuvent rapporter la preuve contraire par tout moyen au lieu de produire une documentation technique exhaustive. Aucun flux monétaire n'est chiffré dans les amendements.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA"
+      },
+      {
+        "naf": "58.21Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "associations",
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent un assouplissement procédural des moyens de preuve, sans chiffrer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart en euros ne figure dans les textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-accessibilite-en-ligne-seul": {
+    "key": "exclure-accessibilite-en-ligne-seul",
+    "theme": "Exclure la seule accessibilité en ligne comme indice",
+    "mechanism": "La mesure empêche qu'une œuvre simplement accessible en ligne soit présumée utilisée pour l'entraînement d'un système d'IA. Elle exonère le fournisseur de la présomption lorsque l'œuvre était en ligne sans mesure d'opt-out du titulaire de droits. Cela réduit l'exposition juridique des fournisseurs d'IA et affaiblit la position des titulaires de droits n'ayant pas mis en place d'opposition à la fouille de textes et de données.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Programmation informatique"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "58.11Z",
+        "role": "autre:titulaires de droits",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.20Z",
+        "role": "autre:titulaires de droits",
+        "label": "Enregistrement sonore et édition musicale"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni montant d'assiette, ni taux, ni part de chiffre d'affaires. La mesure est de nature probatoire et juridique, sans paramètre monétaire quantifié dans les textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-ia-usage-professionnel": {
+    "key": "exclure-ia-usage-professionnel",
+    "theme": "Exclure les IA à usage professionnel",
+    "mechanism": "La mesure exclut les systèmes d'IA à usage professionnel du champ d'une présomption liée au droit d'auteur. Les organisations publiques et privées qui développent ou utilisent l'IA au travail n'ont plus à supporter la contrainte financière ou juridique associée à cette présomption.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "employeurs",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "62.02A",
+        "role": "employeurs",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "employeurs",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "Organisations publiques utilisatrices d'IA"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Titulaires de droits d'auteur bénéficiaires de la présomption"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni montant d'assiette, ni taux ni part de chiffre d'affaires. Le coût ou l'avantage financier de la présomption exclue n'est pas quantifié dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-ia-open-source": {
+    "key": "exclure-ia-open-source",
+    "theme": "Exclure les modèles et systèmes IA open source",
+    "mechanism": "La mesure exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés. Les éditeurs d'IA open source ne seraient plus redevables d'une compensation au titre de cette présomption, au détriment des titulaires de droits sur ces contenus.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:editeurs-ia-opensource",
+        "label": "Éditeurs et développeurs de modèles et systèmes d'IA open source"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Titulaires de droits sur les contenus protégés (auteurs, créateurs)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni le montant ou la valeur des contenus protégés concernés (assiette), ni le taux de compensation ou de redevance associé à la présomption (écart), ni la part du chiffre d'affaires des éditeurs d'IA open source concernée par ce flux. Aucun paramètre chiffré ne permet de calculer le transfert.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "adapter-presomption-transparence": {
+    "key": "adapter-presomption-transparence",
+    "theme": "Adapter la présomption au niveau de transparence",
+    "mechanism": "La mesure adapte la présomption de violation du droit d'auteur pour les fournisseurs de modèles d'IA en fonction de leur niveau de transparence et de documentation. Aucun transfert monétaire chiffré n'est identifiable dans le texte.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de modèles et systèmes d'ia",
+        "label": "Fournisseurs de modèles d'IA transparents"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Titulaires de droits d'auteur (à hauteur de l'adaptation de la présomption)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni assiette monétaire, ni taux ou écart quantifié, ni part de chiffre d'affaires. La mesure est de nature juridique (adaptation d'une présomption) sans paramètre chiffré permettant de calculer un transfert.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-domaine-public": {
+    "key": "exclure-domaine-public",
+    "theme": "Exclure les œuvres du domaine public",
+    "mechanism": "Les œuvres du domaine public sont exclues de la présomption prévue par le texte. Les fournisseurs d'IA peuvent utiliser ces œuvres sans déclencher la présomption, ce qui les dispense d'une éventuelle rémunération ou obligation liée à cette présomption.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de services d'IA utilisant des œuvres culturelles"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de services d'IA utilisant des œuvres culturelles"
+      }
+    ],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette (valeur des œuvres du domaine public utilisées par les fournisseurs d'IA), l'écart (taux de la présomption ou rémunération évitée) ou la part du chiffre d'affaires concernée.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-oeuvres-sous-licence": {
+    "key": "exclure-oeuvres-sous-licence",
+    "theme": "Exclure les œuvres utilisées sous licence ou accord",
+    "mechanism": "La mesure exclut du mécanisme de présomption les cas où le fournisseur d'IA dispose d'une licence, d'une autorisation ou d'un accord contractuel couvrant l'utilisation de l'œuvre. Aucun transfert monétaire direct n'est quantifié dans les amendements.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de modèles d'IA disposant de licences"
+      },
+      {
+        "naf": "62.01Z",
+        "role": null,
+        "label": "Fournisseurs d'IA ayant conclu des accords contractuels"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "associations",
+        "label": "Titulaires de droits sans contrat, dont la présomption voit son champ réduit"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent sur une exception à une présomption légale et ne contiennent aucun chiffre permettant de quantifier un flux monétaire (assiette), un taux ou un écart. Aucune assiette ni aucun delta ne peut être extrait des textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-hebergeurs-integrateurs": {
+    "key": "exclure-hebergeurs-integrateurs",
+    "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+    "mechanism": "La mesure exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement. Cette présomption reste sur les développeurs des modèles. Aucun flux monétaire chiffré n'est identifiable dans le texte.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "autre:hébergeurs",
+        "label": "Hébergeurs de solutions IA"
+      },
+      {
+        "naf": "62.01Z",
+        "role": "autre:intégrateurs techniques",
+        "label": "Intégrateurs techniques"
+      },
+      {
+        "naf": "47.41Z",
+        "role": "autre:distributeurs de solutions ia",
+        "label": "Distributeurs et revendeurs de solutions IA"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:développeurs de modèles d'ia",
+        "label": "Développeurs de modèles d'IA (maintiennent la présomption de responsabilité)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre : ni assiette monétaire, ni taux ni part de chiffre d'affaires. La mesure est un transfert de responsabilité juridique, pas un transfert monétaire chiffré.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "proteger-secret-affaires": {
+    "key": "proteger-secret-affaires",
+    "theme": "Protéger le secret des affaires dans la preuve",
+    "mechanism": "Ces amendements encadrent ou suppriment l'obligation pour les fournisseurs de systèmes d'IA de divulguer leurs données d'entraînement et informations couvertes par le secret des affaires lors des procédures de preuve. Aucun transfert monétaire n'est prévu ; la mesure porte sur des obligations procédurales et juridiques.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.20Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Recherche-développement en sciences exactes et naturelles"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:titulaires de droits",
+        "label": "Titulaires de droits cherchant à obtenir communication des données d'entraînement"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale et juridique : elle encadre la divulgation d'informations en justice. Aucun flux monétaire n'est identifié dans les amendements, donc aucune assiette ni écart chiffré ne peut être extrait.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exiger-elements-factuels-demandeur": {
+    "key": "exiger-elements-factuels-demandeur",
+    "theme": "Exiger des éléments factuels du demandeur",
+    "mechanism": "La mesure impose au demandeur qui invoque une présomption légale d'apporter des éléments factuels et techniques circonstanciés. Elle ne crée pas de transfert monétaire direct mais modifie les conditions d'accès à un mécanisme juridique. Les fournisseurs d'IA sont protégés contre des actions exploratoires visant leurs informations sensibles.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs de systèmes d'intelligence artificielle"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:demandeurs",
+        "label": "Demandeurs souhaitant invoquer la présomption légale"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est de nature procédurale : il impose une exigence de motivation au demandeur sans créer de flux monétaire ni de taux, prix ou part chiffrés. Aucune assiette ni aucun écart en euros ne sont identifiables dans le texte.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "permettre-attestation-tiers": {
+    "key": "permettre-attestation-tiers",
+    "theme": "Permettre l'attestation d'un tiers de confiance",
+    "mechanism": "La mesure permet aux fournisseurs d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée via une documentation technique ou une attestation d'un tiers de confiance, sans devoir divulguer l'intégralité de leur corpus d'entraînement. Aucun transfert monétaire direct n'est institué ; la mesure est de nature procédurale.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs de modèles et systèmes d'IA"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Hébergeurs et prestataires de traitement de données"
+      },
+      {
+        "naf": "69.20Z",
+        "role": "autre:tiers de confiance",
+        "label": "Organismes tiers accrédités délivrant des attestations de conformité"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Titulaires de droits d'auteur (auteurs, ayants droit)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, un taux ou une part de chiffre d'affaires. La mesure modifie uniquement les modalités de preuve admises devant le juge ; aucun transfert d'argent n'est directement institué.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "plafonder-dommages-interets": {
+    "key": "plafonder-dommages-interets",
+    "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+    "mechanism": "La mesure plafonne les dommages et intérêts versés en cas de contrefaçon au préjudice effectivement démontré par le titulaire des droits. Les personnes assignées au titre de la contrefaçon paient moins ; les titulaires de droits perçoivent moins.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "autre:personnes assignées au titre de la contrefaçon",
+        "label": "Personnes assignées pour contrefaçon"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "58.11Z",
+        "role": "autre:titulaires de droits",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.11Z",
+        "role": "autre:titulaires de droits",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "59.20Z",
+        "role": "autre:titulaires de droits",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "60.10Z",
+        "role": "autre:titulaires de droits",
+        "label": "Programmation cinématographique"
+      },
+      {
+        "naf": "63.99Z",
+        "role": "autre:titulaires de droits",
+        "label": "Activités des agences de presse"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant annuel des dommages et intérêts versés au titre de la contrefaçon (assiette), ni la part de ces sommes qui excède le préjudice démontré (écart), ni la part du chiffre d'affaires des secteurs concernés passant par ce flux.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "prendre-compte-conformite-ai-act": {
+    "key": "prendre-compte-conformite-ai-act",
+    "theme": "Prendre en compte la conformité à l'AI Act",
+    "mechanism": "La mesure facilite la preuve contraire (amendement n°109) et exonère du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et conformes à l'AI Act (amendement n°44). Les fournisseurs d'IA conformes voient leur exposition juridique réduite.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de modèles d'ia",
+        "label": "Fournisseurs de modèles d'IA conformes à l'AI Act"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs de modèles d'ia",
+        "label": "Fournisseurs de modèles d'IA conformes à l'AI Act"
+      }
+    ],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert monétaire. Aucune assiette (montant des dommages, amendes, ou valeur concernée) ni aucun écart chiffré ne figure dans les textes. Le dispositif principal auquel ces amendements s'appliquent n'est pas fourni.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "proportionnalite-mesures-instruction": {
+    "key": "proportionnalite-mesures-instruction",
+    "theme": "Encadrer la proportionnalité des mesures d'instruction",
+    "mechanism": "Ces amendements imposent un principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'IA et permettent au juge de les modérer au regard des droits fondamentaux du fournisseur. Aucun flux monétaire chiffré n'est créé ou modifié par ces dispositions, qui relèvent du droit procédural.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:entreprises ia",
+        "label": "Entreprises de programmation informatique développant des systèmes d'IA"
+      },
+      {
+        "naf": "72.19Z",
+        "role": "autre:entreprises ia",
+        "label": "Entreprises de R&D en sciences développant des systèmes d'IA"
+      },
+      {
+        "naf": null,
+        "role": "autre:fournisseurs",
+        "label": "Fournisseurs mis en cause dans une procédure"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Plaignants dans les litiges liés à l'IA, dont les demandes d'instruction peuvent être réduites"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent uniquement sur des principes procéduraux (proportionnalité et modération des mesures d'instruction). Aucun flux monétaire, aucun montant, aucun taux ni aucune part de chiffre d'affaires ne figure dans les textes, ce qui rend le calcul d'un transfert impossible.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "assouplir-pme": {
+    "key": "assouplir-pme",
+    "theme": "Assouplir les exigences probatoires pour les PME",
+    "mechanism": "La mesure permet au juge de moduler les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques. Aucun flux monétaire direct n'est quantifié dans le texte.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "PME de programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "PME de traitement de données et hébergement"
+      },
+      {
+        "naf": "72.20Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "PME de R&D en sciences exactes"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Titulaires de droits"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier un transfert monétaire. Il s'agit d'une modification procédurale (modulation des exigences probatoires) sans assiette financière ni écart chiffré identifiable dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "mise-en-demeure-prealable": {
+    "key": "mise-en-demeure-prealable",
+    "theme": "Imposer une mise en demeure préalable",
+    "mechanism": "La mesure impose aux titulaires de droits d'adresser une mise en demeure préalable aux fournisseurs (hébergeurs, FAI) et d'attendre trois mois avant toute action judiciaire fondée sur la présomption. Aucun transfert financier n'est prévu.",
+    "winners": [
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Hébergeurs et fournisseurs d'accès"
+      },
+      {
+        "naf": "61.30Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de télécommunications"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "autre:titulaires de droits",
+        "label": "Titulaires de droits d'auteur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle instaure un délai de mise en demeure préalable de trois mois, sans transfert financier identifiable ni paramètre chiffré monétaire.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "gestion-collective-obligatoire": {
+    "key": "gestion-collective-obligatoire",
+    "theme": "Instaurer la gestion collective obligatoire",
+    "mechanism": "Les fournisseurs d'intelligence artificielle doivent rémunérer les auteurs pour l'utilisation de leurs œuvres lors de l'entraînement des modèles. La mesure rend obligatoire la gestion collective de ces rémunérations par des organismes agréés (SACEM, SCAM, ADAGP, etc.), qui perçoivent les sommes et les répartissent entre les créateurs.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "autre:auteurs et titulaires de droits voisins",
+        "label": "Auteurs et titulaires de droits voisins"
+      },
+      {
+        "naf": "94.99Z",
+        "role": "associations",
+        "label": "Organismes de gestion collective du droit d'auteur"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'intelligence artificielle",
+        "label": "Fournisseurs d'intelligence artificielle"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs d'intelligence artificielle",
+        "label": "Fournisseurs d'intelligence artificielle"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant ou l'assiette de la rémunération due par les fournisseurs d'IA, ni un taux ou pourcentage applicable. Il se contente d'instaurer le principe de la gestion collective obligatoire sans définir les paramètres financiers du transfert.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-retroactivite": {
+    "key": "exclure-retroactivite",
+    "theme": "Exclure ou limiter la rétroactivité du dispositif",
+    "mechanism": "La mesure limite ou supprime l'application rétroactive d'une présomption légale aux instances judiciaires en cours. Les fournisseurs de systèmes d'IA évitent que des exigences probatoires et techniques nouvelles s'appliquent à des faits antérieurs à la loi. Les détenteurs de droits qui auraient pu bénéficier de cette présomption dans des instances en cours perdent cet avantage procédural.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "62.02A",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:entreprises d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Détenteurs de droits ayant des instances en cours à la date d'entrée en vigueur"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. Il s'agit d'une modification procédurale sur la rétroactivité d'une présomption, sans paramètre chiffré dans les textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "differer-entree-vigueur": {
+    "key": "differer-entree-vigueur",
+    "theme": "Différer de six mois l'entrée en vigueur",
+    "mechanism": "La mesure reporte de six mois l'entrée en vigueur de la loi. Aucun flux monétaire n'est décrit dans les amendements ; il s'agit d'un délai procédural, pas d'un transfert d'argent.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs d'ia",
+        "label": "Fournisseurs de modèles et de systèmes d'intelligence artificielle"
+      }
+    ],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent uniquement un report de six mois de l'entrée en vigueur. Aucun flux financier (assiette) ni aucune variation tarifaire ou fiscale (écart) n'est mentionné, ce qui rend le calcul d'un transfert monétaire impossible.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "exclure-recherche-enseignement-tdm": {
+    "key": "exclure-recherche-enseignement-tdm",
+    "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+    "mechanism": "L'amendement exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données. Il n'y a pas de transfert monétaire chiffré.",
+    "winners": [
+      {
+        "naf": "72.1",
+        "role": "autre:organismes de recherche",
+        "label": "Recherche-développement"
+      },
+      {
+        "naf": "85.3",
+        "role": "autre:établissements d'enseignement",
+        "label": "Enseignement supérieur"
+      },
+      {
+        "naf": "85.2",
+        "role": "autre:établissements d'enseignement",
+        "label": "Enseignement secondaire"
+      }
+    ],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. Il s'agit d'une exclusion de champ sans paramètre monétaire.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "autoriser-conservation-copies-tdm": {
+    "key": "autoriser-conservation-copies-tdm",
+    "theme": "Autoriser la conservation des copies de fouille de données",
+    "mechanism": "La mesure autorise les acteurs recourant à la fouille de textes et de données (TDM) à conserver les copies issues de cette fouille au-delà de la phase de fouille, notamment pour servir de preuve en justice. Auparavant, la loi imposait la destruction des données après la fouille. Il s'agit d'un assouplissement réglementaire sans flux monétaire explicite.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de modèles d'ia",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs de modèles d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Titulaires de droits (auteurs, éditeurs) dont les œuvres sont conservées plus longtemps sans contrepartie"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. La mesure est de nature réglementaire (autorisation de conservation de données) et ne décrit pas de transfert financier chiffré.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "creer-registre-opt-out": {
+    "key": "creer-registre-opt-out",
+    "theme": "Créer un registre de réserve de droit",
+    "mechanism": "La mesure crée un registre où les auteurs déposent leurs œuvres pour s'opposer à leur utilisation par les développeurs d'IA. Les développeurs doivent consulter le registre avant l'entraînement de leurs modèles. Aucun transfert monétaire n'est chiffré dans le texte.",
+    "winners": [
+      {
+        "naf": "58.11Z",
+        "role": "autre:auteurs et titulaires de droits",
+        "label": "Éditeurs de livres"
+      },
+      {
+        "naf": "59.20Z",
+        "role": "autre:auteurs et titulaires de droits",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "59.11Z",
+        "role": "autre:auteurs et titulaires de droits",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "74.20Z",
+        "role": "autre:auteurs et titulaires de droits",
+        "label": "Activités photographiques"
+      },
+      {
+        "naf": "90.03Z",
+        "role": "autre:auteurs et titulaires de droits",
+        "label": "Création artistique relevant des arts plastiques"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:développeurs d'ia",
+        "label": "Programmation informatique"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun paramètre chiffré : ni assiette monétaire, ni taux, ni coût de consultation du registre. Les modalités financières sont renvoyées à un décret.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "etendre-obligations-tous-fournisseurs": {
+    "key": "etendre-obligations-tous-fournisseurs",
+    "theme": "Étendre les obligations à tous les fournisseurs en France",
+    "mechanism": "La mesure étend les obligations légales à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement. Le texte ne quantifie aucun transfert financier.",
+    "winners": [
+      {
+        "naf": "62.01A",
+        "role": "plateformes",
+        "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+      },
+      {
+        "naf": "58.29C",
+        "role": "plateformes",
+        "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "plateformes",
+        "label": "Fournisseurs et développeurs d'IA établis en France ou dans l'UE"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "plateformes",
+        "label": "Fournisseurs et développeurs d'IA extra-européens commercialisant en France"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette ou l'écart du transfert.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "permettre-suspension-procedure": {
+    "key": "permettre-suspension-procedure",
+    "theme": "Permettre la suspension pour négociations",
+    "mechanism": "Le juge peut suspendre jusqu'à 12 mois les actions en contrefaçon pour permettre aux titulaires de droits et aux fournisseurs d'IA de négocier des accords sectoriels. Aucun transfert monétaire direct n'est prévu par le dispositif.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "plateformes",
+        "label": "Fournisseurs de systèmes d'IA (suspension des actions en contrefaçon)"
+      },
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "Justice (désengorgement des contentieux)"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "58.11Z",
+        "role": null,
+        "label": "Éditeurs de livres (suspension de leurs actions en contrefaçon)"
+      },
+      {
+        "naf": "59.11A",
+        "role": null,
+        "label": "Producteurs audiovisuels (suspension de leurs actions en contrefaçon)"
+      },
+      {
+        "naf": "59.20Z",
+        "role": null,
+        "label": "Éditeurs musicaux (suspension de leurs actions en contrefaçon)"
+      },
+      {
+        "naf": "90.03A",
+        "role": null,
+        "label": "Créateurs artistiques (suspension de leurs actions en contrefaçon)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le dispositif crée une faculté de suspension judiciaire sans fixer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart chiffré ne figure dans l'amendement.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "rapports-gouvernement": {
+    "key": "rapports-gouvernement",
+    "theme": "Demander des rapports gouvernementaux d'évaluation",
+    "mechanism": "La mesure oblige le Gouvernement à remettre plusieurs rapports d'évaluation au Parlement sur les effets de la loi (faisabilité d'une licence préalable, développement de l'IA souveraine, compatibilité avec le droit européen, conséquences économiques sur les filières culturelles, risques d'exclusion des œuvres françaises). Aucun transfert financier n'est prévu.",
+    "winners": [],
+    "losers": [],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Ces amendements imposent uniquement la production de rapports gouvernementaux. Aucun flux monétaire, aucune assiette ni aucun écart chiffré ne sont présents dans les textes.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "reporter-etude-impact": {
+    "key": "reporter-etude-impact",
+    "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+    "mechanism": "Le mesure reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact au Parlement, dans un délai maximal de trois mois. Pendant ce délai, les fournisseurs de systèmes d'IA ne supportent pas la charge procédurale et financière liée au renversement de la présomption.",
+    "winners": [
+      {
+        "naf": "62.01Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.19Z",
+        "role": "autre:fournisseurs de systèmes d'ia",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": null,
+        "label": "Titulaires de droits de propriété intellectuelle"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire permettant d'estimer l'assiette (valeur des œuvres concernées ou montant des charges procédurales) ni aucun taux ou pourcentage pour l'écart. Le seul élément chiffré est le délai de trois mois, qui ne permet pas de calculer un transfert annuel.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  }
+}

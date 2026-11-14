@@ -1,0 +1,2299 @@
+[
+  {
+    "number": "12",
+    "criteria_found": false,
+    "effect": "Suppression de l'article unique de la proposition de loi relative à la protection des auteurs face au développement de l'intelligence artificielle générative.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Supprimer cet article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "24",
+    "criteria_found": true,
+    "effect": "La mémorisation d'œuvres protégées dans les modèles d'IA générative est explicitement considérée comme une reproduction au sens du droit d'auteur, exposant les développeurs de modèles à des poursuites pour contrefaçon.",
+    "who": "Entreprises développant et exploitant des modèles de langage d'IA générative (ex. OpenAI, Mistral AI, Google, Meta) ; titulaires de droits d'auteur dont les œuvres peuvent être mémorisées dans ces modèles",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:titulaires de droits d'auteur"
+    ],
+    "regions": [],
+    "quote": "La mémorisation dans les modèles de langage d'intelligence artificielle générative peut être considérée comme une reproduction.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "25",
+    "criteria_found": true,
+    "effect": "Exclut du mécanisme de présomption d'utilisation les fournisseurs de modèles ou systèmes d'IA qui ne peuvent techniquement prouver la non-utilisation d'une œuvre en raison de l'obligation de destruction des données issue de l'exception pour fouilles de données.",
+    "who": "Fournisseurs de modèles ou de systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Cet amendement a donc pour vocation d'exclure du mécanisme de présomption le cas où le fournisseur du modèle ou du système d'IA est dans l'incapacité technique d'apporter la preuve recherchée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "93",
+    "criteria_found": true,
+    "effect": "Durcit les conditions de déclenchement de la présomption en exigeant du demandeur qu'il identifie précisément l'œuvre protégée et produise des éléments objectifs et vérifiables d'atteinte vraisemblable",
+    "who": "Titulaires de droits d'auteur (demandeurs) et défendeurs en matière de contrefaçon",
+    "sectors": [],
+    "roles": [
+      "autre: titulaires de droits d'auteur"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement exige que le demandeur identifie précisément l'œuvre protégée qu'il allègue avoir été utilisée et produise des éléments objectifs à l'appui, conformément à l'équilibre procédural en vigueur.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "90",
+    "criteria_found": true,
+    "effect": "Restreint une action en justice civile aux seuls organismes de gestion collective des droits d'auteur (sociétés de perception et de répartition), excluant les œuvres mises en ligne par les internautes.",
+    "who": "Sociétés de perception et de répartition des droits (SPRD) visées à l'article L. 321-1 du code de la propriété intellectuelle, telles que la SACEM, la SCAM, l'ADAGP, etc.",
+    "sectors": [
+      {
+        "naf": "94.69Z",
+        "label": "Autres organisations fonctionnant par adhésion volontaire"
+      }
+    ],
+    "roles": [
+      "autre:organismes de gestion collective"
+    ],
+    "regions": [],
+    "quote": "dans laquelle le demandeur est un organisme défini à l'article L. 321‑1 du présent code",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "34",
+    "criteria_found": true,
+    "effect": "Restreint le champ de la présomption probatoire aux seuls contentieux relatifs aux atteintes aux droits d'auteur ou droits voisins, excluant tout autre litige civil.",
+    "who": "Entreprises du secteur de l'intelligence artificielle susceptibles d'être parties à des litiges en propriété intellectuelle",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:acteurs IA"
+    ],
+    "regions": [],
+    "quote": "Une telle imprécision est susceptible de créer une insécurité juridique importante pour les acteurs du secteur de l'intelligence artificielle",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "59",
+    "criteria_found": false,
+    "effect": "Précise rédactionnellement la notion d'œuvre en ajoutant l'adjectif « protégée ».",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "91",
+    "criteria_found": true,
+    "effect": "Restreint le champ de la protection aux seules œuvres culturelles, artistiques et de presse en excluant les logiciels, bases de données, écrits scientifiques et cartes géographiques du périmètre de la loi",
+    "who": "Auteurs d'œuvres littéraires et artistiques, artistes-interprètes, producteurs de phonogrammes et vidéogrammes, entreprises de communication audiovisuelle, éditeurs de presse",
+    "sectors": [
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "58.13Z",
+        "label": "Édition de journaux"
+      },
+      {
+        "naf": "58.14Z",
+        "label": "Édition de revues et périodiques"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "60.10Z",
+        "label": "Programmation et diffusion de programmes audiovisuels"
+      },
+      {
+        "naf": "60.20A",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "90.01Z",
+        "label": "Arts du spectacle vivant"
+      }
+    ],
+    "roles": [
+      "autre:<ayants droit des industries culturelles et de presse>"
+    ],
+    "regions": [],
+    "quote": "la protection des œuvres de création, des contenus culturels et de presse face aux usages de l'intelligence artificielle",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "35",
+    "criteria_found": true,
+    "effect": "Exige que l'œuvre protégée invoquée soit identifiée avec un degré raisonnable de précision pour déclencher la présomption prévue par l'article",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement vise donc à exiger que l'œuvre ou l'objet protégé invoqué soit identifié avec un degré raisonnable de précision.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "7",
+    "criteria_found": true,
+    "effect": "Restreint la notion d'utilisation d'une œuvre par un système d'IA aux cas où elle a été utilisée de manière directe, identifiable et substantielle lors de l'entraînement du modèle, réduisant les obligations des fournisseurs d'IA.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle entraînant des modèles sur des corpus massifs de données",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Cet amendement vise à recentrer la notion d'utilisation sur les seules hypothèses dans lesquelles l'œuvre concernée a été utilisée de manière directe, identifiable et substantielle dans le cadre de l'entraînement du modèle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "69",
+    "criteria_found": true,
+    "effect": "La présomption d'exploitation des œuvres par l'IA ne s'applique pas lorsque le fournisseur a légalement recouru à l'exception de fouille de textes et de données.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle utilisant l'exception de fouille de textes et de données (TDM) pour entraîner leurs modèles",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption d'exploitation ne saurait s'appliquer lorsque le fournisseur d'un système d'intelligence artificielle s'est légalement fondé sur l'exception de fouille de textes et de données",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "13",
+    "criteria_found": true,
+    "effect": "Restreint le champ d'application de la présomption aux seuls fournisseurs de modèles d'IA à usage général, excluant les déployeurs, intégrateurs, distributeurs et utilisateurs professionnels.",
+    "who": "Fournisseurs de modèles d'intelligence artificielle à usage général au sens du règlement européen 2024/1689 (IA Act)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement vise à recentrer le champ d'application de la présomption sur les seuls fournisseurs de modèles d'intelligence artificielle à usage général au sens du règlement (UE) 2024/1689 sur l'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "70",
+    "criteria_found": false,
+    "effect": "Aligne la définition des termes « fournisseur », « déployeur » et « système d'intelligence artificielle » sur le règlement européen AI Act (UE 2024/1689) pour garantir la cohérence juridique.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Les notions de fournisseur, de déployeur et de système d'intelligence artificielle s'entendent au sens du règlement (UE) 2024/1689 du Parlement européen et du Conseil du 13 juin 2024 sur l'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "63",
+    "criteria_found": true,
+    "effect": "Limite l'obligation de transparence aux seuls fournisseurs de modèles d'IA visés par l'article 53 du règlement européen sur l'IA, excluant les fournisseurs de systèmes d'IA qui affinent des modèles ou utilisent des architectures RAG.",
+    "who": "Entreprises développant des systèmes d'IA par affinage de modèles généraux sur données métier (comptables, juridiques, médicales, industrielles) ou via architectures RAG ; fournisseurs de modèles d'IA soumis aux obligations de l'AI Act européen",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.20Z",
+        "label": "Recherche-développement en sciences naturelles et ingénierie"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Le premier alinéa du présent article n'est applicable qu'aux fournisseurs visés par les obligations de transparence prévues à l'article 53 du règlement (UE) 2024/1689 du Parlement européen et du Conseil du 13 juin 2024 établissant des règles harmonisées concernant l'intelligence artificielle",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "94",
+    "criteria_found": true,
+    "effect": "Restreint la responsabilité du débiteur présumé aux seuls fournisseurs de modèles d'IA à usage général ayant intégré l'œuvre dans leur corpus d'entraînement, excluant les autres acteurs du cycle de vie de l'IA",
+    "who": "Fournisseurs et développeurs de modèles d'intelligence artificielle à usage général (ex. OpenAI, Google DeepMind, Mistral AI, Meta AI)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "La désignation du fournisseur comme débiteur présumé doit être liée à sa maîtrise effective du corpus d'entraînement.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "19",
+    "criteria_found": true,
+    "effect": "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les fournisseurs de systèmes d'IA en aval.",
+    "who": "Fournisseurs de modèles d'IA générative (visés) et fournisseurs de systèmes d'IA s'appuyant sur ces modèles (exclus du champ)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.20Z",
+        "label": "Recherche-développement en sciences physiques et naturelles"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Il convient en conséquence de limiter son champ aux seuls fournisseurs de modèles d'IA et d'exclure les acteurs en aval tels que les fournisseurs de systèmes qui s'appuient sur ces modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "32",
+    "criteria_found": true,
+    "effect": "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les fournisseurs de systèmes d'IA en aval.",
+    "who": "Fournisseurs de modèles d'IA générative (ex. OpenAI, Mistral AI) ; fournisseurs de systèmes d'IA exclus du champ",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Il convient en conséquence de limiter son champ aux seuls fournisseurs de modèles d'IA et d'exclure les acteurs en aval tels que les fournisseurs de systèmes qui s'appuient sur ces modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "64",
+    "criteria_found": true,
+    "effect": "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seuls modèles d'IA, en excluant les systèmes d'IA qui les exploitent",
+    "who": "Entreprises développant des systèmes d'IA, affinant des modèles généraux sur données métier ou utilisant des architectures RAG",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:développeurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Une entreprise ayant procédé à l'affinage d'un modèle général sur des données métier (données comptables, juridiques, médicales, industrielles), ou recourant à des architectures de “RAG” pour enrichir dynamiquement ses réponses à partir de bases propriétaires, se trouverait exposée à la présomption au même titre que le concepteur du modèle fondateur.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "28",
+    "criteria_found": true,
+    "effect": "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur aux seuls fournisseurs d'IA génératifs produisant des contenus artistiques ou culturels.",
+    "who": "Fournisseurs de modèles ou systèmes d'IA génératifs créant des contenus artistiques ou culturels",
+    "sectors": [
+      {
+        "naf": "62.01A",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "plateformes"
+    ],
+    "regions": [],
+    "quote": "seuls ces modèles ou systèmes d'IA sont susceptibles d'entrer en concurrence avec les artistes et créateurs",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "82",
+    "criteria_found": true,
+    "effect": "Limite une présomption probatoire aux fournisseurs d'IA établis ou opérant dans l'UE pour éviter un avantage concurrentiel aux acteurs extra-européens.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle établis ou commercialisant dans l'UE, et acteurs extra-européens.",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption doit être limitée aux fournisseurs établis ou opérant dans l'Union européenne afin d'éviter de créer un avantage concurrentiel au profit des acteurs extra-européens qui ne seraient pas soumis au même régime probatoire.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "97",
+    "criteria_found": true,
+    "effect": "Durcit la présomption d'utilisation d'œuvres par les IA en exigeant des éléments précis, graves et concordants prouvant la présence de l'œuvre dans le corpus d'entraînement, au lieu d'un simple indice rendant l'usage vraisemblable.",
+    "who": "Développeurs de systèmes d'IA entraînés sur des corpus pouvant contenir des œuvres protégées ; auteurs et titulaires de droits d'auteur",
+    "sectors": [
+      {
+        "naf": "62.01A",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:developpeurs IA",
+      "autre:auteurs"
+    ],
+    "regions": [],
+    "quote": "qu'il est établi, par des éléments précis, graves et concordants, que l'œuvre figurait dans le corpus d'entraînement du système concerné",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "2",
+    "criteria_found": true,
+    "effect": "Relève le seuil probatoire pour déclencher la présomption d'utilisation d'œuvres par les fournisseurs d'IA, passant d'un simple indice à un faisceau d'indices concordants et sérieux.",
+    "who": "Fournisseurs d'IA et entreprises développant des modèles d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Ce seuil, très faible, crée un risque d'instrumentalisation contentieuse et de multiplication de procédures infondées, pouvant peser lourdement sur des entreprises françaises et européennes développant des modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "9",
+    "criteria_found": true,
+    "effect": "Relève le standard probatoire passant d'un simple indice à un faisceau d'indices concordants et sérieux pour déclencher la présomption pesant sur les fournisseurs d'IA.",
+    "who": "Fournisseurs d'IA et entreprises françaises et européennes développant des modèles d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "62.02A",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "susceptible de déclencher une présomption aux effets juridiques considérables pour les fournisseurs d'IA",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "45",
+    "criteria_found": true,
+    "effect": "Durcit le seuil de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, en exigeant des indices « précis, graves et concordants »",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle (ex. Mistral IA) et titulaires de droits d'auteur",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "faire peser sur le fournisseur de système d'intelligence artificielle une obligation probatoire particulièrement lourde, consistant à démontrer l'absence d'utilisation d'une œuvre déterminée dans le cadre de jeux de données massifs et évolutifs",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "6",
+    "criteria_found": true,
+    "effect": "Durcit les conditions de déclenchement de la présomption d'utilisation d'une œuvre par un système d'IA en exigeant des indices « non équivoques et concordants ».",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle (ex. Mistral AI), ainsi que les titulaires de droits d'auteur concernés par la présomption",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Une telle rédaction risquerait de faire peser sur les fournisseurs de systèmes d'intelligence artificielle une charge probatoire disproportionnée",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "55",
+    "criteria_found": true,
+    "effect": "Relève le seuil de preuve pour déclencher la présomption d'utilisation d'une œuvre par une IA, en exigeant des indices « non équivoques et concordants ».",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle, soumis à la charge probatoire de démontrer l'absence d'utilisation d'une œuvre",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Une telle rédaction risquerait de faire peser sur les fournisseurs de systèmes d'intelligence artificielle une charge probatoire disproportionnée, en les contraignant à démontrer l'absence d'utilisation d'une œuvre déterminée à partir d'indices ambigus ou équivoques.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "27",
+    "criteria_found": true,
+    "effect": "Restreint la présomption d'utilisation de contenus protégés par le droit d'auteur par les fournisseurs d'IA aux seuls indices relatifs au développement, excluant ceux liés au déploiement",
+    "who": "Fournisseurs de modèles et systèmes d'IA ; titulaires de droits d'auteur",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "associations",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "Cet amendement vise à supprimer la possibilité pour les titulaires de droit, en apportant un indice relatif au déploiement du modèle ou du système, de présumer que le fournisseur du modèle ou du système d'IA a utilisé un contenu protégé par le droit d'auteur.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "43",
+    "criteria_found": false,
+    "effect": "Précise qu'il s'agit d'un système d'intelligence artificielle, sans modifier la portée de la mesure.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "11",
+    "criteria_found": true,
+    "effect": "Restreint la présomption liée à l'utilisation d'œuvres protégées aux seules opérations d'entraînement des modèles d'IA, sans tenir compte de la similarité des contenus générés",
+    "who": "Développeurs de modèles d'intelligence artificielle générative utilisant des œuvres protégées lors de l'entraînement ; titulaires de droits sur ces œuvres",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:developpeurs IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "Le présent amendement vise donc à recentrer le mécanisme de présomption sur les seules opérations d'utilisation de contenus protégés dans le cadre du développement du système.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "41",
+    "criteria_found": false,
+    "effect": "Substitution rédactionnelle : remplacer « au résultat généré par celui-ci » par « aux contenus générés par ce système ».",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "57",
+    "criteria_found": false,
+    "effect": "Modification rédactionnelle : substituer « permet de rendre » à « rend ».",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "81",
+    "criteria_found": true,
+    "effect": "Durcit le standard de preuve exigé pour renverser la charge de la preuve, passant de « vraisemblable » à « hautement probable », afin de mieux protéger la sécurité juridique des fournisseurs d'IA.",
+    "who": "fournisseurs d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'intelligence artificielle"
+    ],
+    "regions": [],
+    "quote": "Exiger une probabilité élevée, et non une simple vraisemblance, permet de calibrer la présomption de manière plus proportionnée aux impératifs de sécurité juridique des fournisseurs d'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "42",
+    "criteria_found": true,
+    "effect": "Exclut la seule similarité de style, ton ou registre comme indice suffisant pour présumer une violation du droit d'auteur par une IA générative",
+    "who": "Fournisseurs et déployeurs de modèles d'intelligence artificielle générative, exposés à des présomptions de contrefaçon",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs et déployeurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Permettre que cette seule similarité constitue un « indice » suffisant pour déclencher la présomption créerait une insécurité juridique massive pour l'ensemble des fournisseurs et déployeurs",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "46",
+    "criteria_found": true,
+    "effect": "La simple similarité stylistique, thématique ou conceptuelle entre un contenu généré par IA et une œuvre protégée ne suffit plus, à elle seule, à constituer un indice d'utilisation de cette œuvre",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle générative (ex. Mistral IA), auteurs et titulaires de droits d'auteur",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:titulaires de droits d'auteur"
+    ],
+    "regions": [],
+    "quote": "La similarité stylistique, thématique ou conceptuelle entre un contenu généré et une œuvre protégée ne peut, à elle seule, constituer un indice suffisant d'utilisation au sens du présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "56",
+    "criteria_found": true,
+    "effect": "La simple similarité entre un contenu généré par IA et une œuvre protégée ne suffit plus à présumer l'utilisation de cette œuvre lors de l'entraînement du système.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle générative ; titulaires de droits d'auteur sur les œuvres protégées",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:titulaires de droits d'auteur"
+    ],
+    "regions": [],
+    "quote": "La seule similarité entre un contenu généré et une œuvre protégée ne peut constituer un indice suffisant d'utilisation au sens du présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "4",
+    "criteria_found": true,
+    "effect": "Assouplit les moyens de preuve pour les fournisseurs d'IA, qui peuvent apporter la preuve contraire par tout moyen sans devoir produire une documentation technique exhaustive",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle, dont Mistral AI",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:<fournisseurs d'IA>"
+    ],
+    "regions": [],
+    "quote": "La preuve contraire peut être rapportée par tout moyen, notamment par la production d’éléments techniques, organisationnels ou contractuels permettant d’établir que l’œuvre ou l’objet protégé n’a pas été utilisé dans le cadre du développement ou du déploiement du système d’intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "48",
+    "criteria_found": true,
+    "effect": "Assouplit les moyens de preuve permettant aux fournisseurs d'IA de contester la présomption d'utilisation d'œuvres protégées par le droit d'auteur",
+    "who": "Fournisseurs et développeurs de systèmes d'intelligence artificielle, notamment générative",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "58.21Z",
+        "label": "Édition de logiciels système et de réseau"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "La preuve contraire peut être rapportée par tout moyen, notamment par la production d'éléments techniques, organisationnels ou contractuels permettant d'établir que l'œuvre ou l'objet protégé n'a pas été utilisé dans le cadre du développement ou du déploiement du système d'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "10",
+    "criteria_found": true,
+    "effect": "La simple accessibilité en ligne d'une œuvre ne suffit pas à présumer son utilisation dans l'entraînement d'un système d'IA",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle, titulaires de droits sur des œuvres protégées",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "une rédaction trop large risquerait de conduire à une présomption quasi automatique applicable à l'ensemble des fournisseurs de systèmes d'intelligence artificielle, créant ainsi une charge probatoire disproportionnée et difficilement soutenable pour les acteurs économiques concernés",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "37",
+    "criteria_found": true,
+    "effect": "Exonère le fournisseur de la présomption d'utilisation illicite lorsque l'œuvre était accessible en ligne sans mesure d'opt-out du titulaire de droits.",
+    "who": "Fournisseurs de services de fouille de textes et de données (notamment IA) et titulaires de droits d'auteur n'ayant pas mis en place de mesure d'opposition",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de services d'IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne s'applique pas lorsque le fournisseur établit que l'œuvre ou l'objet protégé était accessible sur un réseau de communication au public en ligne sans qu'aucune mesure d'opposition à la fouille de textes et de données au sens de l'article L. 122‑5‑3 du présent code n'ait été mise en place par son titulaire à la date présumée d'utilisation.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "15",
+    "criteria_found": true,
+    "effect": "Exclut les systèmes d'IA à usage professionnel du champ d'une présomption, levant une contrainte pour les organisations publiques et privées qui développent ou utilisent l'IA au travail.",
+    "who": "Entreprises et organisations publiques développant ou utilisant des systèmes d'intelligence artificielle dans un cadre professionnel",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "62.02A",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "etat",
+      "autre:developpeurs IA"
+    ],
+    "regions": [],
+    "quote": "La présomption ne s'applique pas aux systèmes d'intelligence artificielle développés ou utilisés pour un usage professionnel par des organisations publiques ou privées.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "16",
+    "criteria_found": true,
+    "effect": "Exonère les modèles et systèmes d'IA open source de la présomption d'utilisation de contenus protégés.",
+    "who": "Éditeurs et développeurs de modèles et systèmes d'intelligence artificielle en open source",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:editeurs-ia-opensource"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne s’applique pas aux modèles ou aux systèmes d’intelligence artificielle publiés en source ouverte.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "17",
+    "criteria_found": true,
+    "effect": "Adapte la présomption (de violation du droit d'auteur) selon le niveau de transparence et de documentation fourni par le fournisseur du modèle d'IA, encourageant les audits indépendants des données d'entraînement.",
+    "who": "Fournisseurs de modèles et systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles et systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption tient compte du niveau de transparence et de documentation mis à disposition par le fournisseur du modèle ou du système, notamment lorsque celle-ci permet un audit indépendant des sources de données et modalités d'entraînement.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "22",
+    "criteria_found": true,
+    "effect": "Exclut explicitement les œuvres du domaine public de la présomption, sécurisant leur utilisation par les fournisseurs d'IA.",
+    "who": "Fournisseurs de services d'intelligence artificielle utilisant des œuvres culturelles",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption ne s'applique pas aux œuvres tombées dans le domaine public au sens de l'article L. 123‑1 du présent code.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "39",
+    "criteria_found": true,
+    "effect": "Le titulaire de droits doit prouver que son œuvre était effectivement accessible au fournisseur d'IA pour pouvoir invoquer la présomption d'utilisation",
+    "who": "Fournisseurs de modèles et systèmes d'intelligence artificielle ; titulaires de droits d'auteur et droits voisins",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique (développement de modèles et systèmes d'IA)"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne peut être invoquée que lorsque le titulaire de droits établit que l'œuvre ou l'objet protégé concerné était effectivement accessible au fournisseur du modèle ou du système d'intelligence artificielle à la date de l'utilisation alléguée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "65",
+    "criteria_found": true,
+    "effect": "Exclut de la présomption les fournisseurs d'IA disposant d'une licence, autorisation ou accord contractuel couvrant l'utilisation alléguée d'une œuvre protégée",
+    "who": "Fournisseurs de modèles d'intelligence artificielle et titulaires de droits (acteurs culturels, ayants droit)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "",
+        "label": "Acteurs culturels / titulaires de droits d'auteur"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA",
+      "autre:titulaires de droits culturels"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne s’applique pas lorsque le fournisseur justifie bénéficier d’une licence, d’une autorisation ou d’un accord contractuel couvrant l’utilisation alléguée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "100",
+    "criteria_found": true,
+    "effect": "Exclut les hébergeurs, intégrateurs techniques et distributeurs de solutions IA d'une présomption de responsabilité sur les données d'entraînement, en recentrant celle-ci sur les développeurs des modèles.",
+    "who": "Hébergeurs, intégrateurs techniques, distributeurs et revendeurs de solutions d'intelligence artificielle développées par des tiers",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "47.41Z",
+        "label": "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé"
+      }
+    ],
+    "roles": [
+      "autre:hébergeurs",
+      "autre:intégrateurs techniques",
+      "autre:distributeurs de solutions IA"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne s'applique pas aux personnes assurant exclusivement des fonctions d'hébergement, d'intégration technique ou de distribution d'un système développé par un tiers.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "71",
+    "criteria_found": true,
+    "effect": "Exonère les fournisseurs d'IA de l'obligation de produire des données protégées par le RGPD ou le secret des affaires pour renverser une présomption liée aux corpus d'entraînement.",
+    "who": "Fournisseurs et développeurs de systèmes d'intelligence artificielle utilisant des corpus d'entraînement contenant des données personnelles ou des informations commerciales confidentielles",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Exiger du fournisseur qu'il communique ces données pour renverser la présomption le place dans une situation juridiquement impossible : satisfaire à la présomption l'exposerait à violer d'autres règlements européens.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "79",
+    "criteria_found": true,
+    "effect": "Conditionne le bénéfice de la présomption à la preuve de la qualité pour agir et de l'identité du titulaire des droits sur l'œuvre concernée",
+    "who": "Titulaires de droits d'auteur sur des œuvres utilisées dans l'entraînement de systèmes d'IA, développeurs de systèmes d'IA",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.11Z",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "60.10A",
+        "label": "Édition et diffusion d'œuvres musicales"
+      }
+    ],
+    "roles": [
+      "autre: titulaires de droits",
+      "autre: développeurs d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption ne peut être invoquée lorsque le titulaire des droits n'est pas en mesure d'établir sa qualité pour agir ou l'identité du titulaire des droits sur l'œuvre concernée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "96",
+    "criteria_found": true,
+    "effect": "Restreint la présomption aux actions individuelles et interdit les mesures provisoires avant décision sur le fond",
+    "who": "Titulaires de droits (limités dans leurs voies procédurales) et entreprises défenderesses potentielles (protégées des référés et saisies conservatoires abusifs)",
+    "sectors": [],
+    "roles": [
+      "autre: titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne peut être invoquée que par une action individuelle du titulaire de droits. Elle ne saurait fonder une demande de mesures provisoires avant qu'une juridiction du fond ait statué sur l'existence de l'infraction alléguée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "80",
+    "criteria_found": true,
+    "effect": "Interdit le recours aux actions de groupe ou collectives fondées sur la présomption prévue, imposant un examen individualisé des situations.",
+    "who": "Titulaires de droits d'auteur et sociétés de gestion collective",
+    "sectors": [
+      {
+        "naf": "90.0",
+        "label": "Activités créatives, artistiques et de spectacle"
+      },
+      {
+        "naf": "94.99Z",
+        "label": "Autres organisations fonctionnant par adhésion volontaire"
+      }
+    ],
+    "roles": [
+      "autre:titulaires de droits",
+      "associations"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne peut fonder une action de groupe ou une action collective exercée pour le compte de plusieurs titulaires de droits.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "66",
+    "criteria_found": true,
+    "effect": "Exige du demandeur d'apporter des éléments factuels et techniques suffisamment circonstanciés pour justifier le recours à la présomption légale, afin d'éviter des actions exploratoires visant à accéder à des informations sensibles des fournisseurs d'IA.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle détenant des informations techniques sensibles ; demandeurs souhaitant invoquer la présomption légale",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:demandeurs"
+    ],
+    "regions": [],
+    "quote": "Le demandeur expose de manière suffisamment circonstanciée les éléments de fait et les éléments techniques sur lesquels repose la présomption prévue au présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "76",
+    "criteria_found": true,
+    "effect": "Permet aux fournisseurs de modèles ou systèmes d'IA d'apporter la preuve contraire de l'utilisation d'une œuvre protégée, via documentation technique ou attestation de conformité d'un tiers, sans divulguer tout le corpus d'entraînement.",
+    "who": "Fournisseurs de modèles et systèmes d'intelligence artificielle ; organismes tiers indépendants délivrant des attestations de conformité",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Le fournisseur du modèle ou du système d'intelligence artificielle peut établir la preuve contraire par tout moyen, notamment par la production d'une documentation technique relative aux procédures de sélection et de filtrage des données d'entraînement, d'attestations de conformité établies par un organisme tiers indépendant, ou par toute autre pièce de nature à établir l'absence d'utilisation de l'œuvre alléguée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "78",
+    "criteria_found": true,
+    "effect": "Plafonne les dommages et intérêts au préjudice effectivement démontré par le titulaire des droits, interdisant toute indemnisation excédentaire ou punitive.",
+    "who": "Titulaires de droits de propriété intellectuelle (auteurs, créateurs, ayants droit, sociétés de gestion collective) et les personnes assignées au titre de la contrefaçon",
+    "sectors": [
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.11Z",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "60.10Z",
+        "label": "Programmation cinématographique"
+      },
+      {
+        "naf": "63.99Z",
+        "label": "Activités des agences de presse"
+      }
+    ],
+    "roles": [
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "Les dommages et intérêts accordés sur le fondement du présent article ne peuvent excéder le préjudice effectivement subi et démontré par le titulaire des droits.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "92",
+    "criteria_found": true,
+    "effect": "Permet aux fournisseurs d'IA de renverser la présomption de litige en prouvant l'existence d'un contrat autorisant l'usage des contenus avec le titulaire des droits.",
+    "who": "Fournisseurs d'intelligence artificielle et titulaires de droits (ayants droit) ayant conclu des accords contractuels d'accès aux contenus",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article est réputée renversée lorsque le fournisseur établit que l'utilisation litigieuse était expressément autorisée, dans la mesure de cette autorisation, par un contrat en vigueur conclu avec le titulaire des droits ou son ayant droit.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "95",
+    "criteria_found": true,
+    "effect": "Permet aux fournisseurs de systèmes d'IA de recourir à une attestation d'un tiers de confiance accrédité pour prouver l'absence d'une œuvre dans leur corpus d'entraînement, sans devoir communiquer l'intégralité de ce corpus.",
+    "who": "Fournisseurs de systèmes d'IA détenant des corpus d'entraînement et tiers de confiance accrédités habilités à certifier l'absence d'une œuvre",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "69.20Z",
+        "label": "Activités comptables"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA",
+      "autre:tiers de confiance"
+    ],
+    "regions": [],
+    "quote": "Pour établir la preuve contraire, le fournisseur ne peut être contraint de communiquer l'intégralité de son corpus d'entraînement. Il peut y substituer une attestation d'un tiers de confiance accrédité certifiant l'absence de l'œuvre identifiée dans ledit corpus.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "68",
+    "criteria_found": true,
+    "effect": "Interdit aux juridictions d'ordonner la communication intégrale des jeux de données d'entraînement d'un système d'IA dans le cadre d'une mesure d'instruction.",
+    "who": "Entreprises développant des systèmes d'intelligence artificielle ; titulaires de droits cherchant à obtenir communication des données d'entraînement",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:developpeurs IA",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "Aucune mesure d'instruction ordonnée sur le fondement du présent article ne peut avoir pour effet d'imposer la communication intégrale des jeux de données d'entraînement d'un système d'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "98",
+    "criteria_found": false,
+    "effect": "Encadre la production de la preuve contraire par une décision motivée du juge, dans le respect des articles 138 à 142 du code de procédure civile, plutôt que par une présomption automatique.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "La production de la preuve contraire ne peut être ordonnée que par décision motivée du juge, après communication aux deux parties, et dans le strict respect du cadre procédural prévu aux articles 138 à 142 du code de procédure civile.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "109",
+    "criteria_found": true,
+    "effect": "Le respect des obligations de l'AI Act (documentation et transparence) peut être pris en compte par le juge pour apprécier la preuve contraire",
+    "who": "Fournisseurs de modèles d'intelligence artificielle à usage général",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Le règlement européen impose déjà aux fournisseurs de modèles d'intelligence artificielle à usage général des obligations substantielles en matière de documentation et de transparence.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "44",
+    "criteria_found": true,
+    "effect": "Exempte du dispositif les fournisseurs d'IA entraînant leurs modèles dans l'UE et respectant les obligations de transparence de l'AI Act",
+    "who": "Fournisseurs de systèmes d'IA développant et entraînant des modèles, notamment les opérateurs établis en France ou dans l'UE",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Le présent article ne s'applique pas aux fournisseurs dont les activités d'entraînement sont réalisées sur le territoire d'un État membre de l'Union européenne et qui satisfont aux obligations de transparence imposées par l'article 53 du règlement (UE) 2024/1689.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "36",
+    "criteria_found": true,
+    "effect": "Protège les fournisseurs de systèmes d'IA contre l'obligation de divulguer des informations couvertes par le secret des affaires dans le cadre du mécanisme de présomption.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle détenant des jeux de données d'entraînement, méthodes de traitement et procédés techniques internes stratégiques",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.20Z",
+        "label": "Recherche-développement en sciences exactes et naturelles"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "La présomption prévue au présent article ne peut conduire à imposer au fournisseur la divulgation d'informations couvertes par le secret des affaires au sens de l'article L. 151‑1 du code de commerce.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "72",
+    "criteria_found": true,
+    "effect": "Encadre la divulgation d'informations protégées par le secret des affaires (notamment les corpus d'entraînement d'IA) lors d'une preuve contraire, en imposant des garanties de confidentialité sous contrôle du juge.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle dont le corpus d'entraînement constitue un actif stratégique",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "le corpus d'entraînement, qui constitue l'actif stratégique central des fournisseurs de systèmes d'intelligence artificielle",
+    "quote_verified": false,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "106",
+    "criteria_found": false,
+    "effect": "Permet au juge de recourir à une expertise technique avant d'appliquer une présomption dans les litiges liés à l'entraînement et au fonctionnement des systèmes d'intelligence artificielle.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Le juge peut ordonner toute mesure d'expertise technique qu'il estime nécessaire avant de faire application de la présomption prévue au présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "40",
+    "criteria_found": true,
+    "effect": "Définit l'« utilisation » d'une œuvre par une IA comme sa reproduction ou communication dans le corpus d'entraînement, excluant les résultats générés par inférence statistique sans reproduction identifiable",
+    "who": "Développeurs de systèmes d'intelligence artificielle utilisant des œuvres protégées dans leurs corpus d'entraînement ; titulaires de droits d'auteur dont les œuvres sont susceptibles d'être utilisées",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "58.29C",
+        "label": "Édition de logiciels"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:titulaires de droits d'auteur"
+    ],
+    "regions": [],
+    "quote": "constitue une utilisation au sens du présent code la reproduction ou la communication de l'œuvre dans le corpus d'entraînement du système, à l'exclusion de tout résultat généré par inférence statistique sans reproduction identifiable de l'œuvre.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "67",
+    "criteria_found": true,
+    "effect": "Impose le principe de proportionnalité aux mesures d'instruction ordonnées dans les litiges relatifs aux systèmes d'intelligence artificielle",
+    "who": "Entreprises développant ou exploitant des systèmes d'IA, notamment les acteurs européens ou français en phase de croissance",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:entreprises IA"
+    ],
+    "regions": [],
+    "quote": "Une mesure d'instruction excessive pourrait conduire à imposer des charges disproportionnées aux entreprises concernées, notamment lorsqu'il s'agit d'acteurs européens ou français en phase de croissance.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "73",
+    "criteria_found": true,
+    "effect": "Le juge peut modérer les mesures d'instruction demandées contre un fournisseur en fonction de la protection de ses droits fondamentaux (données personnelles, secret des affaires, procès équitable).",
+    "who": "Fournisseurs (entreprises prestataires de biens ou services) mis en cause dans une procédure où la charge de la preuve leur incombe",
+    "sectors": [],
+    "roles": [
+      "autre:fournisseurs"
+    ],
+    "regions": [],
+    "quote": "Le juge saisi de l'action apprécie la proportionnalité des mesures d'instruction sollicitées au regard de la protection des droits fondamentaux du fournisseur, notamment son droit à la protection des données à caractère personnel, au secret des affaires et à un procès équitable.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "74",
+    "criteria_found": true,
+    "effect": "Assouplit les exigences probatoires pour les PME face à une présomption légale, en tenant compte de leurs capacités techniques et économiques limitées.",
+    "who": "PME et start-ups françaises du secteur de l'intelligence artificielle ; grands opérateurs américains de l'IA",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "72.20Z",
+        "label": "Recherche-développement en sciences exactes et naturelles"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Lorsque la présomption est invoquée à l'encontre d'un fournisseur répondant à la définition des petites et moyennes entreprises au sens de l'annexe I du règlement (UE) 651/2014, le juge tient compte de ses capacités techniques et économiques dans l'appréciation des modalités de la preuve contraire.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "75",
+    "criteria_found": true,
+    "effect": "Instaure une mise en demeure préalable obligatoire de trois mois avant toute action judiciaire fondée sur la présomption, pour favoriser les solutions amiables",
+    "who": "Fournisseurs (hébergeurs, fournisseurs d'accès) visés par la présomption et titulaires de droits d'auteur cherchant à faire valoir leurs droits",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "61.30Z",
+        "label": "Activités de télécommunication"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:titulaires de droits"
+    ],
+    "regions": [],
+    "quote": "Préalablement à toute action fondée sur la présente présomption, le titulaire de droits est tenu d'adresser au fournisseur une mise en demeure précisant l'œuvre alléguée et les indices invoqués, et de respecter un délai de réponse de trois mois.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "83",
+    "criteria_found": false,
+    "effect": "Renvoie au pouvoir réglementaire le soin de préciser par décret les catégories d'indices pouvant fonder une présomption juridique.",
+    "who": "",
+    "sectors": [],
+    "roles": [
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Un décret en Conseil d'État précise les catégories d'indices pouvant fonder la présomption prévue au présent article.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "99",
+    "criteria_found": true,
+    "effect": "Renvoie à un décret en Conseil d'État la définition des règles de protection du secret des affaires pour les informations divulguées dans le cadre de la preuve contraire, incluant le tiers de confiance et les sanctions",
+    "who": "Entreprises devant communiquer des informations commercialement sensibles dans des procédures judiciaires liées à l'IA, tiers de confiance chargés de la confidentialité, État",
+    "sectors": [],
+    "roles": [
+      "etat",
+      "autre:tiers de confiance",
+      "autre:entreprises"
+    ],
+    "regions": [],
+    "quote": "Un décret en Conseil d'État précise les conditions dans lesquelles les informations communiquées dans le cadre de la preuve contraire font l'objet d'une protection au titre du secret des affaires, notamment les modalités de désignation du tiers de confiance, les règles d'accès aux informations et les sanctions applicables en cas de violation de la confidentialité.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "84",
+    "criteria_found": true,
+    "effect": "Instaure la gestion collective obligatoire des rémunérations dues aux auteurs lorsque leurs œuvres sont utilisées par les fournisseurs d'intelligence artificielle",
+    "who": "Fournisseurs d'intelligence artificielle (entraînement de modèles), organismes de gestion collective du droit d'auteur (SACEM, SCAM, ADAGP, etc.), auteurs et titulaires de droits voisins",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "94.99Z",
+        "label": "Autres organisations fonctionnant par adhésion volontaire"
+      }
+    ],
+    "roles": [
+      "associations",
+      "autre:fournisseurs d'intelligence artificielle",
+      "autre:auteurs et titulaires de droits voisins"
+    ],
+    "regions": [],
+    "quote": "Les droits à rémunération des auteurs et titulaires de droits voisins résultant de l'utilisation de leurs œuvres par les fournisseurs d'intelligence artificielle sont gérés collectivement par les organismes de gestion collective agréés en application de l'article L. 324‑1.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "33",
+    "criteria_found": true,
+    "effect": "Restreint le champ de la loi aux seuls fournisseurs de modèles d'IA générative, excluant les acteurs en aval comme les fournisseurs de systèmes",
+    "who": "Fournisseurs de modèles d'IA générative (développeurs et entraîneurs de modèles fondationnels)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Il convient en conséquence de limiter son champ aux seuls fournisseurs de modèles d'IA et d'exclure les acteurs en aval tels que les fournisseurs de systèmes qui s'appuient sur ces modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "26",
+    "criteria_found": true,
+    "effect": "Exclut du champ de la loi les cas où un accord autorisant la fouille de textes et de données a été conclu entre une organisation représentative des titulaires de droits et un fournisseur d'IA.",
+    "who": "Fournisseurs de modèles ou systèmes d'intelligence artificielle et organisations représentatives des titulaires de droits d'auteur ou de droits voisins (éditeurs, producteurs, auteurs)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "59.11Z",
+        "label": "Production de films cinématographiques"
+      }
+    ],
+    "roles": [
+      "associations",
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Le 1° du I du présent article ne s'applique pas lorsqu'un accord qui autorise la fouille de textes et de données au sens de l'article L. 122‑5‑3 du code de la propriété intellectuelle a été conclu entre les organisations représentatives des titulaires de droits d'auteur ou de droits voisins et les fournisseurs du modèle ou du système d'intelligence artificielle engagés dans une contestation en matière civile.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "8",
+    "criteria_found": true,
+    "effect": "Supprime l'application rétroactive du dispositif aux instances en cours, protégeant les fournisseurs d'IA contre des exigences probatoires et techniques imposées a posteriori.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "62.02A",
+        "label": "Conseil en systèmes et logiciels informatiques"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "les fournisseurs de systèmes d'intelligence artificielle pourraient se voir imposer, a posteriori, des exigences probatoires et techniques qui n'existaient pas au moment des faits litigieux ou au moment de la conception des dispositifs concernés.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "3",
+    "criteria_found": true,
+    "effect": "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA un temps d'adaptation.",
+    "who": "Fournisseurs de modèles et de systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "afin de garantir aux fournisseurs de modèles et de systèmes d'intelligences artificielle la prévisibilité juridique nécessaire à l'adaptation de leurs pratiques.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "18",
+    "criteria_found": true,
+    "effect": "Diffère de six mois l'entrée en vigueur de la loi pour laisser aux fournisseurs d'IA le temps de s'adapter.",
+    "who": "Fournisseurs de modèles et de systèmes d'intelligence artificielle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs d'IA"
+    ],
+    "regions": [],
+    "quote": "afin de garantir aux fournisseurs de modèles et de systèmes d’intelligences artificielle la prévisibilité juridique nécessaire à l’adaptation de leurs pratiques.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "86",
+    "criteria_found": false,
+    "effect": "Supprime la réserve protégeant les décisions de justice définitives, pour étendre l'application rétroactive du nouveau régime probatoire aux affaires en cours",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "La réserve relative aux décisions passées en force de chose jugée, si elle est juridiquement pertinente, ne protège pas suffisamment les justiciables en cours de procédure contre l'application rétroactive du nouveau régime probatoire.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "62",
+    "criteria_found": false,
+    "effect": "Suppression des mots « en cours » à l'alinéa 5, sans changement de portée normative",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "À l'alinéa 5, supprimer les mots : « en cours ».",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "5",
+    "criteria_found": true,
+    "effect": "Préserve les droits contractuels acquis avant l'entrée en vigueur de la loi lors de l'application rétroactive de la présomption aux instances en cours",
+    "who": "Entreprises d'intelligence artificielle ayant conclu des contrats de licence ou d'autorisation d'utilisation avant la loi, dont Mistral AI",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:entreprises d'IA"
+    ],
+    "regions": [],
+    "quote": "sans préjudice des droits acquis résultant d'accords contractuels conclus antérieurement à cette date",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "54",
+    "criteria_found": false,
+    "effect": "Encadre la rétroactivité de la présomption aux instances en cours en excluant les contrats de licence ou d'autorisation conclus avant l'entrée en vigueur de la loi",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "sans préjudice des droits acquis résultant d'accords contractuels conclus antérieurement à cette date",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "88",
+    "criteria_found": true,
+    "effect": "Exclut du champ de l'article les IA utilisées pour la recherche scientifique non commerciale, l'enseignement public ou privé sous contrat, et la fouille de textes et de données",
+    "who": "Établissements d'enseignement publics et privés sous contrat avec l'État, organismes de recherche non commerciale, acteurs réalisant de la fouille de textes et de données",
+    "sectors": [
+      {
+        "naf": "72.1",
+        "label": "Recherche-développement"
+      },
+      {
+        "naf": "85.3",
+        "label": "Enseignement supérieur"
+      },
+      {
+        "naf": "85.2",
+        "label": "Enseignement secondaire"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:organismes de recherche",
+      "autre:établissements d'enseignement"
+    ],
+    "regions": [],
+    "quote": "Le présent article ne s'applique pas : – aux modèles et systèmes d'intelligence artificielle utilisés exclusivement à des fins de recherche scientifique non commerciale ; – aux activités d'enseignement et de formation menées par des établissements d'enseignement publics ou privés sous contrat avec l'État ; – aux usages réalisés dans le cadre de la fouille de textes et de données au sens de l'article L. 122‑5‑3 du présent code.",
+    "quote_verified": false,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "30",
+    "criteria_found": true,
+    "effect": "Autorise la conservation des copies issues de la fouille de textes et de données au-delà de la fouille, notamment pour servir de preuve en justice",
+    "who": "Fournisseurs de modèles ou de systèmes d'IA, entreprises de traitement de données et acteurs recourant à la fouille de données (text and data mining)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "afin de laisser notamment la possibilité aux fournisseurs de modèles ou de systèmes d'IA de conserver les données d'entrainement à des fins d'établissement de la preuve",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "29",
+    "criteria_found": true,
+    "effect": "Crée un registre de réserve de droit permettant aux auteurs de s'opposer à l'utilisation de leur œuvre pour l'entraînement d'IA, obligeant les développeurs d'IA à le consulter en amont",
+    "who": "Développeurs d'IA, auteurs et titulaires de droits d'auteur, organisme tiers gestionnaire du registre",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "59.11Z",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "74.20Z",
+        "label": "Activités photographiques"
+      },
+      {
+        "naf": "90.03Z",
+        "label": "Création artistique relevant des arts plastiques"
+      }
+    ],
+    "roles": [
+      "autre:développeurs d'IA",
+      "autre:auteurs et titulaires de droits",
+      "etat",
+      "autre:organisme tiers gestionnaire"
+    ],
+    "regions": [],
+    "quote": "Les développeurs d'IA auront donc l'obligation de consulter le registre en amont de l'entrainement de modèles et de systèmes d'IA afin de s'assurer qu'aucune des œuvres présentent dans le registre, et donc ayant fait l'objet d'une réserve de droits, ne soit utilisée.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "38",
+    "criteria_found": true,
+    "effect": "Étend les obligations de la loi à tous les fournisseurs et développeurs de systèmes d'IA générative commercialisant en France, indépendamment de leur lieu d'établissement.",
+    "who": "Fournisseurs et développeurs de systèmes d'intelligence artificielle générative, français, européens ou extra-européens, commercialisant sur le marché français",
+    "sectors": [
+      {
+        "naf": "62.01A",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "58.29C",
+        "label": "Édition de logiciels"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "autre:fournisseurs et développeurs d'IA"
+    ],
+    "regions": [],
+    "quote": "Les obligations prévues par la présente loi s'appliquent à tout fournisseur ou développeur commercialisant en France un système d'intelligence artificielle générative, quel que soit son lieu d'établissement.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "89",
+    "criteria_found": true,
+    "effect": "Permet au juge de suspendre jusqu'à 12 mois les actions en contrefaçon pour laisser les titulaires de droits et les fournisseurs d'IA négocier des accords sectoriels",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle et titulaires de droits d'auteur (auteurs, éditeurs, producteurs)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique (fournisseurs d'IA)"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "59.11A",
+        "label": "Production de films et de programmes audiovisuels"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "90.03A",
+        "label": "Création artistique relevant des arts plastiques"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs_d_ia",
+      "autre:titulaires_de_droits",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Lorsqu'une négociation collective est engagée entre les représentants des titulaires de droits et les fournisseurs de systèmes d'intelligence artificielle concernant l'utilisation des œuvres concernées, le juge peut suspendre l'examen des actions fondées sur l'article L. 331‑4-1 pour une durée maximale de douze mois.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "1",
+    "criteria_found": true,
+    "effect": "Demande un rapport gouvernemental sur la faisabilité d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'IA",
+    "who": "Fournisseurs et développeurs de modèles d'intelligence artificielle, créateurs et ayants droit d'œuvres culturelles protégées",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique (développement de modèles d'IA)"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "59.11Z",
+        "label": "Production de films cinématographiques"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:fournisseurs d'IA",
+      "autre:ayants droit"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport évaluant la faisabilité technique et économique d'un système de licence préalable obligatoire pour l'utilisation d'œuvres protégées dans l'entraînement de modèles d'intelligence artificielle",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "14",
+    "criteria_found": true,
+    "effect": "Reporte l'entrée en vigueur du mécanisme de présomption d'utilisation jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses effets économiques, juridiques et technologiques.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle établis en France ou y exerçant leurs activités",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Une analyse de la charge procédurale et financière imposée aux fournisseurs de systèmes d'intelligence artificielle établis en France ou y exerçant leurs activités pour renverser la présomption",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "47",
+    "criteria_found": true,
+    "effect": "Reporte l'entrée en vigueur de la présomption d'utilisation des œuvres par l'IA jusqu'à la remise par le Gouvernement d'une étude d'impact sur ses conséquences économiques, juridiques et technologiques.",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle établis en France ou y exerçant leurs activités",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:fournisseurs de systèmes d'IA"
+    ],
+    "regions": [],
+    "quote": "Une analyse de la charge procédurale et financière imposée aux fournisseurs de systèmes d'intelligence artificielle établis en France ou y exerçant leurs activités pour renverser la présomption",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "77",
+    "criteria_found": false,
+    "effect": "Instaure une clause de revoyure permettant au Parlement de réévaluer la loi dans un délai de trois ans après son entrée en vigueur",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "La présente loi fait l'objet, dans un délai de trois ans suivant son entrée en vigueur, d'une clause de revoyure permettant au Parlement d'évaluer son efficacité au regard des objectifs poursuivis et de la faire évoluer à la lumière des décisions de justice rendues, des développements du cadre européen et de l'état des négociations entre titulaires de droits et fournisseurs de systèmes d'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "53",
+    "criteria_found": true,
+    "effect": "Le Gouvernement devra remettre au Parlement un rapport évaluant l'impact du dispositif sur le développement de modèles d'IA souverains en France et dans l'UE.",
+    "who": "Entreprises européennes développant des modèles d'intelligence artificielle et État (producteur du rapport)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:developpeurs IA"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport évaluant les effets du dispositif sur le développement de modèles d'intelligence artificielle souverains en France et dans l'Union européenne.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "20",
+    "criteria_found": false,
+    "effect": "Le Gouvernement devra remettre au Parlement, dans un délai de neuf mois, un rapport évaluant les conséquences du dispositif sur l'utilisation de l'exception de fouille de textes et de données (TDM) prévue par la directive (UE) 2019/790, notamment pour les fournisseurs de systèmes d'intelligence artificielle",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport évaluant les conséquences du dispositif sur l'utilisation de l'exception de fouille de textes et de données prévue à l'article 4 de la directive (UE) 2019/790",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "21",
+    "criteria_found": true,
+    "effect": "Le Gouvernement devra remettre un rapport évaluant la compatibilité de la présomption de contrefaçon avec le droit européen, notamment au regard des charges probatoires imposées aux fournisseurs d'IA",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle soumis à la présomption de l'article L. 331-4-1 du code de la propriété intellectuelle",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de systèmes d'IA",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "La proportionnalité des mesures probatoires imposées aux fournisseurs de systèmes d'intelligence artificielle pour renverser la présomption.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "49",
+    "criteria_found": false,
+    "effect": "Demande au Gouvernement un rapport dans les six mois sur l'impact du dispositif sur l'attractivité économique de la France pour les entreprises développant des systèmes d'IA",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Le Gouvernement remet au Parlement, dans un délai de six mois à compter de la promulgation de la présente loi, un rapport évaluant les effets du dispositif sur l'attractivité économique de la France pour les entreprises développant des systèmes d'intelligence artificielle.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "50",
+    "criteria_found": true,
+    "effect": "Oblige le Gouvernement à remettre au Parlement un rapport évaluant l'impact économique de l'utilisation non autorisée d'œuvres protégées par l'IA générative sur les filières culturelles et informationnelles françaises",
+    "who": "Entreprises des secteurs de l'édition, de la musique, de l'audiovisuel et de la presse ; éditeurs de systèmes d'IA générative",
+    "sectors": [
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      },
+      {
+        "naf": "58.13Z",
+        "label": "Édition de journaux"
+      },
+      {
+        "naf": "59.20Z",
+        "label": "Enregistrement sonore et édition musicale"
+      },
+      {
+        "naf": "60.11Z",
+        "label": "Production de films et de programmes pour la télévision"
+      },
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      }
+    ],
+    "roles": [
+      "etat",
+      "autre:secteurs culturels",
+      "autre:éditeurs IA"
+    ],
+    "regions": [],
+    "quote": "Le Gouvernement remet au Parlement un rapport évaluant les conséquences économiques de l'utilisation non autorisée d'œuvres protégées sur les filières culturelles et informationnelles françaises.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "51",
+    "criteria_found": true,
+    "effect": "Le Gouvernement devra remettre au Parlement un rapport sur les risques d'exclusion préventive des œuvres culturelles françaises des corpus d'entraînement des systèmes d'intelligence artificielle",
+    "who": "Fournisseurs de systèmes d'intelligence artificielle et auteurs/œuvres culturelles françaises",
+    "sectors": [
+      {
+        "naf": "63.11Z",
+        "label": "Traitement de données, hébergement et activités connexes"
+      },
+      {
+        "naf": "90.03Z",
+        "label": "Création artistique relevant des arts plastiques"
+      },
+      {
+        "naf": "58.11Z",
+        "label": "Édition de livres"
+      }
+    ],
+    "roles": [
+      "plateformes",
+      "etat",
+      "autre:auteurs"
+    ],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport évaluant les risques d'exclusion préventive des œuvres culturelles françaises des corpus d'entraînement des systèmes d'intelligence artificielle résultant de l'incertitude juridique créée par la présente loi",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "52",
+    "criteria_found": false,
+    "effect": "Demande au Gouvernement un rapport évaluant l'impact du dispositif de présomption de l'article L. 331-4-1 du code de la propriété intellectuelle sur les PME et jeunes entreprises innovantes en IA établies en France",
+    "who": "PME et jeunes entreprises innovantes du secteur de l'intelligence artificielle établies en France ; grands opérateurs étrangers de l'IA",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement un rapport évaluant les conséquences du dispositif instauré par l'article L. 331-4-1 du code de la propriété intellectuelle sur les petites et moyennes entreprises ainsi que sur les jeunes entreprises innovantes du secteur de l'intelligence artificielle établies sur le territoire français",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "23",
+    "criteria_found": true,
+    "effect": "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les acteurs en aval comme les fournisseurs de systèmes.",
+    "who": "Fournisseurs de modèles d'IA générative (ex. Mistral AI, OpenAI, Google DeepMind, Anthropic)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Il convient en conséquence de limiter son champ aux seuls fournisseurs de modèles d'IA et d'exclure les acteurs en aval tels que les fournisseurs de systèmes qui s'appuient sur ces modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "31",
+    "criteria_found": true,
+    "effect": "Limite le champ de la proposition de loi aux seuls fournisseurs de modèles d'IA générative, en excluant les acteurs en aval comme les fournisseurs de systèmes.",
+    "who": "Fournisseurs de modèles d'IA générative (ex. OpenAI, Mistral AI, Google DeepMind)",
+    "sectors": [
+      {
+        "naf": "62.01Z",
+        "label": "Programmation informatique"
+      },
+      {
+        "naf": "72.19Z",
+        "label": "Recherche-développement en autres sciences"
+      }
+    ],
+    "roles": [
+      "autre:fournisseurs de modèles d'IA"
+    ],
+    "regions": [],
+    "quote": "Il convient en conséquence de limiter son champ aux seuls fournisseurs de modèles d'IA et d'exclure les acteurs en aval tels que les fournisseurs de systèmes qui s'appuient sur ces modèles.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

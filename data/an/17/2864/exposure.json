@@ -1,0 +1,4070 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "47.41Z": {
+      "companies": 6480,
+      "employees_low": 12571,
+      "employees_high": 26231,
+      "open_top": false
+    },
+    "58.11Z": {
+      "companies": 10290,
+      "employees_low": 9110,
+      "employees_high": 17098,
+      "open_top": false
+    },
+    "58.13Z": {
+      "companies": 5152,
+      "employees_low": 14666,
+      "employees_high": 28461,
+      "open_top": false
+    },
+    "58.14Z": {
+      "companies": 20873,
+      "employees_low": 15735,
+      "employees_high": 30659,
+      "open_top": false
+    },
+    "58.21Z": {
+      "companies": 1933,
+      "employees_low": 3325,
+      "employees_high": 6653,
+      "open_top": false
+    },
+    "58.29C": {
+      "companies": 12763,
+      "employees_low": 59959,
+      "employees_high": 119668,
+      "open_top": false
+    },
+    "59.11A": {
+      "companies": 21708,
+      "employees_low": 10801,
+      "employees_high": 21116,
+      "open_top": false
+    },
+    "59.20Z": {
+      "companies": 21030,
+      "employees_low": 4234,
+      "employees_high": 7912,
+      "open_top": false
+    },
+    "60.10Z": {
+      "companies": 2867,
+      "employees_low": 8412,
+      "employees_high": 16404,
+      "open_top": false
+    },
+    "60.20A": {
+      "companies": 104,
+      "employees_low": 10401,
+      "employees_high": 20807,
+      "open_top": false
+    },
+    "61.30Z": {
+      "companies": 107,
+      "employees_low": 1912,
+      "employees_high": 3685,
+      "open_top": false
+    },
+    "62.01Z": {
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false
+    },
+    "62.02A": {
+      "companies": 95064,
+      "employees_low": 248986,
+      "employees_high": 480857,
+      "open_top": true
+    },
+    "63.11Z": {
+      "companies": 8527,
+      "employees_low": 42934,
+      "employees_high": 87898,
+      "open_top": false
+    },
+    "63.99Z": {
+      "companies": 1470,
+      "employees_low": 385,
+      "employees_high": 738,
+      "open_top": false
+    },
+    "69.20Z": {
+      "companies": 36342,
+      "employees_low": 142568,
+      "employees_high": 285932,
+      "open_top": false
+    },
+    "72.1": {
+      "companies": 11365,
+      "employees_low": 107034,
+      "employees_high": 187421,
+      "open_top": true,
+      "subclasses": [
+        "72.11Z",
+        "72.19Z"
+      ]
+    },
+    "72.19Z": {
+      "companies": 9013,
+      "employees_low": 94695,
+      "employees_high": 163069,
+      "open_top": true
+    },
+    "72.20Z": {
+      "companies": 3555,
+      "employees_low": 5213,
+      "employees_high": 11402,
+      "open_top": false
+    },
+    "74.20Z": {
+      "companies": 57258,
+      "employees_low": 4200,
+      "employees_high": 7737,
+      "open_top": false
+    },
+    "85.2": {
+      "companies": 4677,
+      "employees_low": 40043,
+      "employees_high": 80464,
+      "open_top": false,
+      "subclasses": [
+        "85.20Z"
+      ]
+    },
+    "85.3": {
+      "companies": 13678,
+      "employees_low": 580965,
+      "employees_high": 1152458,
+      "open_top": false,
+      "subclasses": [
+        "85.31Z",
+        "85.32Z"
+      ]
+    },
+    "90.0": {
+      "companies": 384976,
+      "employees_low": 69384,
+      "employees_high": 136341,
+      "open_top": false,
+      "subclasses": [
+        "90.01Z",
+        "90.02Z",
+        "90.03A",
+        "90.03B",
+        "90.04Z"
+      ]
+    },
+    "90.01Z": {
+      "companies": 161172,
+      "employees_low": 43231,
+      "employees_high": 84052,
+      "open_top": false
+    },
+    "90.03A": {
+      "companies": 115422,
+      "employees_low": 1307,
+      "employees_high": 2523,
+      "open_top": false
+    },
+    "94.99Z": {
+      "companies": 532162,
+      "employees_low": 153998,
+      "employees_high": 303274,
+      "open_top": false
+    }
+  },
+  "measures": [
+    {
+      "key": "memorisation-comme-reproduction",
+      "theme": "Considérer la mémorisation comme une reproduction",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-recours-exception-tdm",
+      "theme": "Exclure le recours à l'exception de fouille de données",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 123791,
+      "employees_low": 222904,
+      "employees_high": 421683,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "durcir-seuil-preuve-presomption",
+      "theme": "Durcir le seuil de preuve de la présomption",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre: titulaires de droits d'auteur",
+        "autre:auteurs",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs d'intelligence artificielle",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits"
+      ],
+      "companies": 218855,
+      "employees_low": 471890,
+      "employees_high": 902540,
+      "open_top": true,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "key": "restreindre-qualite-agir",
+      "theme": "Restreindre la qualité à agir et les voies procédurales",
+      "sectors": [
+        {
+          "naf": "94.69Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "60.10A",
+          "label": "Édition et diffusion d'œuvres musicales"
+        },
+        {
+          "naf": "90.0",
+          "label": "Activités créatives, artistiques et de spectacle",
+          "companies": 384976,
+          "employees_low": 69384,
+          "employees_high": 136341,
+          "open_top": false,
+          "subclasses": [
+            "90.01Z",
+            "90.02Z",
+            "90.03A",
+            "90.03B",
+            "90.04Z"
+          ]
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "associations",
+        "autre: développeurs d'IA",
+        "autre: titulaires de droits",
+        "autre:organismes de gestion collective",
+        "autre:titulaires de droits"
+      ],
+      "companies": 1042206,
+      "employees_low": 360701,
+      "employees_high": 715327,
+      "open_top": false,
+      "not_counted": [
+        "Autres organisations fonctionnant par adhésion volontaire",
+        "Production de films cinématographiques",
+        "Édition et diffusion d'œuvres musicales"
+      ]
+    },
+    {
+      "key": "restreindre-litiges-droit-auteur",
+      "theme": "Restreindre aux litiges de droit d'auteur",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:acteurs IA"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "restreindre-oeuvres-culturelles-presse",
+      "theme": "Restreindre aux œuvres culturelles et de presse",
+      "sectors": [
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "58.13Z",
+          "label": "Édition de journaux",
+          "companies": 5152,
+          "employees_low": 14666,
+          "employees_high": 28461,
+          "open_top": false
+        },
+        {
+          "naf": "58.14Z",
+          "label": "Édition de revues et périodiques",
+          "companies": 20873,
+          "employees_low": 15735,
+          "employees_high": 30659,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "60.10Z",
+          "label": "Programmation et diffusion de programmes audiovisuels",
+          "companies": 2867,
+          "employees_low": 8412,
+          "employees_high": 16404,
+          "open_top": false
+        },
+        {
+          "naf": "60.20A",
+          "label": "Production de films cinématographiques",
+          "companies": 104,
+          "employees_low": 10401,
+          "employees_high": 20807,
+          "open_top": false
+        },
+        {
+          "naf": "90.01Z",
+          "label": "Arts du spectacle vivant",
+          "companies": 161172,
+          "employees_low": 43231,
+          "employees_high": 84052,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:<ayants droit des industries culturelles et de presse>"
+      ],
+      "companies": 221488,
+      "employees_low": 105789,
+      "employees_high": 205393,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exiger-identification-oeuvre",
+      "theme": "Exiger l'identification précise de l'œuvre",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "definir-utilisation-reproduction",
+      "theme": "Définir l'utilisation comme reproduction dans le corpus",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "58.29C",
+          "label": "Édition de logiciels",
+          "companies": 12763,
+          "employees_low": 59959,
+          "employees_high": 119668,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "companies": 127541,
+      "employees_low": 188168,
+      "employees_high": 378282,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "restreindre-champ-fournisseurs-modeles",
+      "theme": "Restreindre le champ aux seuls fournisseurs de modèles",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences naturelles et ingénierie",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre:développeurs de systèmes d'IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA",
+        "plateformes"
+      ],
+      "companies": 127346,
+      "employees_low": 228117,
+      "employees_high": 433085,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "restreindre-ia-contenu-artistique",
+      "theme": "Restreindre aux IA produisant des contenus artistiques",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        }
+      ],
+      "roles": [
+        "plateformes"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "key": "limiter-fournisseurs-ue",
+      "theme": "Limiter la présomption aux fournisseurs établis dans l'UE",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "restreindre-presomption-entrainement",
+      "theme": "Restreindre la présomption à la phase d'entraînement",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "associations",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:titulaires de droits"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-similarite-style-seul",
+      "theme": "Exclure la seule similarité de style comme indice",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs et déployeurs d'IA",
+        "autre:titulaires de droits d'auteur",
+        "plateformes"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "assouplir-moyens-preuve",
+      "theme": "Assouplir les moyens de preuve des fournisseurs",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "58.21Z",
+          "label": "Édition de logiciels système et de réseau",
+          "companies": 1933,
+          "employees_low": 3325,
+          "employees_high": 6653,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:<fournisseurs d'IA>",
+        "autre:fournisseurs de systèmes d'IA",
+        "plateformes"
+      ],
+      "companies": 116711,
+      "employees_low": 131534,
+      "employees_high": 265267,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-accessibilite-en-ligne-seul",
+      "theme": "Exclure la seule accessibilité en ligne comme indice",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de services d'IA",
+        "autre:titulaires de droits"
+      ],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-ia-usage-professionnel",
+      "theme": "Exclure les IA à usage professionnel",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:developpeurs IA",
+        "employeurs",
+        "etat"
+      ],
+      "companies": 209842,
+      "employees_low": 377195,
+      "employees_high": 739471,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-ia-open-source",
+      "theme": "Exclure les modèles et systèmes IA open source",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:editeurs-ia-opensource"
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "adapter-presomption-transparence",
+      "theme": "Adapter la présomption au niveau de transparence",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs de modèles et systèmes d'IA"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-domaine-public",
+      "theme": "Exclure les œuvres du domaine public",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-oeuvres-sous-licence",
+      "theme": "Exclure les œuvres utilisées sous licence ou accord",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Acteurs culturels / titulaires de droits d'auteur"
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        }
+      ],
+      "roles": [
+        "associations",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA",
+        "autre:titulaires de droits",
+        "autre:titulaires de droits culturels"
+      ],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "open_top": false,
+      "not_counted": [
+        "Acteurs culturels / titulaires de droits d'auteur",
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "key": "exclure-hebergeurs-integrateurs",
+      "theme": "Exclure hébergeurs et intégrateurs de la présomption",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "47.41Z",
+          "label": "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé",
+          "companies": 6480,
+          "employees_low": 12571,
+          "employees_high": 26231,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:distributeurs de solutions IA",
+        "autre:hébergeurs",
+        "autre:intégrateurs techniques"
+      ],
+      "companies": 121258,
+      "employees_low": 140780,
+      "employees_high": 284845,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "proteger-secret-affaires",
+      "theme": "Protéger le secret des affaires dans la preuve",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:developpeurs IA",
+        "autre:entreprises",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:tiers de confiance",
+        "autre:titulaires de droits",
+        "etat",
+        "plateformes"
+      ],
+      "companies": 127346,
+      "employees_low": 228117,
+      "employees_high": 433085,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "exiger-elements-factuels-demandeur",
+      "theme": "Exiger des éléments factuels du demandeur",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:demandeurs",
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "permettre-attestation-tiers",
+      "theme": "Permettre l'attestation d'un tiers de confiance",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "69.20Z",
+          "label": "Activités comptables",
+          "companies": 36342,
+          "employees_low": 142568,
+          "employees_high": 285932,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:tiers de confiance"
+      ],
+      "companies": 151120,
+      "employees_low": 270777,
+      "employees_high": 544546,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "plafonder-dommages-interets",
+      "theme": "Plafonner les dommages et intérêts au préjudice démontré",
+      "sectors": [
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "60.10Z",
+          "label": "Programmation cinématographique",
+          "companies": 2867,
+          "employees_low": 8412,
+          "employees_high": 16404,
+          "open_top": false
+        },
+        {
+          "naf": "63.99Z",
+          "label": "Activités des agences de presse",
+          "companies": 1470,
+          "employees_low": 385,
+          "employees_high": 738,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:titulaires de droits"
+      ],
+      "companies": 35657,
+      "employees_low": 22141,
+      "employees_high": 42152,
+      "open_top": false,
+      "not_counted": [
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "key": "prendre-compte-conformite-ai-act",
+      "theme": "Prendre en compte la conformité à l'AI Act",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de modèles d'IA"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "proportionnalite-mesures-instruction",
+      "theme": "Encadrer la proportionnalité des mesures d'instruction",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "roles": [
+        "autre:entreprises IA",
+        "autre:fournisseurs"
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "assouplir-pme",
+      "theme": "Assouplir les exigences probatoires pour les PME",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 118333,
+      "employees_low": 133422,
+      "employees_high": 270016,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "mise-en-demeure-prealable",
+      "theme": "Imposer une mise en demeure préalable",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "61.30Z",
+          "label": "Activités de télécommunication",
+          "companies": 107,
+          "employees_low": 1912,
+          "employees_high": 3685,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:titulaires de droits",
+        "plateformes"
+      ],
+      "companies": 8634,
+      "employees_low": 44846,
+      "employees_high": 91583,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "gestion-collective-obligatoire",
+      "theme": "Instaurer la gestion collective obligatoire",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "associations",
+        "autre:auteurs et titulaires de droits voisins",
+        "autre:fournisseurs d'intelligence artificielle"
+      ],
+      "companies": 646940,
+      "employees_low": 282207,
+      "employees_high": 561888,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-retroactivite",
+      "theme": "Exclure ou limiter la rétroactivité du dispositif",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:entreprises d'IA",
+        "autre:fournisseurs de systèmes d'IA"
+      ],
+      "companies": 209842,
+      "employees_low": 377195,
+      "employees_high": 739471,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "differer-entree-vigueur",
+      "theme": "Différer de six mois l'entrée en vigueur",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs d'IA"
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "exclure-recherche-enseignement-tdm",
+      "theme": "Exclure la recherche, l'enseignement et la fouille de données",
+      "sectors": [
+        {
+          "naf": "72.1",
+          "label": "Recherche-développement",
+          "companies": 11365,
+          "employees_low": 107034,
+          "employees_high": 187421,
+          "open_top": true,
+          "subclasses": [
+            "72.11Z",
+            "72.19Z"
+          ]
+        },
+        {
+          "naf": "85.3",
+          "label": "Enseignement supérieur",
+          "companies": 13678,
+          "employees_low": 580965,
+          "employees_high": 1152458,
+          "open_top": false,
+          "subclasses": [
+            "85.31Z",
+            "85.32Z"
+          ]
+        },
+        {
+          "naf": "85.2",
+          "label": "Enseignement secondaire",
+          "companies": 4677,
+          "employees_low": 40043,
+          "employees_high": 80464,
+          "open_top": false,
+          "subclasses": [
+            "85.20Z"
+          ]
+        }
+      ],
+      "roles": [
+        "autre:organismes de recherche",
+        "autre:établissements d'enseignement",
+        "etat"
+      ],
+      "companies": 29720,
+      "employees_low": 728042,
+      "employees_high": 1420343,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "key": "autoriser-conservation-copies-tdm",
+      "theme": "Autoriser la conservation des copies de fouille de données",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs de modèles d'IA"
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "creer-registre-opt-out",
+      "theme": "Créer un registre de réserve de droit",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "74.20Z",
+          "label": "Activités photographiques",
+          "companies": 57258,
+          "employees_low": 4200,
+          "employees_high": 7737,
+          "open_top": false
+        },
+        {
+          "naf": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        }
+      ],
+      "roles": [
+        "autre:auteurs et titulaires de droits",
+        "autre:développeurs d'IA",
+        "autre:organisme tiers gestionnaire",
+        "etat"
+      ],
+      "companies": 194829,
+      "employees_low": 102819,
+      "employees_high": 203463,
+      "open_top": false,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques",
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "key": "etendre-obligations-tous-fournisseurs",
+      "theme": "Étendre les obligations à tous les fournisseurs en France",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "naf": "58.29C",
+          "label": "Édition de logiciels",
+          "companies": 12763,
+          "employees_low": 59959,
+          "employees_high": 119668,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs et développeurs d'IA",
+        "plateformes"
+      ],
+      "companies": 21290,
+      "employees_low": 102893,
+      "employees_high": 207566,
+      "open_top": false,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "key": "permettre-suspension-procedure",
+      "theme": "Permettre la suspension pour négociations",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique (fournisseurs d'IA)",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11A",
+          "label": "Production de films et de programmes audiovisuels",
+          "companies": 21708,
+          "employees_low": 10801,
+          "employees_high": 21116,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "90.03A",
+          "label": "Création artistique relevant des arts plastiques",
+          "companies": 115422,
+          "employees_low": 1307,
+          "employees_high": 2523,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs_d_ia",
+        "autre:titulaires_de_droits",
+        "etat"
+      ],
+      "companies": 274701,
+      "employees_low": 110727,
+      "employees_high": 219365,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "rapports-gouvernement",
+      "theme": "Demander des rapports gouvernementaux d'évaluation",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique (développement de modèles d'IA)",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        },
+        {
+          "naf": "58.13Z",
+          "label": "Édition de journaux",
+          "companies": 5152,
+          "employees_low": 14666,
+          "employees_high": 28461,
+          "open_top": false
+        },
+        {
+          "naf": "60.11Z",
+          "label": "Production de films et de programmes pour la télévision"
+        },
+        {
+          "naf": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        }
+      ],
+      "roles": [
+        "autre:auteurs",
+        "autre:ayants droit",
+        "autre:developpeurs IA",
+        "autre:fournisseurs d'IA",
+        "autre:fournisseurs de systèmes d'IA",
+        "autre:secteurs culturels",
+        "autre:éditeurs IA",
+        "etat",
+        "plateformes"
+      ],
+      "companies": 160263,
+      "employees_low": 250914,
+      "employees_high": 475154,
+      "open_top": true,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques",
+        "Production de films cinématographiques",
+        "Production de films et de programmes pour la télévision"
+      ]
+    },
+    {
+      "key": "reporter-etude-impact",
+      "theme": "Reporter l'entrée en vigueur jusqu'à l'étude d'impact",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:fournisseurs de systèmes d'IA",
+        "etat"
+      ],
+      "companies": 123791,
+      "employees_low": 222904,
+      "employees_high": 421683,
+      "open_top": true,
+      "not_counted": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "24",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "25",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "93",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "90",
+      "sectors": [
+        {
+          "naf": "94.69Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Autres organisations fonctionnant par adhésion volontaire"
+      ]
+    },
+    {
+      "number": "34",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "91",
+      "sectors": [
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "58.13Z",
+          "label": "Édition de journaux",
+          "companies": 5152,
+          "employees_low": 14666,
+          "employees_high": 28461,
+          "open_top": false
+        },
+        {
+          "naf": "58.14Z",
+          "label": "Édition de revues et périodiques",
+          "companies": 20873,
+          "employees_low": 15735,
+          "employees_high": 30659,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "60.10Z",
+          "label": "Programmation et diffusion de programmes audiovisuels",
+          "companies": 2867,
+          "employees_low": 8412,
+          "employees_high": 16404,
+          "open_top": false
+        },
+        {
+          "naf": "60.20A",
+          "label": "Production de films cinématographiques",
+          "companies": 104,
+          "employees_low": 10401,
+          "employees_high": 20807,
+          "open_top": false
+        },
+        {
+          "naf": "90.01Z",
+          "label": "Arts du spectacle vivant",
+          "companies": 161172,
+          "employees_low": 43231,
+          "employees_high": 84052,
+          "open_top": false
+        }
+      ],
+      "companies": 221488,
+      "employees_low": 105789,
+      "employees_high": 205393,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "35",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "7",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "69",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 123791,
+      "employees_low": 222904,
+      "employees_high": 421683,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "13",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "63",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences naturelles et ingénierie",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "companies": 118333,
+      "employees_low": 133422,
+      "employees_high": 270016,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "94",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "19",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences physiques et naturelles",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "companies": 109806,
+      "employees_low": 90488,
+      "employees_high": 182118,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "32",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "64",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "28",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "number": "82",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "97",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 8527,
+      "employees_low": 42934,
+      "employees_high": 87898,
+      "open_top": false,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "number": "2",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "9",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        }
+      ],
+      "companies": 201315,
+      "employees_low": 334261,
+      "employees_high": 651573,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "45",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "6",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "55",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "27",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "11",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "81",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "42",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "46",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "56",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "4",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "48",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.21Z",
+          "label": "Édition de logiciels système et de réseau",
+          "companies": 1933,
+          "employees_low": 3325,
+          "employees_high": 6653,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 116711,
+      "employees_low": 131534,
+      "employees_high": 265267,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "10",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "37",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        }
+      ],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "15",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 209842,
+      "employees_low": 377195,
+      "employees_high": 739471,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "16",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "17",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "22",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "39",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique (développement de modèles et systèmes d'IA)",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "65",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "",
+          "label": "Acteurs culturels / titulaires de droits d'auteur"
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": [
+        "Acteurs culturels / titulaires de droits d'auteur"
+      ]
+    },
+    {
+      "number": "100",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "47.41Z",
+          "label": "Commerce de détail d'ordinateurs, d'unités périphériques et de logiciels en magasin spécialisé",
+          "companies": 6480,
+          "employees_low": 12571,
+          "employees_high": 26231,
+          "open_top": false
+        }
+      ],
+      "companies": 121258,
+      "employees_low": 140780,
+      "employees_high": 284845,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "71",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "79",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "60.10A",
+          "label": "Édition et diffusion d'œuvres musicales"
+        }
+      ],
+      "companies": 125068,
+      "employees_low": 137319,
+      "employees_high": 275712,
+      "open_top": false,
+      "not_counted": [
+        "Production de films cinématographiques",
+        "Édition et diffusion d'œuvres musicales"
+      ]
+    },
+    {
+      "number": "96",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "80",
+      "sectors": [
+        {
+          "naf": "90.0",
+          "label": "Activités créatives, artistiques et de spectacle",
+          "companies": 384976,
+          "employees_low": 69384,
+          "employees_high": 136341,
+          "open_top": false,
+          "subclasses": [
+            "90.01Z",
+            "90.02Z",
+            "90.03A",
+            "90.03B",
+            "90.04Z"
+          ]
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "companies": 917138,
+      "employees_low": 223382,
+      "employees_high": 439615,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "66",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "76",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "78",
+      "sectors": [
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "60.10Z",
+          "label": "Programmation cinématographique",
+          "companies": 2867,
+          "employees_low": 8412,
+          "employees_high": 16404,
+          "open_top": false
+        },
+        {
+          "naf": "63.99Z",
+          "label": "Activités des agences de presse",
+          "companies": 1470,
+          "employees_low": 385,
+          "employees_high": 738,
+          "open_top": false
+        }
+      ],
+      "companies": 35657,
+      "employees_low": 22141,
+      "employees_high": 42152,
+      "open_top": false,
+      "not_counted": [
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "number": "92",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "95",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "69.20Z",
+          "label": "Activités comptables",
+          "companies": 36342,
+          "employees_low": 142568,
+          "employees_high": 285932,
+          "open_top": false
+        }
+      ],
+      "companies": 151120,
+      "employees_low": 270777,
+      "employees_high": 544546,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "68",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "109",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "44",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "36",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "companies": 118333,
+      "employees_low": 133422,
+      "employees_high": 270016,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "72",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "40",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "58.29C",
+          "label": "Édition de logiciels",
+          "companies": 12763,
+          "employees_low": 59959,
+          "employees_high": 119668,
+          "open_top": false
+        }
+      ],
+      "companies": 127541,
+      "employees_low": 188168,
+      "employees_high": 378282,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "67",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "73",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "74",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "72.20Z",
+          "label": "Recherche-développement en sciences exactes et naturelles",
+          "companies": 3555,
+          "employees_low": 5213,
+          "employees_high": 11402,
+          "open_top": false
+        }
+      ],
+      "companies": 118333,
+      "employees_low": 133422,
+      "employees_high": 270016,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "75",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "61.30Z",
+          "label": "Activités de télécommunication",
+          "companies": 107,
+          "employees_low": 1912,
+          "employees_high": 3685,
+          "open_top": false
+        }
+      ],
+      "companies": 8634,
+      "employees_low": 44846,
+      "employees_high": 91583,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "99",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "84",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire",
+          "companies": 532162,
+          "employees_low": 153998,
+          "employees_high": 303274,
+          "open_top": false
+        }
+      ],
+      "companies": 646940,
+      "employees_low": 282207,
+      "employees_high": 561888,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "33",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "26",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        }
+      ],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "open_top": false,
+      "not_counted": [
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "number": "8",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "62.02A",
+          "label": "Conseil en systèmes et logiciels informatiques",
+          "companies": 95064,
+          "employees_low": 248986,
+          "employees_high": 480857,
+          "open_top": true
+        }
+      ],
+      "companies": 201315,
+      "employees_low": 334261,
+      "employees_high": 651573,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "3",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "18",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        }
+      ],
+      "companies": 106251,
+      "employees_low": 85275,
+      "employees_high": 170716,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "5",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "88",
+      "sectors": [
+        {
+          "naf": "72.1",
+          "label": "Recherche-développement",
+          "companies": 11365,
+          "employees_low": 107034,
+          "employees_high": 187421,
+          "open_top": true,
+          "subclasses": [
+            "72.11Z",
+            "72.19Z"
+          ]
+        },
+        {
+          "naf": "85.3",
+          "label": "Enseignement supérieur",
+          "companies": 13678,
+          "employees_low": 580965,
+          "employees_high": 1152458,
+          "open_top": false,
+          "subclasses": [
+            "85.31Z",
+            "85.32Z"
+          ]
+        },
+        {
+          "naf": "85.2",
+          "label": "Enseignement secondaire",
+          "companies": 4677,
+          "employees_low": 40043,
+          "employees_high": 80464,
+          "open_top": false,
+          "subclasses": [
+            "85.20Z"
+          ]
+        }
+      ],
+      "companies": 29720,
+      "employees_low": 728042,
+      "employees_high": 1420343,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "30",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "29",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "74.20Z",
+          "label": "Activités photographiques",
+          "companies": 57258,
+          "employees_low": 4200,
+          "employees_high": 7737,
+          "open_top": false
+        },
+        {
+          "naf": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        }
+      ],
+      "companies": 194829,
+      "employees_low": 102819,
+      "employees_high": 203463,
+      "open_top": false,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques",
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "number": "38",
+      "sectors": [
+        {
+          "naf": "62.01A",
+          "label": "Programmation informatique"
+        },
+        {
+          "naf": "58.29C",
+          "label": "Édition de logiciels",
+          "companies": 12763,
+          "employees_low": 59959,
+          "employees_high": 119668,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 21290,
+      "employees_low": 102893,
+      "employees_high": 207566,
+      "open_top": false,
+      "not_counted": [
+        "Programmation informatique"
+      ]
+    },
+    {
+      "number": "89",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique (fournisseurs d'IA)",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "59.11A",
+          "label": "Production de films et de programmes audiovisuels",
+          "companies": 21708,
+          "employees_low": 10801,
+          "employees_high": 21116,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "90.03A",
+          "label": "Création artistique relevant des arts plastiques",
+          "companies": 115422,
+          "employees_low": 1307,
+          "employees_high": 2523,
+          "open_top": false
+        }
+      ],
+      "companies": 274701,
+      "employees_low": 110727,
+      "employees_high": 219365,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "1",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique (développement de modèles d'IA)",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "59.11Z",
+          "label": "Production de films cinématographiques"
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        }
+      ],
+      "companies": 146098,
+      "employees_low": 141553,
+      "employees_high": 283624,
+      "open_top": false,
+      "not_counted": [
+        "Production de films cinématographiques"
+      ]
+    },
+    {
+      "number": "14",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "47",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "53",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "21",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 114778,
+      "employees_low": 128209,
+      "employees_high": 258614,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "50",
+      "sectors": [
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        },
+        {
+          "naf": "58.13Z",
+          "label": "Édition de journaux",
+          "companies": 5152,
+          "employees_low": 14666,
+          "employees_high": 28461,
+          "open_top": false
+        },
+        {
+          "naf": "59.20Z",
+          "label": "Enregistrement sonore et édition musicale",
+          "companies": 21030,
+          "employees_low": 4234,
+          "employees_high": 7912,
+          "open_top": false
+        },
+        {
+          "naf": "60.11Z",
+          "label": "Production de films et de programmes pour la télévision"
+        },
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        }
+      ],
+      "companies": 44999,
+      "employees_low": 70944,
+      "employees_high": 141369,
+      "open_top": false,
+      "not_counted": [
+        "Production de films et de programmes pour la télévision"
+      ]
+    },
+    {
+      "number": "51",
+      "sectors": [
+        {
+          "naf": "63.11Z",
+          "label": "Traitement de données, hébergement et activités connexes",
+          "companies": 8527,
+          "employees_low": 42934,
+          "employees_high": 87898,
+          "open_top": false
+        },
+        {
+          "naf": "90.03Z",
+          "label": "Création artistique relevant des arts plastiques"
+        },
+        {
+          "naf": "58.11Z",
+          "label": "Édition de livres",
+          "companies": 10290,
+          "employees_low": 9110,
+          "employees_high": 17098,
+          "open_top": false
+        }
+      ],
+      "companies": 18817,
+      "employees_low": 52044,
+      "employees_high": 104996,
+      "open_top": false,
+      "not_counted": [
+        "Création artistique relevant des arts plastiques"
+      ]
+    },
+    {
+      "number": "23",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    },
+    {
+      "number": "31",
+      "sectors": [
+        {
+          "naf": "62.01Z",
+          "label": "Programmation informatique",
+          "companies": 106251,
+          "employees_low": 85275,
+          "employees_high": 170716,
+          "open_top": false
+        },
+        {
+          "naf": "72.19Z",
+          "label": "Recherche-développement en autres sciences",
+          "companies": 9013,
+          "employees_low": 94695,
+          "employees_high": 163069,
+          "open_top": true
+        }
+      ],
+      "companies": 115264,
+      "employees_low": 179970,
+      "employees_high": 333785,
+      "open_top": true,
+      "not_counted": []
+    }
+  ]
+}
