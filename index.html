@@ -365,6 +365,10 @@
   .peer .ex { grid-column: 1 / -1; font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .peer .ex .g { color: var(--gain); font-weight: 700; } .peer .ex .p { color: var(--loss); font-weight: 700; }
   .peer button { font: inherit; font-size: 12.5px; font-weight: 650; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
+  .autonote { flex-basis: 100%; font-size: 12.5px; color: var(--muted); margin-top: 4px; }
+  .aiwrap { flex-basis: 100%; margin-top: 8px; }
+  .aibox { margin-top: 8px; font-size: 13.5px; color: #334155; border-left: 3px solid var(--accent); padding: 4px 10px; background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+  .aibox p { margin: 4px 0; } .aibox .dim, .roles .dim { color: var(--muted); font-size: 12px; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
@@ -590,6 +594,7 @@ function fromApi(r) {
     ca: f?.ca ? f.ca : null,           // 0 means "not published", never a real turnover
     net: f?.ca ? (f.resultat_net ?? null) : null,
     year: f?.ca ? y : null, source: "api",
+    nature: r.nature_juridique || "", complements: r.complements || null,
   };
 }
 
@@ -631,6 +636,8 @@ async function probeHealth(base, ms) {
   const CHAMBER = { senat: "Sénat", an: "Assemblée nationale" };
   let engine = null, measures = [], NAF_LABEL = {}, ROLES_IN_DATA = [];
   let company = null, roles = new Set(), showAll = false;
+  let custom = [];        // roles outside the closed list, from the AI: [{key: "autre:slug", label}]
+  let aiState = null;     // {running} | {result} | {error}
   const nafLabel = naf => NAF_LABEL[naf] || ALL_NAF[naf] || "";
   const learnNaf = eng => (eng.measures || []).forEach(m => (m.sectors || []).forEach(s => {
     const k = s.naf || s.key; if (isNaf(k) && s.label && !ALL_NAF[k]) ALL_NAF[k] = s.label; }));
@@ -907,7 +914,7 @@ async function probeHealth(base, ms) {
   qEl.addEventListener("mouseup", e => { if (isPicked()) e.preventDefault(); });
 
   async function apiSearch(params, signal) {
-    const usp = new URLSearchParams({ per_page: "8", etat_administratif: "A", minimal: "true", include: "siege,finances", ...params });
+    const usp = new URLSearchParams({ per_page: "8", etat_administratif: "A", minimal: "true", include: "siege,finances,complements", ...params });
     const own = new AbortController();
     const t = setTimeout(() => own.abort(), 6000);
     if (signal) signal.addEventListener("abort", () => own.abort());
@@ -991,20 +998,90 @@ async function probeHealth(base, ms) {
     qEl.value = shortName(c.name);
     company = c;
     roles = new Set();
-    if (hasEmployees(c)) roles.add("employeurs");
+    custom = [];
+    autoRoles(c).forEach(r => roles.add(r.role));
+    aiState = null;
     profileChanged();
   }
 
   /* ---------- Rendering ---------- */
+  // Roles that public data already tells us (no AI): headcount, legal form, public-sector flags
+  function autoRoles(c) {
+    const out = [], cp = c.complements || {}, nj = String(c.nature || "");
+    if (hasEmployees(c)) out.push({ role: "employeurs", why: BANDS[c.band] || "a des salariés" });
+    if (cp.est_association || /^92/.test(nj)) out.push({ role: "associations", why: "association (forme juridique)" });
+    if (cp.collectivite_territoriale || /^72/.test(nj)) out.push({ role: "collectivites", why: "collectivité territoriale" });
+    if (/^71/.test(nj)) out.push({ role: "etat", why: "administration de l'État" });
+    return out;
+  }
+  function aiBlock() {
+    const st = aiState;
+    const btn = h("button", { type: "button", class: "scan-btn", style: "font-size:13px;padding:7px 12px",
+      disabled: !LIVE_OK || !!st?.running, onclick: askAiRoles },
+      !LIVE_OK ? "IA disponible sur la version en ligne" : st?.running ? "L'IA lit votre fiche…" : st?.result ? "Redemander à l'IA" : "Demander à l'IA de compléter mon profil");
+    let body = null;
+    if (st?.error) body = h("p", { class: "live-err" }, st.error);
+    else if (st?.result) {
+      const r = st.result, sug = (r.roles || []).filter(x => x && x.role);
+      body = h("div", { class: "aibox" },
+        r.summary ? h("p", null, h("b", null, "Ce que fait l'entreprise : "), r.summary) : null,
+        (r.activities || []).length ? h("p", null, h("b", null, "Activités : "), r.activities.join(" · ")) : null,
+        sug.length ? h("ul", { class: "params" }, sug.map(x => {
+          const k = String(x.role), isAutre = /^autre\s*:/i.test(k), rk = roleKey(k);
+          const label = isAutre ? `Autre : ${k.replace(/^autre\s*:\s*/i, "").replace(/-/g, " ")}` : ROLE_LABEL[rk] || k;
+          const on = roles.has(rk);
+          return h("li", null, h("button", { type: "button", class: "role", "aria-pressed": String(on), onclick: () => {
+              if (isAutre && !custom.some(y => roleKey(y.key) === rk)) custom.push({ key: k, label });
+              on ? roles.delete(rk) : roles.add(rk); profileChanged(); } }, label),
+            x.confidence ? h("span", { class: "dim" }, ` confiance ${x.confidence}`) : null, x.why ? ` — ${x.why}` : "");
+        })) : h("p", null, "L'IA ne propose aucun rôle supplémentaire."),
+        h("p", { class: "dim" }, `Suggestions de l'IA, à vérifier · modèle : ${r.model || "?"}`, r.elapsed_ms != null ? ` · ${fmt(r.elapsed_ms)} ms` : ""));
+    }
+    return h("div", { class: "aiwrap" }, btn, body);
+  }
+  async function askAiRoles() {
+    if (!company || !LIVE_OK) return;
+    aiState = { running: true }; renderProfil();
+    const c = company;
+    try {
+      const r = await fetch(`${LIVE}/api/live/profile`, { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ company: { name: c.name, siren: c.siren, naf: c.naf, naf_label: nafLabel(c.naf) || "", headcount_band: c.band || null,
+          ca: c.ca, nature_juridique: c.nature || null, city: c.city || null, complements: c.complements || null },
+          roles: ROLE_LIST.map(([k]) => k), session: text.session, text_number: text.number }) });
+      let j = {}; try { j = await r.json(); } catch {}
+      if (company !== c) return;
+      if (r.status === 404) throw new Error("Analyse IA du profil pas encore disponible sur ce serveur.");
+      if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
+      aiState = { result: j };
+      // pre-check confident suggestions
+      (j.roles || []).forEach(x => {
+        if (!x?.role || !/haute|moyenne/i.test(x.confidence || "haute")) return;
+        const k = String(x.role), rk = roleKey(k);
+        if (/^autre\s*:/i.test(k) && !custom.some(y => roleKey(y.key) === rk)) custom.push({ key: k, label: `Autre : ${k.replace(/^autre\s*:\s*/i, "").replace(/-/g, " ")}` });
+        roles.add(rk);
+      });
+      profileChanged();
+    } catch (e) {
+      if (company !== c) return;
+      aiState = { error: e.message || "réseau" }; renderProfil();
+    }
+  }
+
   function companyCard() {
     const c = company, lbl = nafLabel(c.naf);
     const fin = c.nafOnly ? h("div", { class: "fin" }, h("small", null, "profil par code NAF : pas de CA, pas de chiffrage en €")) : c.ca != null
       ? h("div", { class: "fin" }, h("div", { class: "ca" }, eurRange({ low: c.ca, high: c.ca }, false)),
           h("small", null, `chiffre d'affaires ${c.year || ""}`, c.net != null ? ` · résultat net ${eurRange({ low: c.net, high: c.net }, false)}` : ""))
       : h("div", { class: "fin" }, h("small", null, "CA non publié"));
+    const auto = autoRoles(c);
     const roleRow = h("div", { class: "roles" }, h("span", null, "Vous êtes aussi :"),
       ROLE_LIST.map(([k, l]) => h("button", { type: "button", class: "role", "aria-pressed": String(roles.has(k)),
-        onclick: () => { roles.has(k) ? roles.delete(k) : roles.add(k); profileChanged(); } }, l)));
+        onclick: () => { roles.has(k) ? roles.delete(k) : roles.add(k); profileChanged(); } }, l)),
+      custom.map(x => h("button", { type: "button", class: "role", "aria-pressed": String(roles.has(roleKey(x.key))), title: x.key,
+        onclick: () => { const k = roleKey(x.key); roles.has(k) ? roles.delete(k) : roles.add(k); profileChanged(); } }, x.label)),
+      auto.length ? h("div", { class: "autonote" }, "Pré-coché d'après les données publiques : ",
+        auto.map((r, i) => [i ? " · " : "", h("b", null, ROLE_LABEL[r.role]), ` (${r.why})`])) : null,
+      aiBlock());
     return h("div", { class: "company" },
       h("div", null, h("h3", null, profName()),
         h("div", { class: "facts" }, c.siren ? h("span", null, "SIREN ", h("b", null, c.siren)) : null,
@@ -1538,7 +1615,7 @@ async function probeHealth(base, ms) {
   }
 
   /* ---------- Profile: company or NAF only + roles, kept in this browser ---------- */
-  function saveProfile() { store("profile", company ? { company, roles: [...roles] } : null); }
+  function saveProfile() { store("profile", company ? { company, roles: [...roles], custom } : null); }
   function renderChip() {
     fill($("pchip"), company ? ["Profil : ", h("b", null, profName()), " · changer"] : "Définir mon profil");
   }
@@ -1552,7 +1629,7 @@ async function probeHealth(base, ms) {
     if (company && !company.nafOnly) qEl.value = shortName(company.name);
     fill(cEl, company ? [companyCard(),
       h("a", { class: "cta", href: "#moi" }, "Voir ce qui me vise →"),
-      h("button", { type: "button", class: "retry", style: "margin-left:10px", onclick: () => { company = null; roles = new Set(); qEl.value = ""; profileChanged(); } }, "Effacer le profil")]
+      h("button", { type: "button", class: "retry", style: "margin-left:10px", onclick: () => { company = null; roles = new Set(); custom = []; aiState = null; qEl.value = ""; profileChanged(); } }, "Effacer le profil")]
       : h("p", { class: "empty-company" }, "Aucun profil : cherchez votre entreprise, ou entrez seulement votre code NAF."));
   }
   const readNaf = () => { let v = $("nafIn").value.trim().toUpperCase().replace(/\s/g, ""); if (/^\d{4}[A-Z]$/.test(v)) v = `${v.slice(0, 2)}.${v.slice(2)}`; return v; };
@@ -1562,7 +1639,7 @@ async function probeHealth(base, ms) {
     if (!isNaf(v)) { fill($("nafMsg"), h("span", { class: "warn" }, "Format attendu : NN.NNL, par exemple 56.10A")); return; }
     fill($("nafMsg"), nafLabel(v) ? h("span", { class: "ok" }, `✓ ${nafLabel(v)}`) : h("span", null, "code valide (libellé inconnu des textes calculés)"));
     company = { nafOnly: true, naf: v, siren: null, name: null, ca: null, net: null, year: null, band: null };
-    roles = new Set(); qEl.value = "";
+    roles = new Set(); custom = []; aiState = null; qEl.value = "";
     profileChanged();
   });
   $("nafIn").addEventListener("input", () => { const v = readNaf(); fill($("nafMsg"), isNaf(v) && nafLabel(v) ? h("span", { class: "ok" }, nafLabel(v)) : ""); });
@@ -1672,6 +1749,7 @@ async function probeHealth(base, ms) {
   if (saved && saved.company && (saved.company.siren || saved.company.nafOnly)) {
     company = saved.company; if (!company.ca) { company.ca = null; company.net = null; company.year = null; }
     roles = new Set((saved.roles || []).map(roleKey));
+    custom = Array.isArray(saved.custom) ? saved.custom.filter(x => x && x.key) : [];
   }
   renderChip();
   setInterval(() => { if (liveData && !document.hidden) liveLoad(); }, 60000);
