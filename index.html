@@ -182,6 +182,9 @@
   .badge-ok { background: var(--gain-soft); color: var(--gain); font-weight: 700; border-radius: 999px; padding: 2px 10px; }
   .concern { border-radius: 10px; padding: 8px 12px; font-size: 14.5px; font-weight: 650; margin: 0 0 10px; }
   .concern.yes { background: var(--accent-soft); color: var(--accent-ink); }
+  .concern.maybe { background: #fef3c7; color: #92400e; }
+  .amd-head { font-size: 14px; margin: 0 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .amd-head .dim { color: var(--muted); }
   .concern.no { background: var(--soft); color: var(--muted); }
   .live-run .card { margin: 0; grid-template-columns: 44px minmax(0, 1fr); }
   .live-run .card .expo { grid-column: 2; }
@@ -443,6 +446,8 @@ const ROLE_LIST = [["employeurs", "Employeur"], ["emetteurs", "Émetteur"], ["pl
   ["collectivites", "Collectivité"], ["etat", "État"], ["menages", "Ménage"]];
 const ROLE_LABEL = Object.fromEntries(ROLE_LIST);
 const roleKey = r => norm(r).replace(/[^a-z]/g, "");
+const ROLE_PLURAL = { employeurs: "Employeurs", emetteurs: "Émetteurs", plateformes: "Plateformes", associations: "Associations",
+  collectivites: "Collectivités", etat: "État", menages: "Ménages" };
 const hasEmployees = c => !!c.band && c.band !== "NN" && c.band !== "00";
 const isNaf = s => /^\d\d\.\d\d[A-Z]$/.test(String(s || ""));
 
@@ -553,6 +558,16 @@ async function probeHealth(base, ms) {
   let engine = null, measures = [], NAF_LABEL = {}, ROLES_IN_DATA = [];
   let company = null, roles = new Set(), showAll = false;
   const nafLabel = naf => NAF_LABEL[naf] || "";
+  // "libellé (code)" for a NAF, French word for a role, "Autre : xxx" for free roles; never a bare code
+  function target(x, label) {
+    const raw = typeof x === "string" ? x : x?.naf || x?.key || x?.role || "";
+    const lbl = label ?? (typeof x === "object" ? x?.label : null);
+    if (/^autre\s*:/i.test(raw)) return `Autre : ${raw.replace(/^autre\s*:\s*/i, "")}`;
+    if (isNaf(raw)) { const l = stripParen(lbl || nafLabel(raw)); return l ? `${l} (${raw})` : `NAF ${raw}`; }
+    const rk = roleKey(raw);
+    if (ROLE_PLURAL[rk]) return ROLE_PLURAL[rk];
+    return stripParen(lbl || raw);
+  }
   const amdtUrl = n => `https://www.senat.fr/amendements/${text.session}/${text.number}/Amdt_${encodeURIComponent(String(n).split(" ")[0])}.html`;
 
   const $ = id => document.getElementById(id);
@@ -672,11 +687,15 @@ async function probeHealth(base, ms) {
     // a role rate that is only "neutre" without amount does not by itself make the measure concern the company
     const roleRateCounts = roleRate && !(roleRate.sign === "neutre" && !roleRate.eur && roleRate.rate_low == null);
     const byNaf = (m.nafs || []).includes(naf) || !!nafRate;
-    if (!byNaf && !roleHit && !roleRateCounts) return null;
+    // same NAF group (first 4 chars, "63.12Z" ~ "63.11Z" → "63.1"): shown as a close sector, to be checked
+    const grp = String(naf || "").slice(0, 4);
+    const allNafs = [...(m.nafs || []), ...(m.sectors || []).map(x => x.naf || x.key), ...rates.flatMap(r => r.nafs || [])].filter(isNaf);
+    const byGroup = !byNaf && grp.length === 4 && allNafs.some(x => x.startsWith(grp));
+    if (!byNaf && !byGroup && !roleHit && !roleRateCounts) return null;
 
-    const rate = nafRate || roleRate || null;
+    const rate = nafRate || (roleHit || roleRateCounts ? roleRate : null) || null;
     let you;
-    if (!rate) you = { status: "no_rate" };
+    if (!rate) you = { status: byGroup && !roleHit && !roleRateCounts ? "group" : "no_rate" };
     else if (rate.rate_low != null) {
       const base = { sign: rate.sign, method: rate.method, scope: rate.scope, quote: rate.quote };
       you = company.ca == null ? { status: "no_ca", ...base }
@@ -686,9 +705,10 @@ async function probeHealth(base, ms) {
     }
 
     const role = roleKey(roleHit || (roleRate && roleRate.role) || "");
-    const sectorLabel = byNaf
-      ? (m.sectors || []).find(s => (s.naf || s.key) === naf)?.label || nafLabel(naf) || `NAF ${naf}`
-      : `Rôle : ${ROLE_LABEL[role] || role}`;
+    const via = byNaf ? "naf" : roleHit || roleRateCounts ? "role" : "group";
+    const sectorLabel = via === "naf" ? target(naf, (m.sectors || []).find(s => (s.naf || s.key) === naf)?.label)
+      : via === "role" ? `Rôle : ${ROLE_PLURAL[role] || role}`
+      : `Secteur proche (groupe ${grp}) — à vérifier`;
 
     const hist = m.history ? { ...m.history } : null;
     if (hist) {
@@ -697,7 +717,7 @@ async function probeHealth(base, ms) {
       hist.allies = notSelf(you.sign === "gain" ? hist.lobby_pour : you.sign === "perte" ? hist.lobby_contre : []);
       hist.opponents = notSelf(you.sign === "gain" ? hist.lobby_contre : you.sign === "perte" ? hist.lobby_pour : []);
     }
-    return { ...m, you, history: hist, matched_sector: sectorLabel, by_role: !byNaf };
+    return { ...m, you, history: hist, matched_sector: sectorLabel, by_role: via === "role", via, group: grp };
   }
 
   /* ---------- Search as you type ---------- */
@@ -873,8 +893,8 @@ async function probeHealth(base, ms) {
   }
 
   function exposure(c) {
-    const sector = h("div", { class: "sector" }, `Secteur : ${stripParen(c.matched_sector)}`);
-    const nc = (c.not_counted || []).map(x => ROLE_LABEL[roleKey(x)] || stripParen(x)).filter(Boolean);
+    const sector = h("div", { class: "sector" }, /^Rôle :|^Secteur proche/.test(c.matched_sector || "") ? c.matched_sector : `Secteur : ${c.matched_sector}`);
+    const nc = (c.not_counted || []).map(x => target(x)).filter(Boolean);
     const k = h("div", { class: "k" }, "Exposition");
     if (c.by_role) return h("div", { class: "expo" }, k, h("div", { class: "num sm" }, "non chiffrée pour ce rôle"),
       h("div", { class: "lbl" }, "Le comptage d'entreprises porte sur les secteurs visés par leur code NAF, pas sur ce rôle."), sector);
@@ -889,11 +909,14 @@ async function probeHealth(base, ms) {
       nc.length ? h("div", { class: "nc" }, `+ non chiffré : ${nc.join(" · ")}`) : null, sector);
   }
 
-  const sideLabel = x => typeof x === "string" ? x : x?.label || x?.naf || ROLE_LABEL[roleKey(x?.role)] || "";
+  const sideLabel = x => typeof x === "string" ? (isNaf(x) || ROLE_PLURAL[roleKey(x)] || /^autre\s*:/i.test(x) ? target(x) : x)
+    : x?.label ? (x.naf && isNaf(x.naf) ? target(x.naf, x.label) : x.label) : target(x?.naf || x?.role || "");
 
   function chiffrage(ch, y) {
     const main = [], det = [];
-    if (y.status === "no_rate") {
+    if (y.status === "group") {
+      main.push(h("div", null, h("div", { class: "you" }, h("span", { class: "lead" }, "Pour vous"), h("span", { class: "nd" }, "secteur proche — à vérifier, non chiffré"))));
+    } else if (y.status === "no_rate") {
       main.push(h("div", null, h("div", { class: "you" }, h("span", { class: "lead" }, "Pour vous"), h("span", { class: "nd" }, "non chiffré pour votre secteur"))));
     } else if (y.sign) {
       const amt = y.status === "ok" ? eurRange(y.eur) : null;
@@ -1124,23 +1147,26 @@ async function probeHealth(base, ms) {
     fill(lMeta, ...msg);
   }
 
+  let liveReq = 0, liveAmd = null;
   async function liveExtract(number) {
     if (liveCtrl) liveCtrl.abort();
     const c = liveCtrl = new AbortController();
+    const req = ++liveReq;
     liveSel = number; liveResult = null; liveRaw = "";
+    liveAmd = (liveData?.amendments || []).find(a => String(a.number) === String(number)) || { number };
     lList.querySelectorAll(".amd").forEach(b => b.classList.toggle("on", b.dataset.n === number));
     const lk = h("span", null, `Le modèle lit l'amendement n°${number}…`);
     const lst = h("div", { class: "live-status" });
     const out = streamBox("lstream", "");
-    fill(lRun, h("div", { class: "stream-k" }, h("span", { class: "spin2" }), lk), lst, out);
+    fill(lRun, amdHeader(), h("div", { class: "stream-k" }, h("span", { class: "spin2" }), lk), lst, out);
     let got = false;
     try {
       await sse(`${LIVE}/api/live/extract?stream=1`, { text_number: text.number, session: text.session, number: String(number) }, c.signal, (ev, d) => {
-        if (c !== liveCtrl) return false;
+        if (c !== liveCtrl || req !== liveReq) return false;   // late event from a previous click
         if (ev === "start") lk.textContent = `Le modèle lit l'amendement n°${d.number || number}${d.author ? ` (${d.author}${d.author_group ? `, ${GROUP(d.author_group)}` : ""})` : ""} · modèle : ${d.model || "?"}`;
         else if (ev === "token") { liveRaw += d.t || ""; setStream(out, liveRaw); }
         else if (ev === "status") lst.textContent = d.t || "";
-        else if (ev === "result") { got = true; liveResult = d; renderLiveResult(); }
+        else if (ev === "result") { got = true; liveResult = { ...d, _clicked: String(number) }; renderLiveResult(); }
       });
       if (!got && c === liveCtrl) throw new Error("flux interrompu avant le résultat");
     } catch (e) {
@@ -1150,14 +1176,28 @@ async function probeHealth(base, ms) {
     }
   }
 
+  function amdHeader() {
+    const a = liveAmd || {};
+    return h("div", { class: "amd-head" }, h("b", null, `Amendement n°${a.number ?? liveSel}`),
+      a.author ? ` — ${a.author}${a.author_group ? ` (${GROUP(a.author_group)})` : ""}` : "",
+      a.article ? h("span", { class: "dim" }, ` · ${a.article}`) : null);
+  }
+  const numOf = x => String(x ?? "").split(" ")[0];
   function renderLiveResult() {
     const res = liveResult; if (!res) return;
+    // the server may attach this amendment to an existing measure: say so, so the card is never mistaken for another amendment
+    const own = [res.number, ...(res.amendments || [])].map(numOf);
+    const mismatch = res._clicked && !own.includes(numOf(res._clicked));
     const ev = company && engine ? evaluate(res) : null;
     const c = ev || { ...res, you: {}, history: null, by_role: false,
-      matched_sector: (res.sectors || []).map(s => stripParen(s.label)).filter(Boolean).join(", ") || "—" };
-    const concern = company ? (ev
-      ? h("p", { class: "concern yes" }, `✓ Cet amendement concerne ${shortName(company.name)} (${ev.by_role ? "par son rôle" : `par son code NAF ${company.naf}`}).`)
-      : h("p", { class: "concern no" }, `Cet amendement ne vise pas ${shortName(company.name)} (NAF ${company.naf || "—"}).`)) : null;
+      matched_sector: (res.sectors || []).map(s => target(s.naf || s.key, s.label)).filter(Boolean).join(", ") || "—" };
+    const who = company ? shortName(company.name) : "";
+    const concern = !company ? null
+      : !ev ? h("p", { class: "concern no" }, `Cet amendement ne vise pas ${who} (${target(company.naf) || "NAF —"}).`)
+      : ev.via === "group" ? h("p", { class: "concern maybe" }, `≈ Secteur proche (groupe ${ev.group}) — à vérifier : l'amendement vise ${
+          [...new Set((res.sectors || []).map(s => target(s.naf || s.key, s.label)))].join(", ") || "un secteur voisin"}, ${who} est en ${target(company.naf)}.`)
+      : h("p", { class: "concern yes" }, `✓ Cet amendement concerne ${who} (${ev.via === "role" ? `par son rôle : ${ev.matched_sector.replace(/^Rôle : /, "")}` : `par son code NAF ${target(company.naf)}`}).`);
+    const note = mismatch ? h("p", { class: "hint" }, `Résultat rattaché par le serveur à la mesure « ${res.theme || "?"} » (amendements ${(res.amendments || []).map(n => `n°${n}`).join(", ") || "?"}).`) : null;
     const verif = h("div", { class: "verif" },
       res.quote_verified ? h("span", { class: "badge-ok" }, "✓ citation vérifiée mot pour mot") : h("span", null, "citation non vérifiée"),
       h("span", null, `modèle : ${res.model || "?"}`, res.elapsed_ms != null ? ` · ${fmt(res.elapsed_ms)} ms` : ""),
@@ -1165,7 +1205,7 @@ async function probeHealth(base, ms) {
     const body = res.criteria_found === false && !res.theme
       ? h("p", { class: "hint" }, "Le modèle n'a trouvé aucun critère d'entreprise dans cet amendement.")
       : card({ ...c, theme: c.theme || `Amendement n°${res.amendments?.[0] || liveSel}` }, 1, "live");
-    fill(lRun, concern, verif, body,
+    fill(lRun, amdHeader(), note, concern, verif, body,
       liveRaw ? h("details", null, h("summary", null, "sortie brute du modèle"), h("pre", { class: "stream" }, liveRaw)) : null);
   }
   function liveConcern() { if (liveResult && !lBody.hidden) renderLiveResult(); }
