@@ -31,8 +31,9 @@ def load_env(path=".env"):
             for line in p.read_text().splitlines():
                 if "=" in line and not line.lstrip().startswith("#"):
                     k, v = line.split("=", 1)
-                    if v.strip():  # an empty value never hides a real one
-                        os.environ.setdefault(k.strip(), v.strip().strip('"'))
+                    k, v = k.strip(), v.strip().strip('"')
+                    if v and not os.environ.get(k):  # an empty value never hides a real one
+                        os.environ[k] = v
 
 
 def config():

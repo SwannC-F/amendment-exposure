@@ -856,7 +856,10 @@ class Handler(SimpleHTTPRequestHandler):
         q = lambda k, d="": (qs.get(k) or [d])[0]
         if u.path == "/api/health":
             cfg = config()
-            return self.json(200, {"ok": True, "model": cfg["model"], "llm_key": bool(cfg["key"])})
+            return self.json(200, {"ok": True, "model": cfg["model"], "llm_key": bool(cfg["key"]),
+                                   "env_files": {p: os.path.exists(p) for p in (".env", "/etc/secrets/.env")},
+                                   "env_var_names": sorted(k for k in os.environ
+                                                           if k.startswith(("LLM_", "FEATHERLESS_", "PISTE_")))})
         if u.path == "/api/live/health":
             cfg = config()
             return self.json(200, {"llm_configured": bool(cfg["key"]), "mock": cfg["mock"],
