@@ -1,0 +1,20 @@
+[
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "142",
+    "title": "Proposition de loi : Moderniser et rééquilibrer le fonctionnement du titre-restaurant",
+    "path": "data/2026-2027/142",
+    "generated_at": null,
+    "n_measures": 13
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "168",
+    "title": "Proposition de loi : Reconnaître une présomption de légitime défense pour les forces de l'ordre",
+    "path": "data/2026-2027/168",
+    "generated_at": null,
+    "n_measures": 12
+  }
+]
