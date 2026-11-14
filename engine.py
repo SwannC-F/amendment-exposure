@@ -147,6 +147,7 @@ def run(session, texte):
     chiffrage = load(d, "chiffrage.json", required=False) or {}
     history = load(d, "history.json", required=False)
     amendments = load(d, "amendments.json", required=False)
+    hemicycle = (load(d, "hemicycle.json", required=False) or {}).get("measures", {})
 
     sig_by_key, sig_by_num = index(signals, "key"), index(signals, "number")
     exp_by_key = index(exposure, "key")
@@ -181,6 +182,8 @@ def run(session, texte):
         ch = engine_chiffrage(chiffrage.get(m["key"]))
         if ch:
             entry["chiffrage"] = ch
+        if m["key"] in hemicycle:
+            entry["hemicycle"] = hemicycle[m["key"]]
         out.append(entry)
     out.sort(key=lambda m: (-m["n_groups"], -len(m["majority_groups"]), -(m["companies"] or 0)))
 

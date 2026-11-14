@@ -29,9 +29,27 @@
   {
     "chamber": "senat",
     "session": "2026-2027",
+    "number": "62",
+    "title": "Proposition de loi : Reconnaître une politique nationale d'adaptation au changement climatique",
+    "path": "data/2026-2027/62",
+    "generated_at": null,
+    "n_measures": 0
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
     "number": "68",
     "title": "Proposition de loi : Garantir la protection des victimes de violences sexistes et sexuelles",
     "path": "data/2026-2027/68",
+    "generated_at": null,
+    "n_measures": 0
+  },
+  {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "8",
+    "title": "Proposition de loi : Maîtrise d'ouvrage pour les communes rurales",
+    "path": "data/2026-2027/8",
     "generated_at": null,
     "n_measures": 0
   },
@@ -52,5 +70,14 @@
     "path": "data/an/17/2864",
     "generated_at": null,
     "n_measures": 39
+  },
+  {
+    "chamber": "an",
+    "session": "17",
+    "number": "3210",
+    "title": "Projet de loi projet de loi de finances pour 2027",
+    "path": "data/an/17/3210",
+    "generated_at": null,
+    "n_measures": 2
   }
 ]

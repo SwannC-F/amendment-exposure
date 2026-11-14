@@ -1,0 +1,80 @@
+{
+  "relever-plafond-micro-foncier": {
+    "key": "relever-plafond-micro-foncier",
+    "theme": "Relèver le plafond du micro-foncier",
+    "mechanism": "La mesure relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus de propriétés non bâties, permettant à davantage de propriétaires fonciers de bénéficier du régime simplifié. L'État compense la perte de recettes par une taxe additionnelle sur les tabacs.",
+    "winners": [
+      {
+        "naf": "68.20A",
+        "role": "menages",
+        "label": "Propriétaires fonciers percevant des revenus de location de terres nues"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "État (perte de recettes fiscales compensée par une taxe sur les tabacs)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'assiette (montant total des revenus fonciers de propriétés non bâties concernés par le relèvement du plafond de 15 000 à 25 000 €) n'est pas chiffrée dans les amendements. L'écart fiscal entre le régime micro-foncier et le régime réel d'imposition n'est pas non plus chiffré, empêchant de quantifier le transfert par euro de revenu concerné.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "supprimer-gel-apl-prime-activite": {
+    "key": "supprimer-gel-apl-prime-activite",
+    "theme": "Supprimer le gel des APL et prime d'activité",
+    "mechanism": "Le PLF prévoit de geler la revalorisation des APL et de la prime d'activité en 2027, soit une économie de 101 millions d'euros pour l'État. La mesure supprime ce gel : l'État reverse ces 101 millions aux bénéficiaires.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Ménages bénéficiaires des APL (5,8 millions) et de la prime d'activité (4,5 millions)"
+      },
+      {
+        "naf": "68.20A",
+        "role": null,
+        "label": "Organismes de logement social"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "État"
+      }
+    ],
+    "base": {
+      "name": "Économie budgétaire du gel des APL et de la prime d'activité en 2027",
+      "low": 101000000.0,
+      "high": 101000000.0,
+      "unit": "€/an",
+      "quote": "générant une économie budgétaire de 101 millions d'euros",
+      "amendment": "CE158"
+    },
+    "delta": {
+      "name": "Part du flux restaurée par la suppression du gel",
+      "low": 1.0,
+      "high": 1.0,
+      "unit": "part",
+      "quote": "Supprimer cet article. | Le projet de loi de finances prévoit de ne pas revaloriser les paramètres de calcul des aides au logement en 2027",
+      "amendment": "CE158"
+    },
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": {
+      "low": 101000000,
+      "high": 101000000
+    },
+    "not_computable": null,
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  }
+}

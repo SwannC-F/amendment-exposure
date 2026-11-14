@@ -1,0 +1,61 @@
+[
+  {
+    "number": "CE152",
+    "criteria_found": true,
+    "effect": "Relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus issus de propriétés non bâties, simplifiant leurs obligations déclaratives.",
+    "who": "Propriétaires fonciers (particuliers) percevant des revenus de location de terres nues, agricoles ou forestières",
+    "sectors": [
+      {
+        "naf": "68.20A",
+        "label": "Location de biens immobiliers"
+      }
+    ],
+    "roles": [
+      "menages",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Pour les revenus bruts annuels provenant exclusivement de propriétés non bâties mentionnées au 2° de l'article 14, la limite mentionnée au premier alinéa est portée à 25 000 €.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "CE158",
+    "criteria_found": true,
+    "effect": "Maintient la revalorisation des APL et de la prime d'activité sur l'inflation en 2027, en supprimant le gel prévu, ce qui préserve le pouvoir d'achat des bénéficiaires",
+    "who": "Ménages modestes bénéficiaires des APL (5,8 millions) et de la prime d'activité (4,5 millions), organismes de logement social",
+    "sectors": [
+      {
+        "naf": "68.20A",
+        "label": "Location de logements"
+      }
+    ],
+    "roles": [
+      "menages",
+      "etat",
+      "autre:organismes HLM"
+    ],
+    "regions": [],
+    "quote": "Il risquerait d'accroître les difficultés de paiement des loyers et des charges, au détriment tant des locataires que de l'équilibre économique des organismes de logement social par exemple.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "CE307",
+    "criteria_found": true,
+    "effect": "Supprime le gel des paramètres des aides personnelles au logement et de la prime d'activité prévu pour 2027, maintenant leur revalorisation automatique",
+    "who": "Ménages modestes bénéficiaires des aides au logement (locataires, jeunes, retraités) et de la prime d'activité (travailleurs à bas revenus)",
+    "sectors": [],
+    "roles": [
+      "menages",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Cet amendement vise à supprimer l'article 74, qui prévoit pour 2027 le gel des paramètres de dépenses de logement des aides personnelles au logement ainsi que celui de la prime d'activité.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

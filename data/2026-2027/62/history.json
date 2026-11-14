@@ -1,0 +1,59 @@
+{
+ "session": "2026-2027",
+ "text": "62",
+ "title": "Proposition de loi : Reconnaître une politique nationale d'adaptation au changement climatique",
+ "dossier": "https://www.senat.fr/dossier-legislatif/ppl25-530.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "adaptation au changement climatique",
+  "politique nationale d'adaptation",
+  "adaptation climatique",
+  "réchauffement climatique",
+  "résilience climatique",
+  "stratégie d'adaptation",
+  "plan national d'adaptation",
+  "PNACC"
+ ],
+ "articles": {},
+ "laws": {},
+ "senat_texts_scanned": [
+  {
+   "session": "2025-2026",
+   "number": "530",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2025-2026/530/jeu_complet_commission_2025-2026_530.csv",
+   "rows": 16,
+   "relevant": 15
+  }
+ ],
+ "stats": {
+  "articles": 0,
+  "laws": 0,
+  "senat_texts": 1,
+  "past_relevant": 15,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 212,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {},
+ "refs": {}
+}

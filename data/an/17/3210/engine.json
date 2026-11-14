@@ -1,0 +1,254 @@
+{
+  "text": {
+    "session": "an/17",
+    "number": "3210",
+    "title": "Projet de loi projet de loi de finances pour 2027",
+    "chamber": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?examen=EXANR5L17PO419610B3210P2D1",
+    "examen": "EXANR5L17PO419610B3210P2D1"
+  },
+  "majority": [],
+  "measures": [
+    {
+      "key": "supprimer-gel-apl-prime-activite",
+      "theme": "Supprimer le gel des APL et prime d'activité",
+      "amendments": [
+        "CE158",
+        "CE307"
+      ],
+      "opposes": null,
+      "effects": [
+        "Maintient la revalorisation des APL et de la prime d'activité sur l'inflation en 2027, en supprimant le gel prévu, ce qui préserve le pouvoir d'achat des bénéficiaires",
+        "Supprime le gel des paramètres des aides personnelles au logement et de la prime d'activité prévu pour 2027, maintenant leur revalorisation automatique"
+      ],
+      "nafs": [
+        "68.20A"
+      ],
+      "roles": [
+        "autre:organismes HLM",
+        "etat",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "68.20A",
+          "label": "Location de logements"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:organismes HLM",
+          "label": "autre:organismes HLM"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "Gauche Démocrate et Républicaine",
+        "Socialistes et apparentés"
+      ],
+      "majority_groups": [],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Il risquerait d'accroître les difficultés de paiement des loyers et des charges, au détriment tant des locataires que de l'équilibre économique des organismes de logement social par exemple.",
+      "history": {
+        "theme": "Supprimer le gel des APL et prime d'activité",
+        "amendments": [
+          "CE158",
+          "CE307"
+        ],
+        "effects": [
+          "Maintient la revalorisation des APL et de la prime d'activité sur l'inflation en 2027, en supprimant le gel prévu, ce qui préserve le pouvoir d'achat des bénéficiaires",
+          "Supprime le gel des paramètres des aides personnelles au logement et de la prime d'activité prévu pour 2027, maintenant leur revalorisation automatique"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FEDERATION DES ACTEURS DE LA SOLIDARITE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:40VEDAUH"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+            "hatvp_id": "308401090",
+            "category": "Association",
+            "consultancy": false,
+            "fiches": [
+              "40VEDAUH"
+            ],
+            "years": [
+              2019
+            ]
+          }
+        ],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": [
+          {
+            "org": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+            "hatvp_id": "308401090",
+            "side": "pour",
+            "quote": "demandé une revalorisation immédiate du RSA (ainsi que le dégel des allocations logement et prestations familiales)",
+            "fiche": "40VEDAUH",
+            "year": 2019,
+            "on_behalf_of": [
+              "FEDERATION DES ACTEURS DE LA SOLIDARITE (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
+      },
+      "chiffrage": {
+        "mechanism": "Le PLF prévoit de geler la revalorisation des APL et de la prime d'activité en 2027, soit une économie de 101 millions d'euros pour l'État. La mesure supprime ce gel : l'État reverse ces 101 millions aux bénéficiaires.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Ménages bénéficiaires des APL (5,8 millions) et de la prime d'activité (4,5 millions)"
+          },
+          {
+            "naf": "68.20A",
+            "role": null,
+            "label": "Organismes de logement social"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "État"
+          }
+        ],
+        "total_eur_per_year": {
+          "low": 101000000,
+          "high": 101000000
+        },
+        "rates": [],
+        "parameters": [
+          {
+            "name": "Économie budgétaire du gel des APL et de la prime d'activité en 2027",
+            "low": 101000000.0,
+            "high": 101000000.0,
+            "unit": "€/an",
+            "quote": "générant une économie budgétaire de 101 millions d'euros",
+            "amendment": "CE158",
+            "kind": "base"
+          },
+          {
+            "name": "Part du flux restaurée par la suppression du gel",
+            "low": 1.0,
+            "high": 1.0,
+            "unit": "part",
+            "quote": "Supprimer cet article. | Le projet de loi de finances prévoit de ne pas revaloriser les paramètres de calcul des aides au logement en 2027",
+            "amendment": "CE158",
+            "kind": "delta"
+          }
+        ],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": null
+      }
+    },
+    {
+      "key": "relever-plafond-micro-foncier",
+      "theme": "Relèver le plafond du micro-foncier",
+      "amendments": [
+        "CE152"
+      ],
+      "opposes": null,
+      "effects": [
+        "Relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus issus de propriétés non bâties, simplifiant leurs obligations déclaratives."
+      ],
+      "nafs": [
+        "68.20A"
+      ],
+      "roles": [
+        "etat",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "68.20A",
+          "label": "Location de biens immobiliers"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "majority_groups": [],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "approx": false,
+      "not_counted": [],
+      "quote": "Pour les revenus bruts annuels provenant exclusivement de propriétés non bâties mentionnées au 2° de l'article 14, la limite mentionnée au premier alinéa est portée à 25 000 €.",
+      "history": {
+        "theme": "Relèver le plafond du micro-foncier",
+        "amendments": [
+          "CE152"
+        ],
+        "effects": [
+          "Relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus issus de propriétés non bâties, simplifiant leurs obligations déclaratives."
+        ],
+        "opposes": null,
+        "articles": [
+          "article 32 du code général des impôts"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus de propriétés non bâties, permettant à davantage de propriétaires fonciers de bénéficier du régime simplifié. L'État compense la perte de recettes par une taxe additionnelle sur les tabacs.",
+        "winners": [
+          {
+            "naf": "68.20A",
+            "role": "menages",
+            "label": "Propriétaires fonciers percevant des revenus de location de terres nues"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "État (perte de recettes fiscales compensée par une taxe sur les tabacs)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'assiette (montant total des revenus fonciers de propriétés non bâties concernés par le relèvement du plafond de 15 000 à 25 000 €) n'est pas chiffrée dans les amendements. L'écart fiscal entre le régime micro-foncier et le régime réel d'imposition n'est pas non plus chiffré, empêchant de quantifier le transfert par euro de revenu concerné."
+      }
+    }
+  ]
+}

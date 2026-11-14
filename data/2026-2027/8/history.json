@@ -1,0 +1,74 @@
+{
+ "session": "2026-2027",
+ "text": "8",
+ "title": "Proposition de loi : Maîtrise d'ouvrage pour les communes rurales",
+ "dossier": "https://www.senat.fr/dossier-legislatif/ppl23-004.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "maîtrise d'ouvrage",
+  "maître d'ouvrage",
+  "assistance à maîtrise d'ouvrage",
+  "commune rurale",
+  "maître d'ouvrage public"
+ ],
+ "articles": {},
+ "laws": {},
+ "senat_texts_scanned": [
+  {
+   "session": "2024-2025",
+   "number": "422",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2024-2025/422/jeu_complet_commission_2024-2025_422.csv",
+   "rows": 1,
+   "relevant": 1
+  },
+  {
+   "session": "2023-2024",
+   "number": "4",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2023-2024/4/jeu_complet_commission_2023-2024_4.csv",
+   "rows": 2,
+   "relevant": 2
+  },
+  {
+   "session": "2023-2024",
+   "number": "325",
+   "stage": "seance",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/2023-2024/325/jeu_complet_2023-2024_325.csv",
+   "rows": 3,
+   "relevant": 2
+  }
+ ],
+ "stats": {
+  "articles": 0,
+  "laws": 0,
+  "senat_texts": 3,
+  "past_relevant": 5,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 60,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {},
+ "refs": {}
+}

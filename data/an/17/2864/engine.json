@@ -182,6 +182,85 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est un changement de standard probatoire (juridique et procédural) sans flux monétaire identifiable. Aucune assiette en euros ni aucun écart chiffré ne figure dans les amendements."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000093",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "93",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "93",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000093",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "97",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000097",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "2",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000002",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "9",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000009",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "45",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000045",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "6",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000006",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "55",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000055",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "81",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000081",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -291,6 +370,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. Il s'agit d'une modification procédurale sur la rétroactivité d'une présomption, sans paramètre chiffré dans les textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000008",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "8",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "8",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000008",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "5",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000005",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -405,6 +515,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent un assouplissement procédural des moyens de preuve, sans chiffrer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart en euros ne figure dans les textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000004",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "4",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "4",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000004",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "48",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000048",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -565,6 +706,53 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements sont de nature procédurale et ne contiennent aucun paramètre monétaire chiffré. Aucune assiette ni aucun écart quantifiable ne peut être extrait des textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000090",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "90",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "90",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000090",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "79",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000079",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "96",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000096",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "80",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000080",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -674,6 +862,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant ou l'assiette de la rémunération due par les fournisseurs d'IA, ni un taux ou pourcentage applicable. Il se contente d'instaurer le principe de la gestion collective obligatoire sans définir les paramètres financiers du transfert."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000084",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "84",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "84",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000084",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -803,6 +1014,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le dispositif crée une faculté de suspension judiciaire sans fixer de flux monétaire, de taux ou de part de chiffre d'affaires. Aucune assiette ni aucun écart chiffré ne figure dans l'amendement."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000089",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "89",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "89",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000089",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -912,6 +1146,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette du flux concerné, l'écart imposé par la mesure ou la part du chiffre d'affaires des secteurs affectés."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000091",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "91",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "91",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000091",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1026,6 +1283,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni montant d'assiette, ni taux ni part de chiffre d'affaires. Le coût ou l'avantage financier de la présomption exclue n'est pas quantifié dans l'amendement."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000015",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "15",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "15",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000015",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1170,6 +1450,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun paramètre chiffré : ni assiette monétaire, ni taux, ni coût de consultation du registre. Les modalités financières sont renvoyées à un décret."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000029",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "29",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "29",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000029",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1339,6 +1642,61 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Ces amendements imposent uniquement la production de rapports gouvernementaux. Aucun flux monétaire, aucune assiette ni aucun écart chiffré ne sont présents dans les textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000001",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5722,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.7245,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "1",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "1",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000001",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "53",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000053",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "21",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000021",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "50",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000050",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "51",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000051",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1447,6 +1805,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un flux monétaire, un taux ou une part de chiffre d'affaires. La mesure modifie uniquement les modalités de preuve admises devant le juge ; aucun transfert d'argent n'est directement institué."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000076",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "76",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "76",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000076",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "95",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000095",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1565,6 +1954,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni montant d'assiette, ni taux, ni part de chiffre d'affaires. La mesure est de nature probatoire et juridique, sans paramètre monétaire quantifié dans les textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000010",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "10",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "10",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000010",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "37",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000037",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1702,6 +2122,45 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent sur une exception à une présomption légale et ne contiennent aucun chiffre permettant de quantifier un flux monétaire (assiette), un taux ou un écart. Aucune assiette ni aucun delta ne peut être extrait des textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000065",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "65",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "65",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000065",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "92",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000092",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "26",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000026",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1815,6 +2274,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements modifient une définition juridique sans introduire de chiffre. Aucune assiette monétaire, aucun écart quantifié et aucune part sectorielle ne figurent dans les textes. Le transfert financier dépend d'obligations dont le montant n'est pas spécifié ici."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000007",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "7",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "7",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000007",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "40",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000040",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -1962,6 +2452,93 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert financier. Aucune assiette en euros, aucun écart exprimé en proportion et aucune part de chiffre d'affaires ne figurent dans les textes. La mesure est un changement de champ d'application qualitatif."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000013",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "13",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "13",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000013",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "63",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000063",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "94",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000094",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "19",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000019",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "32",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000032",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "64",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000064",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "33",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000033",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "23",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000023",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "31",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000031",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2114,6 +2691,61 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale et juridique : elle encadre la divulgation d'informations en justice. Aucun flux monétaire n'est identifié dans les amendements, donc aucune assiette ni écart chiffré ne peut être extrait."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000071",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "71",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "71",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000071",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "68",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000068",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "36",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000036",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "72",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000072",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "99",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000099",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2217,6 +2849,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire, pourcentage ou quantité permettant d'estimer l'assiette du flux financier concerné, l'écart induit par la mesure, ou la part du chiffre d'affaires des secteurs concernés. La mesure modifie uniquement le champ d'application d'une présomption légale sans préciser de montant."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000025",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "25",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "25",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000025",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "69",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000069",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2327,6 +2990,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre monétaire permettant d'estimer l'assiette (valeur des œuvres concernées ou montant des charges procédurales) ni aucun taux ou pourcentage pour l'écart. Le seul élément chiffré est le délai de trois mois, qui ne permet pas de calculer un transfert annuel."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000014",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "14",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "14",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000014",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "47",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000047",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2436,6 +3130,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre : ni assiette monétaire, ni taux ni part de chiffre d'affaires. La mesure est un transfert de responsabilité juridique, pas un transfert monétaire chiffré."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000100",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "100",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "100",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000100",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2535,6 +3252,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier un transfert monétaire. Il s'agit d'une modification procédurale (modulation des exigences probatoires) sans assiette financière ni écart chiffré identifiable dans l'amendement."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000074",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "74",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "74",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000074",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2638,6 +3378,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements portent uniquement sur des principes procéduraux (proportionnalité et modération des mesures d'instruction). Aucun flux monétaire, aucun montant, aucun taux ni aucune part de chiffre d'affaires ne figure dans les textes, ce qui rend le calcul d'un transfert impossible."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000067",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "67",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "67",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000067",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "73",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000073",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2732,6 +3503,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est une qualification juridique sans aucun paramètre chiffré : aucun flux monétaire annuel (assiette) ni aucune variation tarifaire ou proportionnelle (écart) ne figure dans le texte. Le transfert financier potentiel (dommages-intérêts ou redevances) dépendrait de contentieux futurs non quantifiés."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000024",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "24",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "24",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000024",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2821,6 +3615,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni flux monétaire (assiette), ni variation quantitative (écart), ni part de chiffre d'affaires. Il s'agit d'une modification purement procédurale et qualitative du champ d'application d'une présomption juridique, sans transfert monétaire identifiable."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000034",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5656,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.74,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "34",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "34",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000034",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -2924,6 +3741,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre : ni assiette monétaire, ni écart quantifié, ni part d'un secteur. La mesure est de nature procédurale et juridique, sans flux financier identifiable dans le texte."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000035",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5656,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.74,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "35",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "35",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000035",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "39",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000039",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3037,6 +3885,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Aucun flux monétaire chiffré n'apparaît dans les amendements. La mesure modifie les conditions juridiques de déclenchement d'une présomption, sans quantifier de montant, de taux ou de part de chiffre d'affaires. L'assiette et l'écart ne sont pas identifiables dans les textes."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000027",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "27",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "27",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000027",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "11",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000011",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3149,6 +4028,45 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure modifie uniquement les conditions juridiques de preuve en matière de présomption de contrefaçon par l'IA générative. Aucun flux monétaire, assiette financière ou taux chiffré n'est mentionné dans les amendements."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000042",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5656,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.74,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "42",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "42",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000042",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "46",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000046",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "56",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000056",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3233,6 +4151,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni assiette monétaire, ni taux ou écart quantifié, ni part de chiffre d'affaires. La mesure est de nature juridique (adaptation d'une présomption) sans paramètre chiffré permettant de calculer un transfert."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000017",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "17",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "17",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000017",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3316,6 +4257,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette (valeur des œuvres du domaine public utilisées par les fournisseurs d'IA), l'écart (taux de la présomption ou rémunération évitée) ou la part du chiffre d'affaires concernée."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000022",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "22",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "22",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000022",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3408,6 +4372,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier un transfert monétaire. Aucune assiette (montant des dommages, amendes, ou valeur concernée) ni aucun écart chiffré ne figure dans les textes. Le dispositif principal auquel ces amendements s'appliquent n'est pas fourni."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000109",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "109",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "109",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000109",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "44",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000044",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3499,6 +4494,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire, une assiette ou un écart. La mesure est de nature réglementaire (autorisation de conservation de données) et ne décrit pas de transfert financier chiffré."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000030",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "30",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "30",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000030",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3578,6 +4596,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements ne contiennent aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. La mesure est de nature réglementaire et ne provoque pas de transfert monétaire directement mesurable à partir des textes fournis."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000082",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "82",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "82",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000082",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3657,6 +4698,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre : ni le montant ou la valeur des contenus protégés concernés (assiette), ni le taux de compensation ou de redevance associé à la présomption (écart), ni la part du chiffre d'affaires des éditeurs d'IA open source concernée par ce flux. Aucun paramètre chiffré ne permet de calculer le transfert."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000016",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "16",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "16",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000016",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3741,6 +4805,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement est de nature procédurale : il impose une exigence de motivation au demandeur sans créer de flux monétaire ni de taux, prix ou part chiffrés. Aucune assiette ni aucun écart en euros ne sont identifiables dans le texte."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000066",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "66",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "66",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000066",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3818,6 +4905,37 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Les amendements décrivent uniquement un report de six mois de l'entrée en vigueur. Aucun flux financier (assiette) ni aucune variation tarifaire ou fiscale (écart) n'est mentionné, ce qui rend le calcul d'un transfert monétaire impossible."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000003",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5722,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.7245,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "3",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "3",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000003",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          },
+          {
+            "type": "amendement",
+            "numero": "18",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000018",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -3939,6 +5057,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni le montant annuel des dommages et intérêts versés au titre de la contrefaçon (assiette), ni la part de ces sommes qui excède le préjudice démontré (écart), ni la part du chiffre d'affaires des secteurs concernés passant par ce flux."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000078",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "78",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "78",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000078",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -4042,6 +5183,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier une assiette, un écart ou une part de chiffre d'affaires. Il s'agit d'une exclusion de champ sans paramètre monétaire."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000088",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "88",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "88",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000088",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -4148,6 +5312,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier l'assiette ou l'écart du transfert."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000038",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5656,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.74,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "38",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "38",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000038",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -4242,6 +5429,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle instaure un délai de mise en demeure préalable de trois mois, sans transfert financier identifiable ni paramètre chiffré monétaire."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000075",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.5711,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.6754,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "75",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "75",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000075",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     },
     {
@@ -4323,6 +5533,29 @@
         "dropped": [],
         "mirror_of": null,
         "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte ne contient aucun chiffre permettant de quantifier l'assiette, l'écart ou la part d'un secteur. Aucun montant, taux ou proportion n'est mentionné dans l'amendement."
+      },
+      "hemicycle": {
+        "vote_prediction": {
+          "amendement": "AMANR5L17PO838901BTC2864P0D1N000028",
+          "modele": "v1-mirt2d-tfidf-live-2026-06",
+          "calcule": true,
+          "moyenne_probabilites_pour": 0.6236,
+          "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+          "confiance": 0.806,
+          "predit_le": "2026-11-14T07:27:51.683126+00:00",
+          "numero": "28",
+          "source": "Hémicycle · Orcet"
+        },
+        "hemicycle_refs": [
+          {
+            "type": "amendement",
+            "numero": "28",
+            "id": "AMANR5L17PO838901BTC2864P0D1N000028",
+            "sort": null,
+            "date_sort": null,
+            "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+          }
+        ]
       }
     }
   ]

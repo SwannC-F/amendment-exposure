@@ -1,0 +1,147 @@
+{
+ "session": "an/17",
+ "text": "3210",
+ "title": "Projet de loi projet de loi de finances pour 2027",
+ "dossier": null,
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "micro-foncier",
+  "revenus fonciers",
+  "aide personnalisée au logement",
+  "prime d'activité",
+  "allocation logement",
+  "gel des APL"
+ ],
+ "articles": {
+  "Code général des impôts|32": {
+   "code": "Code général des impôts",
+   "num": "32",
+   "label": "article 32 du code général des impôts",
+   "found": false
+  }
+ },
+ "laws": {
+  "JORFTEXT000000159832": {
+   "id": "JORFTEXT000000159832",
+   "title": "LOI n° 89-1016 du 31 décembre 1989 autorisant l'approbation d'un avenant modifiant la convention entre la République française et la République fédérale d'Allemagne en vue d'éviter les doubles impositions et d'établir des règles d'assistance administrative et juridique réciproque en matière d'impôts sur le revenu et sur la fortune, ainsi qu'en matière de contribution des patentes et de contributions foncières du 21 juillet 1959, modifiée par l'avenant du 9 juin 1969 (1)",
+   "nor": "MAEX8900152L",
+   "date": "1989-12-31",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000159832",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [],
+ "stats": {
+  "articles": 1,
+  "laws": 1,
+  "senat_texts": 0,
+  "past_relevant": 0,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 24,
+  "hatvp_sides": 1,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {
+  "relever-plafond-micro-foncier": {
+   "theme": "Relèver le plafond du micro-foncier",
+   "amendments": [
+    "CE152"
+   ],
+   "effects": [
+    "Relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pour les seuls revenus issus de propriétés non bâties, simplifiant leurs obligations déclaratives."
+   ],
+   "opposes": null,
+   "articles": [
+    "article 32 du code général des impôts"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "supprimer-gel-apl-prime-activite": {
+   "theme": "Supprimer le gel des APL et prime d'activité",
+   "amendments": [
+    "CE158",
+    "CE307"
+   ],
+   "effects": [
+    "Maintient la revalorisation des APL et de la prime d'activité sur l'inflation en 2027, en supprimant le gel prévu, ce qui préserve le pouvoir d'achat des bénéficiaires",
+    "Supprime le gel des paramètres des aides personnelles au logement et de la prime d'activité prévu pour 2027, maintenant leur revalorisation automatique"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FEDERATION DES ACTEURS DE LA SOLIDARITE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:40VEDAUH"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+     "hatvp_id": "308401090",
+     "category": "Association",
+     "consultancy": false,
+     "fiches": [
+      "40VEDAUH"
+     ],
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "FEDERATION DES ACTEURS DE LA SOLIDARITE",
+     "hatvp_id": "308401090",
+     "side": "pour",
+     "quote": "demandé une revalorisation immédiate du RSA (ainsi que le dégel des allocations logement et prestations familiales)",
+     "fiche": "40VEDAUH",
+     "year": 2019,
+     "on_behalf_of": [
+      "FEDERATION DES ACTEURS DE LA SOLIDARITE (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  }
+ },
+ "refs": {
+  "hatvp:40VEDAUH": {
+   "source": "HATVP",
+   "label": "FEDERATION DES ACTEURS DE LA SOLIDARITE — fiche d'activité 40VEDAUH (2019)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=308401090"
+  }
+ }
+}

@@ -1,0 +1,57 @@
+{
+  "majority": [],
+  "measures": [
+    {
+      "key": "relever-plafond-micro-foncier",
+      "theme": "Relèver le plafond du micro-foncier",
+      "amendments": [
+        "CE152"
+      ],
+      "opposes": null,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "supprimer-gel-apl-prime-activite",
+      "theme": "Supprimer le gel des APL et prime d'activité",
+      "amendments": [
+        "CE158",
+        "CE307"
+      ],
+      "opposes": null,
+      "groups": [
+        "Gauche Démocrate et Républicaine",
+        "Socialistes et apparentés"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "CE152",
+      "measure": "relever-plafond-micro-foncier",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "CE158",
+      "measure": "supprimer-gel-apl-prime-activite",
+      "author_group": "Socialistes et apparentés",
+      "same_measure_amendments": [
+        "CE307"
+      ]
+    },
+    {
+      "number": "CE307",
+      "measure": "supprimer-gel-apl-prime-activite",
+      "author_group": "Gauche Démocrate et Républicaine",
+      "same_measure_amendments": [
+        "CE158"
+      ]
+    }
+  ]
+}

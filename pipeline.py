@@ -2,13 +2,14 @@
 
 Usage: python3 pipeline.py <session> <texte> [--from step] [--until step]        Sénat, data/<session>/<texte>/
        python3 pipeline.py an <législature> <texte> [--from step] [--until step]  Assemblée, data/an/<lég>/<texte>/
-Steps, in order: fetch extract group signals exposure chiffrage history engine.
+Steps, in order: fetch extract group signals exposure chiffrage history hemicycle engine.
 Each step is a script with the same CLI (python3 <script> <session> <texte>) that reads and
 writes data/<session>/<texte>/; for the Assemblée, session is "an/<législature>" (so the same
 data/an/<lég>/<texte>/ folder), except fetch (fetch_amendments_an.py <lég> <texte>). History is
 built for the Sénat; at the Assemblée a failure there is a warning, not a stop. A step whose script is missing is skipped with a warning.
 LLM answers and company counts are cached, so a rerun only pays for what changed.
 """
+import os
 import subprocess
 import sys
 import time
@@ -16,7 +17,7 @@ from pathlib import Path
 
 STEPS = [("fetch", "fetch_amendments.py"), ("extract", "extract.py"), ("group", "group.py"),
          ("signals", "signals.py"), ("exposure", "exposure.py"), ("chiffrage", "chiffrage.py"),
-         ("history", "history.py"), ("engine", "engine.py")]
+         ("history", "history.py"), ("hemicycle", "hemicycle_step.py"), ("engine", "engine.py")]
 
 
 def main(args):
@@ -42,6 +43,11 @@ def main(args):
             print(f"\n== {name} : {script} absent, étape sautée")
             skipped.append(name)
             continue
+        if name == "hemicycle" and not os.environ.get("HEMICYCLE_API_KEY") and \
+                "HEMICYCLE_API_KEY=" not in (Path(".env").read_text() if Path(".env").exists() else ""):
+            print("\n== hemicycle : attention, pas de HEMICYCLE_API_KEY, étape sautée")
+            skipped.append(name)
+            continue
         if an and name == "fetch":
             script, cli = "fetch_amendments_an.py", [leg, n]
         else:
@@ -49,8 +55,8 @@ def main(args):
         print(f"\n== {name} ({script} {' '.join(cli)})", flush=True)
         t = time.time()
         r = subprocess.run([sys.executable, script, *cli])
-        if r.returncode and an and name == "history":
-            print(f"   attention : history a échoué à l'Assemblée (code {r.returncode}), on continue sans")
+        if r.returncode and (name == "hemicycle" or (an and name == "history")):
+            print(f"   attention : {name} a échoué (code {r.returncode}), on continue sans")
             skipped.append(name)
             continue
         if r.returncode:

@@ -1,0 +1,19 @@
+[
+  {
+    "key": "relever-plafond-micro-foncier",
+    "theme": "Relèver le plafond du micro-foncier",
+    "amendments": [
+      "CE152"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-gel-apl-prime-activite",
+    "theme": "Supprimer le gel des APL et prime d'activité",
+    "amendments": [
+      "CE158",
+      "CE307"
+    ],
+    "opposes": null
+  }
+]

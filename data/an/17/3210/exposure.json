@@ -1,0 +1,107 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "68.20A": {
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false
+    }
+  },
+  "measures": [
+    {
+      "key": "relever-plafond-micro-foncier",
+      "theme": "Relèver le plafond du micro-foncier",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de biens immobiliers",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "etat",
+        "menages"
+      ],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "supprimer-gel-apl-prime-activite",
+      "theme": "Supprimer le gel des APL et prime d'activité",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:organismes HLM",
+        "etat",
+        "menages"
+      ],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false,
+      "not_counted": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "CE152",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de biens immobiliers",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "CE158",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "CE307",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    }
+  ]
+}

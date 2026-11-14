@@ -1,0 +1,1292 @@
+{
+  "source": "Hémicycle (api.hemicycle.ai/v1)",
+  "chamber": "an",
+  "texte_hemicycle": "PIONANR5L17BTC2864",
+  "measures_with_prediction": 39,
+  "hatvp_orgs_matched": 0,
+  "credits_spent": 978,
+  "credits_left": 9234,
+  "budget": 3000,
+  "calls": [
+    "GET /credits -> 200",
+    "GET /amendements/AMANR5L17PO838901BTC2864P0D1N000024 -> 200",
+    "GET /amendements -> 200",
+    "GET /amendements -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 429",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "POST /orcet/predictions -> 200",
+    "GET /credits -> 200"
+  ],
+  "measures": {
+    "memorisation-comme-reproduction": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000024",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "24",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "24",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000024",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-recours-exception-tdm": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000025",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "25",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "25",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000025",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "69",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000069",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "durcir-seuil-preuve-presomption": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000093",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "93",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "93",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000093",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "97",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000097",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "2",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000002",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "9",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000009",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "45",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000045",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "6",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000006",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "55",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000055",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "81",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000081",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-qualite-agir": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000090",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "90",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "90",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000090",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "79",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000079",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "96",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000096",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "80",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000080",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-litiges-droit-auteur": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000034",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5656,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.74,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "34",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "34",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000034",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-oeuvres-culturelles-presse": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000091",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "91",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "91",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000091",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exiger-identification-oeuvre": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000035",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5656,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.74,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "35",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "35",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000035",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "39",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000039",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "definir-utilisation-reproduction": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000007",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "7",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "7",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000007",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "40",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000040",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-champ-fournisseurs-modeles": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000013",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "13",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "13",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000013",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "63",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000063",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "94",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000094",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "19",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000019",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "32",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000032",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "64",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000064",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "33",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000033",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "23",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000023",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "31",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000031",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-ia-contenu-artistique": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000028",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "28",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "28",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000028",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "limiter-fournisseurs-ue": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000082",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "82",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "82",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000082",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "restreindre-presomption-entrainement": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000027",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "27",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "27",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000027",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "11",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000011",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-similarite-style-seul": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000042",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5656,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.74,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "42",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "42",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000042",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "46",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000046",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "56",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000056",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "assouplir-moyens-preuve": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000004",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "4",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "4",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000004",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "48",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000048",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-accessibilite-en-ligne-seul": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000010",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "10",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "10",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000010",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "37",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000037",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-ia-usage-professionnel": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000015",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "15",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "15",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000015",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-ia-open-source": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000016",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "16",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "16",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000016",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "adapter-presomption-transparence": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000017",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "17",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "17",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000017",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-domaine-public": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000022",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "22",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "22",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000022",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-oeuvres-sous-licence": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000065",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "65",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "65",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000065",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "92",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000092",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "26",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000026",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-hebergeurs-integrateurs": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000100",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "100",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "100",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000100",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "proteger-secret-affaires": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000071",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "71",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "71",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000071",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "68",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000068",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "36",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000036",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "72",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000072",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "99",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000099",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exiger-elements-factuels-demandeur": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000066",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "66",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "66",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000066",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "permettre-attestation-tiers": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000076",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "76",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "76",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000076",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "95",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000095",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "plafonder-dommages-interets": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000078",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "78",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "78",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000078",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "prendre-compte-conformite-ai-act": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000109",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "109",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "109",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000109",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "44",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000044",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "proportionnalite-mesures-instruction": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000067",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "67",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "67",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000067",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "73",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000073",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "assouplir-pme": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000074",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "74",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "74",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000074",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "mise-en-demeure-prealable": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000075",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "75",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "75",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000075",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "gestion-collective-obligatoire": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000084",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "84",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "84",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000084",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-retroactivite": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000008",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "8",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "8",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000008",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "5",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000005",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "differer-entree-vigueur": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000003",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5722,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.7245,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "3",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "3",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000003",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "18",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000018",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "exclure-recherche-enseignement-tdm": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000088",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "88",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "88",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000088",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "autoriser-conservation-copies-tdm": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000030",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "30",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "30",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000030",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "creer-registre-opt-out": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000029",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "29",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "29",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000029",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "etendre-obligations-tous-fournisseurs": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000038",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5656,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.74,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "38",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "38",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000038",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "permettre-suspension-procedure": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000089",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.6236,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.806,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "89",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "89",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000089",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "rapports-gouvernement": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000001",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5722,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.7245,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "1",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "1",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000001",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "53",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000053",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "21",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000021",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "50",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000050",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "51",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000051",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    },
+    "reporter-etude-impact": {
+      "vote_prediction": {
+        "amendement": "AMANR5L17PO838901BTC2864P0D1N000014",
+        "modele": "v1-mirt2d-tfidf-live-2026-06",
+        "calcule": true,
+        "moyenne_probabilites_pour": 0.5711,
+        "definition": "Moyenne des probabilités individuelles des députés de voter pour. Ce n'est pas la probabilité que l'amendement soit adopté.",
+        "confiance": 0.6754,
+        "predit_le": "2026-11-14T07:27:51.683126+00:00",
+        "numero": "14",
+        "source": "Hémicycle · Orcet"
+      },
+      "hemicycle_refs": [
+        {
+          "type": "amendement",
+          "numero": "14",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000014",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        },
+        {
+          "type": "amendement",
+          "numero": "47",
+          "id": "AMANR5L17PO838901BTC2864P0D1N000047",
+          "sort": null,
+          "date_sort": null,
+          "source": "Hémicycle · Assemblée nationale (Licence Ouverte 2.0)"
+        }
+      ]
+    }
+  }
+}
