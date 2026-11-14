@@ -42,7 +42,7 @@ os.chdir(ROOT)
 sys.path.insert(0, str(ROOT))
 
 import llm  # noqa: E402
-from fetch_amendments import SETTLED, URL as SENAT_CSV, clean, download, matricule, senator_groups  # noqa: E402
+from fetch_amendments import SENATORS_URL, SETTLED, URL as SENAT_CSV, clean, matricule  # noqa: E402
 from exposure import API as ENTREPRISES_API, BANDS, CAP, UA  # noqa: E402
 
 try:  # the pipeline's extraction prompt, once extract.py exists
@@ -140,22 +140,69 @@ def known_index(session, texte):
 # ---------- Sénat amendments (live) ----------
 
 _lock = threading.Lock()
-_cache = {}  # (session, texte) -> (time, rows)
+_cache = {}  # (session, texte) -> (time, rows, origin)
 _groups = {"t": 0, "map": {}}
+
+SENAT_CSV_URL = os.environ.get("SENAT_CSV_URL") or SENAT_CSV  # override to simulate a block
+SENATORS_CSV_URL = os.environ.get("SENATORS_URL") or SENATORS_URL
+BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
+OUT_TIMEOUT = float(os.environ.get("OUTBOUND_TIMEOUT", "10"))
+FALLBACK_TTL = 60   # after a failed live fetch, serve the repo copy without retrying for 60 s
+GROUPS_RETRY = 300
+
+
+def fetch_url(url, total=OUT_TIMEOUT, ua=BROWSER_UA, encoding="latin-1"):
+    """GET with a hard deadline (DNS, connect and read included), logged to stdout."""
+    box, t0 = {}, time.time()
+    host = urllib.parse.urlparse(url).netloc
+
+    def work():
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "*/*"})
+            with urllib.request.urlopen(req, timeout=total) as r:
+                chunks = []
+                while True:
+                    if time.time() - t0 > total:
+                        raise TimeoutError("lecture trop longue")
+                    c = r.read(65536)
+                    if not c:
+                        break
+                    chunks.append(c)
+                box["status"], box["data"] = r.status, b"".join(chunks)
+        except Exception as e:
+            box["error"] = e
+
+    th = threading.Thread(target=work, daemon=True)
+    th.start()
+    th.join(total + 0.5)
+    ms = int((time.time() - t0) * 1000)
+    if th.is_alive() or "error" in box:
+        err = box.get("error") or TimeoutError(f"pas de réponse en {total:.0f} s")
+        print(f"[out] GET {host} {urllib.parse.urlparse(url).path[:60]} ÉCHEC {type(err).__name__}: {err} ({ms} ms)", flush=True)
+        raise err
+    print(f"[out] GET {host} {urllib.parse.urlparse(url).path[:60]} {box['status']} {len(box['data'])} o ({ms} ms)", flush=True)
+    return box["data"].decode(encoding) if encoding else box["data"]
 
 
 def groups_map():
+    """Matricule -> group. Never blocks more than 5 s; retries at most every 5 min after a failure."""
     with _lock:
-        if time.time() - _groups["t"] > GROUPS_TTL:
-            try:
-                _groups["map"], _groups["t"] = senator_groups(), time.time()
-            except Exception:
-                pass
-        return _groups["map"]
+        if time.time() - _groups["t"] < (GROUPS_TTL if _groups["map"] else GROUPS_RETRY):
+            return _groups["map"]
+        _groups["t"] = time.time()  # claim the refresh so concurrent requests don't pile up
+    try:
+        lines = [l for l in fetch_url(SENATORS_CSV_URL, total=5).splitlines() if not l.startswith("%")]
+        m = {r["Matricule"].lower(): r["Groupe politique"] for r in csv.DictReader(lines) if r["État"] == "ACTIF"}
+        with _lock:
+            _groups["map"] = m
+    except Exception:
+        pass
+    return _groups["map"]
 
 
 def fetch_csv(session, texte):
-    lines = download(SENAT_CSV.format(s=session, n=texte)).splitlines()
+    lines = fetch_url(SENAT_CSV_URL.format(s=session, n=texte)).splitlines()
     if lines and lines[0].startswith("sep="):
         lines = lines[1:]
     rows = list(csv.reader(lines, delimiter="\t"))
@@ -163,31 +210,62 @@ def fetch_csv(session, texte):
     return [dict(zip(header, (c.strip() for c in r))) for r in rows[1:] if len(r) >= len(header) - 1]
 
 
-def live_rows(session, texte):
+def repo_amendments(session, texte):
+    """Committed copy: data/<s>/<t>/amendments.json (or the legacy file). (rows, mtime) or (None, None)."""
+    for p in (text_dir(session, texte) / "amendments.json", legacy(session, texte, "amendments")):
+        if p and p.exists():
+            try:
+                rows = json.loads(p.read_text())
+            except ValueError:
+                continue
+            out = [{"number": a.get("number", ""), "article": a.get("article", ""), "author": a.get("author", ""),
+                    "author_group": a.get("author_group", ""), "filed": a.get("filed", ""),
+                    "status": a.get("status", ""), "text": a.get("text", ""), "purpose": a.get("purpose", ""),
+                    "url": ("https:" + a["url"]) if (a.get("url") or "").startswith("//") else a.get("url", "")}
+                   for a in rows]
+            return out, p.stat().st_mtime
+    return None, None
+
+
+LIVE_SOURCE = "senat.fr (en direct)"
+REPO_SOURCE = "cache du dépôt (Sénat injoignable depuis l'hébergeur)"
+
+
+def live_rows(session, texte, with_origin=False):
+    """Amendments of a text: live from senat.fr (cache 60 s), else the committed copy."""
     with _lock:
         hit = _cache.get((session, texte))
-        if hit and time.time() - hit[0] < AMENDMENTS_TTL:
-            return hit[1], hit[0]
-    rows = fetch_csv(session, texte)
-    groups = groups_map()
-    out = []
-    for r in rows:
-        url = r.get("Url amendement", "")
-        out.append({
-            "number": r.get("Numéro", ""), "article": r.get("Subdivision", ""), "author": r.get("Auteur", ""),
-            "author_group": groups.get(matricule(r.get("Fiche Sénateur")), ""),
-            "filed": r.get("Date de dépôt", ""), "status": r.get("Sort", ""),
-            "text": clean(r.get("Dispositif", "")), "purpose": clean(r.get("Objet", "")),
-            "url": ("https:" + url) if url.startswith("//") else url,
-        })
-    now = time.time()
+        ttl = AMENDMENTS_TTL if hit and hit[2] == LIVE_SOURCE else FALLBACK_TTL
+        if hit and time.time() - hit[0] < ttl:
+            return (hit[1], hit[0], hit[2]) if with_origin else (hit[1], hit[0])
+    try:
+        rows = fetch_csv(session, texte)
+        groups = groups_map()
+        by_author = {a["author"]: a["author_group"] for a in (repo_amendments(session, texte)[0] or [])}
+        out = []
+        for r in rows:
+            url = r.get("Url amendement", "")
+            out.append({
+                "number": r.get("Numéro", ""), "article": r.get("Subdivision", ""), "author": r.get("Auteur", ""),
+                "author_group": groups.get(matricule(r.get("Fiche Sénateur")), "") or by_author.get(r.get("Auteur", ""), ""),
+                "filed": r.get("Date de dépôt", ""), "status": r.get("Sort", ""),
+                "text": clean(r.get("Dispositif", "")), "purpose": clean(r.get("Objet", "")),
+                "url": ("https:" + url) if url.startswith("//") else url,
+            })
+        fetched, origin = time.time(), LIVE_SOURCE
+    except Exception as e:
+        out, mtime = repo_amendments(session, texte)
+        if out is None:
+            raise RuntimeError(f"Sénat injoignable ({e}) et aucune copie dans le dépôt pour {session}/{texte}")
+        print(f"[fallback] {session}/{texte} : copie du dépôt ({len(out)} amendements)", flush=True)
+        fetched, origin = mtime, REPO_SOURCE
     with _lock:
-        _cache[(session, texte)] = (now, out)
-    return out, now
+        _cache[(session, texte)] = (time.time() if origin == REPO_SOURCE else fetched, out, origin)
+    return (out, fetched, origin) if with_origin else (out, fetched)
 
 
 def pending_of(rows):
-    return [a for a in rows if not any(k in a["status"].lower() for k in SETTLED)]
+    return [a for a in rows if not any(k in (a["status"] or "").lower() for k in SETTLED)]
 
 
 def num_key(number):
@@ -196,7 +274,7 @@ def num_key(number):
 
 
 def pending_amendments(session, texte):
-    rows, fetched = live_rows(session, texte)
+    rows, fetched, origin = live_rows(session, texte, with_origin=True)
     known = stored_criteria(session, texte)
     out = [{
         "number": a["number"], "article": a["article"], "author": a["author"],
@@ -204,9 +282,10 @@ def pending_amendments(session, texte):
         "purpose": a["purpose"][:400], "url": a["url"], "known": a["number"] in known,
     } for a in pending_of(rows)]
     out.sort(key=lambda a: (a["filed"], num_key(a["number"])), reverse=True)
-    return {"session": session, "text": texte,
+    live = origin == LIVE_SOURCE
+    return {"session": session, "text": texte, "live": live,
             "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%S", time.localtime(fetched)),
-            "source": SENAT_CSV.format(s=session, n=texte).replace("http://", "https://"),
+            "source": origin, "source_url": SENAT_CSV.format(s=session, n=texte),
             "total": len(rows), "pending": len(out), "new": sum(not a["known"] for a in out),
             "amendments": out}
 
@@ -392,20 +471,30 @@ def verify_quote(quote, amendment):
 _counts_live = {}
 
 
-def national_total(naf, band):
+COUNT_BUDGET = float(os.environ.get("COUNT_BUDGET", "15"))  # seconds of live counting per card
+
+
+def national_total(naf, band, deadline=None):
+    """Active companies for one NAF and headcount band, one national query (hard timeout)."""
     key = f"{naf}|{band}"
     if key not in _counts_live:
         q = urllib.parse.urlencode({"activite_principale": naf, "tranche_effectif_salarie": band,
                                     "etat_administratif": "A", "per_page": 1, "minimal": "true"})
-        req = urllib.request.Request(f"{ENTREPRISES_API}?{q}", headers={"User-Agent": UA})
-        for attempt in range(3):
+        for attempt in range(2):
+            left = (deadline - time.time()) if deadline else OUT_TIMEOUT
+            if left < 1:
+                return None
             try:
-                with urllib.request.urlopen(req, timeout=20) as r:
-                    _counts_live[key] = json.load(r)["total_results"]
-                time.sleep(0.15)
+                _counts_live[key] = json.loads(fetch_url(f"{ENTREPRISES_API}?{q}", total=min(OUT_TIMEOUT, left),
+                                                         ua=UA, encoding="utf-8"))["total_results"]
+                time.sleep(0.15)  # 7 requests/second limit
                 break
+            except urllib.error.HTTPError as e:
+                if e.code < 500:  # e.g. a NAF code that does not exist: retrying won't help
+                    return None
+                time.sleep(0.5)
             except Exception:
-                time.sleep(1 + attempt)
+                time.sleep(0.5)
         else:
             return None
     return _counts_live[key]
@@ -424,11 +513,11 @@ def bands_for(emin, emax):
     return out
 
 
-def naf_exposure(naf, bands, cached):
+def naf_exposure(naf, bands, cached, deadline=None):
     if all(f"{naf}|{b}" in cached for b in bands):
         source, get = "cache", lambda b: cached[f"{naf}|{b}"]
     else:
-        source, get = "live", lambda b: national_total(naf, b)
+        source, get = "live", lambda b: national_total(naf, b, deadline)
     companies = low = high = 0
     approx = source == "live"
     for band, (lo, hi) in bands.items():
@@ -535,8 +624,9 @@ def as_measure(session, texte, amendment, crit, model, elapsed_ms, cached, measu
     if found and nafs:
         cached_counts = read_json(ROOT / "data/raw/counts.json") or {}
         bands = bands_for(crit.get("employee_min"), crit.get("employee_max"))
+        deadline = time.time() + COUNT_BUDGET
         for naf in nafs[:MAX_NAFS]:
-            e = naf_exposure(naf, bands, cached_counts)
+            e = naf_exposure(naf, bands, cached_counts, deadline)
             if e is None:
                 not_counted.append(naf)
                 continue
