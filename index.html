@@ -102,6 +102,15 @@
   .params i { display: block; color: var(--muted); }
   .params .src { font-size: 12.5px; color: var(--muted); }
   .params a, .det a { color: var(--accent); }
+  .lobby { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .deja { margin: 10px 0 0; font-size: 14px; color: #334155; display: -webkit-box; -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical; overflow: hidden; }
+  .hist { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0 10px; font-variant-numeric: tabular-nums; }
+  .hist th, .hist td { text-align: left; padding: 4px 6px; border-top: 1px solid var(--line); }
+  .hist th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .side { font-size: 12px; font-weight: 700; padding: 1px 7px; border-radius: 999px; }
+  .side.w { background: var(--gain-soft); color: var(--gain); }
+  .side.l { background: var(--loss-soft); color: var(--loss); }
   .expo .nc { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
   .expo .sector { font-size: 12.5px; color: var(--muted); margin-top: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
 
@@ -166,7 +175,8 @@
   <div class="feed" id="feed"></div>
 
   <footer>
-    <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (unités légales actives, tranches d'effectifs INSEE).</p>
+    <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (unités légales actives, tranches d'effectifs INSEE) ;
+      Sénat (Ameli, amendements depuis 2001) ; HATVP (répertoire des représentants d'intérêts).</p>
     <p>Employés concernés : fourchette basse – haute, calculée à partir des tranches d'effectifs INSEE de toute l'entreprise.
       Critères extraits par IA à partir du texte de l'amendement, citation à l'appui (« détails »).</p>
     <p>Soutien : nombre de groupes politiques qui déposent la même mesure. Majorité sénatoriale = Les Républicains + Union centriste.
@@ -179,7 +189,18 @@ const N = "142";
 const TOP = 5;
 const fmt = n => n == null ? "—" : Number(n).toLocaleString("fr-FR");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const GROUP = g => g === "UCI" || g === "UC" ? "Union centriste" : g;
+const GROUP = g => g === "UCI" || g === "UC" ? "Union centriste" : g === "LR" ? "Les Républicains" : g;
+const SMALL = new Set(["de", "des", "du", "la", "le", "les", "et", "en", "d", "l", "a", "à", "au", "aux", "pour", "sur"]);
+function titleCase(s) {
+  return String(s || "").split(/(\([^)]*\))/).map(part => {
+    if (part.startsWith("(")) return part; // keep acronyms in parentheses
+    let first = true;
+    return part.toLowerCase().replace(/[\p{L}\p{N}]+/gu, w => {
+      const out = !first && SMALL.has(w) ? w : w.charAt(0).toUpperCase() + w.slice(1);
+      first = false; return out;
+    });
+  }).join("");
+}
 const shortName = n => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").trim();
 const stripParen = s => String(s || "").replace(/\s*\(.*\)\s*$/, "").trim();
 const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
@@ -316,8 +337,37 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
     return { main: you + total + sides, det };
   }
 
+  function history(h) {
+    if (!h) return { main: "", det: "" };
+    const list = (arr, cls) => {
+      const names = (arr || []).map(titleCase);
+      const shown = names.slice(0, 4).map(n => `<span class="chip ${cls}">${esc(n)}</span>`).join("");
+      return shown + (names.length > 4 ? `<span class="chip legend" title="${esc(names.slice(4).join(", "))}">+${names.length - 4}</span>` : "");
+    };
+    const rows = [];
+    if (h.allies?.length) rows.push(`<div class="sides"><span class="lab">Vos alliés :</span>${list(h.allies, "w")}</div>`);
+    if (h.opponents?.length) rows.push(`<div class="sides"><span class="lab">Vos adversaires :</span>${list(h.opponents, "l")}</div>`);
+    const lobby = rows.length ? `<div class="lobby">${rows.join("")}</div>` : "";
+    const f = h.findings?.[0];
+    const deja = f?.text ? `<p class="deja" title="${esc(f.text)}"><b>Déjà au Sénat :</b> ${esc(f.text)}</p>` : "";
+
+    const groups = Object.entries(h.senate_by_group || {});
+    const table = groups.length ? `<p class="k" style="margin-bottom:0">Amendements déjà déposés au Sénat, par groupe</p>
+      <table class="hist"><thead><tr><th>Groupe</th><th>Déposés</th><th>Adoptés</th><th>Rejetés</th><th>Années</th></tr></thead><tbody>
+      ${groups.map(([g, s]) => `<tr><td>${esc(GROUP(g))}</td><td>${s.filed ?? "—"}</td><td>${s.adopted ?? "—"}</td><td>${s.rejected ?? "—"}</td>
+        <td>${esc((s.years || []).join(", "))}</td></tr>`).join("")}</tbody></table>` : "";
+    const findings = (h.findings || []).length ? `<p class="k" style="margin-bottom:0">Ce qui s'est déjà passé</p><ul class="params">
+      ${h.findings.map(x => `<li>${esc(x.text)}${x.source ? `<span class="src"> — ${sourceHtml(x.source)}</span>` : ""}</li>`).join("")}</ul>` : "";
+    const quotes = (h.lobby_quotes || []).length ? `<p class="k" style="margin-bottom:0">Positions déclarées à la HATVP</p><ul class="params">
+      ${h.lobby_quotes.map(q => `<li><b>${esc(titleCase(q.org))}</b> · ${esc(q.year ?? "")} ·
+        <span class="side ${q.side === "contre" ? "l" : "w"}">${esc(q.side)}</span>
+        ${q.quote ? `<i>« ${esc(q.quote)} »</i>` : ""}${q.fiche ? `<span class="src">fiche HATVP ${esc(q.fiche)}</span>` : ""}</li>`).join("")}</ul>` : "";
+    return { main: lobby + deja, det: findings + table + quotes };
+  }
+
   function card(c, i) {
     const ch = chiffrage(c.chiffrage);
+    const hi = history(c.history);
     const maj = new Set(c.majority_groups || []);
     const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a))
       .map(g => `<span class="chip${maj.has(g) ? " maj" : ""}">${esc(GROUP(g))}</span>`).join("");
@@ -334,11 +384,13 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
           <h2>${esc(c.theme)}</h2>
           <p class="effect">${esc(c.effects[0])}${extra}</p>
           ${ch.main}
+          ${hi.main}
           <div class="support"><span class="count">${c.n_groups > 1 ? `Portée par ${c.n_groups} groupes` : "Un seul groupe"}</span>${groups}${legend}</div>
           <details>
             <summary>détails</summary>
             <div class="det">
               ${ch.det}
+              ${hi.det}
               <p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>
               ${c.effects.length > 1 ? `<p><span class="k">Variantes :</span> ${c.effects.map(esc).join(" · ")}</p>` : ""}
               <blockquote>« ${esc(c.quote)} »</blockquote>
