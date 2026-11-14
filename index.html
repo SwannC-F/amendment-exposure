@@ -369,6 +369,9 @@
   .aiwrap { flex-basis: 100%; margin-top: 8px; }
   .aibox { margin-top: 8px; font-size: 13.5px; color: #334155; border-left: 3px solid var(--accent); padding: 4px 10px; background: var(--accent-soft); border-radius: 0 8px 8px 0; }
   .aibox p { margin: 4px 0; } .aibox .dim, .roles .dim { color: var(--muted); font-size: 12px; }
+  .listh { font-size: 19px; margin: 26px 0 0; letter-spacing: -.01em; }
+  .tcard.todo { border-style: dashed; background: #fbfcff; }
+  .todo-tag { color: #92400e; background: #fef3c7; border-radius: 999px; padding: 1px 8px; font-weight: 700; font-size: 12px; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
@@ -393,6 +396,7 @@
     <h1 class="vh" id="listTitle"></h1>
     <p class="intro" id="listIntro"></p>
     <div class="tlist" id="textList"></div>
+    <div id="pendingList"></div>
   </section>
 
   <section id="v-text" class="view" hidden>
@@ -697,23 +701,45 @@ async function probeHealth(base, ms) {
   }
   window.addEventListener("hashchange", route);
 
+  let CATALOG = null;
+  async function loadCatalog() {
+    if (CATALOG && CATALOG.length) return CATALOG;   // retry while empty: the file may appear later
+    try { CATALOG = await loadJson("data/catalog.json"); if (!Array.isArray(CATALOG)) CATALOG = []; }
+    catch { CATALOG = []; }
+    if (!CATALOG.length && LIVE_OK) { try { const c = await loadJson(`${LIVE}/api/catalog`); if (Array.isArray(c)) CATALOG = c; } catch {} }
+    return CATALOG;
+  }
+
   async function renderList(chamber) {
-    const idx = await loadIndex();
+    const [idx, cat] = await Promise.all([loadIndex(), loadCatalog()]);
     const list = idx.filter(x => x.chamber === chamber);
+    const done = new Set(list.map(x => `${x.session}/${x.number}`));
+    const pending = cat.filter(x => x.chamber === chamber && !done.has(`${x.session}/${x.number}`))
+      .sort((a, b) => String(a.seance || "9999").localeCompare(String(b.seance || "9999")) || (b.n_amendments || 0) - (a.n_amendments || 0));
     fill($("listTitle"), chamber === "an" ? "Assemblée nationale" : "Sénat");
-    fill($("listIntro"), `Textes dont les amendements ont été analysés : mesures, entreprises et employés exposés, soutien des groupes`,
-      chamber === "senat" ? ", direct depuis le Sénat." : ".");
-    if (!list.length) {
-      fill($("textList"), h("div", { class: "emptybox" }, chamber === "an"
-        ? "Premier texte de l'Assemblée en cours de calcul : le même pipeline lit ses amendements, il apparaîtra ici dès qu'il sera prêt."
-        : "Aucun texte calculé pour l'instant."));
-      return;
-    }
-    fill($("textList"), list.map(x => h("a", { class: "tcard", href: textHash(x) },
+    fill($("listIntro"), `${plural(list.length, "texte analysé", "textes analysés")}`,
+      cat.length ? ` · ${plural(pending.length, "autre texte en discussion", "autres textes en discussion")}, pas encore analysé${pending.length > 1 ? "s" : ""}` : "",
+      chamber === "senat" ? " · direct depuis le Sénat." : ".");
+    const analysed = list.length ? list.map(x => h("a", { class: "tcard", href: textHash(x) },
       h("div", { class: "n" }, `${CHAMBER[x.chamber] || x.chamber} · n°${x.number} · ${x.session}`),
       h("h3", null, x.title || `Texte n°${x.number}`),
       h("div", { class: "m" }, h("b", null, plural(x.n_measures ?? 0, "mesure", "mesures")),
-        x.generated_at ? ` · calculé le ${fmtDate(x.generated_at)}` : ""))));
+        x.generated_at ? ` · calculé le ${fmtDate(x.generated_at)}` : "")))
+      : [h("div", { class: "emptybox" }, chamber === "an"
+          ? "Premier texte de l'Assemblée en cours de calcul : le même pipeline lit ses amendements, il apparaîtra ici dès qu'il sera prêt."
+          : "Aucun texte analysé pour l'instant.")];
+    const canRun = LIVE_OK && chamber === "senat";
+    const todo = pending.length ? [
+      h("h2", { class: "listh" }, `Textes en discussion, pas encore analysés (${pending.length})`),
+      h("p", { class: "intro" }, canRun ? "Ouvrez un texte puis « Recalculer ce texte » pour lancer l'analyse IA (quelques minutes)." : "L'analyse se lance depuis la version en ligne (serveur)."),
+      h("div", { class: "tlist" }, pending.map(x => h("a", { class: "tcard todo", href: chamber === "senat" ? textHash(x) : (x.url || textHash(x)),
+          target: chamber === "senat" ? null : "_blank", rel: chamber === "senat" ? null : "noopener" },
+        h("div", { class: "n" }, `${CHAMBER[x.chamber] || x.chamber} · n°${x.number} · ${x.session}`),
+        h("h3", null, x.title || `Texte n°${x.number}`),
+        h("div", { class: "m" }, x.n_amendments != null ? `${fmt(x.n_amendments)} amendements` : "", x.seance ? ` · ${seanceLabel(x.seance)}` : "",
+          x.stage ? ` · ${x.stage}` : "", " · ", h("span", { class: "todo-tag" }, "pas encore analysé")))))] : [];
+    fill($("textList"), analysed);
+    fill($("pendingList"), todo);
   }
 
   async function fetchEngine(t) {
