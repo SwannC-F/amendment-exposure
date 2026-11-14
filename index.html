@@ -798,16 +798,41 @@ async function probeHealth(base, ms) {
     const roleHit = (m.roles || []).find(r => roles.has(roleKey(r)));
     // a role rate that is only "neutre" without amount does not by itself make the measure concern the company
     const roleRateCounts = roleRate && !(roleRate.sign === "neutre" && !roleRate.eur && roleRate.rate_low == null);
-    const byNaf = (m.nafs || []).includes(naf) || !!nafRate;
+    // winners / losers named by the AI's first impact study ({naf, role, label}); "47.11" also matches "47.11F"
+    const W = m.chiffrage?.winners || [], L = m.chiffrage?.losers || [];
+    const grp0 = String(naf || "").slice(0, 4);
+    const side = arr => {
+      let best = null;
+      for (const x of arr) {
+        const xn = String(x?.naf || "");
+        if (xn && naf && (xn === naf || (xn.length < naf.length && naf.startsWith(xn)))) return "naf";
+        if (x?.role && roles.has(roleKey(x.role))) best = "role";
+        else if (!best && xn.length >= 4 && grp0.length === 4 && xn.startsWith(grp0)) best = "group";
+      }
+      return best;
+    };
+    const wHit = side(W), lHit = side(L);
+    const byNaf = (m.nafs || []).includes(naf) || !!nafRate || wHit === "naf" || lHit === "naf";
     // same NAF group (first 4 chars, "63.12Z" ~ "63.11Z" → "63.1"): shown as a close sector, to be checked
     const grp = String(naf || "").slice(0, 4);
     const allNafs = [...(m.nafs || []), ...(m.sectors || []).map(x => x.naf || x.key), ...rates.flatMap(r => r.nafs || [])].filter(isNaf);
     const byGroup = !byNaf && grp.length === 4 && allNafs.some(x => x.startsWith(grp));
-    if (!byNaf && !byGroup && !roleHit && !roleRateCounts) return null;
+    const sideRole = wHit === "role" || lHit === "role";
+    if (!byNaf && !byGroup && !roleHit && !roleRateCounts && !sideRole) return null;
 
     const rate = nafRate || (roleHit || roleRateCounts ? roleRate : null) || null;
     let you;
-    if (!rate) you = { status: byGroup && !roleHit && !roleRateCounts ? "group" : "no_rate" };
+    if (!rate) {
+      // No € rate: give the direction from the AI's winners / losers instead of "non chiffré" alone
+      const rank = { naf: 3, role: 2, group: 1 };
+      const w = rank[wHit] || 0, l = rank[lHit] || 0;
+      const sign = w > l ? "gain" : l > w ? "perte" : w ? "mixte" : null;
+      const basis = (w >= l ? wHit : lHit) || null;
+      const nc = m.chiffrage?.not_computable ? ` Montant : ${String(m.chiffrage.not_computable).replace(/^Non chiffrable\s*:\s*/i, "non chiffrable, ")}` : "";
+      you = sign ? { status: "dir", sign: sign === "mixte" ? null : sign, mixed: sign === "mixte", basis,
+          method: `Sens estimé par l'IA (gagnants et perdants de la mesure, vous y figurez ${basis === "naf" ? "par votre code NAF" : basis === "role" ? "par votre rôle" : "par un secteur proche"}).${nc}` }
+        : { status: byGroup && !roleHit && !roleRateCounts ? "group" : "no_rate" };
+    }
     else if (rate.rate_low != null) {
       const base = { sign: rate.sign, method: rate.method, scope: rate.scope, quote: rate.quote };
       you = company.ca == null ? { status: "no_ca", ...base }
@@ -816,8 +841,8 @@ async function probeHealth(base, ms) {
       you = { status: rate.eur ? "ok" : "nd", sign: rate.sign, eur: rate.eur || null, method: rate.method, scope: rate.scope, quote: rate.quote };
     }
 
-    const role = roleKey(roleHit || (roleRate && roleRate.role) || "");
-    const via = byNaf ? "naf" : roleHit || roleRateCounts ? "role" : "group";
+    const role = roleKey(roleHit || (roleRate && roleRate.role) || [...W, ...L].find(x => x?.role && roles.has(roleKey(x.role)))?.role || "");
+    const via = byNaf ? "naf" : roleHit || roleRateCounts || sideRole ? "role" : "group";
     const sectorLabel = via === "naf" ? target(naf, (m.sectors || []).find(s => (s.naf || s.key) === naf)?.label)
       : via === "role" ? `Rôle : ${ROLE_PLURAL[role] || role}`
       : `Secteur proche (groupe ${grp}) — à vérifier`;
@@ -995,10 +1020,12 @@ async function probeHealth(base, ms) {
         h("div", { class: "v" }, eurRange(s)), pct ? h("div", { class: "pct" }, pct) : null);
     };
     const nd = cards.filter(c => !c.you.eur).length;
+    const nG = cards.filter(c => c.you.status === "dir" && c.you.sign === "gain").length, nP = cards.filter(c => c.you.status === "dir" && c.you.sign === "perte").length;
     const tiles = [tile("gain", "Gains possibles"), tile("perte", "Pertes possibles")].filter(Boolean);
     return [h("h1", null, "Pour ", h("em", null, name), ` : ${plural(cards.length, "mesure", "mesures")}, ${majTxt}.`),
       h("p", null, `${plural(nAmdts, "amendement en attente", "amendements en attente")} · classées par soutien`,
-        nd ? ` · ${plural(nd, "mesure non chiffrée", "mesures non chiffrées")} pour vous` : ""),
+        nd ? ` · ${plural(nd, "mesure non chiffrée", "mesures non chiffrées")} pour vous` : "",
+        nG || nP ? ` · sens estimé par l'IA : ${nG} plutôt favorable${nG > 1 ? "s" : ""}, ${nP} plutôt défavorable${nP > 1 ? "s" : ""}` : ""),
       tiles.length ? h("div", { class: "totals" }, tiles) : null];
   }
 
@@ -1024,7 +1051,11 @@ async function probeHealth(base, ms) {
 
   function chiffrage(ch, y) {
     const main = [], det = [];
-    if (y.status === "group") {
+    if (y.status === "dir") {
+      const word = y.mixed ? "effet mitigé" : y.sign === "gain" ? "plutôt gagnant" : "plutôt perdant";
+      main.push(h("div", null, h("div", { class: `you ${y.mixed ? "" : y.sign}` }, h("span", { class: "lead" }, "Pour vous"), h("span", null, word),
+        h("span", { class: "nd" }, y.basis === "group" ? "secteur proche · sens estimé par l'IA, non chiffré" : "sens estimé par l'IA, non chiffré"))));
+    } else if (y.status === "group") {
       main.push(h("div", null, h("div", { class: "you" }, h("span", { class: "lead" }, "Pour vous"), h("span", { class: "nd" }, "secteur proche — à vérifier, non chiffré"))));
     } else if (y.status === "no_rate") {
       main.push(h("div", null, h("div", { class: "you" }, h("span", { class: "lead" }, "Pour vous"), h("span", { class: "nd" }, "non chiffré pour votre secteur"))));
