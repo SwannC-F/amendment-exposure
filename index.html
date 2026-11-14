@@ -371,6 +371,9 @@
   .aibox p { margin: 4px 0; } .aibox .dim, .roles .dim { color: var(--muted); font-size: 12px; }
   .listh { font-size: 19px; margin: 26px 0 0; letter-spacing: -.01em; }
   .tcard.todo { border-style: dashed; background: #fbfcff; }
+  .tcard .acts { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 10px; font-size: 13px; }
+  .tcard .acts a { color: var(--accent); }
+  .runbtn { font: inherit; font-size: 13px; font-weight: 700; color: #fff; background: var(--ink); border: 0; border-radius: 8px; padding: 6px 11px; cursor: pointer; }
   .todo-tag { color: #92400e; background: #fef3c7; border-radius: 999px; padding: 1px 8px; font-weight: 700; font-size: 12px; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
@@ -630,6 +633,7 @@ async function probeHealth(base, ms) {
   liveReady.then(ok => {
     liveLoad(); if (!document.getElementById("scan").hidden) paintScan();
     if (!document.getElementById("v-profil").hidden) renderProfil();
+    if (!document.getElementById("v-list").hidden) { const r = parseHash(); if (r.view === "list") renderList(r.chamber); }
     if (ok && text.chamber === "senat") { document.getElementById("recalc").hidden = false; if (engine) checkRun(true); }
   });
 
@@ -714,8 +718,8 @@ async function probeHealth(base, ms) {
     const [idx, cat] = await Promise.all([loadIndex(), loadCatalog()]);
     const list = idx.filter(x => x.chamber === chamber);
     const done = new Set(list.map(x => `${x.session}/${x.number}`));
-    const pending = cat.filter(x => x.chamber === chamber && !done.has(`${x.session}/${x.number}`))
-      .sort((a, b) => String(a.seance || "9999").localeCompare(String(b.seance || "9999")) || (b.n_amendments || 0) - (a.n_amendments || 0));
+    const pending = cat.filter(x => x.chamber === chamber && !x.computed && !done.has(`${x.session}/${x.number}`))
+      .sort((a, b) => (b.n_pending || 0) - (a.n_pending || 0));
     fill($("listTitle"), chamber === "an" ? "Assemblée nationale" : "Sénat");
     fill($("listIntro"), `${plural(list.length, "texte analysé", "textes analysés")}`,
       cat.length ? ` · ${plural(pending.length, "autre texte en discussion", "autres textes en discussion")}, pas encore analysé${pending.length > 1 ? "s" : ""}` : "",
@@ -731,13 +735,19 @@ async function probeHealth(base, ms) {
     const canRun = LIVE_OK && chamber === "senat";
     const todo = pending.length ? [
       h("h2", { class: "listh" }, `Textes en discussion, pas encore analysés (${pending.length})`),
-      h("p", { class: "intro" }, canRun ? "Ouvrez un texte puis « Recalculer ce texte » pour lancer l'analyse IA (quelques minutes)." : "L'analyse se lance depuis la version en ligne (serveur)."),
-      h("div", { class: "tlist" }, pending.map(x => h("a", { class: "tcard todo", href: chamber === "senat" ? textHash(x) : (x.url || textHash(x)),
-          target: chamber === "senat" ? null : "_blank", rel: chamber === "senat" ? null : "noopener" },
-        h("div", { class: "n" }, `${CHAMBER[x.chamber] || x.chamber} · n°${x.number} · ${x.session}`),
-        h("h3", null, x.title || `Texte n°${x.number}`),
-        h("div", { class: "m" }, x.n_amendments != null ? `${fmt(x.n_amendments)} amendements` : "", x.seance ? ` · ${seanceLabel(x.seance)}` : "",
-          x.stage ? ` · ${x.stage}` : "", " · ", h("span", { class: "todo-tag" }, "pas encore analysé")))))] : [];
+      h("p", { class: "intro" }, canRun ? "« Analyser ce texte » lance le pipeline IA sur le serveur (quelques minutes ; coût affiché avant de lancer)."
+        : chamber === "senat" ? "L'analyse se lance depuis la version en ligne (serveur)." : "Pas encore de recalcul automatique pour l'Assemblée : liste seulement."),
+      h("div", { class: "tlist" }, pending.map(x => {
+        const t = { chamber: x.chamber, session: String(x.session), number: String(x.number), path: null, title: x.title };
+        return h("div", { class: "tcard todo" },
+          h("div", { class: "n" }, `${CHAMBER[x.chamber] || x.chamber} · n°${x.number} · ${x.session}`),
+          h("h3", null, x.title || `Texte n°${x.number}`),
+          h("div", { class: "m" }, x.n_pending != null ? h("b", null, `${fmt(x.n_pending)} en attente`) : "",
+            x.n_amendments != null ? ` / ${fmt(x.n_amendments)} amendements` : "", " · ", h("span", { class: "todo-tag" }, "pas encore analysé")),
+          h("div", { class: "acts" }, x.url ? ext(x.url, "voir les amendements ↗") : null,
+            canRun && x.n_pending > 0 ? h("button", { type: "button", class: "runbtn", onclick: () => startRun(t, x.n_pending) },
+              `Analyser ce texte (${costHint(x.n_pending).split(" pour")[0]})`) : null));
+      }))] : [];
     fill($("textList"), analysed);
     fill($("pendingList"), todo);
   }
@@ -1575,10 +1585,15 @@ async function probeHealth(base, ms) {
     fill($("textGen"), g ? `Généré le ${fmtDate(g)}${model ? ` par ${model}` : ""}` : model ? `Généré par ${model}` : "");
   }
 
-  recalcBtn.addEventListener("click", async () => {
-    if (!LIVE_OK) return;
-    const t = { ...text };
-    if (!confirm(`Relancer tout le pipeline pour le texte n°${t.number} (${t.session}) : amendements, IA, comptages, chiffrage, historique — quelques minutes, ~0,30 $`)) return;
+  const costHint = n => n ? `≈ ${nf1.format(Math.max(0.01, n * 0.006)).replace(/^0$/, "0,01")} $ pour ${fmt(n)} amendements` : "quelques centimes à quelques dollars";
+  function confirmRun(t, nPending) {
+    const long = nPending > 300 ? "\n\nAttention : plus de 300 amendements, plusieurs dizaines de minutes." : "";
+    return confirm(`Lancer tout le pipeline pour le texte n°${t.number} (${t.session}) : amendements, IA, comptages, chiffrage, historique.\nCoût IA : ${costHint(nPending)}.${long}`);
+  }
+  async function startRun(t, nPending) {
+    if (!LIVE_OK || t.chamber !== "senat") return false;
+    if (!confirmRun(t, nPending)) return false;
+    if (location.hash !== textHash(t)) location.hash = textHash(t).slice(1);
     recalcBtn.disabled = true;
     paintRun({ status: "starting" });
     try {
@@ -1587,12 +1602,19 @@ async function probeHealth(base, ms) {
       let j = {}; try { j = await r.json(); } catch {}
       if (r.status === 409) throw new Error(j.error || "Un recalcul est déjà en cours sur le serveur (un seul à la fois).");
       if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
-      runFor = t; poll();
+      runFor = { ...t }; poll();
+      return true;
     } catch (e) {
       recalcBtn.disabled = false;
       paintRun({ status: "error", error: e.message || "réseau" });
+      return false;
     }
+  }
+  recalcBtn.addEventListener("click", () => {
+    const c = (CATALOG || []).find(x => x.chamber === text.chamber && String(x.session) === text.session && String(x.number) === text.number);
+    startRun({ ...text }, c?.n_pending ?? c?.n_amendments ?? 0);
   });
+
 
   // On load (and after a reload mid-run), pick up a run already going for this text.
   async function checkRun(silent) {
@@ -1613,6 +1635,7 @@ async function probeHealth(base, ms) {
       paintRun(st);
       if (st.status === "running") { pollTimer = setTimeout(poll, 3000); return; }
       runFor = null; recalcBtn.disabled = false;
+      if (st.status === "done") { INDEX = null; CATALOG = null; }
       if (st.status === "done" && t.session === text.session && t.number === text.number) {
         await loadText(text);
         paintRun(st);   // loadText hides the box; keep the "done" message visible
