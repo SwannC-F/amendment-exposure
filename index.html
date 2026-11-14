@@ -604,7 +604,7 @@ async function probeHealth(base, ms) {
       });
       ROLES_IN_DATA = ROLE_LIST.filter(([k]) => present.has(k));
       const tx = engine.text || {};
-      const title = tx.title || `Texte n°${t.number}`;
+      const title = tx.title || `Texte n°${t.number} (${t.session})`;
       fill($("pillText"), [tx.chamber || "Sénat", title, seanceLabel(tx.seance)].filter(Boolean).join(" · "));
       fill($("liveTitle"), `${tx.chamber || "Sénat"}, en direct`);
       fill($("textTitle"), title);
@@ -632,18 +632,34 @@ async function probeHealth(base, ms) {
 
   /* ---------- Examples generated from the data: one NAF per top measure ---------- */
   function renderExamples() {
-    const seen = new Set(), ex = [];
+    // Rank NAF sectors by exposed companies: per-NAF counts when the data has them, else the measure's total.
+    const score = new Map(), label = new Map();
     for (const m of measures) {
-      const s = (m.sectors || []).find(x => isNaf(x.naf || x.key) && !seen.has(x.naf || x.key));
-      if (!s) continue;
-      const naf = s.naf || s.key; seen.add(naf);
-      ex.push({ naf, label: s.label || naf });
-      if (ex.length === 3) break;
+      const perNaf = Object.fromEntries((m.per_naf || []).map(x => [x.naf, x.companies]));
+      for (const s of m.sectors || []) {
+        const naf = s.naf || s.key; if (!isNaf(naf)) continue;
+        const n = perNaf[naf] ?? m.companies ?? 0;
+        score.set(naf, (score.get(naf) || 0) + n);
+        if (!label.has(naf) && s.label) label.set(naf, s.label);
+      }
+    }
+    const weak = naf => /^6[4-6]\./.test(naf) || /^autres activit/i.test(norm(label.get(naf) || ""));
+    const ranked = [...score.keys()].sort((a, b) => score.get(b) - score.get(a));
+    const ex = [], seenLabel = new Set();
+    for (const pass of [false, true]) {          // clear sectors first; finance / "Autres activités" only if nothing else
+      for (const naf of ranked) {
+        if (ex.length === 3) break;
+        if (weak(naf) !== pass) continue;
+        const l = stripParen(label.get(naf) || naf), k = norm(l);
+        if (seenLabel.has(k)) continue;
+        seenLabel.add(k); ex.push({ naf, label: l });
+      }
+      if (ex.length) break;
     }
     if (!ex.length) { fill(pEl); return; }
     fill(pEl, h("span", null, "Exemples de secteurs visés :"),
       ex.map(x => h("button", { type: "button", class: "preset", title: `Entreprises actives en NAF ${x.naf}`,
-        onclick: () => searchSector(x.naf, x.label) }, stripParen(x.label), " ", h("kbd", null, x.naf))));
+        onclick: () => searchSector(x.naf, x.label) }, x.label, " ", h("kbd", null, x.naf))));
   }
 
   /* ---------- Engine: which measures concern this company, and what they move for it ---------- */
