@@ -625,6 +625,7 @@ async function probeHealth(base, ms) {
   })();
   liveReady.then(ok => {
     liveLoad(); if (!document.getElementById("scan").hidden) paintScan();
+    if (!document.getElementById("v-profil").hidden) renderProfil();
     if (ok && text.chamber === "senat") { document.getElementById("recalc").hidden = false; if (engine) checkRun(true); }
   });
 
@@ -1018,7 +1019,7 @@ async function probeHealth(base, ms) {
     const st = aiState;
     const btn = h("button", { type: "button", class: "scan-btn", style: "font-size:13px;padding:7px 12px",
       disabled: !LIVE_OK || !!st?.running, onclick: askAiRoles },
-      !LIVE_OK ? "IA disponible sur la version en ligne" : st?.running ? "L'IA lit votre fiche…" : st?.result ? "Redemander à l'IA" : "Demander à l'IA de compléter mon profil");
+      LIVE_STATE === "probing" || LIVE_STATE === "waking" ? "Connexion au serveur…" : !LIVE_OK ? "IA disponible sur la version en ligne" : st?.running ? "L'IA lit votre fiche… (jusqu'à 40 s)" : st?.result ? "Redemander à l'IA" : "Demander à l'IA de compléter mon profil");
     let body = null;
     if (st?.error) body = h("p", { class: "live-err" }, st.error);
     else if (st?.result) {
