@@ -1,0 +1,158 @@
+{
+  "majority": [],
+  "measures": [
+    {
+      "key": "supprimer-priorite-entreprises-locales",
+      "theme": "Supprimer la priorité aux entreprises locales",
+      "amendments": [
+        "551",
+        "652"
+      ],
+      "opposes": null,
+      "groups": [
+        "Ensemble pour la République",
+        "Union des droites pour la République"
+      ],
+      "n_groups": 2,
+      "majority_groups": []
+    },
+    {
+      "key": "supprimer-operations-interet-local",
+      "theme": "Supprimer les opérations d'intérêt local",
+      "amendments": [
+        "704",
+        "793",
+        "958"
+      ],
+      "opposes": "encadrer-delai-reponse-abf",
+      "groups": [
+        "Gauche Démocrate et Républicaine",
+        "La France insoumise - Nouveau Front Populaire",
+        "Les Démocrates"
+      ],
+      "n_groups": 3,
+      "majority_groups": []
+    },
+    {
+      "key": "deroger-plu-surelevation-ascenseur",
+      "theme": "Déroger au PLU pour la surélévation",
+      "amendments": [
+        "163"
+      ],
+      "opposes": null,
+      "groups": [
+        "Les Démocrates"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "rendre-obligatoire-concertation-prealable",
+      "theme": "Rendre obligatoire la concertation préalable",
+      "amendments": [
+        "159"
+      ],
+      "opposes": null,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "supprimer-obligation-residence-principale",
+      "theme": "Supprimer l'obligation de résidence principale",
+      "amendments": [
+        "17"
+      ],
+      "opposes": null,
+      "groups": [
+        "Rassemblement National"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "encadrer-delai-reponse-abf",
+      "theme": "Encadrer le délai de réponse de l'ABF",
+      "amendments": [
+        "637"
+      ],
+      "opposes": "supprimer-operations-interet-local",
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "551",
+      "measure": "supprimer-priorite-entreprises-locales",
+      "author_group": "Union des droites pour la République",
+      "same_measure_amendments": [
+        "652"
+      ]
+    },
+    {
+      "number": "652",
+      "measure": "supprimer-priorite-entreprises-locales",
+      "author_group": "Ensemble pour la République",
+      "same_measure_amendments": [
+        "551"
+      ]
+    },
+    {
+      "number": "704",
+      "measure": "supprimer-operations-interet-local",
+      "author_group": "Gauche Démocrate et Républicaine",
+      "same_measure_amendments": [
+        "793",
+        "958"
+      ]
+    },
+    {
+      "number": "793",
+      "measure": "supprimer-operations-interet-local",
+      "author_group": "La France insoumise - Nouveau Front Populaire",
+      "same_measure_amendments": [
+        "704",
+        "958"
+      ]
+    },
+    {
+      "number": "958",
+      "measure": "supprimer-operations-interet-local",
+      "author_group": "Les Démocrates",
+      "same_measure_amendments": [
+        "704",
+        "793"
+      ]
+    },
+    {
+      "number": "163",
+      "measure": "deroger-plu-surelevation-ascenseur",
+      "author_group": "Les Démocrates",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "159",
+      "measure": "rendre-obligatoire-concertation-prealable",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "17",
+      "measure": "supprimer-obligation-residence-principale",
+      "author_group": "Rassemblement National",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "637",
+      "measure": "encadrer-delai-reponse-abf",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    }
+  ]
+}

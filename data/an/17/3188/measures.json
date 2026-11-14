@@ -1,0 +1,53 @@
+[
+  {
+    "key": "supprimer-priorite-entreprises-locales",
+    "theme": "Supprimer la priorité aux entreprises locales",
+    "amendments": [
+      "551",
+      "652"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-operations-interet-local",
+    "theme": "Supprimer les opérations d'intérêt local",
+    "amendments": [
+      "704",
+      "793",
+      "958"
+    ],
+    "opposes": "encadrer-delai-reponse-abf"
+  },
+  {
+    "key": "deroger-plu-surelevation-ascenseur",
+    "theme": "Déroger au PLU pour la surélévation",
+    "amendments": [
+      "163"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "rendre-obligatoire-concertation-prealable",
+    "theme": "Rendre obligatoire la concertation préalable",
+    "amendments": [
+      "159"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "supprimer-obligation-residence-principale",
+    "theme": "Supprimer l'obligation de résidence principale",
+    "amendments": [
+      "17"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "encadrer-delai-reponse-abf",
+    "theme": "Encadrer le délai de réponse de l'ABF",
+    "amendments": [
+      "637"
+    ],
+    "opposes": "supprimer-operations-interet-local"
+  }
+]

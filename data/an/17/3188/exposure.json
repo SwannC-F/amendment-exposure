@@ -1,0 +1,452 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "41.10A": {
+      "companies": 22987,
+      "employees_low": 13824,
+      "employees_high": 26983,
+      "open_top": false
+    },
+    "41.10B": {
+      "companies": 1956,
+      "employees_low": 2102,
+      "employees_high": 4068,
+      "open_top": false
+    },
+    "41.20A": {
+      "companies": 48248,
+      "employees_low": 34085,
+      "employees_high": 63763,
+      "open_top": false
+    },
+    "41.20B": {
+      "companies": 19807,
+      "employees_low": 51620,
+      "employees_high": 101454,
+      "open_top": false
+    },
+    "43.22A": {
+      "companies": 70475,
+      "employees_low": 53630,
+      "employees_high": 100800,
+      "open_top": false
+    },
+    "68.20A": {
+      "companies": 591075,
+      "employees_low": 69759,
+      "employees_high": 137314,
+      "open_top": false
+    }
+  },
+  "measures": [
+    {
+      "key": "supprimer-priorite-entreprises-locales",
+      "theme": "Supprimer la priorité aux entreprises locales",
+      "sectors": [
+        {
+          "naf": "41.20A",
+          "label": "Construction de maisons individuelles",
+          "companies": 48248,
+          "employees_low": 34085,
+          "employees_high": 63763,
+          "open_top": false
+        },
+        {
+          "naf": "41.20B",
+          "label": "Construction de bâtiments",
+          "companies": 19807,
+          "employees_low": 51620,
+          "employees_high": 101454,
+          "open_top": false
+        },
+        {
+          "naf": "43",
+          "label": "Travaux de construction spécialisés"
+        },
+        {
+          "naf": "41.10A",
+          "label": "Construction de maisons individuelles",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "41.10B",
+          "label": "Construction d'autres bâtiments",
+          "companies": 1956,
+          "employees_low": 2102,
+          "employees_high": 4068,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:organismes HLM",
+        "collectivites",
+        "employeurs"
+      ],
+      "companies": 684073,
+      "employees_low": 171390,
+      "employees_high": 333582,
+      "open_top": false,
+      "not_counted": [
+        "Travaux de construction spécialisés"
+      ]
+    },
+    {
+      "key": "supprimer-operations-interet-local",
+      "theme": "Supprimer les opérations d'intérêt local",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        },
+        {
+          "naf": "41.10A",
+          "label": "Promotion immobilière",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "71.11A",
+          "label": "Aménagement foncier"
+        }
+      ],
+      "roles": [
+        "autre:investisseurs immobiliers",
+        "collectivites",
+        "etat"
+      ],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "open_top": false,
+      "not_counted": [
+        "Aménagement foncier"
+      ]
+    },
+    {
+      "key": "deroger-plu-surelevation-ascenseur",
+      "theme": "Déroger au PLU pour la surélévation",
+      "sectors": [
+        {
+          "naf": "43.22A",
+          "label": "Travaux d'installation d'ascenseurs et d'escaliers mécaniques",
+          "companies": 70475,
+          "employees_low": 53630,
+          "employees_high": 100800,
+          "open_top": false
+        },
+        {
+          "naf": "41.20B",
+          "label": "Construction d'autres bâtiments",
+          "companies": 19807,
+          "employees_low": 51620,
+          "employees_high": 101454,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:bailleurs sociaux",
+        "collectivites",
+        "employeurs",
+        "etat"
+      ],
+      "companies": 681357,
+      "employees_low": 175009,
+      "employees_high": 339568,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "rendre-obligatoire-concertation-prealable",
+      "theme": "Rendre obligatoire la concertation préalable",
+      "sectors": [],
+      "roles": [
+        "collectivites"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "supprimer-obligation-residence-principale",
+      "theme": "Supprimer l'obligation de résidence principale",
+      "sectors": [
+        {
+          "naf": "41.10A",
+          "label": "Promotion immobilière de logements",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "collectivites",
+        "menages"
+      ],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "encadrer-delai-reponse-abf",
+      "theme": "Encadrer le délai de réponse de l'ABF",
+      "sectors": [
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "roles": [
+        "collectivites",
+        "etat"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    }
+  ],
+  "amendments": [
+    {
+      "number": "551",
+      "sectors": [
+        {
+          "naf": "41.20A",
+          "label": "Construction de maisons individuelles",
+          "companies": 48248,
+          "employees_low": 34085,
+          "employees_high": 63763,
+          "open_top": false
+        },
+        {
+          "naf": "41.20B",
+          "label": "Construction de bâtiments",
+          "companies": 19807,
+          "employees_low": 51620,
+          "employees_high": 101454,
+          "open_top": false
+        },
+        {
+          "naf": "43",
+          "label": "Travaux de construction spécialisés"
+        }
+      ],
+      "companies": 68055,
+      "employees_low": 85705,
+      "employees_high": 165217,
+      "open_top": false,
+      "not_counted": [
+        "Travaux de construction spécialisés"
+      ]
+    },
+    {
+      "number": "652",
+      "sectors": [
+        {
+          "naf": "41.10A",
+          "label": "Construction de maisons individuelles",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "41.10B",
+          "label": "Construction d'autres bâtiments",
+          "companies": 1956,
+          "employees_low": 2102,
+          "employees_high": 4068,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "companies": 616018,
+      "employees_low": 85685,
+      "employees_high": 168365,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "704",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "793",
+      "sectors": [
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        },
+        {
+          "naf": "41.10A",
+          "label": "Promotion immobilière",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "71.11A",
+          "label": "Aménagement foncier"
+        }
+      ],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "open_top": false,
+      "not_counted": [
+        "Aménagement foncier"
+      ]
+    },
+    {
+      "number": "958",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "163",
+      "sectors": [
+        {
+          "naf": "43.22A",
+          "label": "Travaux d'installation d'ascenseurs et d'escaliers mécaniques",
+          "companies": 70475,
+          "employees_low": 53630,
+          "employees_high": 100800,
+          "open_top": false
+        },
+        {
+          "naf": "41.20B",
+          "label": "Construction d'autres bâtiments",
+          "companies": 19807,
+          "employees_low": 51620,
+          "employees_high": 101454,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "companies": 681357,
+      "employees_low": 175009,
+      "employees_high": 339568,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "159",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "17",
+      "sectors": [
+        {
+          "naf": "41.10A",
+          "label": "Promotion immobilière de logements",
+          "companies": 22987,
+          "employees_low": 13824,
+          "employees_high": 26983,
+          "open_top": false
+        },
+        {
+          "naf": "68.20A",
+          "label": "Location de logements",
+          "companies": 591075,
+          "employees_low": 69759,
+          "employees_high": 137314,
+          "open_top": false
+        }
+      ],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "637",
+      "sectors": [
+        {
+          "naf": "84.11Z",
+          "label": "Administration publique générale"
+        }
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": [
+        "Administration publique générale"
+      ]
+    }
+  ]
+}

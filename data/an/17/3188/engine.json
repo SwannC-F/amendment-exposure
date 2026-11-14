@@ -1,0 +1,830 @@
+{
+  "text": {
+    "session": "an/17",
+    "number": "3188",
+    "title": "Projet de loi visant la relance et la décentralisation du logement",
+    "chamber": "Assemblée nationale",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements?examen=EXANR5L17PO838901BTC3188P0D1",
+    "examen": "EXANR5L17PO838901BTC3188P0D1"
+  },
+  "majority": [],
+  "measures": [
+    {
+      "key": "supprimer-operations-interet-local",
+      "theme": "Supprimer les opérations d'intérêt local",
+      "amendments": [
+        "704",
+        "793",
+        "958"
+      ],
+      "opposes": "encadrer-delai-reponse-abf",
+      "effects": [
+        "Supprime l'article permettant de déroger au plan local d'urbanisme (PLU) dans le périmètre des opérations d'intérêt local, restaurant ainsi les règles générales d'urbanisme et les garanties environnementales.",
+        "Supprime les opérations d'intérêt local (OIL) qui permettaient aux communes et EPCI de déroger aux règles du PLU (hauteur, densité, paysage) pour accélérer certains projets immobiliers.",
+        "Supprime la création des opérations d'intérêt local permettant d'accorder des dérogations au PLU(i) avec un avis simple de l'architecte des bâtiments de France au lieu de son accord."
+      ],
+      "nafs": [
+        "41.10A",
+        "68.20A",
+        "71.11A"
+      ],
+      "roles": [
+        "autre:investisseurs immobiliers",
+        "collectivites",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        },
+        {
+          "key": "68.20A",
+          "label": "Location de logements"
+        },
+        {
+          "key": "41.10A",
+          "label": "Promotion immobilière"
+        },
+        {
+          "key": "71.11A",
+          "label": "Aménagement foncier"
+        },
+        {
+          "key": "autre:investisseurs immobiliers",
+          "label": "autre:investisseurs immobiliers"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        }
+      ],
+      "n_groups": 3,
+      "groups": [
+        "Gauche Démocrate et Républicaine",
+        "La France insoumise - Nouveau Front Populaire",
+        "Les Démocrates"
+      ],
+      "majority_groups": [],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "approx": false,
+      "not_counted": [
+        "Aménagement foncier"
+      ],
+      "quote": "L'article 2 permet de déroger largement au plan local d'urbanisme dans le périmètre des opérations d'intérêt local.",
+      "history": {
+        "theme": "Supprimer les opérations d'intérêt local",
+        "amendments": [
+          "704",
+          "793",
+          "958"
+        ],
+        "effects": [
+          "Supprime l'article permettant de déroger au plan local d'urbanisme (PLU) dans le périmètre des opérations d'intérêt local, restaurant ainsi les règles générales d'urbanisme et les garanties environnementales.",
+          "Supprime la création des opérations d'intérêt local permettant d'accorder des dérogations au PLU(i) avec un avis simple de l'architecte des bâtiments de France au lieu de son accord.",
+          "Supprime les opérations d'intérêt local (OIL) qui permettaient aux communes et EPCI de déroger aux règles du PLU (hauteur, densité, paysage) pour accélérer certains projets immobiliers."
+        ],
+        "opposes": "encadrer-delai-reponse-abf",
+        "articles": [],
+        "senate_by_group": {
+          "LR": {
+            "filed": 2,
+            "adopted": 0,
+            "rejected": 2,
+            "other": 0,
+            "pour": 2,
+            "contre": 0,
+            "years": [
+              2018
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2017-2018/567/COM-267",
+            "session": "2017-2018",
+            "text_number": "567",
+            "stage": "commission",
+            "number": "COM-267",
+            "filed": "2018-06-27",
+            "year": 2018,
+            "author": "M. LELEUX",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/commissions/2017-2018/567/Amdt_COM-267.html",
+            "cites": [],
+            "measure": "supprimer-operations-interet-local",
+            "stance": "pour",
+            "quote": "Cet amendement vise à supprimer les dérogations autorisées par le présent article au principe de l'avis conforme de l'architecte des bâtiments de France (ABF)."
+          },
+          {
+            "id": "senat:2017-2018/631/530 rect. ter",
+            "session": "2017-2018",
+            "text_number": "631",
+            "stage": "seance",
+            "number": "530 rect. ter",
+            "filed": "2018-07-16",
+            "year": 2018,
+            "author": "M. HOUPERT",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "rejeté",
+            "url": "https://www.senat.fr/amendements/2017-2018/631/Amdt_530.html",
+            "cites": [],
+            "measure": "supprimer-operations-interet-local",
+            "stance": "pour",
+            "quote": "Cet amendement vise à supprimer les dérogations autorisées par le présent article au principe de l'avis conforme de l'architecte des bâtiments de France (ABF)."
+          }
+        ],
+        "findings": [
+          {
+            "text": "Au Sénat, 2 amendement(s) déposé(s) de 2018 allaient en faveur de cette mesure : 0 adopté(s), 2 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (2).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2017-2018/567/COM-267",
+              "senat:2017-2018/631/530 rect. ter"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime l'article 2 créant les opérations d'intérêt local (OIL), qui permettaient aux communes et EPCI de déroger au PLU (hauteur, densité, paysage) avec un avis simple de l'ABF au lieu de son accord. Aucun transfert monétaire n'est identifiable : c'est une modification réglementaire d'urbanisme.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Collectivités locales : le PLU et ses garanties environnementales et démocratiques sont restaurés"
+          },
+          {
+            "naf": null,
+            "role": "etat",
+            "label": "Architectes des bâtiments de France : l'accord conforme est maintenu au lieu d'un simple avis"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "41.10A",
+            "role": null,
+            "label": "Promotion immobilière : perte de la possibilité de déroger au PLU pour accélérer les projets"
+          },
+          {
+            "naf": "68.20A",
+            "role": null,
+            "label": "Location de logements : projets immobiliers ralentis par le maintien des règles du PLU"
+          },
+          {
+            "naf": "71.11A",
+            "role": null,
+            "label": "Aménagement foncier : suppression d'un outil de dérogation réglementaire"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure supprime un dispositif réglementaire d'urbanisme sans transfert monétaire identifiable. Aucune assiette financière ni écart chiffré ne figure dans les amendements."
+      }
+    },
+    {
+      "key": "supprimer-priorite-entreprises-locales",
+      "theme": "Supprimer la priorité aux entreprises locales",
+      "amendments": [
+        "551",
+        "652"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime l'obligation de réserver en priorité les marchés du programme national de renouvellement urbain aux entreprises dont le siège est situé dans le département ou la région de l'opération.",
+        "Supprime l'obligation de réserver prioritairement les chantiers de renouvellement urbain aux TPE-PME implantées dans le département du projet"
+      ],
+      "nafs": [
+        "41.10A",
+        "41.10B",
+        "41.20A",
+        "41.20B",
+        "43",
+        "68.20A"
+      ],
+      "roles": [
+        "autre:organismes HLM",
+        "collectivites",
+        "employeurs"
+      ],
+      "sectors": [
+        {
+          "key": "41.20A",
+          "label": "Construction de maisons individuelles"
+        },
+        {
+          "key": "41.20B",
+          "label": "Construction de bâtiments"
+        },
+        {
+          "key": "43",
+          "label": "Travaux de construction spécialisés"
+        },
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "41.10A",
+          "label": "Construction de maisons individuelles"
+        },
+        {
+          "key": "41.10B",
+          "label": "Construction d'autres bâtiments"
+        },
+        {
+          "key": "68.20A",
+          "label": "Location de logements"
+        },
+        {
+          "key": "autre:organismes HLM",
+          "label": "autre:organismes HLM"
+        }
+      ],
+      "n_groups": 2,
+      "groups": [
+        "Ensemble pour la République",
+        "Union des droites pour la République"
+      ],
+      "majority_groups": [],
+      "companies": 684073,
+      "employees_low": 171390,
+      "employees_high": 333582,
+      "approx": false,
+      "not_counted": [
+        "Travaux de construction spécialisés"
+      ],
+      "quote": "impose aux acheteurs du troisième programme national de renouvellement urbain de réserver en priorité leurs marchés aux entreprises dont le siège est situé dans le département ou la région de l'opération",
+      "history": {
+        "theme": "Supprimer la priorité aux entreprises locales",
+        "amendments": [
+          "551",
+          "652"
+        ],
+        "effects": [
+          "Supprime l'obligation de réserver en priorité les marchés du programme national de renouvellement urbain aux entreprises dont le siège est situé dans le département ou la région de l'opération.",
+          "Supprime l'obligation de réserver prioritairement les chantiers de renouvellement urbain aux TPE-PME implantées dans le département du projet"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime l'obligation pour les acheteurs publics du programme national de renouvellement urbain de réserver en priorité leurs marchés aux entreprises locales et l'obligation pour les titulaires non locaux de sous-traiter au moins 50 % du marché à de telles entreprises. Les marchés s'ouvrent à la libre concurrence.",
+        "winners": [
+          {
+            "naf": "41.20A",
+            "role": "employeurs",
+            "label": "Entreprises de construction non locales"
+          },
+          {
+            "naf": "41.20B",
+            "role": "employeurs",
+            "label": "Entreprises de construction non locales"
+          },
+          {
+            "naf": "43",
+            "role": "employeurs",
+            "label": "Entreprises de construction non locales"
+          },
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Acheteurs publics du renouvellement urbain"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "41.20A",
+            "role": "employeurs",
+            "label": "TPE-PME locales du bâtiment"
+          },
+          {
+            "naf": "41.20B",
+            "role": "employeurs",
+            "label": "TPE-PME locales du bâtiment"
+          },
+          {
+            "naf": "43",
+            "role": "employeurs",
+            "label": "TPE-PME locales du bâtiment"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [
+          {
+            "parameter": "delta",
+            "reason": "Part du marché réservée aux entreprises locales, supprimée : le chiffre 0.5 ne vient pas du dispositif d'un amendement de la mesure"
+          }
+        ],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'enveloppe de 5 Mds d'euros mentionnée à l'amendement n°652 correspond au total du programme national de renouvellement urbain, non à un flux annuel. La part du chiffre d'affaires des entreprises de construction passant par ces marchés n'est pas indiquée dans les textes."
+      }
+    },
+    {
+      "key": "deroger-plu-surelevation-ascenseur",
+      "theme": "Déroger au PLU pour la surélévation",
+      "amendments": [
+        "163"
+      ],
+      "opposes": null,
+      "effects": [
+        "Permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur"
+      ],
+      "nafs": [
+        "41.20B",
+        "43.22A",
+        "68.20A"
+      ],
+      "roles": [
+        "autre:bailleurs sociaux",
+        "collectivites",
+        "employeurs",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "43.22A",
+          "label": "Travaux d'installation d'ascenseurs et d'escaliers mécaniques"
+        },
+        {
+          "key": "41.20B",
+          "label": "Construction d'autres bâtiments"
+        },
+        {
+          "key": "68.20A",
+          "label": "Location de logements"
+        },
+        {
+          "key": "employeurs",
+          "label": "employeurs"
+        },
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "autre:bailleurs sociaux",
+          "label": "autre:bailleurs sociaux"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Les Démocrates"
+      ],
+      "majority_groups": [],
+      "companies": 681357,
+      "employees_low": 175009,
+      "employees_high": 339568,
+      "approx": false,
+      "not_counted": [],
+      "quote": "y compris lorsque ces projets consistent en la surélévation d'un bâtiment d'habitation existant permettant de financer l'installation, le remplacement ou la modernisation d'un ascenseur",
+      "history": {
+        "theme": "Déroger au PLU pour la surélévation",
+        "amendments": [
+          "163"
+        ],
+        "effects": [
+          "Permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur"
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {
+          "LR": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2025
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2024-2025/694/218",
+            "session": "2024-2025",
+            "text_number": "694",
+            "stage": "seance",
+            "number": "218",
+            "filed": "2025-06-17",
+            "year": 2025,
+            "author": "Mme NOËL",
+            "group": "LR",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/2024-2025/694/Amdt_218.html",
+            "cites": [],
+            "measure": "deroger-plu-surelevation-ascenseur",
+            "stance": "contre",
+            "quote": "Les alinéas 8 et 9 de l'article 2 prévoient la possibilité pour l'autorité compétente pour délivrer l'autorisation d'urbanisme de déroger au PLU pour autoriser la surélévation ou la transformation d'une construction régulièrement édifiée"
+          }
+        ],
+        "findings": [
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2025 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/694/218"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2025-06-17 : n° 218 (seance, texte n° 694 de 2024-2025) de Mme NOËL (LR), contre la mesure : « Les alinéas 8 et 9 de l'article 2 prévoient la possibilité pour l'autorité compétente pour délivrer l'autorisation d'urbanisme de déroger au PLU pour autoriser la surélévation ou la transformation d'une construction régulièrement édifiée ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2024-2025/694/218"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur. Il s'agit d'une facilitation réglementaire, sans transfert monétaire direct chiffré dans le texte.",
+        "winners": [
+          {
+            "naf": "43.22A",
+            "role": null,
+            "label": "Installateurs et mainteneurs d'ascenseurs"
+          },
+          {
+            "naf": "41.20B",
+            "role": null,
+            "label": "Entreprises de construction (surélévation)"
+          },
+          {
+            "naf": "68.20A",
+            "role": "autre:bailleurs sociaux",
+            "label": "Bailleurs sociaux et locateurs de logements"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Collectivités locales compétentes en urbanisme (perte partielle de maîtrise du PLU sur les projets concernés)"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire (assiette) ou un écart. La mesure est une dérogation réglementaire au PLU ; aucun transfert financier direct n'est décrit ni chiffré."
+      }
+    },
+    {
+      "key": "supprimer-obligation-residence-principale",
+      "theme": "Supprimer l'obligation de résidence principale",
+      "amendments": [
+        "17"
+      ],
+      "opposes": null,
+      "effects": [
+        "Supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement."
+      ],
+      "nafs": [
+        "41.10A",
+        "68.20A"
+      ],
+      "roles": [
+        "collectivites",
+        "menages"
+      ],
+      "sectors": [
+        {
+          "key": "41.10A",
+          "label": "Promotion immobilière de logements"
+        },
+        {
+          "key": "68.20A",
+          "label": "Location de logements"
+        },
+        {
+          "key": "menages",
+          "label": "menages"
+        },
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Rassemblement National"
+      ],
+      "majority_groups": [],
+      "companies": 614062,
+      "employees_low": 83583,
+      "employees_high": 164297,
+      "approx": false,
+      "not_counted": [],
+      "quote": "les logements créés dans un périmètre de développement du logement et ayant bénéficié de dérogations aux règles d’urbanisme sont, en contrepartie, soumis à une obligation d’usage exclusif en tant que résidence principale",
+      "history": {
+        "theme": "Supprimer l'obligation de résidence principale",
+        "amendments": [
+          "17"
+        ],
+        "effects": [
+          "Supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement."
+        ],
+        "opposes": null,
+        "articles": [],
+        "senate_by_group": {
+          "UCI": {
+            "filed": 1,
+            "adopted": 1,
+            "rejected": 0,
+            "other": 0,
+            "pour": 0,
+            "contre": 1,
+            "years": [
+              2026
+            ]
+          }
+        },
+        "past_amendments": [
+          {
+            "id": "senat:2025-2026/273/COM-14",
+            "session": "2025-2026",
+            "text_number": "273",
+            "stage": "commission",
+            "number": "COM-14",
+            "filed": "2026-02-06",
+            "year": 2026,
+            "author": "Mme GACQUERRE, rapporteure",
+            "group": "UCI",
+            "group_source": "history",
+            "outcome": "adopté",
+            "url": "https://www.senat.fr/amendements/commissions/2025-2026/273/Amdt_COM-14.html",
+            "cites": [],
+            "measure": "supprimer-obligation-residence-principale",
+            "stance": "contre",
+            "quote": "Les logements ainsi créés peuvent être soumis à une obligation d'usage en tant que résidence principale, en application de l'article L. 151-14-1."
+          }
+        ],
+        "findings": [
+          {
+            "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (1).",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2025-2026/273/COM-14"
+            ]
+          },
+          {
+            "text": "Amendement adopté, déposé le 2026-02-06 : n° COM-14 (commission, texte n° 273 de 2025-2026) de Mme GACQUERRE, rapporteure (UCI), contre la mesure : « Les logements ainsi créés peuvent être soumis à une obligation d'usage en tant que résidence principale, en application de l'article L. 151-14-1. ».",
+            "source": "Sénat (Ameli)",
+            "refs": [
+              "senat:2025-2026/273/COM-14"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement. Les propriétaires retrouvent la liberté de louer, occuper ou revendre leur bien sans restriction d'usage.",
+        "winners": [
+          {
+            "naf": "41.10A",
+            "role": null,
+            "label": "Promotion immobilière de logements"
+          },
+          {
+            "naf": "68.20A",
+            "role": null,
+            "label": "Location de logements"
+          },
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Propriétaires bailleurs concernés par les dérogations PLU"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Collectivités locales qui perdent un levier de politique du logement"
+          },
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Ménages cherchant un logement en résidence principale dans les périmètres concernés"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre monétaire, aucun taux ni aucune assiette quantifiée. Il s'agit d'une suppression de contrainte réglementaire d'usage sans paramètre financier chiffré dans le texte."
+      }
+    },
+    {
+      "key": "rendre-obligatoire-concertation-prealable",
+      "theme": "Rendre obligatoire la concertation préalable",
+      "amendments": [
+        "159"
+      ],
+      "opposes": null,
+      "effects": [
+        "Rend obligatoire une concertation préalable avec les riverains lors de l'instauration d'un périmètre de développement du logement, selon les règles du code de l'urbanisme."
+      ],
+      "nafs": [],
+      "roles": [
+        "collectivites"
+      ],
+      "sectors": [
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [],
+      "quote": "La présente délibération est soumise à une concertation préalable, organisée dans les formes et selon les modalités prévues aux articles L. 103‑1 à L. 103‑7 du code de l’urbanisme.",
+      "history": {
+        "theme": "Rendre obligatoire la concertation préalable",
+        "amendments": [
+          "159"
+        ],
+        "effects": [
+          "Rend obligatoire une concertation préalable avec les riverains lors de l'instauration d'un périmètre de développement du logement, selon les règles du code de l'urbanisme."
+        ],
+        "opposes": null,
+        "articles": [
+          "article L. 103-1 du code de l'urbanisme",
+          "article L. 103-7 du code de l'urbanisme"
+        ],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [
+          {
+            "text": "L'article L. 103-1 du code de l'urbanisme, visé par 1 amendement(s) de cette mesure, compte 2 version(s) ; celle en vigueur depuis le 2016-01-01 vient de : Ordonnance n° 2015-1174 du 23 septembre 2015 relative à la partie législative du livre Ier du code de l'urbanisme.",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000031210118",
+              "legifrance:JORFTEXT000031204500",
+              "senat:current/159"
+            ]
+          }
+        ],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose aux collectivités locales d'organiser une concertation préalable avec les riverains avant d'instaurer un périmètre de développement du logement, selon les procédures du code de l'urbanisme. Il s'agit d'une obligation procédurale sans transfert monétaire direct.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "menages",
+            "label": "Riverains concernés par un périmètre de développement du logement"
+          }
+        ],
+        "losers": [
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Collectivités locales instaurant un périmètre de développement du logement"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle rend obligatoire une concertation sans créer de transfert monétaire. Aucune assiette ni écart chiffré n'est fourni dans les amendements."
+      }
+    },
+    {
+      "key": "encadrer-delai-reponse-abf",
+      "theme": "Encadrer le délai de réponse de l'ABF",
+      "amendments": [
+        "637"
+      ],
+      "opposes": "supprimer-operations-interet-local",
+      "effects": [
+        "Encadre à un mois le délai de réponse de l'architecte des bâtiments de France lors de la consultation pour avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local."
+      ],
+      "nafs": [
+        "84.11Z"
+      ],
+      "roles": [
+        "collectivites",
+        "etat"
+      ],
+      "sectors": [
+        {
+          "key": "84.11Z",
+          "label": "Administration publique générale"
+        },
+        {
+          "key": "etat",
+          "label": "etat"
+        },
+        {
+          "key": "collectivites",
+          "label": "collectivites"
+        }
+      ],
+      "n_groups": 1,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "majority_groups": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "approx": false,
+      "not_counted": [
+        "Administration publique générale"
+      ],
+      "quote": "Cet avis simple intervient dans un délai d'un mois à compter de la saisine.",
+      "history": {
+        "theme": "Encadrer le délai de réponse de l'ABF",
+        "amendments": [
+          "637"
+        ],
+        "effects": [
+          "Encadre à un mois le délai de réponse de l'architecte des bâtiments de France lors de la consultation pour avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local."
+        ],
+        "opposes": "supprimer-operations-interet-local",
+        "articles": [],
+        "senate_by_group": {},
+        "past_amendments": [],
+        "findings": [],
+        "lobby_pour": [],
+        "lobby_contre": [],
+        "lobby_both": [],
+        "lobby_quotes": []
+      },
+      "chiffrage": {
+        "mechanism": "La mesure impose à l'architecte des bâtiments de France un délai de réponse d'un mois pour émettre un avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local. Il s'agit d'une contrainte procédurale sans transfert financier identifié.",
+        "winners": [
+          {
+            "naf": null,
+            "role": "collectivites",
+            "label": "Collectivités instruisant les autorisations d'urbanisme"
+          }
+        ],
+        "losers": [
+          {
+            "naf": "84.11Z",
+            "role": "etat",
+            "label": "Services de l'État – Architectes des bâtiments de France"
+          }
+        ],
+        "total_eur_per_year": null,
+        "rates": [],
+        "parameters": [],
+        "dropped": [],
+        "mirror_of": null,
+        "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure fixe un délai administratif d'un mois pour l'avis de l'ABF. Aucun flux financier n'est décrit dans les amendements : pas d'assiette monétaire ni d'écart chiffré en euros ou en part d'un flux."
+      }
+    }
+  ]
+}

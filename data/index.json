@@ -83,6 +83,15 @@
   {
     "chamber": "an",
     "session": "17",
+    "number": "3188",
+    "title": "Projet de loi visant la relance et la décentralisation du logement",
+    "path": "data/an/17/3188",
+    "generated_at": null,
+    "n_measures": 6
+  },
+  {
+    "chamber": "an",
+    "session": "17",
     "number": "3210",
     "title": "Projet de loi projet de loi de finances pour 2027",
     "path": "data/an/17/3210",

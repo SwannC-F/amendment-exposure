@@ -1,0 +1,240 @@
+{
+  "supprimer-priorite-entreprises-locales": {
+    "key": "supprimer-priorite-entreprises-locales",
+    "theme": "Supprimer la priorité aux entreprises locales",
+    "mechanism": "La mesure supprime l'obligation pour les acheteurs publics du programme national de renouvellement urbain de réserver en priorité leurs marchés aux entreprises locales et l'obligation pour les titulaires non locaux de sous-traiter au moins 50 % du marché à de telles entreprises. Les marchés s'ouvrent à la libre concurrence.",
+    "winners": [
+      {
+        "naf": "41.20A",
+        "role": "employeurs",
+        "label": "Entreprises de construction non locales"
+      },
+      {
+        "naf": "41.20B",
+        "role": "employeurs",
+        "label": "Entreprises de construction non locales"
+      },
+      {
+        "naf": "43",
+        "role": "employeurs",
+        "label": "Entreprises de construction non locales"
+      },
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Acheteurs publics du renouvellement urbain"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "41.20A",
+        "role": "employeurs",
+        "label": "TPE-PME locales du bâtiment"
+      },
+      {
+        "naf": "41.20B",
+        "role": "employeurs",
+        "label": "TPE-PME locales du bâtiment"
+      },
+      {
+        "naf": "43",
+        "role": "employeurs",
+        "label": "TPE-PME locales du bâtiment"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'enveloppe de 5 Mds d'euros mentionnée à l'amendement n°652 correspond au total du programme national de renouvellement urbain, non à un flux annuel. La part du chiffre d'affaires des entreprises de construction passant par ces marchés n'est pas indiquée dans les textes.",
+    "dropped": [
+      {
+        "parameter": "delta",
+        "reason": "Part du marché réservée aux entreprises locales, supprimée : le chiffre 0.5 ne vient pas du dispositif d'un amendement de la mesure"
+      }
+    ],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "supprimer-operations-interet-local": {
+    "key": "supprimer-operations-interet-local",
+    "theme": "Supprimer les opérations d'intérêt local",
+    "mechanism": "La mesure supprime l'article 2 créant les opérations d'intérêt local (OIL), qui permettaient aux communes et EPCI de déroger au PLU (hauteur, densité, paysage) avec un avis simple de l'ABF au lieu de son accord. Aucun transfert monétaire n'est identifiable : c'est une modification réglementaire d'urbanisme.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Collectivités locales : le PLU et ses garanties environnementales et démocratiques sont restaurés"
+      },
+      {
+        "naf": null,
+        "role": "etat",
+        "label": "Architectes des bâtiments de France : l'accord conforme est maintenu au lieu d'un simple avis"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "41.10A",
+        "role": null,
+        "label": "Promotion immobilière : perte de la possibilité de déroger au PLU pour accélérer les projets"
+      },
+      {
+        "naf": "68.20A",
+        "role": null,
+        "label": "Location de logements : projets immobiliers ralentis par le maintien des règles du PLU"
+      },
+      {
+        "naf": "71.11A",
+        "role": null,
+        "label": "Aménagement foncier : suppression d'un outil de dérogation réglementaire"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure supprime un dispositif réglementaire d'urbanisme sans transfert monétaire identifiable. Aucune assiette financière ni écart chiffré ne figure dans les amendements.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "deroger-plu-surelevation-ascenseur": {
+    "key": "deroger-plu-surelevation-ascenseur",
+    "theme": "Déroger au PLU pour la surélévation",
+    "mechanism": "La mesure permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur. Il s'agit d'une facilitation réglementaire, sans transfert monétaire direct chiffré dans le texte.",
+    "winners": [
+      {
+        "naf": "43.22A",
+        "role": null,
+        "label": "Installateurs et mainteneurs d'ascenseurs"
+      },
+      {
+        "naf": "41.20B",
+        "role": null,
+        "label": "Entreprises de construction (surélévation)"
+      },
+      {
+        "naf": "68.20A",
+        "role": "autre:bailleurs sociaux",
+        "label": "Bailleurs sociaux et locateurs de logements"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Collectivités locales compétentes en urbanisme (perte partielle de maîtrise du PLU sur les projets concernés)"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire (assiette) ou un écart. La mesure est une dérogation réglementaire au PLU ; aucun transfert financier direct n'est décrit ni chiffré.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "rendre-obligatoire-concertation-prealable": {
+    "key": "rendre-obligatoire-concertation-prealable",
+    "theme": "Rendre obligatoire la concertation préalable",
+    "mechanism": "La mesure impose aux collectivités locales d'organiser une concertation préalable avec les riverains avant d'instaurer un périmètre de développement du logement, selon les procédures du code de l'urbanisme. Il s'agit d'une obligation procédurale sans transfert monétaire direct.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Riverains concernés par un périmètre de développement du logement"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Collectivités locales instaurant un périmètre de développement du logement"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle rend obligatoire une concertation sans créer de transfert monétaire. Aucune assiette ni écart chiffré n'est fourni dans les amendements.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "supprimer-obligation-residence-principale": {
+    "key": "supprimer-obligation-residence-principale",
+    "theme": "Supprimer l'obligation de résidence principale",
+    "mechanism": "La mesure supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement. Les propriétaires retrouvent la liberté de louer, occuper ou revendre leur bien sans restriction d'usage.",
+    "winners": [
+      {
+        "naf": "41.10A",
+        "role": null,
+        "label": "Promotion immobilière de logements"
+      },
+      {
+        "naf": "68.20A",
+        "role": null,
+        "label": "Location de logements"
+      },
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Propriétaires bailleurs concernés par les dérogations PLU"
+      }
+    ],
+    "losers": [
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Collectivités locales qui perdent un levier de politique du logement"
+      },
+      {
+        "naf": null,
+        "role": "menages",
+        "label": "Ménages cherchant un logement en résidence principale dans les périmètres concernés"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre monétaire, aucun taux ni aucune assiette quantifiée. Il s'agit d'une suppression de contrainte réglementaire d'usage sans paramètre financier chiffré dans le texte.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  },
+  "encadrer-delai-reponse-abf": {
+    "key": "encadrer-delai-reponse-abf",
+    "theme": "Encadrer le délai de réponse de l'ABF",
+    "mechanism": "La mesure impose à l'architecte des bâtiments de France un délai de réponse d'un mois pour émettre un avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local. Il s'agit d'une contrainte procédurale sans transfert financier identifié.",
+    "winners": [
+      {
+        "naf": null,
+        "role": "collectivites",
+        "label": "Collectivités instruisant les autorisations d'urbanisme"
+      }
+    ],
+    "losers": [
+      {
+        "naf": "84.11Z",
+        "role": "etat",
+        "label": "Services de l'État – Architectes des bâtiments de France"
+      }
+    ],
+    "base": null,
+    "delta": null,
+    "shares": [],
+    "rates": [],
+    "total_eur_per_year": null,
+    "not_computable": "Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure fixe un délai administratif d'un mois pour l'avis de l'ABF. Aucun flux financier n'est décrit dans les amendements : pas d'assiette monétaire ni d'écart chiffré en euros ou en part d'un flux.",
+    "dropped": [],
+    "mirror_of": null,
+    "model": "zai-org/GLM-5.2"
+  }
+}

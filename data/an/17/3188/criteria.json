@@ -1,0 +1,265 @@
+[
+  {
+    "number": "551",
+    "criteria_found": true,
+    "effect": "Supprime l'obligation de réserver en priorité les marchés du programme national de renouvellement urbain aux entreprises dont le siège est situé dans le département ou la région de l'opération.",
+    "who": "Acheteurs publics du troisième programme national de renouvellement urbain et entreprises de construction candidates à ces marchés",
+    "sectors": [
+      {
+        "naf": "41.20A",
+        "label": "Construction de maisons individuelles"
+      },
+      {
+        "naf": "41.20B",
+        "label": "Construction de bâtiments"
+      },
+      {
+        "naf": "43",
+        "label": "Travaux de construction spécialisés"
+      }
+    ],
+    "roles": [
+      "collectivites",
+      "employeurs"
+    ],
+    "regions": [],
+    "quote": "impose aux acheteurs du troisième programme national de renouvellement urbain de réserver en priorité leurs marchés aux entreprises dont le siège est situé dans le département ou la région de l'opération",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "652",
+    "criteria_found": true,
+    "effect": "Supprime l'obligation de réserver prioritairement les chantiers de renouvellement urbain aux TPE-PME implantées dans le département du projet",
+    "who": "TPE-PME du bâtiment, organismes HLM maîtres d'ouvrage, collectivités attributaires de marchés publics de renouvellement urbain",
+    "sectors": [
+      {
+        "naf": "41.10A",
+        "label": "Construction de maisons individuelles"
+      },
+      {
+        "naf": "41.10B",
+        "label": "Construction d'autres bâtiments"
+      },
+      {
+        "naf": "68.20A",
+        "label": "Location de logements"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "collectivites",
+      "autre:organismes HLM"
+    ],
+    "regions": [],
+    "quote": "L'amendement supprime l'obligation de réserver les chantiers de renouvellement urbains prioritairement aux TPE-PME implantés dans le département où l'opération de renouvellement urbain a lieu.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "704",
+    "criteria_found": true,
+    "effect": "Supprime l'article permettant de déroger au plan local d'urbanisme (PLU) dans le périmètre des opérations d'intérêt local, restaurant ainsi les règles générales d'urbanisme et les garanties environnementales.",
+    "who": "Collectivités locales menant des opérations d'intérêt local, architectes des bâtiments de France (ABF)",
+    "sectors": [],
+    "roles": [
+      "collectivites"
+    ],
+    "regions": [],
+    "quote": "L'article 2 permet de déroger largement au plan local d'urbanisme dans le périmètre des opérations d'intérêt local.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "793",
+    "criteria_found": true,
+    "effect": "Supprime les opérations d'intérêt local (OIL) qui permettaient aux communes et EPCI de déroger aux règles du PLU (hauteur, densité, paysage) pour accélérer certains projets immobiliers.",
+    "who": "Communes et EPCI, investisseurs et promoteurs immobiliers",
+    "sectors": [
+      {
+        "naf": "68.20A",
+        "label": "Location de logements"
+      },
+      {
+        "naf": "41.10A",
+        "label": "Promotion immobilière"
+      },
+      {
+        "naf": "71.11A",
+        "label": "Aménagement foncier"
+      }
+    ],
+    "roles": [
+      "collectivites",
+      "autre:investisseurs immobiliers"
+    ],
+    "regions": [],
+    "quote": "Nous nous opposons aux « opérations d'intérêt local » (OIL) qui créent une déréglementation à la carte pour les communes et EPCI, et qui ouvrent ainsi la voie à la mise en concurrence des collectivités et à la course au moins disant réglementaire pour attirer les investisseurs immobiliers.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "958",
+    "criteria_found": true,
+    "effect": "Supprime la création des opérations d'intérêt local permettant d'accorder des dérogations au PLU(i) avec un avis simple de l'architecte des bâtiments de France au lieu de son accord.",
+    "who": "Collectivités territoriales, EPCI et communes compétents en matière de PLU(i), ainsi que l'architecte des bâtiments de France",
+    "sectors": [],
+    "roles": [
+      "collectivites",
+      "etat"
+    ],
+    "regions": [],
+    "quote": "Cet article vise à permettre d'instaurer la création d'opérations d'intérêt local, dans le périmètre desquelles des dérogations au plan local d'urbanisme peuvent être accordées.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "658",
+    "criteria_found": false,
+    "effect": "Substitution d'un mot par un autre (« et » en « ou ») à l'alinéa 2, sans portée normative.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "À l’alinéa 2, substituer à la première occurrence du mot : « et » ; le mot : « ou ».",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "163",
+    "criteria_found": true,
+    "effect": "Permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur",
+    "who": "Entreprises de construction (surélévation), installateurs et mainteneurs d'ascenseurs, bailleurs sociaux, collectivités locales compétentes en urbanisme",
+    "sectors": [
+      {
+        "naf": "43.22A",
+        "label": "Travaux d'installation d'ascenseurs et d'escaliers mécaniques"
+      },
+      {
+        "naf": "41.20B",
+        "label": "Construction d'autres bâtiments"
+      },
+      {
+        "naf": "68.20A",
+        "label": "Location de logements"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "collectivites",
+      "etat",
+      "autre:bailleurs sociaux"
+    ],
+    "regions": [],
+    "quote": "y compris lorsque ces projets consistent en la surélévation d'un bâtiment d'habitation existant permettant de financer l'installation, le remplacement ou la modernisation d'un ascenseur",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "159",
+    "criteria_found": true,
+    "effect": "Rend obligatoire une concertation préalable avec les riverains lors de l'instauration d'un périmètre de développement du logement, selon les règles du code de l'urbanisme.",
+    "who": "Collectivités locales instaurant un périmètre de développement du logement et riverains concernés",
+    "sectors": [],
+    "roles": [
+      "collectivites"
+    ],
+    "regions": [],
+    "quote": "La présente délibération est soumise à une concertation préalable, organisée dans les formes et selon les modalités prévues aux articles L. 103‑1 à L. 103‑7 du code de l’urbanisme.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "673",
+    "criteria_found": false,
+    "effect": "Correction rédactionnelle de l'ordre des mots dans une phrase sur la délimitation d'un périmètre.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "674",
+    "criteria_found": false,
+    "effect": "Correction rédactionnelle visant à simplifier la formulation d'une phrase de l'article 2.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "17",
+    "criteria_found": true,
+    "effect": "Supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement.",
+    "who": "Propriétaires et bailleurs de logements concernés par les dérogations PLU, promoteurs immobiliers",
+    "sectors": [
+      {
+        "naf": "41.10A",
+        "label": "Promotion immobilière de logements"
+      },
+      {
+        "naf": "68.20A",
+        "label": "Location de logements"
+      }
+    ],
+    "roles": [
+      "menages",
+      "collectivites"
+    ],
+    "regions": [],
+    "quote": "les logements créés dans un périmètre de développement du logement et ayant bénéficié de dérogations aux règles d’urbanisme sont, en contrepartie, soumis à une obligation d’usage exclusif en tant que résidence principale",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "637",
+    "criteria_found": true,
+    "effect": "Encadre à un mois le délai de réponse de l'architecte des bâtiments de France lors de la consultation pour avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local.",
+    "who": "Architectes des bâtiments de France (services de l'État) et collectivités instruisant les autorisations d'urbanisme",
+    "sectors": [
+      {
+        "naf": "84.11Z",
+        "label": "Administration publique générale"
+      }
+    ],
+    "roles": [
+      "etat",
+      "collectivites"
+    ],
+    "regions": [],
+    "quote": "Cet avis simple intervient dans un délai d'un mois à compter de la saisine.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "676",
+    "criteria_found": false,
+    "effect": "Modification rédactionnelle d'une référence à un alinéa dans l'article 2.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "Amendement rédactionnel.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

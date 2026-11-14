@@ -1,0 +1,706 @@
+{
+ "session": "an/17",
+ "text": "3188",
+ "title": "Projet de loi visant la relance et la décentralisation du logement",
+ "dossier": null,
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "logement",
+  "plan local d'urbanisme",
+  "surélévation",
+  "résidence principale",
+  "architecte des bâtiments de France",
+  "opération d'intérêt local",
+  "décentralisation du logement"
+ ],
+ "articles": {
+  "Code de l'urbanisme|L103-1": {
+   "code": "Code de l'urbanisme",
+   "num": "L103-1",
+   "label": "article L. 103-1 du code de l'urbanisme",
+   "found": true,
+   "id": "LEGIARTI000031210118",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210118",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000031210118",
+     "start": "2016-01-01",
+     "end": "2017-01-29",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210118",
+     "modified_by": {
+      "id": "JORFTEXT000031204500",
+      "link_type": "CREE",
+      "article": "art.",
+      "title": "Ordonnance n° 2015-1174 du 23 septembre 2015 relative à la partie législative du livre Ier du code de l'urbanisme",
+      "date": "2015-09-23",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031204500"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 2,
+   "derogations": []
+  },
+  "Code de l'urbanisme|L103-7": {
+   "code": "Code de l'urbanisme",
+   "num": "L103-7",
+   "label": "article L. 103-7 du code de l'urbanisme",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  }
+ },
+ "laws": {
+  "JORFTEXT000031204500": {
+   "id": "JORFTEXT000031204500",
+   "title": "Ordonnance n° 2015-1174 du 23 septembre 2015 relative à la partie législative du livre Ier du code de l'urbanisme",
+   "nor": "ETLL1511519R",
+   "date": "2015-09-23",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031204500",
+   "senat_documents": [],
+   "articles": [
+    "Code de l'urbanisme|L103-1"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000054340694": {
+   "id": "JORFTEXT000054340694",
+   "title": "LOI n° 2026-553 du 29 juin 2026 visant à améliorer l'accès au logement des travailleurs des services publics (1)",
+   "nor": "VLOC2515640L",
+   "date": "2026-06-29",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054340694",
+   "senat_documents": [
+    {
+     "num": "273",
+     "session": "2025-2026"
+    },
+    {
+     "num": "378",
+     "session": "2025-2026"
+    },
+    {
+     "num": "379",
+     "session": "2025-2026"
+    },
+    {
+     "num": "567",
+     "session": "2025-2026"
+    },
+    {
+     "num": "568",
+     "session": "2025-2026"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000052857880": {
+   "id": "JORFTEXT000052857880",
+   "title": "LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme et du logement (1)",
+   "nor": "ATDX2512888L",
+   "date": "2025-11-26",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052857880",
+   "senat_documents": [
+    {
+     "num": "632",
+     "session": "2024-2025"
+    },
+    {
+     "num": "693",
+     "session": "2024-2025"
+    },
+    {
+     "num": "684",
+     "session": "2024-2025"
+    },
+    {
+     "num": "694",
+     "session": "2024-2025"
+    },
+    {
+     "num": "826",
+     "session": "2024-2025"
+    },
+    {
+     "num": "827",
+     "session": "2024-2025"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000037864059": {
+   "id": "JORFTEXT000037864059",
+   "title": "LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivision successorale et à relancer la politique du logement en outre-mer (1)",
+   "nor": "MOMX1802748L",
+   "date": "2018-12-27",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037864059",
+   "senat_documents": [
+    {
+     "num": "231",
+     "session": "2017-2018"
+    },
+    {
+     "num": "379",
+     "session": "2017-2018"
+    },
+    {
+     "num": "380",
+     "session": "2017-2018"
+    },
+    {
+     "num": "200",
+     "session": "2018-2019"
+    },
+    {
+     "num": "210",
+     "session": "2018-2019"
+    },
+    {
+     "num": "211",
+     "session": "2018-2019"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000037639478": {
+   "id": "JORFTEXT000037639478",
+   "title": "LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménagement et du numérique (1)",
+   "nor": "TERL1805474L",
+   "date": "2018-11-23",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037639478",
+   "senat_documents": [
+    {
+     "num": "567",
+     "session": "2017-2018"
+    },
+    {
+     "num": "630",
+     "session": "2017-2018"
+    },
+    {
+     "num": "631",
+     "session": "2017-2018"
+    },
+    {
+     "num": "604",
+     "session": "2017-2018"
+    },
+    {
+     "num": "606",
+     "session": "2017-2018"
+    },
+    {
+     "num": "608",
+     "session": "2017-2018"
+    },
+    {
+     "num": "720",
+     "session": "2017-2018"
+    },
+    {
+     "num": "721",
+     "session": "2017-2018"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000047873054": {
+   "id": "JORFTEXT000047873054",
+   "title": "LOI n° 2023-649 du 21 juillet 2023 visant à régulariser le plan local d'urbanisme intercommunal de la communauté de communes du Bas Chablais (1)",
+   "nor": "TREX2303461L",
+   "date": "2023-07-21",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000047873054",
+   "senat_documents": [
+    {
+     "num": "28",
+     "session": "2022-2023"
+    },
+    {
+     "num": "270",
+     "session": "2022-2023"
+    },
+    {
+     "num": "271",
+     "session": "2022-2023"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [
+  {
+   "session": "2025-2026",
+   "number": "273",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2026-553 du 29 juin 2026 visant à améliorer l'accès au logement des trava",
+   "csv": "https://www.senat.fr/amendements/commissions/2025-2026/273/jeu_complet_commission_2025-2026_273.csv",
+   "rows": 18,
+   "relevant": 13
+  },
+  {
+   "session": "2025-2026",
+   "number": "379",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2026-553 du 29 juin 2026 visant à améliorer l'accès au logement des trava",
+   "csv": "https://www.senat.fr/amendements/2025-2026/379/jeu_complet_2025-2026_379.csv",
+   "rows": 24,
+   "relevant": 15
+  },
+  {
+   "session": "2024-2025",
+   "number": "632",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e",
+   "csv": "https://www.senat.fr/amendements/commissions/2024-2025/632/jeu_complet_commission_2024-2025_632.csv",
+   "rows": 130,
+   "relevant": 63
+  },
+  {
+   "session": "2024-2025",
+   "number": "694",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e",
+   "csv": "https://www.senat.fr/amendements/2024-2025/694/jeu_complet_2024-2025_694.csv",
+   "rows": 225,
+   "relevant": 102
+  },
+  {
+   "session": "2024-2025",
+   "number": "827",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e",
+   "csv": "https://www.senat.fr/amendements/2024-2025/827/jeu_complet_2024-2025_827.csv",
+   "rows": 5,
+   "relevant": 0
+  },
+  {
+   "session": "2022-2023",
+   "number": "28",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2023-649 du 21 juillet 2023 visant à régulariser le plan local d'urbanism",
+   "csv": "https://www.senat.fr/amendements/commissions/2022-2023/28/jeu_complet_commission_2022-2023_28.csv",
+   "rows": 1,
+   "relevant": 0
+  },
+  {
+   "session": "2022-2023",
+   "number": "271",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2023-649 du 21 juillet 2023 visant à régulariser le plan local d'urbanism",
+   "csv": "https://www.senat.fr/amendements/2022-2023/271/jeu_complet_2022-2023_271.csv",
+   "rows": 2,
+   "relevant": 0
+  },
+  {
+   "session": "2018-2019",
+   "number": "200",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio",
+   "csv": "https://www.senat.fr/amendements/commissions/2018-2019/200/jeu_complet_commission_2018-2019_200.csv",
+   "rows": 2,
+   "relevant": 0
+  },
+  {
+   "session": "2017-2018",
+   "number": "231",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio",
+   "csv": "https://www.senat.fr/amendements/commissions/2017-2018/231/jeu_complet_commission_2017-2018_231.csv",
+   "rows": 13,
+   "relevant": 0
+  },
+  {
+   "session": "2017-2018",
+   "number": "380",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio",
+   "csv": "https://www.senat.fr/amendements/2017-2018/380/jeu_complet_2017-2018_380.csv",
+   "rows": 11,
+   "relevant": 0
+  },
+  {
+   "session": "2017-2018",
+   "number": "567",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage",
+   "csv": "https://www.senat.fr/amendements/commissions/2017-2018/567/jeu_complet_commission_2017-2018_567.csv",
+   "rows": 923,
+   "relevant": 386
+  },
+  {
+   "session": "2017-2018",
+   "number": "631",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage",
+   "csv": "https://www.senat.fr/amendements/2017-2018/631/jeu_complet_2017-2018_631.csv",
+   "rows": 1156,
+   "relevant": 555
+  },
+  {
+   "session": "2017-2018",
+   "number": "721",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage",
+   "csv": "https://www.senat.fr/amendements/2017-2018/721/jeu_complet_2017-2018_721.csv",
+   "rows": 22,
+   "relevant": 2
+  }
+ ],
+ "stats": {
+  "articles": 2,
+  "laws": 6,
+  "senat_texts": 13,
+  "past_relevant": 1136,
+  "past_attached": 4,
+  "past_quote_rejected": 1,
+  "hatvp_fiches": 2042,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {
+  "supprimer-priorite-entreprises-locales": {
+   "theme": "Supprimer la priorité aux entreprises locales",
+   "amendments": [
+    "551",
+    "652"
+   ],
+   "effects": [
+    "Supprime l'obligation de réserver en priorité les marchés du programme national de renouvellement urbain aux entreprises dont le siège est situé dans le département ou la région de l'opération.",
+    "Supprime l'obligation de réserver prioritairement les chantiers de renouvellement urbain aux TPE-PME implantées dans le département du projet"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "supprimer-operations-interet-local": {
+   "theme": "Supprimer les opérations d'intérêt local",
+   "amendments": [
+    "704",
+    "793",
+    "958"
+   ],
+   "effects": [
+    "Supprime l'article permettant de déroger au plan local d'urbanisme (PLU) dans le périmètre des opérations d'intérêt local, restaurant ainsi les règles générales d'urbanisme et les garanties environnementales.",
+    "Supprime la création des opérations d'intérêt local permettant d'accorder des dérogations au PLU(i) avec un avis simple de l'architecte des bâtiments de France au lieu de son accord.",
+    "Supprime les opérations d'intérêt local (OIL) qui permettaient aux communes et EPCI de déroger aux règles du PLU (hauteur, densité, paysage) pour accélérer certains projets immobiliers."
+   ],
+   "opposes": "encadrer-delai-reponse-abf",
+   "articles": [],
+   "senate_by_group": {
+    "LR": {
+     "filed": 2,
+     "adopted": 0,
+     "rejected": 2,
+     "other": 0,
+     "pour": 2,
+     "contre": 0,
+     "years": [
+      2018
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2017-2018/567/COM-267",
+     "session": "2017-2018",
+     "text_number": "567",
+     "stage": "commission",
+     "number": "COM-267",
+     "filed": "2018-06-27",
+     "year": 2018,
+     "author": "M. LELEUX",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2017-2018/567/Amdt_COM-267.html",
+     "cites": [],
+     "measure": "supprimer-operations-interet-local",
+     "stance": "pour",
+     "quote": "Cet amendement vise à supprimer les dérogations autorisées par le présent article au principe de l'avis conforme de l'architecte des bâtiments de France (ABF)."
+    },
+    {
+     "id": "senat:2017-2018/631/530 rect. ter",
+     "session": "2017-2018",
+     "text_number": "631",
+     "stage": "seance",
+     "number": "530 rect. ter",
+     "filed": "2018-07-16",
+     "year": 2018,
+     "author": "M. HOUPERT",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/2017-2018/631/Amdt_530.html",
+     "cites": [],
+     "measure": "supprimer-operations-interet-local",
+     "stance": "pour",
+     "quote": "Cet amendement vise à supprimer les dérogations autorisées par le présent article au principe de l'avis conforme de l'architecte des bâtiments de France (ABF)."
+    }
+   ],
+   "findings": [
+    {
+     "text": "Au Sénat, 2 amendement(s) déposé(s) de 2018 allaient en faveur de cette mesure : 0 adopté(s), 2 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (2).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2017-2018/567/COM-267",
+      "senat:2017-2018/631/530 rect. ter"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "deroger-plu-surelevation-ascenseur": {
+   "theme": "Déroger au PLU pour la surélévation",
+   "amendments": [
+    "163"
+   ],
+   "effects": [
+    "Permet d'accorder des dérogations au PLU pour les projets de surélévation de bâtiments d'habitation finançant l'installation, le remplacement ou la modernisation d'un ascenseur"
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2025
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2024-2025/694/218",
+     "session": "2024-2025",
+     "text_number": "694",
+     "stage": "seance",
+     "number": "218",
+     "filed": "2025-06-17",
+     "year": 2025,
+     "author": "Mme NOËL",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/2024-2025/694/Amdt_218.html",
+     "cites": [],
+     "measure": "deroger-plu-surelevation-ascenseur",
+     "stance": "contre",
+     "quote": "Les alinéas 8 et 9 de l'article 2 prévoient la possibilité pour l'autorité compétente pour délivrer l'autorisation d'urbanisme de déroger au PLU pour autoriser la surélévation ou la transformation d'une construction régulièrement édifiée"
+    }
+   ],
+   "findings": [
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2025 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/694/218"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2025-06-17 : n° 218 (seance, texte n° 694 de 2024-2025) de Mme NOËL (LR), contre la mesure : « Les alinéas 8 et 9 de l'article 2 prévoient la possibilité pour l'autorité compétente pour délivrer l'autorisation d'urbanisme de déroger au PLU pour autoriser la surélévation ou la transformation d'une construction régulièrement édifiée ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/694/218"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "rendre-obligatoire-concertation-prealable": {
+   "theme": "Rendre obligatoire la concertation préalable",
+   "amendments": [
+    "159"
+   ],
+   "effects": [
+    "Rend obligatoire une concertation préalable avec les riverains lors de l'instauration d'un périmètre de développement du logement, selon les règles du code de l'urbanisme."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 103-1 du code de l'urbanisme",
+    "article L. 103-7 du code de l'urbanisme"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 103-1 du code de l'urbanisme, visé par 1 amendement(s) de cette mesure, compte 2 version(s) ; celle en vigueur depuis le 2016-01-01 vient de : Ordonnance n° 2015-1174 du 23 septembre 2015 relative à la partie législative du livre Ier du code de l'urbanisme.",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000031210118",
+      "legifrance:JORFTEXT000031204500",
+      "senat:current/159"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "supprimer-obligation-residence-principale": {
+   "theme": "Supprimer l'obligation de résidence principale",
+   "amendments": [
+    "17"
+   ],
+   "effects": [
+    "Supprime l'obligation d'usage exclusif en résidence principale pour les logements créés sous dérogation d'urbanisme dans les périmètres de développement du logement."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {
+    "UCI": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2025-2026/273/COM-14",
+     "session": "2025-2026",
+     "text_number": "273",
+     "stage": "commission",
+     "number": "COM-14",
+     "filed": "2026-02-06",
+     "year": 2026,
+     "author": "Mme GACQUERRE, rapporteure",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2025-2026/273/Amdt_COM-14.html",
+     "cites": [],
+     "measure": "supprimer-obligation-residence-principale",
+     "stance": "contre",
+     "quote": "Les logements ainsi créés peuvent être soumis à une obligation d'usage en tant que résidence principale, en application de l'article L. 151-14-1."
+    }
+   ],
+   "findings": [
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2025-2026/273/COM-14"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-02-06 : n° COM-14 (commission, texte n° 273 de 2025-2026) de Mme GACQUERRE, rapporteure (UCI), contre la mesure : « Les logements ainsi créés peuvent être soumis à une obligation d'usage en tant que résidence principale, en application de l'article L. 151-14-1. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2025-2026/273/COM-14"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "encadrer-delai-reponse-abf": {
+   "theme": "Encadrer le délai de réponse de l'ABF",
+   "amendments": [
+    "637"
+   ],
+   "effects": [
+    "Encadre à un mois le délai de réponse de l'architecte des bâtiments de France lors de la consultation pour avis simple sur les autorisations d'urbanisme dans le périmètre d'une opération d'intérêt local."
+   ],
+   "opposes": "supprimer-operations-interet-local",
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  }
+ },
+ "refs": {
+  "senat:current/159": {
+   "source": "Sénat",
+   "label": "Amendement n° 159 (an/17, texte n° 3188)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3188/AN/159"
+  },
+  "legifrance:LEGIARTI000031210118": {
+   "source": "Légifrance",
+   "label": "article L. 103-1 du code de l'urbanisme",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031210118"
+  },
+  "legifrance:JORFTEXT000031204500": {
+   "source": "Légifrance",
+   "label": "Ordonnance n° 2015-1174 du 23 septembre 2015 relative à la partie législative du livre Ier du code de l'urbanisme",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000031204500",
+   "date": "2015-09-23"
+  },
+  "senat:2025-2026/273/COM-14": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-14 (commission, texte n° 273, 2025-2026)",
+   "url": "https://www.senat.fr/amendements/commissions/2025-2026/273/Amdt_COM-14.html",
+   "date": "2026-02-06"
+  },
+  "senat:2024-2025/694/218": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 218 (seance, texte n° 694, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/2024-2025/694/Amdt_218.html",
+   "date": "2025-06-17"
+  },
+  "senat:2017-2018/567/COM-267": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-267 (commission, texte n° 567, 2017-2018)",
+   "url": "https://www.senat.fr/amendements/commissions/2017-2018/567/Amdt_COM-267.html",
+   "date": "2018-06-27"
+  },
+  "senat:2017-2018/631/530 rect. ter": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 530 rect. ter (seance, texte n° 631, 2017-2018)",
+   "url": "https://www.senat.fr/amendements/2017-2018/631/Amdt_530.html",
+   "date": "2018-07-16"
+  }
+ }
+}
