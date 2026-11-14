@@ -7,7 +7,9 @@ Everything is indexed by (session, texte), e.g. 2026-2027 / 142.
 
   GET  /api/live/health
   GET  /api/text/<session>/<texte>                 data/<session>/<texte>/engine.json
-                                                   (absent -> 404; ?refresh=1 -> runs pipeline.py, 202 {status:"running"})
+                                                   (absent -> 404; GET ?refresh=1 -> 405)
+  POST /api/text/<session>/<texte>[?refresh=1]     {"confirm": true} -> runs pipeline.py, 202; one run at a time (409)
+  GET  /api/health                                 {ok, model, llm_key} for Render
   GET  /api/text/<session>/<texte>/status          pipeline run: status, elapsed, tail of its output
   GET  /api/live/amendments?session=&text=         pending amendments fetched now (cache 60 s), known = in criteria.json
   POST /api/live/extract[?stream=1]                {session, text_number, number} or {session, text_number, dispositif|text, objet|purpose}
@@ -762,6 +764,9 @@ class Handler(SimpleHTTPRequestHandler):
         u = urllib.parse.urlparse(self.path)
         qs = urllib.parse.parse_qs(u.query)
         q = lambda k, d="": (qs.get(k) or [d])[0]
+        if u.path == "/api/health":
+            cfg = config()
+            return self.json(200, {"ok": True, "model": cfg["model"], "llm_key": bool(cfg["key"])})
         if u.path == "/api/live/health":
             cfg = config()
             return self.json(200, {"llm_configured": bool(cfg["key"]), "mock": cfg["mock"],
@@ -775,16 +780,11 @@ class Handler(SimpleHTTPRequestHandler):
             if status:
                 return self.json(200, run_status(session, texte))
             engine = text_dir(session, texte) / "engine.json"
-            if q("refresh") in ("", "0") and not engine.exists():
+            if q("refresh") not in ("", "0"):  # never recompute on a simple visit
+                return self.json(405, {"error": "Le recalcul complet se demande en POST avec {\"confirm\": true}"})
+            if not engine.exists():
                 return self.json(404, {"status": "absent", "error": f"data/{session}/{texte}/engine.json absent",
-                                       "hint": f"/api/text/{session}/{texte}?refresh=1 lance pipeline.py"})
-            if q("refresh") not in ("", "0"):
-                run, started = start_pipeline(session, texte)
-                if run["status"] == "error" and not started:
-                    return self.json(501 if run["error"] == "pipeline.py absent" else 500,
-                                     {"status": "error", "error": run["error"]})
-                return self.json(202, {"status": "running", "started": started,
-                                       "status_url": f"/api/text/{session}/{texte}/status"})
+                                       "hint": f"POST /api/text/{session}/{texte}?refresh=1 avec {{\"confirm\": true}}"})
             return self.json(200, json.loads(engine.read_text()))
         if u.path == "/api/live/amendments":
             session, texte = q("session", DEFAULT_SESSION), q("text", DEFAULT_TEXT)
@@ -807,7 +807,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         u = urllib.parse.urlparse(self.path)
-        if u.path not in ("/api/live/extract", "/api/live/scan"):
+        refresh = re.match(r"^/api/text/([^/]+)/([^/]+)(?:/refresh)?/?$", u.path)
+        if not refresh and u.path not in ("/api/live/extract", "/api/live/scan"):
             return self.json(404, {"error": "endpoint inconnu"})
         qs = urllib.parse.parse_qs(u.query)
         stream = (qs.get("stream") or ["0"])[0] not in ("0", "")
@@ -815,6 +816,8 @@ class Handler(SimpleHTTPRequestHandler):
             req = json.loads(self.rfile.read(int(self.headers.get("Content-Length") or 0)) or b"{}")
         except ValueError:
             return self.json(400, {"error": "corps JSON invalide"})
+        if refresh:
+            return self.refresh(*refresh.groups(), req)
         cfg = config()
         if not cfg["mock"] and not cfg["key"]:
             return self.json(503, NO_KEY)
@@ -867,6 +870,23 @@ class Handler(SimpleHTTPRequestHandler):
             except OSError:
                 pass
 
+    def refresh(self, session, texte, req):
+        """Full recompute (costs LLM credits): POST + {"confirm": true}, one run at a time server-wide."""
+        if not valid(session, texte):
+            return self.json(400, {"error": "session au format 2026-2027 et texte numérique"})
+        if not isinstance(req, dict) or req.get("confirm") is not True:
+            return self.json(400, {"error": "Recalcul complet payant : envoyez {\"confirm\": true}"})
+        busy = next((k for k, r in _runs.items() if r["status"] == "running"), None)
+        if busy and busy != (session, texte):
+            return self.json(409, {"error": f"Un recalcul est déjà en cours ({busy[0]}/{busy[1]})",
+                                   "status_url": f"/api/text/{busy[0]}/{busy[1]}/status"})
+        run, started = start_pipeline(session, texte)
+        if run["status"] == "error" and not started:
+            return self.json(501 if run["error"] == "pipeline.py absent" else 500,
+                             {"status": "error", "error": run["error"]})
+        return self.json(202, {"status": "running", "started": started,
+                               "status_url": f"/api/text/{session}/{texte}/status"})
+
     def scan(self, session, texte, req, stream):
         company = req.get("company")
         if not isinstance(company, dict) or not (company.get("naf") or company.get("naf_label") or company.get("name")):
@@ -892,10 +912,12 @@ class Handler(SimpleHTTPRequestHandler):
 
 
 def main():
+    for d in (llm.CACHE_DIR, ROOT / "data/cache", ROOT / "data/raw"):  # Render's disk is fresh on each deploy
+        (d if d.is_absolute() else ROOT / d).mkdir(parents=True, exist_ok=True)
     cfg = config()
     state = "mock" if cfg["mock"] else ("clé présente" if cfg["key"] else "clé absente → 503")
     print(f"http://localhost:{PORT}  ·  LLM {cfg['model']} ({state})  ·  dossier {ROOT}", flush=True)
-    ThreadingHTTPServer(("127.0.0.1", PORT), Handler).serve_forever()
+    ThreadingHTTPServer(("0.0.0.0", PORT), Handler).serve_forever()
 
 
 if __name__ == "__main__":
