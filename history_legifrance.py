@@ -108,11 +108,11 @@ def day(ms):
     return None if d.year >= 2999 else d.date().isoformat()
 
 
-def find_article(num):
-    """Return one LEGIARTI id for this article number in the code du travail, or None."""
+def find_article(num, code=CODE):
+    """Return one LEGIARTI id for this article number in `code` (default: code du travail), or None."""
     body = {"recherche": {"champs": [{"typeChamp": "NUM_ARTICLE", "criteres": [
         {"typeRecherche": "EXACTE", "valeur": num, "operateur": "ET"}], "operateur": "ET"}],
-        "filtres": [{"facette": "NOM_CODE", "valeurs": [CODE]}],
+        "filtres": [{"facette": "NOM_CODE", "valeurs": [code]}],
         "pageNumber": 1, "pageSize": 3, "operateur": "ET", "sort": "PERTINENCE", "typePagination": "ARTICLE"},
         "fond": "CODE_DATE"}
     resp = post("/search", body)

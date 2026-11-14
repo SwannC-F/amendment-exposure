@@ -1,0 +1,5210 @@
+{
+ "session": "2026-2027",
+ "text": "142",
+ "title": "Moderniser et rééquilibrer le fonctionnement du titre-restaurant",
+ "dossier": "https://www.senat.fr/dossier-legislatif/ppl26-032.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "titre-restaurant",
+  "ticket restaurant",
+  "titre-resto",
+  "ticket resto",
+  "Chèque Déjeuner",
+  "Pass Restaurant",
+  "titre-restaurant dématérialisé",
+  "titre-restaurant numérique"
+ ],
+ "articles": {
+  "Code du travail|L3262-3": {
+   "code": "Code du travail",
+   "num": "L3262-3",
+   "label": "article L. 3262-3 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000020886898",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886898",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006902945",
+     "start": "2008-05-01",
+     "end": "2009-07-23",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902945",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000020886898",
+     "start": "2009-07-23",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886898",
+     "modified_by": {
+      "id": "JORFTEXT000020879475",
+      "link_type": "MODIFIE",
+      "article": "art. 113 (V)",
+      "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+      "date": "2009-07-21",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475"
+     }
+    }
+   ],
+   "complete_history": true,
+   "n_versions": 2,
+   "derogations": [
+    {
+     "id": "LEGIARTI000051018968",
+     "label": "Loi n°2022-1158 du 16 août 2022 - art. 6",
+     "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051018968",
+     "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2026, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+     "versions": [
+      {
+       "version_id": "LEGIARTI000046188467",
+       "start": "2022-08-18",
+       "end": "2023-12-28",
+       "etat": "MODIFIE",
+       "text": "Par dérogation à l'article L. 3262-1 du code du travail, jusqu'au 31 décembre 2023, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000046186723",
+        "link_type": "CREATION"
+       }
+      },
+      {
+       "version_id": "LEGIARTI000048672945",
+       "start": "2023-12-28",
+       "end": "2025-01-23",
+       "etat": "MODIFIE",
+       "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2024, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000048668803",
+        "link_type": "MODIFIE"
+       }
+      },
+      {
+       "version_id": "LEGIARTI000051018968",
+       "start": "2025-01-23",
+       "end": null,
+       "etat": "VIGUEUR",
+       "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2026, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000051018078",
+        "link_type": "MODIFIE"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "Code monétaire et financier|L561-23": {
+   "code": "Code monétaire et financier",
+   "num": "L561-23",
+   "label": "article L. 561-23 du code monétaire et financier",
+   "found": true,
+   "id": "LEGIARTI000051752361",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051752361",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000051752361",
+     "start": "2025-06-15",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051752361",
+     "modified_by": {
+      "id": "JORFTEXT000051734851",
+      "link_type": "MODIFIE",
+      "article": "art. 4 (V)",
+      "title": "LOI n° 2025-532 du 13 juin 2025 visant à sortir la France du piège du narcotrafic (1)",
+      "date": "2025-06-13",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051734851"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 5,
+   "derogations": []
+  },
+  "Code du travail|L3262-1-3": {
+   "code": "Code du travail",
+   "num": "L3262-1-3",
+   "label": "article L. 3262-1-3 du code du travail",
+   "found": false
+  },
+  "Code du travail|L3262-5-2": {
+   "code": "Code du travail",
+   "num": "L3262-5-2",
+   "label": "article L. 3262-5-2 du code du travail",
+   "found": false
+  },
+  "Code du travail|L3262-1-4": {
+   "code": "Code du travail",
+   "num": "L3262-1-4",
+   "label": "article L. 3262-1-4 du code du travail",
+   "found": false
+  },
+  "Code du travail|L1225-16": {
+   "code": "Code du travail",
+   "num": "L1225-16",
+   "label": "article L. 1225-16 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006900896",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900896",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006900896",
+     "start": "2008-05-01",
+     "end": "2014-08-06",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900896",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 4,
+   "derogations": []
+  },
+  "Code du travail|L1225-28": {
+   "code": "Code du travail",
+   "num": "L1225-28",
+   "label": "article L. 1225-28 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000026799916",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799916",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000026799916",
+     "start": "2012-12-19",
+     "end": "2014-12-25",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799916",
+     "modified_by": {
+      "id": "JORFTEXT000026785322",
+      "link_type": "MODIFIE",
+      "article": "art. 94",
+      "title": "LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013",
+      "date": "2012-12-17",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000026785322"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du travail|L1225-35": {
+   "code": "Code du travail",
+   "num": "L1225-35",
+   "label": "article L. 1225-35 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000026799935",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799935",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000026799935",
+     "start": "2012-12-19",
+     "end": "2019-07-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799935",
+     "modified_by": {
+      "id": "JORFTEXT000026785322",
+      "link_type": "MODIFIE",
+      "article": "art. 94",
+      "title": "LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013",
+      "date": "2012-12-17",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000026785322"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 4,
+   "derogations": []
+  },
+  "Code du travail|L1225-36": {
+   "code": "Code du travail",
+   "num": "L1225-36",
+   "label": "article L. 1225-36 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006900918",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900918",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006900918",
+     "start": "2008-05-01",
+     "end": "2012-12-19",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900918",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 2,
+   "derogations": []
+  },
+  "Code du travail|L1225-46-2": {
+   "code": "Code du travail",
+   "num": "L1225-46-2",
+   "label": "article L. 1225-46-2 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000053271696",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271696",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000053271696",
+     "start": "2025-12-31",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271696",
+     "modified_by": {
+      "id": "JORFTEXT000053226384",
+      "link_type": "CREE",
+      "article": "art. 99 (V)",
+      "title": "LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1)",
+      "date": "2025-12-30",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code du travail|L1225-46-7": {
+   "code": "Code du travail",
+   "num": "L1225-46-7",
+   "label": "article L. 1225-46-7 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000053271706",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271706",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000053271706",
+     "start": "2025-12-31",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271706",
+     "modified_by": {
+      "id": "JORFTEXT000053226384",
+      "link_type": "CREE",
+      "article": "art. 99 (V)",
+      "title": "LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1)",
+      "date": "2025-12-30",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code rural et de la pêche maritime|L1": {
+   "code": "Code rural et de la pêche maritime",
+   "num": "L1",
+   "label": "article L. 1 du code rural et de la pêche maritime",
+   "found": false
+  },
+  "Code de l'éducation|L124-13": {
+   "code": "Code de l'éducation",
+   "num": "L124-13",
+   "label": "article L. 124-13 du code de l'éducation",
+   "found": true,
+   "id": "LEGIARTI000029234215",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029234215",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000029234215",
+     "start": "2014-07-12",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029234215",
+     "modified_by": {
+      "id": "JORFTEXT000029223331",
+      "link_type": "CREE",
+      "article": "art. 1",
+      "title": "LOI n° 2014-788 du 10 juillet 2014 tendant au développement, à l'encadrement des stages et à l'amélioration du statut des stagiaires (1)",
+      "date": "2014-07-10",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029223331"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code de l'éducation|L3262-1-5": {
+   "code": "Code de l'éducation",
+   "num": "L3262-1-5",
+   "label": "article L. 3262-1-5 du code de l'éducation",
+   "found": false
+  },
+  "Code du travail|L3262-1": {
+   "code": "Code du travail",
+   "num": "L3262-1",
+   "label": "article L. 3262-1 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006902943",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902943",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006902943",
+     "start": "2008-05-01",
+     "end": "2009-07-23",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902943",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000020886893",
+     "start": "2009-07-23",
+     "end": "2010-07-29",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886893",
+     "modified_by": {
+      "id": "JORFTEXT000020879475",
+      "link_type": "MODIFIE",
+      "article": "art. 113 (V)",
+      "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+      "date": "2009-07-21",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000022657455",
+     "start": "2010-07-29",
+     "end": "2018-01-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000022657455",
+     "modified_by": {
+      "id": "JORFTEXT000022521587",
+      "link_type": "MODIFIE",
+      "article": "art. 2",
+      "title": "LOI n° 2010-874 du 27 juillet 2010 de modernisation de l'agriculture et de la pêche (1)",
+      "date": "2010-07-27",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022521587"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000035652827",
+     "start": "2018-01-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000035652827",
+     "modified_by": {
+      "id": "JORFTEXT000035607348",
+      "link_type": "MODIFIE",
+      "article": "art. 4",
+      "title": "Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales",
+      "date": "2017-09-22",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035607348"
+     }
+    }
+   ],
+   "complete_history": true,
+   "n_versions": 4,
+   "derogations": [
+    {
+     "id": "LEGIARTI000051018968",
+     "label": "Loi n°2022-1158 du 16 août 2022 - art. 6",
+     "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051018968",
+     "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2026, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+     "versions": [
+      {
+       "version_id": "LEGIARTI000046188467",
+       "start": "2022-08-18",
+       "end": "2023-12-28",
+       "etat": "MODIFIE",
+       "text": "Par dérogation à l'article L. 3262-1 du code du travail, jusqu'au 31 décembre 2023, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000046186723",
+        "link_type": "CREATION"
+       }
+      },
+      {
+       "version_id": "LEGIARTI000048672945",
+       "start": "2023-12-28",
+       "end": "2025-01-23",
+       "etat": "MODIFIE",
+       "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2024, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000048668803",
+        "link_type": "MODIFIE"
+       }
+      },
+      {
+       "version_id": "LEGIARTI000051018968",
+       "start": "2025-01-23",
+       "end": null,
+       "etat": "VIGUEUR",
+       "text": "Par dérogation à l' article L. 3262-1 du code du travail , jusqu'au 31 décembre 2026, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu'il soit ou non directement consommable, acheté auprès d'une personne ou d'un organisme mentionné au deuxième alinéa de l'article L. 3262-3 du même code.",
+       "modified_by": {
+        "id": "JORFTEXT000051018078",
+        "link_type": "MODIFIE"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "Code général des impôts|81": {
+   "code": "Code général des impôts",
+   "num": "81",
+   "label": "article 81 du code général des impôts",
+   "found": true,
+   "id": "LEGIARTI000030700497",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030700497",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000030700497",
+     "start": "2015-06-06",
+     "end": "2015-07-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030700497",
+     "modified_by": {
+      "id": "JORFTEXT000030673448",
+      "link_type": "MODIFIE",
+      "article": "art. 1",
+      "title": "Décret n° 2015-608 du 3 juin 2015 portant incorporation au code général des impôts de divers textes modifiant et complétant certaines dispositions de ce code",
+      "date": "2015-06-03",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000030673448"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 98,
+   "derogations": []
+  },
+  "Code général des impôts|242 bis": {
+   "code": "Code général des impôts",
+   "num": "242 bis",
+   "label": "article 242 bis du code général des impôts",
+   "found": true,
+   "id": "LEGIARTI000044981558",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044981558",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000044981558",
+     "start": "2023-01-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044981558",
+     "modified_by": {
+      "id": "JORFTEXT000044637640",
+      "link_type": "MODIFIE",
+      "article": "art. 134 (V)",
+      "title": "LOI n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (1)",
+      "date": "2021-12-30",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044637640"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du tourisme|L411-13": {
+   "code": "Code du tourisme",
+   "num": "L411-13",
+   "label": "article L. 411-13 du code du tourisme",
+   "found": true,
+   "id": "LEGIARTI000006813521",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006813521",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006813521",
+     "start": "2005-01-01",
+     "end": "2006-04-15",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006813521",
+     "modified_by": {
+      "id": "JORFTEXT000000419170",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2004-1391 2004-12-20 JORF 24 décembre 2004",
+      "title": "Ordonnance n° 2004-1391 du 20 décembre 2004 relative à la partie législative du code du tourisme",
+      "date": "2004-12-20",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000419170"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 2,
+   "derogations": []
+  },
+  "Code général des impôts|261": {
+   "code": "Code général des impôts",
+   "num": "261",
+   "label": "article 261 du code général des impôts",
+   "found": false
+  },
+  "Code du travail|L3262-5": {
+   "code": "Code du travail",
+   "num": "L3262-5",
+   "label": "article L. 3262-5 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006902947",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902947",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006902947",
+     "start": "2008-05-01",
+     "end": "2008-05-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902947",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000018764792",
+     "start": "2008-05-01",
+     "end": "2009-07-23",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000018764792",
+     "modified_by": {
+      "id": "JORFTEXT000017942034",
+      "link_type": "MODIFIE",
+      "article": "art. 3",
+      "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+      "date": "2008-01-21",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034"
+     }
+    },
+    {
+     "version_id": "LEGIARTI000020886895",
+     "start": "2009-07-23",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886895",
+     "modified_by": {
+      "id": "JORFTEXT000020879475",
+      "link_type": "MODIFIE",
+      "article": "art. 113 (V)",
+      "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+      "date": "2009-07-21",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475"
+     }
+    }
+   ],
+   "complete_history": true,
+   "n_versions": 3,
+   "derogations": []
+  }
+ },
+ "laws": {
+  "JORFTEXT000000465978": {
+   "id": "JORFTEXT000000465978",
+   "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+   "nor": "SOCX0700017R",
+   "date": "2007-03-12",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L1225-16",
+    "Code du travail|L1225-36",
+    "Code du travail|L3262-1",
+    "Code du travail|L3262-3",
+    "Code du travail|L3262-5"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000020879475": {
+   "id": "JORFTEXT000020879475",
+   "title": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+   "nor": "SASX0822640L",
+   "date": "2009-07-21",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+   "senat_documents": [
+    {
+     "num": "290",
+     "session": "2008-2009"
+    },
+    {
+     "num": "380",
+     "session": "2008-2009"
+    },
+    {
+     "num": "381",
+     "session": "2008-2009"
+    },
+    {
+     "num": "463",
+     "session": "2008-2009"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3262-1",
+    "Code du travail|L3262-3",
+    "Code du travail|L3262-5"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000046186723": {
+   "id": "JORFTEXT000046186723",
+   "title": "LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du pouvoir d'achat (1)",
+   "nor": "ECOX2217989L",
+   "date": "2022-08-16",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046186723",
+   "senat_documents": [
+    {
+     "num": "817",
+     "session": "2021-2022"
+    },
+    {
+     "num": "827",
+     "session": "2021-2022"
+    },
+    {
+     "num": "825",
+     "session": "2021-2022"
+    },
+    {
+     "num": "826",
+     "session": "2021-2022"
+    },
+    {
+     "num": "822",
+     "session": "2021-2022"
+    },
+    {
+     "num": "828",
+     "session": "2021-2022"
+    },
+    {
+     "num": "850",
+     "session": "2021-2022"
+    },
+    {
+     "num": "851",
+     "session": "2021-2022"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3262-1",
+    "Code du travail|L3262-3"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000048668803": {
+   "id": "JORFTEXT000048668803",
+   "title": "LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation des titres restaurant pour des achats de produits alimentaires non directement consommables (1)",
+   "nor": "ECOX2331267L",
+   "date": "2023-12-26",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048668803",
+   "senat_documents": [
+    {
+     "num": "143",
+     "session": "2023-2024"
+    },
+    {
+     "num": "172",
+     "session": "2023-2024"
+    },
+    {
+     "num": "173",
+     "session": "2023-2024"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3262-1",
+    "Code du travail|L3262-3"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000051018078": {
+   "id": "JORFTEXT000051018078",
+   "title": "LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1)",
+   "nor": "ECOX2429776L",
+   "date": "2025-01-21",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051018078",
+   "senat_documents": [
+    {
+     "num": "160",
+     "session": "2024-2025"
+    },
+    {
+     "num": "182",
+     "session": "2024-2025"
+    },
+    {
+     "num": "183",
+     "session": "2024-2025"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3262-1",
+    "Code du travail|L3262-3"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000051734851": {
+   "id": "JORFTEXT000051734851",
+   "title": "LOI n° 2025-532 du 13 juin 2025 visant à sortir la France du piège du narcotrafic (1)",
+   "nor": "JUSX2430702L",
+   "date": "2025-06-13",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051734851",
+   "senat_documents": [
+    {
+     "num": "253",
+     "session": "2024-2025"
+    },
+    {
+     "num": "254",
+     "session": "2024-2025"
+    },
+    {
+     "num": "534",
+     "session": "2024-2025"
+    },
+    {
+     "num": "535",
+     "session": "2024-2025"
+    }
+   ],
+   "articles": [
+    "Code monétaire et financier|L561-23"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000026785322": {
+   "id": "JORFTEXT000026785322",
+   "title": "LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013",
+   "nor": "EFIX1235628L",
+   "date": "2012-12-17",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000026785322",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L1225-28",
+    "Code du travail|L1225-35"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000053226384": {
+   "id": "JORFTEXT000053226384",
+   "title": "LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1)",
+   "nor": "CPPX2521641L",
+   "date": "2025-12-30",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384",
+   "senat_documents": [
+    {
+     "num": "122",
+     "session": "2025-2026"
+    },
+    {
+     "num": "131",
+     "session": "2025-2026"
+    },
+    {
+     "num": "126",
+     "session": "2025-2026"
+    },
+    {
+     "num": "162",
+     "session": "2025-2026"
+    },
+    {
+     "num": "163",
+     "session": "2025-2026"
+    },
+    {
+     "num": "193",
+     "session": "2025-2026"
+    },
+    {
+     "num": "205",
+     "session": "2025-2026"
+    }
+   ],
+   "articles": [
+    "Code du travail|L1225-46-2",
+    "Code du travail|L1225-46-7"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000029223331": {
+   "id": "JORFTEXT000029223331",
+   "title": "LOI n° 2014-788 du 10 juillet 2014 tendant au développement, à l'encadrement des stages et à l'amélioration du statut des stagiaires (1)",
+   "nor": "MENX1402669L",
+   "date": "2014-07-10",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029223331",
+   "senat_documents": [],
+   "articles": [
+    "Code de l'éducation|L124-13"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000022521587": {
+   "id": "JORFTEXT000022521587",
+   "title": "LOI n° 2010-874 du 27 juillet 2010 de modernisation de l'agriculture et de la pêche (1)",
+   "nor": "AGRS0928330L",
+   "date": "2010-07-27",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000022521587",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L3262-1"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000035607348": {
+   "id": "JORFTEXT000035607348",
+   "title": "Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales",
+   "nor": "MTRT1724789R",
+   "date": "2017-09-22",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035607348",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L3262-1"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000030673448": {
+   "id": "JORFTEXT000030673448",
+   "title": "Décret n° 2015-608 du 3 juin 2015 portant incorporation au code général des impôts de divers textes modifiant et complétant certaines dispositions de ce code",
+   "nor": "FCPE1507720D",
+   "date": "2015-06-03",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000030673448",
+   "senat_documents": [],
+   "articles": [
+    "Code général des impôts|81"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000044637640": {
+   "id": "JORFTEXT000044637640",
+   "title": "LOI n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (1)",
+   "nor": "ECOX2126830L",
+   "date": "2021-12-30",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044637640",
+   "senat_documents": [
+    {
+     "num": "162",
+     "session": "2021-2022"
+    },
+    {
+     "num": "163",
+     "session": "2021-2022"
+    },
+    {
+     "num": "164",
+     "session": "2021-2022"
+    },
+    {
+     "num": "165",
+     "session": "2021-2022"
+    },
+    {
+     "num": "166",
+     "session": "2021-2022"
+    },
+    {
+     "num": "167",
+     "session": "2021-2022"
+    },
+    {
+     "num": "168",
+     "session": "2021-2022"
+    },
+    {
+     "num": "169",
+     "session": "2021-2022"
+    },
+    {
+     "num": "236",
+     "session": "2021-2022"
+    },
+    {
+     "num": "237",
+     "session": "2021-2022"
+    },
+    {
+     "num": "290",
+     "session": "2021-2022"
+    },
+    {
+     "num": "292",
+     "session": "2021-2022"
+    }
+   ],
+   "articles": [
+    "Code général des impôts|242 bis"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000000419170": {
+   "id": "JORFTEXT000000419170",
+   "title": "Ordonnance n° 2004-1391 du 20 décembre 2004 relative à la partie législative du code du tourisme",
+   "nor": "EQUX0400134R",
+   "date": "2004-12-20",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000419170",
+   "senat_documents": [],
+   "articles": [
+    "Code du tourisme|L411-13"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000017942034": {
+   "id": "JORFTEXT000017942034",
+   "title": "LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative) (1)",
+   "nor": "MTSX0700051L",
+   "date": "2008-01-21",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000017942034",
+   "senat_documents": [
+    {
+     "num": "293",
+     "session": "2006-2007"
+    },
+    {
+     "num": "459",
+     "session": "2006-2007"
+    },
+    {
+     "num": "129",
+     "session": "2007-2008"
+    },
+    {
+     "num": "130",
+     "session": "2007-2008"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3262-5"
+   ],
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [
+  {
+   "session": "2026-2027",
+   "number": "32",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2026-2027/32/jeu_complet_commission_2026-2027_32.csv",
+   "rows": 18,
+   "relevant": 18
+  },
+  {
+   "session": "2024-2025",
+   "number": "160",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des t",
+   "csv": "https://www.senat.fr/amendements/commissions/2024-2025/160/jeu_complet_commission_2024-2025_160.csv",
+   "rows": 2,
+   "relevant": 2
+  },
+  {
+   "session": "2024-2025",
+   "number": "183",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des t",
+   "csv": "https://www.senat.fr/amendements/2024-2025/183/jeu_complet_2024-2025_183.csv",
+   "rows": 5,
+   "relevant": 5
+  },
+  {
+   "session": "2023-2024",
+   "number": "143",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation de",
+   "csv": "https://www.senat.fr/amendements/commissions/2023-2024/143/jeu_complet_commission_2023-2024_143.csv",
+   "rows": 1,
+   "relevant": 1
+  },
+  {
+   "session": "2023-2024",
+   "number": "173",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation de",
+   "csv": "https://www.senat.fr/amendements/2023-2024/173/jeu_complet_2023-2024_173.csv",
+   "rows": 3,
+   "relevant": 3
+  },
+  {
+   "session": "2021-2022",
+   "number": "817",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du",
+   "csv": "https://www.senat.fr/amendements/commissions/2021-2022/817/jeu_complet_commission_2021-2022_817.csv",
+   "rows": 312,
+   "relevant": 3
+  },
+  {
+   "session": "2021-2022",
+   "number": "828",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du",
+   "csv": "https://www.senat.fr/amendements/2021-2022/828/jeu_complet_2021-2022_828.csv",
+   "rows": 458,
+   "relevant": 4
+  },
+  {
+   "session": "2021-2022",
+   "number": "851",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du",
+   "csv": "https://www.senat.fr/amendements/2021-2022/851/jeu_complet_2021-2022_851.csv",
+   "rows": 3,
+   "relevant": 0
+  },
+  {
+   "session": "2008-2009",
+   "number": "381",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux ",
+   "csv": "https://www.senat.fr/amendements/2008-2009/381/jeu_complet_2008-2009_381.csv",
+   "rows": 1373,
+   "relevant": 1
+  },
+  {
+   "session": "2008-2009",
+   "number": "463",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux ",
+   "csv": "https://www.senat.fr/amendements/2008-2009/463/jeu_complet_2008-2009_463.csv",
+   "rows": 1,
+   "relevant": 0
+  },
+  {
+   "session": "2007-2008",
+   "number": "129",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars ",
+   "csv": "https://www.senat.fr/amendements/2007-2008/129/jeu_complet_2007-2008_129.csv",
+   "rows": 1,
+   "relevant": 0
+  },
+  {
+   "session": "2006-2007",
+   "number": "293",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2008-67 du 21 janvier 2008 ratifiant l'ordonnance n° 2007-329 du 12 mars ",
+   "csv": "https://www.senat.fr/amendements/2006-2007/293/jeu_complet_2006-2007_293.csv",
+   "rows": 82,
+   "relevant": 1
+  }
+ ],
+ "stats": {
+  "articles": 20,
+  "laws": 15,
+  "senat_texts": 12,
+  "past_relevant": 38,
+  "past_attached": 17,
+  "past_quote_rejected": 1,
+  "hatvp_fiches": 190,
+  "hatvp_sides": 89,
+  "hatvp_quote_rejected": 2
+ },
+ "measures": {
+  "penaliser-fraude-commerces": {
+   "theme": "Pénaliser la fraude des commerces",
+   "amendments": [
+    "1"
+   ],
+   "effects": [
+    "Crée une amende administrative jusqu'à 15 000 € ou le double de la valeur des titres pour les commerces qui échangent des titres-restaurant contre de l'argent ou présentent au remboursement des titres non liés à leurs ventes, et oblige les émetteurs à suspendre l'acceptation et à signaler les fraudeurs."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-3 du code du travail",
+    "article L. 561-23 du code monétaire et financier"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 3262-3 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 2 version(s) depuis le 2008-05-01, issues de 1 texte(s) ; la dernière modification vient de : LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires (version en vigueur depuis le 2009-07-23).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000020886898",
+      "legifrance:JORFTEXT000020879475",
+      "senat:current/1"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-3 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "L'article L. 561-23 du code monétaire et financier, visé par 1 amendement(s) de cette mesure, compte 5 version(s) ; celle en vigueur depuis le 2025-06-15 vient de : LOI n° 2025-532 du 13 juin 2025 visant à sortir la France du piège du narcotrafic (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051752361",
+      "legifrance:JORFTEXT000051734851",
+      "senat:current/1"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "plafonner-commissions-emetteurs": {
+   "theme": "Plafonner les commissions des émetteurs",
+   "amendments": [
+    "2",
+    "3 rect.",
+    "4",
+    "5",
+    "9",
+    "14",
+    "22",
+    "23",
+    "28",
+    "29"
+   ],
+   "effects": [
+    "Plafonne à 2,5 % du montant des titres-restaurant les commissions prélevées par les émetteurs sur les associations à gestion désintéressée servant des repas à leurs adhérents, avec obligation de reversement du trop-perçu",
+    "Rend obligatoire et plafonne à 2,5 % du montant des titres-restaurant les commissions et frais facturés aux commerçants habilités par les émetteurs",
+    "Rend obligatoire le plafonnement des commissions perçues par les émetteurs de titres-restaurant auprès des commerçants accepteurs, avec un taux maximal inscrit dans la loi à 2,5 %",
+    "Rend obligatoire le plafonnement des frais perçus par les émetteurs de titres-restaurant à 2,5 % du montant réglé, au lieu d'une simple possibilité",
+    "Rend obligatoire le plafonnement par décret des commissions, frais et rémunérations supportés par les commerçants acceptant les titres-restaurant, au lieu d'une simple possibilité",
+    "Rend obligatoire le plafonnement à 2 % maximum des commissions prélevées par les émetteurs de titres-restaurant sur les restaurateurs et commerçants",
+    "Rend obligatoire le plafonnement à 2,5 % des commissions et frais imposés aux commerçants qui acceptent les titres-restaurant",
+    "Rend obligatoire le plafonnement à 2,5 % des commissions et frais prélevés par les émetteurs de titres-restaurant auprès des restaurateurs et commerçants",
+    "Rend obligatoire le plafonnement à 3 % du montant des titres-restaurant des frais, commissions et rémunérations perçus par les émetteurs auprès des commerçants accepteurs"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-1-3 du code du travail",
+    "article 261 du code général des impôts",
+    "article L. 3262-1-4 du code du travail"
+   ],
+   "senate_by_group": {
+    "UCI": {
+     "filed": 2,
+     "adopted": 0,
+     "rejected": 2,
+     "other": 0,
+     "pour": 2,
+     "contre": 0,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2026-2027/32/COM-1",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-1",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "M. LONGEOT",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-1.html",
+     "cites": [],
+     "measure": "plafonner-commissions-emetteurs",
+     "stance": "pour",
+     "quote": "remplacer : peut être plafonnée par les mots : est plafonnée"
+    },
+    {
+     "id": "senat:2026-2027/32/COM-2",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-2",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "M. LONGEOT",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-2.html",
+     "cites": [],
+     "measure": "plafonner-commissions-emetteurs",
+     "stance": "pour",
+     "quote": "remplacer les mots : peut être plafonnée par les mots : est plafonnée"
+    }
+   ],
+   "findings": [
+    {
+     "text": "Au Sénat, 2 amendement(s) déposé(s) de 2026 allaient en faveur de cette mesure : 0 adopté(s), 2 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (2).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-1",
+      "senat:2026-2027/32/COM-2"
+     ]
+    },
+    {
+     "text": "10 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : CONFEDER NAT CHARCUTERI FRANCE, GROUPEMENT NATIONAL DES INDEPENDANTS, SAVEURS COMMERCE, BOURY TALLON & ASSOCIES, CONFEDERATION GENERALE ALIMENTAT.DETAIL et 5 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:2VRW615H",
+      "hatvp:QV7OWEXV",
+      "hatvp:A3YPU0G3",
+      "hatvp:EVJF69KH",
+      "hatvp:O3862LAH",
+      "hatvp:Q36SZW8V",
+      "hatvp:PVX9AO1H",
+      "hatvp:0V5DEB7V",
+      "hatvp:Q36K42Z3",
+      "hatvp:PVX9WOKH",
+      "hatvp:LV1DPFR3",
+      "hatvp:OHZABTM3",
+      "hatvp:DVS14Y6H"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "CONFEDER NAT CHARCUTERI FRANCE",
+     "hatvp_id": "775691850",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "2VRW615H",
+      "QV7OWEXV"
+     ],
+     "years": [
+      2022,
+      2023
+     ]
+    },
+    {
+     "name": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+     "hatvp_id": "822829727",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "A3YPU0G3",
+      "EVJF69KH"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "O3862LAH",
+      "Q36SZW8V"
+     ],
+     "years": [
+      2020,
+      2025
+     ]
+    },
+    {
+     "name": "BOURY TALLON & ASSOCIES",
+     "hatvp_id": "502999626",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "PVX9AO1H"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+     "hatvp_id": "784717225",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "0V5DEB7V"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT)",
+     "hatvp_id": "W442015468",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "Q36K42Z3"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "LUCCA",
+     "hatvp_id": "441637691",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "PVX9WOKH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+     "hatvp_id": "422477224",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "LV1DPFR3"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+     "hatvp_id": "422477356",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "OHZABTM3"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "WORKLIFE",
+     "hatvp_id": "533592051",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "DVS14Y6H"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "BOURY TALLON & ASSOCIES",
+     "hatvp_id": "502999626",
+     "side": "pour",
+     "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+     "fiche": "PVX9AO1H",
+     "year": 2025,
+     "on_behalf_of": [
+      "CONTAKT",
+      "COUP DE POUSSE",
+      "EKIP'",
+      "LUCCA",
+      "WORKLIFE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "LUCCA",
+     "hatvp_id": "441637691",
+     "side": "pour",
+     "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+     "fiche": "PVX9WOKH",
+     "year": 2025,
+     "on_behalf_of": [
+      "LUCCA (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "side": "pour",
+     "quote": "Prévoir un plafonnement tarifaire des commissions pour les titres restaurant",
+     "fiche": "O3862LAH",
+     "year": 2025,
+     "on_behalf_of": [
+      "SAVEURS COMMERCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "WORKLIFE",
+     "hatvp_id": "533592051",
+     "side": "pour",
+     "quote": "proposer un plafonnement des commissions titre-restaurant afin de favoriser une concurrence équilibrée entre les émetteurs",
+     "fiche": "DVS14Y6H",
+     "year": 2025,
+     "on_behalf_of": [
+      "WORKLIFE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDER NAT CHARCUTERI FRANCE",
+     "hatvp_id": "775691850",
+     "side": "pour",
+     "quote": "titres restaurant : demander plafonnement des commissions sur les cartes à puce",
+     "fiche": "2VRW615H",
+     "year": 2023,
+     "on_behalf_of": [
+      "CONFEDER NAT CHARCUTERI FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+     "hatvp_id": "784717225",
+     "side": "pour",
+     "quote": "Demande d'encadrement des commissions des titres restaurant",
+     "fiche": "0V5DEB7V",
+     "year": 2023,
+     "on_behalf_of": [
+      "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+     "hatvp_id": "422477224",
+     "side": "pour",
+     "quote": "Demander la prise en compte des dysfonctionnements de marché des titres-restaurants dans le cadre d'une hausse de taux de commission injustifiée des émetteurs.",
+     "fiche": "LV1DPFR3",
+     "year": 2023,
+     "on_behalf_of": [
+      "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDER NAT CHARCUTERI FRANCE",
+     "hatvp_id": "775691850",
+     "side": "pour",
+     "quote": "Obtenir le plafonnement des commissions des émetteurs de titres restaurant",
+     "fiche": "QV7OWEXV",
+     "year": 2022,
+     "on_behalf_of": [
+      "CONFEDER NAT CHARCUTERI FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT)",
+     "hatvp_id": "W442015468",
+     "side": "pour",
+     "quote": "Encadrer le montant des commissions exigées par les émetteurs de titres restaurant et leurs pratiques",
+     "fiche": "Q36K42Z3",
+     "year": 2022,
+     "on_behalf_of": [
+      "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT) (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+     "hatvp_id": "822829727",
+     "side": "pour",
+     "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+     "fiche": "A3YPU0G3",
+     "year": 2022,
+     "on_behalf_of": [
+      "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+     "hatvp_id": "822829727",
+     "side": "pour",
+     "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+     "fiche": "EVJF69KH",
+     "year": 2022,
+     "on_behalf_of": [
+      "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+     "hatvp_id": "422477356",
+     "side": "pour",
+     "quote": "Encadrer le montant des commissions exigées par les émetteurs historiques de titres restaurant",
+     "fiche": "OHZABTM3",
+     "year": 2022,
+     "on_behalf_of": [
+      "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "side": "pour",
+     "quote": "C'est pour cette raison que nous avons demandé aux pouvoirs publics un encadrement de ces commissions.",
+     "fiche": "Q36SZW8V",
+     "year": 2020,
+     "on_behalf_of": [
+      "SAVEURS COMMERCE (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "supprimer-modulation-plafond-journalier": {
+   "theme": "Supprimer la modulation du plafond",
+   "amendments": [
+    "6",
+    "10"
+   ],
+   "effects": [
+    "Supprime la modulation du plafond journalier des titres-restaurant, maintenant un plafond unique quel que soit le type d'achat",
+    "Supprime le double plafond journalier d'utilisation des titres-restaurant pour revenir à un plafond unique pour tous les produits alimentaires éligibles"
+   ],
+   "opposes": "instaurer-double-plafond-journalier",
+   "articles": [
+    "article L. 3262-5-2 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:W3UNA42V"
+     ]
+    },
+    {
+     "text": "6 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FLINT FRANCE SAS, IMAGE 7, SWILE, UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR, UNION METIERS & INDUSTRIES HOTELLERIE et 1 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:0V2L6UBH",
+      "hatvp:0V2LXKSH",
+      "hatvp:SVFGPSI3",
+      "hatvp:SVFGO5U3",
+      "hatvp:5HASE8EH",
+      "hatvp:Y3GQN05H"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "W3UNA42V"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
+   "lobby_contre": [
+    {
+     "name": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2L6UBH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2LXKSH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "SWILE",
+     "hatvp_id": "824012173",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "SVFGPSI3"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+     "hatvp_id": "778212779",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "SVFGO5U3"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "5HASE8EH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UP",
+     "hatvp_id": "642044366",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "Y3GQN05H"
+     ],
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "side": "pour",
+     "quote": "s'opposer à différencier les plafonds d'utilisation en fonction des types de commerce",
+     "fiche": "W3UNA42V",
+     "year": 2025,
+     "on_behalf_of": [
+      "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "side": "contre",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant dans le cadre de la réforme du titre",
+     "fiche": "0V2L6UBH",
+     "year": 2025,
+     "on_behalf_of": [
+      "PLUXEE FRANCE"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+     "fiche": "0V2LXKSH",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "contre",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+     "fiche": "SVFGPSI3",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+     "hatvp_id": "778212779",
+     "side": "contre",
+     "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
+     "fiche": "SVFGO5U3",
+     "year": 2025,
+     "on_behalf_of": [
+      "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR (en propre)"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "side": "contre",
+     "quote": "Inscrire dans la réforme du titre-restaurant le double plafond",
+     "fiche": "5HASE8EH",
+     "year": 2025,
+     "on_behalf_of": [
+      "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "UP",
+     "hatvp_id": "642044366",
+     "side": "contre",
+     "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+     "fiche": "Y3GQN05H",
+     "year": 2022,
+     "on_behalf_of": [
+      "UP (en propre)"
+     ],
+     "derived_from": "instaurer-double-plafond-journalier"
+    },
+    {
+     "org": "UP",
+     "hatvp_id": "642044366",
+     "side": "contre",
+     "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+     "fiche": "Y3GQN05H",
+     "year": 2022,
+     "on_behalf_of": [
+      "UP (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "autoriser-usage-tous-jours": {
+   "theme": "Autoriser l'usage tous les jours",
+   "amendments": [
+    "7",
+    "12",
+    "16",
+    "31"
+   ],
+   "effects": [
+    "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris dimanches et jours fériés, au lieu de restreindre leur usage aux jours travaillés.",
+    "Autorise l'utilisation des titres-restaurant tous les jours de la semaine, y compris le dimanche et les jours fériés, au lieu de les restreindre aux jours ouvrés.",
+    "Permet à tous les salariés bénéficiaires d'utiliser leurs titres-restaurant le dimanche, au lieu de réserver cet usage aux seuls salariés travaillant ce jour",
+    "Supprime le plafond journalier d'utilisation des titres-restaurant et autorise leur usage tous les jours, y compris dimanches et jours fériés"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-5-2 du code du travail",
+    "article L. 3262-1 du code du travail"
+   ],
+   "senate_by_group": {
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2026-2027/32/COM-11",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-11",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "Mme PUISSAT, rapporteur",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-11.html",
+     "cites": [],
+     "measure": "autoriser-usage-tous-jours",
+     "stance": "contre",
+     "quote": "Supprimer la phrase : Les titres-restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés."
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article L. 3262-1 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902943",
+      "legifrance:JORFTEXT000035607348",
+      "senat:current/16"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-11"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-11 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Supprimer la phrase : Les titres-restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-11"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : EDENRED.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:UVPUPC5H"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [
+    {
+     "name": "EDENRED",
+     "hatvp_id": "493322978",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "UVPUPC5H"
+     ],
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "EDENRED",
+     "hatvp_id": "493322978",
+     "side": "contre",
+     "quote": "la suppression de l'extension de l'utilisation des titres-restaurant les dimanche et jours fériés",
+     "fiche": "UVPUPC5H",
+     "year": 2022,
+     "on_behalf_of": [
+      "EDENRED (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "imposer-negociation-syndicats": {
+   "theme": "Imposer la négociation avec syndicats",
+   "amendments": [
+    "11"
+   ],
+   "effects": [
+    "Oblige l'employeur à négocier avec les syndicats avant toute mise en place, suppression ou modification du financement des titres-restaurant, et à consulter le CSE à défaut de délégué syndical."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-1-4 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "maintenir-titres-pendant-conges": {
+   "theme": "Maintenir les titres pendant congés",
+   "amendments": [
+    "13",
+    "18"
+   ],
+   "effects": [
+    "Les employeurs doivent maintenir l'attribution des titres-restaurant aux salariés pendant les congés maternité, paternité, adoption et congé supplémentaire de naissance.",
+    "Oblige les employeurs à maintenir l'attribution des titres-restaurant pendant les congés de maternité, paternité, adoption et naissance."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 1225-16 du code du travail",
+    "article L. 1225-28 du code du travail",
+    "article L. 1225-35 du code du travail",
+    "article L. 1225-36 du code du travail",
+    "article L. 1225-46-2 du code du travail",
+    "article L. 1225-46-7 du code du travail"
+   ],
+   "senate_by_group": {
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2026-2027/32/COM-16",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-16",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "Mme PUISSAT, rapporteur",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-16.html",
+     "cites": [],
+     "measure": "maintenir-titres-pendant-conges",
+     "stance": "contre",
+     "quote": "Cet amendement vise à supprimer l'article 2 bis, qui prévoit l'attribution obligatoire de titres-restaurant aux salariés bénéficiant d'un congé en lien avec l'arrivée d'un enfant dans leur foyer."
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article L. 1225-28 du code du travail, visé par 2 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2012-12-19 vient de : LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013.",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000026799916",
+      "legifrance:JORFTEXT000026785322",
+      "senat:current/13",
+      "senat:current/18"
+     ]
+    },
+    {
+     "text": "L'article L. 1225-35 du code du travail, visé par 2 amendement(s) de cette mesure, compte 4 version(s) ; celle en vigueur depuis le 2012-12-19 vient de : LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013.",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000026799935",
+      "legifrance:JORFTEXT000026785322",
+      "senat:current/13",
+      "senat:current/18"
+     ]
+    },
+    {
+     "text": "L'article L. 1225-46-2 du code du travail, visé par 2 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2025-12-31 vient de : LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000053271696",
+      "legifrance:JORFTEXT000053226384",
+      "senat:current/13",
+      "senat:current/18"
+     ]
+    },
+    {
+     "text": "L'article L. 1225-46-7 du code du travail, visé par 2 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2025-12-31 vient de : LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000053271706",
+      "legifrance:JORFTEXT000053226384",
+      "senat:current/13",
+      "senat:current/18"
+     ]
+    },
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-16"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-16 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Cet amendement vise à supprimer l'article 2 bis, qui prévoit l'attribution obligatoire de titres-restaurant aux salariés bénéficiant d'un congé en lien avec l'arrivée d'un enfant dans leur foyer. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-16"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "creer-titre-bonifie": {
+   "theme": "Créer le titre-restaurant bonifié",
+   "amendments": [
+    "15"
+   ],
+   "effects": [
+    "Crée le titre-restaurant bonifié : l'employeur peut accorder un complément au salarié pour l'achat de produits biologiques ou contribuant à la transition agroécologique"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 1 du code rural et de la pêche maritime",
+    "article L. 124-13 du code de l'éducation",
+    "article L. 3262-1-5 du code de l'éducation",
+    "article L. 3262-1-4 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 124-13 du code de l'éducation, visé par 1 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2014-07-12 vient de : LOI n° 2014-788 du 10 juillet 2014 tendant au développement, à l'encadrement des stages et à l'amélioration du statut des stagiaires (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000029234215",
+      "legifrance:JORFTEXT000029223331",
+      "senat:current/15"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : ECOLOGIC COMING OUT.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:DVS2UMLV"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "ECOLOGIC COMING OUT",
+     "hatvp_id": "894289990",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "DVS2UMLV"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "ECOLOGIC COMING OUT",
+     "hatvp_id": "894289990",
+     "side": "pour",
+     "quote": "mettre en place des incitations économiques comme des chèques verts ou des tickets-restaurants bonifiés",
+     "fiche": "DVS2UMLV",
+     "year": 2025,
+     "on_behalf_of": [
+      "LA MAISON DE LA BIO"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "creer-pole-public-emission": {
+   "theme": "Créer un pôle public d'émission",
+   "amendments": [
+    "17",
+    "27",
+    "37"
+   ],
+   "effects": [
+    "Crée un pôle public d'émission de titres-restaurant via l'Agence nationale pour les chèques-vacances, avec une commission plafonnée à 2,5 % et les excédents réinvestis dans l'accès à une alimentation durable",
+    "Demande un rapport sur l'opportunité de confier le monopole de l'émission et du remboursement des titres-restaurants à un nouvel établissement public, remplaçant les opérateurs privés actuels",
+    "Oblige les partenaires sociaux à ouvrir avant juin 2027 une négociation sur l'avenir du titre-restaurant, incluant la création d'un pôle public d'émission, après concertation de tous les acteurs du secteur."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 411-13 du code du tourisme",
+    "article L. 3262-1 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 3262-1 du code du travail, visé par 1 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902943",
+      "legifrance:JORFTEXT000035607348",
+      "senat:current/27"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : PLUXEE FRANCE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:POHZDAG3"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [
+    {
+     "name": "PLUXEE FRANCE",
+     "hatvp_id": "340393065",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "POHZDAG3"
+     ],
+     "years": [
+      2019
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "PLUXEE FRANCE",
+     "hatvp_id": "340393065",
+     "side": "contre",
+     "quote": "Obtenir fin monopole ANCV (chèque vacances)",
+     "fiche": "POHZDAG3",
+     "year": 2019,
+     "on_behalf_of": [
+      "SODEXO PASS FRANCE (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "instaurer-double-plafond-journalier": {
+   "theme": "Instaurer un double plafond journalier",
+   "amendments": [
+    "19"
+   ],
+   "effects": [
+    "Instaure un double plafond journalier d'utilisation des titres-restaurant : plafond maximal limité pour les courses alimentaires non directement consommables, plafond au moins double pour les repas et produits directement consommables, avec obligation technique de respect des plafonds par les émetteurs et les accepteurs."
+   ],
+   "opposes": "supprimer-modulation-plafond-journalier",
+   "articles": [
+    "article 81 du code général des impôts",
+    "article L. 3262-5-2 du code du travail"
+   ],
+   "senate_by_group": {
+    "UCI": {
+     "filed": 2,
+     "adopted": 0,
+     "rejected": 1,
+     "other": 1,
+     "pour": 2,
+     "contre": 0,
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 1,
+     "contre": 0,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2024-2025/160/COM-2",
+     "session": "2024-2025",
+     "text_number": "160",
+     "stage": "commission",
+     "number": "COM-2",
+     "filed": "2024-11-27",
+     "year": 2024,
+     "author": "M. CAMBIER",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-2.html",
+     "cites": [],
+     "measure": "instaurer-double-plafond-journalier",
+     "stance": "pour",
+     "quote": "Le présent amendement vise à inscrire dans la loi le principe d'un plafond quotidien différencié, selon qu'il est utilisé dans le secteur de la restauration / assimilés restaurateurs et dans les grandes et moyennes surfaces"
+    },
+    {
+     "id": "senat:2024-2025/183/1 rect.",
+     "session": "2024-2025",
+     "text_number": "183",
+     "stage": "seance",
+     "number": "1 rect.",
+     "filed": "2025-01-13",
+     "year": 2025,
+     "author": "M. CAMBIER",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "non soutenu",
+     "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_1.html",
+     "cites": [],
+     "measure": "instaurer-double-plafond-journalier",
+     "stance": "pour",
+     "quote": "Le présent amendement vise à inscrire dans la loi le principe d'un plafond quotidien différencié, selon qu'il est utilisé dans le secteur de la restauration / assimilés restaurateurs et dans les grandes et moyennes surfaces"
+    },
+    {
+     "id": "senat:2026-2027/32/COM-12",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-12",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "Mme PUISSAT, rapporteur",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-12.html",
+     "cites": [],
+     "measure": "instaurer-double-plafond-journalier",
+     "stance": "pour",
+     "quote": "L'utilisation des titres-restaurant est limitée à un plafond journalier, majoré pour l'acquittement en tout ou en partie du prix de repas"
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article 81 du code général des impôts, visé par 1 amendement(s) de cette mesure, compte 98 version(s) ; celle en vigueur depuis le 2015-06-06 vient de : Décret n° 2015-608 du 3 juin 2015 portant incorporation au code général des impôts de divers textes modifiant et complétant certaines dispositions de ce code.",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000030700497",
+      "legifrance:JORFTEXT000030673448",
+      "senat:current/19"
+     ]
+    },
+    {
+     "text": "Au Sénat, 3 amendement(s) déposé(s) de 2024 à 2026 allaient en faveur de cette mesure : 1 adopté(s), 1 rejeté(s), 1 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : UCI (2), LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/160/COM-2",
+      "senat:2024-2025/183/1 rect.",
+      "senat:2026-2027/32/COM-12"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-12 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), en faveur de la mesure : « L'utilisation des titres-restaurant est limitée à un plafond journalier, majoré pour l'acquittement en tout ou en partie du prix de repas ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-12"
+     ]
+    },
+    {
+     "text": "6 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : FLINT FRANCE SAS, IMAGE 7, SWILE, UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR, UNION METIERS & INDUSTRIES HOTELLERIE et 1 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:0V2L6UBH",
+      "hatvp:0V2LXKSH",
+      "hatvp:SVFGPSI3",
+      "hatvp:SVFGO5U3",
+      "hatvp:5HASE8EH",
+      "hatvp:Y3GQN05H"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:W3UNA42V"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2L6UBH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2LXKSH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "SWILE",
+     "hatvp_id": "824012173",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "SVFGPSI3"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+     "hatvp_id": "778212779",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "SVFGO5U3"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "5HASE8EH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UP",
+     "hatvp_id": "642044366",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "Y3GQN05H"
+     ],
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "lobby_contre": [
+    {
+     "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "W3UNA42V"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "side": "contre",
+     "quote": "s'opposer à différencier les plafonds d'utilisation en fonction des types de commerce",
+     "fiche": "W3UNA42V",
+     "year": 2025,
+     "on_behalf_of": [
+      "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "side": "pour",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant dans le cadre de la réforme du titre",
+     "fiche": "0V2L6UBH",
+     "year": 2025,
+     "on_behalf_of": [
+      "PLUXEE FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "pour",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+     "fiche": "0V2LXKSH",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "pour",
+     "quote": "Instaurer un double plafond d'utilisation du titre-restaurant.",
+     "fiche": "SVFGPSI3",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR",
+     "hatvp_id": "778212779",
+     "side": "pour",
+     "quote": "Demande d'inscription dans la loi d'un double plafond d'utilisation des titres restaurant",
+     "fiche": "SVFGO5U3",
+     "year": 2025,
+     "on_behalf_of": [
+      "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "side": "pour",
+     "quote": "Inscrire dans la réforme du titre-restaurant le double plafond",
+     "fiche": "5HASE8EH",
+     "year": 2025,
+     "on_behalf_of": [
+      "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UP",
+     "hatvp_id": "642044366",
+     "side": "pour",
+     "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+     "fiche": "Y3GQN05H",
+     "year": 2022,
+     "on_behalf_of": [
+      "UP (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UP",
+     "hatvp_id": "642044366",
+     "side": "pour",
+     "quote": "MAINTIEN D'UN PLAFOND D'UTILISATION JOURNALIER SUPERIEUR DANS LES RESTAURANTS",
+     "fiche": "Y3GQN05H",
+     "year": 2022,
+     "on_behalf_of": [
+      "UP (en propre)"
+     ],
+     "derived_from": "supprimer-modulation-plafond-journalier"
+    }
+   ]
+  },
+  "restreindre-usage-consommables": {
+   "theme": "Restreindre l'usage aux consommables",
+   "amendments": [
+    "20",
+    "24"
+   ],
+   "effects": [
+    "Restreint l'usage des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, mettant fin à l'usage élargi pour tout produit alimentaire en supermarché",
+    "Restreint l'utilisation des titres-restaurant aux préparations alimentaires directement consommables et aux fruits et légumes, supprimant l'élargissement pérenne à tous les produits alimentaires"
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-1 du code du travail",
+    "article L. 3262-5-2 du code du travail"
+   ],
+   "senate_by_group": {
+    "RDSE": {
+     "filed": 2,
+     "adopted": 1,
+     "rejected": 1,
+     "other": 0,
+     "pour": 0,
+     "contre": 2,
+     "years": [
+      2009,
+      2025
+     ]
+    },
+    "UCI": {
+     "filed": 2,
+     "adopted": 1,
+     "rejected": 1,
+     "other": 0,
+     "pour": 1,
+     "contre": 1,
+     "years": [
+      2023,
+      2025
+     ]
+    },
+    "GEST": {
+     "filed": 2,
+     "adopted": 0,
+     "rejected": 2,
+     "other": 0,
+     "pour": 2,
+     "contre": 0,
+     "years": [
+      2023
+     ]
+    },
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 1,
+     "contre": 0,
+     "years": [
+      2024
+     ]
+    },
+    "RDPI": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2025
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2008-2009/381/646 rect.",
+     "session": "2008-2009",
+     "text_number": "381",
+     "stage": "seance",
+     "number": "646 rect.",
+     "filed": "2009-05-12",
+     "year": 2009,
+     "author": "M. BARBIER",
+     "group": "RDSE",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/2008-2009/381/Amdt_646.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "contre",
+     "quote": "Il est proposé ici de supprimer la disposition concernant la possibilité d'utiliser les tickets restaurants auprès des détaillants de fruits et légumes."
+    },
+    {
+     "id": "senat:2023-2024/143/COM-1 rect.",
+     "session": "2023-2024",
+     "text_number": "143",
+     "stage": "commission",
+     "number": "COM-1 rect.",
+     "filed": "2023-12-04",
+     "year": 2023,
+     "author": "Mme PONCET MONGE",
+     "group": "GEST",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/commissions/2023-2024/143/Amdt_COM-1.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "pour",
+     "quote": "Le titre restaurant a fait l'objet de dérogations dans son principe du fait d'abord de la crise COVID (télétravail, fermeture des restaurants) puis lors de la loi sur le pouvoir d'achat."
+    },
+    {
+     "id": "senat:2023-2024/173/2 rect.",
+     "session": "2023-2024",
+     "text_number": "173",
+     "stage": "seance",
+     "number": "2 rect.",
+     "filed": "2023-12-17",
+     "year": 2023,
+     "author": "M. CANÉVET",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_2.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "pour",
+     "quote": "Cet amendement vise à réduire la prolongation de l'utilisation des titres-restaurant pour l'achat de produits alimentaires non directement consommables au 30 juin 2024."
+    },
+    {
+     "id": "senat:2023-2024/173/3 rect.",
+     "session": "2023-2024",
+     "text_number": "173",
+     "stage": "seance",
+     "number": "3 rect.",
+     "filed": "2023-12-18",
+     "year": 2023,
+     "author": "Mme PONCET MONGE",
+     "group": "GEST",
+     "group_source": "history",
+     "outcome": "rejeté",
+     "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_3.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "pour",
+     "quote": "Au risque désormais d'une forme d'irréversibilité, le texte propose de prolonger de nouveau cette dérogation au 31 décembre 2024 pour des raisons de pouvoir d'achat."
+    },
+    {
+     "id": "senat:2024-2025/160/COM-1",
+     "session": "2024-2025",
+     "text_number": "160",
+     "stage": "commission",
+     "number": "COM-1",
+     "filed": "2024-12-02",
+     "year": 2024,
+     "author": "Mme AESCHLIMANN, rapporteure",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-1.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "pour",
+     "quote": "la dérogation d'usage des titres-restaurant pour tout produit alimentaire propose une prolongation jusqu'au 1er janvier 2026 de ce régime dérogatoire. Cet amendement vise à réduire à un an la"
+    },
+    {
+     "id": "senat:2024-2025/183/4",
+     "session": "2024-2025",
+     "text_number": "183",
+     "stage": "seance",
+     "number": "4",
+     "filed": "2025-01-10",
+     "year": 2025,
+     "author": "M. IACOVELLI",
+     "group": "RDPI",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_4.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "contre",
+     "quote": "Cet amendement propose de proroger la dérogation d'usage des titres-restaurant pour les produits alimentaires non directement consommables de deux ans, c'est-à-dire jusqu'au 1er janvier 2026."
+    },
+    {
+     "id": "senat:2024-2025/183/2 rect.",
+     "session": "2024-2025",
+     "text_number": "183",
+     "stage": "seance",
+     "number": "2 rect.",
+     "filed": "2025-01-14",
+     "year": 2025,
+     "author": "Mme GUILLOTIN",
+     "group": "RDSE",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_2.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "contre",
+     "quote": "Cet amendement vise à porter à deux ans la durée de la dérogation permettant d'acheter tout produit alimentaire en grande surface avec des tickets-restaurant"
+    },
+    {
+     "id": "senat:2024-2025/183/3 rect. quater",
+     "session": "2024-2025",
+     "text_number": "183",
+     "stage": "seance",
+     "number": "3 rect. quater",
+     "filed": "2025-01-14",
+     "year": 2025,
+     "author": "Mme SOLLOGOUB",
+     "group": "UCI",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_3.html",
+     "cites": [],
+     "measure": "restreindre-usage-consommables",
+     "stance": "contre",
+     "quote": "le report de l'examen de ce texte en raison de la censure du gouvernement a eu pour effet de suspendre l'expérimentation autorisée par la loi jusqu'au 31 décembre dernier."
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article L. 3262-1 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902943",
+      "legifrance:JORFTEXT000035607348",
+      "senat:current/20",
+      "senat:current/24"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "Au Sénat, 4 amendement(s) déposé(s) de 2023 à 2024 allaient en faveur de cette mesure : 1 adopté(s), 3 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : GEST (2), UCI (1), LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2023-2024/143/COM-1 rect.",
+      "senat:2023-2024/173/2 rect.",
+      "senat:2023-2024/173/3 rect.",
+      "senat:2024-2025/160/COM-1"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2024-12-02 : n° COM-1 (commission, texte n° 160 de 2024-2025) de Mme AESCHLIMANN, rapporteure (LR), en faveur de la mesure : « la dérogation d'usage des titres-restaurant pour tout produit alimentaire propose une prolongation jusqu'au 1er janvier 2026 de ce régime dérogatoire. Cet amendement vise à réduire à un an la ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/160/COM-1"
+     ]
+    },
+    {
+     "text": "Au Sénat, 4 amendement(s) déposé(s) de 2009 à 2025 allaient contre cette mesure : 3 adopté(s), 1 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : RDSE (2), RDPI (1), UCI (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2008-2009/381/646 rect.",
+      "senat:2024-2025/183/4",
+      "senat:2024-2025/183/2 rect.",
+      "senat:2024-2025/183/3 rect. quater"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2025-01-10 : n° 4 (seance, texte n° 183 de 2024-2025) de M. IACOVELLI (RDPI), contre la mesure : « Cet amendement propose de proroger la dérogation d'usage des titres-restaurant pour les produits alimentaires non directement consommables de deux ans, c'est-à-dire jusqu'au 1er janvier 2026. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/183/4"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2025-01-14 : n° 2 rect. (seance, texte n° 183 de 2024-2025) de Mme GUILLOTIN (RDSE), contre la mesure : « Cet amendement vise à porter à deux ans la durée de la dérogation permettant d'acheter tout produit alimentaire en grande surface avec des tickets-restaurant ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/183/2 rect."
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2025-01-14 : n° 3 rect. quater (seance, texte n° 183 de 2024-2025) de Mme SOLLOGOUB (UCI), contre la mesure : « le report de l'examen de ce texte en raison de la censure du gouvernement a eu pour effet de suspendre l'expérimentation autorisée par la loi jusqu'au 31 décembre dernier. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2024-2025/183/3 rect. quater"
+     ]
+    },
+    {
+     "text": "9 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : CONFEDERATION GENERALE ALIMENTAT.DETAIL, SYND NAT ALIMENTAT.RESTAURATION RAPIDE, UNION METIERS & INDUSTRIES HOTELLERIE, GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE, GROUPEMENT NATIONAL DES INDEPENDANTS et 4 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:A3YPGDY3",
+      "hatvp:O386NIEH",
+      "hatvp:DVS2W6ZV",
+      "hatvp:Y3G7DR2V",
+      "hatvp:5HASE8EH",
+      "hatvp:EVJFRPFH",
+      "hatvp:9V0PIPSH",
+      "hatvp:DVSJ2CFV",
+      "hatvp:X3CF9YI3",
+      "hatvp:UVPEBWD3",
+      "hatvp:DHMQ4XBV",
+      "hatvp:UVPEED23"
+     ]
+    },
+    {
+     "text": "9 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : SYNDIC NATION VENTE ET SERVICES AUTOMAT, CARREFOUR, CARREFOUR MANAGEMENT, FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE, FEDERATION ENTREP COMMERCE DISTRIBUTION et 4 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:9V0KZ1KV",
+      "hatvp:SVFGQKM3",
+      "hatvp:YVNFAOJ3",
+      "hatvp:BHOW7JI3",
+      "hatvp:O3WIWQIH",
+      "hatvp:OHZUXTKV",
+      "hatvp:ZV9R0E13",
+      "hatvp:0V5X579H",
+      "hatvp:PVXI2I2V",
+      "hatvp:O3WIZ60H",
+      "hatvp:Y3G7BC8V",
+      "hatvp:0V2LCCZH",
+      "hatvp:DVS2AZDV",
+      "hatvp:UVPUL1XH",
+      "hatvp:Y3GQ0M4H",
+      "hatvp:LV1D2PQ3"
+     ]
+    },
+    {
+     "text": "3 organisation(s) ont déclaré les deux positions sur cette mesure (souvent des cabinets agissant pour des clients différents) : IMAGE 7, SAVEURS COMMERCE, SWILE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:0VESNIWH",
+      "hatvp:6VBQUMUV",
+      "hatvp:JVDFK60H",
+      "hatvp:Y3K4MPFH",
+      "hatvp:Q36KU1P3",
+      "hatvp:UHQ1SWMV",
+      "hatvp:2VRNAL2H",
+      "hatvp:W3UNS4JV"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+     "hatvp_id": "784717225",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "A3YPGDY3",
+      "O386NIEH"
+     ],
+     "years": [
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+     "hatvp_id": "422477224",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "DVS2W6ZV",
+      "Y3G7DR2V"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "5HASE8EH",
+      "EVJFRPFH"
+     ],
+     "years": [
+      2023,
+      2025
+     ]
+    },
+    {
+     "name": "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE",
+     "hatvp_id": "923291454",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "9V0PIPSH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+     "hatvp_id": "822829727",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "DVSJ2CFV"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+     "hatvp_id": "422477356",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "X3CF9YI3"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "TADDEO",
+     "hatvp_id": "534389309",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "UVPEBWD3"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "UNION DES ENTREPRISES DE PROXIMITE",
+     "hatvp_id": "349681098",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "DHMQ4XBV"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "UP",
+     "hatvp_id": "642044366",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "UVPEED23"
+     ],
+     "years": [
+      2024
+     ]
+    }
+   ],
+   "lobby_contre": [
+    {
+     "name": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+     "hatvp_id": "784717498",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "9V0KZ1KV",
+      "SVFGQKM3",
+      "YVNFAOJ3"
+     ],
+     "years": [
+      2023,
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "CARREFOUR",
+     "hatvp_id": "652014051",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "BHOW7JI3",
+      "O3WIWQIH"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "CARREFOUR MANAGEMENT",
+     "hatvp_id": "403245061",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "OHZUXTKV",
+      "ZV9R0E13"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+     "hatvp_id": "801316951",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "0V5X579H",
+      "PVXI2I2V"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "O3WIZ60H",
+      "Y3G7BC8V"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "LES MOUSQUETAIRES",
+     "hatvp_id": "789169323",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "0V2LCCZH",
+      "DVS2AZDV"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "UVPUL1XH"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "CONFEDERATION DES GROSSISTES DE FRANCE",
+     "hatvp_id": "784669152",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "Y3GQ0M4H"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "FAMILLES RURALES FEDERATION NATIONALE",
+     "hatvp_id": "784672792",
+     "category": "Association",
+     "consultancy": false,
+     "fiches": [
+      "LV1D2PQ3"
+     ],
+     "years": [
+      2023
+     ]
+    }
+   ],
+   "lobby_both": [
+    {
+     "name": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0VESNIWH",
+      "6VBQUMUV",
+      "JVDFK60H",
+      "Y3K4MPFH"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "Q36KU1P3",
+      "UHQ1SWMV"
+     ],
+     "years": [
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "SWILE",
+     "hatvp_id": "824012173",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "2VRNAL2H",
+      "W3UNS4JV"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    }
+   ],
+   "lobby_quotes": [
+    {
+     "org": "CARREFOUR",
+     "hatvp_id": "652014051",
+     "side": "contre",
+     "quote": "prolonger la dérogation de l'usage des titres restaurant pour les produits alimentaires jusqu'au 31 décembre 2026 et demander la pérennisation du dispositif",
+     "fiche": "O3WIWQIH",
+     "year": 2025,
+     "on_behalf_of": [
+      "CARREFOUR (en propre)",
+      "CARREFOUR FRANCE",
+      "CARREFOUR MANAGEMENT"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CARREFOUR MANAGEMENT",
+     "hatvp_id": "403245061",
+     "side": "contre",
+     "quote": "prolonger la dérogation de l'usage des titres restaurant pour les produits alimentaires jusqu'au 31 décembre 2026 et demander la pérennisation du dispositif",
+     "fiche": "ZV9R0E13",
+     "year": 2025,
+     "on_behalf_of": [
+      "CARREFOUR",
+      "CARREFOUR FRANCE",
+      "CARREFOUR MANAGEMENT (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+     "hatvp_id": "801316951",
+     "side": "contre",
+     "quote": "Prolonger et pérenniser la possibilité d'utiliser ses titres-restaurant pour un salarié pour l'ensemble des achats alimentaires",
+     "fiche": "0V5X579H",
+     "year": 2025,
+     "on_behalf_of": [
+      "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "side": "contre",
+     "quote": "soutenir la prorogation du dispositif jusqu'au 31.12.2026",
+     "fiche": "O3WIZ60H",
+     "year": 2025,
+     "on_behalf_of": [
+      "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE",
+     "hatvp_id": "923291454",
+     "side": "pour",
+     "quote": "Demander la révision des règles d'agrément des titres-restaurant et la suspension des autorisations pour les enseignes non spécialisées",
+     "fiche": "9V0PIPSH",
+     "year": 2025,
+     "on_behalf_of": [
+      "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Défendre le prolongement de l'usage des tickets restaurants dans les grandes surfaces",
+     "fiche": "6VBQUMUV",
+     "year": 2025,
+     "on_behalf_of": [
+      "LES MOUSQUETAIRES"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "pour",
+     "quote": "Défendre le modèle du titre restaurant en alertant sur les risques de la possible pérennisation d'usage des titres pour acheter tout produit alimentaire qu'il soit ou non immédiatement consommable.",
+     "fiche": "Y3K4MPFH",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "LES MOUSQUETAIRES",
+     "hatvp_id": "789169323",
+     "side": "contre",
+     "quote": "DÉFENDRE LE PROLONGEMENT DE L'USAGE DES TICKETS RESTAURANTS DANS LES GRANDES SURFACES",
+     "fiche": "0V2LCCZH",
+     "year": 2025,
+     "on_behalf_of": [
+      "LES MOUSQUETAIRES (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "pour",
+     "quote": "DÉFENDRE LE MODÈLE DU TITRE-RESTAURANT EN ALERTANT SUR LES RISQUES DE LA POSSIBLE PERENNISATION D'USAGE DES TR POUR ACHETER TOUT PRODUIT ALIMENTAIRE QU'IL SOIT OU NON IMMÉDIATEMENT CONSOMMABLE",
+     "fiche": "W3UNS4JV",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+     "hatvp_id": "422477224",
+     "side": "pour",
+     "quote": "DEMANDER QUE LE REGIME DEROGATOIRE PERMETTANT L'UTILISATION DES TITRES-RESTAURANTS POUR L'ACHAT DE PRODUITS NON DIRECTEMENT CONSOMMABLES NE FASSE PAS L'OBJET D'UNE RECONDUCTION",
+     "fiche": "Y3G7DR2V",
+     "year": 2025,
+     "on_behalf_of": [
+      "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+     "hatvp_id": "784717498",
+     "side": "contre",
+     "quote": "Inscrire dans la loi la prolongation de la dérogation d'usage du titre-restaurant",
+     "fiche": "9V0KZ1KV",
+     "year": 2025,
+     "on_behalf_of": [
+      "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "TADDEO",
+     "hatvp_id": "534389309",
+     "side": "pour",
+     "quote": "Demander que le régime dérogatoire permettant l'utilisation des titres-restaurant pour l'achat de produits non directement consommables ne fasse pas l'objet d'une reconduction.",
+     "fiche": "UVPEBWD3",
+     "year": 2025,
+     "on_behalf_of": [
+      "SYND NAT ALIMENTAT.RESTAURATION RAPIDE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "side": "pour",
+     "quote": "y supprimerl'extension du titre à la grande distribution",
+     "fiche": "5HASE8EH",
+     "year": 2025,
+     "on_behalf_of": [
+      "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CARREFOUR",
+     "hatvp_id": "652014051",
+     "side": "contre",
+     "quote": "DEMANDER LA PROLONGATION LE DISPOSITIF DES TITRES RESTAURANTS JUSQU' EN 2026 AFIN d'agir en faveur du POUVOIR D'ACHAT DES Consommateurs",
+     "fiche": "BHOW7JI3",
+     "year": 2024,
+     "on_behalf_of": [
+      "CARREFOUR (en propre)",
+      "CARREFOUR FRANCE",
+      "CARREFOUR MANAGEMENT"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CARREFOUR MANAGEMENT",
+     "hatvp_id": "403245061",
+     "side": "contre",
+     "quote": "Demander la prolongation le dispositif des titres restaurants jusqu'en 2026 afin d'agir en faveur du pouvoir d'achat des consommateurs",
+     "fiche": "OHZUXTKV",
+     "year": 2024,
+     "on_behalf_of": [
+      "CARREFOUR",
+      "CARREFOUR FRANCE",
+      "CARREFOUR MANAGEMENT (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+     "hatvp_id": "784717225",
+     "side": "pour",
+     "quote": "La CGAD est opposée à la poursuite de la dérogation qui a avant tout bénéficié à la grande distribution et mis en difficulté les restaurants et commerces de proximité.",
+     "fiche": "O386NIEH",
+     "year": 2024,
+     "on_behalf_of": [
+      "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE",
+     "hatvp_id": "801316951",
+     "side": "contre",
+     "quote": "Inscrire dans la loi la prolongation et la pérennisation de l'usage des titres-restaurant pour l'ensemble des achats alimentaires (PPL sur la dérogation d'usage des titres restaurant)",
+     "fiche": "PVXI2I2V",
+     "year": 2024,
+     "on_behalf_of": [
+      "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "side": "contre",
+     "quote": "Soutenir une proposition de loi pérennisant l'usage des titres-restaurant pour tout aliment ou, à défaut, prolonger cette possibilité après 2025",
+     "fiche": "Y3G7BC8V",
+     "year": 2024,
+     "on_behalf_of": [
+      "FEDERATION ENTREP COMMERCE DISTRIBUTION (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Défendre le prolongement de l'autorisation d'usage des tickets restaurants dans les grandes surfaces",
+     "fiche": "0VESNIWH",
+     "year": 2024,
+     "on_behalf_of": [
+      "LES MOUSQUETAIRES"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Contribuer à la PPL visant à prolonger la dérogation d'usage des titres-restaurant pour tout produit alimentaire, en sensibilisant sur les risques d'une prorogation excessive de la dérogation.",
+     "fiche": "JVDFK60H",
+     "year": 2024,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "LES MOUSQUETAIRES",
+     "hatvp_id": "789169323",
+     "side": "contre",
+     "quote": "DÉFENDRE LE PROLONGEMENT DE L'AUTORISATION D'USAGE DES TICKETS RESTAURANTS EN SUPERMARCHE",
+     "fiche": "DVS2AZDV",
+     "year": 2024,
+     "on_behalf_of": [
+      "LES MOUSQUETAIRES (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "side": "contre",
+     "quote": "Saveurs Commerce donne sa position favorable à la proposition de loi visant à prolonger d'un an la dérogation d'usage des titres restaurant pour l'achat de produits alimentaires non directement consommables.",
+     "fiche": "UHQ1SWMV",
+     "year": 2024,
+     "on_behalf_of": [
+      "SAVEURS COMMERCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "contre",
+     "quote": "Contribuer à la proposition de loi prolongeant la dérogation d'usage des titres-restaurant pour tout produit alimentaire, en sensibilisant sur les risques d'une prorogation excessive de la dérogation",
+     "fiche": "2VRNAL2H",
+     "year": 2024,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE",
+     "hatvp_id": "422477224",
+     "side": "pour",
+     "quote": "Demander que le régime dérogatoire permettant l'utilisation des titres-restaurants pour l'achat de produits non directement consommables ne fasse pas l'objet d'une reconduction",
+     "fiche": "DVS2W6ZV",
+     "year": 2024,
+     "on_behalf_of": [
+      "SYND NAT ALIMENTAT.RESTAURATION RAPIDE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+     "hatvp_id": "784717498",
+     "side": "contre",
+     "quote": "Inscrire dans la loi une prolongation de la dérogation d'usage du titre-restaurant",
+     "fiche": "SVFGQKM3",
+     "year": 2024,
+     "on_behalf_of": [
+      "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UP",
+     "hatvp_id": "642044366",
+     "side": "pour",
+     "quote": "limiter la prolongation dans le temps pour préserver sa vocation sociale et économique",
+     "fiche": "UVPEED23",
+     "year": 2024,
+     "on_behalf_of": [
+      "UP (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "side": "contre",
+     "quote": "Demander la prolongation de l'utilisation dérogatoire des titres restaurants",
+     "fiche": "UVPUL1XH",
+     "year": 2023,
+     "on_behalf_of": [
+      "EDENRED FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDERATION GENERALE ALIMENTAT.DETAIL",
+     "hatvp_id": "784717225",
+     "side": "pour",
+     "quote": "Réduire dans la loi la prolongation de l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables et la borner au 30 juin 2024",
+     "fiche": "A3YPGDY3",
+     "year": 2023,
+     "on_behalf_of": [
+      "CONFEDERATION GENERALE ALIMENTAT.DETAIL (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FAMILLES RURALES FEDERATION NATIONALE",
+     "hatvp_id": "784672792",
+     "side": "contre",
+     "quote": "Proroger le dérogation instaurer par l'art 6 de la loi du 16 août 2022 qui prévoit que les tickets-restaurant puissent être utilisés pour acheter tout produit alimentaire.",
+     "fiche": "LV1D2PQ3",
+     "year": 2023,
+     "on_behalf_of": [
+      "FAMILLES RURALES FEDERATION NATIONALE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SAVEURS COMMERCE",
+     "hatvp_id": "308961978",
+     "side": "pour",
+     "quote": "Revenir à la liste de 2021 des produits éligibles aux titres restaurants",
+     "fiche": "Q36KU1P3",
+     "year": 2023,
+     "on_behalf_of": [
+      "SAVEURS COMMERCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYNDIC NATION VENTE ET SERVICES AUTOMAT",
+     "hatvp_id": "784717498",
+     "side": "contre",
+     "quote": "Prises de position en faveur de la prolongation de l'élargissement de l'utilisation du titre-restaurant",
+     "fiche": "YVNFAOJ3",
+     "year": 2023,
+     "on_behalf_of": [
+      "SYNDIC NATION VENTE ET SERVICES AUTOMAT (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION DES ENTREPRISES DE PROXIMITE",
+     "hatvp_id": "349681098",
+     "side": "pour",
+     "quote": "Réduire dans la loi la prolongation de l'utilisation des titres-restaurant pour des achats de produits alimentaires non directement consommables et la borner au 30 juin 2024",
+     "fiche": "DHMQ4XBV",
+     "year": 2023,
+     "on_behalf_of": [
+      "UNION DES ENTREPRISES DE PROXIMITE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "side": "pour",
+     "quote": "METTRE FIN A L EXTENSION DE L' UTILISATION DU TITRE RESTAURANT A LA GRANDE DISTRIBUTION ET LE RESERVER A LA RESTAURATION",
+     "fiche": "EVJFRPFH",
+     "year": 2023,
+     "on_behalf_of": [
+      "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "CONFEDERATION DES GROSSISTES DE FRANCE",
+     "hatvp_id": "784669152",
+     "side": "contre",
+     "quote": "demander l'élargissement du champ d'application des tickets restaurants à tous les produits alimentaires",
+     "fiche": "Y3GQ0M4H",
+     "year": 2022,
+     "on_behalf_of": [
+      "CONFEDERATION DES GROSSISTES DE FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GROUPEMENT NATIONAL DES INDEPENDANTS",
+     "hatvp_id": "822829727",
+     "side": "pour",
+     "quote": "Présenter un plaidoyer contre l'élargissement de l'utilisation des titres-restaurant à l'achat de tous les produits alimentaires, même s'ils ne sont pas directement consommables",
+     "fiche": "DVSJ2CFV",
+     "year": 2022,
+     "on_behalf_of": [
+      "GROUPEMENT NATIONAL DES INDEPENDANTS (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES",
+     "hatvp_id": "422477356",
+     "side": "pour",
+     "quote": "Présenter un plaidoyer contre l'élargissement de l'utilisation des titres-restaurant à l'achat de tous les produits alimentaires, même s'ils ne sont pas directement consommables",
+     "fiche": "X3CF9YI3",
+     "year": 2022,
+     "on_behalf_of": [
+      "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "exclure-plateformes-livraison": {
+   "theme": "Exclure les plateformes de livraison",
+   "amendments": [
+    "21 rect.",
+    "26"
+   ],
+   "effects": [
+    "Exclut les achats de repas réalisés via des plateformes de livraison en ligne du bénéfice de l'aide publique au repas du salarié",
+    "Exclut les plateformes de mise en relation par voie électronique du champ des professionnels habilités à accepter les titres-restaurant"
+   ],
+   "opposes": null,
+   "articles": [
+    "article 242 bis du code général des impôts",
+    "article L. 3262-1 du code du travail"
+   ],
+   "senate_by_group": {
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2026-2027/32/COM-10",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-10",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "Mme PUISSAT, rapporteur",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-10.html",
+     "cites": [
+      "article 242 bis du code général des impôts"
+     ],
+     "measure": "exclure-plateformes-livraison",
+     "stance": "contre",
+     "quote": "Supprimer les mots : , à l'exclusion des plateformes de mise en relation par voie électronique mentionnées à l'article 242 bis du code général des impôts"
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article 242 bis du code général des impôts, visé par 1 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2023-01-01 vient de : LOI n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000044981558",
+      "legifrance:JORFTEXT000044637640",
+      "senat:current/21 rect."
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902943",
+      "legifrance:JORFTEXT000035607348",
+      "senat:current/21 rect.",
+      "senat:current/26"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-10"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-10 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Supprimer les mots : , à l'exclusion des plateformes de mise en relation par voie électronique mentionnées à l'article 242 bis du code général des impôts ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-10"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDERATION ENTREP COMMERCE DISTRIBUTION.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:6VBOEZJ3"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [
+    {
+     "name": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "6VBOEZJ3"
+     ],
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "FEDERATION ENTREP COMMERCE DISTRIBUTION",
+     "hatvp_id": "784855876",
+     "side": "contre",
+     "quote": "Permettre l'utilisation des titres-restaurant dans le cadre de paiements effectués à distance : ventes à emporter (click & collect et drive) ou achats en ligne livrés",
+     "fiche": "6VBOEZJ3",
+     "year": 2022,
+     "on_behalf_of": [
+      "ALDI",
+      "AUCHAN HOLDING",
+      "BAILLY SA",
+      "BJORG BONNETERRE ET COMPAGNIE",
+      "BOULANGER",
+      "CARREFOUR",
+      "CENTRE DISTRIBUTION ALIMENTAIRE DU S. O.",
+      "COLRUYT RETAIL FRANCE",
+      "COOPERATIVE U ENSEIGNE",
+      "DARTY HOLDINGS",
+      "DECATHLON FRANCE",
+      "DISTRIBUTION ALIMENTAIRE PARISIENNE",
+      "DISTRIBUTION CASINO FRANCE",
+      "ELECTRO DEPOT FRANCE",
+      "ETABLISSEMENTS SEGUREL ET FILS",
+      "FLINK",
+      "FRANCAP DISTRIBUTION",
+      "GALERIES LAFAYETTE HAUSSMANN - GL HAUSSMANN",
+      "GETIR FRANCE",
+      "GROUPE 20",
+      "KINGFISHER FRANCE",
+      "LA VIE CLAIRE",
+      "LEROY MERLIN FRANCE",
+      "LIDL",
+      "LOUIS DELHAIZE SA",
+      "LUDERIX INTERNATIONAL",
+      "MAXIMO",
+      "METRO FRANCE",
+      "MEUBLES IKEA FRANCE",
+      "MIGROS FRANCE",
+      "MONOPRIX",
+      "NICOLAS DIRECT",
+      "NORMA SARL",
+      "PICARD SURGELES",
+      "RALLYE",
+      "RELATIONS MARCHANDISES SERVICES DISTRIBU",
+      "S.A.V SCHIEVER",
+      "SOC ETS BENSOUSSAN COMPTOIR D'ORIENT",
+      "SOCIETE D'EXPLOITATION DE LA GRANDE EPICERIE DE PARIS",
+      "SOCIETE D'EXPLOITATION PROVENCIA",
+      "SYSTEME U - CENTRALE REGIONALE EST",
+      "TANG FRERES",
+      "TRANSGOURMET OPERATIONS"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "allonger-duree-validite": {
+   "theme": "Allonger la durée de validité",
+   "amendments": [
+    "32",
+    "33"
+   ],
+   "effects": [
+    "Allonge à trois ans la durée d'utilisation des titres-restaurant et attribue la contre-valeur des titres périmés au budget des activités sociales et culturelles de l'entreprise",
+    "Supprime la date limite d'utilisation des titres-restaurant, qui deviennent valables sans limitation de durée."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-5 du code du travail"
+   ],
+   "senate_by_group": {
+    "LR": {
+     "filed": 1,
+     "adopted": 1,
+     "rejected": 0,
+     "other": 0,
+     "pour": 0,
+     "contre": 1,
+     "years": [
+      2026
+     ]
+    }
+   },
+   "past_amendments": [
+    {
+     "id": "senat:2026-2027/32/COM-13",
+     "session": "2026-2027",
+     "text_number": "32",
+     "stage": "commission",
+     "number": "COM-13",
+     "filed": "2026-11-02",
+     "year": 2026,
+     "author": "Mme PUISSAT, rapporteur",
+     "group": "LR",
+     "group_source": "history",
+     "outcome": "adopté",
+     "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-13.html",
+     "cites": [],
+     "measure": "allonger-duree-validite",
+     "stance": "contre",
+     "quote": "Cet amendement vise à revenir sur l'extension à trois ans de la durée de validité du titre-restaurant, insérée en séance publique à l'Assemblée nationale."
+    }
+   ],
+   "findings": [
+    {
+     "text": "L'article L. 3262-5 du code du travail, visé par 2 amendement(s) de cette mesure, a connu 3 version(s) depuis le 2008-05-01, issues de 2 texte(s) ; la dernière modification vient de : LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires (version en vigueur depuis le 2009-07-23).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902947",
+      "legifrance:JORFTEXT000020879475",
+      "senat:current/32",
+      "senat:current/33"
+     ]
+    },
+    {
+     "text": "Au Sénat, 1 amendement(s) déposé(s) de 2026 allaient contre cette mesure : 1 adopté(s), 0 rejeté(s), 0 autre(s) (retiré, tombé, non soutenu…). Groupes des auteurs à la date de dépôt : LR (1).",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-13"
+     ]
+    },
+    {
+     "text": "Amendement adopté, déposé le 2026-11-02 : n° COM-13 (commission, texte n° 32 de 2026-2027) de Mme PUISSAT, rapporteur (LR), contre la mesure : « Cet amendement vise à revenir sur l'extension à trois ans de la durée de validité du titre-restaurant, insérée en séance publique à l'Assemblée nationale. ».",
+     "source": "Sénat (Ameli)",
+     "refs": [
+      "senat:2026-2027/32/COM-13"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": []
+  },
+  "reporter-dematerialisation": {
+   "theme": "Reporter la dématérialisation",
+   "amendments": [
+    "34",
+    "35",
+    "36"
+   ],
+   "effects": [
+    "Reporte au 1er janvier 2029 l'obligation de dématérialisation des titres-restaurant et autorise l'émission de titres papier pour le millésime 2028",
+    "Reporte l'obligation de dématérialisation des titres-restaurant au 1er janvier 2031, autorisant le maintien du support papier pour les titres émis en 2028, 2029 et 2030.",
+    "Repousse l'obligation de dématérialisation des titres-restaurant au 1er janvier 2030, autorisant le papier pour les millésimes 2028 et 2029."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3262-1 du code du travail",
+    "article L. 3262-1-3 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 3262-1 du code du travail, visé par 3 amendement(s) de cette mesure, a connu 4 version(s) depuis le 2008-05-01, issues de 3 texte(s) ; la dernière modification vient de : Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales (version en vigueur depuis le 2018-01-01).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000006902943",
+      "legifrance:JORFTEXT000035607348",
+      "senat:current/34",
+      "senat:current/35",
+      "senat:current/36"
+     ]
+    },
+    {
+     "text": "L'article L. 3262-1 du code du travail fait l'objet d'une dérogation en vigueur, hors code : Loi n°2022-1158 du 16 août 2022 - art. 6, modifiée par 3 texte(s) dont le dernier est : LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000051018968",
+      "legifrance:JORFTEXT000046186723",
+      "legifrance:JORFTEXT000048668803",
+      "legifrance:JORFTEXT000051018078"
+     ]
+    },
+    {
+     "text": "11 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : IMAGE 7, EDENRED FRANCE, EDENRED, COMMSTRAT, GLADY et 6 autres.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:0V2LXKSH",
+      "hatvp:5HABWNYV",
+      "hatvp:EHLFUZ9H",
+      "hatvp:LV1D15E3",
+      "hatvp:O3WX0CTH",
+      "hatvp:QEVJ1A7H",
+      "hatvp:0V2P11QV",
+      "hatvp:2VRN1ZTH",
+      "hatvp:O38S0423",
+      "hatvp:W3U97L5V",
+      "hatvp:YVNTG9MV",
+      "hatvp:2VRQPFOH",
+      "hatvp:DHMQSMIV",
+      "hatvp:Q36A8TLV",
+      "hatvp:YVNFMQQ3",
+      "hatvp:0V2PF5NV",
+      "hatvp:0VES60NH",
+      "hatvp:GVT2YQBH",
+      "hatvp:O3W8D27V",
+      "hatvp:UHQ18Z2V",
+      "hatvp:QV7T2G5H",
+      "hatvp:ZV92BZIH",
+      "hatvp:BHOWS473",
+      "hatvp:SVFGPSI3",
+      "hatvp:0VEST8UH",
+      "hatvp:OHZABKO3",
+      "hatvp:JA3YZR6H",
+      "hatvp:W3UWGFQV"
+     ]
+    }
+   ],
+   "lobby_pour": [],
+   "lobby_contre": [
+    {
+     "name": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2LXKSH",
+      "5HABWNYV",
+      "EHLFUZ9H",
+      "LV1D15E3",
+      "O3WX0CTH",
+      "QEVJ1A7H"
+     ],
+     "years": [
+      2019,
+      2020,
+      2021,
+      2023,
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "0V2P11QV",
+      "2VRN1ZTH",
+      "O38S0423",
+      "W3U97L5V",
+      "YVNTG9MV"
+     ],
+     "years": [
+      2020,
+      2022,
+      2023,
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "EDENRED",
+     "hatvp_id": "493322978",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "2VRQPFOH",
+      "DHMQSMIV",
+      "Q36A8TLV",
+      "YVNFMQQ3"
+     ],
+     "years": [
+      2020,
+      2021,
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0V2PF5NV",
+      "0VES60NH",
+      "GVT2YQBH"
+     ],
+     "years": [
+      2022,
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "GLADY",
+     "hatvp_id": "799025234",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "O3W8D27V",
+      "UHQ18Z2V"
+     ],
+     "years": [
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "PLUXEE FRANCE",
+     "hatvp_id": "340393065",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "QV7T2G5H",
+      "ZV92BZIH"
+     ],
+     "years": [
+      2023,
+      2024
+     ]
+    },
+    {
+     "name": "SWILE",
+     "hatvp_id": "824012173",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "BHOWS473",
+      "SVFGPSI3"
+     ],
+     "years": [
+      2024,
+      2025
+     ]
+    },
+    {
+     "name": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "0VEST8UH"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "GEN-G",
+     "hatvp_id": "750513376",
+     "category": "Société commerciale",
+     "consultancy": false,
+     "fiches": [
+      "OHZABKO3"
+     ],
+     "years": [
+      2022
+     ]
+    },
+    {
+     "name": "RIVINGTON",
+     "hatvp_id": "533445318",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "JA3YZR6H"
+     ],
+     "years": [
+      2019
+     ]
+    },
+    {
+     "name": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "W3UWGFQV"
+     ],
+     "years": [
+      2023
+     ]
+    }
+   ],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "side": "contre",
+     "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif",
+     "fiche": "2VRN1ZTH",
+     "year": 2025,
+     "on_behalf_of": [
+      "EDENRED FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FLINT FRANCE SAS",
+     "hatvp_id": "918136367",
+     "side": "contre",
+     "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier dans le cadre de la réforme du titre",
+     "fiche": "0VEST8UH",
+     "year": 2025,
+     "on_behalf_of": [
+      "PLUXEE FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier.",
+     "fiche": "0V2LXKSH",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "contre",
+     "quote": "Acter le plus rapidement possible une date officielle d'arrêt du titre-restaurant papier.",
+     "fiche": "SVFGPSI3",
+     "year": 2025,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "side": "contre",
+     "quote": "Demander l'accélération de la dématérialisation des titres restaurants",
+     "fiche": "0VES60NH",
+     "year": 2024,
+     "on_behalf_of": [
+      "EDENRED FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED",
+     "hatvp_id": "493322978",
+     "side": "contre",
+     "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+     "fiche": "Q36A8TLV",
+     "year": 2024,
+     "on_behalf_of": [
+      "EDENRED (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "side": "contre",
+     "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif",
+     "fiche": "O38S0423",
+     "year": 2024,
+     "on_behalf_of": [
+      "EDENRED FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GLADY",
+     "hatvp_id": "799025234",
+     "side": "contre",
+     "quote": "Soutenir la fin du titre-restaurant papier",
+     "fiche": "UHQ18Z2V",
+     "year": 2024,
+     "on_behalf_of": [
+      "GLADY (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Généraliser la dématérialisation des titres restaurants.",
+     "fiche": "5HABWNYV",
+     "year": 2024,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "PLUXEE FRANCE",
+     "hatvp_id": "340393065",
+     "side": "contre",
+     "quote": "Soutenir la fin du titre-restaurant papier",
+     "fiche": "QV7T2G5H",
+     "year": 2024,
+     "on_behalf_of": [
+      "PLUXEE FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SWILE",
+     "hatvp_id": "824012173",
+     "side": "contre",
+     "quote": "Généraliser la dématérialisation des titres-restaurant",
+     "fiche": "BHOWS473",
+     "year": 2024,
+     "on_behalf_of": [
+      "SWILE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "side": "contre",
+     "quote": "Demander l'accélération de la dématérialisation des titres restaurants",
+     "fiche": "0V2PF5NV",
+     "year": 2023,
+     "on_behalf_of": [
+      "EDENRED FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED",
+     "hatvp_id": "493322978",
+     "side": "contre",
+     "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+     "fiche": "YVNFMQQ3",
+     "year": 2023,
+     "on_behalf_of": [
+      "EDENRED (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "side": "contre",
+     "quote": "Contribuer aux réflexions des pouvoirs publics sur un projet de réforme du titre-restaurant afin d'acter la dématérialisation complète du dispositif.",
+     "fiche": "0V2P11QV",
+     "year": 2023,
+     "on_behalf_of": [
+      "EDENRED FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GLADY",
+     "hatvp_id": "799025234",
+     "side": "contre",
+     "quote": "Soutenir la fin du titre-restaurant papier",
+     "fiche": "O3W8D27V",
+     "year": 2023,
+     "on_behalf_of": [
+      "GLADY (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Demander la mise en oeuvre de la dématérialisation généralisée des titres restaurants.",
+     "fiche": "LV1D15E3",
+     "year": 2023,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "PLUXEE FRANCE",
+     "hatvp_id": "340393065",
+     "side": "contre",
+     "quote": "Soutenir la fin du titre-restaurant papier",
+     "fiche": "ZV92BZIH",
+     "year": 2023,
+     "on_behalf_of": [
+      "PLUXEE FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "UNION METIERS & INDUSTRIES HOTELLERIE",
+     "hatvp_id": "784357857",
+     "side": "contre",
+     "quote": "ACCOMPAGNER LE TITRE RESTAURANT 100 % DEMATERIALISE, NOTAMMENT L'INSTRUCTION ET LA DELIVRANCE DES AGREMENTS AUX PROFESSIONNELS DE LA RESTAURATION",
+     "fiche": "W3UWGFQV",
+     "year": 2023,
+     "on_behalf_of": [
+      "UNION METIERS & INDUSTRIES HOTELLERIE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "COMMSTRAT",
+     "hatvp_id": "H457716271",
+     "side": "contre",
+     "quote": "Acter la dématérialisation complète des titres restaurants pour accélérer la transition écologique du dispositif",
+     "fiche": "GVT2YQBH",
+     "year": 2022,
+     "on_behalf_of": [
+      "EDENRED FRANCE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "side": "contre",
+     "quote": "Acter la dématérialisation complète des titres-restaurants pour accélérer la transition écologique du dispositif",
+     "fiche": "YVNTG9MV",
+     "year": 2022,
+     "on_behalf_of": [
+      "EDENRED FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "GEN-G",
+     "hatvp_id": "750513376",
+     "side": "contre",
+     "quote": "Obtenir une modernisation et une refonte de la loi encadrant les titres restaurants pour faire passer ce marché à l'ère du digital.",
+     "fiche": "OHZABKO3",
+     "year": 2022,
+     "on_behalf_of": [
+      "OPEN"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED",
+     "hatvp_id": "493322978",
+     "side": "contre",
+     "quote": "Encourager la digitalisation des titres restaurants et la définition de modalités réglementaires pour accélérer la transition vers du 100% digital",
+     "fiche": "DHMQSMIV",
+     "year": 2021,
+     "on_behalf_of": [
+      "EDENRED (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Promouvoir la dématérialisation des titres restaurants",
+     "fiche": "O3WX0CTH",
+     "year": 2021,
+     "on_behalf_of": [
+      "SWILE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED",
+     "hatvp_id": "493322978",
+     "side": "contre",
+     "quote": "encourager la digitalisation des titres restaurants",
+     "fiche": "2VRQPFOH",
+     "year": 2020,
+     "on_behalf_of": [
+      "EDENRED (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "EDENRED FRANCE",
+     "hatvp_id": "393365135",
+     "side": "contre",
+     "quote": "Titre-restaurant : basculer intégralement à la dématérialisation",
+     "fiche": "W3U97L5V",
+     "year": 2020,
+     "on_behalf_of": [
+      "EDENRED FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Inscrire dans la loi le principe de dématérialisation à 100 % des titres restaurants.",
+     "fiche": "EHLFUZ9H",
+     "year": 2020,
+     "on_behalf_of": [
+      "LUNCHR"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "INSCRIRE DANS LA LOI le principe de DEMATERIALISATION à 100 % DES TITRES RESTAURANTS",
+     "fiche": "QEVJ1A7H",
+     "year": 2019,
+     "on_behalf_of": [
+      "LUNCHR"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "RIVINGTON",
+     "hatvp_id": "533445318",
+     "side": "contre",
+     "quote": "Transformer intégralement le titre-restaurant en version dématérialisé",
+     "fiche": "JA3YZR6H",
+     "year": 2019,
+     "on_behalf_of": [
+      "EDENRED FRANCE"
+     ],
+     "derived_from": null
+    }
+   ]
+  }
+ },
+ "refs": {
+  "senat:current/1": {
+   "source": "Sénat",
+   "label": "Amendement n° 1 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_1.html"
+  },
+  "senat:current/13": {
+   "source": "Sénat",
+   "label": "Amendement n° 13 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_13.html"
+  },
+  "senat:current/15": {
+   "source": "Sénat",
+   "label": "Amendement n° 15 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_15.html"
+  },
+  "senat:current/16": {
+   "source": "Sénat",
+   "label": "Amendement n° 16 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_16.html"
+  },
+  "senat:current/18": {
+   "source": "Sénat",
+   "label": "Amendement n° 18 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_18.html"
+  },
+  "senat:current/19": {
+   "source": "Sénat",
+   "label": "Amendement n° 19 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_19.html"
+  },
+  "senat:current/20": {
+   "source": "Sénat",
+   "label": "Amendement n° 20 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_20.html"
+  },
+  "senat:current/21 rect.": {
+   "source": "Sénat",
+   "label": "Amendement n° 21 rect. (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_21.html"
+  },
+  "senat:current/24": {
+   "source": "Sénat",
+   "label": "Amendement n° 24 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_24.html"
+  },
+  "senat:current/26": {
+   "source": "Sénat",
+   "label": "Amendement n° 26 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_26.html"
+  },
+  "senat:current/27": {
+   "source": "Sénat",
+   "label": "Amendement n° 27 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_27.html"
+  },
+  "senat:current/32": {
+   "source": "Sénat",
+   "label": "Amendement n° 32 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_32.html"
+  },
+  "senat:current/33": {
+   "source": "Sénat",
+   "label": "Amendement n° 33 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_33.html"
+  },
+  "senat:current/34": {
+   "source": "Sénat",
+   "label": "Amendement n° 34 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_34.html"
+  },
+  "senat:current/35": {
+   "source": "Sénat",
+   "label": "Amendement n° 35 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_35.html"
+  },
+  "senat:current/36": {
+   "source": "Sénat",
+   "label": "Amendement n° 36 (2026-2027, texte n° 142)",
+   "url": "https://www.senat.fr/amendements/2026-2027/142/Amdt_36.html"
+  },
+  "legifrance:LEGIARTI000020886898": {
+   "source": "Légifrance",
+   "label": "article L. 3262-3 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020886898"
+  },
+  "legifrance:LEGIARTI000051018968": {
+   "source": "Légifrance",
+   "label": "Loi n°2022-1158 du 16 août 2022 - art. 6",
+   "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000051018968"
+  },
+  "legifrance:LEGIARTI000051752361": {
+   "source": "Légifrance",
+   "label": "article L. 561-23 du code monétaire et financier",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051752361"
+  },
+  "legifrance:LEGIARTI000006900896": {
+   "source": "Légifrance",
+   "label": "article L. 1225-16 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900896"
+  },
+  "legifrance:LEGIARTI000026799916": {
+   "source": "Légifrance",
+   "label": "article L. 1225-28 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799916"
+  },
+  "legifrance:LEGIARTI000026799935": {
+   "source": "Légifrance",
+   "label": "article L. 1225-35 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000026799935"
+  },
+  "legifrance:LEGIARTI000006900918": {
+   "source": "Légifrance",
+   "label": "article L. 1225-36 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006900918"
+  },
+  "legifrance:LEGIARTI000053271696": {
+   "source": "Légifrance",
+   "label": "article L. 1225-46-2 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271696"
+  },
+  "legifrance:LEGIARTI000053271706": {
+   "source": "Légifrance",
+   "label": "article L. 1225-46-7 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000053271706"
+  },
+  "legifrance:LEGIARTI000029234215": {
+   "source": "Légifrance",
+   "label": "article L. 124-13 du code de l'éducation",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000029234215"
+  },
+  "legifrance:LEGIARTI000006902943": {
+   "source": "Légifrance",
+   "label": "article L. 3262-1 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902943"
+  },
+  "legifrance:LEGIARTI000030700497": {
+   "source": "Légifrance",
+   "label": "article 81 du code général des impôts",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000030700497"
+  },
+  "legifrance:LEGIARTI000044981558": {
+   "source": "Légifrance",
+   "label": "article 242 bis du code général des impôts",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044981558"
+  },
+  "legifrance:LEGIARTI000006813521": {
+   "source": "Légifrance",
+   "label": "article L. 411-13 du code du tourisme",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006813521"
+  },
+  "legifrance:LEGIARTI000006902947": {
+   "source": "Légifrance",
+   "label": "article L. 3262-5 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902947"
+  },
+  "legifrance:JORFTEXT000020879475": {
+   "source": "Légifrance",
+   "label": "LOI n° 2009-879 du 21 juillet 2009 portant réforme de l'hôpital et relative aux patients, à la santé et aux territoires",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000020879475",
+   "date": "2009-07-21"
+  },
+  "legifrance:JORFTEXT000046186723": {
+   "source": "Légifrance",
+   "label": "LOI n° 2022-1158 du 16 août 2022 portant mesures d'urgence pour la protection du pouvoir d'achat (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000046186723",
+   "date": "2022-08-16"
+  },
+  "legifrance:JORFTEXT000048668803": {
+   "source": "Légifrance",
+   "label": "LOI n° 2023-1252 du 26 décembre 2023 visant à prolonger en 2024 l'utilisation des titres restaurant pour des achats de produits alimentaires non directement consommables (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000048668803",
+   "date": "2023-12-26"
+  },
+  "legifrance:JORFTEXT000051018078": {
+   "source": "Légifrance",
+   "label": "LOI n° 2025-56 du 21 janvier 2025 visant à prolonger la dérogation d'usage des titres restaurant pour tout produit alimentaire (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051018078",
+   "date": "2025-01-21"
+  },
+  "legifrance:JORFTEXT000051734851": {
+   "source": "Légifrance",
+   "label": "LOI n° 2025-532 du 13 juin 2025 visant à sortir la France du piège du narcotrafic (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000051734851",
+   "date": "2025-06-13"
+  },
+  "legifrance:JORFTEXT000026785322": {
+   "source": "Légifrance",
+   "label": "LOI n° 2012-1404 du 17 décembre 2012 de financement de la sécurité sociale pour 2013",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000026785322",
+   "date": "2012-12-17"
+  },
+  "legifrance:JORFTEXT000053226384": {
+   "source": "Légifrance",
+   "label": "LOI n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053226384",
+   "date": "2025-12-30"
+  },
+  "legifrance:JORFTEXT000029223331": {
+   "source": "Légifrance",
+   "label": "LOI n° 2014-788 du 10 juillet 2014 tendant au développement, à l'encadrement des stages et à l'amélioration du statut des stagiaires (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029223331",
+   "date": "2014-07-10"
+  },
+  "legifrance:JORFTEXT000035607348": {
+   "source": "Légifrance",
+   "label": "Ordonnance n° 2017-1386 du 22 septembre 2017 relative à la nouvelle organisation du dialogue social et économique dans l'entreprise et favorisant l'exercice et la valorisation des responsabilités syndicales",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000035607348",
+   "date": "2017-09-22"
+  },
+  "legifrance:JORFTEXT000030673448": {
+   "source": "Légifrance",
+   "label": "Décret n° 2015-608 du 3 juin 2015 portant incorporation au code général des impôts de divers textes modifiant et complétant certaines dispositions de ce code",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000030673448",
+   "date": "2015-06-03"
+  },
+  "legifrance:JORFTEXT000044637640": {
+   "source": "Légifrance",
+   "label": "LOI n° 2021-1900 du 30 décembre 2021 de finances pour 2022 (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044637640",
+   "date": "2021-12-30"
+  },
+  "senat:2026-2027/32/COM-1": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-1 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-1.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-2": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-2 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-2.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-10": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-10 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-10.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-11": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-11 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-11.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-12": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-12 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-12.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-13": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-13 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-13.html",
+   "date": "2026-11-02"
+  },
+  "senat:2026-2027/32/COM-16": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-16 (commission, texte n° 32, 2026-2027)",
+   "url": "https://www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-16.html",
+   "date": "2026-11-02"
+  },
+  "senat:2024-2025/160/COM-1": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-1 (commission, texte n° 160, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-1.html",
+   "date": "2024-12-02"
+  },
+  "senat:2024-2025/160/COM-2": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-2 (commission, texte n° 160, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-2.html",
+   "date": "2024-11-27"
+  },
+  "senat:2024-2025/183/1 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 1 rect. (seance, texte n° 183, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_1.html",
+   "date": "2025-01-13"
+  },
+  "senat:2024-2025/183/2 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 2 rect. (seance, texte n° 183, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_2.html",
+   "date": "2025-01-14"
+  },
+  "senat:2024-2025/183/3 rect. quater": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 3 rect. quater (seance, texte n° 183, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_3.html",
+   "date": "2025-01-14"
+  },
+  "senat:2024-2025/183/4": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 4 (seance, texte n° 183, 2024-2025)",
+   "url": "https://www.senat.fr/amendements/2024-2025/183/Amdt_4.html",
+   "date": "2025-01-10"
+  },
+  "senat:2023-2024/143/COM-1 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° COM-1 rect. (commission, texte n° 143, 2023-2024)",
+   "url": "https://www.senat.fr/amendements/commissions/2023-2024/143/Amdt_COM-1.html",
+   "date": "2023-12-04"
+  },
+  "senat:2023-2024/173/2 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 2 rect. (seance, texte n° 173, 2023-2024)",
+   "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_2.html",
+   "date": "2023-12-17"
+  },
+  "senat:2023-2024/173/3 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 3 rect. (seance, texte n° 173, 2023-2024)",
+   "url": "https://www.senat.fr/amendements/2023-2024/173/Amdt_3.html",
+   "date": "2023-12-18"
+  },
+  "senat:2008-2009/381/646 rect.": {
+   "source": "Sénat (Ameli)",
+   "label": "Amendement n° 646 rect. (seance, texte n° 381, 2008-2009)",
+   "url": "https://www.senat.fr/amendements/2008-2009/381/Amdt_646.html",
+   "date": "2009-05-12"
+  },
+  "hatvp:2VRW615H": {
+   "source": "HATVP",
+   "label": "CONFEDER NAT CHARCUTERI FRANCE — fiche d'activité 2VRW615H (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=775691850"
+  },
+  "hatvp:QV7OWEXV": {
+   "source": "HATVP",
+   "label": "CONFEDER NAT CHARCUTERI FRANCE — fiche d'activité QV7OWEXV (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=775691850"
+  },
+  "hatvp:O3WIWQIH": {
+   "source": "HATVP",
+   "label": "CARREFOUR — fiche d'activité O3WIWQIH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=652014051"
+  },
+  "hatvp:BHOW7JI3": {
+   "source": "HATVP",
+   "label": "CARREFOUR — fiche d'activité BHOW7JI3 (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=652014051"
+  },
+  "hatvp:LV1D2PQ3": {
+   "source": "HATVP",
+   "label": "FAMILLES RURALES FEDERATION NATIONALE — fiche d'activité LV1D2PQ3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784672792"
+  },
+  "hatvp:0V2L6UBH": {
+   "source": "HATVP",
+   "label": "FLINT FRANCE SAS — fiche d'activité 0V2L6UBH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=918136367"
+  },
+  "hatvp:0VEST8UH": {
+   "source": "HATVP",
+   "label": "FLINT FRANCE SAS — fiche d'activité 0VEST8UH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=918136367"
+  },
+  "hatvp:DVS2UMLV": {
+   "source": "HATVP",
+   "label": "ECOLOGIC COMING OUT — fiche d'activité DVS2UMLV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=894289990"
+  },
+  "hatvp:JA3YZR6H": {
+   "source": "HATVP",
+   "label": "RIVINGTON — fiche d'activité JA3YZR6H (2019)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=533445318"
+  },
+  "hatvp:DHMQ4XBV": {
+   "source": "HATVP",
+   "label": "UNION DES ENTREPRISES DE PROXIMITE — fiche d'activité DHMQ4XBV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=349681098"
+  },
+  "hatvp:0V5X579H": {
+   "source": "HATVP",
+   "label": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE — fiche d'activité 0V5X579H (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=801316951"
+  },
+  "hatvp:PVXI2I2V": {
+   "source": "HATVP",
+   "label": "FEDERATION DE L'EPICERIE ET DU COMMERCE DE PROXIMITE — fiche d'activité PVXI2I2V (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=801316951"
+  },
+  "hatvp:DVS14Y6H": {
+   "source": "HATVP",
+   "label": "WORKLIFE — fiche d'activité DVS14Y6H (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=533592051"
+  },
+  "hatvp:O386NIEH": {
+   "source": "HATVP",
+   "label": "CONFEDERATION GENERALE ALIMENTAT.DETAIL — fiche d'activité O386NIEH (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717225"
+  },
+  "hatvp:0V5DEB7V": {
+   "source": "HATVP",
+   "label": "CONFEDERATION GENERALE ALIMENTAT.DETAIL — fiche d'activité 0V5DEB7V (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717225"
+  },
+  "hatvp:A3YPGDY3": {
+   "source": "HATVP",
+   "label": "CONFEDERATION GENERALE ALIMENTAT.DETAIL — fiche d'activité A3YPGDY3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717225"
+  },
+  "hatvp:X3CF9YI3": {
+   "source": "HATVP",
+   "label": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES — fiche d'activité X3CF9YI3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=422477356"
+  },
+  "hatvp:OHZABTM3": {
+   "source": "HATVP",
+   "label": "SYNDICAT NATIONAL DE LA RESTAURATION THEMATIQUE DES CHAINES — fiche d'activité OHZABTM3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=422477356"
+  },
+  "hatvp:PVX9AO1H": {
+   "source": "HATVP",
+   "label": "BOURY TALLON & ASSOCIES — fiche d'activité PVX9AO1H (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=502999626"
+  },
+  "hatvp:UHQ18Z2V": {
+   "source": "HATVP",
+   "label": "GLADY — fiche d'activité UHQ18Z2V (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=799025234"
+  },
+  "hatvp:O3W8D27V": {
+   "source": "HATVP",
+   "label": "GLADY — fiche d'activité O3W8D27V (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=799025234"
+  },
+  "hatvp:Q36K42Z3": {
+   "source": "HATVP",
+   "label": "CONSEIL DES TERRITOIRES-CAFES, HOTELS, RESTAURANTS, DISCOTHEQUES, TRAITEURS (CT-CHRDT) — fiche d'activité Q36K42Z3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=W442015468"
+  },
+  "hatvp:Y3G7DR2V": {
+   "source": "HATVP",
+   "label": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE — fiche d'activité Y3G7DR2V (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=422477224"
+  },
+  "hatvp:DVS2W6ZV": {
+   "source": "HATVP",
+   "label": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE — fiche d'activité DVS2W6ZV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=422477224"
+  },
+  "hatvp:LV1DPFR3": {
+   "source": "HATVP",
+   "label": "SYND NAT ALIMENTAT.RESTAURATION RAPIDE — fiche d'activité LV1DPFR3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=422477224"
+  },
+  "hatvp:PVX9WOKH": {
+   "source": "HATVP",
+   "label": "LUCCA — fiche d'activité PVX9WOKH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=441637691"
+  },
+  "hatvp:5HASE8EH": {
+   "source": "HATVP",
+   "label": "UNION METIERS & INDUSTRIES HOTELLERIE — fiche d'activité 5HASE8EH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357857"
+  },
+  "hatvp:EVJFRPFH": {
+   "source": "HATVP",
+   "label": "UNION METIERS & INDUSTRIES HOTELLERIE — fiche d'activité EVJFRPFH (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357857"
+  },
+  "hatvp:W3UWGFQV": {
+   "source": "HATVP",
+   "label": "UNION METIERS & INDUSTRIES HOTELLERIE — fiche d'activité W3UWGFQV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784357857"
+  },
+  "hatvp:Y3GQ0M4H": {
+   "source": "HATVP",
+   "label": "CONFEDERATION DES GROSSISTES DE FRANCE — fiche d'activité Y3GQ0M4H (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784669152"
+  },
+  "hatvp:9V0PIPSH": {
+   "source": "HATVP",
+   "label": "GROUPEMENT DES HOTELLERIES ET RESTAURATIONS DE FRANCE — fiche d'activité 9V0PIPSH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=923291454"
+  },
+  "hatvp:W3UNS4JV": {
+   "source": "HATVP",
+   "label": "SWILE — fiche d'activité W3UNS4JV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=824012173"
+  },
+  "hatvp:SVFGPSI3": {
+   "source": "HATVP",
+   "label": "SWILE — fiche d'activité SVFGPSI3 (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=824012173"
+  },
+  "hatvp:BHOWS473": {
+   "source": "HATVP",
+   "label": "SWILE — fiche d'activité BHOWS473 (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=824012173"
+  },
+  "hatvp:2VRNAL2H": {
+   "source": "HATVP",
+   "label": "SWILE — fiche d'activité 2VRNAL2H (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=824012173"
+  },
+  "hatvp:ZV9R0E13": {
+   "source": "HATVP",
+   "label": "CARREFOUR MANAGEMENT — fiche d'activité ZV9R0E13 (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=403245061"
+  },
+  "hatvp:OHZUXTKV": {
+   "source": "HATVP",
+   "label": "CARREFOUR MANAGEMENT — fiche d'activité OHZUXTKV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=403245061"
+  },
+  "hatvp:SVFGO5U3": {
+   "source": "HATVP",
+   "label": "UNION DES METIERS & DES INDUSTRIES DE L'HOTELLERIE DE COTE-D'OR — fiche d'activité SVFGO5U3 (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=778212779"
+  },
+  "hatvp:UVPEED23": {
+   "source": "HATVP",
+   "label": "UP — fiche d'activité UVPEED23 (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=642044366"
+  },
+  "hatvp:Y3GQN05H": {
+   "source": "HATVP",
+   "label": "UP — fiche d'activité Y3GQN05H (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=642044366"
+  },
+  "hatvp:9V0KZ1KV": {
+   "source": "HATVP",
+   "label": "SYNDIC NATION VENTE ET SERVICES AUTOMAT — fiche d'activité 9V0KZ1KV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717498"
+  },
+  "hatvp:SVFGQKM3": {
+   "source": "HATVP",
+   "label": "SYNDIC NATION VENTE ET SERVICES AUTOMAT — fiche d'activité SVFGQKM3 (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717498"
+  },
+  "hatvp:YVNFAOJ3": {
+   "source": "HATVP",
+   "label": "SYNDIC NATION VENTE ET SERVICES AUTOMAT — fiche d'activité YVNFAOJ3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717498"
+  },
+  "hatvp:QV7T2G5H": {
+   "source": "HATVP",
+   "label": "PLUXEE FRANCE — fiche d'activité QV7T2G5H (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=340393065"
+  },
+  "hatvp:ZV92BZIH": {
+   "source": "HATVP",
+   "label": "PLUXEE FRANCE — fiche d'activité ZV92BZIH (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=340393065"
+  },
+  "hatvp:POHZDAG3": {
+   "source": "HATVP",
+   "label": "PLUXEE FRANCE — fiche d'activité POHZDAG3 (2019)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=340393065"
+  },
+  "hatvp:2VRN1ZTH": {
+   "source": "HATVP",
+   "label": "EDENRED FRANCE — fiche d'activité 2VRN1ZTH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=393365135"
+  },
+  "hatvp:O38S0423": {
+   "source": "HATVP",
+   "label": "EDENRED FRANCE — fiche d'activité O38S0423 (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=393365135"
+  },
+  "hatvp:0V2P11QV": {
+   "source": "HATVP",
+   "label": "EDENRED FRANCE — fiche d'activité 0V2P11QV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=393365135"
+  },
+  "hatvp:YVNTG9MV": {
+   "source": "HATVP",
+   "label": "EDENRED FRANCE — fiche d'activité YVNTG9MV (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=393365135"
+  },
+  "hatvp:W3U97L5V": {
+   "source": "HATVP",
+   "label": "EDENRED FRANCE — fiche d'activité W3U97L5V (2020)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=393365135"
+  },
+  "hatvp:O3862LAH": {
+   "source": "HATVP",
+   "label": "SAVEURS COMMERCE — fiche d'activité O3862LAH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=308961978"
+  },
+  "hatvp:UHQ1SWMV": {
+   "source": "HATVP",
+   "label": "SAVEURS COMMERCE — fiche d'activité UHQ1SWMV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=308961978"
+  },
+  "hatvp:Q36KU1P3": {
+   "source": "HATVP",
+   "label": "SAVEURS COMMERCE — fiche d'activité Q36KU1P3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=308961978"
+  },
+  "hatvp:Q36SZW8V": {
+   "source": "HATVP",
+   "label": "SAVEURS COMMERCE — fiche d'activité Q36SZW8V (2020)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=308961978"
+  },
+  "hatvp:OHZABKO3": {
+   "source": "HATVP",
+   "label": "GEN-G — fiche d'activité OHZABKO3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=750513376"
+  },
+  "hatvp:Q36A8TLV": {
+   "source": "HATVP",
+   "label": "EDENRED — fiche d'activité Q36A8TLV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=493322978"
+  },
+  "hatvp:YVNFMQQ3": {
+   "source": "HATVP",
+   "label": "EDENRED — fiche d'activité YVNFMQQ3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=493322978"
+  },
+  "hatvp:UVPUPC5H": {
+   "source": "HATVP",
+   "label": "EDENRED — fiche d'activité UVPUPC5H (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=493322978"
+  },
+  "hatvp:DHMQSMIV": {
+   "source": "HATVP",
+   "label": "EDENRED — fiche d'activité DHMQSMIV (2021)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=493322978"
+  },
+  "hatvp:2VRQPFOH": {
+   "source": "HATVP",
+   "label": "EDENRED — fiche d'activité 2VRQPFOH (2020)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=493322978"
+  },
+  "hatvp:EVJF69KH": {
+   "source": "HATVP",
+   "label": "GROUPEMENT NATIONAL DES INDEPENDANTS — fiche d'activité EVJF69KH (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=822829727"
+  },
+  "hatvp:A3YPU0G3": {
+   "source": "HATVP",
+   "label": "GROUPEMENT NATIONAL DES INDEPENDANTS — fiche d'activité A3YPU0G3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=822829727"
+  },
+  "hatvp:DVSJ2CFV": {
+   "source": "HATVP",
+   "label": "GROUPEMENT NATIONAL DES INDEPENDANTS — fiche d'activité DVSJ2CFV (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=822829727"
+  },
+  "hatvp:0V2LXKSH": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité 0V2LXKSH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:Y3K4MPFH": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité Y3K4MPFH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:6VBQUMUV": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité 6VBQUMUV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:5HABWNYV": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité 5HABWNYV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:JVDFK60H": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité JVDFK60H (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:0VESNIWH": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité 0VESNIWH (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:LV1D15E3": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité LV1D15E3 (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:O3WX0CTH": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité O3WX0CTH (2021)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:EHLFUZ9H": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité EHLFUZ9H (2020)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:QEVJ1A7H": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité QEVJ1A7H (2019)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:0V2LCCZH": {
+   "source": "HATVP",
+   "label": "LES MOUSQUETAIRES — fiche d'activité 0V2LCCZH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=789169323"
+  },
+  "hatvp:DVS2AZDV": {
+   "source": "HATVP",
+   "label": "LES MOUSQUETAIRES — fiche d'activité DVS2AZDV (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=789169323"
+  },
+  "hatvp:0VES60NH": {
+   "source": "HATVP",
+   "label": "COMMSTRAT — fiche d'activité 0VES60NH (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=H457716271"
+  },
+  "hatvp:UVPUL1XH": {
+   "source": "HATVP",
+   "label": "COMMSTRAT — fiche d'activité UVPUL1XH (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=H457716271"
+  },
+  "hatvp:0V2PF5NV": {
+   "source": "HATVP",
+   "label": "COMMSTRAT — fiche d'activité 0V2PF5NV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=H457716271"
+  },
+  "hatvp:GVT2YQBH": {
+   "source": "HATVP",
+   "label": "COMMSTRAT — fiche d'activité GVT2YQBH (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=H457716271"
+  },
+  "hatvp:UVPEBWD3": {
+   "source": "HATVP",
+   "label": "TADDEO — fiche d'activité UVPEBWD3 (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309"
+  },
+  "hatvp:O3WIZ60H": {
+   "source": "HATVP",
+   "label": "FEDERATION ENTREP COMMERCE DISTRIBUTION — fiche d'activité O3WIZ60H (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876"
+  },
+  "hatvp:W3UNA42V": {
+   "source": "HATVP",
+   "label": "FEDERATION ENTREP COMMERCE DISTRIBUTION — fiche d'activité W3UNA42V (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876"
+  },
+  "hatvp:Y3G7BC8V": {
+   "source": "HATVP",
+   "label": "FEDERATION ENTREP COMMERCE DISTRIBUTION — fiche d'activité Y3G7BC8V (2024)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876"
+  },
+  "hatvp:6VBOEZJ3": {
+   "source": "HATVP",
+   "label": "FEDERATION ENTREP COMMERCE DISTRIBUTION — fiche d'activité 6VBOEZJ3 (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784855876"
+  }
+ }
+}
