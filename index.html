@@ -431,8 +431,9 @@ function fromApi(r) {
   const setBusy = on => { wrapEl.classList.toggle("busy", on); };
   const status = html => { sEl.innerHTML = html || ""; };
 
+  let pendingEnter = false;
   qEl.addEventListener("input", () => {
-    activePreset = null; renderPresets();
+    activePreset = null; renderPresets(); pendingEnter = false;
     clearTimeout(timer);
     const q = cleanQuery(qEl.value);
     if (q.length < 2) { if (ctrl) ctrl.abort(); setBusy(false); rEl.hidden = true; current = []; status(""); return; }
@@ -440,7 +441,9 @@ function fromApi(r) {
     timer = setTimeout(() => search(q), 150);
   });
   qEl.addEventListener("keydown", e => {
-    if (e.key === "Escape") { rEl.hidden = true; return; }
+    if (e.key === "Escape") { rEl.hidden = true; pendingEnter = false; return; }
+    // Enter typed before the suggestions arrived: pick the first one as soon as they do
+    if (e.key === "Enter" && (!current.length || lastQ !== cleanQuery(qEl.value))) { e.preventDefault(); pendingEnter = true; return; }
     if (!current.length) return;
     if (e.key === "ArrowDown" || e.key === "ArrowUp") {
       e.preventDefault(); rEl.hidden = false;
@@ -450,6 +453,13 @@ function fromApi(r) {
   });
   document.addEventListener("click", e => { if (!e.target.closest(".search")) rEl.hidden = true; });
   qEl.addEventListener("focus", () => { if (current.length && cleanQuery(qEl.value).length >= 2) rEl.hidden = false; });
+  // A picked company name (or preset SIREN) is selected on focus/click, so typing replaces it instead of appending.
+  // Until the user types, any focus or click on the box selects the whole picked name.
+  const isPicked = () => company && (qEl.value === shortName(company.name) || qEl.value === company.siren);
+  const selectPicked = () => { if (isPicked()) requestAnimationFrame(() => { if (isPicked()) qEl.select(); }); };
+  qEl.addEventListener("focus", selectPicked);
+  qEl.addEventListener("click", selectPicked);
+  qEl.addEventListener("mouseup", e => { if (isPicked()) e.preventDefault(); });
 
   async function apiSearch(q, signal) {
     const url = `${API}?q=${encodeURIComponent(q)}&per_page=8&etat_administratif=A&minimal=true&include=siege,finances`;
@@ -493,6 +503,7 @@ function fromApi(r) {
       rEl.innerHTML = `<div class="res-msg">Aucune entreprise trouvée pour « ${esc(q)} ».</div>`;
       status(""); return;
     }
+    if (pendingEnter && q === cleanQuery(qEl.value)) { pendingEnter = false; pick(current[0]); return; }
     paintResults();
     const tot = res.total || current.length;
     status(tot > current.length
