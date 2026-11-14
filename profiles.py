@@ -40,6 +40,40 @@ def company(siren):
             "city": (res.get("siege") or {}).get("libelle_commune")}
 
 
+def load_history():
+    """Per theme: past Sénat amendments by group (Ameli), findings, and who lobbied
+    for / against (HATVP). Files are optional; missing ones are skipped."""
+    out = {}
+
+    def theme_entry(t):
+        return out.setdefault(t, {"senate_by_group": {}, "findings": [], "lobby_pour": [], "lobby_contre": [],
+                                  "lobby_quotes": []})
+
+    ameli_path = Path("data/history/ameli.json")
+    if ameli_path.exists():
+        a = json.loads(ameli_path.read_text())
+        theme_of = {(x["session"], x["number"]): x["theme"] for x in a["amendments"]}
+        for t, groups in a["by_theme"].items():
+            theme_entry(t)["senate_by_group"] = groups
+        for f in a.get("findings_detail", []):
+            themes = {theme_of.get((x["session"], x["number"])) for x in f["amendments"]} - {None}
+            for t in themes:
+                theme_entry(t)["findings"].append({"text": f["text"], "source": "Sénat (Ameli)"})
+
+    hatvp_path = Path("data/history/hatvp.json")
+    if hatvp_path.exists():
+        h = json.loads(hatvp_path.read_text())
+        for o in h["organisations"]:
+            for s in o.get("sides", []):
+                e = theme_entry(s["theme"])
+                key = "lobby_pour" if s["side"] == "pour" else "lobby_contre"
+                if o["name"] not in e[key]:
+                    e[key].append(o["name"])
+                    e["lobby_quotes"].append({"org": o["name"], "side": s["side"], "year": s.get("year"),
+                                              "quote": s["quote"], "fiche": s.get("fiche")})
+    return out
+
+
 def concerns(profile, sectors):
     for s in sectors:
         if s["naf"] and s["naf"] == profile["naf"]:
@@ -64,6 +98,8 @@ def main(n):
     if "Supprimer le double plafond journalier" in chiffrage:  # same file covers both sides
         chiffrage.setdefault("Rendre effectif le double plafond journalier",
                              chiffrage["Supprimer le double plafond journalier"])
+
+    history = load_history()
 
     profiles_path = Path("data/profiles.json")
     if profiles_path.exists():
@@ -113,6 +149,20 @@ def main(n):
                             "method": mine.get("method")},
                     "parameters": ch["parameters"], "not_computable": ch.get("not_computable"),
                 }
+        for card in cards.values():
+            h = history.get(card["theme"])
+            if not h:
+                continue
+            sign = (card.get("chiffrage") or {}).get("you", {}).get("sign")
+            allies, opponents = [], []
+            if sign == "gain":
+                allies, opponents = h["lobby_pour"], h["lobby_contre"]
+            elif sign == "perte":
+                allies, opponents = h["lobby_contre"], h["lobby_pour"]
+            me = p["name"].split(" (")[0].upper()
+            card["history"] = {**h,
+                               "allies": [o for o in allies if o.upper() != me],
+                               "opponents": [o for o in opponents if o.upper() != me]}
         feed[p["siren"]] = list(cards.values())
 
     Path(f"data/feed_{n}.json").write_text(json.dumps(feed, ensure_ascii=False, indent=2))

@@ -1,0 +1,1129 @@
+{
+  "source": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "notes": [
+    "group = groupe du premier auteur à la date de dépôt (ODSEN_HISTOGROUPES), exprimé avec le sigle actuel de la même lignée : UMP->LR, LREM->RDPI, SOC->SER, RTLI->LIRT, CRC->CRCE-K, UC->UCI.",
+    "Les cosignataires ne figurent pas dans le CSV Ameli : seul le premier auteur est compté.",
+    "stance : « pour » va dans le sens de la mesure du thème, « contre » s'y oppose (ex. prolonger la dérogation tout produit alimentaire = contre « Limiter aux repas »).",
+    "Les amendements COM-* du texte 2026-2027 n°32 sont l'étape commission du texte en séance n°142.",
+    "Le portail Hémicycle (senat_amendements, depuis oct. 2023) ne trouve aucun autre texte avec des amendements titres-restaurant, PLF et PLFSS compris."
+  ],
+  "texts": [
+    {
+      "session": "2021-2022",
+      "number": "817",
+      "stage": "commission",
+      "title": "Mesures d'urgence pour la protection du pouvoir d'achat (commission des affaires sociales)",
+      "url": "https://www.senat.fr/dossier-legislatif/pjl21-817.html",
+      "csv": "https://www.senat.fr/amendements/commissions/2021-2022/817/jeu_complet_commission_2021-2022_817.csv"
+    },
+    {
+      "session": "2021-2022",
+      "number": "828",
+      "stage": "seance",
+      "title": "Mesures d'urgence pour la protection du pouvoir d'achat (séance)",
+      "url": "https://www.senat.fr/dossier-legislatif/pjl21-817.html",
+      "csv": "https://www.senat.fr/amendements/2021-2022/828/jeu_complet_2021-2022_828.csv"
+    },
+    {
+      "session": "2022-2023",
+      "number": "96",
+      "stage": "seance",
+      "title": "PLFSS pour 2023 (scanné, aucun amendement titres-restaurant)",
+      "url": "https://www.senat.fr/dossier-legislatif/plfss2023.html",
+      "csv": "https://www.senat.fr/amendements/2022-2023/96/jeu_complet_2022-2023_96.csv"
+    },
+    {
+      "session": "2022-2023",
+      "number": "114",
+      "stage": "seance",
+      "title": "PLF pour 2023 (scanné, aucun amendement titres-restaurant)",
+      "url": "https://www.senat.fr/dossier-legislatif/pjlf2023.html",
+      "csv": "https://www.senat.fr/amendements/2022-2023/114/jeu_complet_2022-2023_114.csv"
+    },
+    {
+      "session": "2023-2024",
+      "number": "143",
+      "stage": "commission",
+      "title": "Utilisation des titres-restaurant (prolongation 2024, commission)",
+      "url": "https://www.senat.fr/dossier-legislatif/ppl23-143.html",
+      "csv": "https://www.senat.fr/amendements/commissions/2023-2024/143/jeu_complet_commission_2023-2024_143.csv"
+    },
+    {
+      "session": "2023-2024",
+      "number": "173",
+      "stage": "seance",
+      "title": "Utilisation des titres-restaurant (prolongation 2024, séance)",
+      "url": "https://www.senat.fr/dossier-legislatif/ppl23-143.html",
+      "csv": "https://www.senat.fr/amendements/2023-2024/173/jeu_complet_2023-2024_173.csv"
+    },
+    {
+      "session": "2024-2025",
+      "number": "160",
+      "stage": "commission",
+      "title": "Dérogation d'usage des titres-restaurant pour tout produit alimentaire (commission)",
+      "url": "https://www.senat.fr/dossier-legislatif/ppl24-160.html",
+      "csv": "https://www.senat.fr/amendements/commissions/2024-2025/160/jeu_complet_commission_2024-2025_160.csv"
+    },
+    {
+      "session": "2024-2025",
+      "number": "183",
+      "stage": "seance",
+      "title": "Dérogation d'usage des titres-restaurant pour tout produit alimentaire (séance)",
+      "url": "https://www.senat.fr/dossier-legislatif/ppl24-160.html",
+      "csv": "https://www.senat.fr/amendements/2024-2025/183/jeu_complet_2024-2025_183.csv"
+    },
+    {
+      "session": "2026-2027",
+      "number": "32",
+      "stage": "commission",
+      "title": "Moderniser et rééquilibrer le fonctionnement du titre-restaurant (commission, même texte que le n°142)",
+      "url": "https://www.senat.fr/dossier-legislatif/ppl26-032.html",
+      "csv": "https://www.senat.fr/amendements/commissions/2026-2027/32/jeu_complet_commission_2026-2027_32.csv"
+    }
+  ],
+  "amendments": [
+    {
+      "session": "2021-2022",
+      "text_number": "817",
+      "stage": "commission",
+      "number": "COM-8",
+      "year": 2022,
+      "filed": "2022-07-22",
+      "theme": "Relever le plafond d'exonération",
+      "stance": "pour",
+      "note": "exonération 5,69 € -> 7,50 €",
+      "author": "Mme BILLON",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2021-2022/817/Amdt_COM-8.html",
+      "quote": "Après l'article 3 Insérer un article additionnel ainsi rédigé : I. La première phrase du 19 ° de l’article 81 du code général des impôts est ainsi modifié : Le montant : « 5,69€ », est remplacé par le montant : « 7,50€ ». » II. Les charges pour l’État sont compensées à due concur…"
+    },
+    {
+      "session": "2021-2022",
+      "text_number": "817",
+      "stage": "commission",
+      "number": "COM-177",
+      "year": 2022,
+      "filed": "2022-07-25",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "contre",
+      "note": "crée la dérogation : titres utilisables pour tout produit alimentaire jusqu'au 31/12/2023",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2021-2022/817/Amdt_COM-177.html",
+      "quote": "Après l'article 3 Insérer un article additionnel ainsi rédigé : Par dérogation à l’article L. 3262-1 du code du travail, jusqu’au 31 décembre 2023, les titres-restaurant peuvent être utilisés pour acquitter en tout ou en partie le prix de tout produit alimentaire, qu’il soit ou n…"
+    },
+    {
+      "session": "2021-2022",
+      "text_number": "817",
+      "stage": "commission",
+      "number": "COM-258 rect.",
+      "year": 2022,
+      "filed": "2022-07-25",
+      "theme": "Relever le plafond d'exonération",
+      "stance": "pour",
+      "note": "exonération 5,69 € -> 7,50 €",
+      "author": "M. MENONVILLE",
+      "group": "LIRT",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2021-2022/817/Amdt_COM-258.html",
+      "quote": "Après l'article 3 Insérer un article additionnel ainsi rédigé : I. La première phrase du 19 ° de l’article 81 du code général des impôts est ainsi modifié : Le montant : « 5,69 € », est remplacé par le montant : « 7,50 € ». » II. Les charges pour l’État sont compensées à due conc…"
+    },
+    {
+      "session": "2021-2022",
+      "text_number": "828",
+      "stage": "seance",
+      "number": "81 rect. quater",
+      "year": 2022,
+      "filed": "2022-07-27",
+      "theme": "Élargir les bénéficiaires",
+      "stance": "pour",
+      "note": "rapport sur l'élargissement des bénéficiaires des tickets-restaurant",
+      "author": "M. SAUTAREL",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "retiré",
+      "url": "//www.senat.fr/amendements/2021-2022/828/Amdt_81.html",
+      "quote": "I. - Après l’article 3 ter Insérer un article additionnel ainsi rédigé : Dans les trois mois suivant la publication de la présente loi, le Gouvernement remet au Parlement un rapport relatif à la possibilité d’élargir les bénéficiaires des tickets‑restaurant et à la possibilité de…"
+    },
+    {
+      "session": "2021-2022",
+      "text_number": "828",
+      "stage": "seance",
+      "number": "248 rect. bis",
+      "year": 2022,
+      "filed": "2022-07-28",
+      "theme": "Relever le plafond d'exonération",
+      "stance": "pour",
+      "note": "exonération 5,69 € -> 7,50 €",
+      "author": "M. MENONVILLE",
+      "group": "LIRT",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "retiré",
+      "url": "//www.senat.fr/amendements/2021-2022/828/Amdt_248.html",
+      "quote": "Après l’article 3 ter Insérer un article additionnel ainsi rédigé : I. – À la première phrase du 19° de l’article 81 du code général des impôts, le montant : « 5,69 € » est remplacé par le montant : « 7,50 € ». II. – La perte de recettes résultant pour l’État du I est compensée, …"
+    },
+    {
+      "session": "2021-2022",
+      "text_number": "828",
+      "stage": "seance",
+      "number": "379 rect. bis",
+      "year": 2022,
+      "filed": "2022-07-28",
+      "theme": "Relever le plafond d'exonération",
+      "stance": "pour",
+      "note": "exonération 5,69 € -> 7,50 €",
+      "author": "Mme BILLON",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "retiré",
+      "url": "//www.senat.fr/amendements/2021-2022/828/Amdt_379.html",
+      "quote": "Après l'article 3 ter Insérer un article additionnel ainsi rédigé : I. – À la première phrase du 19° de l’article 81 du code général des impôts, le montant : « 5,69 € » est remplacé par le montant : « 7,50 € ». II. – La perte de recettes résultant pour l’État du I est compensée, …"
+    },
+    {
+      "session": "2023-2024",
+      "text_number": "143",
+      "stage": "commission",
+      "number": "COM-1 rect.",
+      "year": 2023,
+      "filed": "2023-12-04",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "pour",
+      "note": "raccourcir la dérogation tout produit alimentaire au 30/06/2024",
+      "author": "Mme PONCET MONGE",
+      "group": "GEST",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2023-2024/143/Amdt_COM-1.html",
+      "quote": "À la fin, substituer la date : « 31 décembre 2024 » Par la date : « 30 juin 2024 »."
+    },
+    {
+      "session": "2023-2024",
+      "text_number": "173",
+      "stage": "seance",
+      "number": "1 rect. bis",
+      "year": 2023,
+      "filed": "2023-12-18",
+      "theme": "Négociation syndicale avant mise en place",
+      "stance": "pour",
+      "note": "concertation syndicats/employeurs sur l'assouplissement du titre",
+      "author": "Mme PONCET MONGE",
+      "group": "GEST",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/2023-2024/173/Amdt_1.html",
+      "quote": "Avant l'article unique Insérer un article additionnel ainsi rédigé : À compter de la publication de la présente loi, le Gouvernement engage, dans les conditions prévues à l’article L. 1 du code du travail, une concertation avec les organisations syndicales de salariés et d’employ…"
+    },
+    {
+      "session": "2023-2024",
+      "text_number": "173",
+      "stage": "seance",
+      "number": "2 rect.",
+      "year": 2023,
+      "filed": "2023-12-17",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "pour",
+      "note": "raccourcir la dérogation tout produit alimentaire au 30/06/2024",
+      "author": "M. CANÉVET",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/2023-2024/173/Amdt_2.html",
+      "quote": "Remplacer la date : 31 décembre 2024 par la date : 30 juin 2024"
+    },
+    {
+      "session": "2023-2024",
+      "text_number": "173",
+      "stage": "seance",
+      "number": "3 rect.",
+      "year": 2023,
+      "filed": "2023-12-18",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "pour",
+      "note": "raccourcir la dérogation tout produit alimentaire au 30/06/2024",
+      "author": "Mme PONCET MONGE",
+      "group": "GEST",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/2023-2024/173/Amdt_3.html",
+      "quote": "Remplacer la date : 31 décembre 2024 par la date : 30 juin 2024"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "160",
+      "stage": "commission",
+      "number": "COM-1",
+      "year": 2024,
+      "filed": "2024-12-02",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "pour",
+      "note": "dérogation tout produit alimentaire prolongée jusqu'à fin 2025 seulement (au lieu de 2026)",
+      "author": "Mme AESCHLIMANN, rapporteure",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-1.html",
+      "quote": "Alinéa 1 Remplacer l'année : 2026 par l'année : 2025"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "160",
+      "stage": "commission",
+      "number": "COM-2",
+      "year": 2024,
+      "filed": "2024-11-27",
+      "theme": "Rendre effectif le double plafond journalier",
+      "stance": "pour",
+      "note": "plafonds d'utilisation différenciés selon le type de commerce",
+      "author": "M. CAMBIER",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2024-2025/160/Amdt_COM-2.html",
+      "quote": "Après l'article unique Insérer un article additionnel ainsi rédigé : Compléter l’article L3262-7 du code du travail par un alinéa ainsi rédigé : 5°) Les plafonds d’utilisation, qui peuvent être différenciés en fonction des types de commerce."
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "183",
+      "stage": "seance",
+      "number": "1 rect.",
+      "year": 2025,
+      "filed": "2025-01-13",
+      "theme": "Rendre effectif le double plafond journalier",
+      "stance": "pour",
+      "note": "plafonds d'utilisation différenciés selon le type de commerce",
+      "author": "M. CAMBIER",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "non soutenu",
+      "url": "//www.senat.fr/amendements/2024-2025/183/Amdt_1.html",
+      "quote": "Avant l'article unique Insérer un article additionnel ainsi rédigé : L’article L. 3262‑7 du code du travail est complété par un alinéa ainsi rédigé : «...° Les plafonds d’utilisation, qui peuvent être différenciés en fonction des types de commerce. »"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "183",
+      "stage": "seance",
+      "number": "2 rect.",
+      "year": 2025,
+      "filed": "2025-01-14",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "contre",
+      "note": "dérogation tout produit alimentaire prolongée jusqu'à fin 2026",
+      "author": "Mme GUILLOTIN",
+      "group": "RDSE",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/2024-2025/183/Amdt_2.html",
+      "quote": "Remplacer l’année : 2025 par l’année : 2026"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "183",
+      "stage": "seance",
+      "number": "3 rect. quater",
+      "year": 2025,
+      "filed": "2025-01-14",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "contre",
+      "note": "dérogation tout produit alimentaire prolongée jusqu'à fin 2026",
+      "author": "Mme SOLLOGOUB",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/2024-2025/183/Amdt_3.html",
+      "quote": "Remplacer l’année : 2025 par l’année : 2026"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "183",
+      "stage": "seance",
+      "number": "4",
+      "year": 2025,
+      "filed": "2025-01-10",
+      "theme": "Limiter aux repas et fruits et légumes",
+      "stance": "contre",
+      "note": "dérogation tout produit alimentaire prolongée jusqu'à fin 2026",
+      "author": "M. IACOVELLI",
+      "group": "RDPI",
+      "group_source": "history",
+      "on_behalf_of": "groupe Rassemblement des démocrates, progressistes et indépendants",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/2024-2025/183/Amdt_4.html",
+      "quote": "Remplacer l’année : 2025 par l’année : 2026"
+    },
+    {
+      "session": "2024-2025",
+      "text_number": "183",
+      "stage": "seance",
+      "number": "5 rect. bis",
+      "year": 2025,
+      "filed": "2025-01-14",
+      "theme": "Rendre effectif le double plafond journalier",
+      "stance": "pour",
+      "note": "plafond illimité pour les repas au restaurant",
+      "author": "M. JOYANDET",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "retiré",
+      "url": "//www.senat.fr/amendements/2024-2025/183/Amdt_5.html",
+      "quote": "Avant l'article unique Insérer un article additionnel ainsi rédigé : L’article L. 3262‑7 du code du travail est complété par un alinéa ainsi rédigé : « Lorsque les titres‑restaurant sont utilisés pour acquitter en tout ou en partie le prix de repas consommés au restaurant leur mo…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-1",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Plafonner les commissions des émetteurs",
+      "stance": "pour",
+      "note": "plafonnement obligatoire des commissions, 2,5 % maximum",
+      "author": "M. LONGEOT",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-1.html",
+      "quote": "I. – À la première phrase de l’alinéa 16, remplacer : peut être plafonnée par les mots : est plafonnée II. – En conséquence, à la seconde phrase du même alinéa, supprimer les mots : Dans ce cas, III. – Rédiger ainsi la première phrase de l’alinéa 17 : Le pourcentage, fixé par le …"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-2",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Plafonner les commissions des émetteurs",
+      "stance": "pour",
+      "note": "plafonnement obligatoire (« est plafonnée ») des commissions",
+      "author": "M. LONGEOT",
+      "group": "UCI",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "rejeté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-2.html",
+      "quote": "Alinéa 16 I. – À la première phrase de l’alinéa 16, remplacer les mots : peut être plafonnée par les mots : est plafonnée II. – En conséquence, à la seconde phrase du même alinéa, supprimer les mots : Dans ce cas,"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-3",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Encadrer les émetteurs (agrément, transparence, sanctions)",
+      "stance": "pour",
+      "note": "agrément des sociétés émettrices",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-3.html",
+      "quote": "Après l'alinéa 5 Insérer un alinéa ainsi rédigé : ...) Au 2°, après le mot : « spécialisée », sont insérés les mots : « , agréée par l'autorité compétente, » ;"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-4",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Encadrer les émetteurs (agrément, transparence, sanctions)",
+      "stance": "pour",
+      "note": "amende jusqu'à 1 % du CA pour les émetteurs (remises aux employeurs)",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-4.html",
+      "quote": "I. – Alinéas 10 et 11 Supprimer ces alinéas. II. – Alinéas 20 à 23 Remplacer ces alinéas par six alinéas ainsi rédigés : « Art. L. 3262-1-4. – I. – Le non-respect de l’interdiction prévue à l’article L. 3262-1-1 est puni d’une amende administrative dont le montant ne peut excéder…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-5",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Coordination rédactionnelle",
+      "stance": "neutre",
+      "note": "coordination",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-5.html",
+      "quote": "I. – Alinéa 12 Remplacer les mots : En janvier par les mots : Avant le 31 janvier de chaque année II. – Alinéa 28 Après la première occurrence des mots : les mots : « insérer les mots : de la cession III. – Alinéa 38 Remplacer les mots : des articles L. 3262-1-1 et L. 3262-1-2 pa…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-6",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Encadrer les émetteurs (agrément, transparence, sanctions)",
+      "stance": "pour",
+      "note": "précise les obligations de transparence tarifaire des émetteurs",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-6.html",
+      "quote": "I. – Alinéa 12 1° Première phrase a) Remplacer la première occurrence des mots : au commerçant par les mots : à la personne ou à l'organisme mentionné au deuxième alinéa de l'article L. 3262-3 b) Remplacer la seconde occurrence des mots : au commerçant par les mots : à cette pers…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-7",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Plafonner les commissions des émetteurs",
+      "stance": "pour",
+      "note": "avis « motivé » avant plafonnement des commissions",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-7.html",
+      "quote": "Alinéa 16, première phrase Après le mot : avis insérer le mot : motivé"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-8",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Plafonner les commissions des émetteurs",
+      "stance": "pour",
+      "note": "plafond calculé sur les coûts « en moyenne »",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-8.html",
+      "quote": "Alinéa 17 Après le mot : supportés insérer les mots : en moyenne"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-9",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Encadrer les émetteurs (agrément, transparence, sanctions)",
+      "stance": "pour",
+      "note": "comptes de titres hébergés dans l'UE/EEE",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-9.html",
+      "quote": "Après l'alinéa 26 Insérer un alinéa ainsi rédigé : – après le mot : « postal », sont insérés les mots : « auprès d'un établissement établi en France ou dans un autre État membre de l'Union européenne ou partie à l'accord sur l'Espace économique européen, » ;"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-10",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Exclure les plateformes de livraison",
+      "stance": "contre",
+      "note": "supprime l'exclusion des plateformes de livraison",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-10.html",
+      "quote": "Alinéa 34 Supprimer les mots : , à l’exclusion des plateformes de mise en relation par voie électronique mentionnées à l’article 242 bis du code général des impôts"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-11",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Utilisation le dimanche",
+      "stance": "contre",
+      "note": "supprime l'usage les dimanches et jours fériés",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-11.html",
+      "quote": "Alinéa 37 Supprimer la phrase : Les titres-restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés."
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-12",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Rendre effectif le double plafond journalier",
+      "stance": "pour",
+      "note": "plafond journalier majoré pour repas, produits consommables, fruits et légumes",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-12.html",
+      "quote": "Alinéa 37 Compléter cet alinéa par une phrase ainsi rédigée : L'utilisation des titres-restaurant est limitée à un plafond journalier, majoré pour l'acquittement en tout ou en partie du prix de repas, de produits alimentaires directement consommables et de fruits ou légumes, qu'i…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-13",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Durée de validité des titres",
+      "stance": "contre",
+      "note": "revient sur l'extension à trois ans de la validité",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-13.html",
+      "quote": "Alinéas 2 à 5 Remplacer ces alinéas par un alinéa ainsi rédigé : 1° Au premier alinéa de l’article L. 3262‑5, les mots : « présentés au remboursement par un restaurant ou un détaillant en fruits et légumes » sont remplacés par le mot : « utilisés » ;"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-14",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Don de titres aux associations",
+      "stance": "pour",
+      "note": "dons limités aux associations habilitées",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-14.html",
+      "quote": "Alinéa 7 1° Supprimer les mots : aux associations porteuses de projets de solidarité alimentaire, parmi lesquels figurent les projets de caisses locales de l’alimentation, et 2° Compléter cet alinéa par les mots : , et aux associations porteuses de projets de solidarité alimentai…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-15",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Don de titres aux associations",
+      "stance": "pour",
+      "note": "sécurise le régime fiscal des dons de titres",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-15.html",
+      "quote": "I. – Compléter cet article par un paragraphe ainsi rédigé : .... – Après la première phrase du 1 ter. de l'article 200 du code général des impôts, est insérée une phrase ainsi rédigée : « Lorsque le don relève de l'article 19-1 de l'ordonnance n° 67-830 du 27 septembre 1967 relat…"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-16",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Maintien pendant les congés familiaux",
+      "stance": "contre",
+      "note": "supprime l'attribution obligatoire pendant les congés liés à l'arrivée d'un enfant",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-16.html",
+      "quote": "Supprimer cet article."
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-17",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Calendrier d'entrée en vigueur",
+      "stance": "neutre",
+      "note": "entrées en vigueur différenciées (2027)",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-17.html",
+      "quote": "I. – Alinéa 1, au début Supprimer les mots : À l’exception de l’article 4, II. – Après l'alinéa 1 Insérer quatre alinéas ainsi rédigés : Par dérogation au premier alinéa : 1° L'article 4 de la présente loi entre en vigueur le 1 er janvier 2027 et s'applique aux titres-restaurant …"
+    },
+    {
+      "session": "2026-2027",
+      "text_number": "32",
+      "stage": "commission",
+      "number": "COM-18",
+      "year": 2026,
+      "filed": "2026-11-02",
+      "theme": "Rapport sur les titres perdus",
+      "stance": "contre",
+      "note": "supprime la demande de rapport sur la contre-valeur des titres perdus",
+      "author": "Mme PUISSAT, rapporteur",
+      "group": "LR",
+      "group_source": "history",
+      "on_behalf_of": "",
+      "outcome": "adopté",
+      "url": "//www.senat.fr/amendements/commissions/2026-2027/32/Amdt_COM-18.html",
+      "quote": "Supprimer cet article."
+    }
+  ],
+  "by_theme": {
+    "Relever le plafond d'exonération": {
+      "UCI": {
+        "filed": 2,
+        "adopted": 0,
+        "rejected": 1,
+        "other": 1,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2022
+        ]
+      },
+      "LIRT": {
+        "filed": 2,
+        "adopted": 0,
+        "rejected": 1,
+        "other": 1,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2022
+        ]
+      }
+    },
+    "Limiter aux repas et fruits et légumes": {
+      "LR": {
+        "filed": 2,
+        "adopted": 2,
+        "rejected": 0,
+        "other": 0,
+        "pour": 1,
+        "contre": 1,
+        "years": [
+          2022,
+          2024
+        ]
+      },
+      "GEST": {
+        "filed": 2,
+        "adopted": 0,
+        "rejected": 2,
+        "other": 0,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2023
+        ]
+      },
+      "UCI": {
+        "filed": 2,
+        "adopted": 1,
+        "rejected": 1,
+        "other": 0,
+        "pour": 1,
+        "contre": 1,
+        "years": [
+          2023,
+          2025
+        ]
+      },
+      "RDSE": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2025
+        ]
+      },
+      "RDPI": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2025
+        ]
+      }
+    },
+    "Élargir les bénéficiaires": {
+      "LR": {
+        "filed": 1,
+        "adopted": 0,
+        "rejected": 0,
+        "other": 1,
+        "pour": 1,
+        "contre": 0,
+        "years": [
+          2022
+        ]
+      }
+    },
+    "Négociation syndicale avant mise en place": {
+      "GEST": {
+        "filed": 1,
+        "adopted": 0,
+        "rejected": 1,
+        "other": 0,
+        "pour": 1,
+        "contre": 0,
+        "years": [
+          2023
+        ]
+      }
+    },
+    "Rendre effectif le double plafond journalier": {
+      "UCI": {
+        "filed": 2,
+        "adopted": 0,
+        "rejected": 1,
+        "other": 1,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2024,
+          2025
+        ]
+      },
+      "LR": {
+        "filed": 2,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 1,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2025,
+          2026
+        ]
+      }
+    },
+    "Plafonner les commissions des émetteurs": {
+      "UCI": {
+        "filed": 2,
+        "adopted": 0,
+        "rejected": 2,
+        "other": 0,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2026
+        ]
+      },
+      "LR": {
+        "filed": 2,
+        "adopted": 2,
+        "rejected": 0,
+        "other": 0,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Encadrer les émetteurs (agrément, transparence, sanctions)": {
+      "LR": {
+        "filed": 4,
+        "adopted": 4,
+        "rejected": 0,
+        "other": 0,
+        "pour": 4,
+        "contre": 0,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Exclure les plateformes de livraison": {
+      "LR": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Utilisation le dimanche": {
+      "LR": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Durée de validité des titres": {
+      "LR": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Don de titres aux associations": {
+      "LR": {
+        "filed": 2,
+        "adopted": 2,
+        "rejected": 0,
+        "other": 0,
+        "pour": 2,
+        "contre": 0,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Maintien pendant les congés familiaux": {
+      "LR": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "Rapport sur les titres perdus": {
+      "LR": {
+        "filed": 1,
+        "adopted": 1,
+        "rejected": 0,
+        "other": 0,
+        "pour": 0,
+        "contre": 1,
+        "years": [
+          2026
+        ]
+      }
+    }
+  },
+  "findings": [
+    "La dérogation « tout produit alimentaire » est née au Sénat : amendement COM-177 de la rapporteure Puissat (LR), déposé le 25/07/2022 et adopté en commission sur le projet de loi pouvoir d'achat.",
+    "Restreindre de nouveau le titre aux repas a échoué en 2023 : UC, aujourd'hui UCI (Canévet) et GEST (Poncet Monge) ont proposé d'arrêter la dérogation au 30/06/2024, rejeté les deux fois (et rejeté aussi en commission, COM-1 GEST).",
+    "En janvier 2025, RDSE (Guillotin), UC (Sollogoub) et RDPI (Iacovelli) ont fait adopter en séance la prolongation de la dérogation jusqu'à fin 2026, contre la commission qui avait voté (COM-1, rapporteure LR Aeschlimann) une fin en 2025.",
+    "Le double plafond journalier (plafond différencié selon le commerce) a été proposé par Cambier (UC) en commission puis en séance en 2024-2025 sans être adopté (rejeté, puis non soutenu) ; la commission l'a adopté en 2026 (COM-12, rapporteure LR Puissat).",
+    "Plafonnement des commissions des émetteurs : les deux versions obligatoires de Longeot (UCI) ont été rejetées en commission (amendements déposés le 02/11/2026), la commission préférant le plafonnement facultatif renforcé de sa rapporteure LR (COM-7, COM-8 adoptés).",
+    "En commission (amendements déposés le 02/11/2026), la rapporteure LR a fait supprimer l'usage le dimanche, l'exclusion des plateformes de livraison, la validité de trois ans et le maintien pendant les congés familiaux présents dans le texte transmis par l'Assemblée : le texte de la commission arrive en séance sans ces quatre mesures.",
+    "Relever le plafond d'exonération du titre (5,69 € -> 7,50 €) a été proposé en 2022 par Billon (UC) et Menonville (LIRT) : rejeté en commission, retiré en séance."
+  ],
+  "findings_detail": [
+    {
+      "text": "La dérogation « tout produit alimentaire » est née au Sénat : amendement COM-177 de la rapporteure Puissat (LR), déposé le 25/07/2022 et adopté en commission sur le projet de loi pouvoir d'achat.",
+      "amendments": [
+        {
+          "session": "2021-2022",
+          "text_number": "817",
+          "number": "COM-177"
+        }
+      ]
+    },
+    {
+      "text": "Restreindre de nouveau le titre aux repas a échoué en 2023 : UC, aujourd'hui UCI (Canévet) et GEST (Poncet Monge) ont proposé d'arrêter la dérogation au 30/06/2024, rejeté les deux fois (et rejeté aussi en commission, COM-1 GEST).",
+      "amendments": [
+        {
+          "session": "2023-2024",
+          "text_number": "173",
+          "number": "2 rect."
+        },
+        {
+          "session": "2023-2024",
+          "text_number": "173",
+          "number": "3 rect."
+        },
+        {
+          "session": "2023-2024",
+          "text_number": "143",
+          "number": "COM-1 rect."
+        }
+      ]
+    },
+    {
+      "text": "En janvier 2025, RDSE (Guillotin), UC (Sollogoub) et RDPI (Iacovelli) ont fait adopter en séance la prolongation de la dérogation jusqu'à fin 2026, contre la commission qui avait voté (COM-1, rapporteure LR Aeschlimann) une fin en 2025.",
+      "amendments": [
+        {
+          "session": "2024-2025",
+          "text_number": "183",
+          "number": "2 rect."
+        },
+        {
+          "session": "2024-2025",
+          "text_number": "183",
+          "number": "3 rect. quater"
+        },
+        {
+          "session": "2024-2025",
+          "text_number": "183",
+          "number": "4"
+        },
+        {
+          "session": "2024-2025",
+          "text_number": "160",
+          "number": "COM-1"
+        }
+      ]
+    },
+    {
+      "text": "Le double plafond journalier (plafond différencié selon le commerce) a été proposé par Cambier (UC) en commission puis en séance en 2024-2025 sans être adopté (rejeté, puis non soutenu) ; la commission l'a adopté en 2026 (COM-12, rapporteure LR Puissat).",
+      "amendments": [
+        {
+          "session": "2024-2025",
+          "text_number": "160",
+          "number": "COM-2"
+        },
+        {
+          "session": "2024-2025",
+          "text_number": "183",
+          "number": "1 rect."
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-12"
+        }
+      ]
+    },
+    {
+      "text": "Plafonnement des commissions des émetteurs : les deux versions obligatoires de Longeot (UCI) ont été rejetées en commission (amendements déposés le 02/11/2026), la commission préférant le plafonnement facultatif renforcé de sa rapporteure LR (COM-7, COM-8 adoptés).",
+      "amendments": [
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-1"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-2"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-7"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-8"
+        }
+      ]
+    },
+    {
+      "text": "En commission (amendements déposés le 02/11/2026), la rapporteure LR a fait supprimer l'usage le dimanche, l'exclusion des plateformes de livraison, la validité de trois ans et le maintien pendant les congés familiaux présents dans le texte transmis par l'Assemblée : le texte de la commission arrive en séance sans ces quatre mesures.",
+      "amendments": [
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-11"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-10"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-13"
+        },
+        {
+          "session": "2026-2027",
+          "text_number": "32",
+          "number": "COM-16"
+        }
+      ]
+    },
+    {
+      "text": "Relever le plafond d'exonération du titre (5,69 € -> 7,50 €) a été proposé en 2022 par Billon (UC) et Menonville (LIRT) : rejeté en commission, retiré en séance.",
+      "amendments": [
+        {
+          "session": "2021-2022",
+          "text_number": "817",
+          "number": "COM-8"
+        },
+        {
+          "session": "2021-2022",
+          "text_number": "817",
+          "number": "COM-258 rect."
+        },
+        {
+          "session": "2021-2022",
+          "text_number": "828",
+          "number": "248 rect. bis"
+        },
+        {
+          "session": "2021-2022",
+          "text_number": "828",
+          "number": "379 rect. bis"
+        }
+      ]
+    }
+  ]
+}
