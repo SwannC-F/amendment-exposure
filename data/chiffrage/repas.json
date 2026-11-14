@@ -1,0 +1,140 @@
+{
+  "theme": "Limiter aux repas et fruits et légumes",
+  "amendments": [
+    20,
+    24
+  ],
+  "mechanism": "À partir de 2028 (n° 20) ou dès l'entrée en vigueur (n° 24), les titres ne paient plus que des repas, des préparations directement consommables et des fruits et légumes : les dépenses de produits à cuisiner payées en titres quittent la grande distribution, une partie revient aux restaurants.",
+  "winners": [
+    "Restaurants et commerces de restauration",
+    "État (écart de taux de TVA, selon n° 24)"
+  ],
+  "losers": [
+    "Grande distribution",
+    "Salariés qui paient leurs courses en titres"
+  ],
+  "parameters": [
+    {
+      "name": "Valeur des titres émis par an",
+      "low": 8500000000.0,
+      "high": 11000000000.0,
+      "unit": "€/an",
+      "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+      "source": "amendment n°4"
+    },
+    {
+      "name": "Valeur des titres émis par an (2026, borne haute)",
+      "low": 11000000000.0,
+      "high": 11000000000.0,
+      "unit": "€/an",
+      "quote": "six millions de salariés, onze milliards d’euros de titres",
+      "source": "amendment n°1"
+    },
+    {
+      "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+      "low": 0.343,
+      "high": 0.465,
+      "unit": "part",
+      "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+      "source": "amendment n°24"
+    },
+    {
+      "name": "Poids du titre dans le CA des restaurants",
+      "low": 0.15,
+      "high": 0.15,
+      "unit": "part du CA",
+      "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+      "source": "amendment n°24"
+    },
+    {
+      "name": "Poids du titre dans le CA de la grande distribution",
+      "low": 0.01,
+      "high": 0.01,
+      "unit": "part du CA",
+      "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+      "source": "amendment n°24"
+    },
+    {
+      "name": "Emplois liés au titre dans la restauration",
+      "low": 0.8,
+      "high": 0.8,
+      "unit": "part de ~100 000 emplois",
+      "quote": "Près de 80 % des quelque 100 000 emplois liés au titre‑restaurant se trouvent dans la restauration.",
+      "source": "amendment n°24"
+    },
+    {
+      "name": "Date d'effet (n° 20)",
+      "low": 2028,
+      "high": 2028,
+      "unit": "année",
+      "quote": "À compter de 2028, le titre‑restaurant retrouverait sa vocation initiale",
+      "source": "amendment n°20"
+    },
+    {
+      "name": "Chiffre d'affaires Hippopotamus (2025)",
+      "low": 77414755,
+      "high": 77414755,
+      "unit": "€",
+      "quote": "finances.2025.ca = 77414755",
+      "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+    },
+    {
+      "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+      "low": 11312154354,
+      "high": 11312154354,
+      "unit": "€",
+      "quote": "finances.2025.ca = 11312154354",
+      "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+    }
+  ],
+  "total_eur_per_year": null,
+  "per_profile": {
+    "322566043": {
+      "eur_per_year": null,
+      "sign": "gain",
+      "method": "Récupère une partie des titres dépensés en produits à cuisiner ; la part qui se reporte sur les restaurants (plutôt que sur les préparations prêtes à manger en magasin) n'est pas sourcée.",
+      "inputs": {
+        "titres_encaisses_estimes": 11612213
+      }
+    },
+    "451321335": {
+      "eur_per_year": null,
+      "sign": "perte",
+      "method": "Perd les titres dépensés en produits à cuisiner (hors fruits et légumes et produits directement consommables) ; cette part n'est pas sourcée. Assiette exposée : ~113 M€/an de titres encaissés (CA × 1 %).",
+      "inputs": {
+        "titres_encaisses_estimes": 113121544
+      }
+    },
+    "393365135": {
+      "eur_per_year": null,
+      "sign": "neutre",
+      "method": "Volume émis inchangé à court terme ; effet sur l'attrait du titre pour les salariés non chiffrable.",
+      "inputs": {}
+    },
+    "841983828": {
+      "eur_per_year": null,
+      "sign": "gain",
+      "method": "Les repas livrés restent éligibles ; part des titres dépensée via les plateformes non sourcée.",
+      "inputs": {
+        "ca": 1422065506
+      }
+    }
+  },
+  "variants": [
+    {
+      "amendments": [
+        20
+      ],
+      "label": "Recentrage à partir de 2028, double plafond supprimé",
+      "total_eur_per_year": null
+    },
+    {
+      "amendments": [
+        24
+      ],
+      "label": "Recentrage dès l'entrée en vigueur",
+      "total_eur_per_year": null
+    }
+  ],
+  "not_computable": "Aucune source ne donne la part des titres dépensée en produits à cuisiner, ni le report de ces dépenses vers les restaurants. Repère seulement : la part des restaurants a perdu 12,2 points depuis fin 2022, soit 1.04 à 1.34 Md€/an aux volumes de 8,5 à 11 Md€."
+}

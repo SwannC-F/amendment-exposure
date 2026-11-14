@@ -45,7 +45,113 @@
         "Plafond des commissions rendu obligatoire (taux fixé par décret)",
         "Plafond obligatoire des commissions : 3 % (repli)",
         "Plafond obligatoire des commissions : 2 %"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Les commerçants qui encaissent des titres paient aux émetteurs une commission sur chaque titre remboursé ; un plafond légal réduit ce que les émetteurs prélèvent et laisse l'écart aux restaurateurs et commerçants.",
+        "winners": [
+          "Restaurants (56.10A, 56.10C)",
+          "Grande distribution et commerces alimentaires (47.11*)",
+          "Boulangeries (10.71C, 47.24Z)"
+        ],
+        "losers": [
+          "Émetteurs de titres-restaurant (66.19B)"
+        ],
+        "total_eur_per_year": {
+          "low": 108000000,
+          "high": 330000000
+        },
+        "you": {
+          "sign": "gain",
+          "eur_per_year": {
+            "low": 0,
+            "high": 348366
+          },
+          "method": "CA × 15 % (part du titre dans le CA des restaurants) × (taux actuel 3 à 5 % − plafond 3 à 2 %)"
+        },
+        "parameters": [
+          {
+            "name": "Valeur faciale des titres émis par an",
+            "low": 10800000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "sa valeur atteint 10,8 milliards d'euros en 2024 | représenter un marché de 11 milliards d'euros",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Taux moyen actuel des commissions côté commerçant (bas)",
+            "low": 4,
+            "high": 4,
+            "unit": "%",
+            "quote": "les commissions sur la face acceptation avoisinent 4 % en moyenne",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Taux actuel des commissions côté commerçant (haut)",
+            "low": 5,
+            "high": 5,
+            "unit": "%",
+            "quote": "les commissions et frais supportés par les commerçants atteignent aujourd’hui environ 5 % des montants encaissés",
+            "source": "amendement n°22 | https://www.senat.fr/amendements/2026-2027/142/Amdt_22.html"
+          },
+          {
+            "name": "Taux négocié via une organisation professionnelle (restaurateurs)",
+            "low": 3,
+            "high": 3,
+            "unit": "%",
+            "quote": "Les restaurateurs sont toutefois susceptibles d'obtenir des taux plus avantageux - autour de 3 % - en adhérant à une organisation professionnelle",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Part du titre dans le CA des restaurants",
+            "low": 15,
+            "high": 15,
+            "unit": "% du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendement n°24 | https://www.senat.fr/amendements/2026-2027/142/Amdt_24.html"
+          },
+          {
+            "name": "Part du titre dans le CA de la grande distribution",
+            "low": 1,
+            "high": 1,
+            "unit": "% du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendement n°24 | https://www.senat.fr/amendements/2026-2027/142/Amdt_24.html"
+          },
+          {
+            "name": "Part de marché individuelle de chacun des 4 grands émetteurs (dont Edenred France)",
+            "low": 10,
+            "high": 40,
+            "unit": "%",
+            "quote": "with individual market share being between 10 and 40%",
+            "source": "Autorité de la concurrence, avis 23-A-16 du 12/10/2023 (communiqué) | https://www.autoritedelaconcurrence.fr/en/press-release/meal-vouchers-autorite-de-la-concurrence-issues-opinion-government"
+          },
+          {
+            "name": "Plafond 2 %",
+            "low": 2,
+            "high": 2,
+            "unit": "%",
+            "quote": "un plafonnement obligatoire déterminé par la loi d’une borne maximale de 2 %",
+            "source": "amendement n°14 | https://www.senat.fr/amendements/2026-2027/142/Amdt_14.html"
+          },
+          {
+            "name": "Plafond 2,5 %",
+            "low": 2.5,
+            "high": 2.5,
+            "unit": "%",
+            "quote": "il est proposé de fixer un plafond fixé à 2,5 % du montant réglé au moyen de titres‑restaurant",
+            "source": "amendement n°4 | https://www.senat.fr/amendements/2026-2027/142/Amdt_4.html"
+          },
+          {
+            "name": "Plafond 3 %",
+            "low": 3,
+            "high": 3,
+            "unit": "%",
+            "quote": "il est proposé de fixer un plafond fixé à 3 % du montant réglé au moyen de titres‑restaurant",
+            "source": "amendement n°5 | https://www.senat.fr/amendements/2026-2027/142/Amdt_5.html"
+          }
+        ],
+        "not_computable": "Le total est une enveloppe de toutes les variantes chiffrables (plafond 3 % au plus doux, 2 % au plus strict). Sans taux dans la loi (n° 3 rect., 23), le montant dépend du décret : non chiffrable. Montant brut : les émetteurs peuvent reporter une partie de la baisse sur les frais facturés aux employeurs, et l'Autorité de la concurrence note qu'un plafond peut faire remonter vers lui les taux inférieurs."
+      }
     },
     {
       "number": "7",
@@ -81,7 +187,50 @@
       "effects": [
         "Titres utilisables le dimanche par tous les salariés",
         "Titres utilisables tous les jours, dimanches et fériés compris"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le montant de titres émis ne change pas : une partie des dépenses se déplace vers les commerces et restaurants ouverts le dimanche (et les jours fériés pour n° 12 et 31), au détriment de ceux qui ferment ce jour-là.",
+        "winners": [
+          "Commerces alimentaires et grandes surfaces ouverts le dimanche (47.11*)",
+          "Restaurants ouverts le dimanche (56.10A, 56.10C)"
+        ],
+        "losers": [
+          "Commerces fermés le dimanche (report de dépenses, non chiffré)"
+        ],
+        "total_eur_per_year": null,
+        "you": {
+          "sign": "gain",
+          "eur_per_year": null,
+          "method": "restaurant ouvert le dimanche : peut capter des dépenses dominicales ; part non publiée"
+        },
+        "parameters": [
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "De 20 à 30 % des employeurs ont ouvert la possibilité",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical (amendement)",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "20 à 30 % des employeurs ont déjà ouvert l’usage dominical à leurs salariés",
+            "source": "amendement n°31 | https://www.senat.fr/amendements/2026-2027/142/Amdt_31.html"
+          },
+          {
+            "name": "Nombre de titres inchangé",
+            "low": 0,
+            "high": 0,
+            "unit": "titres supplémentaires",
+            "quote": "Seul le jour d’utilisation est assoupli, sans incidence sur le nombre de titres ni sur leur régime social et fiscal.",
+            "source": "amendement n°7 | https://www.senat.fr/amendements/2026-2027/142/Amdt_7.html"
+          }
+        ],
+        "not_computable": "Mesure de répartition : le volume total ne change pas. Aucune source publique ne donne la part des dépenses en titres qui se ferait le dimanche, donc le montant déplacé entre commerces n'est pas chiffrable. Seul chiffre disponible : 20 à 30 % des employeurs l'autorisent déjà."
+      }
     },
     {
       "number": "6",
@@ -114,7 +263,112 @@
       ],
       "effects": [
         "Supprime le double plafond journalier"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le double plafond (texte de la commission) réduit la part des titres payable en produits à cuisiner, ce qui peut ramener vers les restaurants une partie des titres aujourd'hui dépensés en grande distribution ; le supprimer (n° 6, 10, 16) laisse ce flux en grande distribution, le rendre effectif (n° 19) l'en retire.",
+        "winners": [
+          "Grande distribution et commerces alimentaires (si suppression)",
+          "Salariés qui cuisinent leurs repas (si suppression)"
+        ],
+        "losers": [
+          "Restaurants (si suppression : manque à gagner par rapport au texte de la commission)"
+        ],
+        "total_eur_per_year": {
+          "low": 0,
+          "high": 1342000000
+        },
+        "you": {
+          "sign": "perte",
+          "eur_per_year": {
+            "low": 0,
+            "high": 4130292
+          },
+          "method": "Suppression = manque à gagner jusqu'au retour de la part des restaurants à 46,5 % : CA × 15 % × (46,5/34,3 − 1) ; borne basse 0 si les plafonds du décret ne contraignent rien (25 €/50 €)."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Plafond journalier actuel",
+            "low": 25,
+            "high": 25,
+            "unit": "€/jour",
+            "quote": "Aujourd’hui les titres‑restaurants sont limités à un plafond d’utilisation de 25 € par jour.",
+            "source": "amendment n°16"
+          },
+          {
+            "name": "Plafond produits à cuisiner proposé par n° 19 (illustration 2026)",
+            "low": 12.2,
+            "high": 12.2,
+            "unit": "€/jour",
+            "quote": "cette référence correspond à 12,20 euros en 2026",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Scénario où le double plafond ne change rien",
+            "low": 25,
+            "high": 50,
+            "unit": "€/jour (cuisine / restauration)",
+            "quote": "le pouvoir réglementaire pourrait fixer un plafond de 25 euros pour les produits alimentaires non directement consommables et un plafond de 50 euros pour la restauration. Une telle situation respecterait formellement le principe d’un double plafond, mais ne modifierait en rien les possibilités actuelles d’utilisation des titres‑restaurant dans la grande distribution.",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": null
+      }
     },
     {
       "number": "20",
@@ -144,7 +398,99 @@
       ],
       "effects": [
         "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "À partir de 2028 (n° 20) ou dès l'entrée en vigueur (n° 24), les titres ne paient plus que des repas, des préparations directement consommables et des fruits et légumes : les dépenses de produits à cuisiner payées en titres quittent la grande distribution, une partie revient aux restaurants.",
+        "winners": [
+          "Restaurants et commerces de restauration",
+          "État (écart de taux de TVA, selon n° 24)"
+        ],
+        "losers": [
+          "Grande distribution",
+          "Salariés qui paient leurs courses en titres"
+        ],
+        "total_eur_per_year": null,
+        "you": {
+          "sign": "gain",
+          "eur_per_year": null,
+          "method": "Récupère une partie des titres dépensés en produits à cuisiner ; la part qui se reporte sur les restaurants (plutôt que sur les préparations prêtes à manger en magasin) n'est pas sourcée."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Emplois liés au titre dans la restauration",
+            "low": 0.8,
+            "high": 0.8,
+            "unit": "part de ~100 000 emplois",
+            "quote": "Près de 80 % des quelque 100 000 emplois liés au titre‑restaurant se trouvent dans la restauration.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Date d'effet (n° 20)",
+            "low": 2028,
+            "high": 2028,
+            "unit": "année",
+            "quote": "À compter de 2028, le titre‑restaurant retrouverait sa vocation initiale",
+            "source": "amendment n°20"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": "Aucune source ne donne la part des titres dépensée en produits à cuisiner, ni le report de ces dépenses vers les restaurants. Repère seulement : la part des restaurants a perdu 12,2 points depuis fin 2022, soit 1.04 à 1.34 Md€/an aux volumes de 8,5 à 11 Md€."
+      }
     },
     {
       "number": "1",
@@ -232,7 +578,112 @@
       ],
       "effects": [
         "Rend effectif le double plafond : moins pour les courses, plus pour les repas"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le double plafond (texte de la commission) réduit la part des titres payable en produits à cuisiner, ce qui peut ramener vers les restaurants une partie des titres aujourd'hui dépensés en grande distribution ; le supprimer (n° 6, 10, 16) laisse ce flux en grande distribution, le rendre effectif (n° 19) l'en retire.",
+        "winners": [
+          "Grande distribution et commerces alimentaires (si suppression)",
+          "Salariés qui cuisinent leurs repas (si suppression)"
+        ],
+        "losers": [
+          "Restaurants (si suppression : manque à gagner par rapport au texte de la commission)"
+        ],
+        "total_eur_per_year": {
+          "low": 0,
+          "high": 1342000000
+        },
+        "you": {
+          "sign": "perte",
+          "eur_per_year": {
+            "low": 0,
+            "high": 4130292
+          },
+          "method": "Suppression = manque à gagner jusqu'au retour de la part des restaurants à 46,5 % : CA × 15 % × (46,5/34,3 − 1) ; borne basse 0 si les plafonds du décret ne contraignent rien (25 €/50 €)."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Plafond journalier actuel",
+            "low": 25,
+            "high": 25,
+            "unit": "€/jour",
+            "quote": "Aujourd’hui les titres‑restaurants sont limités à un plafond d’utilisation de 25 € par jour.",
+            "source": "amendment n°16"
+          },
+          {
+            "name": "Plafond produits à cuisiner proposé par n° 19 (illustration 2026)",
+            "low": 12.2,
+            "high": 12.2,
+            "unit": "€/jour",
+            "quote": "cette référence correspond à 12,20 euros en 2026",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Scénario où le double plafond ne change rien",
+            "low": 25,
+            "high": 50,
+            "unit": "€/jour (cuisine / restauration)",
+            "quote": "le pouvoir réglementaire pourrait fixer un plafond de 25 euros pour les produits alimentaires non directement consommables et un plafond de 50 euros pour la restauration. Une telle situation respecterait formellement le principe d’un double plafond, mais ne modifierait en rien les possibilités actuelles d’utilisation des titres‑restaurant dans la grande distribution.",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": null
+      }
     }
   ],
   "451321335": [
@@ -270,7 +721,50 @@
       "effects": [
         "Titres utilisables le dimanche par tous les salariés",
         "Titres utilisables tous les jours, dimanches et fériés compris"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le montant de titres émis ne change pas : une partie des dépenses se déplace vers les commerces et restaurants ouverts le dimanche (et les jours fériés pour n° 12 et 31), au détriment de ceux qui ferment ce jour-là.",
+        "winners": [
+          "Commerces alimentaires et grandes surfaces ouverts le dimanche (47.11*)",
+          "Restaurants ouverts le dimanche (56.10A, 56.10C)"
+        ],
+        "losers": [
+          "Commerces fermés le dimanche (report de dépenses, non chiffré)"
+        ],
+        "total_eur_per_year": null,
+        "you": {
+          "sign": "gain",
+          "eur_per_year": null,
+          "method": "hypermarchés ouverts le dimanche dans certaines zones : peut capter des courses dominicales ; part non publiée"
+        },
+        "parameters": [
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "De 20 à 30 % des employeurs ont ouvert la possibilité",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Employeurs ayant déjà ouvert l'usage dominical (amendement)",
+            "low": 20,
+            "high": 30,
+            "unit": "% des employeurs",
+            "quote": "20 à 30 % des employeurs ont déjà ouvert l’usage dominical à leurs salariés",
+            "source": "amendement n°31 | https://www.senat.fr/amendements/2026-2027/142/Amdt_31.html"
+          },
+          {
+            "name": "Nombre de titres inchangé",
+            "low": 0,
+            "high": 0,
+            "unit": "titres supplémentaires",
+            "quote": "Seul le jour d’utilisation est assoupli, sans incidence sur le nombre de titres ni sur leur régime social et fiscal.",
+            "source": "amendement n°7 | https://www.senat.fr/amendements/2026-2027/142/Amdt_7.html"
+          }
+        ],
+        "not_computable": "Mesure de répartition : le volume total ne change pas. Aucune source publique ne donne la part des dépenses en titres qui se ferait le dimanche, donc le montant déplacé entre commerces n'est pas chiffrable. Seul chiffre disponible : 20 à 30 % des employeurs l'autorisent déjà."
+      }
     },
     {
       "number": "16",
@@ -307,7 +801,112 @@
       "effects": [
         "Supprime tout plafond journalier + utilisation tous les jours",
         "Supprime le double plafond journalier"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le double plafond (texte de la commission) réduit la part des titres payable en produits à cuisiner, ce qui peut ramener vers les restaurants une partie des titres aujourd'hui dépensés en grande distribution ; le supprimer (n° 6, 10, 16) laisse ce flux en grande distribution, le rendre effectif (n° 19) l'en retire.",
+        "winners": [
+          "Grande distribution et commerces alimentaires (si suppression)",
+          "Salariés qui cuisinent leurs repas (si suppression)"
+        ],
+        "losers": [
+          "Restaurants (si suppression : manque à gagner par rapport au texte de la commission)"
+        ],
+        "total_eur_per_year": {
+          "low": 0,
+          "high": 1342000000
+        },
+        "you": {
+          "sign": "gain",
+          "eur_per_year": {
+            "low": 0,
+            "high": 21005827
+          },
+          "method": "Suppression = perte évitée : CA × 1 % × (1 − 53,5/65,7), part hors restaurants ramenée de 65,7 % à 53,5 % au plus ; borne basse 0 (plafonds 25 €/50 €)."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Plafond journalier actuel",
+            "low": 25,
+            "high": 25,
+            "unit": "€/jour",
+            "quote": "Aujourd’hui les titres‑restaurants sont limités à un plafond d’utilisation de 25 € par jour.",
+            "source": "amendment n°16"
+          },
+          {
+            "name": "Plafond produits à cuisiner proposé par n° 19 (illustration 2026)",
+            "low": 12.2,
+            "high": 12.2,
+            "unit": "€/jour",
+            "quote": "cette référence correspond à 12,20 euros en 2026",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Scénario où le double plafond ne change rien",
+            "low": 25,
+            "high": 50,
+            "unit": "€/jour (cuisine / restauration)",
+            "quote": "le pouvoir réglementaire pourrait fixer un plafond de 25 euros pour les produits alimentaires non directement consommables et un plafond de 50 euros pour la restauration. Une telle situation respecterait formellement le principe d’un double plafond, mais ne modifierait en rien les possibilités actuelles d’utilisation des titres‑restaurant dans la grande distribution.",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": null
+      }
     },
     {
       "number": "20",
@@ -337,7 +936,99 @@
       ],
       "effects": [
         "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "À partir de 2028 (n° 20) ou dès l'entrée en vigueur (n° 24), les titres ne paient plus que des repas, des préparations directement consommables et des fruits et légumes : les dépenses de produits à cuisiner payées en titres quittent la grande distribution, une partie revient aux restaurants.",
+        "winners": [
+          "Restaurants et commerces de restauration",
+          "État (écart de taux de TVA, selon n° 24)"
+        ],
+        "losers": [
+          "Grande distribution",
+          "Salariés qui paient leurs courses en titres"
+        ],
+        "total_eur_per_year": null,
+        "you": {
+          "sign": "perte",
+          "eur_per_year": null,
+          "method": "Perd les titres dépensés en produits à cuisiner (hors fruits et légumes et produits directement consommables) ; cette part n'est pas sourcée. Assiette exposée : ~113 M€/an de titres encaissés (CA × 1 %)."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Emplois liés au titre dans la restauration",
+            "low": 0.8,
+            "high": 0.8,
+            "unit": "part de ~100 000 emplois",
+            "quote": "Près de 80 % des quelque 100 000 emplois liés au titre‑restaurant se trouvent dans la restauration.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Date d'effet (n° 20)",
+            "low": 2028,
+            "high": 2028,
+            "unit": "année",
+            "quote": "À compter de 2028, le titre‑restaurant retrouverait sa vocation initiale",
+            "source": "amendment n°20"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": "Aucune source ne donne la part des titres dépensée en produits à cuisiner, ni le report de ces dépenses vers les restaurants. Repère seulement : la part des restaurants a perdu 12,2 points depuis fin 2022, soit 1.04 à 1.34 Md€/an aux volumes de 8,5 à 11 Md€."
+      }
     },
     {
       "number": "19",
@@ -365,7 +1056,112 @@
       ],
       "effects": [
         "Rend effectif le double plafond : moins pour les courses, plus pour les repas"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Le double plafond (texte de la commission) réduit la part des titres payable en produits à cuisiner, ce qui peut ramener vers les restaurants une partie des titres aujourd'hui dépensés en grande distribution ; le supprimer (n° 6, 10, 16) laisse ce flux en grande distribution, le rendre effectif (n° 19) l'en retire.",
+        "winners": [
+          "Grande distribution et commerces alimentaires (si suppression)",
+          "Salariés qui cuisinent leurs repas (si suppression)"
+        ],
+        "losers": [
+          "Restaurants (si suppression : manque à gagner par rapport au texte de la commission)"
+        ],
+        "total_eur_per_year": {
+          "low": 0,
+          "high": 1342000000
+        },
+        "you": {
+          "sign": "gain",
+          "eur_per_year": {
+            "low": 0,
+            "high": 21005827
+          },
+          "method": "Suppression = perte évitée : CA × 1 % × (1 − 53,5/65,7), part hors restaurants ramenée de 65,7 % à 53,5 % au plus ; borne basse 0 (plafonds 25 €/50 €)."
+        },
+        "parameters": [
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Part des restaurateurs dans la valeur des titres (fin 2022 → début 2026)",
+            "low": 0.343,
+            "high": 0.465,
+            "unit": "part",
+            "quote": "La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026.",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Plafond journalier actuel",
+            "low": 25,
+            "high": 25,
+            "unit": "€/jour",
+            "quote": "Aujourd’hui les titres‑restaurants sont limités à un plafond d’utilisation de 25 € par jour.",
+            "source": "amendment n°16"
+          },
+          {
+            "name": "Plafond produits à cuisiner proposé par n° 19 (illustration 2026)",
+            "low": 12.2,
+            "high": 12.2,
+            "unit": "€/jour",
+            "quote": "cette référence correspond à 12,20 euros en 2026",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Scénario où le double plafond ne change rien",
+            "low": 25,
+            "high": 50,
+            "unit": "€/jour (cuisine / restauration)",
+            "quote": "le pouvoir réglementaire pourrait fixer un plafond de 25 euros pour les produits alimentaires non directement consommables et un plafond de 50 euros pour la restauration. Une telle situation respecterait formellement le principe d’un double plafond, mais ne modifierait en rien les possibilités actuelles d’utilisation des titres‑restaurant dans la grande distribution.",
+            "source": "amendment n°19"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": null
+      }
     }
   ],
   "393365135": [
@@ -414,7 +1210,113 @@
         "Plafond des commissions rendu obligatoire (taux fixé par décret)",
         "Plafond obligatoire des commissions : 3 % (repli)",
         "Plafond obligatoire des commissions : 2 %"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Les commerçants qui encaissent des titres paient aux émetteurs une commission sur chaque titre remboursé ; un plafond légal réduit ce que les émetteurs prélèvent et laisse l'écart aux restaurateurs et commerçants.",
+        "winners": [
+          "Restaurants (56.10A, 56.10C)",
+          "Grande distribution et commerces alimentaires (47.11*)",
+          "Boulangeries (10.71C, 47.24Z)"
+        ],
+        "losers": [
+          "Émetteurs de titres-restaurant (66.19B)"
+        ],
+        "total_eur_per_year": {
+          "low": 108000000,
+          "high": 330000000
+        },
+        "you": {
+          "sign": "perte",
+          "eur_per_year": {
+            "low": 10800000,
+            "high": 132000000
+          },
+          "method": "volume national × part de marché 10 à 40 % × (taux moyen 4 à 5 % − plafond 3 à 2 %) ; perte brute avant report éventuel sur les employeurs"
+        },
+        "parameters": [
+          {
+            "name": "Valeur faciale des titres émis par an",
+            "low": 10800000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "sa valeur atteint 10,8 milliards d'euros en 2024 | représenter un marché de 11 milliards d'euros",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Taux moyen actuel des commissions côté commerçant (bas)",
+            "low": 4,
+            "high": 4,
+            "unit": "%",
+            "quote": "les commissions sur la face acceptation avoisinent 4 % en moyenne",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Taux actuel des commissions côté commerçant (haut)",
+            "low": 5,
+            "high": 5,
+            "unit": "%",
+            "quote": "les commissions et frais supportés par les commerçants atteignent aujourd’hui environ 5 % des montants encaissés",
+            "source": "amendement n°22 | https://www.senat.fr/amendements/2026-2027/142/Amdt_22.html"
+          },
+          {
+            "name": "Taux négocié via une organisation professionnelle (restaurateurs)",
+            "low": 3,
+            "high": 3,
+            "unit": "%",
+            "quote": "Les restaurateurs sont toutefois susceptibles d'obtenir des taux plus avantageux - autour de 3 % - en adhérant à une organisation professionnelle",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Part du titre dans le CA des restaurants",
+            "low": 15,
+            "high": 15,
+            "unit": "% du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendement n°24 | https://www.senat.fr/amendements/2026-2027/142/Amdt_24.html"
+          },
+          {
+            "name": "Part du titre dans le CA de la grande distribution",
+            "low": 1,
+            "high": 1,
+            "unit": "% du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendement n°24 | https://www.senat.fr/amendements/2026-2027/142/Amdt_24.html"
+          },
+          {
+            "name": "Part de marché individuelle de chacun des 4 grands émetteurs (dont Edenred France)",
+            "low": 10,
+            "high": 40,
+            "unit": "%",
+            "quote": "with individual market share being between 10 and 40%",
+            "source": "Autorité de la concurrence, avis 23-A-16 du 12/10/2023 (communiqué) | https://www.autoritedelaconcurrence.fr/en/press-release/meal-vouchers-autorite-de-la-concurrence-issues-opinion-government"
+          },
+          {
+            "name": "Plafond 2 %",
+            "low": 2,
+            "high": 2,
+            "unit": "%",
+            "quote": "un plafonnement obligatoire déterminé par la loi d’une borne maximale de 2 %",
+            "source": "amendement n°14 | https://www.senat.fr/amendements/2026-2027/142/Amdt_14.html"
+          },
+          {
+            "name": "Plafond 2,5 %",
+            "low": 2.5,
+            "high": 2.5,
+            "unit": "%",
+            "quote": "il est proposé de fixer un plafond fixé à 2,5 % du montant réglé au moyen de titres‑restaurant",
+            "source": "amendement n°4 | https://www.senat.fr/amendements/2026-2027/142/Amdt_4.html"
+          },
+          {
+            "name": "Plafond 3 %",
+            "low": 3,
+            "high": 3,
+            "unit": "%",
+            "quote": "il est proposé de fixer un plafond fixé à 3 % du montant réglé au moyen de titres‑restaurant",
+            "source": "amendement n°5 | https://www.senat.fr/amendements/2026-2027/142/Amdt_5.html"
+          }
+        ],
+        "not_computable": "Le total est une enveloppe de toutes les variantes chiffrables (plafond 3 % au plus doux, 2 % au plus strict). Sans taux dans la loi (n° 3 rect., 23), le montant dépend du décret : non chiffrable. Montant brut : les émetteurs peuvent reporter une partie de la baisse sur les frais facturés aux employeurs, et l'Autorité de la concurrence note qu'un plafond peut faire remonter vers lui les taux inférieurs."
+      }
     },
     {
       "number": "27",
@@ -478,7 +1380,77 @@
         "Dématérialisation obligatoire repoussée à 2031",
         "Dématérialisation obligatoire repoussée à 2030 (repli)",
         "Dématérialisation obligatoire repoussée à 2029 (repli)"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Tant que des titres papier circulent, les salariés en perdent bien plus qu'en carte (titres périmés) ; leur contre-valeur revient à l'employeur. Repousser l'obligation de dématérialisation prolonge ces pertes des salariés au profit des employeurs, et l'activité des imprimeurs de titres.",
+        "winners": [
+          "Employeurs (contre-valeur des titres périmés)",
+          "Imprimeurs de titres papier (18.12Z, non chiffré)"
+        ],
+        "losers": [
+          "Salariés bénéficiaires de titres papier"
+        ],
+        "total_eur_per_year": {
+          "low": 0,
+          "high": 45045000
+        },
+        "you": {
+          "sign": "neutre",
+          "eur_per_year": null,
+          "method": "garde une offre papier ; la contre-valeur des titres périmés revient à l'employeur, pas à l'émetteur (amendement n° 32)"
+        },
+        "parameters": [
+          {
+            "name": "Titres perdus ou périmés (contre-valeur, 2024)",
+            "low": 54600000.0,
+            "high": 54600000.0,
+            "unit": "€/an",
+            "quote": "leur contre-valeur totale atteignait 54,6 millions d'euros en 2024, soit 0,5 % de la valeur agrégée du millésime",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Part des titres perdus qui sont des titres papier (2024)",
+            "low": 86,
+            "high": 86,
+            "unit": "% des pertes",
+            "quote": "86 % de ce montant était concentré sur les titres-restaurant papier, qui ne représentent pourtant que 20 % du marché la même année",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Part du papier dans le marché (2024)",
+            "low": 20,
+            "high": 20,
+            "unit": "% de la valeur émise",
+            "quote": "86 % de ce montant était concentré sur les titres-restaurant papier, qui ne représentent pourtant que 20 % du marché la même année",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Valeur faciale des titres émis en 2024",
+            "low": 10800000000.0,
+            "high": 10800000000.0,
+            "unit": "€/an",
+            "quote": "sa valeur atteint 10,8 milliards d'euros en 2024",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Recul spontané du papier",
+            "low": 10,
+            "high": 10,
+            "unit": "points de part de marché par an",
+            "quote": "le titre-restaurant papier perd depuis lors environ 10 points de part de marché par an",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Destinataire des titres perdus",
+            "low": 0,
+            "high": 0,
+            "unit": "-",
+            "quote": "un titre non utilisé à l’échéance est définitivement perdu et sa contre‑valeur revient à l’employeur",
+            "source": "amendement n°32 | https://www.senat.fr/amendements/2026-2027/142/Amdt_32.html"
+          }
+        ],
+        "not_computable": "Haut de fourchette : surcroît de titres perdus si le papier restait à 20 % du marché (niveau 2024) : taux de perte papier ≈ 2.17 % contre ≈ 0.09 % en carte. Bas = 0 : au rythme de −10 points par an, le papier pourrait avoir disparu spontanément en 2028. Les coûts des commerçants et le chiffre d'affaires des imprimeurs ne sont pas chiffrables faute de source."
+      }
     },
     {
       "number": "32",
@@ -510,7 +1482,118 @@
       "effects": [
         "Titres valables sans limite de durée",
         "Validité portée à 3 ans ; titres périmés versés au budget social et culturel"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Les titres non utilisés à l'échéance sont perdus pour le salarié ; sans date limite (n° 32) ou avec 3 ans et contre-valeur au budget des activités sociales et culturelles (n° 33), cette valeur reste aux salariés et est dépensée chez les commerçants au lieu de revenir à l'employeur.",
+        "winners": [
+          "Salariés bénéficiaires",
+          "Budget des activités sociales et culturelles / CSE (n° 33)",
+          "Restaurants et commerces qui encaissent les titres"
+        ],
+        "losers": [
+          "Employeurs qui récupèrent la contre-valeur des titres périmés (selon n° 32)"
+        ],
+        "total_eur_per_year": {
+          "low": 7644000,
+          "high": 54600000
+        },
+        "you": {
+          "sign": "gain",
+          "eur_per_year": null,
+          "method": "Commission ~4 % sur le volume supplémentaire remboursé : 0,3 à 2,3 M€/an pour l'ensemble des émetteurs ; la part de marché d'Edenred n'est pas sourcée. n° 33 autorise des prélèvements par décret."
+        },
+        "parameters": [
+          {
+            "name": "Titres perdus ou périmés par an (2024)",
+            "low": 54600000.0,
+            "high": 54600000.0,
+            "unit": "€/an",
+            "quote": "Cela représentait 54,6 millions d’euros en 2024, soit 0,5 % de la valeur des titres émis, dont 86 % sur les seuls titres papier.",
+            "source": "amendment n°32"
+          },
+          {
+            "name": "Part des titres périmés venant du papier",
+            "low": 0.86,
+            "high": 0.86,
+            "unit": "part",
+            "quote": "dont 86 % sur les titres papier, qui ne représentent que 20 % du marché",
+            "source": "amendment n°33"
+          },
+          {
+            "name": "Destination actuelle de la contre-valeur",
+            "low": null,
+            "high": null,
+            "unit": "texte",
+            "quote": "un titre non utilisé à l’échéance est définitivement perdu et sa contre‑valeur revient à l’employeur.",
+            "source": "amendment n°32"
+          },
+          {
+            "name": "Argument de la commission (borne basse : papier supprimé)",
+            "low": null,
+            "high": null,
+            "unit": "texte",
+            "quote": "supprimé en commission au motif que la dématérialisation rendrait la mesure sans effet",
+            "source": "amendment n°33"
+          },
+          {
+            "name": "Valeur des titres émis par an",
+            "low": 8500000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022",
+            "source": "amendment n°4"
+          },
+          {
+            "name": "Valeur des titres émis par an (2026, borne haute)",
+            "low": 11000000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "six millions de salariés, onze milliards d’euros de titres",
+            "source": "amendment n°1"
+          },
+          {
+            "name": "Poids du titre dans le CA des restaurants",
+            "low": 0.15,
+            "high": 0.15,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Poids du titre dans le CA de la grande distribution",
+            "low": 0.01,
+            "high": 0.01,
+            "unit": "part du CA",
+            "quote": "le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution",
+            "source": "amendment n°24"
+          },
+          {
+            "name": "Commission des émetteurs sur les montants remboursés",
+            "low": 0.04,
+            "high": 0.042,
+            "unit": "part",
+            "quote": "Quatre émetteurs se partagent plus de 99 % du marché et prélèvent environ 4 % aux restaurateurs et commerçants.",
+            "source": "amendment n°27"
+          },
+          {
+            "name": "Chiffre d'affaires Hippopotamus (2025)",
+            "low": 77414755,
+            "high": 77414755,
+            "unit": "€",
+            "quote": "finances.2025.ca = 77414755",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=322566043&per_page=1"
+          },
+          {
+            "name": "Chiffre d'affaires Carrefour Hypermarchés (2025)",
+            "low": 11312154354,
+            "high": 11312154354,
+            "unit": "€",
+            "quote": "finances.2025.ca = 11312154354",
+            "source": "https://recherche-entreprises.api.gouv.fr/search?q=451321335&per_page=1"
+          }
+        ],
+        "not_computable": null
+      }
     }
   ],
   "841983828": [
@@ -544,7 +1627,42 @@
       ],
       "effects": [
         "Plateformes de livraison exclues des titres-restaurant"
-      ]
+      ],
+      "chiffrage": {
+        "mechanism": "Les salariés ne pourraient plus payer en titres le repas commandé via une plateforme ; ces dépenses se reporteraient vers la salle, la vente à emporter ou la livraison assurée par le restaurant, et la plateforme perdrait sa commission sur ces commandes.",
+        "winners": [
+          "Restaurants vendant en salle, à emporter ou livrant eux-mêmes (56.10A, 56.10C)"
+        ],
+        "losers": [
+          "Plateformes de livraison (63.12Z)",
+          "Restaurants vendant surtout via plateformes"
+        ],
+        "total_eur_per_year": null,
+        "you": {
+          "sign": "perte",
+          "eur_per_year": null,
+          "method": "perte de la commission sur les commandes payées en titres ; volume de ces commandes non publié"
+        },
+        "parameters": [
+          {
+            "name": "Valeur faciale des titres émis par an",
+            "low": 10800000000.0,
+            "high": 11000000000.0,
+            "unit": "€/an",
+            "quote": "sa valeur atteint 10,8 milliards d'euros en 2024 | représenter un marché de 11 milliards d'euros",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          },
+          {
+            "name": "Plateformes agréées comme acceptants aujourd'hui",
+            "low": 0,
+            "high": 0,
+            "unit": "plateformes principales",
+            "quote": "Les principales plateformes ne sont d'ailleurs pas agréées aujourd'hui",
+            "source": "rapport Sénat n° 141 (2026-2027) | https://www.senat.fr/rap/l26-141/l26-141_mono.html"
+          }
+        ],
+        "not_computable": "Aucune source publique trouvée sur le montant de titres-restaurant dépensés via les plateformes de livraison, ni sur le taux de commission des plateformes. Le rapport de la commission juge en outre la mesure soit déjà satisfaite (les frais de service et de livraison ne sont pas payables en titres), soit contraire au principe d'égalité."
+      }
     }
   ]
 }

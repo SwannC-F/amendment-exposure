@@ -56,6 +56,15 @@ def main(n):
     exposure = ({e["number"]: e for e in json.loads(exp_path.read_text())["amendments"]}
                 if exp_path.exists() else {})
 
+    # Sourced € estimates per measure (chiffrage_a.py / chiffrage_b.py), keyed by theme.
+    chiffrage = {}
+    for f in sorted(Path("data/chiffrage").glob("*.json")):
+        ch = json.loads(f.read_text())
+        chiffrage[ch["theme"]] = ch
+    if "Supprimer le double plafond journalier" in chiffrage:  # same file covers both sides
+        chiffrage.setdefault("Rendre effectif le double plafond journalier",
+                             chiffrage["Supprimer le double plafond journalier"])
+
     profiles_path = Path("data/profiles.json")
     if profiles_path.exists():
         profiles = json.loads(profiles_path.read_text())
@@ -93,6 +102,17 @@ def main(n):
             card["amendments"].append(i["number"])
             if i["effect"] not in card["effects"]:
                 card["effects"].append(i["effect"])
+        for card in cards.values():
+            ch = chiffrage.get(card["theme"])
+            if ch:
+                mine = ch.get("per_profile", {}).get(p["siren"], {})
+                card["chiffrage"] = {
+                    "mechanism": ch["mechanism"], "winners": ch["winners"], "losers": ch["losers"],
+                    "total_eur_per_year": ch.get("total_eur_per_year"),
+                    "you": {"sign": mine.get("sign"), "eur_per_year": mine.get("eur_per_year"),
+                            "method": mine.get("method")},
+                    "parameters": ch["parameters"], "not_computable": ch.get("not_computable"),
+                }
         feed[p["siren"]] = list(cards.values())
 
     Path(f"data/feed_{n}.json").write_text(json.dumps(feed, ensure_ascii=False, indent=2))
