@@ -25,12 +25,14 @@ MIN_TOKENS = 4000  # GLM-5.2 reasons first; a small budget leaves `content` empt
 
 
 def load_env(path=".env"):
-    p = Path(path)
-    if p.exists():
-        for line in p.read_text().splitlines():
-            if "=" in line and not line.lstrip().startswith("#"):
-                k, v = line.split("=", 1)
-                os.environ.setdefault(k.strip(), v.strip().strip('"'))
+    """Real env vars win; then ./.env (local), then /etc/secrets/.env (Render secret file)."""
+    for p in (Path(path), Path("/etc/secrets/.env")):
+        if p.exists():
+            for line in p.read_text().splitlines():
+                if "=" in line and not line.lstrip().startswith("#"):
+                    k, v = line.split("=", 1)
+                    if v.strip():  # an empty value never hides a real one
+                        os.environ.setdefault(k.strip(), v.strip().strip('"'))
 
 
 def config():
