@@ -8,6 +8,7 @@
   :root {
     --bg: #ffffff; --soft: #f5f7fb; --ink: #0b1220; --muted: #5b6475; --line: #e4e8f0;
     --accent: #1d4ed8; --accent-soft: #eaf0ff; --accent-ink: #1e3a8a;
+    --gain: #047857; --gain-soft: #e7f6ef; --loss: #b91c1c; --loss-soft: #fdecec;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
@@ -80,6 +81,27 @@
   .expo .pending::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
                            animation: pulse 1.2s ease-in-out infinite; }
   @keyframes pulse { 50% { opacity: .25; } }
+  .you { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 12px 0 0; padding: 8px 14px;
+         border-radius: 12px; font-size: 22px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2;
+         background: var(--soft); color: var(--ink); }
+  .you .lead { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; opacity: .8; }
+  .you.gain { background: var(--gain-soft); color: var(--gain); }
+  .you.perte { background: var(--loss-soft); color: var(--loss); }
+  .you .nd { font-size: 15px; font-weight: 600; opacity: .85; }
+  .total { margin: 10px 0 0; font-size: 15px; }
+  .total b { font-variant-numeric: tabular-nums; }
+  .sides { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; font-size: 13px; color: var(--muted); }
+  .sides .lab { font-weight: 700; margin-right: 2px; }
+  .sides .lab + .chip, .sides .chip + .lab { margin-left: 0; }
+  .chip.w { background: var(--gain-soft); color: var(--gain); border-color: transparent; }
+  .chip.l { background: var(--loss-soft); color: var(--loss); border-color: transparent; }
+  .sep { flex-basis: 100%; height: 0; }
+  .params { margin: 6px 0 8px; padding: 0; list-style: none; }
+  .params li { padding: 6px 0; border-top: 1px solid var(--line); }
+  .params .pv { font-weight: 700; white-space: nowrap; }
+  .params i { display: block; color: var(--muted); }
+  .params .src { font-size: 12.5px; color: var(--muted); }
+  .params a, .det a { color: var(--accent); }
   .expo .nc { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
   .expo .sector { font-size: 12.5px; color: var(--muted); margin-top: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
 
@@ -162,6 +184,35 @@ const shortName = n => n.replace(/\s*\(.*?\)\s*/g, " ").replace(/\s+/g, " ").tri
 const stripParen = s => String(s || "").replace(/\s*\(.*\)\s*$/, "").trim();
 const plural = (n, one, many) => `${n} ${n > 1 ? many : one}`;
 
+// € range, always as a range, one unit for both bounds: k€ when the high bound is under 1 M€, else M€ (1 decimal).
+const nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 });
+const nf0 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 0 });
+function eurRange(r, perYear = true) {
+  if (!r || r.low == null || r.high == null) return null;
+  const k = Math.max(Math.abs(r.low), Math.abs(r.high)) < 1e6;
+  const f = v => k ? nf0.format(v / 1e3) : nf1.format(v / 1e6);
+  const lo = f(r.low), hi = f(r.high);
+  return `${lo === hi ? lo : `${lo} – ${hi}`} ${k ? "k€" : "M€"}${perYear ? "/an" : ""}`;
+}
+function numRange(lo, hi) {
+  const big = v => Math.abs(v) >= 1e6;
+  const f = v => big(v) ? `${nf1.format(v / 1e9 >= 1 ? v / 1e9 : v / 1e6)} ${v / 1e9 >= 1 ? "Md" : "M"}` : nf1.format(v);
+  return lo === hi || hi == null ? f(lo) : `${f(lo)} – ${f(hi)}`;
+}
+// "label | https://… | label2 | https://…" → linked labels
+function sourceHtml(s) {
+  const parts = String(s || "").split(/\s*\|\s*/).filter(Boolean);
+  const out = [];
+  for (let i = 0; i < parts.length; i++) {
+    const p = parts[i];
+    if (/^https?:\/\//.test(p)) { out.push(`<a href="${esc(p)}" target="_blank" rel="noopener">lien</a>`); continue; }
+    const next = parts[i + 1];
+    if (next && /^https?:\/\//.test(next)) { out.push(`<a href="${esc(next)}" target="_blank" rel="noopener">${esc(p)}</a>`); i++; }
+    else out.push(esc(p));
+  }
+  return out.join(" · ");
+}
+
 async function load(path) {
   const r = await fetch(path, { cache: "no-store" });
   if (!r.ok) throw new Error(path);
@@ -234,7 +285,39 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
       ${ncLine}${sector}</div>`;
   }
 
+  function chiffrage(ch) {
+    if (!ch) return { main: "", det: "" };
+    const y = ch.you || {};
+    let you = "";
+    if (y.sign) {
+      const amt = eurRange(y.eur_per_year);
+      const val = y.sign === "neutre" ? "neutre"
+        : `${y.sign === "gain" ? "gain" : "perte"} ${amt ? `de ${amt}` : `<span class="nd">non chiffré${y.sign === "perte" ? "e" : ""}</span>`}`;
+      you = `<div><div class="you ${esc(y.sign)}"><span class="lead">Pour vous</span><span>${val}</span></div></div>`;
+    }
+    const tot = eurRange(ch.total_eur_per_year);
+    const total = tot ? `<p class="total">Au total : <b>${tot}</b> déplacés</p>`
+                      : `<p class="total">Au total : <b>montant non chiffrable</b></p>`;
+    const chips = (arr, cls) => (arr || []).map(x =>
+      `<span class="chip ${cls}" title="${esc(x)}">${esc(stripParen(x) || x)}</span>`).join("");
+    const sides = (ch.winners?.length || ch.losers?.length) ? `<div class="sides">
+        ${ch.winners?.length ? `<span class="lab">Gagnants :</span>${chips(ch.winners, "w")}` : ""}
+        ${ch.winners?.length && ch.losers?.length ? `<span class="sep"></span>` : ""}
+        ${ch.losers?.length ? `<span class="lab">Perdants :</span>${chips(ch.losers, "l")}` : ""}</div>` : "";
+    const params = (ch.parameters || []).map(p => `<li>${esc(p.name)} : <span class="pv">${numRange(p.low, p.high)} ${esc(p.unit || "")}</span>
+        ${p.quote ? `<i>« ${esc(p.quote)} »</i>` : ""}${p.source ? `<span class="src">Source : ${sourceHtml(p.source)}</span>` : ""}</li>`).join("");
+    const det = `
+      ${ch.mechanism ? `<p><span class="k">Mécanisme :</span> ${esc(ch.mechanism)}</p>` : ""}
+      ${y.method ? `<p><span class="k">Calcul pour vous :</span> ${esc(y.method)}</p>` : ""}
+      ${ch.not_computable ? `<p><span class="k">${tot ? "Note sur le total" : "Pourquoi non chiffrable"} :</span> ${esc(ch.not_computable)}</p>` : ""}
+      ${ch.winners?.length || ch.losers?.length ? `<p><span class="k">Gagnants :</span> ${(ch.winners || []).map(esc).join(" ; ") || "—"}<br>
+        <span class="k">Perdants :</span> ${(ch.losers || []).map(esc).join(" ; ") || "—"}</p>` : ""}
+      ${params ? `<p class="k" style="margin-bottom:0">Paramètres sourcés</p><ul class="params">${params}</ul>` : ""}`;
+    return { main: you + total + sides, det };
+  }
+
   function card(c, i) {
+    const ch = chiffrage(c.chiffrage);
     const maj = new Set(c.majority_groups || []);
     const groups = [...(c.groups || [])].sort((a, b) => maj.has(b) - maj.has(a))
       .map(g => `<span class="chip${maj.has(g) ? " maj" : ""}">${esc(GROUP(g))}</span>`).join("");
@@ -250,10 +333,12 @@ function store(key, val) { try { localStorage.setItem(key, val); } catch {} }
         <div>
           <h2>${esc(c.theme)}</h2>
           <p class="effect">${esc(c.effects[0])}${extra}</p>
+          ${ch.main}
           <div class="support"><span class="count">${c.n_groups > 1 ? `Portée par ${c.n_groups} groupes` : "Un seul groupe"}</span>${groups}${legend}</div>
           <details>
             <summary>détails</summary>
             <div class="det">
+              ${ch.det}
               <p><span class="k">Qui est concerné :</span> ${esc(c.who)}</p>
               ${c.effects.length > 1 ? `<p><span class="k">Variantes :</span> ${c.effects.map(esc).join(" · ")}</p>` : ""}
               <blockquote>« ${esc(c.quote)} »</blockquote>
