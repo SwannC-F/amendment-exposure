@@ -354,6 +354,17 @@
   .moi-src .ch { font-weight: 800; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
   .moi-src a { color: var(--accent); }
   .cta { display: inline-block; margin-top: 12px; font-weight: 700; color: #fff; background: var(--accent); border-radius: 10px; padding: 9px 14px; text-decoration: none; }
+  .peers { margin: 16px 0 6px; border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; background: #fff; }
+  .peers[hidden] { display: none; }
+  .peers h2 { font-size: 17px; margin: 0 0 2px; letter-spacing: -.01em; }
+  .peers .sub { font-size: 13px; color: var(--muted); margin: 0 0 8px; }
+  .peer { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 12px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .peer .nm { font-weight: 700; font-size: 14.5px; }
+  .peer .meta { font-size: 12.5px; color: var(--muted); }
+  .peer .ca { text-align: right; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .peer .ex { grid-column: 1 / -1; font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .peer .ex .g { color: var(--gain); font-weight: 700; } .peer .ex .p { color: var(--loss); font-weight: 700; }
+  .peer button { font: inherit; font-size: 12.5px; font-weight: 650; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; }
   .empty-company { color: var(--muted); font-size: 15px; margin: 18px 0 0; }
 </style>
 </head>
@@ -411,6 +422,7 @@
 
   <section id="v-moi" class="view" hidden>
     <section class="headline" id="moiHead" aria-live="polite"></section>
+    <section class="peers" id="peers" hidden></section>
     <div class="feed" id="moiFeed"></div>
   </section>
 
@@ -1569,6 +1581,7 @@ async function probeHealth(base, ms) {
   async function renderMoi() {
     const mh = $("moiHead"), mf = $("moiFeed");
     if (!company) {
+      $("peers").hidden = true;
       fill(mh, h("h1", null, "Ce qui me vise"));
       fill(mf, h("div", { class: "emptybox" }, "Définissez d'abord votre profil (entreprise ou code NAF) : on cherchera ensuite, dans tous les textes calculés, les mesures qui vous visent. ",
         h("a", { href: "#profil" }, "Définir mon profil →")));
@@ -1577,6 +1590,7 @@ async function probeHealth(base, ms) {
     fill(mh, h("h1", null, "Pour ", h("em", null, profName()), " : lecture de tous les textes…"));
     fill(mf);
     const engines = await loadAllEngines();
+    renderPeers(engines);
     const out = [];
     for (const e of engines) for (const m of e.measures || []) {
       const c = evaluate(m); if (c) out.push({ ...c, _text: e._t, _title: e.text?.title || e._t.title || `Texte n°${e._t.number}` });
@@ -1593,6 +1607,63 @@ async function probeHealth(base, ms) {
         h("span", null, `n°${c._text.number} · ${c._title}`), h("a", { href: textHash(c._text) }, "ouvrir le texte →")));
       return el;
     }));
+  }
+
+  /* ---------- Comparable companies: same NAF, neighbouring headcount band, closest turnover ---------- */
+  const BAND_ORDER = ["00", "01", "02", "03", "11", "12", "21", "22", "31", "32", "41", "42", "51", "52", "53"];
+  const peerCache = new Map();
+  async function findPeers(c) {
+    const key = `${c.naf}|${c.band || ""}|${c.siren || ""}`;
+    if (peerCache.has(key)) return peerCache.get(key);
+    const i = BAND_ORDER.indexOf(c.band);
+    const params = { activite_principale: c.naf, per_page: "25" };
+    if (i >= 0) params.tranche_effectif_salarie = BAND_ORDER.slice(Math.max(0, i - 1), i + 2).join(",");
+    const { results, total } = await apiSearch(params);
+    let list = results.filter(x => x.siren !== c.siren);
+    const withCa = list.filter(x => x.ca), noCa = list.filter(x => !x.ca);
+    if (c.ca) withCa.sort((a, b) => Math.abs(Math.log(a.ca / c.ca)) - Math.abs(Math.log(b.ca / c.ca)));
+    else withCa.sort((a, b) => b.ca - a.ca);
+    list = [...withCa, ...noCa].slice(0, 6);
+    const out = { list, total };
+    peerCache.set(key, out);
+    return out;
+  }
+  // same measures, same rates, their own turnover
+  function exposureFor(peer, engines) {
+    const saved = company; company = { ...peer };
+    try {
+      const cards = engines.flatMap(e => (e.measures || []).map(evaluate).filter(Boolean));
+      const sum = sign => { const xs = cards.filter(c => c.you.eur && c.you.sign === sign);
+        return xs.length ? { low: xs.reduce((s, c) => s + c.you.eur.low, 0), high: xs.reduce((s, c) => s + c.you.eur.high, 0) } : null; };
+      const dir = sign => cards.filter(c => c.you.sign === sign).length;
+      return { n: cards.length, gain: sum("gain"), perte: sum("perte"), nG: dir("gain"), nP: dir("perte") };
+    } finally { company = saved; }
+  }
+  async function renderPeers(engines) {
+    const el = $("peers");
+    if (!company || !isNaf(company.naf)) { el.hidden = true; return; }
+    el.hidden = false;
+    fill(el, h("h2", null, "Entreprises comparables"), h("p", { class: "sub" }, "Recherche dans le répertoire Sirene…"));
+    let res;
+    try { res = await findPeers(company); } catch (e) { fill(el, h("h2", null, "Entreprises comparables"), h("p", { class: "sub" }, `Recherche indisponible (${e.message || "réseau"}).`)); return; }
+    const me = company;
+    const intro = `Même code NAF ${target(me.naf)}${BANDS[me.band] ? `, effectif voisin (${BANDS[me.band]})` : ""}`
+      + `${me.ca ? ", classées par chiffre d'affaires le plus proche du vôtre" : ", classées par chiffre d'affaires"} · ${fmt(res.total)} entreprises actives dans ce périmètre.`;
+    if (!res.list.length) { fill(el, h("h2", null, "Entreprises comparables"), h("p", { class: "sub" }, `${intro} Aucune autre trouvée.`)); return; }
+    fill(el, h("h2", null, "Entreprises comparables"), h("p", { class: "sub" }, intro, " Mêmes mesures, mêmes taux, appliqués à leur CA."),
+      res.list.map(p => {
+        const x = exposureFor({ ...p }, engines);
+        return h("div", { class: "peer" },
+          h("div", null, h("div", { class: "nm" }, shortName(p.name)),
+            h("div", { class: "meta" }, `SIREN ${p.siren}`, p.city ? ` · ${p.city}` : "", BANDS[p.band] ? ` · ${BANDS[p.band]}` : "")),
+          h("div", { class: "ca" }, p.ca ? eurRange({ low: p.ca, high: p.ca }, false) : h("span", { class: "meta" }, "CA non publié"),
+            p.ca && me.ca ? h("div", { class: "meta" }, `${nf1.format(p.ca / me.ca)} × le vôtre`) : null),
+          h("div", { class: "ex" }, `${plural(x.n, "mesure", "mesures")} la visent`,
+            x.gain ? [" · ", h("span", { class: "g" }, `gains ${eurRange(x.gain)}`)] : null,
+            x.perte ? [" · ", h("span", { class: "p" }, `pertes ${eurRange(x.perte)}`)] : null,
+            !x.gain && !x.perte && (x.nG || x.nP) ? ` · ${x.nG} plutôt favorable${x.nG > 1 ? "s" : ""}, ${x.nP} plutôt défavorable${x.nP > 1 ? "s" : ""}` : null,
+            " · ", h("button", { type: "button", onclick: () => { company = p; roles = new Set(hasEmployees(p) ? ["employeurs"] : []); profileChanged(); renderMoi(); } }, "voir comme mon profil")));
+      }));
   }
 
   /* ---------- start ---------- */
