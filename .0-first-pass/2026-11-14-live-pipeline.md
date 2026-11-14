@@ -45,6 +45,10 @@ Tout est indexé par `(session, texte)`, par exemple `2026-2027/142`. Sorties da
 
 Cache LLM : `data/cache/llm/<sha256(model + prompt + entrée)>.json`, ignoré par git. Relancer sans changement ne rappelle pas le modèle.
 
+**Client LLM commun (`llm.py`)** — ajouts validés après le premier essai réel (GLM-5.2, 14/11, 11 s et 0,005 $ par amendement) :
+- **Vérification des citations après normalisation typographique** : apostrophes et guillemets courbes, espaces insécables et fines, tirets insécables, espaces multiples. Sans elle, une citation juste est rejetée (le modèle remplace ’ par ').
+- **Budget de réponse ≥ 4 000 tokens** : GLM-5.2 raisonne avant de répondre ; avec un petit budget, `content` sort vide (`finish_reason: length`). Le client relance une fois avec un budget doublé dans ce cas.
+
 ## Architecture
 
 ```
