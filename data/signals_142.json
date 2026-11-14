@@ -1,0 +1,676 @@
+[
+  {
+    "number": "1",
+    "author_group": "UCI",
+    "themes": [
+      "Sanctionner le rachat frauduleux"
+    ],
+    "same_theme_amendments": [],
+    "groups": [
+      "UCI"
+    ],
+    "n_groups": 1,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "2",
+    "author_group": "RDSE",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "22",
+      "23",
+      "29",
+      "3 rect.",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "3 rect.",
+    "author_group": "UCI",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "23",
+      "29",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "4",
+    "author_group": "SER",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "23",
+      "29",
+      "3 rect.",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "5",
+    "author_group": "SER",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "23",
+      "29",
+      "3 rect.",
+      "4",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "6",
+    "author_group": "Les Républicains",
+    "themes": [
+      "Supprimer le double plafond journalier"
+    ],
+    "same_theme_amendments": [
+      "10",
+      "16"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains"
+    ],
+    "n_groups": 3,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "7",
+    "author_group": "Les Républicains",
+    "themes": [
+      "Utilisation le dimanche"
+    ],
+    "same_theme_amendments": [
+      "12",
+      "16",
+      "31"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains",
+      "UNT"
+    ],
+    "n_groups": 4,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "9",
+    "author_group": "CRCE-K",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "23",
+      "29",
+      "3 rect.",
+      "4",
+      "5"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "10",
+    "author_group": "CRCE-K",
+    "themes": [
+      "Supprimer le double plafond journalier"
+    ],
+    "same_theme_amendments": [
+      "16",
+      "6"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains"
+    ],
+    "n_groups": 3,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "11",
+    "author_group": "CRCE-K",
+    "themes": [
+      "Négociation syndicale avant mise en place"
+    ],
+    "same_theme_amendments": [],
+    "groups": [
+      "CRCE-K"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "12",
+    "author_group": "CRCE-K",
+    "themes": [
+      "Utilisation le dimanche"
+    ],
+    "same_theme_amendments": [
+      "16",
+      "31",
+      "7"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains",
+      "UNT"
+    ],
+    "n_groups": 4,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "13",
+    "author_group": "CRCE-K",
+    "themes": [
+      "Maintien pendant les congés familiaux"
+    ],
+    "same_theme_amendments": [
+      "18"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "14",
+    "author_group": "GEST",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "2",
+      "22",
+      "23",
+      "29",
+      "3 rect.",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "15",
+    "author_group": "GEST",
+    "themes": [
+      "Titre-restaurant bonifié (bio, durable)"
+    ],
+    "same_theme_amendments": [],
+    "groups": [
+      "GEST"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "16",
+    "author_group": "GEST",
+    "themes": [
+      "Supprimer le double plafond journalier",
+      "Utilisation le dimanche"
+    ],
+    "same_theme_amendments": [
+      "10",
+      "12",
+      "31",
+      "6",
+      "7"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains",
+      "UNT"
+    ],
+    "n_groups": 4,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "17",
+    "author_group": "GEST",
+    "themes": [
+      "Pôle public d'émission (ANCV)"
+    ],
+    "same_theme_amendments": [
+      "27",
+      "37"
+    ],
+    "groups": [
+      "GEST"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "18",
+    "author_group": "GEST",
+    "themes": [
+      "Maintien pendant les congés familiaux"
+    ],
+    "same_theme_amendments": [
+      "13"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "19",
+    "author_group": "RDSE",
+    "themes": [
+      "Rendre effectif le double plafond journalier"
+    ],
+    "same_theme_amendments": [],
+    "groups": [
+      "RDSE"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "20",
+    "author_group": "RDSE",
+    "themes": [
+      "Limiter aux repas et fruits et légumes"
+    ],
+    "same_theme_amendments": [
+      "24"
+    ],
+    "groups": [
+      "GEST",
+      "RDSE"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "21 rect.",
+    "author_group": "RDSE",
+    "themes": [
+      "Exclure les plateformes de livraison"
+    ],
+    "same_theme_amendments": [
+      "26"
+    ],
+    "groups": [
+      "GEST",
+      "RDSE"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "22",
+    "author_group": "RDSE",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "23",
+      "29",
+      "3 rect.",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "23",
+    "author_group": "RDSE",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "29",
+      "3 rect.",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "24",
+    "author_group": "GEST",
+    "themes": [
+      "Limiter aux repas et fruits et légumes"
+    ],
+    "same_theme_amendments": [
+      "20"
+    ],
+    "groups": [
+      "GEST",
+      "RDSE"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "26",
+    "author_group": "GEST",
+    "themes": [
+      "Exclure les plateformes de livraison"
+    ],
+    "same_theme_amendments": [
+      "21 rect."
+    ],
+    "groups": [
+      "GEST",
+      "RDSE"
+    ],
+    "n_groups": 2,
+    "majority_groups": []
+  },
+  {
+    "number": "27",
+    "author_group": "GEST",
+    "themes": [
+      "Pôle public d'émission (ANCV)"
+    ],
+    "same_theme_amendments": [
+      "17",
+      "37"
+    ],
+    "groups": [
+      "GEST"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "28",
+    "author_group": "UCI",
+    "themes": [
+      "Commissions plafonnées pour les associations"
+    ],
+    "same_theme_amendments": [],
+    "groups": [
+      "UCI"
+    ],
+    "n_groups": 1,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "29",
+    "author_group": "UCI",
+    "themes": [
+      "Plafonner les commissions des émetteurs"
+    ],
+    "same_theme_amendments": [
+      "14",
+      "2",
+      "22",
+      "23",
+      "3 rect.",
+      "4",
+      "5",
+      "9"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "RDSE",
+      "SER",
+      "UCI"
+    ],
+    "n_groups": 5,
+    "majority_groups": [
+      "UCI"
+    ]
+  },
+  {
+    "number": "31",
+    "author_group": "UNT",
+    "themes": [
+      "Utilisation le dimanche"
+    ],
+    "same_theme_amendments": [
+      "12",
+      "16",
+      "7"
+    ],
+    "groups": [
+      "CRCE-K",
+      "GEST",
+      "Les Républicains",
+      "UNT"
+    ],
+    "n_groups": 4,
+    "majority_groups": [
+      "Les Républicains"
+    ]
+  },
+  {
+    "number": "32",
+    "author_group": "UNT",
+    "themes": [
+      "Durée de validité des titres"
+    ],
+    "same_theme_amendments": [
+      "33"
+    ],
+    "groups": [
+      "UNT"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "33",
+    "author_group": "UNT",
+    "themes": [
+      "Durée de validité des titres"
+    ],
+    "same_theme_amendments": [
+      "32"
+    ],
+    "groups": [
+      "UNT"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "34",
+    "author_group": "UNT",
+    "themes": [
+      "Repousser la fin des titres papier"
+    ],
+    "same_theme_amendments": [
+      "35",
+      "36"
+    ],
+    "groups": [
+      "UNT"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "35",
+    "author_group": "UNT",
+    "themes": [
+      "Repousser la fin des titres papier"
+    ],
+    "same_theme_amendments": [
+      "34",
+      "36"
+    ],
+    "groups": [
+      "UNT"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "36",
+    "author_group": "UNT",
+    "themes": [
+      "Repousser la fin des titres papier"
+    ],
+    "same_theme_amendments": [
+      "34",
+      "35"
+    ],
+    "groups": [
+      "UNT"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  },
+  {
+    "number": "37",
+    "author_group": "GEST",
+    "themes": [
+      "Pôle public d'émission (ANCV)"
+    ],
+    "same_theme_amendments": [
+      "17",
+      "27"
+    ],
+    "groups": [
+      "GEST"
+    ],
+    "n_groups": 1,
+    "majority_groups": []
+  }
+]

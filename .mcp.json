@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "hemicycle": {
+      "type": "http",
+      "url": "https://api.hemicycle.ai/mcp"
+    }
+  }
+}

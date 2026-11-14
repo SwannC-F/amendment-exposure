@@ -1,0 +1,1525 @@
+[
+  {
+    "number": "1",
+    "article": "art. add. après Article 1er",
+    "author": "Mme Nathalie GOULET",
+    "author_group": "UCI",
+    "on_behalf_of": "",
+    "filed": "2026-11-09",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’article 1 er Insérer un article additionnel ainsi rédigé : I. – Après l’article L. 3262‑3 du code du travail, il est inséré un article L. 3262‑3‑... ainsi rédigé : « Art. L. 3262‑3‑.... – Le fait, pour une personne ou un organisme acceptant des titres‑restaurant, de les accepter en contrepartie d’une somme d’argent ou de présenter au remboursement des titres‑restaurant qui n’ont pas servi au paiement de ses propres ventes est passible d’une amende administrative dont le montant ne peut excéder 15 000 euros ou, si ce montant est plus élevé, le double de la valeur libératoire des titres‑restaurant en cause. Cette amende est prononcée dans les conditions prévues au chapitre II du titre II du livre V du code de la consommation. Ces manquements sont recherchés et constatés par les agents de la concurrence, de la consommation et de la répression des fraudes, qui disposent à cet effet des pouvoirs définis à la section 1, aux sous‑sections 1 à 5 de la section 2 ainsi qu’à la section 3 du chapitre II du titre I er du livre V du même code. « L’émetteur de titres‑restaurant qui a connaissance de tels faits suspend sans délai l’acceptation de ses titres par la personne ou l’organisme en cause et en informe la Commission nationale des titres‑restaurant. Celle‑ci en avise les autres émetteurs de titres‑restaurant et, lorsque les faits sont susceptibles de relever du blanchiment de capitaux, le service mentionné à l’article L. 561‑23 du code monétaire et financier. » II. – Le I entre en vigueur le premier jour du troisième mois suivant celui de la promulgation de la présente loi.",
+    "purpose": "Un titre‑restaurant n’est pas convertissable en argent liquide. C’est pourtant ce que font les commerces de façade qui rachètent au rabais les titres de salariés, ou les encaissent pour le compte de tiers, puis les présentent au remboursement comme s’ils avaient servi des repas. Dès son rapport d’activité pour 2012, Tracfin (traitement du renseignement et action contre les circuits financiers clandestins) relevait des anomalies « pouvant laisser supposer l’existence d’un système de rachat de titres‑restaurants dans le secteur de la restauration », ces titres offrant une liquidité utilisable pour le blanchiment. L’enjeu est considérable : six millions de salariés, onze milliards d’euros de titres et plus de trois milliards d’euros par an d’avantages sociaux et fiscaux, qui n’ont d’autre justification que le repas du salarié (commission des affaires sociales du Sénat, novembre 2026). La sanction en vigueur est pourtant une contravention de la quatrième classe, soit 750 euros au plus (article R. 3262‑46 du code du travail). Le présent amendement punit l’échange de titres contre de l’argent et la présentation au remboursement de titres étrangers aux ventes du commerçant d’une amende administrative pouvant atteindre le double de la valeur des titres en cause, prononcée selon la procédure que la commission a retenue pour les autres manquements du texte. Il oblige l’émetteur à couper l’acceptation et à prévenir la Commission nationale des titres‑restaurant, qui avertit les autres émetteurs, afin qu’un fraudeur exclu par l’un ne soit pas accueilli par l’autre, et saisit Tracfin en cas de blanchiment. Il s’applique sans attendre la dématérialisation de 2028 : la fraude, elle, n’attend pas. Il se rattache directement à l’article 1 er , qui fixe les conditions d’acceptation des titres‑restaurant, et ne crée aucune charge publique.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_1.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Commerces et restaurants qui rachètent des titres contre de l'argent (fraude)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Amende administrative jusqu'à 15 000 € (ou double de la valeur des titres)",
+      "themes": [
+        "Sanctionner le rachat frauduleux"
+      ],
+      "quote": "Le fait, pour une personne ou un organisme acceptant des titres‑restaurant, de les accepter en contrepartie d’une somme d’argent"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "2",
+    "article": "Article 1er",
+    "author": "M. GOLD",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-10",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Rédiger ainsi cette phrase : Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l’acceptation et du remboursement des titres‑restaurant ainsi que d’une rémunération normale de cette activité.",
+    "purpose": "Cet amendement vise à rendre obligatoire le plafonnement des commissions et frais imposés aux commerçants qui acceptent le titre‑restaurant, plafond maximal fixé à 2,5 %. Le marché de l’émission des titres‑restaurant est très concentré. Face à quelques grands émetteurs, les restaurateurs indépendants et les petits commerces alimentaires n’ont presque aucun moyen de négocier. Ils subissent des commissions, des frais de service et des délais de remboursement qui pèsent de plus en plus sur leur trésorerie. Dans les communes rurales et les petites villes, où ces commerces font vivre les centres‑bourgs, certains finissent par refuser les titres. Les salariés qui y travaillent ou y vivent perdent alors une partie de l’utilité de cet avantage.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_2.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "ne peut être supérieur à 2,5 %"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "3 rect.",
+    "article": "Article 1er",
+    "author": "M. CANÉVET",
+    "author_group": "UCI",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas,",
+    "purpose": "Le titre‑restaurant constitue un outil essentiel de pouvoir d’achat pour plus de six millions de salariés. Son efficacité repose néanmoins sur son acceptation par un réseau suffisamment large de restaurants et de commerces alimentaires. Le texte transmis au Sénat prévoit actuellement que la somme des commissions, frais et rémunérations supportés par les commerçants « peut être plafonnée » par décret en Conseil d’État. Cette rédaction ouvre une possibilité au Gouvernement sans garantir qu’un plafond sera effectivement mis en place. Le présent amendement de repli vise donc à rendre obligatoire la fixation de ce plafond, tout en laissant au pouvoir réglementaire le soin d’en déterminer le niveau par décret en Conseil d’État, après avis de l’Autorité de la concurrence. Il conserve ainsi la souplesse prévue par le texte, notamment la possibilité de tenir compte des coûts supportés par les émetteurs et de différencier le plafond selon les caractéristiques objectives des opérations d’acceptation. Cette évolution permettrait de garantir l’effectivité du dispositif, de préserver le réseau d’acceptation des titres‑restaurant et, par conséquent, le pouvoir d’achat des salariés qui en bénéficient.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_3.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond des commissions rendu obligatoire (taux fixé par décret)",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "rendre obligatoire la fixation de ce plafond"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "4",
+    "article": "Article 1er",
+    "author": "Mme ROLANDO",
+    "author_group": "SER",
+    "on_behalf_of": "groupe Socialiste, Écologiste et Républicain",
+    "filed": "2026-11-11",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Rédiger ainsi cette phrase : Le montant total des frais, des commissions et des rémunérations, directs ou indirects, perçus par un émetteur de titres‑restaurant auprès des personnes ou des organismes mentionnés au deuxième alinéa de l’article L. 3262‑3 est plafonné à un taux déterminé par décret, dans la limite de 2,5 % du montant réglé au moyen de titres‑restaurant.",
+    "purpose": "Cet amendement du groupe Socialiste, Ecologiste et Républicain vise à mieux réguler le marché des titres restaurants qui repose aujourd’hui sur des acteurs dominants au détriment d’un partage de la valeur produite entre les différents acteurs économiques, et en particulier les restaurateurs. Créés à la fin des années 1960, les titres‑restaurant sont aujourd’hui utilisés par plus de 5 millions de salariés auprès d’environ 234 000 commerçants. Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022 et le dispositif bénéficie d’environ 1,5 milliard d’euros de soutien public annuel. Dans son avis du 12 octobre 2023, l’Autorité de la concurrence a relevé la très forte concentration du marché, les quatre principaux émetteurs représentant plus de 99 % du marché en 2022. Elle constate également une hausse des commissions supportées par les commerçants et un « glissement » de la rémunération des émetteurs vers la face acceptation. Entre 2018 et 2022, les commissions sur les titres dématérialisés sont ainsi passées de 4,10 % à 4,20 % chez Edenred, de 4,39 % à 4,55 % chez Sodexo et de 4,10 % à 4,25 % chez Bimpli. Afin de rééquilibrer les relations entre émetteurs et commerçants, il est proposé de fixer un plafond fixé à 2,5 % du montant réglé au moyen de titres‑restaurant. Tel est l’objet de cet amendement.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_4.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "dans la limite de 2,5 % du montant réglé au moyen de titres‑restaurant"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "5",
+    "article": "Article 1er",
+    "author": "Mme ROLANDO",
+    "author_group": "SER",
+    "on_behalf_of": "groupe Socialiste, Écologiste et Républicain",
+    "filed": "2026-11-11",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Rédiger ainsi cette phrase : Le montant total des frais, des commissions et des rémunérations, directs ou indirects, perçus par un émetteur de titres‑restaurant auprès des personnes ou des organismes mentionnés au deuxième alinéa de l’article L. 3262‑3 est plafonné à un taux déterminé par décret, dans la limite de 3 % du montant réglé au moyen de titres‑restaurant.",
+    "purpose": "Cet amendement de repli du groupe Socialiste, Écologiste et Républicain vise à mieux réguler le marché des titres restaurants qui repose aujourd’hui sur des acteurs dominants au détriment d’un partage de la valeur produite entre les différents acteurs économiques, et en particulier les restaurateurs. Créés à la fin des années 1960, les titres‑restaurant sont aujourd’hui utilisés par plus de 5 millions de salariés auprès d’environ 234 000 commerçants. Leur valeur faciale totale s’élevait à près de 8,5 milliards d’euros en 2022 et le dispositif bénéficie d’environ 1,5 milliard d’euros de soutien public annuel. Dans son avis du 12 octobre 2023, l’Autorité de la concurrence a relevé la très forte concentration du marché, les quatre principaux émetteurs représentant plus de 99 % du marché en 2022. Elle constate également une hausse des commissions supportées par les commerçants et un « glissement » de la rémunération des émetteurs vers la face acceptation. Entre 2018 et 2022, les commissions sur les titres dématérialisés sont ainsi passées de 4,10 % à 4,20 % chez Edenred, de 4,39 % à 4,55 % chez Sodexo et de 4,10 % à 4,25 % chez Bimpli. Afin de rééquilibrer les relations entre émetteurs et commerçants, il est proposé de fixer un plafond fixé à 3 % du montant réglé au moyen de titres‑restaurant. Tel est l’objet de cet amendement.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_5.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 3 % (repli)",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "dans la limite de 3 % du montant réglé au moyen de titres‑restaurant"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "6",
+    "article": "Article 1er",
+    "author": "M. DOUSSOT",
+    "author_group": "Les Républicains",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéas 38 et 39 Supprimer ces alinéas.",
+    "purpose": "Cet amendement supprime la modulation du plafond journalier d’utilisation du titre‑restaurant introduite en commission prévoyant la majoration du plafond pour les repas consommés au restaurant, les produits alimentaires directement consommables et les fruits ou légumes. Ce dispositif pénaliserait d’abord les salariés. La présente proposition de loi définit le titre comme permettant d’acquitter le prix d’un repas ou de tout produit alimentaire permettant de préparer un repas. Les salariés, qui financent jusqu’à la moitié de leurs titres, doivent rester libres de choisir comment se nourrir pendant leur journée de travail. Réduire le plafond applicable aux produits à cuisiner pénaliserait les salariés qui préparent eux‑mêmes leur repas, notamment en télétravail ou lorsque leur budget est contraint, mais aussi en l’absence de restaurant à proximité, notamment dans les territoires ruraux. Un plafond inférieur réduirait la part de ces achats payable en titres‑restaurant et les obligerait à mobiliser davantage leur budget personnel. Cela orienterait aussi leurs achats vers des produits transformés, au risque de compromettre leur équilibre alimentaire. Ce régime différencié serait en outre incohérent et incompréhensible pour le salarié : une courgette ou une banane relèverait du plafond majoré, mais pas un œuf ou un paquet de pâtes. Il serait enfin difficile à appliquer. Distinguer les produits éligibles des produits non éligibles ne revient pas à gérer deux plafonds au sein d’un même panier, tout en tenant compte des utilisations successives du titre dans la journée. Le plafond journalier est aujourd’hui contrôlé par l’émetteur, sur l’ensemble des paiements effectués dans la journée, quel que soit le lieu d’utilisation du titre. Avec des plafonds différenciés, chaque paiement devrait être ventilé entre deux catégories de produits et transmis comme tel à l’émetteur, ce que les systèmes de paiement actuels ne permettent pas. Ce dispositif nécessiterait donc des adaptations des systèmes de caisse et de paiement des grandes surfaces, des magasins de proximité et des métiers de bouche. Pour les salariés, le montant effectivement utilisable deviendrait plus difficile à comprendre et à anticiper, multipliant les incompréhensions en caisse. Le lien entre le titre et le repas du salarié est déjà garanti par l’attribution d’un titre par repas compris dans l’horaire de travail journalier et par l’exclusion, par décret, des produits ne répondant pas aux besoins du repas. Quant aux difficultés des restaurateurs, elles tiennent d’abord au niveau des commissions prélevées par les émetteurs : 34 % des restaurateurs et commerçants assimilés déclarent avoir déjà refusé les titres‑restaurant pour cette raison (sondage Viavoice pour le CoReCT, juillet 2025). C’est sur ce levier que le texte doit agir.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_6.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Supermarchés et commerces alimentaires (plafond unique conservé) ; restaurants (perdent le plafond majoré)",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Supprime le double plafond journalier",
+      "themes": [
+        "Supprimer le double plafond journalier"
+      ],
+      "quote": "Alinéas 38 et 39 Supprimer ces alinéas."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "7",
+    "article": "Article 1er",
+    "author": "M. DOUSSOT",
+    "author_group": "Les Républicains",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’alinéa 39 Insérer un alinéa ainsi rédigé : « Art. L. 3262‑5‑.... – Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires, auprès de toute personne ou de tout organisme mentionné au deuxième alinéa de l’article L. 3262‑3. »",
+    "purpose": "Cet amendement rétablit, en la limitant au dimanche, la possibilité d’utiliser les titres‑restaurant introduite par l’Assemblée nationale et supprimée par la commission. La règle actuelle, fixée à l’article R. 3262‑8 du code du travail, réserve l’usage du titre le dimanche et les jours fériés aux salariés qui travaillent, sur décision de l’employeur, alors que le titre est utilisable le samedi par tous, y compris par les salariés qui ne travaillent pas ce jour‑là. Cette restriction ne correspond plus à l’organisation des salariés : beaucoup préparent leurs déjeuners de la semaine à partir de courses faites le week‑end, en particulier depuis le développement du télétravail. De nombreux salariés profitent ainsi du dimanche pour faire leurs courses et préparer leurs repas de la semaine de travail. Dès lors que la proposition de loi pérennise l’achat de produits alimentaires permettant de préparer un repas, il serait incohérent de leur interdire d’utiliser leurs titres au moment où ils organisent précisément ces repas. Le jour de l’achat ne détermine pas le jour de consommation : des ingrédients achetés le dimanche peuvent servir aux déjeuners des jours travaillés. Les bénéficiaires, qui contribuent directement au financement de leurs titres, doivent pouvoir choisir le moment le plus adapté pour effectuer leurs achats. Cette restriction est d’ailleurs appliquée de manière hétérogène, le rapport de la commission relevant lui‑même que certains employeurs autorisent déjà indifféremment l’usage du titre le dimanche (rapport n° 141 (2026‑2027) de Mme Frédérique Puissat, au nom de la commission des affaires sociales, page 39). Cette mesure répond ainsi aux besoins des salariés et est souhaitée par eux. Pour autant, cette souplesse d’usage ne modifie pas l’économie du dispositif. Un titre reste attribué par repas compris dans l’horaire de travail journalier, dans la limite du plafond journalier, et les produits ne répondant pas aux besoins du repas demeurent exclus. Seul le jour d’utilisation est assoupli, sans incidence sur le nombre de titres ni sur leur régime social et fiscal. La mesure bénéficiera aussi aux restaurants ouverts le dimanche. Le Gouvernement a d’ailleurs annoncé son intention de permettre cette évolution.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_7.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres utilisables le dimanche par tous les salariés",
+      "themes": [
+        "Utilisation le dimanche"
+      ],
+      "quote": "Les titres‑restaurant peuvent être utilisés le dimanche par l’ensemble des salariés bénéficiaires"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "9",
+    "article": "Article 1er",
+    "author": "M. GAY",
+    "author_group": "CRCE-K",
+    "on_behalf_of": "groupe CRCE - Kanaky",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Rédiger ainsi cette phrase : Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l’acceptation et du remboursement des titres‑restaurant ainsi que d’une rémunération normale de cette activité.",
+    "purpose": "Le présent amendement vise à plafonner à 2,5 % l’ensemble des commissions et frais prélevés par les émetteurs de titres‑restaurant auprès des restaurateurs et des commerçants. Le marché des titres‑restaurant reste dominé par quatre grands émetteurs. Dans ce système profondément déséquilibré, les restaurateurs et les commerçants supportent des commissions et des frais qui peuvent représenter près de 5 % des montants encaissés. Cette situation pèse particulièrement sur les artisans, les restaurateurs et les commerces de proximité, dont les marges sont déjà fragilisées. Il n’est pas acceptable qu’une part aussi importante de la valeur des titres‑restaurant soit captée par des intermédiaires, au détriment de ceux qui produisent, préparent et vendent les produits alimentaires. Cette situation menace également les salariés : face au poids croissant de ces commissions, certains commerçants risquent de renoncer à accepter les titres‑restaurant, réduisant ainsi les possibilités de les utiliser. Un dispositif destiné à soutenir le pouvoir d’achat des salariés ne doit pas servir à alimenter les marges des grands émetteurs.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_9.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "ne peut être supérieur à 2,5 %"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "10",
+    "article": "Article 1er",
+    "author": "M. GAY",
+    "author_group": "CRCE-K",
+    "on_behalf_of": "groupe CRCE - Kanaky",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéas 38 et 39 Supprimer ces alinéas.",
+    "purpose": "Le présent amendement vise à supprimer le double plafond journalier d’utilisation des titres‑restaurant introduit par la commission des affaires sociales. Ce dispositif prévoit un plafond majoré pour les repas, les produits directement consommables et les fruits et légumes, et un plafond inférieur pour les autres produits alimentaires. Cette distinction risque de pénaliser les salariés qui utilisent leurs titres pour acheter des produits de première nécessité, comme les pâtes, le riz, la farine ou l’huile, et de compliquer leurs courses, alors que l’élargissement de l’usage alimentaire répond à la hausse durable des prix. Le soutien aux restaurateurs est nécessaire, mais il ne doit pas se traduire par de nouvelles restrictions imposées aux salariés. La réforme doit avant tout s’attaquer aux commissions prélevées par les émetteurs et aux déséquilibres du marché, plutôt que de limiter les possibilités d’achat des salariés. La suppression du double plafond ne remet en cause ni la pérennisation de l’utilisation des titres‑restaurant pour l’ensemble des produits alimentaires éligibles, ni le plafond journalier fixé par voie réglementaire.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_10.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Supermarchés et commerces alimentaires (plafond unique conservé) ; restaurants (perdent le plafond majoré)",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Supprime le double plafond journalier",
+      "themes": [
+        "Supprimer le double plafond journalier"
+      ],
+      "quote": "Alinéas 38 et 39 Supprimer ces alinéas."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "11",
+    "article": "Article 1er",
+    "author": "M. GAY",
+    "author_group": "CRCE-K",
+    "on_behalf_of": "groupe CRCE - Kanaky",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’alinéa 24 Insérer trois alinéas ainsi rédigés : « Art. L. 3262‑1‑.... – Dans les entreprises pourvues d’au moins un délégué syndical, l’employeur engage, préalablement à la mise en place des titres‑restaurant, à leur suppression ou à toute modification de sa participation à leur financement, une négociation avec les organisations syndicales de salariés représentatives dans l’entreprise. « Cette négociation porte sur la valeur des titres‑restaurant, la répartition de leur financement entre l’employeur et les salariés et les conditions de leur attribution. « En l’absence de délégué syndical, le comité social et économique, lorsqu’il existe, est informé et consulté préalablement à ces décisions. » ;",
+    "purpose": "Cet amendement vise à associer les représentants des salariés aux décisions relatives aux titres‑restaurant. Cofinancés par l’employeur et par le salarié, les titres‑restaurant sont un avantage social facultatif : leur attribution, leur valeur et la part prise en charge par l’employeur pèsent directement sur le budget des salariés. Leur réforme doit donc s’accompagner d’un renforcement du dialogue social dans l’entreprise. L’amendement impose une négociation avec les organisations syndicales représentatives avant la mise en place des titres‑restaurant, leur suppression ou toute modification de la participation de l’employeur. Cette négociation porte sur leur valeur, la répartition de leur financement et leurs conditions d’attribution. En l’absence de délégué syndical, le comité social et économique, lorsqu’il existe, doit être préalablement informé et consulté. En donnant prise aux représentants des salariés sur ces décisions, l’amendement vise aussi à éviter que l’amélioration des titres‑restaurant ne tienne lieu de revalorisation salariale.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_11.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Employeurs ayant au moins un délégué syndical (tous secteurs)",
+      "sectors": [],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Négociation obligatoire avant de mettre en place, supprimer ou modifier les titres",
+      "themes": [
+        "Négociation syndicale avant mise en place"
+      ],
+      "quote": "Dans les entreprises pourvues d’au moins un délégué syndical"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "12",
+    "article": "Article 1er",
+    "author": "M. GAY",
+    "author_group": "CRCE-K",
+    "on_behalf_of": "groupe CRCE - Kanaky",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 39 Rédiger ainsi cet alinéa : « Art. L. 3262‑5‑2. – Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés. »",
+    "purpose": "Le présent amendement vise à rétablir la possibilité d’utiliser les titres‑restaurant tous les jours de la semaine, y compris les dimanches et les jours fériés, conformément à la disposition adoptée par l’Assemblée nationale. Les habitudes de travail et de consommation ont évolué. De nombreux salariés travaillent selon des horaires décalés, le week‑end ou en télétravail. Il apparaît donc contradictoire de pérenniser l’utilisation des titres‑restaurant pour les courses alimentaires tout en maintenant des restrictions sur les jours où ces achats peuvent être effectués. Cette évolution ne remet pas en cause les conditions d’attribution des titres‑restaurant, qui demeurent liées aux journées travaillées. Elle permet simplement aux salariés d’utiliser plus librement les titres dont ils disposent. Il s’agit ainsi de préserver le pouvoir d’achat des salariés et de leur laisser davantage de liberté dans l’utilisation de leurs titres‑restaurant.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_12.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres utilisables tous les jours, dimanches et fériés compris",
+      "themes": [
+        "Utilisation le dimanche"
+      ],
+      "quote": "Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "13",
+    "article": "Article 2 bis (Supprimé)",
+    "author": "M. GAY",
+    "author_group": "CRCE-K",
+    "on_behalf_of": "groupe CRCE - Kanaky",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Rétablir cet article dans la rédaction suivante : L’attribution de titres‑restaurant ne peut être interrompue durant les périodes d’absence et de congé de maternité mentionnées aux articles L. 1225‑16 à L. 1225‑28 du code du travail, de congé de paternité et d’accueil de l’enfant mentionnées aux articles L. 1225‑35 à L. 1225‑36 du même code, de congé d’adoption mentionnées aux articles L. 1225‑37 à L. 1225‑46‑1 dudit code et de congé supplémentaire de naissance mentionnées aux articles L. 1225‑46‑2 à L. 1225‑46‑7 du même code.",
+    "purpose": "Cet amendement vise à rétablir le maintien des titres‑restaurant pendant les congés de maternité, de paternité et d’accueil de l’enfant, d’adoption et de naissance, tel qu’adopté par l’Assemblée nationale (article 2 bis), puis supprimé par la commission. L’arrivée d’un enfant entraîne des dépenses supplémentaires pour les familles, alors même que leurs revenus peuvent baisser pendant ces congés. La suppression des titres‑restaurant ajoute une perte de pouvoir d’achat à ces contraintes. Il serait paradoxal que l’exercice d’un droit à congé lié à la naissance ou à l’adoption d’un enfant entraîne la perte de cet avantage. Ces congés étant majoritairement pris par des femmes, cette perte pèse d’abord sur elles. Cet amendement s’inscrit donc dans une logique de protection du pouvoir d’achat et d’égalité entre les salariés, notamment entre les femmes et les hommes.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_13.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Employeurs qui attribuent des titres-restaurant (tous secteurs)",
+      "sectors": [],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres maintenus pendant les congés maternité, paternité, adoption, naissance",
+      "themes": [
+        "Maintien pendant les congés familiaux"
+      ],
+      "quote": "L’attribution de titres‑restaurant ne peut être interrompue durant les périodes d’absence et de congé de maternité"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "14",
+    "article": "Article 1er",
+    "author": "M. GONTARD",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15, première phrase Remplacer les mots : peut être par le mot : est II. – Alinéa 16, première phrase Après le mot : pourcentage insérer les mots : , qui ne peut excéder 2 %,",
+    "purpose": "Cet amendement propose d’encadrer strictement les commissions prélevées aux restaurateurs et commerçants assimilés par les émetteurs de titres‑restaurants. Aujourd’hui, les commissions imposées par les émetteurs historiques atteignent des niveaux de 4 à 5 %, et parfois plus. Ces taux, appliqués initialement pour la gestion des titres papier, sont totalement injustifiés pour la simple gestion d’un moyen de paiement, d’autant plus dans un système voué à être 100 % dématérialisé comme le propose la présente proposition de loi. Les marges des petits commerces étant particulièrement contraintes, cette charge financière est devenue insoutenable. Près de 89 % d’entre eux envisagent aujourd’hui de refuser ce moyen de paiement, ce qui menacerait directement l’accès à ce droit pour les salariés. Dans les faits, de nombreux restaurateurs refusent déjà ce mécanisme de paiement dont ils sont censés être les premiers bénéficiaires. L’Assemblée nationale a adopté un permettant au Gouvernement de plafonner l’ensemble des commissions, frais et rémunérations par décret en Conseil d’État, après avis de l’Autorité de la concurrence. En commission au Sénat, la rapporteur a ajouté que ce plafonnement devait être envisagé sur la base d’une moyenne des coûts supportés par les émetteurs. Or, ce n’est pas suffisant pour protéger les restaurateurs et les petits commerçants. Ce plafonnement n’a rien d’automatique et demeure seulement une arme de dissuasion dans les mains du Gouvernement, qui, sur le principe, fait confiance au marché pour s’auto‑réguler, ce qu’il n’a jamais su faire. Au contraire... Ces dernières années, les émetteurs de titres‑restaurant n’ont cessé d’augmenter le niveau de commission facturé aux restaurateurs et vendeurs d’alimentation. Si elles oscillaient entre 1 et 2 % jusqu’en février 2023, la privatisation du secteur et la délégation du paiement aux sociétés Eenred, Up, Bimpli et Sodexo a conduit à un triplement des frais. La « mise en marché »... a signifié une cartellisation, au profit exclusif des grands monopoles qui se sont entendus sur les prix, en témoigne leur condamnation récente. Non seulement les commerçants doivent multiplier les envois en enveloppe sécurisée, ce qui leur ponctionne un temps de travail précieux, mais en plus ils doivent s’acquitter de 3 à 5 % de frais de commission. Ce, sans même présumer de frais fixes ou d’engagements obligatoires. En conséquence, accepter les titres‑restaurant coûte de plus en plus cher ! C’est une rente indue et inacceptable, qui conduit un nombre croissant de commerçants à cesser de les accepter, à leur détriment et à celui des salariés bénéficiaires de titres‑restaurant. Comme de nombreuses autres commissions, les commissions sur les titres‑restaurant doivent être plafonnées par la loi. Cet amendement propose donc une mesure claire efficace largement demandée par les restaurateurs : un plafonnement obligatoire déterminé par la loi d’une borne maximale de 2 %.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_14.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "qui ne peut excéder 2 %"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "15",
+    "article": "Article 1er",
+    "author": "M. GONTARD",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Après l’alinéa 24 Insérer quatre alinéas ainsi rédigés : « Art. L. 3262‑1‑5. – Le titre‑restaurant bonifié constitue une modalité particulière du titre‑restaurant mentionné à l’article L. 3262‑1, par laquelle l’employeur accorde au salarié une bonification de la valeur libératoire de ce titre. « La bonification, prise en charge par l’employeur, est utilisée par le salarié pour l’acquisition de produits issus de l’agriculture biologique ou d’autres produits contribuant aux objectifs de santé publique et de transition agroécologique mentionnés au II de l’article L. 1 du code rural et de la pêche maritime. « Lorsque l’employeur a mis en place le titre‑restaurant bonifié, celui‑ci est attribué au salarié qui en fait la demande, dans les mêmes conditions que le titre‑restaurant. « Un décret fixe les conditions d’émission et d’utilisation du titre‑restaurant bonifié, les catégories de produits éligibles à la bonification, les conditions de son utilisation auprès des commerces de détail alimentaire et des établissements de restauration ainsi que les modalités de contrôle. » II. – Compléter cet article par un paragraphe ainsi rédigé : .... – À la première phrase du dernier alinéa de l’article L. 124‑13 du code de l’éducation, après le mot : « travail », sont insérés les mots : « ainsi qu’aux titres‑restaurant bonifiés prévus à l’article L. 3262‑1‑5 du même code ». III. – Pour compenser la perte de recettes résultant du I, compléter cet article par un paragraphe ainsi rédigé : .... – La perte de recettes résultant pour l’État du présent article est compensée, à due concurrence, par la création d’une taxe additionnelle à l’accise sur les tabacs prévue au chapitre IV du titre I er du livre III du code des impositions sur les biens et services.",
+    "purpose": "Le présent amendement, inspiré d’un travail transpartisan de nos collègues députés, a pour objet d’inscrire dans le code du travail le principe d’un titre restaurant bonifié (TRB), conçu comme une modalité particulière du titre‑restaurant destinée à favoriser une alimentation plus durable. Son objet est exclusivement de créer la base législative du titre‑restaurant bonifié afin de conforter juridiquement son existence dans le cadre de la réforme des titres‑restaurant actuellement examinée par le Parlement. Le titre‑restaurant bonifié est un titre‑restaurant qui permet au salarié de bénéficier d’un complément lorsqu’il l’utilise pour acheter des produits durables dans un commerce alimentaire. Ce complément, financé par l’employeur, vise à rendre ces achats plus accessibles et à soutenir le pouvoir d’achat durable des salariés. En dehors de ces achats, le titre fonctionne comme un titre‑restaurant “classique”. Le dispositif est facultatif : l’employeur peut le proposer et le salarié reste libre de choisir entre un titre‑restaurant “classique” et un titre‑restaurant bonifié. Il est à noter que le dispositif est conçu pour fonctionner dans le cadre fiscal et social existant, sans créer de droit nouveau ni élargir les dispositifs d’exonération en vigueur. Toute évolution de ce cadre destinée à renforcer l’incitation relèverait de la loi de finances et de la loi de financement de la sécurité sociale. Conformément au partage des compétences entre la loi et le règlement, les modalités d’application du dispositif sont renvoyées à un décret. Celui‑ci déterminera notamment les catégories de produits pouvant être acquis en plus des produits issus de l’agriculture biologique, les conditions d’utilisation du titre, les modalités de contrôle ainsi que les règles applicables aux commerces de détail alimentaire et aux établissements de restauration. Enfin, l’article L. 124‑13 du code de l’éducation ouvre au stagiaire l’accès au restaurant d’entreprise ou aux titres‑restaurant prévus à l’article L. 3262‑1 du code du travail, dans les mêmes conditions que les salariés de l’organisme d’accueil.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_15.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Commerces de produits bio et durables ; employeurs volontaires (bonification à leur charge)",
+      "sectors": [
+        {
+          "naf": "47.29Z",
+          "label": "Autres commerces de détail alimentaires (dont magasins bio)"
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Crée un titre-restaurant bonifié pour les produits bio ou durables",
+      "themes": [
+        "Titre-restaurant bonifié (bio, durable)"
+      ],
+      "quote": "Le titre‑restaurant bonifié constitue une modalité particulière du titre‑restaurant"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "16",
+    "article": "Article 1er",
+    "author": "M. GONTARD",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 4 Compléter cet alinéa par une phrase ainsi rédigée : L’utilisation des titres‑restaurant n’est limitée à aucun montant maximal journalier. II. – Alinéa 39 Rédiger ainsi cet alinéa : « Art. L. 3262‑5‑2. – Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés. »",
+    "purpose": "Aujourd’hui les titres‑restaurants sont limités à un plafond d’utilisation de 25 € par jour. La rapporteur propose en commission d’introduire un double‑plafond différencié en fonction du type de produits. Cette proposition nous semble inutilement complexe. Afin de faciliter le quotidien des salariés et des commerçants, cet amendement propose l’inverse : la suppression du plafond d’utilisation des titres‑restaurants. La protection des commerçants et restaurateurs passe par un encadrement des commissions réclamées par les émetteurs de titres‑restaurants et non par la mise en place de plafonds d’utilisation définis arbitrairement et compliquant le quotidien des salariés. Dans la même logique de simplification de la vie des salarié.es, cet amendement vise à rétablir la possibilité ouverte par l’Assemblée nationale d’utiliser les titres restaurants le week‑end et le jours fériés. Qu’il s’agisse d’aller au restaurant le week‑end plutôt qu’en semaine ou de prendre en compte les nouveaux usages de travail et d’organisation personnelle. Ainsi un salarié peut préférer faire ses courses au marché le dimanche ou un jour férié pour préparer dans la foulée certains de ses repas de la semaine à manger sur son lieu de travail ou en télétravail. Ces dispositions s’inscrivent totalement dans la philosophie de cette proposition de moi visant à moderniser l’usage des titres et à simplifier la vie des salariés.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_16.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Supermarchés et commerces alimentaires (plus de plafond journalier, ouverture le dimanche)",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Supprime tout plafond journalier + utilisation tous les jours",
+      "themes": [
+        "Supprimer le double plafond journalier",
+        "Utilisation le dimanche"
+      ],
+      "quote": "L’utilisation des titres‑restaurant n’est limitée à aucun montant maximal journalier."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "17",
+    "article": "art. add. après Article 4",
+    "author": "M. GONTARD",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’article 4 Insérer un article additionnel ainsi rédigé : Dans un délai de douze mois à compter de la promulgation de la présente loi, le Gouvernement remet au Parlement un rapport étudiant l’opportunité de confier le monopole de l’émission et du remboursement des titres‑restaurants à un nouvel établissement public à caractère industriel et commercial : l’Agence nationale pour le titre‑restaurant construit sur le modèle de l’Agence nationale pour les chèques-vacances.",
+    "purpose": "Instituée par le ministère du Temps libre en 1982 pour favoriser le départ en vacances des salariés, l’Agence nationale du chèque‑vacances est un établissement public qui gère le chèque‑vacances. Entièrement autofinancée par son activité commerciale, l’Agence nationale du chèque‑vacances propose aux commerçants des taux de commissions transparents et plus faibles que ceux pratiqués par les opérateurs de titres‑restaurants. À ces commissions réduites, les excédents de l’activité chèque‑vacances permettent à l’ANCV de financer pour plusieurs dizaines de millions d’euros par an des associations qui permettent aux plus fragiles de partir en vacances. Dans un souci d’amélioration de la politique publique et prenant acte de ce qui fonctionne et de ce qui dysfonctionne, il pourrait être intéressant de transformer le système du titre‑restaurant en s’inspirant du modèle du chèque‑vacances. Concrètement, il serait donné le monopole de l’émission et du remboursement des titres‑restaurants à un nouvel établissement public à caractère industriel et commercial : l’Agence nationale pour le titre‑restaurant (ANTR). Cet amendement propose qu’un rapport étudie cette piste inspirée par la proposition de notre collègue Boris Tavernier visant à reprendre en main et moderniser le système du titre‑restaurant en s’inspirant du chèque‑vacances.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_17.html",
+    "criteria": {
+      "criteria_found": false,
+      "who": "Émetteurs (simple demande de rapport sur un monopole public)",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Rapport au Parlement sous 12 mois : aucune obligation directe",
+      "themes": [
+        "Pôle public d'émission (ANCV)"
+      ],
+      "quote": "le Gouvernement remet au Parlement un rapport"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "18",
+    "article": "Article 2 bis (Supprimé)",
+    "author": "M. GONTARD",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Rétablir cet article dans la rédaction suivante : L’attribution de titres‑restaurant ne peut être interrompue durant les périodes d’absence et de congé de maternité mentionnées aux articles L. 1225‑16 à L. 1225‑28 du code du travail, de congé de paternité et d’accueil de l’enfant mentionnées aux articles L. 1225‑35 à L. 1225‑36 du même code, de congé d’adoption mentionnées aux articles L. 1225‑37 à L. 1225‑46‑1 dudit code et de congé supplémentaire de naissance mentionnées aux articles L. 1225‑46‑2 à L. 1225‑46‑7 du même code.",
+    "purpose": "En commission la rapporteur a supprimé cet article adopté à l’Assemblée nationale sur proposition du groupe Écologiste et Social. Les auteurs et autrices de cet amendement souhaite rétablir la disposition visant à maintenir l’attribution des titres‑restaurants aux salariés durant le congé maternité, paternité et d’accueil de l’enfant, d’adoption et durant le congé supplémentaire de naissance. Aujourd’hui, sauf dispositifs conventionnels ou accords d’entreprises plus favorables, l’attribution des titres‑restaurants est suspendue dans le cadre de ces congés. Maintenir la fourniture de titres‑restaurants aux jeunes parents permettrait pourtant de consolider leur pouvoir d’achat alimentaire à un moment charnière de leur vie.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_18.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Employeurs qui attribuent des titres-restaurant (tous secteurs)",
+      "sectors": [],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres maintenus pendant les congés maternité, paternité, adoption, naissance",
+      "themes": [
+        "Maintien pendant les congés familiaux"
+      ],
+      "quote": "L’attribution de titres‑restaurant ne peut être interrompue durant les périodes d’absence et de congé de maternité"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "19",
+    "article": "Article 1er",
+    "author": "Mme Nathalie DELATTRE",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 39 Remplacer cet alinéa par six alinéas ainsi rédigés : « Art. L. 3262‑5‑2. L’utilisation des titres‑restaurant est soumise à un plafond journalier différencié selon la nature des produits ou prestations acquis. « Le plafond journalier applicable aux produits alimentaires autres que les repas, les produits alimentaires directement consommables et les fruits et légumes ne peut être supérieur à la valeur faciale minimale d’un titre‑restaurant permettant de bénéficier de l’exonération maximale de la contribution patronale lorsque celle‑ci représente 60 % de la valeur du titre, conformément au 19° de l’article 81 du code général des impôts. « Le plafond journalier applicable aux repas, aux produits alimentaires directement consommables et aux fruits et légumes est au moins égal au double du plafond applicable aux autres produits alimentaires. « Le décret en Conseil d’État prévu à l’article L. 3262‑7 fixe le montant de chacun de ces plafonds et précise les modalités de leur application, et ce dans le respect des limites prévues au présent article. « Les émetteurs de titres‑restaurant et les personnes ou organismes qui les acceptent mettent en œuvre les dispositifs techniques nécessaires au respect des plafonds prévus au présent article. « Par dérogation au premier alinéa de l’article 3 de la présente loi, l’article L. 3262‑5‑2 du code du travail, dans sa rédaction résultant de la présente loi, entre en vigueur à une date fixée par décret et au plus tard le 1 er juin 2027. À compter de cette date, il s’applique à l’utilisation de l’ensemble des titres‑restaurant en cours de validité. »",
+    "purpose": "Le présent amendement vise à garantir l’effectivité du double plafond journalier d’utilisation des titres‑restaurant introduit par la commission des affaires sociales du Sénat, afin de préserver la vocation première de ce dispositif. Le titre‑restaurant a été créé pour permettre aux salariés de financer leur repas pendant leur journée de travail. Son régime social et fiscal favorable trouve sa justification dans cette finalité spécifique. L’extension de son utilisation à l’ensemble des produits alimentaires, initialement instaurée à titre exceptionnel pour soutenir le pouvoir d’achat des salariés dans un contexte de forte inflation, ne doit pas conduire à transformer durablement le titre‑restaurant en un moyen de paiement destiné aux courses alimentaires courantes. Si l’instauration d’un double plafond constitue une première réponse à cette évolution, son efficacité suppose que les montants retenus soient suffisamment différenciés et que leur encadrement soit garanti par la loi. En effet, à défaut de limites législatives, le pouvoir réglementaire pourrait fixer un plafond de 25 euros pour les produits alimentaires non directement consommables et un plafond de 50 euros pour la restauration. Une telle situation respecterait formellement le principe d’un double plafond, mais ne modifierait en rien les possibilités actuelles d’utilisation des titres‑restaurant dans la grande distribution. Le présent amendement propose donc de fixer une limite maximale au plafond applicable aux produits alimentaires non directement consommables, en le rattachant à une référence objective et évolutive : la valeur faciale minimale d’un titre‑restaurant permettant de bénéficier de l’exonération maximale de la contribution patronale, lorsque celle‑ci représente 60 % de la valeur du titre. À titre d’illustration, cette référence correspond à 12,20 euros en 2026. L’amendement prévoit également que le plafond applicable aux repas et aux produits directement consommables soit au moins deux fois supérieur à celui applicable aux autres produits alimentaires. Cette différenciation vise à encourager une utilisation régulière des titres‑restaurant pour la prise de repas pendant la journée de travail, notamment lors de la pause déjeuner, plutôt que leur accumulation en vue de dépenses alimentaires plus importantes. Elle contribue également à préserver l’activité des entreprises de restauration, particulièrement des établissements indépendants et de proximité, dont le modèle économique repose notamment sur la fréquentation régulière des salariés à l’heure du déjeuner. Le présent amendement permet ainsi de concilier la préservation du pouvoir d’achat des salariés avec la vocation sociale du titre‑restaurant, tout en garantissant que le double plafond ne puisse être vidé de sa substance par voie réglementaire.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_19.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants (plafond majoré pour les repas) ; supermarchés (plafond réduit pour les produits à cuisiner)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Rend effectif le double plafond : moins pour les courses, plus pour les repas",
+      "themes": [
+        "Rendre effectif le double plafond journalier"
+      ],
+      "quote": "L’utilisation des titres‑restaurant est soumise à un plafond journalier différencié selon la nature des produits ou prestations acquis."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "20",
+    "article": "Article 1er",
+    "author": "Mme Nathalie DELATTRE",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 4 Remplacer les mots : de tout produit alimentaire permettant de préparer un repas, à l’exception des catégories de produits alimentaires ne répondant pas aux besoins du repas des salariés déterminées par décret par les mots : de préparations alimentaires directement consommables, ainsi que de fruits et légumes, qu’ils soient ou non directement consommables II. – Alinéas 38 et 39 Supprimer ces alinéas.",
+    "purpose": "Le présent amendement vise à supprimer la pérennisation de l’utilisation des titres‑restaurant pour l’achat de l’ensemble des produits alimentaires, afin de préserver la finalité originelle de ce dispositif et de rétablir les conditions d’une concurrence équilibrée entre les différents acteurs de l’alimentation. Le titre‑restaurant n’a jamais été conçu comme un instrument général de financement des dépenses alimentaires des ménages. Il constitue un avantage social spécifique, destiné à permettre aux salariés de prendre en charge tout ou partie du coût de leur repas pendant leur journée de travail, notamment lorsque leur employeur ne dispose pas d’un restaurant d’entreprise. C’est précisément cette finalité qui justifie le régime social et fiscal favorable dont il bénéficie. L’élargissement de son utilisation à l’ensemble des produits alimentaires, introduit en 2022 dans un contexte exceptionnel de forte inflation, répondait à une préoccupation légitime de protection du pouvoir d’achat des salariés. Toutefois, cette mesure avait été conçue comme temporaire. Sa pérennisation modifierait durablement la nature et la destination du titre‑restaurant, sans qu’une évaluation suffisamment approfondie de ses conséquences économiques et sociales ait permis d’en mesurer tous les effets. Sur le plan économique, cette évolution constitue un facteur de déséquilibre majeur pour le secteur de la restauration. Les restaurateurs sont soumis à des contraintes structurelles spécifiques : coûts de main‑d’œuvre élevés, charges d’exploitation, investissements dans les équipements, obligations sanitaires, exigences de qualification et de service, ainsi que contraintes liées aux horaires d’ouverture. Ils ne peuvent être placés sur un pied d’égalité avec les acteurs de la grande distribution, dont le modèle économique, les volumes d’achat et les structures de coûts sont profondément différents. En permettant l’utilisation indifférenciée des titres‑restaurant pour financer les courses alimentaires courantes, le dispositif organise un transfert progressif de dépenses initialement destinées à la restauration vers d’autres circuits de distribution. Cette évolution fragilise particulièrement les établissements indépendants, les restaurants de proximité et les commerces de restauration implantés dans les centres‑villes et les territoires ruraux, qui contribuent pourtant directement à l’emploi local, à l’animation économique et à l’attractivité des territoires. Elle intervient alors même que les entreprises de restauration sont confrontées à une augmentation durable de leurs coûts d’exploitation et à une forte pression sur leurs marges. Sur le plan social, la pérennisation du « tout alimentaire » soulève également une question de cohérence et d’équité. Le titre‑restaurant bénéficie d’un financement partagé entre l’employeur et le salarié, assorti d’exonérations de cotisations sociales et d’avantages fiscaux. Ces avantages sont justifiés par l’objectif précis de participation aux frais de repas des salariés. Transformer progressivement ce dispositif en instrument général de pouvoir d’achat reviendrait à étendre l’usage d’un avantage social dérogatoire au‑delà de sa justification initiale, sans débat global sur son financement, son coût pour les finances publiques et son articulation avec les autres politiques de soutien au pouvoir d’achat. Une telle évolution pourrait, à terme, fragiliser la légitimité du régime social et fiscal du titre‑restaurant, au détriment des salariés comme des employeurs. Il convient également de rappeler que le soutien au pouvoir d’achat constitue un objectif de politique publique qui doit bénéficier à l’ensemble des ménages, et non reposer principalement sur le détournement d’un dispositif initialement destiné au financement du repas des salariés. Le présent amendement ne remet pas en cause les préoccupations légitimes de pouvoir d’achat. Il vise à distinguer les mesures exceptionnelles justifiées par un contexte économique particulier des règles structurelles qui doivent gouverner durablement le fonctionnement du titre‑restaurant. La dérogation temporaire permettant l’achat de produits alimentaires non directement consommables, prolongée jusqu’au 31 décembre 2027 par l’article 4 de la présente proposition de loi, demeure ainsi applicable pendant cette période. À compter de 2028, le titre‑restaurant retrouverait sa vocation initiale, en permettant le financement des repas, des préparations alimentaires directement consommables ainsi que des fruits et légumes. Ce recentrage permettrait de préserver un dispositif social utile aux salariés, de soutenir l’activité des restaurateurs et de garantir une utilisation cohérente des avantages sociaux et fiscaux qui lui sont attachés. Il répond enfin à l’objectif même de la présente proposition de loi : moderniser le titre‑restaurant sans en dénaturer la finalité et rééquilibrer durablement son fonctionnement au bénéfice de l’ensemble des acteurs concernés.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_20.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Supermarchés (perdent les achats de produits à cuisiner) ; primeurs (fruits et légumes conservés) ; restaurants",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement",
+      "themes": [
+        "Limiter aux repas et fruits et légumes"
+      ],
+      "quote": "de préparations alimentaires directement consommables, ainsi que de fruits et légumes"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "21 rect.",
+    "article": "Article 1er",
+    "author": "Mme Nathalie DELATTRE",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-13",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 4 Après le mot : consommation insérer les mots : , à l’exclusion des contrats conclus par l’intermédiaire d’une plateforme de mise en relation par voie électronique mentionnée à l’article 242 bis du code général des impôts",
+    "purpose": "Le présent amendement vise à exclure les plateformes de mise en relation par voie électronique du champ des professionnels habilités à accepter les titres‑restaurant, afin de préserver la vocation première de ce dispositif et de tenir compte des contraintes économiques supportées par les restaurateurs. Le titre‑restaurant constitue un avantage social destiné à permettre aux salariés de financer leur repas pendant leur journée de travail. Son régime social et fiscal favorable se justifie par cette finalité spécifique et par son utilisation auprès des professionnels de la restauration et du commerce alimentaire. Or, le développement des plateformes numériques de livraison s’accompagne d’une multiplication des intermédiaires et des commissions prélevées sur les commandes. Pour les restaurateurs, le paiement d’une commande livrée par titres‑restaurant peut ainsi constituer une véritable double peine économique : ils doivent supporter, pour une même transaction, les commissions prélevées par la plateforme de livraison, auxquelles s’ajoutent celles facturées par les émetteurs de titres‑restaurant. Ce cumul de commissions réduit directement la marge réalisée sur les repas vendus, alors même que les restaurateurs assument l’intégralité des coûts liés à leur préparation : achats de matières premières, charges de personnel, loyers, énergie et autres frais d’exploitation. Cette situation est particulièrement préjudiciable aux établissements indépendants et de proximité, dont les marges sont déjà fortement contraintes et qui ne disposent pas toujours du volume d’activité nécessaire pour négocier des conditions tarifaires avantageuses. Il apparaît dès lors essentiel de ne pas accentuer, par le biais d’un dispositif bénéficiant d’un régime social et fiscal favorable, les déséquilibres économiques susceptibles de résulter de l’intervention de plusieurs intermédiaires dans la commercialisation d’un même repas. Le présent amendement entend également rappeler que les plateformes de mise en relation ne sauraient être assimilées aux établissements qui préparent et fournissent effectivement les repas. Leur activité d’intermédiation, distincte de celle des restaurateurs, ne justifie pas qu’elles bénéficient du même régime d’habilitation à accepter les titres‑restaurant. Il ne s’agit pas de remettre en cause le développement de la vente à distance ou de la livraison de repas, qui répondent à l’évolution des habitudes de consommation, mais de garantir que l’utilisation des titres‑restaurant demeure encadrée et directement rattachée aux professionnels auxquels ce dispositif est destiné. En excluant explicitement les plateformes de mise en relation du champ des professionnels habilités, le présent amendement vise ainsi à préserver la cohérence économique et sociale du titre‑restaurant, à éviter l’accumulation des coûts d’intermédiation pesant sur les restaurateurs et à soutenir l’activité des établissements de restauration, notamment indépendants, qui participent à l’emploi et à la vitalité des territoires.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_21.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Plateformes de livraison (exclues) ; restaurants qui vendent en livraison",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Plateformes de livraison de repas (pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plateformes de livraison exclues des titres-restaurant",
+      "themes": [
+        "Exclure les plateformes de livraison"
+      ],
+      "quote": "à l’exclusion des contrats conclus par l’intermédiaire d’une plateforme de mise en relation par voie électronique"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "22",
+    "article": "Article 1er",
+    "author": "M. DAUBET",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Rédiger ainsi cette phrase : Ce pourcentage, fixé par le décret mentionné au premier alinéa du présent I, ne peut être supérieur à 2,5 % et est établi en tenant compte des coûts supportés par les émetteurs au titre de l’acceptation et du remboursement des titres‑restaurant ainsi que d’une rémunération normale de cette activité.",
+    "purpose": "Le titre-restaurant constitue un outil essentiel de pouvoir d’achat pour plus de six millions de salariés. Son efficacité repose toutefois sur l’existence d’un réseau d’acceptation suffisamment large de restaurants et de commerces alimentaires. Or, les commissions et frais supportés par les commerçants atteignent aujourd’hui environ 5 % des montants encaissés et fragilisent progressivement l’acceptation du titre-restaurant. Le texte transmis au Sénat prévoit la possibilité d’un plafonnement par décret, mais sa rédaction actuelle ne garantit ni sa mise en œuvre effective ni un niveau de plafond suffisamment protecteur. Le présent amendement vise donc à rendre ce plafonnement obligatoire et à inscrire dans la loi une borne maximale de 2,5 %. Le Gouvernement conserverait la possibilité de fixer, par décret en Conseil d’État pris après avis de l’Autorité de la concurrence, un taux inférieur à cette borne, en tenant compte des coûts supportés par les émetteurs au titre de l’acceptation et du remboursement des titres ainsi que d’une rémunération normale de cette activité. Cette solution concilie ainsi la fixation par le Parlement d’une garantie maximale avec la souplesse nécessaire au pouvoir réglementaire pour déterminer le niveau effectivement applicable. Elle permettrait de préserver les marges des restaurateurs et commerçants, de maintenir un réseau d’acceptation large sur l’ensemble du territoire et, par conséquent, de garantir durablement le pouvoir d’achat attaché au titre-restaurant pour les salariés.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_22.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "ne peut être supérieur à 2,5 %"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "23",
+    "article": "Article 1er",
+    "author": "M. DAUBET",
+    "author_group": "RDSE",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas,",
+    "purpose": "Le titre‑restaurant constitue un outil essentiel de pouvoir d’achat pour plus de six millions de salariés. Son efficacité repose néanmoins sur son acceptation par un réseau suffisamment large de restaurants et de commerces alimentaires. Le texte transmis au Sénat prévoit actuellement que la somme des commissions, frais et rémunérations supportés par les commerçants « peut être plafonnée » par décret en Conseil d’État. Cette rédaction ouvre une possibilité au Gouvernement sans garantir qu’un plafond sera effectivement mis en place. Le présent amendement de repli vise donc à rendre obligatoire la fixation de ce plafond, tout en laissant au pouvoir réglementaire le soin d’en déterminer le niveau par décret en Conseil d’État, après avis de l’Autorité de la concurrence. Il conserve ainsi la souplesse prévue par le texte, notamment la possibilité de tenir compte des coûts supportés par les émetteurs et de différencier le plafond selon les caractéristiques objectives des opérations d’acceptation. Cette évolution permettrait de garantir l’effectivité du dispositif, de préserver le réseau d’acceptation des titres‑restaurant et, par conséquent, le pouvoir d’achat des salariés qui en bénéficient.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_23.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond des commissions rendu obligatoire (taux fixé par décret)",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "rendre obligatoire la fixation de ce plafond"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "24",
+    "article": "Article 1er",
+    "author": "Mme SOUYRIS",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 4 Remplacer les mots : de tout produit alimentaire permettant de préparer un repas, à l’exception des catégories de produits alimentaires ne répondant pas aux besoins du repas des salariés déterminées par décret par les mots : de préparations alimentaires directement consommables ou de fruits et légumes, qu’ils soient ou non directement consommables",
+    "purpose": "Cet amendement refuse de pérenniser l’usage du titre‑restaurant pour toute denrée alimentaire. Créé en 1967 pour financer le repas pris pendant la journée de travail, le titre deviendrait un bon d’achat alimentaire général. Les partenaires sociaux n’avaient admis cette extension qu’à titre exceptionnel, pendant la crise sanitaire. Elle a ensuite été prolongée depuis 2022 au nom de l’inflation. La pérenniser ferait du titre un complément de salaire exempté de cotisations, réservé à environ un salarié sur cinq et profitant d’abord à la grande distribution. La part des restaurateurs dans la valeur des titres est passée de 46,5 % fin 2022 à 34,3 % début 2026. Un complément de salaire finit taxé comme tel : le PLFSS 2026 proposait déjà une contribution patronale de 8 %. La réponse à la vie chère passe par les salaires et les minima sociaux. L’amendement maintient l’usage pour les fruits et légumes, cohérent avec le plafond majoré retenu par la commission. La première dérogation, en pleine crise sanitaire, avait été approuvée par les quatre collèges de la Commission nationale des titres‑restaurant (CNTR), pour que les salariés ne perdent pas leurs droits. Les prolongations suivantes se sont faites contre l’avis de ces quatre collèges. Faire du titre de la pause déjeuner un soutien au pouvoir d’achat en fait un substitut de salaire, qui ne justifie plus son exemption d’assiette sociale et fiscale, comme l’a rappelé la Cour des comptes. Face à la déflation salariale et à la hausse du nombre de travailleurs pauvres, la réponse est le retour à l’échelle mobile des salaires, pas un titre‑restaurant chargé de compléter un salaire insuffisant. Les restaurateurs et commerces assimilés sont les premiers touchés : le titre représente 15 % du chiffre d’affaires des restaurants, contre 1 % pour la grande distribution. Près de 80 % des quelque 100 000 emplois liés au titre‑restaurant se trouvent dans la restauration. Le transfert vers les grandes surfaces entraîne aussi une perte fiscale pour l’État, liée à l’écart de taux de TVA. L’objet du titre, protéger la pause repas quotidienne du salarié, est plus proche de l’activité des restaurants que des courses deux fois par semaine au supermarché.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_24.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Supermarchés (perdent les achats de produits à cuisiner) ; primeurs (fruits et légumes conservés) ; restaurants",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.21Z",
+          "label": "Commerce de détail de fruits et légumes"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Fin des achats de produits à cuisiner : repas, plats prêts et fruits et légumes seulement",
+      "themes": [
+        "Limiter aux repas et fruits et légumes"
+      ],
+      "quote": "de préparations alimentaires directement consommables ou de fruits et légumes"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "26",
+    "article": "Article 1er",
+    "author": "Mme SOUYRIS",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 4 Après le mot : consommation, insérer les mots : à l’exclusion des achats réalisés par l’intermédiaire d’une plateforme en ligne, au sens du i de l’article 3 du règlement (UE) 2022/2065 du Parlement européen et du Conseil du 19 octobre 2022 relatif à un marché unique des services numériques, permettant aux consommateurs de conclure des contrats à distance avec des restaurateurs ou des commerçant,",
+    "purpose": "Cet amendement rétablit une disposition adoptée à l’Assemblée, puis supprimée par la commission. Une aide publique au repas du salarié n’a pas à financer les commissions des plateformes ni le modèle de travail ubérisé des livreurs, au détriment des restaurateurs.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_26.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Plateformes de livraison (exclues) ; restaurants qui vendent en livraison",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Plateformes de livraison de repas (pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plateformes de livraison exclues des titres-restaurant",
+      "themes": [
+        "Exclure les plateformes de livraison"
+      ],
+      "quote": "à l’exclusion des achats réalisés par l’intermédiaire d’une plateforme en ligne"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "27",
+    "article": "Article 1er",
+    "author": "Mme SOUYRIS",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Après l’alinéa 6 Insérer deux alinéas ainsi rédigés : ...) Après le 2°, il est inséré un alinéa ainsi rédigé : « 3° Soit par l’Agence nationale pour les chèques‑vacances mentionnée à l’article L. 411‑13 du code du tourisme, qui les cède à l’employeur contre paiement de leur valeur libératoire. Les commissions qu’elle perçoit auprès des employeurs et des personnes ou organismes mentionnés au deuxième alinéa de l’article L. 3262‑3 ne peuvent excéder 2,5 % de la valeur des titres. Les excédents de gestion qu’elle tire de cette activité sont affectés à des actions favorisant l’accès des salariés à une alimentation durable. » ; II. – Alinéa 8 Remplacer les mots : ou 2° insérer les mots : , 2° ou 3°",
+    "purpose": "Quatre émetteurs se partagent plus de 99 % du marché et prélèvent environ 4 % aux restaurateurs et commerçants. L’Agence nationale pour les chèques‑vacances montre qu’un autre modèle fonctionne : commission plafonnée à 2,5 % et excédents réinvestis dans l’intérêt général. Cet amendement, inspiré de la proposition de loi de Boris Tavernier, crée un pôle public d’émission, sans créer de nouvelle structure. Il ne change rien à l’objet du titre, qui reste le repas du salarié pendant sa journée de travail.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_27.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Émetteurs privés (nouveau concurrent public, l'ANCV) ; commerçants (commission ANCV ≤ 2,5 %)",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "L'ANCV devient émetteur public, commissions ≤ 2,5 %",
+      "themes": [
+        "Pôle public d'émission (ANCV)"
+      ],
+      "quote": "Soit par l’Agence nationale pour les chèques‑vacances"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "28",
+    "article": "Article 1er",
+    "author": "Mme ANTOINE",
+    "author_group": "UCI",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Après l’alinéa 18 Insérer trois alinéas ainsi rédigés : « Art. L. 3262‑1‑3‑1. – I. – Par dérogation à l’article L. 3262‑1‑3, la somme des commissions, frais ou rémunérations de toute nature mentionnés à l’article L. 3262‑1‑2 appliqués par un émetteur de titres‑restaurant aux associations régies par la loi du 1 er juillet 1901 relative au contrat d’association dont la gestion est désintéressée au sens du d du 1° du 7 de l’article 261 du code général des impôts ne peut excéder 2,5 % de la valeur des titres‑restaurant perçus par ces associations en paiement de repas servis à leurs seuls adhérents au cours de l’année civile. « Lorsque le plafond fixé en application de l’article L. 3262‑1‑3 est inférieur à ce taux, il s’applique à ces associations. « II. – Lorsque la somme mentionnée au I dépasse le plafond, l’émetteur reverse à l’association concernée les sommes perçues au‑delà de ce plafond. Un décret précise les modalités et le délai de ce reversement. II. – Alinéa 21 Remplacer la référence : et L. 3262‑1‑2‑1 par les références : , L. 3262‑1‑2‑1 et L. 3262‑1‑3‑1",
+    "purpose": "Les associations régies par la loi du 1 er juillet 1901, gérées de manière désintéressée, qui proposent à leurs seuls adhérents un service de restauration peuvent accepter les titres‑restaurant remis par les employeurs à leurs salariés. Elles n’ont pas vocation à dégager de bénéfices : les recettes tirées de cette activité servent à en couvrir les charges. Or les commissions, frais et rémunérations de toute nature prélevés par les émetteurs lors du remboursement des titres‑restaurant sont établis pour des restaurateurs et des commerçants exerçant une activité lucrative. Appliqués à ces associations, ils réduisent directement les ressources affectées à leur objet. Le présent amendement insère donc un article L. 3262‑1‑3‑1 qui plafonne à 2,5 % de la valeur des titres‑restaurant perçus la somme des commissions, frais et rémunérations de toute nature appliqués à ces associations. Ce plafond est assis sur la même base que celle retenue à l’article L. 3262‑1‑2, c’est‑à‑dire la valeur des titres perçus au cours de l’année. Lorsque le plafond général fixé en application de l’article L. 3262‑1‑3 est inférieur à ce taux, il s’applique. L’émetteur reverse à l’association les sommes perçues au‑delà du plafond. Le champ de la mesure est strictement délimité : seules sont concernées les associations dont la gestion est désintéressée au sens du code général des impôts, et uniquement pour les repas servis à leurs adhérents. Le manquement est passible de l’amende administrative prévue au II de l’article L. 3262‑1‑4.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_28.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Associations loi 1901 à gestion désintéressée qui servent des repas à leurs adhérents",
+      "sectors": [
+        {
+          "naf": "94.99Z",
+          "label": "Autres organisations fonctionnant par adhésion volontaire (associations)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Commissions plafonnées à 2,5 % pour ces associations",
+      "themes": [
+        "Commissions plafonnées pour les associations"
+      ],
+      "quote": "aux associations régies par la loi du 1 er juillet 1901"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "29",
+    "article": "Article 1er",
+    "author": "Mme ANTOINE",
+    "author_group": "UCI",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "I. – Alinéa 15 1° Première phrase Remplacer les mots : peut être par le mot : est 2° Seconde phrase Supprimer les mots : Dans ce cas, II. – Alinéa 16, première phrase Remplacer les mots : est établi de manière à couvrir les par les mots : , fixé par le décret mentionné au premier alinéa, ne peut être supérieur à 2,5 % et est établi en tenant compte des",
+    "purpose": "Le présent amendement vise à plafonner à 2,5 % du montant des titres‑restaurant la somme des commissions et frais facturés aux commerçants habilités par les émetteurs. Les commerçants sont contraints de contracter avec tous les émetteurs, qui détiennent plus de 99 % du marché, tandis que les employeurs peuvent les mettre en concurrence. Les émetteurs ont ainsi concentré leurs efforts tarifaires sur les employeurs et en ont répercuté le coût sur les commerçants. Selon le rapport de la commission des affaires sociales, les commissions atteignent en moyenne près de 4 %, en hausse de moitié depuis 2010, contre 0,5 à 1 % pour les cartes bancaires. Ces commissions pèsent d’abord sur les restaurateurs indépendants et petits commerces alimentaires qui disposent d’un pouvoir de négociation très limité face à quatre émetteurs. Dans les territoires ruraux, où ils constituent souvent le dernier commerce de proximité et où leurs marges sont étroites, une commission de 4 % peut compromettre leur équilibre économique et contribuer à leur fermeture. La faculté de plafonnement par décret, reportée au 1 er juillet 2028, ne garantit ni le principe, ni le niveau, ni le calendrier d’une baisse. Un plafond de 2,5 %, inférieur à la moyenne constatée et applicable à l’ensemble des commerçants, protège ces petits commerces et la vitalité des territoires ruraux sans créer de différence de traitement.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_29.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Restaurants et commerces alimentaires qui acceptent les titres (commissions plafonnées) ; émetteurs (revenus plafonnés)",
+      "sectors": [
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Plafond obligatoire des commissions : 2,5 %",
+      "themes": [
+        "Plafonner les commissions des émetteurs"
+      ],
+      "quote": "ne peut être supérieur à 2,5 %"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "31",
+    "article": "Article 1er",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 39 Compléter cet alinéa par une phrase ainsi rédigée : Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés.",
+    "purpose": "Cet amendement vise à rétablir l’utilisation des titres‑restaurant tous les jours de la semaine, dimanches et jours fériés compris. Cette possibilité figurait dans le texte adopté à l’unanimité par l’Assemblée nationale. La commission l’a supprimée pour s’en tenir à l’article R. 3262‑8 du code du travail. Cet article interdit l’usage des titres le dimanche et les jours fériés, sauf décision de l’employeur au bénéfice des seuls salariés qui travaillent ces jours‑là. Cette règle ne correspond plus à la réalité du travail. Les horaires sont décalés, le travail en équipes se développe, et des salariés travaillent un dimanche ou un jour férié sans que leur situation ait été prévue. La règle est d’ailleurs imparfaitement respectée puisque, selon les travaux de la commission, 20 à 30 % des employeurs ont déjà ouvert l’usage dominical à leurs salariés. Les bénéficiaires d’un même titre ne sont donc pas traités de la même façon. Le titre reste un titre de paiement d’un repas, cofinancé par l’employeur et encadré par un plafond journalier. L’utiliser le dimanche ne change ni son objet ni son assiette, et n’emporte pas de requalification de son régime social et fiscal. La mesure soutient en outre les restaurateurs et les commerçants de proximité les jours où ils sont ouverts.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_31.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Commerces alimentaires et restaurants ouverts le dimanche",
+      "sectors": [
+        {
+          "naf": "47.11D",
+          "label": "Supermarchés"
+        },
+        {
+          "naf": "47.11F",
+          "label": "Hypermarchés"
+        },
+        {
+          "naf": "47.11B",
+          "label": "Commerce d'alimentation générale"
+        },
+        {
+          "naf": "47.11C",
+          "label": "Supérettes"
+        },
+        {
+          "naf": "47.24Z",
+          "label": "Commerce de détail de pain, pâtisserie"
+        },
+        {
+          "naf": "10.71C",
+          "label": "Boulangerie et boulangerie-pâtisserie"
+        },
+        {
+          "naf": "56.10A",
+          "label": "Restauration traditionnelle"
+        },
+        {
+          "naf": "56.10C",
+          "label": "Restauration de type rapide"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres utilisables tous les jours, dimanches et fériés compris",
+      "themes": [
+        "Utilisation le dimanche"
+      ],
+      "quote": "Les titres‑restaurant peuvent être utilisés tous les jours de la semaine, y compris les dimanches et les jours fériés."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "32",
+    "article": "Article 2",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 2 Remplacer cet alinéa par deux alinéas ainsi rédigés : 1° L’article L. 3262‑5 est ainsi rédigé : « Art. L. 3262‑5. – Les titres‑restaurant sont valables sans limitation de durée. » ;",
+    "purpose": "Cet amendement vise à supprimer toute date limite d’utilisation des titres‑restaurant, afin que le salarié ne perde jamais l’argent qu’il a lui‑même contribué à financer. Le titre‑restaurant est financé à hauteur de 40 à 50 % par le salarié, l’employeur prenant en charge entre 50 et 60 %. Pourtant, un titre non utilisé à l’échéance est définitivement perdu et sa contre‑valeur revient à l’employeur. Cela représentait 54,6 millions d’euros en 2024, soit 0,5 % de la valeur des titres émis, dont 86 % sur les seuls titres papier. Aujourd’hui, un titre ne peut être utilisé que pendant l’année civile qu’il mentionne et les deux premiers mois de l’année suivante. Un salarié qui reporte son utilisation, tombe malade, télétravaille durablement ou connaît une situation exceptionnelle perd donc une partie d’un argent qu’il a financé. Ce délai alourdit aussi la gestion des employeurs et des commerçants. Le risque de thésaurisation invoqué en commission est écarté par le plafond journalier, qui empêche de faire du titre un instrument d’épargne. Le titre reste dépensé au rythme des repas.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_32.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Employeurs (ne récupèrent plus la contre-valeur des titres périmés) ; émetteurs",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Titres valables sans limite de durée",
+      "themes": [
+        "Durée de validité des titres"
+      ],
+      "quote": "Les titres‑restaurant sont valables sans limitation de durée."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "33",
+    "article": "Article 2",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Alinéa 2 Remplacer cet alinéa par quatre alinéas ainsi rédigés : « 1° L’article L. 3262‑5 est ainsi rédigé : « Art. L. 3262‑5. – I. – Le délai d’utilisation du titre‑restaurant est de trois ans. « II. – Les titres qui n’ont pas été utilisés avant la fin du deuxième mois suivant l’expiration de leur période d’utilisation sont définitivement périmés. « III. – Sous réserve de prélèvements autorisés par le décret prévu à l’article L. 3262‑7, la contre‑valeur des titres périmés est versée au budget des activités sociales et culturelles des entreprises auprès desquelles les salariés se sont procuré leurs titres. » ;",
+    "purpose": "Cet amendement de repli vise à rétablir l’allongement à trois ans de la durée d’utilisation des titres‑restaurant, adopté par l’Assemblée nationale puis supprimé en commission au motif que la dématérialisation rendrait la mesure sans effet. Ce n’est pas le cas. En 2024, 54,6 millions d’euros de titres ont été perdus ou périmés, dont 86 % sur les titres papier, qui ne représentent que 20 % du marché. Tant que des titres papier circuleront, la durée de validité continuera de peser sur les salariés, qui perdent aujourd’hui leurs droits en cas de report, de maladie, de télétravail prolongé ou de situation exceptionnelle. Un délai de trois ans garde une limite dans le temps, raisonnable et simple à gérer pour les émetteurs, les employeurs et les commerçants. Il répond à la crainte d’une réserve de valeur sans faire perdre au salarié des titres qu’il a payés. La contre‑valeur des titres périmés revient au budget des activités sociales et culturelles de l’entreprise, donc aux salariés.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_33.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Employeurs (titres périmés versés au budget du CSE) ; émetteurs",
+      "sectors": [
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Validité portée à 3 ans ; titres périmés versés au budget social et culturel",
+      "themes": [
+        "Durée de validité des titres"
+      ],
+      "quote": "Le délai d’utilisation du titre‑restaurant est de trois ans."
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "34",
+    "article": "Article 3",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’alinéa 5 Insérer un alinéa ainsi rédigé : ...° La condition de dématérialisation prévue au I de l’article L. 3262‑1 du code du travail, dans sa rédaction résultant de la présente loi, entre en vigueur le 1 er janvier 2031 et ne s’applique qu’aux titres‑restaurant émis au titre de l’année 2031 et des années suivantes. Les titres‑restaurant émis au titre des années 2028, 2029 et 2030 peuvent être émis sur support papier.",
+    "purpose": "Cet amendement vise à garantir la possibilité d’émettre des titres papier pour les millésimes 2028, 2029 et 2030, utilisables jusqu’au 31 janvier 2031, l’obligation de dématérialisation ne s’appliquant qu’aux titres émis à compter de l’année 2031. Le texte rend obligatoire la dématérialisation des titres‑restaurant émis au titre de l’année 2028. Or les titres d’un millésime sont émis dès le 1 er décembre de l’année précédente. Après la promulgation de la loi, la filière de fabrication et d’impression des titres papier aurait très peu de temps pour réorienter son activité. La dématérialisation est déjà très largement engagée, 80 % des titres en 2024. Il n’y a pas lieu d’en faire une obligation légale. Le papier reste plus simple pour certaines petites entreprises, certains contrats courts et certains salariés, et la dématérialisation peut coûter cher aux plus petites structures. Le numérique doit progresser par son efficacité et son attractivité, pas par l’interdiction d’une solution qui répond encore à des besoins. Ce délai donne de la visibilité à la filière, permet d’accompagner les petites structures et les salariés les moins à l’aise avec le numérique, et de mesurer les effets réels de la disparition du papier, sans rupture ni transfert de charges vers les acteurs les plus fragiles. Il ne remet pas en cause le mouvement spontané de dématérialisation, déjà majoritaire, mais en laisse le rythme au marché.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_34.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Imprimeurs de titres papier et émetteurs ; petites entreprises qui utilisent encore le papier",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Dématérialisation obligatoire repoussée à 2031",
+      "themes": [
+        "Repousser la fin des titres papier"
+      ],
+      "quote": "entre en vigueur le 1 er janvier 2031"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "35",
+    "article": "Article 3",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’alinéa 5 Insérer un alinéa ainsi rédigé : ...° La condition de dématérialisation prévue au I de l’article L. 3262‑1 du code du travail, dans sa rédaction résultant de la présente loi, entre en vigueur le 1 er janvier 2030 et ne s’applique qu’aux titres‑restaurant émis au titre de l’année 2030 et des années suivantes. Les titres‑restaurant émis au titre des années 2028 et 2029 peuvent être émis sur support papier.",
+    "purpose": "Cet amendement de repli vise à garantir la possibilité d’émettre des titres papier pour les millésimes 2028 et 2029, utilisables jusqu’au 31 janvier 2030, l’obligation de dématérialisation ne s’appliquant qu’aux titres émis à compter de l’année 2030. Le texte rend obligatoire la dématérialisation des titres‑restaurant émis au titre de l’année 2028. Or les titres d’un millésime sont émis dès le 1 er décembre de l’année précédente. Après la promulgation de la loi, la filière de fabrication et d’impression des titres papier aurait très peu de temps pour réorienter son activité. La dématérialisation est déjà très largement engagée, 80 % des titres en 2024. Il n’y a pas lieu d’en faire une obligation légale. Le papier reste plus simple pour certaines petites entreprises, certains contrats courts et certains salariés, et la dématérialisation peut coûter cher aux plus petites structures. Le numérique doit progresser par son efficacité et son attractivité, pas par l’interdiction d’une solution qui répond encore à des besoins. Ce délai donne de la visibilité à la filière, permet d’accompagner les petites structures et les salariés les moins à l’aise avec le numérique, et de mesurer les effets réels de la disparition du papier, sans rupture ni transfert de charges vers les acteurs les plus fragiles. Il ne remet pas en cause le mouvement spontané de dématérialisation, déjà majoritaire, mais en laisse le rythme au marché.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_35.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Imprimeurs de titres papier et émetteurs ; petites entreprises qui utilisent encore le papier",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Dématérialisation obligatoire repoussée à 2030 (repli)",
+      "themes": [
+        "Repousser la fin des titres papier"
+      ],
+      "quote": "entre en vigueur le 1 er janvier 2030"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "36",
+    "article": "Article 3",
+    "author": "M. HOCHART",
+    "author_group": "UNT",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Après l’alinéa 5 Insérer un alinéa ainsi rédigé : ...° La condition de dématérialisation prévue au I de l’article L. 3262‑1 du code du travail, dans sa rédaction résultant de la présente loi, entre en vigueur le 1 er janvier 2029 et ne s’applique qu’aux titres‑restaurant émis au titre de l’année 2029 et des années suivantes. Les titres‑restaurant émis au titre de l’année 2028 peuvent être émis sur support papier.",
+    "purpose": "Cet amendement de repli vise à garantir la possibilité d’émettre des titres papier pour le millésime 2028, utilisables jusqu’au 31 janvier 2029, l’obligation de dématérialisation ne s’appliquant qu’aux titres émis à compter de l’année 2029. Le texte rend obligatoire la dématérialisation des titres‑restaurant émis au titre de l’année 2028. Or les titres d’un millésime sont émis dès le 1 er décembre de l’année précédente. Après la promulgation de la loi, la filière de fabrication et d’impression des titres papier aurait très peu de temps pour réorienter son activité. La dématérialisation est déjà très largement engagée, 80 % des titres en 2024. Il n’y a pas lieu d’en faire une obligation légale. Le papier reste plus simple pour certaines petites entreprises, certains contrats courts et certains salariés, et la dématérialisation peut coûter cher aux plus petites structures. Le numérique doit progresser par son efficacité et son attractivité, pas par l’interdiction d’une solution qui répond encore à des besoins. Ce délai donne de la visibilité à la filière, permet d’accompagner les petites structures et les salariés les moins à l’aise avec le numérique, et de mesurer les effets réels de la disparition du papier, sans rupture ni transfert de charges vers les acteurs les plus fragiles. Il ne remet pas en cause le mouvement spontané de dématérialisation, déjà majoritaire, mais en laisse le rythme au marché.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_36.html",
+    "criteria": {
+      "criteria_found": true,
+      "who": "Imprimeurs de titres papier et émetteurs ; petites entreprises qui utilisent encore le papier",
+      "sectors": [
+        {
+          "naf": "18.12Z",
+          "label": "Autre imprimerie (titres papier)"
+        },
+        {
+          "naf": "",
+          "label": "Émetteurs de titres-restaurant (4 acteurs > 99 % du marché ; pas de code NAF propre)"
+        }
+      ],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Dématérialisation obligatoire repoussée à 2029 (repli)",
+      "themes": [
+        "Repousser la fin des titres papier"
+      ],
+      "quote": "entre en vigueur le 1 er janvier 2029"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  },
+  {
+    "number": "37",
+    "article": "Article 4",
+    "author": "Mme SOUYRIS",
+    "author_group": "GEST",
+    "on_behalf_of": "",
+    "filed": "2026-11-12",
+    "status": "Recevable art. 40 C / LOLF",
+    "text": "Compléter cet article par un paragraphe ainsi rédigé : .... - Avant le 30 juin 2027, les organisations syndicales de salariés et les organisations professionnelles d’employeurs représentatives au niveau national et interprofessionnel engagent une négociation sur l’avenir du titre-restaurant, son champ d’utilisation et son articulation avec la politique salariale, incluant une réflexion sur la création d'un pôle public d'émission, après une concertation associant l’ensemble des acteurs du titre-restaurant.",
+    "purpose": "Cet amendement ne remet pas en cause la possibilité, pour les salariés, d’utiliser leurs titres pour l’achat de denrées alimentaires en 2027. Il refuse que cette année serve de simple transition vers une pérennisation décidée sans les acteurs du titre‑restaurant. La dérogation est née en 2022 dans une loi de « mesures d’urgence pour la protection du pouvoir d’achat ». Elle a ensuite été reconduite d’année en année, dans l’attente de véritables mesures de pouvoir d’achat et d’une concertation de tous les acteurs. Ni les unes ni l’autre ne sont venues. Les prolongations se sont faites contre l’avis des quatre collèges de la Commission nationale des titres‑restaurant, et le présent texte pérennise par la loi ce qui n’était qu’une exception. Cet amendement conditionne donc cette ultime prolongation à l’ouverture d’une négociation interprofessionnelle sur l’avenir du titre‑restaurant, son champ d’utilisation et son articulation avec la politique salariale. Celle‑ci serait précédée d’une concertation associant salariés, employeurs, restaurateurs, commerçants et émetteurs. Le Gouvernement s’était engagé à ouvrir cette concertation dès 2024 ; le Sénat avait alors rejeté l’amendement du groupe écologiste qui la demandait. Le titre‑restaurant est un dispositif du code du travail : son avenir relève d’abord du dialogue social, pas d’une dérogation reconduite par défaut. Cette concertation inclut une réflexion sur la création d’un pôle public d’émission, à travers l’extension des missions de l’Agence nationale pour les chèques vacances, inspirée de la proposition de loi de Boris Tavernier.",
+    "url": "//www.senat.fr/amendements/2026-2027/142/Amdt_37.html",
+    "criteria": {
+      "criteria_found": false,
+      "who": "",
+      "sectors": [],
+      "employee_min": null,
+      "employee_max": null,
+      "regions": [],
+      "effect": "Négociation interprofessionnelle sur l'avenir du titre : aucune obligation pour les entreprises",
+      "themes": [
+        "Pôle public d'émission (ANCV)"
+      ],
+      "quote": "engagent une négociation sur l’avenir du titre-restaurant"
+    },
+    "model": "claude (lecture manuelle, 14/11/2026)"
+  }
+]
