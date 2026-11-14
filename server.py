@@ -159,11 +159,15 @@ class LLMError(Exception):
     pass
 
 
-def llm_request(cfg, amendment, stream):
+def extract_messages(amendment):
+    return [{"role": "system", "content": SYSTEM},
+            {"role": "user", "content": prompt_for(amendment)}]
+
+
+def llm_request(cfg, messages, stream, max_tokens=1500):
     body = json.dumps({
-        "model": cfg["model"], "temperature": 0, "max_tokens": 1500, "stream": stream,
-        "messages": [{"role": "system", "content": SYSTEM},
-                     {"role": "user", "content": prompt_for(amendment)}],
+        "model": cfg["model"], "temperature": 0, "max_tokens": max_tokens, "stream": stream,
+        "messages": messages,
     }).encode()
     req = urllib.request.Request(cfg["base_url"] + "/chat/completions", data=body, headers={
         "Authorization": f"Bearer {cfg['key']}", "Content-Type": "application/json",
@@ -177,9 +181,9 @@ def llm_request(cfg, amendment, stream):
         raise LLMError(f"API LLM injoignable : {e}")
 
 
-def llm_tokens(cfg, amendment):
+def llm_tokens(cfg, messages, max_tokens=1500):
     """Yield (kind, text) with kind in {'token', 'reasoning'} from a streamed completion."""
-    with llm_request(cfg, amendment, stream=True) as r:
+    with llm_request(cfg, messages, stream=True, max_tokens=max_tokens) as r:
         for raw in r:
             line = raw.decode("utf-8", "replace").strip()
             if not line.startswith("data:"):
@@ -218,11 +222,11 @@ def run_extraction(n, amendment, on_token=None):
     elif not cfg["key"]:
         raise LLMError("NO_KEY")
     elif on_token is None:
-        with llm_request(cfg, amendment, stream=False) as r:
+        with llm_request(cfg, extract_messages(amendment), stream=False) as r:
             reply = json.load(r)["choices"][0]["message"]["content"]
         return parse_json(reply), cfg["model"], int((time.time() - t0) * 1000)
     else:
-        gen, model = llm_tokens(cfg, amendment), cfg["model"]
+        gen, model = llm_tokens(cfg, extract_messages(amendment)), cfg["model"]
     reply = []
     for kind, t in gen:
         if kind == "token":
@@ -381,6 +385,190 @@ def as_measure(n, amendment, crit, model, elapsed_ms):
     }
 
 
+# ---------- scan: which pending amendments concern ONE company ----------
+
+try:
+    from build_engine import EMPLOYER_THEMES
+except Exception:  # keep the server up even if build_engine's imports change
+    EMPLOYER_THEMES = {"Maintien pendant les congés familiaux", "Négociation syndicale avant mise en place",
+                       "Durée de validité des titres"}
+
+SCAN_SYSTEM = """Tu analyses des amendements parlementaires français pour UNE entreprise donnée.
+On te donne la fiche de l'entreprise (nom, activité, code NAF, tranche d'effectif, rôles) puis une liste d'amendements (numéro, dispositif, objet).
+Pour chaque amendement qui toucherait CONCRÈTEMENT cette entreprise, compte tenu de son activité réelle (pas seulement de son code NAF), donne une ligne.
+Réponds UNIQUEMENT par un tableau JSON, sans texte autour :
+[{"number": "numéro exact de l'amendement", "concerned": true, "how": "une phrase : en quoi l'amendement la touche", "direction": "gain"|"perte"|"incertain", "quote": "extrait copié mot pour mot de CET amendement"}]
+Règles :
+- Sois prudent : aucun lien sans base textuelle dans l'amendement. Dans le doute, n'inclus pas l'amendement.
+- N'inclus que les amendements qui la concernent ; tableau vide [] si aucun.
+- N'invente aucun chiffre (montant, taux, nombre de salariés) qui ne figure pas dans l'amendement.
+- direction = "incertain" si le sens dépend d'informations que tu n'as pas.
+- quote doit être copiée mot pour mot depuis le dispositif ou l'objet de l'amendement cité, courte (une phrase au plus)."""
+
+SCAN_STOP = {"commerce", "detail", "produits", "magasin", "magasins", "specialise", "specialises", "autres",
+             "activites", "activite", "services", "service", "fabrication", "industrie", "industries",
+             "entretien", "location", "conseil", "gestion", "travaux", "articles", "general", "generale",
+             "divers", "diverses", "non", "classes", "ailleurs", "principalement", "dominante", "personnes"}
+
+NO_STAFF = {"", "NN", "00"}
+
+
+def fold(s):
+    s = unicodedata.normalize("NFD", (s or "").lower())
+    return "".join(ch for ch in s if unicodedata.category(ch) != "Mn")
+
+
+def company_prompt(company, pending):
+    c = company
+    head = (f"Entreprise : {c.get('name') or '?'} (SIREN {c.get('siren') or '?'})\n"
+            f"Activité principale : {c.get('naf') or '?'} {c.get('naf_label') or ''}\n"
+            f"Tranche d'effectif INSEE : {c.get('headcount_band') or 'inconnue'}\n"
+            f"Rôles déclarés : {', '.join(c.get('roles') or []) or 'aucun'}\n\n"
+            f"{len(pending)} amendements :\n")
+    body = "\n\n".join(f"### n°{a['number']} ({a['article']})\nDispositif : {a['text'][:1500]}\n"
+                       f"Objet : {a['purpose'][:700]}" for a in pending)
+    return head + body
+
+
+def parse_array(text):
+    text = re.sub(r"<think>.*?</think>", "", text, flags=re.S)
+    m = re.search(r"\[.*\]", text, flags=re.S)
+    if m:
+        return json.loads(m.group(0))
+    obj = parse_json(text)  # tolerate {"matches": [...]}
+    return obj.get("matches") or obj.get("amendements") or []
+
+
+def sentence_with(text, word):
+    """A verbatim sentence of text containing word (accent-insensitive), trimmed to ~250 chars."""
+    for s in re.split(r"(?<=[.;!?])\s+", text):
+        if re.search(rf"\b{word}s?\b", fold(s)):
+            if len(s) > 250:
+                cut = s[:250]
+                s = cut[:cut.rfind(" ")] if " " in cut else cut
+            return s.strip()
+    return None
+
+
+def mock_scan(n, company, pending):
+    """Deterministic fallback: keywords of naf_label + employer measures. Returns raw items."""
+    words = sorted({w for w in re.findall(r"[a-z]{5,}", fold(company.get("naf_label"))) if w not in SCAN_STOP})
+    known = stored_criteria(n)
+    items = []
+    for a in pending:
+        for w in words:
+            for field in ("text", "purpose"):
+                q = sentence_with(a[field], w)
+                if q:
+                    items.append({"number": a["number"], "concerned": True, "direction": "incertain",
+                                  "how": f"Le mot « {w} » de l'activité ({company.get('naf_label')}) figure dans l'amendement.",
+                                  "quote": q})
+                    break
+            else:
+                continue
+            break
+    if (company.get("headcount_band") or "") not in NO_STAFF:
+        for a in pending:
+            c = known.get(a["number"])
+            theme = c and (c["criteria"].get("themes") or [None])[0]
+            if theme in EMPLOYER_THEMES and not any(i["number"] == a["number"] for i in items):
+                items.append({"number": a["number"], "concerned": True, "direction": "incertain",
+                              "how": f"Mesure employeur ({theme}) : la concerne si elle distribue des titres-restaurant à ses salariés.",
+                              "quote": c["criteria"].get("quote", "")})
+    return words, items
+
+
+def mock_scan_tokens(company, words, items, delay=0.012):
+    reasoning = (f"Mode mock : pas de LLM. Je cherche les mots de l'activité « {company.get('naf_label') or '?'} » "
+                 f"({', '.join(words) or 'aucun mot significatif'}) dans le dispositif et l'objet de chaque amendement, "
+                 f"puis j'ajoute les mesures employeurs si l'entreprise a des salariés.")
+    for i in range(0, len(reasoning), 6):
+        time.sleep(delay)
+        yield "reasoning", reasoning[i:i + 6]
+    text = json.dumps(items, ensure_ascii=False, indent=2)
+    for i in range(0, len(text), 8):
+        time.sleep(delay / 2)
+        yield "token", text[i:i + 8]
+
+
+def finalize_scan(n, company, pending, items):
+    by_num = {a["number"].strip().lower(): a for a in pending}
+    by_base = {a["number"].strip().lower().split(" ")[0]: a for a in pending}
+    known = stored_criteria(n)
+    matches, dropped, seen = [], [], set()
+    for it in items if isinstance(items, list) else []:
+        if not isinstance(it, dict):
+            continue
+        raw = str(it.get("number", "")).strip().lower().lstrip("n°").strip()
+        a = by_num.get(raw) or by_base.get(raw.split(" ")[0])
+        if not it.get("concerned", True):
+            dropped.append({"number": it.get("number"), "reason": "non concerné"})
+            continue
+        if not a:
+            dropped.append({"number": it.get("number"), "reason": "amendement absent des amendements en attente"})
+            continue
+        if a["number"] in seen:
+            continue
+        verified, exact = verify_quote(it.get("quote") or "", a)
+        if not verified:
+            dropped.append({"number": a["number"], "reason": "citation introuvable dans l'amendement",
+                            "quote": it.get("quote")})
+            continue
+        seen.add(a["number"])
+        c = known.get(a["number"])
+        direction = it.get("direction") if it.get("direction") in ("gain", "perte", "incertain") else "incertain"
+        matches.append({
+            "number": a["number"], "how": it.get("how") or "", "direction": direction,
+            "quote": it.get("quote"), "quote_verified": True, "quote_exact": exact,
+            "author": a["author"], "author_group": a["author_group"], "article": a["article"],
+            "filed": a["filed"], "url": a["url"], "known": bool(c),
+            "theme": ((c["criteria"].get("themes") or [None])[0] or c["criteria"].get("effect")) if c else None,
+        })
+    return matches, dropped
+
+
+def run_scan(n, company, on_token=None):
+    """Return the scan result dict. Raises LLMError."""
+    cfg = config()
+    rows, _ = live_rows(n)
+    pending = [a for a in rows if not any(k in a["status"].lower() for k in SETTLED)]
+    if on_token:
+        on_token("start", {"n_amendments": len(pending),
+                           "model": "mock (recherche par mots-clés)" if cfg["mock"] else cfg["model"]})
+    t0 = time.time()
+    if cfg["mock"]:
+        words, items = mock_scan(n, company, pending)
+        gen, model = mock_scan_tokens(company, words, items, 0.012 if on_token else 0), "mock (recherche par mots-clés)"
+    elif not cfg["key"]:
+        raise LLMError("NO_KEY")
+    else:
+        msgs = [{"role": "system", "content": SCAN_SYSTEM},
+                {"role": "user", "content": company_prompt(company, pending)}]
+        model = cfg["model"]
+        if on_token:
+            gen = llm_tokens(cfg, msgs, max_tokens=4000)
+        else:
+            with llm_request(cfg, msgs, stream=False, max_tokens=4000) as r:
+                gen = [("token", json.load(r)["choices"][0]["message"]["content"])]
+    reply = []
+    for kind, t in gen:
+        if kind == "token":
+            reply.append(t)
+        if on_token:
+            on_token(kind, {"t": t})
+    if cfg["mock"]:
+        raw_items = items
+    else:
+        try:
+            raw_items = parse_array("".join(reply))
+        except ValueError as e:
+            raise LLMError(f"Réponse du modèle illisible : {e}")
+    matches, dropped = finalize_scan(n, company, pending, raw_items)
+    return {"company": company, "n_amendments": len(pending), "matches": matches,
+            "dropped": len(dropped), "dropped_detail": dropped, "model": model,
+            "elapsed_ms": int((time.time() - t0) * 1000)}
+
+
 # ---------- HTTP ----------
 
 class Handler(SimpleHTTPRequestHandler):
@@ -445,7 +633,7 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_POST(self):
         u = urllib.parse.urlparse(self.path)
-        if u.path != "/api/live/extract":
+        if u.path not in ("/api/live/extract", "/api/live/scan"):
             return self.json(404, {"error": "endpoint inconnu"})
         stream = (urllib.parse.parse_qs(u.query).get("stream") or ["0"])[0] not in ("0", "")
         try:
@@ -459,6 +647,10 @@ class Handler(SimpleHTTPRequestHandler):
             return self.json(503, {"error": "Clé LLM manquante : ajoutez LLM_API_KEY dans .env"})
 
         n = str(req.get("text_number") or "142")
+        if not n.isdigit():
+            return self.json(400, {"error": "text_number doit être un numéro de texte"})
+        if u.path == "/api/live/scan":
+            return self.scan(n, req, stream)
         if req.get("number"):
             try:
                 amendment = find_amendment(n, str(req["number"]))
@@ -499,6 +691,42 @@ class Handler(SimpleHTTPRequestHandler):
             crit, model, ms = run_extraction(n, amendment, on_token=lambda k, t: send(k, {"t": t}))
             send("status", {"t": "Comptage des entreprises (API Recherche d'entreprises)…"})
             send("result", as_measure(n, amendment, crit, model, ms))
+        except (BrokenPipeError, ConnectionResetError):
+            return
+        except Exception as e:
+            try:
+                send("error", {"error": str(e)})
+            except OSError:
+                pass
+
+    def sse_open(self):
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream; charset=utf-8")
+        self.send_header("Cache-Control", "no-cache")
+        self.send_header("X-Accel-Buffering", "no")
+        self.end_headers()
+
+        def send(event, data):
+            self.wfile.write(f"event: {event}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n".encode())
+            self.wfile.flush()
+        return send
+
+    def scan(self, n, req, stream):
+        company = req.get("company")
+        if not isinstance(company, dict) or not (company.get("naf") or company.get("naf_label") or company.get("name")):
+            return self.json(400, {"error": "Donnez company {name, siren, naf, naf_label, headcount_band, roles}"})
+        company = {k: company.get(k) for k in ("name", "siren", "naf", "naf_label", "headcount_band", "roles")}
+        if not stream:
+            try:
+                return self.json(200, run_scan(n, company))
+            except LLMError as e:
+                return self.json(502, {"error": str(e)})
+            except Exception as e:
+                return self.json(502, {"error": f"Analyse impossible : {e}"})
+        send = self.sse_open()
+        try:
+            result = run_scan(n, company, on_token=send)
+            send("result", result)
         except (BrokenPipeError, ConnectionResetError):
             return
         except Exception as e:

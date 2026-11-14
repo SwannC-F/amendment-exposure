@@ -141,7 +141,77 @@
   footer p { margin: 0 0 6px; }
   .empty { color: var(--muted); padding: 30px 0; }
 
+  /* Live panel */
+  .live { margin-top: 14px; border: 1px solid var(--line); border-radius: 16px; background: #fff; }
+  .live-head { width: 100%; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font: inherit; text-align: left;
+               background: none; border: 0; padding: 12px 16px; cursor: pointer; color: inherit; }
+  .live-title { font-weight: 800; font-size: 16px; letter-spacing: -.01em; }
+  .live-meta { color: var(--muted); font-size: 13.5px; flex: 1; min-width: 180px; }
+  .live-meta b { color: var(--ink); }
+  .live-toggle { font-size: 13px; font-weight: 700; color: var(--accent); }
+  .pulse { width: 10px; height: 10px; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 0 rgba(22,163,74,.5);
+           animation: ping 1.6s ease-out infinite; flex: none; }
+  .live.off .pulse { background: #9aa3b5; animation: none; }
+  @keyframes ping { 0% { box-shadow: 0 0 0 0 rgba(22,163,74,.5); } 80%, 100% { box-shadow: 0 0 0 9px rgba(22,163,74,0); } }
+  .live-body { border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); }
+  .live-body[hidden] { display: none; }
+  .live-list { max-height: 520px; overflow-y: auto; border-right: 1px solid var(--line); }
+  .amd { display: block; width: 100%; text-align: left; font: inherit; background: none; border: 0; border-top: 1px solid var(--line);
+         padding: 10px 14px; cursor: pointer; color: inherit; }
+  .amd:first-child { border-top: 0; }
+  .amd:hover { background: var(--soft); }
+  .amd.on { background: var(--accent-soft); }
+  .amd .l1 { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 14px; }
+  .amd .l1 b { font-size: 15px; }
+  .amd .l2 { font-size: 12.5px; color: var(--muted); margin-top: 2px; display: -webkit-box; -webkit-line-clamp: 2;
+             -webkit-box-orient: vertical; overflow: hidden; }
+  .new { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: #fff; background: #16a34a;
+         border-radius: 999px; padding: 1px 7px; }
+  .live-run { padding: 14px 16px; min-width: 0; }
+  .live-run .hint { color: var(--muted); font-size: 14px; margin: 4px 0; }
+  .stream-k { font-size: 12px; text-transform: uppercase; letter-spacing: .07em; color: var(--muted); font-weight: 700;
+              display: flex; align-items: center; gap: 8px; }
+  .stream-k .spin2 { width: 12px; height: 12px; border-radius: 50%; border: 2px solid var(--accent-soft); border-top-color: var(--accent);
+                     animation: spin .7s linear infinite; }
+  .stream { margin: 6px 0 10px; background: #0b1220; color: #cfe0ff; border-radius: 10px; padding: 10px 12px;
+            font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; white-space: pre-wrap; word-break: break-word;
+            max-height: 200px; overflow-y: auto; }
+  .stream .cur { display: inline-block; width: 7px; height: 13px; background: #7fb0ff; vertical-align: -2px; animation: pulse 1s steps(2) infinite; }
+  .live-status { font-size: 13px; color: var(--muted); margin: 4px 0; }
+  .verif { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 4px 0 10px; font-size: 13px; color: var(--muted); }
+  .badge-ok { background: var(--gain-soft); color: var(--gain); font-weight: 700; border-radius: 999px; padding: 2px 10px; }
+  .concern { border-radius: 10px; padding: 8px 12px; font-size: 14.5px; font-weight: 650; margin: 0 0 10px; }
+  .concern.yes { background: var(--accent-soft); color: var(--accent-ink); }
+  .concern.no { background: var(--soft); color: var(--muted); }
+  .live-run .card { margin: 0; grid-template-columns: 44px minmax(0, 1fr); }
+  .live-run .card .expo { grid-column: 2; }
+  .live-run .card .rank { font-size: 12px; width: 40px; height: 40px; }
+  .live-err { color: var(--loss); font-size: 14px; }
+  /* AI scan for any activity */
+  .scan { margin-top: 18px; border: 1px dashed #b8c6e8; border-radius: 16px; padding: 14px 16px; background: #fbfcff; }
+  .scan.strong { border: 2px solid var(--accent); background: #fff; }
+  .scan-head { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+  .scan-head p { margin: 0; flex: 1; min-width: 220px; font-size: 14px; color: var(--muted); }
+  .scan-btn { font: inherit; font-size: 15px; font-weight: 700; color: #fff; background: var(--accent); border: 0; border-radius: 12px;
+              padding: 10px 16px; cursor: pointer; }
+  .scan-btn:disabled { background: #c6cfe0; cursor: not-allowed; }
+  .ai-label { display: inline-block; font-size: 12px; font-weight: 700; color: #92400e; background: #fef3c7; border-radius: 999px; padding: 2px 10px; }
+  .matches { display: grid; gap: 10px; margin-top: 10px; }
+  .match { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: #fff; }
+  .match h4 { margin: 0 0 4px; font-size: 16px; letter-spacing: -.01em; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .match .howm { margin: 0 0 6px; font-size: 14px; color: #334155; }
+  .dir { font-size: 12px; font-weight: 700; border-radius: 999px; padding: 2px 9px; background: var(--soft); color: var(--muted); }
+  .dir.gain { background: var(--gain-soft); color: var(--gain); }
+  .dir.perte { background: var(--loss-soft); color: var(--loss); }
+  .match blockquote { margin: 6px 0; }
+  .match .foot { font-size: 12.5px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px; }
+  .match .foot a { color: var(--accent); }
+  .live-err button, .live-run .retry { font: inherit; font-size: 13px; font-weight: 600; color: var(--accent); background: #fff;
+              border: 1px solid var(--accent); border-radius: 8px; padding: 4px 10px; cursor: pointer; margin-left: 6px; }
+
   @media (max-width: 900px) {
+    .live-body { grid-template-columns: 1fr; }
+    .live-list { border-right: 0; border-bottom: 1px solid var(--line); max-height: 260px; }
     .profiles { grid-template-columns: repeat(2, 1fr); }
     .card { grid-template-columns: 44px 1fr; }
     .expo { grid-column: 2; }
@@ -255,9 +325,24 @@
   <div class="presets" id="presets"><span>Exemples :</span></div>
   <div id="company"></div>
 
+  <section class="live" id="live">
+    <button type="button" class="live-head" id="liveHead" aria-expanded="false">
+      <span class="pulse" aria-hidden="true"></span>
+      <span class="live-title">Sénat, en direct</span>
+      <span class="live-meta" id="liveMeta">connexion…</span>
+      <span class="live-toggle">Ouvrir</span>
+    </button>
+    <div class="live-body" id="liveBody" hidden>
+      <div class="live-list" id="liveList"></div>
+      <div class="live-run" id="liveRun"></div>
+    </div>
+  </section>
+
   <section class="headline" id="headline" aria-live="polite"></section>
 
   <div class="feed" id="feed"></div>
+
+  <section class="scan" id="scan" hidden></section>
 
   <footer>
     <p>Sources : Sénat (amendements, sénateurs — data.senat.fr) ; API Recherche d'entreprises (recherche-entreprises.api.gouv.fr : unités légales actives, code NAF, tranches d'effectifs INSEE, chiffre d'affaires publié) ;
@@ -713,7 +798,7 @@ function fromApi(r) {
     return { main: lobby + deja, det: findings + table + quotes };
   }
 
-  function card(c, i) {
+  function card(c, i, rank) {
     const ch = chiffrage(c.chiffrage, c.you);
     const hi = history(c.history);
     const maj = new Set(c.majority_groups || []);
@@ -728,7 +813,7 @@ function fromApi(r) {
     }).join("");
     return `
       <article class="card${i === 0 ? " top1" : ""}" data-key="${esc(c.theme)}">
-        <div class="rank">${i + 1}</div>
+        <div class="rank">${rank ?? i + 1}</div>
         <div>
           <h2>${esc(c.theme)}</h2>
           <p class="effect">${esc(effects[0] || "")}${extra}</p>
@@ -757,6 +842,7 @@ function fromApi(r) {
       return;
     }
     cEl.innerHTML = companyCard();
+    liveConcern();
     cEl.querySelectorAll(".role").forEach(b => b.addEventListener("click", () => {
       const k = b.dataset.role; roles.has(k) ? roles.delete(k) : roles.add(k);
       store("company", { company, roles: [...roles], preset: activePreset });
@@ -771,10 +857,11 @@ function fromApi(r) {
     const before = new Map();
     if (animate) fEl.querySelectorAll(".card").forEach(el => before.set(el.dataset.key, el.getBoundingClientRect().top));
 
+    scanPanel(cards.length);
     if (!cards.length) { fEl.innerHTML = ""; return; }
     const shown = showAll ? cards : cards.slice(0, TOP);
     const rest = cards.length - shown.length;
-    fEl.innerHTML = shown.map(card).join("") +
+    fEl.innerHTML = shown.map((c, i) => card(c, i)).join("") +
       (rest > 0 ? `<div class="rest"><button type="button" id="more">Voir ${plural(rest, "autre mesure", "autres mesures")}</button></div>` : "");
     const more = document.getElementById("more");
     if (more) more.onclick = () => { showAll = true; render(false); };
@@ -793,6 +880,272 @@ function fromApi(r) {
       }));
     });
   }
+
+  /* ---------- Live panel: Sénat amendments fetched now, criteria extracted on click ---------- */
+  const LIVE_OK = /^(localhost|127\.0\.0\.1|\[::1\]|::1)$/.test(location.hostname);
+  const LIVE = location.port === "8766" ? "" : "http://localhost:8766";
+  const liveEl = document.getElementById("live");
+  const lHead = document.getElementById("liveHead");
+  const lMeta = document.getElementById("liveMeta");
+  const lBody = document.getElementById("liveBody");
+  const lList = document.getElementById("liveList");
+  const lRun = document.getElementById("liveRun");
+  let liveData = null, liveResult = null, liveCtrl = null, liveSel = null;
+
+  lHead.addEventListener("click", () => {
+    if (!liveData) return;
+    const open = lBody.hidden;
+    lBody.hidden = !open;
+    lHead.setAttribute("aria-expanded", String(open));
+    lHead.querySelector(".live-toggle").textContent = open ? "Fermer" : "Ouvrir";
+  });
+
+  async function liveLoad() {
+    if (!LIVE_OK) { liveOff("Démo live disponible en local (serveur server.py)"); return; }
+    try {
+      const ctrl = new AbortController(); const t = setTimeout(() => ctrl.abort(), 8000);
+      const r = await fetch(`${LIVE}/api/live/amendments?text=${N}`, { signal: ctrl.signal, cache: "no-store" });
+      clearTimeout(t);
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      liveData = await r.json();
+      liveEl.classList.remove("off");
+      const hhmm = String(liveData.fetched_at || "").slice(11, 16) ||
+        new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+      const nNew = liveData.new || 0;
+      lMeta.innerHTML = `mis à jour à <b>${esc(hhmm)}</b> · <b>${fmt(liveData.pending ?? liveData.amendments.length)}</b> amendements en attente`
+        + ` · <b>${fmt(nNew)}</b> nouveau${nNew > 1 ? "x" : ""}`;
+      const list = [...(liveData.amendments || [])].sort((a, b) =>
+        String(b.filed || "").localeCompare(String(a.filed || "")) || (parseInt(b.number, 10) || 0) - (parseInt(a.number, 10) || 0));
+      lList.innerHTML = list.map(a => `
+        <button type="button" class="amd${liveSel === a.number ? " on" : ""}" data-n="${esc(a.number)}">
+          <div class="l1"><b>n°${esc(a.number)}</b>${a.known === false ? `<span class="new">Nouveau</span>` : ""}
+            <span>${esc(a.author || "")}${a.author_group ? ` (${esc(GROUP(a.author_group))})` : ""}</span></div>
+          <div class="l2">${esc(a.article || "")}${a.filed ? ` · déposé le ${esc(a.filed.split("-").reverse().join("/"))}` : ""} · ${esc(a.purpose || "")}</div>
+        </button>`).join("");
+      lList.querySelectorAll(".amd").forEach(b => b.addEventListener("click", () => liveExtract(b.dataset.n)));
+      if (!lRun.innerHTML) lRun.innerHTML = `<p class="hint">Cliquez un amendement : le modèle lit son texte maintenant, en extrait les entreprises visées, puis on les compte dans le répertoire Sirene.</p>`;
+    } catch (e) {
+      liveOff(`serveur live injoignable <button type="button" class="retry" id="liveRetry">Réessayer</button>`);
+      document.getElementById("liveRetry")?.addEventListener("click", ev => { ev.stopPropagation(); lMeta.textContent = "connexion…"; liveLoad(); });
+    }
+  }
+  function liveOff(html) {
+    liveEl.classList.add("off"); liveData = null;
+    lBody.hidden = true; lHead.setAttribute("aria-expanded", "false");
+    lHead.querySelector(".live-toggle").textContent = "";
+    lMeta.innerHTML = html;
+  }
+
+  async function liveExtract(number) {
+    if (liveCtrl) liveCtrl.abort();
+    liveCtrl = new AbortController();
+    const ctrl = liveCtrl;
+    liveSel = number; liveResult = null;
+    lList.querySelectorAll(".amd").forEach(b => b.classList.toggle("on", b.dataset.n === number));
+    lRun.innerHTML = `<div class="stream-k"><span class="spin2"></span><span id="lk">Le modèle lit l'amendement n°${esc(number)}…</span></div>
+      <div class="live-status" id="lst"></div>
+      <pre class="stream" id="lstream"><span class="cur"></span></pre>`;
+    const out = document.getElementById("lstream");
+    const setStatus = t => { const el = document.getElementById("lst"); if (el) el.textContent = t; };
+    let raw = "";
+    try {
+      const r = await fetch(`${LIVE}/api/live/extract?stream=1`, {
+        method: "POST", headers: { "Content-Type": "application/json", Accept: "text/event-stream" },
+        body: JSON.stringify({ text_number: N, number: String(number) }), signal: ctrl.signal });
+      if (!r.ok) {
+        let msg = `HTTP ${r.status}`;
+        try { const j = await r.json(); if (j.error) msg = j.error; } catch {}
+        throw Object.assign(new Error(msg), { http: r.status });
+      }
+      const reader = r.body.getReader();
+      const dec = new TextDecoder();
+      let buf = "", gotResult = false;
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true }).replace(/\r\n/g, "\n");
+        let i;
+        while ((i = buf.indexOf("\n\n")) >= 0) {
+          const block = buf.slice(0, i); buf = buf.slice(i + 2);
+          let ev = "message", data = "";
+          block.split("\n").forEach(line => {
+            if (line.startsWith("event:")) ev = line.slice(6).trim();
+            else if (line.startsWith("data:")) data += (data ? "\n" : "") + line.slice(5).replace(/^ /, "");
+          });
+          if (!data) continue;
+          let d; try { d = JSON.parse(data); } catch { d = { t: data }; }
+          if (ctrl !== liveCtrl) return;
+          if (ev === "start") {
+            document.getElementById("lk").textContent =
+              `Le modèle lit l'amendement n°${d.number || number}${d.author ? ` (${d.author}${d.author_group ? `, ${GROUP(d.author_group)}` : ""})` : ""} · modèle : ${d.model || "?"}`;
+          } else if (ev === "token") {
+            raw += d.t || "";
+            out.textContent = raw; out.insertAdjacentHTML("beforeend", `<span class="cur"></span>`);
+            out.scrollTop = out.scrollHeight;
+          } else if (ev === "status") {
+            setStatus(d.t || "");
+          } else if (ev === "error") {
+            throw new Error(d.error || d.t || "erreur du serveur");
+          } else if (ev === "result") {
+            gotResult = true; liveResult = d; renderLiveResult(raw);
+          }
+        }
+      }
+      if (!gotResult && ctrl === liveCtrl) throw new Error("flux interrompu avant le résultat");
+    } catch (e) {
+      if (e.name === "AbortError" || ctrl !== liveCtrl) return;
+      const net = !e.http && /fetch|network|interrompu/i.test(e.message || "");
+      lRun.innerHTML = `<p class="live-err">${e.http === 503 ? "Extraction indisponible : " : "Erreur : "}${esc(e.message || "réseau")}
+        ${e.http === 503 ? "" : `<button type="button" id="lretry">Réessayer</button>`}</p>`;
+      document.getElementById("lretry")?.addEventListener("click", () => liveExtract(number));
+      void net;
+    }
+  }
+
+  function liveCard(res) {
+    if (company) {
+      const ev = evaluate(res);
+      if (ev) return { card: ev, concerns: true };
+    }
+    const label = (res.sectors || []).map(s => stripParen(s.label)).filter(Boolean).join(", ");
+    return { card: { ...res, you: {}, history: null, matched_sector: label || "—", by_role: false }, concerns: false };
+  }
+
+  function renderLiveResult(raw) {
+    const res = liveResult; if (!res) return;
+    const { card: c, concerns } = liveCard(res);
+    const how = c.by_role ? "par son rôle" : `par son code NAF ${company?.naf || ""}`;
+    const concern = company
+      ? (concerns ? `<p class="concern yes">✓ Cet amendement concerne ${esc(shortName(company.name))} (${esc(how)}).</p>`
+                  : `<p class="concern no">Cet amendement ne vise pas ${esc(shortName(company.name))} (NAF ${esc(company.naf || "—")}).</p>`)
+      : "";
+    const verif = `<div class="verif">${res.quote_verified ? `<span class="badge-ok">✓ citation vérifiée mot pour mot</span>` : `<span>citation non vérifiée</span>`}
+      <span>modèle : ${esc(res.model || "?")}${res.elapsed_ms != null ? ` · ${fmt(res.elapsed_ms)} ms` : ""}</span>
+      ${res.url ? `<a href="${esc(res.url)}" target="_blank" rel="noopener">texte sur senat.fr</a>` : ""}</div>`;
+    const rawBox = raw ? `<details><summary>sortie brute du modèle</summary><pre class="stream">${esc(raw)}</pre></details>` : "";
+    lRun.innerHTML = concern + verif + (res.criteria_found === false && !res.theme
+      ? `<p class="hint">Le modèle n'a trouvé aucun critère d'entreprise dans cet amendement.</p>`
+      : card({ ...c, theme: c.theme || `Amendement n°${res.amendments?.[0] || liveSel}` }, 1, "live")) + rawBox;
+  }
+  /* ---------- AI scan: the model reads every pending amendment against this company's activity ---------- */
+  const scanEl = document.getElementById("scan");
+  let scanKey = null, scanCtrl = null, scanState = null, scanN = 1; // scanState: {raw, result, error, running}
+
+  function scanPanel(nCards) {
+    if (!company) { scanEl.hidden = true; return; }
+    const key = `${company.siren}|${[...roles].sort().join(",")}`;
+    if (key !== scanKey) { if (scanCtrl) scanCtrl.abort(); scanKey = key; scanState = null; }
+    scanEl.hidden = false;
+    scanEl.classList.toggle("strong", nCards === 0);
+    scanN = nCards; paintScan();
+  }
+
+  function paintScan() {
+    const nCards = scanN;
+    const head = `<div class="scan-head">
+      <p>${nCards === 0 ? "Votre secteur n'est visé par aucune mesure de la liste. Le modèle peut relire tous les amendements en attente à la lumière de votre activité."
+        : "Une mesure peut vous concerner sans viser votre code NAF : le modèle peut relire tous les amendements en attente pour votre activité."}</p>
+      <button type="button" class="scan-btn" id="scanBtn" ${!LIVE_OK || scanState?.running ? "disabled" : ""}>
+        ${!LIVE_OK ? "Disponible en local" : scanState?.running ? "Analyse en cours…" : scanState?.result ? "Relancer l'analyse IA" : "Lancer l'analyse IA pour votre activité"}</button></div>`;
+    let body = "";
+    const st = scanState;
+    if (st?.running || (st?.raw && !st.result && !st.error)) {
+      body = `<div class="stream-k" style="margin-top:12px"><span class="spin2"></span><span>${esc(st.label || "Le modèle lit les amendements…")}</span></div>
+        <pre class="stream" id="scanStream">${esc(st.raw || "")}<span class="cur"></span></pre>`;
+    } else if (st?.error) {
+      body = `<p class="live-err" style="margin-top:10px">${esc(st.error)}${st.http === 503 ? "" : ` <button type="button" id="scanRetry">Réessayer</button>`}</p>`;
+    } else if (st?.result) {
+      const r = st.result, ms = r.matches || [];
+      const nRead = st.n || r.n_amendments || (liveData?.pending ?? "");
+      const meta = `<span>modèle : ${esc(r.model || st.model || "?")}${r.elapsed_ms != null ? ` · ${fmt(r.elapsed_ms)} ms` : ""}${r.dropped ? ` · ${fmt(Array.isArray(r.dropped) ? r.dropped.length : r.dropped)} écarté(s) (citation introuvable)` : ""}</span>`;
+      body = !ms.length
+        ? `<p class="hint" style="margin-top:10px">Le modèle n'a trouvé aucun amendement qui concerne votre activité (${esc(nRead)} lus).</p><div class="match foot">${meta}</div>`
+        : `<div style="margin-top:12px"><span class="ai-label">Analyse IA — à vérifier, non chiffrée</span>
+            <span class="live-status">&nbsp;${plural(ms.length, "amendement trouvé", "amendements trouvés")}${nRead ? ` sur ${esc(nRead)} lus` : ""} · ${meta}</span></div>
+          <div class="matches">${ms.map(m => {
+            const dir = m.direction === "gain" ? "gain" : m.direction === "perte" ? "perte" : "incertain";
+            const num = String(m.number || "");
+            const url = `https://www.senat.fr/amendements/2026-2027/${N}/Amdt_${encodeURIComponent(num.split(" ")[0])}.html`;
+            return `<article class="match"><h4>${esc(m.theme || `Amendement n°${num}`)} <span class="dir ${dir}">${dir}</span></h4>
+              ${m.how ? `<p class="howm">${esc(m.how)}</p>` : ""}
+              ${m.quote ? `<blockquote>« ${esc(m.quote)} »</blockquote>` : ""}
+              <div class="foot">${m.quote_verified ? `<span class="badge-ok">✓ vérifiée</span>` : m.quote ? `<span>citation non vérifiée</span>` : ""}
+                <a href="${esc(url)}" target="_blank" rel="noopener">amendement n°${esc(num)}</a>
+                ${m.author_group ? `<span>${esc(GROUP(m.author_group))}</span>` : ""}</div></article>`;
+          }).join("")}</div>`;
+    }
+    scanEl.innerHTML = head + body;
+    document.getElementById("scanBtn")?.addEventListener("click", runScan);
+    document.getElementById("scanRetry")?.addEventListener("click", runScan);
+    const out = document.getElementById("scanStream"); if (out) out.scrollTop = out.scrollHeight;
+  }
+
+  async function runScan() {
+    if (!company || !LIVE_OK) return;
+    if (scanCtrl) scanCtrl.abort();
+    const ctrl = scanCtrl = new AbortController();
+    const st = scanState = { raw: "", running: true, label: "Le modèle lit les amendements en attente…" };
+    paintScan();
+    const body = { text_number: N, company: { name: company.name, siren: company.siren, naf: company.naf,
+      naf_label: nafLabel(company.naf) || "", headcount_band: company.band || null, roles: [...roles] } };
+    try {
+      const r = await fetch(`${LIVE}/api/live/scan?stream=1`, { method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "text/event-stream" }, body: JSON.stringify(body), signal: ctrl.signal });
+      if (!r.ok) {
+        let msg = `HTTP ${r.status}`;
+        try { const j = await r.json(); if (j.error) msg = j.error; } catch {}
+        throw Object.assign(new Error(msg), { http: r.status });
+      }
+      const reader = r.body.getReader(); const dec = new TextDecoder();
+      let buf = "", last = 0;
+      for (;;) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buf += dec.decode(value, { stream: true }).replace(/\r\n/g, "\n");
+        let i;
+        while ((i = buf.indexOf("\n\n")) >= 0) {
+          const block = buf.slice(0, i); buf = buf.slice(i + 2);
+          let ev = "message", data = "";
+          block.split("\n").forEach(line => {
+            if (line.startsWith("event:")) ev = line.slice(6).trim();
+            else if (line.startsWith("data:")) data += (data ? "\n" : "") + line.slice(5).replace(/^ /, "");
+          });
+          if (!data || ctrl !== scanCtrl) continue;
+          let d; try { d = JSON.parse(data); } catch { d = { t: data }; }
+          if (ev === "start") {
+            st.n = d.n_amendments; st.model = d.model;
+            st.label = `Le modèle lit les ${d.n_amendments ?? ""} amendements pour ${shortName(company.name)} · modèle : ${d.model || "?"}`;
+            paintScan();
+          } else if (ev === "token") {
+            st.raw += d.t || "";
+            const out = document.getElementById("scanStream");
+            if (out) { out.textContent = st.raw; out.insertAdjacentHTML("beforeend", `<span class="cur"></span>`); out.scrollTop = out.scrollHeight; }
+          } else if (ev === "status") {
+            st.label = d.t || st.label;
+            const now = Date.now(); if (now - last > 200) { last = now; paintScan(); }
+          } else if (ev === "error") {
+            throw new Error(d.error || d.t || "erreur du serveur");
+          } else if (ev === "result") {
+            st.result = d; st.running = false; paintScan();
+          }
+        }
+      }
+      if (ctrl === scanCtrl && !st.result) throw new Error("flux interrompu avant le résultat");
+    } catch (e) {
+      if (e.name === "AbortError" || ctrl !== scanCtrl) return;
+      st.running = false;
+      st.error = e.http === 503 ? `Analyse IA indisponible : ${e.message}`
+        : e.http === 404 ? "Analyse IA pas encore disponible sur ce serveur."
+        : `Erreur : ${e.message || "réseau"}`;
+      st.http = e.http;
+      paintScan();
+    }
+  }
+
+  function liveConcern() { if (liveResult && !lBody.hidden) renderLiveResult(""); }
+
+  liveLoad();
+  setInterval(() => { if (liveData && !document.hidden) liveLoad(); }, 60000);
 
   renderPresets();
   const saved = stored("company");
