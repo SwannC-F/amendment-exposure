@@ -1,0 +1,103 @@
+{
+  "earlier_runs": [],
+  "started": "2026-11-14T16:34:37",
+  "cap": 9.2,
+  "cost_per_amendment": 0.03462028552631579,
+  "texts": [
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "8",
+      "pending": 1,
+      "total": 6,
+      "source": "catalog",
+      "estimate": 0.135,
+      "state": "done (relancé à la main 16:40 après le correctif curl de fetch_amendments.download)",
+      "launched": "2026-11-14T16:34:37",
+      "seconds": 0
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "68",
+      "pending": 1,
+      "total": 24,
+      "source": "catalog",
+      "estimate": 0.135,
+      "state": "done",
+      "launched": "2026-11-14T16:34:37",
+      "seconds": 389
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "87",
+      "pending": 1,
+      "total": 112,
+      "source": "catalog",
+      "estimate": 0.135,
+      "state": "done",
+      "launched": "2026-11-14T16:34:37",
+      "seconds": 140
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "14",
+      "pending": 2,
+      "total": 9,
+      "source": "catalog",
+      "estimate": 0.169,
+      "state": "done",
+      "launched": "2026-11-14T16:34:47",
+      "seconds": 244
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "62",
+      "pending": 2,
+      "total": 50,
+      "source": "catalog",
+      "estimate": 0.169,
+      "state": "done",
+      "launched": "2026-11-14T16:37:02",
+      "seconds": 493
+    },
+    {
+      "chamber": "an",
+      "session": "17",
+      "number": "3210",
+      "pending": 3,
+      "total": 301,
+      "title": "Projet de loi projet de loi de finances pour 2027",
+      "estimate": 0.204,
+      "state": "done",
+      "launched": "2026-11-14T16:38:58",
+      "seconds": 456
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "89",
+      "pending": 10,
+      "total": 478,
+      "source": "catalog",
+      "estimate": 0.446,
+      "state": "done",
+      "launched": "2026-11-14T16:41:13",
+      "seconds": 1037
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "138",
+      "pending": 524,
+      "total": 1770,
+      "estimate": 18.241,
+      "state": "skipped (>400 en attente)"
+    }
+  ],
+  "real_cost": 3.2235,
+  "finished": "2026-11-14T16:58:38"
+}

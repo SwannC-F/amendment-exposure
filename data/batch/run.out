@@ -1,0 +1,9 @@
+coût observé : 5.145 $ / 152 amendements = 0.0339 $/amendement
+
+3 textes trouvés :
+  an    17/3468     4/4    en attente  ~0.23 $  queued
+  an    17/3188    13/13   en attente  ~0.54 $  queued
+  senat 2026-2027/138    524/1770 en attente  ~17.84 $  skipped (>400 en attente)
+lancé  an 17/3468 (~0.23 $, engagé 0.00 $)
+lancé  an 17/3188 (~0.54 $, engagé 0.23 $)
+done                 an 17/3468 (1496 s)

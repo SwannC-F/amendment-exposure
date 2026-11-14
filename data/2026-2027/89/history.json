@@ -1,0 +1,338 @@
+{
+ "session": "2026-2027",
+ "text": "89",
+ "title": "Projet de loi : Protection des enfants",
+ "dossier": "https://www.senat.fr/dossier-legislatif/pjl25-911.html",
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "protection de l'enfance",
+  "protection des mineurs",
+  "enfance en danger",
+  "mineurs en danger",
+  "Aide sociale à l'enfance",
+  "droits de l'enfant",
+  "maltraitance des mineurs",
+  "sécurité des mineurs"
+ ],
+ "articles": {},
+ "laws": {
+  "JORFTEXT000000823100": {
+   "id": "JORFTEXT000000823100",
+   "title": "LOI n° 2007-293 du 5 mars 2007 réformant la protection de l'enfance",
+   "nor": "SANX0600056L",
+   "date": "2007-03-05",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000823100",
+   "senat_documents": [
+    {
+     "num": "330",
+     "session": "2005-2006"
+    },
+    {
+     "num": "393",
+     "session": "2005-2006"
+    },
+    {
+     "num": "154",
+     "session": "2006-2007"
+    },
+    {
+     "num": "205",
+     "session": "2006-2007"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000431282": {
+   "id": "JORFTEXT000000431282",
+   "title": "LOI n° 2004-1 du 2 janvier 2004 relative à l'accueil et à la protection de l'enfance (1)",
+   "nor": "SANX0300107L",
+   "date": "2004-01-02",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000431282",
+   "senat_documents": [
+    {
+     "num": "434",
+     "session": "2002-2003"
+    },
+    {
+     "num": "10",
+     "session": "2003-2004"
+    },
+    {
+     "num": "97",
+     "session": "2003-2004"
+    },
+    {
+     "num": "106",
+     "session": "2003-2004"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000509536": {
+   "id": "JORFTEXT000000509536",
+   "title": "Loi n°89-899 du 18 décembre 1989 RELATIVE A LA PROTECTION ET A LA PROMOTION DE LA SANTE DE LA FAMILLE ET DE L'ENFANCE ET ADAPTANT LA LEGISLATION SANITAIRE ET SOCIALE AUX TRANSFERTS DE COMPETENCES EN MATIERE D'AIDE SOCIALE ET DE SANTE",
+   "nor": "FAMX8900027L",
+   "date": "1989-12-18",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000509536",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000878037": {
+   "id": "JORFTEXT000000878037",
+   "title": "Loi n°84-422 du 6 juin 1984 RELATIVE AUX DROITS DES FAMILLES DANS LEURS RAPPORTS AVEC LES SERVICES CHARGES DE LA PROTECTION DE LA FAMILLE ET DE L'ENFANCE,ET AU STATUT DES PUPILLES DE L'ETAT",
+   "nor": null,
+   "date": "1984-06-06",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000878037",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000049251465": {
+   "id": "JORFTEXT000049251465",
+   "title": "LOI n° 2024-201 du 8 mars 2024 visant à renforcer la protection des mineurs et l'honorabilité dans le sport (1)",
+   "nor": "SPOV2316392L",
+   "date": "2024-03-08",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000049251465",
+   "senat_documents": [
+    {
+     "num": "241",
+     "session": "2022-2023"
+    },
+    {
+     "num": "699",
+     "session": "2022-2023"
+    },
+    {
+     "num": "700",
+     "session": "2022-2023"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000556901": {
+   "id": "JORFTEXT000000556901",
+   "title": "LOI n° 98-468 du 17 juin 1998 relative à la prévention et à la répression des infractions sexuelles ainsi qu'à la protection des mineurs",
+   "nor": "JUSX9700090L",
+   "date": "1998-06-17",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000556901",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000041975976": {
+   "id": "JORFTEXT000041975976",
+   "title": "LOI n° 2020-692 du 8 juin 2020 visant à améliorer les droits des travailleurs et l'accompagnement des familles après le décès d'un enfant (1)",
+   "nor": "MTRX2003331L",
+   "date": "2020-06-08",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000041975976",
+   "senat_documents": [
+    {
+     "num": "288",
+     "session": "2019-2020"
+    },
+    {
+     "num": "349",
+     "session": "2019-2020"
+    },
+    {
+     "num": "346",
+     "session": "2019-2020"
+    },
+    {
+     "num": "350",
+     "session": "2019-2020"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000582185": {
+   "id": "JORFTEXT000000582185",
+   "title": "LOI n° 2001-1135 du 3 décembre 2001 relative aux droits du conjoint survivant et des enfants adultérins et modernisant diverses dispositions de droit successoral (1)",
+   "nor": "JUSX0104676L",
+   "date": "2001-12-03",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000582185",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000212122": {
+   "id": "JORFTEXT000000212122",
+   "title": "LOI no 99-478 du 9 juin 1999 visant à inciter au respect des droits de l'enfant dans le monde, notamment lors de l'achat des fournitures scolaires (1)",
+   "nor": "MENX9803289L",
+   "date": "1999-06-09",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000212122",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000376920": {
+   "id": "JORFTEXT000000376920",
+   "title": "LOI no 96-296 du 9 avril 1996 tendant à faire du 20 novembre une Journée nationale des droits de l'enfant (1)",
+   "nor": "TASX9501431L",
+   "date": "1996-04-09",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000376920",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000361918": {
+   "id": "JORFTEXT000000361918",
+   "title": "LOI n° 93-22 du 8 janvier 1993 modifiant le code civil relative à l'état civil, à la famille et aux droits de l'enfant et instituant le juge aux affaires familiales (1)",
+   "nor": "JUSX9100195L",
+   "date": "1993-01-08",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000361918",
+   "senat_documents": [
+    {
+     "num": "348",
+     "session": "1991-1992"
+    },
+    {
+     "num": "76",
+     "session": "1992-1993"
+    },
+    {
+     "num": "150",
+     "session": "1992-1993"
+    },
+    {
+     "num": "174",
+     "session": "1992-1993"
+    },
+    {
+     "num": "184",
+     "session": "1992-1993"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [
+  {
+   "session": "2025-2026",
+   "number": "911",
+   "stage": "commission",
+   "origin": "dossier en cours",
+   "csv": "https://www.senat.fr/amendements/commissions/2025-2026/911/jeu_complet_commission_2025-2026_911.csv",
+   "rows": 377,
+   "relevant": 222
+  },
+  {
+   "session": "2022-2023",
+   "number": "241",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2024-201 du 8 mars 2024 visant à renforcer la protection des mineurs et l",
+   "csv": "https://www.senat.fr/amendements/commissions/2022-2023/241/jeu_complet_commission_2022-2023_241.csv",
+   "rows": 3,
+   "relevant": 2
+  },
+  {
+   "session": "2022-2023",
+   "number": "700",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2024-201 du 8 mars 2024 visant à renforcer la protection des mineurs et l",
+   "csv": "https://www.senat.fr/amendements/2022-2023/700/jeu_complet_2022-2023_700.csv",
+   "rows": 5,
+   "relevant": 3
+  },
+  {
+   "session": "2019-2020",
+   "number": "288",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2020-692 du 8 juin 2020 visant à améliorer les droits des travailleurs et",
+   "csv": "https://www.senat.fr/amendements/commissions/2019-2020/288/jeu_complet_commission_2019-2020_288.csv",
+   "rows": 33,
+   "relevant": 10
+  },
+  {
+   "session": "2019-2020",
+   "number": "350",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2020-692 du 8 juin 2020 visant à améliorer les droits des travailleurs et",
+   "csv": "https://www.senat.fr/amendements/2019-2020/350/jeu_complet_2019-2020_350.csv",
+   "rows": 26,
+   "relevant": 0
+  },
+  {
+   "session": "2006-2007",
+   "number": "154",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2007-293 du 5 mars 2007 réformant la protection de l'enfance",
+   "csv": "https://www.senat.fr/amendements/2006-2007/154/jeu_complet_2006-2007_154.csv",
+   "rows": 62,
+   "relevant": 30
+  },
+  {
+   "session": "2005-2006",
+   "number": "330",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2007-293 du 5 mars 2007 réformant la protection de l'enfance",
+   "csv": "https://www.senat.fr/amendements/2005-2006/330/jeu_complet_2005-2006_330.csv",
+   "rows": 142,
+   "relevant": 88
+  },
+  {
+   "session": "2003-2004",
+   "number": "97",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2004-1 du 2 janvier 2004 relative à l'accueil et à la protection de l'enf",
+   "csv": "https://www.senat.fr/amendements/2003-2004/97/jeu_complet_2003-2004_97.csv",
+   "rows": 4,
+   "relevant": 0
+  },
+  {
+   "session": "2002-2003",
+   "number": "434",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2004-1 du 2 janvier 2004 relative à l'accueil et à la protection de l'enf",
+   "csv": "https://www.senat.fr/amendements/2002-2003/434/jeu_complet_2002-2003_434.csv",
+   "rows": 26,
+   "relevant": 11
+  }
+ ],
+ "stats": {
+  "articles": 0,
+  "laws": 11,
+  "senat_texts": 9,
+  "past_relevant": 366,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 297,
+  "hatvp_sides": 0,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {},
+ "refs": {}
+}

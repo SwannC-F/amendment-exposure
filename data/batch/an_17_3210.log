@@ -1,0 +1,66 @@
+
+== fetch (fetch_amendments_an.py 17 3210)
+examen : EXANR5L17PO419610B3210P2D1 En cours
+titre : Projet de loi projet de loi de finances pour 2027
+301 amendments, 3 pending -> data/an/17/3210/amendments.json
+   fetch : 5 s
+
+== extract (extract.py an/17 3210)
+3 amendements, 3 avec critères, 3/3 citations vérifiées, 0 erreurs -> data/an/17/3210/criteria.json
+  n°CE152     OK 68.20A                         Relève le plafond du régime micro-foncier de 15 000 à 25 000 euros pou
+  n°CE158     OK 68.20A                         Maintient la revalorisation des APL et de la prime d'activité sur l'in
+  n°CE307     OK                                Supprime le gel des paramètres des aides personnelles au logement et d
+   extract : 39 s
+
+== group (group.py an/17 3210)
+3 amendements -> 2 mesures -> data/an/17/3210/measures.json
+  Relèver le plafond du micro-foncier                n° CE152
+  Supprimer le gel des APL et prime d'activité       n° CE158, CE307
+   group : 9 s
+
+== signals (signals.py an/17 3210)
+2 mesures -> data/an/17/3210/signals.json
+  2 groupes            Supprimer le gel des APL et prime d'activité     Gauche Démocrate et Républicaine, Socialistes et apparentés
+  1 groupes            Relèver le plafond du micro-foncier              Droite Républicaine
+   signals : 0 s
+
+== exposure (exposure.py an/17 3210)
+68.20A:  591,075 entreprises,     69,759–137,314 employés
+
+2 mesures, 3 amendements -> data/an/17/3210/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py an/17 3210)
+… relever-plafond-micro-foncier (1 amend.)
+… supprimer-gel-apl-prime-activite (2 amend.)
+2 mesures -> data/an/17/3210/chiffrage.json
+
+■ relever-plafond-micro-foncier : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'assiette (montant total des revenus fonciers de propriétés non bâties concernés par le relèvement d
+
+■ supprimer-gel-apl-prime-activite : 101.0 M€ – 101.0 M€ /an
+   ✓ base  1.01e+08–1.01e+08 €/an  n°CE158 « générant une économie budgétaire de 101 millions d'euros »
+   ✓ delta 1–1 part  n°CE158 « Supprimer cet article. | Le projet de loi de finances prévoit de ne pas revaloriser les pa »
+   chiffrage : 290 s
+
+== history (history.py an/17 3210)
+text an/17/3210: Projet de loi projet de loi de finances pour 2027 — 3 amendments, 2 measures, stages []
+bill text None: 0 alinéas in 0 articles
+articles: ['article 32 du code général des impôts']
+legifrance search failed Code général des impôts 32 /search failed: Remote end closed connection without response
+search terms: ['micro-foncier', 'revenus fonciers', 'aide personnalisée au logement', "prime d'activité", 'allocation logement', 'gel des APL']
+title search failed allocation logement /search failed: Remote end closed connection without response
+families: [] regex: (?:micro[sx]?[\s\-']?foncier[sx]?)|(?:revenus[sx]?[\s\-']?fonciers[sx]?)|(?:aide[sx]?[\s\-']?personnalisee[sx]?[\s\-']?au[sx]?[\s\-']?logement[sx]?)|(?:prime[sx]?[\s\-']?d[sx]?[\s\-']?activite[sx]?)|(?:allocation[sx]?[\s\-']?logement[sx]?)|(?:gel[sx]?[\s\-']?des[sx]?[\s\-']?apl[sx]?)
+ameli: 0 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 24 fiches match
+hatvp: 1 sides kept, 0 rejected (quote not found)
+wrote data/an/17/3210/history.json: 2 measures, 1 findings
+   history : 113 s
+
+== engine (engine.py an/17 3210)
+2 mesures -> data/an/17/3210/engine.json
+  2 gr. Supprimer le gel des APL et prime d'activi NAF  1 rôles ['autre:organismes HLM', 'etat', 'menages'] taux 0  101–101 M€/an
+  1 gr. Relèver le plafond du micro-foncier        NAF  1 rôles ['etat', 'menages'] taux 0  non chiffrable
+   engine : 0 s
+
+Terminé -> data/an/17/3210/

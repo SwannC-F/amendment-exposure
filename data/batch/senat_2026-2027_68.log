@@ -1,0 +1,50 @@
+
+== fetch (fetch_amendments.py 2026-2027 68)
+titre : Proposition de loi : Garantir la protection des victimes de violences sexistes et sexuelles
+24 amendments, 1 pending -> data/2026-2027/68/amendments.json
+   fetch : 1 s
+
+== extract (extract.py 2026-2027 68)
+1 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/68/criteria.json
+  n°1         --                                 [citation non retrouvée]
+   extract : 9 s
+
+== group (group.py 2026-2027 68)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/68/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 68)
+0 mesures -> data/2026-2027/68/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 68)
+
+0 mesures, 0 amendements -> data/2026-2027/68/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 68)
+0 mesures -> data/2026-2027/68/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 68)
+text 2026-2027/68: Proposition de loi : Garantir la protection des victimes de violences sexistes et sexuelles — 1 amendments, 0 measures, stages [('2025-2026', '619', 'commission'), ('2026-2027', '68', 'seance')]
+bill text https://www.senat.fr/leg/ppl26-068.html: 40 alinéas in 5 articles
+articles: []
+search terms: ['violences sexistes et sexuelles', 'harcèlement sexuel', 'agression sexuelle', 'violences faites aux femmes', 'bracelet anti-rapprochement', 'téléphone grave danger', 'outrerage sexiste', 'injures sexistes']
+title search failed violences faites aux femmes /search failed: Remote end closed connection without response
+families: [('Code de procédure pénale', 'L512'), ('Code de procédure pénale', 'L756'), ('Code de procédure pénale', 'L766'), ('Code de procédure pénale', 'L776')] regex: (?:violences[sx]?[\s\-']?sexistes[sx]?[\s\-']?et[sx]?[\s\-']?sexuelles[sx]?)|(?:harcelement[sx]?[\s\-']?sexuel[sx]?)|(?:agression[sx]?[\s\-']?sexuelle[sx]?)|(?:violences[sx]?[\s\-']?faites[sx]?[\s\-']?aux[sx]?[\s\-']?femmes[sx]?)|(?:bracelet[sx]?[\s\-']?anti[sx]?[\s\-']?rapprochement[sx]?)|(?:telephone[sx]?[\s\-']?grave[sx]?[\s\-']?danger[sx]?)|(?:outrerage[sx]?[\s\-']?sexiste[sx]?)|(?:injures[sx]?[\s\-']?sexistes[sx]?)|(?:l\.?\s?512\b)|(?:l\.?\s?756\b)|(?:l\.?\s?766\b)|(?:l\.?\s?776\b)
+ameli 2025-2026/619 commission: 28 rows, 2 relevant (dossier en cours)
+ameli 2017-2018/487 commission: 74 rows, 32 relevant (travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle)
+ameli 2017-2018/590 seance: 143 rows, 49 relevant (travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle)
+ameli 2017-2018/687 seance: 1 rows, 0 relevant (travaux préparatoires de LOI n° 2018-703 du 3 août 2018 renforçant la lutte contre les violences sexuelle)
+ameli: 83 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 52 fiches match
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/68/history.json: 0 measures, 0 findings
+   history : 378 s
+
+== engine (engine.py 2026-2027 68)
+0 mesures -> data/2026-2027/68/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/68/

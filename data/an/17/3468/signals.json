@@ -1,0 +1,64 @@
+{
+  "majority": [],
+  "measures": [
+    {
+      "key": "debloquer-epargne-achat-biens-services",
+      "theme": "Débloquer l'épargne salariale pour acheter des biens ou services",
+      "amendments": [
+        "1"
+      ],
+      "opposes": null,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "faciliter-fcpe-reprise-transmission",
+      "theme": "Faciliter les FCPE de reprise pour la transmission d'entreprise",
+      "amendments": [
+        "2"
+      ],
+      "opposes": null,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    },
+    {
+      "key": "inscrire-deblocage-evenements-familiaux",
+      "theme": "Inscrire le déblocage anticipé pour événements familiaux",
+      "amendments": [
+        "3"
+      ],
+      "opposes": null,
+      "groups": [
+        "Droite Républicaine"
+      ],
+      "n_groups": 1,
+      "majority_groups": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "1",
+      "measure": "debloquer-epargne-achat-biens-services",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "2",
+      "measure": "faciliter-fcpe-reprise-transmission",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    },
+    {
+      "number": "3",
+      "measure": "inscrire-deblocage-evenements-familiaux",
+      "author_group": "Droite Républicaine",
+      "same_measure_amendments": []
+    }
+  ]
+}

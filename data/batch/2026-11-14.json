@@ -1,0 +1,40 @@
+{
+  "started": "2026-11-14T16:33:34",
+  "cap": 10.0,
+  "cost_per_amendment": 0.033850623684210525,
+  "texts": [
+    {
+      "chamber": "an",
+      "session": "17",
+      "number": "3468",
+      "pending": 4,
+      "total": 4,
+      "title": "Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle",
+      "estimate": 0.235,
+      "state": "done",
+      "launched": "2026-11-14T16:33:34",
+      "seconds": 1496
+    },
+    {
+      "chamber": "an",
+      "session": "17",
+      "number": "3188",
+      "pending": 13,
+      "total": 13,
+      "title": "Projet de loi visant la relance et la décentralisation du logement",
+      "estimate": 0.54,
+      "state": "running",
+      "launched": "2026-11-14T16:33:34"
+    },
+    {
+      "chamber": "senat",
+      "session": "2026-2027",
+      "number": "138",
+      "pending": 524,
+      "total": 1770,
+      "estimate": 17.838,
+      "state": "skipped (>400 en attente)"
+    }
+  ],
+  "real_cost": 3.7405
+}

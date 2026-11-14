@@ -1,0 +1,51 @@
+
+== fetch (fetch_amendments.py 2026-2027 8)
+titre : Proposition de loi : Maîtrise d'ouvrage pour les communes rurales
+6 amendments, 1 pending -> data/2026-2027/8/amendments.json
+   fetch : 1 s
+
+== extract (extract.py 2026-2027 8)
+1 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/8/criteria.json
+  n°5 rect.   --                                 [citation non retrouvée]
+   extract : 0 s
+
+== group (group.py 2026-2027 8)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/8/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 8)
+0 mesures -> data/2026-2027/8/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 8)
+
+0 mesures, 0 amendements -> data/2026-2027/8/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 8)
+0 mesures -> data/2026-2027/8/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 8)
+text 2026-2027/8: Proposition de loi : Maîtrise d'ouvrage pour les communes rurales — 1 amendments, 0 measures, stages [('2023-2024', '4', 'commission'), ('2023-2024', '325', 'seance'), ('2024-2025', '422', 'commission'), ('2026-2027', '8', 'seance')]
+bill text https://www.senat.fr/leg/ppl26-008.html: 3 alinéas in 1 articles
+articles: []
+search terms: ["maîtrise d'ouvrage", "maître d'ouvrage", "assistance à maîtrise d'ouvrage", 'commune rurale', "maître d'ouvrage public"]
+title search failed maîtrise d'ouvrage /search failed: Remote end closed connection without response
+families: [('Code général des collectivités territoriales', 'L1111')] regex: (?:maitrise[sx]?[\s\-']?d[sx]?[\s\-']?ouvrage[sx]?)|(?:maitre[sx]?[\s\-']?d[sx]?[\s\-']?ouvrage[sx]?)|(?:assistance[sx]?[\s\-']?a[sx]?[\s\-']?maitrise[sx]?[\s\-']?d[sx]?[\s\-']?ouvrage[sx]?)|(?:commune[sx]?[\s\-']?rurale[sx]?)|(?:maitre[sx]?[\s\-']?d[sx]?[\s\-']?ouvrage[sx]?[\s\-']?public[sx]?)|(?:l\.?\s?1111\b)
+ameli 2024-2025/422 commission: 1 rows, 1 relevant (dossier en cours)
+ameli 2023-2024/4 commission: 2 rows, 2 relevant (dossier en cours)
+ameli 2023-2024/325 seance: 3 rows, 2 relevant (dossier en cours)
+ameli: 5 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 60 fiches match
+hatvp LLM batch failed LLM failed: no JSON in reply: 
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/8/history.json: 0 measures, 0 findings
+   history : 245 s
+
+== engine (engine.py 2026-2027 8)
+0 mesures -> data/2026-2027/8/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/8/
+exit 0

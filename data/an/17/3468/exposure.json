@@ -1,0 +1,122 @@
+{
+  "source": "API Recherche d'entreprises (unités légales actives, activité principale × tranche d'effectifs)",
+  "by_naf": {
+    "66.19A": {
+      "companies": 36570,
+      "employees_low": 25349,
+      "employees_high": 46747,
+      "open_top": false
+    }
+  },
+  "measures": [
+    {
+      "key": "debloquer-epargne-achat-biens-services",
+      "theme": "Débloquer l'épargne salariale pour acheter des biens ou services",
+      "sectors": [
+        {
+          "naf": "66.19A",
+          "label": "Activités des administrateurs de fonds",
+          "companies": 36570,
+          "employees_low": 25349,
+          "employees_high": 46747,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "autre:organismes gestionnaires",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 36570,
+      "employees_low": 25349,
+      "employees_high": 46747,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "faciliter-fcpe-reprise-transmission",
+      "theme": "Faciliter les FCPE de reprise pour la transmission d'entreprise",
+      "sectors": [
+        {
+          "naf": "66.19A",
+          "label": "Gestion de fonds",
+          "companies": 36570,
+          "employees_low": 25349,
+          "employees_high": 46747,
+          "open_top": false
+        }
+      ],
+      "roles": [
+        "emetteurs",
+        "employeurs",
+        "menages"
+      ],
+      "companies": 36570,
+      "employees_low": 25349,
+      "employees_high": 46747,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "key": "inscrire-deblocage-evenements-familiaux",
+      "theme": "Inscrire le déblocage anticipé pour événements familiaux",
+      "sectors": [],
+      "roles": [
+        "employeurs",
+        "menages"
+      ],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    }
+  ],
+  "amendments": [
+    {
+      "number": "1",
+      "sectors": [
+        {
+          "naf": "66.19A",
+          "label": "Activités des administrateurs de fonds",
+          "companies": 36570,
+          "employees_low": 25349,
+          "employees_high": 46747,
+          "open_top": false
+        }
+      ],
+      "companies": 36570,
+      "employees_low": 25349,
+      "employees_high": 46747,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "2",
+      "sectors": [
+        {
+          "naf": "66.19A",
+          "label": "Gestion de fonds",
+          "companies": 36570,
+          "employees_low": 25349,
+          "employees_high": 46747,
+          "open_top": false
+        }
+      ],
+      "companies": 36570,
+      "employees_low": 25349,
+      "employees_high": 46747,
+      "open_top": false,
+      "not_counted": []
+    },
+    {
+      "number": "3",
+      "sectors": [],
+      "companies": 0,
+      "employees_low": 0,
+      "employees_high": 0,
+      "open_top": false,
+      "not_counted": []
+    }
+  ]
+}

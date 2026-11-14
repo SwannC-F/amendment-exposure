@@ -1,0 +1,75 @@
+[
+  {
+    "number": "1",
+    "criteria_found": true,
+    "effect": "Autorise les salariés à débloquer par anticipation, une fois, jusqu'à 5 000 € nets de leur épargne salariale (participation et intéressement) pour acheter des biens ou des services, pendant un an après la promulgation.",
+    "who": "Employeurs ayant mis en place un plan d'épargne salariale, organismes gestionnaires de ces plans, salariés bénéficiaires",
+    "sectors": [
+      {
+        "naf": "66.19A",
+        "label": "Activités des administrateurs de fonds"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "menages",
+      "autre:organismes gestionnaires"
+    ],
+    "regions": [],
+    "quote": "Les sommes versées au bénéficiaire en application du I ne peuvent excéder un plafond global de 5 000 €, net de prélèvements sociaux.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "2",
+    "criteria_found": true,
+    "effect": "Lève les freins techniques au recours aux FCPE « de reprise » permettant de mobiliser l'épargne salariale pour financer la transmission de l'entreprise à ses salariés.",
+    "who": "Entreprises faisant l'objet d'une transmission à leurs salariés, salariés et participants au FCPE, sociétés de gestion émettrices de FCPE de reprise",
+    "sectors": [
+      {
+        "naf": "66.19A",
+        "label": "Gestion de fonds"
+      }
+    ],
+    "roles": [
+      "employeurs",
+      "menages",
+      "emetteurs"
+    ],
+    "regions": [],
+    "quote": "Il lève les freins techniques au recours aux fonds communs de placement d'entreprise (FCPE) dits « de reprise », créés par la loi du 30 décembre 2006 pour mobiliser l'épargne salariale au service de la transmission de l'entreprise à ses salariés.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "3",
+    "criteria_found": true,
+    "effect": "Inscrit dans la loi le déblocage anticipé de la participation et de l'épargne d'entreprise en cas de naissance ou adoption d'un enfant, et en cas d'affection grave, de handicap ou d'accident grave de l'enfant à charge du salarié.",
+    "who": "Employeurs ayant mis en place un dispositif de participation ou d'épargne d'entreprise, et salariés bénéficiaires de ces dispositifs",
+    "sectors": [],
+    "roles": [
+      "employeurs",
+      "menages"
+    ],
+    "regions": [],
+    "quote": "ces droits peuvent être exceptionnellement liquidés ou transférés avant l'expiration de ces délais, en cas de naissance ou d'adoption d'un enfant, en cas d'affection grave, de handicap ou de survenance d'un accident d'une particulière gravité chez l'enfant à la charge du salarié",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  },
+  {
+    "number": "5",
+    "criteria_found": false,
+    "effect": "Demande au Gouvernement un rapport comparant les effets économiques de la loi avec ceux qu'aurait produits l'indexation des salaires sur l'inflation.",
+    "who": "",
+    "sectors": [],
+    "roles": [],
+    "regions": [],
+    "quote": "le Gouvernement remet au Parlement et aux organisations syndicales de salariés et d'employeurs représentatives au niveau national et interprofessionnel un rapport établissant une comparaison des effets économiques de la présente proposition de loi avec une estimation des effets qu'auraient pu produire, à compter de la promulgation de la présente loi, l'indexation des salaires sur l'inflation.",
+    "quote_verified": true,
+    "model": "zai-org/GLM-5.2",
+    "prompt_hash": "8849f5233292"
+  }
+]

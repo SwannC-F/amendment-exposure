@@ -1,0 +1,27 @@
+coût observé : 5.262 $ / 152 amendements = 0.0346 $/amendement
+
+8 textes trouvés :
+  senat 2026-2027/8        1/6    en attente  ~0.14 $  queued
+  senat 2026-2027/68       1/24   en attente  ~0.14 $  queued
+  senat 2026-2027/87       1/112  en attente  ~0.14 $  queued
+  senat 2026-2027/14       2/9    en attente  ~0.17 $  queued
+  senat 2026-2027/62       2/50   en attente  ~0.17 $  queued
+  an    17/3210     3/301  en attente  ~0.20 $  queued
+  senat 2026-2027/89      10/478  en attente  ~0.45 $  queued
+  senat 2026-2027/138    524/1770 en attente  ~18.24 $  skipped (>400 en attente)
+lancé  senat 2026-2027/8 (~0.14 $, engagé 0.00 $)
+lancé  senat 2026-2027/68 (~0.14 $, engagé 0.14 $)
+lancé  senat 2026-2027/87 (~0.14 $, engagé 0.27 $)
+failed (code 1)      senat 2026-2027/8 (0 s)
+lancé  senat 2026-2027/14 (~0.17 $, engagé 0.27 $)
+done                 senat 2026-2027/87 (140 s)
+lancé  senat 2026-2027/62 (~0.17 $, engagé 0.62 $)
+done                 senat 2026-2027/14 (244 s)
+lancé  an 17/3210 (~0.20 $, engagé 0.84 $)
+done                 senat 2026-2027/68 (389 s)
+lancé  senat 2026-2027/89 (~0.45 $, engagé 1.31 $)
+done                 senat 2026-2027/62 (493 s)
+done                 an 17/3210 (456 s)
+done                 senat 2026-2027/89 (1037 s)
+
+coût réel : 3.224 $ -> data/batch/2026-11-14-b.json

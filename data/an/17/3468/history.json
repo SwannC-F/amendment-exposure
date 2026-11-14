@@ -1,0 +1,787 @@
+{
+ "session": "an/17",
+ "text": "3468",
+ "title": "Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle",
+ "dossier": null,
+ "generated": "2026-11-14",
+ "model": "zai-org/GLM-5.2",
+ "sources": {
+  "legifrance": "Légifrance, API PISTE lf-engine-app (/list/code, /search, /consult/getArticle, /consult/jorf)",
+  "ameli": "Sénat, base Ameli (jeu_complet CSV par texte) et data.senat.fr ODSEN_HISTOGROUPES, Licence data.senat.fr",
+  "hatvp": {
+   "name": "HATVP — répertoire des représentants d'intérêts (open data, JSON)",
+   "url": "https://www.hatvp.fr/agora/opendata/agora_repertoire_opendata.json",
+   "file_last_modified": "Sat, 14 Nov 2026 01:02:04 GMT"
+  }
+ },
+ "method": [
+  "Articles suivis : ceux que citent les amendements du texte (expression « article … du code … », « du même code »), rapprochés de la liste des codes de Légifrance.",
+  "Textes passés du Sénat : autres étapes du dossier en cours, documents du Sénat listés dans les travaux préparatoires des lois qui ont modifié ces articles ou dont le titre contient un terme de recherche.",
+  "Amendements passés retenus s'ils citent un article suivi ou un terme de recherche ; rattachés aux mesures par le LLM, avec un extrait vérifié mot pour mot. Sort : colonne Ameli. Groupe : celui du premier auteur à la date de dépôt.",
+  "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
+ ],
+ "search_terms": [
+  "épargne salariale",
+  "déblocage anticipé",
+  "FCPE",
+  "FCPE de reprise",
+  "PERCO",
+  "Plan d'Épargne Entreprise"
+ ],
+ "articles": {
+  "Code du travail|L3323-2": {
+   "code": "Code du travail",
+   "num": "L3323-2",
+   "label": "article L. 3323-2 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006903003",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903003",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006903003",
+     "start": "2008-05-01",
+     "end": "2010-11-11",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903003",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du travail|L3323-5": {
+   "code": "Code du travail",
+   "num": "L3323-5",
+   "label": "article L. 3323-5 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000038613192",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038613192",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000038613192",
+     "start": "2019-05-24",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038613192",
+     "modified_by": {
+      "id": "JORFTEXT000038496102",
+      "link_type": "MODIFIE",
+      "article": "art. 155 (V)",
+      "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+      "date": "2019-05-22",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du travail|L3332-17": {
+   "code": "Code du travail",
+   "num": "L3332-17",
+   "label": "article L. 3332-17 du code du travail",
+   "found": false
+  },
+  "Code du travail|L3315-2": {
+   "code": "Code du travail",
+   "num": "L3315-2",
+   "label": "article L. 3315-2 du code du travail",
+   "found": false,
+   "error": "/consult/getArticle failed: IncompleteRead(15250 bytes read)"
+  },
+  "Code du travail|L3332-25": {
+   "code": "Code du travail",
+   "num": "L3332-25",
+   "label": "article L. 3332-25 du code du travail",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code du travail|L3322-6": {
+   "code": "Code du travail",
+   "num": "L3322-6",
+   "label": "article L. 3322-6 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006902997",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902997",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006902997",
+     "start": "2008-05-01",
+     "end": "2018-01-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902997",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 2,
+   "derogations": []
+  },
+  "Code du travail|L3322-7": {
+   "code": "Code du travail",
+   "num": "L3322-7",
+   "label": "article L. 3322-7 du code du travail",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code du travail|L3344-1": {
+   "code": "Code du travail",
+   "num": "L3344-1",
+   "label": "article L. 3344-1 du code du travail",
+   "found": false,
+   "error": "/consult/getArticle failed: IncompleteRead(15236 bytes read)"
+  },
+  "Code monétaire et financier|L214-165": {
+   "code": "Code monétaire et financier",
+   "num": "L214-165",
+   "label": "article L. 214-165 du code monétaire et financier",
+   "found": true,
+   "id": "LEGIARTI000038668304",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038668304",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000038668304",
+     "start": "2021-01-01",
+     "end": "2020-12-09",
+     "etat": "MODIFIE_MORT_NE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038668304",
+     "modified_by": {
+      "id": "JORFTEXT000038496102",
+      "link_type": "MODIFIE",
+      "article": "art. 162",
+      "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+      "date": "2019-05-22",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 6,
+   "derogations": []
+  },
+  "Code monétaire et financier|L214-166": {
+   "code": "Code monétaire et financier",
+   "num": "L214-166",
+   "label": "article L. 214-166 du code monétaire et financier",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code du travail|L3312-4": {
+   "code": "Code du travail",
+   "num": "L3312-4",
+   "label": "article L. 3312-4 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006902957",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902957",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006902957",
+     "start": "2008-05-01",
+     "end": "2010-05-08",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902957",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du travail|L3325-1": {
+   "code": "Code du travail",
+   "num": "L3325-1",
+   "label": "article L. 3325-1 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000037075045",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037075045",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000037075045",
+     "start": "2018-09-01",
+     "end": "2023-12-01",
+     "etat": "MODIFIE",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037075045",
+     "modified_by": {
+      "id": "JORFTEXT000037051191",
+      "link_type": "MODIFIE",
+      "article": "art. 6",
+      "title": "Ordonnance n° 2018-474 du 12 juin 2018 relative à la simplification et à l'harmonisation des définitions des assiettes des cotisations et contributions de sécurité sociale",
+      "date": "2018-06-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037051191"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  },
+  "Code du travail|L3325-2": {
+   "code": "Code du travail",
+   "num": "L3325-2",
+   "label": "article L. 3325-2 du code du travail",
+   "found": false
+  },
+  "Code du travail|L3334-2": {
+   "code": "Code du travail",
+   "num": "L3334-2",
+   "label": "article L. 3334-2 du code du travail",
+   "found": false
+  },
+  "Code du travail|L3334-4": {
+   "code": "Code du travail",
+   "num": "L3334-4",
+   "label": "article L. 3334-4 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000006903089",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903089",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000006903089",
+     "start": "2008-05-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903089",
+     "modified_by": {
+      "id": "JORFTEXT000000465978",
+      "link_type": "CODIFICATION",
+      "article": "Ordonnance 2007-329 2007-03-12 JORF 13 mars 2007",
+      "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+      "date": "2007-03-12",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
+  },
+  "Code monétaire et financier|L224-27": {
+   "code": "Code monétaire et financier",
+   "num": "L224-27",
+   "label": "article L. 224-27 du code monétaire et financier",
+   "found": false,
+   "error": "/consult/getArticle failed: Remote end closed connection without response"
+  },
+  "Code du travail|L3332-16": {
+   "code": "Code du travail",
+   "num": "L3332-16",
+   "label": "article L. 3332-16 du code du travail",
+   "found": true,
+   "id": "LEGIARTI000038587586",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038587586",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000038587586",
+     "start": "2019-05-24",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038587586",
+     "modified_by": {
+      "id": "JORFTEXT000038496102",
+      "link_type": "MODIFIE",
+      "article": "art. 65",
+      "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+      "date": "2019-05-22",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 3,
+   "derogations": []
+  }
+ },
+ "laws": {
+  "JORFTEXT000000465978": {
+   "id": "JORFTEXT000000465978",
+   "title": "Ordonnance n° 2007-329 du 12 mars 2007 relative au code du travail (partie législative). La partie législative du code du travail (annexes I et II à la présente ordonnance) fait l'objet d'une publication spéciale annexée au Journal officiel de ce jour (voir à la fin du sommaire).",
+   "nor": "SOCX0700017R",
+   "date": "2007-03-12",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000465978",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L3312-4",
+    "Code du travail|L3322-6",
+    "Code du travail|L3323-2",
+    "Code du travail|L3334-4"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000038496102": {
+   "id": "JORFTEXT000038496102",
+   "title": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+   "nor": "ECOT1810669L",
+   "date": "2019-05-22",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102",
+   "senat_documents": [
+    {
+     "num": "28",
+     "session": "2018-2019"
+    },
+    {
+     "num": "254",
+     "session": "2018-2019"
+    },
+    {
+     "num": "207",
+     "session": "2018-2019"
+    },
+    {
+     "num": "255",
+     "session": "2018-2019"
+    },
+    {
+     "num": "341",
+     "session": "2018-2019"
+    },
+    {
+     "num": "342",
+     "session": "2018-2019"
+    },
+    {
+     "num": "382",
+     "session": "2018-2019"
+    },
+    {
+     "num": "415",
+     "session": "2018-2019"
+    },
+    {
+     "num": "416",
+     "session": "2018-2019"
+    }
+   ],
+   "articles": [
+    "Code du travail|L3323-5",
+    "Code du travail|L3332-16",
+    "Code monétaire et financier|L214-165"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000037051191": {
+   "id": "JORFTEXT000037051191",
+   "title": "Ordonnance n° 2018-474 du 12 juin 2018 relative à la simplification et à l'harmonisation des définitions des assiettes des cotisations et contributions de sécurité sociale",
+   "nor": "CPAS1808552R",
+   "date": "2018-06-12",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037051191",
+   "senat_documents": [],
+   "articles": [
+    "Code du travail|L3325-1"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000000770048": {
+   "id": "JORFTEXT000000770048",
+   "title": "LOI n° 2001-152 du 19 février 2001 sur l'épargne salariale (1)",
+   "nor": "ECOX0000121L",
+   "date": "2001-02-19",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000770048",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  }
+ },
+ "senat_texts_scanned": [],
+ "stats": {
+  "articles": 17,
+  "laws": 4,
+  "senat_texts": 0,
+  "past_relevant": 0,
+  "past_attached": 0,
+  "past_quote_rejected": 0,
+  "hatvp_fiches": 92,
+  "hatvp_sides": 6,
+  "hatvp_quote_rejected": 0
+ },
+ "measures": {
+  "debloquer-epargne-achat-biens-services": {
+   "theme": "Débloquer l'épargne salariale pour acheter des biens ou services",
+   "amendments": [
+    "1"
+   ],
+   "effects": [
+    "Autorise les salariés à débloquer par anticipation, une fois, jusqu'à 5 000 € nets de leur épargne salariale (participation et intéressement) pour acheter des biens ou des services, pendant un an après la promulgation."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3323-2 du code du travail",
+    "article L. 3323-5 du code du travail",
+    "article L. 3332-17 du code du travail",
+    "article L. 3315-2 du code du travail",
+    "article L. 3332-25 du code du travail",
+    "article L. 3322-6 du code du travail",
+    "article L. 3322-7 du code du travail",
+    "article L. 3344-1 du code du travail",
+    "article L. 214-165 du code monétaire et financier",
+    "article L. 214-166 du code monétaire et financier",
+    "article L. 3312-4 du code du travail",
+    "article L. 3325-1 du code du travail",
+    "article L. 3325-2 du code du travail",
+    "article L. 3334-2 du code du travail",
+    "article L. 3334-4 du code du travail",
+    "article L. 224-27 du code monétaire et financier"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 3323-5 du code du travail, visé par 1 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2019-05-24 vient de : LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000038613192",
+      "legifrance:JORFTEXT000038496102",
+      "senat:current/1"
+     ]
+    },
+    {
+     "text": "L'article L. 214-165 du code monétaire et financier, visé par 1 amendement(s) de cette mesure, compte 6 version(s) ; celle en vigueur depuis le 2021-01-01 vient de : LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000038668304",
+      "legifrance:JORFTEXT000038496102",
+      "senat:current/1"
+     ]
+    },
+    {
+     "text": "L'article L. 3325-1 du code du travail, visé par 1 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2018-09-01 vient de : Ordonnance n° 2018-474 du 12 juin 2018 relative à la simplification et à l'harmonisation des définitions des assiettes des cotisations et contributions de sécurité sociale.",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000037075045",
+      "legifrance:JORFTEXT000037051191",
+      "senat:current/1"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : PERNOD RICARD.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:5HAJSL4H",
+      "hatvp:SVFQS1JH"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "PERNOD RICARD",
+     "hatvp_id": "582041943",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "5HAJSL4H",
+      "SVFQS1JH"
+     ],
+     "years": [
+      2022,
+      2025
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "PERNOD RICARD",
+     "hatvp_id": "582041943",
+     "side": "pour",
+     "quote": "l'assouplissement / l'élargissement des cas de déblocage ainsi que le déblocage sans conditions pour les plus bas salaires permettraient de pallier cette iniquité sociale.",
+     "fiche": "5HAJSL4H",
+     "year": 2025,
+     "on_behalf_of": [
+      "PERNOD RICARD (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "PERNOD RICARD",
+     "hatvp_id": "582041943",
+     "side": "pour",
+     "quote": "l'assouplissement /l'élargissement des cas de déblocage ainsi que le déblocage sans conditions pour les plus bas salaires sont des mesures qui permettraient de pallier cette iniquité sociale",
+     "fiche": "SVFQS1JH",
+     "year": 2022,
+     "on_behalf_of": [
+      "PERNOD RICARD (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "faciliter-fcpe-reprise-transmission": {
+   "theme": "Faciliter les FCPE de reprise pour la transmission d'entreprise",
+   "amendments": [
+    "2"
+   ],
+   "effects": [
+    "Lève les freins techniques au recours aux FCPE « de reprise » permettant de mobiliser l'épargne salariale pour financer la transmission de l'entreprise à ses salariés."
+   ],
+   "opposes": null,
+   "articles": [
+    "article L. 3332-16 du code du travail"
+   ],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "L'article L. 3332-16 du code du travail, visé par 1 amendement(s) de cette mesure, compte 3 version(s) ; celle en vigueur depuis le 2019-05-24 vient de : LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000038587586",
+      "legifrance:JORFTEXT000038496102",
+      "senat:current/2"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : TADDEO.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:9V001CWV"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "TADDEO",
+     "hatvp_id": "534389309",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "9V001CWV"
+     ],
+     "years": [
+      2023
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "TADDEO",
+     "hatvp_id": "534389309",
+     "side": "pour",
+     "quote": "Favoriser l'actionnariat salarié et les fonds commun de placement d'entreprise (FCPE) en matière de transmission d'entreprise.",
+     "fiche": "9V001CWV",
+     "year": 2023,
+     "on_behalf_of": [
+      "TURENNE CAPITAL PARTENAIRES"
+     ],
+     "derived_from": null
+    }
+   ]
+  },
+  "inscrire-deblocage-evenements-familiaux": {
+   "theme": "Inscrire le déblocage anticipé pour événements familiaux",
+   "amendments": [
+    "3"
+   ],
+   "effects": [
+    "Inscrit dans la loi le déblocage anticipé de la participation et de l'épargne d'entreprise en cas de naissance ou adoption d'un enfant, et en cas d'affection grave, de handicap ou d'accident grave de l'enfant à charge du salarié."
+   ],
+   "opposes": null,
+   "articles": [],
+   "senate_by_group": {},
+   "past_amendments": [],
+   "findings": [
+    {
+     "text": "3 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : DGA GROUP FRANCE, FEDE FRANCAISE INDUS JOUET PUERICULTURE, PERNOD RICARD.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:9V00JP1V",
+      "hatvp:0VEQF1GV",
+      "hatvp:SVFQS1JH"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "DGA GROUP FRANCE",
+     "hatvp_id": "352280416",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "9V00JP1V"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "FEDE FRANCAISE INDUS JOUET PUERICULTURE",
+     "hatvp_id": "784717407",
+     "category": "Fédération professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "0VEQF1GV"
+     ],
+     "years": [
+      2023
+     ]
+    },
+    {
+     "name": "PERNOD RICARD",
+     "hatvp_id": "582041943",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "SVFQS1JH"
+     ],
+     "years": [
+      2022
+     ]
+    }
+   ],
+   "lobby_contre": [],
+   "lobby_both": [],
+   "lobby_quotes": [
+    {
+     "org": "DGA GROUP FRANCE",
+     "hatvp_id": "352280416",
+     "side": "pour",
+     "quote": "proposer le déblocage anticipé de l'épargne salariale dès la naissance / adoption du 1er enfant",
+     "fiche": "9V00JP1V",
+     "year": 2023,
+     "on_behalf_of": [
+      "FEDE FRANCAISE INDUS JOUET PUERICULTURE"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDE FRANCAISE INDUS JOUET PUERICULTURE",
+     "hatvp_id": "784717407",
+     "side": "pour",
+     "quote": "Inscrire dans la loi portant transposition de l'accord relatif au partage de la valeur au sein de l'entreprise l'autorisation du déblocage anticipé de l'épargne salariale à la naissance du 1er enfant",
+     "fiche": "0VEQF1GV",
+     "year": 2023,
+     "on_behalf_of": [
+      "FEDE FRANCAISE INDUS JOUET PUERICULTURE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "PERNOD RICARD",
+     "hatvp_id": "582041943",
+     "side": "pour",
+     "quote": "l'assouplissement /l'élargissement des cas de déblocage ainsi que le déblocage sans conditions pour les plus bas salaires sont des mesures qui permettraient de pallier cette iniquité sociale",
+     "fiche": "SVFQS1JH",
+     "year": 2022,
+     "on_behalf_of": [
+      "PERNOD RICARD (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
+  }
+ },
+ "refs": {
+  "senat:current/1": {
+   "source": "Sénat",
+   "label": "Amendement n° 1 (an/17, texte n° 3468)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3468/AN/1"
+  },
+  "senat:current/2": {
+   "source": "Sénat",
+   "label": "Amendement n° 2 (an/17, texte n° 3468)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3468/AN/2"
+  },
+  "legifrance:LEGIARTI000006903003": {
+   "source": "Légifrance",
+   "label": "article L. 3323-2 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903003"
+  },
+  "legifrance:LEGIARTI000038613192": {
+   "source": "Légifrance",
+   "label": "article L. 3323-5 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038613192"
+  },
+  "legifrance:LEGIARTI000006902997": {
+   "source": "Légifrance",
+   "label": "article L. 3322-6 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902997"
+  },
+  "legifrance:LEGIARTI000038668304": {
+   "source": "Légifrance",
+   "label": "article L. 214-165 du code monétaire et financier",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038668304"
+  },
+  "legifrance:LEGIARTI000006902957": {
+   "source": "Légifrance",
+   "label": "article L. 3312-4 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006902957"
+  },
+  "legifrance:LEGIARTI000037075045": {
+   "source": "Légifrance",
+   "label": "article L. 3325-1 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037075045"
+  },
+  "legifrance:LEGIARTI000006903089": {
+   "source": "Légifrance",
+   "label": "article L. 3334-4 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006903089"
+  },
+  "legifrance:LEGIARTI000038587586": {
+   "source": "Légifrance",
+   "label": "article L. 3332-16 du code du travail",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038587586"
+  },
+  "legifrance:JORFTEXT000038496102": {
+   "source": "Légifrance",
+   "label": "LOI n° 2019-486 du 22 mai 2019 relative à la croissance et la transformation des entreprises (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000038496102",
+   "date": "2019-05-22"
+  },
+  "legifrance:JORFTEXT000037051191": {
+   "source": "Légifrance",
+   "label": "Ordonnance n° 2018-474 du 12 juin 2018 relative à la simplification et à l'harmonisation des définitions des assiettes des cotisations et contributions de sécurité sociale",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037051191",
+   "date": "2018-06-12"
+  },
+  "hatvp:5HAJSL4H": {
+   "source": "HATVP",
+   "label": "PERNOD RICARD — fiche d'activité 5HAJSL4H (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943"
+  },
+  "hatvp:SVFQS1JH": {
+   "source": "HATVP",
+   "label": "PERNOD RICARD — fiche d'activité SVFQS1JH (2022)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=582041943"
+  },
+  "hatvp:9V00JP1V": {
+   "source": "HATVP",
+   "label": "DGA GROUP FRANCE — fiche d'activité 9V00JP1V (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=352280416"
+  },
+  "hatvp:0VEQF1GV": {
+   "source": "HATVP",
+   "label": "FEDE FRANCAISE INDUS JOUET PUERICULTURE — fiche d'activité 0VEQF1GV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784717407"
+  },
+  "hatvp:9V001CWV": {
+   "source": "HATVP",
+   "label": "TADDEO — fiche d'activité 9V001CWV (2023)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=534389309"
+  }
+ }
+}

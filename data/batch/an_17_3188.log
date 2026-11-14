@@ -1,0 +1,108 @@
+
+== fetch (fetch_amendments_an.py 17 3188)
+examen : EXANR5L17PO838901BTC3188P0D1 En cours
+titre : Projet de loi visant la relance et la décentralisation du logement
+13 amendments, 13 pending -> data/an/17/3188/amendments.json
+   fetch : 1 s
+
+== extract (extract.py an/17 3188)
+13 amendements, 9 avec critères, 13/13 citations vérifiées, 0 erreurs -> data/an/17/3188/criteria.json
+  n°551       OK 41.20A, 41.20B, 43             Supprime l'obligation de réserver en priorité les marchés du programme
+  n°652       OK 41.10A, 41.10B, 68.20A         Supprime l'obligation de réserver prioritairement les chantiers de ren
+  n°704       OK                                Supprime l'article permettant de déroger au plan local d'urbanisme (PL
+  n°793       OK 68.20A, 41.10A, 71.11A         Supprime les opérations d'intérêt local (OIL) qui permettaient aux com
+  n°958       OK                                Supprime la création des opérations d'intérêt local permettant d'accor
+  n°658       --                                Substitution d'un mot par un autre (« et » en « ou ») à l'alinéa 2, sa
+  n°163       OK 43.22A, 41.20B, 68.20A         Permet d'accorder des dérogations au PLU pour les projets de surélévat
+  n°159       OK                                Rend obligatoire une concertation préalable avec les riverains lors de
+  n°673       --                                Correction rédactionnelle de l'ordre des mots dans une phrase sur la d
+  n°674       --                                Correction rédactionnelle visant à simplifier la formulation d'une phr
+  n°17        OK 41.10A, 68.20A                 Supprime l'obligation d'usage exclusif en résidence principale pour le
+  n°637       OK 84.11Z                         Encadre à un mois le délai de réponse de l'architecte des bâtiments de
+  n°676       --                                Modification rédactionnelle d'une référence à un alinéa dans l'article
+   extract : 61 s
+
+== group (group.py an/17 3188)
+9 amendements -> 6 mesures -> data/an/17/3188/measures.json
+  Supprimer la priorité aux entreprises locales      n° 551, 652
+  Supprimer les opérations d'intérêt local           n° 704, 793, 958  (contraire de encadrer-delai-reponse-abf)
+  Déroger au PLU pour la surélévation                n° 163
+  Rendre obligatoire la concertation préalable       n° 159
+  Supprimer l'obligation de résidence principale     n° 17
+  Encadrer le délai de réponse de l'ABF              n° 637  (contraire de supprimer-operations-interet-local)
+   group : 46 s
+
+== signals (signals.py an/17 3188)
+6 mesures -> data/an/17/3188/signals.json
+  3 groupes            Supprimer les opérations d'intérêt local         Gauche Démocrate et Républicaine, La France insoumise - Nouveau Front Populaire, Les Démocrates
+  2 groupes            Supprimer la priorité aux entreprises locales    Ensemble pour la République, Union des droites pour la République
+  1 groupes            Déroger au PLU pour la surélévation              Les Démocrates
+  1 groupes            Rendre obligatoire la concertation préalable     Droite Républicaine
+  1 groupes            Supprimer l'obligation de résidence principale   Rassemblement National
+  1 groupes            Encadrer le délai de réponse de l'ABF            Droite Républicaine
+   signals : 0 s
+
+== exposure (exposure.py an/17 3188)
+41.10A:   22,987 entreprises,     13,824–26,983 employés
+41.10B:    1,956 entreprises,      2,102–4,068 employés
+41.20A:   48,248 entreprises,     34,085–63,763 employés
+41.20B:   19,807 entreprises,     51,620–101,454 employés
+43: code NAF non reconnu, non compté
+43.22A:   70,475 entreprises,     53,630–100,800 employés
+  warning: 68.20A/NN still capped in one département, count is a floor
+68.20A:  591,075 entreprises,     69,759–137,314 employés
+71.11A: code NAF non reconnu, non compté
+84.11Z: administration publique (section O), pas comptée comme entreprise
+
+6 mesures, 9 amendements -> data/an/17/3188/exposure.json
+   exposure : 261 s
+
+== chiffrage (chiffrage.py an/17 3188)
+… supprimer-priorite-entreprises-locales (2 amend.)
+… supprimer-operations-interet-local (3 amend.)
+… deroger-plu-surelevation-ascenseur (1 amend.)
+… rendre-obligatoire-concertation-prealable (1 amend.)
+… supprimer-obligation-residence-principale (1 amend.)
+… encadrer-delai-reponse-abf (1 amend.)
+6 mesures -> data/an/17/3188/chiffrage.json
+
+■ supprimer-priorite-entreprises-locales : non chiffrable
+   ✗ delta Part du marché réservée aux entreprises locales, supprimée : le chiffre 0.5 ne vient pas du dispositif d'un amendement de la mesure
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'enveloppe de 5 Mds d'euros mentionnée à l'amendement n°652 correspond au total du programme nationa
+
+■ supprimer-operations-interet-local : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure supprime un dispositif réglementaire d'urbanisme sans transfert monétaire identifiable. Auc
+
+■ deroger-plu-surelevation-ascenseur : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre permettant de quantifier un flux monétaire (assiet
+
+■ rendre-obligatoire-concertation-prealable : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure est purement procédurale : elle rend obligatoire une concertation sans créer de transfert m
+
+■ supprimer-obligation-residence-principale : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre monétaire, aucun taux ni aucune assiette quantifiée. Il s'agit
+
+■ encadrer-delai-reponse-abf : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. La mesure fixe un délai administratif d'un mois pour l'avis de l'ABF. Aucun flux financier n'est décr
+   chiffrage : 295 s
+
+== history (history.py an/17 3188)
+text an/17/3188: Projet de loi visant la relance et la décentralisation du logement — 13 amendments, 6 measures, stages []
+bill text None: 0 alinéas in 0 articles
+articles: ["article L. 103-1 du code de l'urbanisme", "article L. 103-7 du code de l'urbanisme"]
+legifrance getArticle failed Code de l'urbanisme L103-7 /consult/getArticle failed: Remote end closed connection without response
+search terms: ['logement', "plan local d'urbanisme", 'surélévation', 'résidence principale', 'architecte des bâtiments de France', "opération d'intérêt local", 'décentralisation du logement']
+families: [] regex: (?:logement[sx]?)|(?:plan[sx]?[\s\-']?local[sx]?[\s\-']?d[sx]?[\s\-']?urbanisme[sx]?)|(?:surelevation[sx]?)|(?:residence[sx]?[\s\-']?principale[sx]?)|(?:architecte[sx]?[\s\-']?des[sx]?[\s\-']?batiments[sx]?[\s\-']?de[sx]?[\s\-']?france[sx]?)|(?:operation[sx]?[\s\-']?d[sx]?[\s\-']?interet[sx]?[\s\-']?local[sx]?)|(?:decentralisation[sx]?[\s\-']?du[sx]?[\s\-']?logement[sx]?)
+ameli 2025-2026/273 commission: 18 rows, 13 relevant (travaux préparatoires de LOI n° 2026-553 du 29 juin 2026 visant à améliorer l'accès au logement des trava)
+ameli 2025-2026/379 seance: 24 rows, 15 relevant (travaux préparatoires de LOI n° 2026-553 du 29 juin 2026 visant à améliorer l'accès au logement des trava)
+ameli 2024-2025/632 commission: 130 rows, 63 relevant (travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e)
+ameli 2024-2025/694 seance: 225 rows, 102 relevant (travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e)
+ameli 2024-2025/827 seance: 5 rows, 0 relevant (travaux préparatoires de LOI n° 2025-1129 du 26 novembre 2025 de simplification du droit de l'urbanisme e)
+ameli 2022-2023/28 commission: 1 rows, 0 relevant (travaux préparatoires de LOI n° 2023-649 du 21 juillet 2023 visant à régulariser le plan local d'urbanism)
+ameli 2022-2023/271 seance: 2 rows, 0 relevant (travaux préparatoires de LOI n° 2023-649 du 21 juillet 2023 visant à régulariser le plan local d'urbanism)
+ameli 2018-2019/200 commission: 2 rows, 0 relevant (travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio)
+ameli 2017-2018/231 commission: 13 rows, 0 relevant (travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio)
+ameli 2017-2018/380 seance: 11 rows, 0 relevant (travaux préparatoires de LOI n° 2018-1244 du 27 décembre 2018 visant à faciliter la sortie de l'indivisio)
+ameli 2017-2018/567 commission: 923 rows, 386 relevant (travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage)
+ameli 2017-2018/631 seance: 1156 rows, 555 relevant (travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage)
+ameli 2017-2018/721 seance: 22 rows, 2 relevant (travaux préparatoires de LOI n° 2018-1021 du 23 novembre 2018 portant évolution du logement, de l'aménage)

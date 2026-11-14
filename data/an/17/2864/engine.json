@@ -139,11 +139,45 @@
         "articles": [],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
+        "findings": [
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : IMAGE 7.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:UHQ1IAUV"
+            ]
+          }
+        ],
         "lobby_pour": [],
-        "lobby_contre": [],
+        "lobby_contre": [
+          {
+            "name": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "category": "Cabinet de conseil",
+            "consultancy": true,
+            "fiches": [
+              "UHQ1IAUV"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
         "lobby_both": [],
-        "lobby_quotes": []
+        "lobby_quotes": [
+          {
+            "org": "IMAGE 7",
+            "hatvp_id": "532572112",
+            "side": "contre",
+            "quote": "Inscrire dans la loi un mécanisme probatoire sous la forme d'une présomption simple d'utilisation des contenus culturels par les systèmes et modèles d'intelligence artificielle générative",
+            "fiche": "UHQ1IAUV",
+            "year": 2025,
+            "on_behalf_of": [
+              "SYND NATIONAL EDITION PHONOGRAPHIQUE"
+            ],
+            "derived_from": null
+          }
+        ]
       },
       "chiffrage": {
         "mechanism": "La mesure durcit le standard de preuve requis pour déclencher la présomption d'utilisation d'une œuvre par un système d'IA, passant d'un simple « indice » rendant l'usage « vraisemblable » à des exigences plus strictes (indices précis, graves et concordants, ou faisceau d'indices, ou preuve de présence dans le corpus). Il s'agit d'un changement procédural sans transfert monétaire direct.",
@@ -824,11 +858,70 @@
         "articles": [],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
-        "lobby_pour": [],
+        "findings": [
+          {
+            "text": "2 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE, SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:9V0KAOIV",
+              "hatvp:X3C99LMV"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE",
+            "hatvp_id": "775675739",
+            "category": "Autre organisation",
+            "consultancy": false,
+            "fiches": [
+              "9V0KAOIV"
+            ],
+            "years": [
+              2025
+            ]
+          },
+          {
+            "name": "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR",
+            "hatvp_id": "784412900",
+            "category": "Autre organisation",
+            "consultancy": false,
+            "fiches": [
+              "X3C99LMV"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
         "lobby_contre": [],
         "lobby_both": [],
-        "lobby_quotes": []
+        "lobby_quotes": [
+          {
+            "org": "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE",
+            "hatvp_id": "775675739",
+            "side": "pour",
+            "quote": "Promouvoir des dispositifs de régulation visant à assurer la rémunération de l’utilisation des œuvres protégées par l’intelligence artificielle générative",
+            "fiche": "9V0KAOIV",
+            "year": 2025,
+            "on_behalf_of": [
+              "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR",
+            "hatvp_id": "784412900",
+            "side": "pour",
+            "quote": "Régulation de l'intelligence artificielle et actions pour aboutir à une rémunération des artistes-interprètes dont le travail est utilisé par l'IA.",
+            "fiche": "X3C99LMV",
+            "year": 2025,
+            "on_behalf_of": [
+              "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
       },
       "chiffrage": {
         "mechanism": "Les fournisseurs d'intelligence artificielle doivent rémunérer les auteurs pour l'utilisation de leurs œuvres lors de l'entraînement des modèles. La mesure rend obligatoire la gestion collective de ces rémunérations par des organismes agréés (SACEM, SCAM, ADAGP, etc.), qui perçoivent les sommes et les répartissent entre les créateurs.",
@@ -1402,11 +1495,54 @@
         ],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
-        "lobby_pour": [],
+        "findings": [
+          {
+            "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000044363192",
+              "legifrance:JORFTEXT000044362034",
+              "senat:current/29"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : Marine Mathé Conseil.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:PVXIM76V"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "Marine Mathé Conseil",
+            "hatvp_id": "H902713106",
+            "category": "Travailleur indépendant",
+            "consultancy": false,
+            "fiches": [
+              "PVXIM76V"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
         "lobby_contre": [],
         "lobby_both": [],
-        "lobby_quotes": []
+        "lobby_quotes": [
+          {
+            "org": "Marine Mathé Conseil",
+            "hatvp_id": "H902713106",
+            "side": "pour",
+            "quote": "promotion d'une solution technique permettant d’opérationnaliser l’opt-out des créateurs lors de l’entrainement des modèles d'IA.",
+            "fiche": "PVXIM76V",
+            "year": 2025,
+            "on_behalf_of": [
+              "J&L CABINET"
+            ],
+            "derived_from": null
+          }
+        ]
       },
       "chiffrage": {
         "mechanism": "La mesure crée un registre où les auteurs déposent leurs œuvres pour s'opposer à leur utilisation par les développeurs d'IA. Les développeurs doivent consulter le registre avant l'entraînement de leurs modèles. Aucun transfert monétaire n'est chiffré dans le texte.",
@@ -2089,11 +2225,54 @@
         ],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
-        "lobby_pour": [],
+        "findings": [
+          {
+            "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000044363192",
+              "legifrance:JORFTEXT000044362034",
+              "senat:current/26"
+            ]
+          },
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : OPENAI FRANCE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:LV199FDH"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "OPENAI FRANCE",
+            "hatvp_id": "932455231",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "LV199FDH"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
         "lobby_contre": [],
         "lobby_both": [],
-        "lobby_quotes": []
+        "lobby_quotes": [
+          {
+            "org": "OPENAI FRANCE",
+            "hatvp_id": "932455231",
+            "side": "pour",
+            "quote": "plaider pour le maintien de l’exception européenne de fouille de textes et de données et pour des solutions de licence volontaires",
+            "fiche": "LV199FDH",
+            "year": 2025,
+            "on_behalf_of": [
+              "OPENAI FRANCE (en propre)"
+            ],
+            "derived_from": null
+          }
+        ]
       },
       "chiffrage": {
         "mechanism": "La mesure exclut du mécanisme de présomption les cas où le fournisseur d'IA dispose d'une licence, d'une autorisation ou d'un accord contractuel couvrant l'utilisation de l'œuvre. Aucun transfert monétaire direct n'est quantifié dans les amendements.",
@@ -2653,7 +2832,17 @@
         ],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
+        "findings": [
+          {
+            "text": "L'article L. 151-1 du code de commerce, visé par 1 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2018-08-01 vient de : LOI n° 2018-670 du 30 juillet 2018 relative à la protection du secret des affaires (1).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000037266553",
+              "legifrance:JORFTEXT000037262111",
+              "senat:current/36"
+            ]
+          }
+        ],
         "lobby_pour": [],
         "lobby_contre": [],
         "lobby_both": [],
@@ -2811,11 +3000,109 @@
         "articles": [],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
-        "lobby_pour": [],
-        "lobby_contre": [],
+        "findings": [
+          {
+            "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : OPENAI FRANCE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:LV199FDH"
+            ]
+          },
+          {
+            "text": "2 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDER NATION PRESSE INFORMAT SPECIALIS, GOOGLE FRANCE.",
+            "source": "HATVP",
+            "refs": [
+              "hatvp:Z0V57N0H",
+              "hatvp:DHMWTNYV"
+            ]
+          }
+        ],
+        "lobby_pour": [
+          {
+            "name": "OPENAI FRANCE",
+            "hatvp_id": "932455231",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "LV199FDH"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
+        "lobby_contre": [
+          {
+            "name": "FEDER NATION PRESSE INFORMAT SPECIALIS",
+            "hatvp_id": "303241814",
+            "category": "Organisation syndicale et professionnelle",
+            "consultancy": false,
+            "fiches": [
+              "Z0V57N0H"
+            ],
+            "years": [
+              2019
+            ]
+          },
+          {
+            "name": "GOOGLE FRANCE",
+            "hatvp_id": "443061841",
+            "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+            "consultancy": false,
+            "fiches": [
+              "DHMWTNYV"
+            ],
+            "years": [
+              2025
+            ]
+          }
+        ],
         "lobby_both": [],
-        "lobby_quotes": []
+        "lobby_quotes": [
+          {
+            "org": "GOOGLE FRANCE",
+            "hatvp_id": "443061841",
+            "side": "contre",
+            "quote": "Plaider pour le maintien de l'exception dite de \"text and data mining\" (TDM) présente dans la directive européenne face aux pressions pour un système d'opt-in.",
+            "fiche": "DHMWTNYV",
+            "year": 2025,
+            "on_behalf_of": [
+              "GOOGLE LLC"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "OPENAI FRANCE",
+            "hatvp_id": "932455231",
+            "side": "pour",
+            "quote": "plaider pour le maintien de l’exception européenne de fouille de textes et de données et pour des solutions de licence volontaires",
+            "fiche": "LV199FDH",
+            "year": 2025,
+            "on_behalf_of": [
+              "OPENAI FRANCE (en propre)"
+            ],
+            "derived_from": null
+          },
+          {
+            "org": "FEDER NATION PRESSE INFORMAT SPECIALIS",
+            "hatvp_id": "303241814",
+            "side": "contre",
+            "quote": "rejet des exceptions du droit d'auteur autorisant le Text and data mining (TDM)",
+            "fiche": "Z0V57N0H",
+            "year": 2019,
+            "on_behalf_of": [
+              "FEDER NATION PRESSE INFORMAT SPECIALIS (en propre)",
+              "SYNDICAT DE LA PRESSE CULTURELLE ET SCIENTIFIQUE",
+              "SYNDICAT DE LA PRESSE ECONOMIQUE JURIDIQUE ET POLITIQUE",
+              "SYNDICAT DE LA PRESSE ET DE L'EDITION DES PROFESSIONS DE SANTE",
+              "SYNDICAT DE LA PRESSE MAGAZINE ET SPECIALISEE",
+              "SYNDICAT DE LA PRESSE PROFESSIONNELLE",
+              "SYNDICAT DE LA PRESSE SOCIALE(S.P.S)",
+              "SYNDICAT NATIONAL PRESSE AGRICOLE RURALE"
+            ],
+            "derived_from": null
+          }
+        ]
       },
       "chiffrage": {
         "mechanism": "La mesure exclut du mécanisme de présomption d'utilisation des œuvres par l'IA les fournisseurs ayant légalement recouru à l'exception de fouille de textes et de données (TDM). Ces fournisseurs n'auraient plus à verser la compensation prévue par la présomption pour les œuvres concernées.",
@@ -4461,7 +4748,17 @@
         ],
         "senate_by_group": {},
         "past_amendments": [],
-        "findings": [],
+        "findings": [
+          {
+            "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+            "source": "Légifrance",
+            "refs": [
+              "legifrance:LEGIARTI000044363192",
+              "legifrance:JORFTEXT000044362034",
+              "senat:current/30"
+            ]
+          }
+        ],
         "lobby_pour": [],
         "lobby_contre": [],
         "lobby_both": [],

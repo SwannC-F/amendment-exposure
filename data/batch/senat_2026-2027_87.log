@@ -1,0 +1,46 @@
+
+== fetch (fetch_amendments.py 2026-2027 87)
+titre : Projet de loi : Réparation des dommages résultant de dégradations commises dans l'espace public
+112 amendments, 1 pending -> data/2026-2027/87/amendments.json
+   fetch : 1 s
+
+== extract (extract.py 2026-2027 87)
+1 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/87/criteria.json
+  n°57        --                                 [citation non retrouvée]
+   extract : 5 s
+
+== group (group.py 2026-2027 87)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/87/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 87)
+0 mesures -> data/2026-2027/87/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 87)
+
+0 mesures, 0 amendements -> data/2026-2027/87/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 87)
+0 mesures -> data/2026-2027/87/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 87)
+text 2026-2027/87: Projet de loi : Réparation des dommages résultant de dégradations commises dans l'espace public — 1 amendments, 0 measures, stages [('2025-2026', '952', 'commission'), ('2026-2027', '87', 'seance')]
+bill text https://www.senat.fr/leg/pjl26-087.html: 66 alinéas in 9 articles
+articles: []
+search terms: ['dégradation espace public', 'vandalisme', 'dégradation voirie', 'dégradation domaine public', 'remise en état', 'réparation dégradation', 'tag graffiti', 'dégâts espace public', 'incivilité urbaine']
+families: [('Code de la sécurité intérieure', 'L211'), ('Code de la sécurité intérieure', 'L242'), ('Code de la justice pénale des mineurs', 'L512'), ('Code de la sécurité sociale', 'L553'), ("Code de la construction et de l'habitation", 'L821'), ("Code de l'action sociale et des familles", 'L262'), ("Code de l'action sociale et des familles", 'L113'), ("Code de l'action sociale et des familles", 'L285'), ("Code de l'action sociale et des familles", 'L286'), ("Code de l'action sociale et des familles", 'L287'), ('Code de la sécurité sociale', 'L759')] regex: (?:degradation[sx]?[\s\-']?espace[sx]?[\s\-']?public[sx]?)|(?:vandalisme[sx]?)|(?:degradation[sx]?[\s\-']?voirie[sx]?)|(?:degradation[sx]?[\s\-']?domaine[sx]?[\s\-']?public[sx]?)|(?:remise[sx]?[\s\-']?en[sx]?[\s\-']?etat[sx]?)|(?:reparation[sx]?[\s\-']?degradation[sx]?)|(?:tag[sx]?[\s\-']?graffiti[sx]?)|(?:degats[sx]?[\s\-']?espace[sx]?[\s\-']?public[sx]?)|(?:incivilite[sx]?[\s\-']?urbaine[sx]?)|(?:l\.?\s?211\b)|(?:l\.?\s?242\b)|(?:l\.?\s?512\b)|(?:l\.?\s?553\b)|(?:l\.?\s?821\b)|(?:l\.?\s?262\b)|(?:l\.?\s?113\b)|(?:l\.?\s?285\b)|(?:l\.?\s?286\b)|(?:l\.?\s?287\b)|(?:l\.?\s?759\b)
+ameli 2025-2026/952 commission: 23 rows, 8 relevant (dossier en cours)
+ameli: 8 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 36 fiches match
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/87/history.json: 0 measures, 0 findings
+   history : 133 s
+
+== engine (engine.py 2026-2027 87)
+0 mesures -> data/2026-2027/87/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/87/

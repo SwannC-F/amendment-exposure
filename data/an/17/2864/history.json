@@ -21,13 +21,15 @@
   "HATVP : fiches d'activité contenant un terme de recherche ; position retenue seulement si la fiche l'énonce, extrait vérifié mot pour mot. Une organisation ayant déclaré les deux positions sur une mesure est classée dans lobby_both. Les positions sur deux mesures contraires (opposes) sont reportées en miroir (derived_from)."
  ],
  "search_terms": [
+  "intelligence artificielle",
+  "IA générative",
+  "fournisseurs de modèles d'intelligence artificielle",
   "présomption d'exploitation",
-  "fournisseurs d'intelligence artificielle",
-  "intelligence artificielle contenus culturels",
-  "droit d'auteur intelligence artificielle",
-  "fouille de données intelligence artificielle",
-  "modèles d'intelligence artificielle œuvres culturelles",
-  "entraînement des modèles droit d'auteur",
+  "fouille de données",
+  "text and data mining",
+  "droit d'auteur",
+  "œuvres culturelles",
+  "entraînement des modèles",
   "AI Act"
  ],
  "articles": {
@@ -91,15 +93,57 @@
    "code": "Code de commerce",
    "num": "L151-1",
    "label": "article L. 151-1 du code de commerce",
-   "found": false,
-   "error": "/consult/getArticle failed: Remote end closed connection without response"
+   "found": true,
+   "id": "LEGIARTI000037266553",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037266553",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000037266553",
+     "start": "2018-08-01",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037266553",
+     "modified_by": {
+      "id": "JORFTEXT000037262111",
+      "link_type": "CREE",
+      "article": "art. 1",
+      "title": "LOI n° 2018-670 du 30 juillet 2018 relative à la protection du secret des affaires (1)",
+      "date": "2018-07-30",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037262111"
+     }
+    }
+   ],
+   "complete_history": false,
+   "n_versions": 1,
+   "derogations": []
   },
   "Code de la propriété intellectuelle|L122-5-3": {
    "code": "Code de la propriété intellectuelle",
    "num": "L122-5-3",
    "label": "article L. 122-5-3 du code de la propriété intellectuelle",
-   "found": false,
-   "error": "/consult/getArticle failed: Remote end closed connection without response"
+   "found": true,
+   "id": "LEGIARTI000044363192",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044363192",
+   "versions": [
+    {
+     "version_id": "LEGIARTI000044363192",
+     "start": "2021-11-26",
+     "end": null,
+     "etat": "VIGUEUR",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044363192",
+     "modified_by": {
+      "id": "JORFTEXT000044362034",
+      "link_type": "CREE",
+      "article": "art. 1",
+      "title": "Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE",
+      "date": "2021-11-24",
+      "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044362034"
+     }
+    }
+   ],
+   "complete_history": true,
+   "n_versions": 1,
+   "derogations": []
   },
   "Code de la propriété intellectuelle|L331-4-1": {
    "code": "Code de la propriété intellectuelle",
@@ -121,18 +165,167 @@
     "Code de procédure civile|142"
    ],
    "on_subject": false
+  },
+  "JORFTEXT000037262111": {
+   "id": "JORFTEXT000037262111",
+   "title": "LOI n° 2018-670 du 30 juillet 2018 relative à la protection du secret des affaires (1)",
+   "nor": "JUSX1805103L",
+   "date": "2018-07-30",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037262111",
+   "senat_documents": [
+    {
+     "num": "388",
+     "session": "2017-2018"
+    },
+    {
+     "num": "419",
+     "session": "2017-2018"
+    },
+    {
+     "num": "406",
+     "session": "2017-2018"
+    },
+    {
+     "num": "420",
+     "session": "2017-2018"
+    },
+    {
+     "num": "505",
+     "session": "2017-2018"
+    },
+    {
+     "num": "506",
+     "session": "2017-2018"
+    }
+   ],
+   "articles": [
+    "Code de commerce|L151-1"
+   ],
+   "on_subject": false
+  },
+  "JORFTEXT000044362034": {
+   "id": "JORFTEXT000044362034",
+   "title": "Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE",
+   "nor": "MICB2121839R",
+   "date": "2021-11-24",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044362034",
+   "senat_documents": [],
+   "articles": [
+    "Code de la propriété intellectuelle|L122-5-3"
+   ],
+   "on_subject": true
+  },
+  "JORFTEXT000000266350": {
+   "id": "JORFTEXT000000266350",
+   "title": "LOI n° 2006-961 du 1er août 2006 relative au droit d'auteur et aux droits voisins dans la société de l'information (1)",
+   "nor": "MCCX0300082L",
+   "date": "2006-08-01",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000266350",
+   "senat_documents": [
+    {
+     "num": "269",
+     "session": "2005-2006"
+    },
+    {
+     "num": "419",
+     "session": "2005-2006"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000000693451": {
+   "id": "JORFTEXT000000693451",
+   "title": "Loi n°85-660 du 3 juillet 1985 RELATIVE AUX DROITS D'AUTEUR ET AUX DROITS DES ARTISTES-INTERPRETES,DES PRODUCTEURS DE PHONOGRAMMES ET DE VIDEOGRAMMES ET DES ENTREPRISES DE COMMUNICATION AUDIOVISUELLE",
+   "nor": null,
+   "date": "1985-07-03",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000693451",
+   "senat_documents": [],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
+  },
+  "JORFTEXT000044245615": {
+   "id": "JORFTEXT000044245615",
+   "title": "LOI n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection de l'accès aux œuvres culturelles à l'ère numérique (1)",
+   "nor": "MICE2106504L",
+   "date": "2021-10-25",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044245615",
+   "senat_documents": [
+    {
+     "num": "523",
+     "session": "2020-2021"
+    },
+    {
+     "num": "557",
+     "session": "2020-2021"
+    },
+    {
+     "num": "714",
+     "session": "2020-2021"
+    },
+    {
+     "num": "732",
+     "session": "2020-2021"
+    },
+    {
+     "num": "733",
+     "session": "2020-2021"
+    }
+   ],
+   "articles": [],
+   "found_by": "titre",
+   "on_subject": true
   }
  },
- "senat_texts_scanned": [],
+ "senat_texts_scanned": [
+  {
+   "session": "2020-2021",
+   "number": "523",
+   "stage": "commission",
+   "origin": "travaux préparatoires de LOI n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection ",
+   "csv": "https://www.senat.fr/amendements/commissions/2020-2021/523/jeu_complet_commission_2020-2021_523.csv",
+   "rows": 89,
+   "relevant": 13
+  },
+  {
+   "session": "2020-2021",
+   "number": "733",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2021-1382 du 25 octobre 2021 relative à la régulation et à la protection ",
+   "csv": "https://www.senat.fr/amendements/2020-2021/733/jeu_complet_2020-2021_733.csv",
+   "rows": 2,
+   "relevant": 1
+  },
+  {
+   "session": "2005-2006",
+   "number": "269",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2006-961 du 1er août 2006 relative au droit d'auteur et aux droits voisin",
+   "csv": "https://www.senat.fr/amendements/2005-2006/269/jeu_complet_2005-2006_269.csv",
+   "rows": 287,
+   "relevant": 143
+  },
+  {
+   "session": "2005-2006",
+   "number": "419",
+   "stage": "seance",
+   "origin": "travaux préparatoires de LOI n° 2006-961 du 1er août 2006 relative au droit d'auteur et aux droits voisin",
+   "csv": "https://www.senat.fr/amendements/2005-2006/419/jeu_complet_2005-2006_419.csv",
+   "rows": 2,
+   "relevant": 0
+  }
+ ],
  "stats": {
   "articles": 5,
-  "laws": 1,
-  "senat_texts": 0,
-  "past_relevant": 0,
+  "laws": 6,
+  "senat_texts": 4,
+  "past_relevant": 157,
   "past_attached": 0,
   "past_quote_rejected": 0,
-  "hatvp_fiches": 53,
-  "hatvp_sides": 0,
+  "hatvp_fiches": 509,
+  "hatvp_sides": 8,
   "hatvp_quote_rejected": 0
  },
  "measures": {
@@ -168,11 +361,109 @@
    "articles": [],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
-   "lobby_pour": [],
-   "lobby_contre": [],
+   "findings": [
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : OPENAI FRANCE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:LV199FDH"
+     ]
+    },
+    {
+     "text": "2 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : FEDER NATION PRESSE INFORMAT SPECIALIS, GOOGLE FRANCE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:Z0V57N0H",
+      "hatvp:DHMWTNYV"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "OPENAI FRANCE",
+     "hatvp_id": "932455231",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "LV199FDH"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
+   "lobby_contre": [
+    {
+     "name": "FEDER NATION PRESSE INFORMAT SPECIALIS",
+     "hatvp_id": "303241814",
+     "category": "Organisation syndicale et professionnelle",
+     "consultancy": false,
+     "fiches": [
+      "Z0V57N0H"
+     ],
+     "years": [
+      2019
+     ]
+    },
+    {
+     "name": "GOOGLE FRANCE",
+     "hatvp_id": "443061841",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "DHMWTNYV"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
    "lobby_both": [],
-   "lobby_quotes": []
+   "lobby_quotes": [
+    {
+     "org": "GOOGLE FRANCE",
+     "hatvp_id": "443061841",
+     "side": "contre",
+     "quote": "Plaider pour le maintien de l'exception dite de \"text and data mining\" (TDM) présente dans la directive européenne face aux pressions pour un système d'opt-in.",
+     "fiche": "DHMWTNYV",
+     "year": 2025,
+     "on_behalf_of": [
+      "GOOGLE LLC"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "OPENAI FRANCE",
+     "hatvp_id": "932455231",
+     "side": "pour",
+     "quote": "plaider pour le maintien de l’exception européenne de fouille de textes et de données et pour des solutions de licence volontaires",
+     "fiche": "LV199FDH",
+     "year": 2025,
+     "on_behalf_of": [
+      "OPENAI FRANCE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "FEDER NATION PRESSE INFORMAT SPECIALIS",
+     "hatvp_id": "303241814",
+     "side": "contre",
+     "quote": "rejet des exceptions du droit d'auteur autorisant le Text and data mining (TDM)",
+     "fiche": "Z0V57N0H",
+     "year": 2019,
+     "on_behalf_of": [
+      "FEDER NATION PRESSE INFORMAT SPECIALIS (en propre)",
+      "SYNDICAT DE LA PRESSE CULTURELLE ET SCIENTIFIQUE",
+      "SYNDICAT DE LA PRESSE ECONOMIQUE JURIDIQUE ET POLITIQUE",
+      "SYNDICAT DE LA PRESSE ET DE L'EDITION DES PROFESSIONS DE SANTE",
+      "SYNDICAT DE LA PRESSE MAGAZINE ET SPECIALISEE",
+      "SYNDICAT DE LA PRESSE PROFESSIONNELLE",
+      "SYNDICAT DE LA PRESSE SOCIALE(S.P.S)",
+      "SYNDICAT NATIONAL PRESSE AGRICOLE RURALE"
+     ],
+     "derived_from": null
+    }
+   ]
   },
   "durcir-seuil-preuve-presomption": {
    "theme": "Durcir le seuil de preuve de la présomption",
@@ -200,11 +491,45 @@
    "articles": [],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
+   "findings": [
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action contre cette mesure : IMAGE 7.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:UHQ1IAUV"
+     ]
+    }
+   ],
    "lobby_pour": [],
-   "lobby_contre": [],
+   "lobby_contre": [
+    {
+     "name": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "category": "Cabinet de conseil",
+     "consultancy": true,
+     "fiches": [
+      "UHQ1IAUV"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
    "lobby_both": [],
-   "lobby_quotes": []
+   "lobby_quotes": [
+    {
+     "org": "IMAGE 7",
+     "hatvp_id": "532572112",
+     "side": "contre",
+     "quote": "Inscrire dans la loi un mécanisme probatoire sous la forme d'une présomption simple d'utilisation des contenus culturels par les systèmes et modèles d'intelligence artificielle générative",
+     "fiche": "UHQ1IAUV",
+     "year": 2025,
+     "on_behalf_of": [
+      "SYND NATIONAL EDITION PHONOGRAPHIQUE"
+     ],
+     "derived_from": null
+    }
+   ]
   },
   "restreindre-qualite-agir": {
    "theme": "Restreindre la qualité à agir et les voies procédurales",
@@ -546,11 +871,54 @@
    ],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
-   "lobby_pour": [],
+   "findings": [
+    {
+     "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000044363192",
+      "legifrance:JORFTEXT000044362034",
+      "senat:current/26"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : OPENAI FRANCE.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:LV199FDH"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "OPENAI FRANCE",
+     "hatvp_id": "932455231",
+     "category": "Société commerciale et civile (autre que cabinet d’avocats et société de conseil)",
+     "consultancy": false,
+     "fiches": [
+      "LV199FDH"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
    "lobby_contre": [],
    "lobby_both": [],
-   "lobby_quotes": []
+   "lobby_quotes": [
+    {
+     "org": "OPENAI FRANCE",
+     "hatvp_id": "932455231",
+     "side": "pour",
+     "quote": "plaider pour le maintien de l’exception européenne de fouille de textes et de données et pour des solutions de licence volontaires",
+     "fiche": "LV199FDH",
+     "year": 2025,
+     "on_behalf_of": [
+      "OPENAI FRANCE (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
   },
   "exclure-hebergeurs-integrateurs": {
    "theme": "Exclure hébergeurs et intégrateurs de la présomption",
@@ -592,7 +960,17 @@
    ],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
+   "findings": [
+    {
+     "text": "L'article L. 151-1 du code de commerce, visé par 1 amendement(s) de cette mesure, compte 1 version(s) ; celle en vigueur depuis le 2018-08-01 vient de : LOI n° 2018-670 du 30 juillet 2018 relative à la protection du secret des affaires (1).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000037266553",
+      "legifrance:JORFTEXT000037262111",
+      "senat:current/36"
+     ]
+    }
+   ],
    "lobby_pour": [],
    "lobby_contre": [],
    "lobby_both": [],
@@ -742,11 +1120,70 @@
    "articles": [],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
-   "lobby_pour": [],
+   "findings": [
+    {
+     "text": "2 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE, SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:9V0KAOIV",
+      "hatvp:X3C99LMV"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE",
+     "hatvp_id": "775675739",
+     "category": "Autre organisation",
+     "consultancy": false,
+     "fiches": [
+      "9V0KAOIV"
+     ],
+     "years": [
+      2025
+     ]
+    },
+    {
+     "name": "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR",
+     "hatvp_id": "784412900",
+     "category": "Autre organisation",
+     "consultancy": false,
+     "fiches": [
+      "X3C99LMV"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
    "lobby_contre": [],
    "lobby_both": [],
-   "lobby_quotes": []
+   "lobby_quotes": [
+    {
+     "org": "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE",
+     "hatvp_id": "775675739",
+     "side": "pour",
+     "quote": "Promouvoir des dispositifs de régulation visant à assurer la rémunération de l’utilisation des œuvres protégées par l’intelligence artificielle générative",
+     "fiche": "9V0KAOIV",
+     "year": 2025,
+     "on_behalf_of": [
+      "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE (en propre)"
+     ],
+     "derived_from": null
+    },
+    {
+     "org": "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR",
+     "hatvp_id": "784412900",
+     "side": "pour",
+     "quote": "Régulation de l'intelligence artificielle et actions pour aboutir à une rémunération des artistes-interprètes dont le travail est utilisé par l'IA.",
+     "fiche": "X3C99LMV",
+     "year": 2025,
+     "on_behalf_of": [
+      "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR (en propre)"
+     ],
+     "derived_from": null
+    }
+   ]
   },
   "exclure-retroactivite": {
    "theme": "Exclure ou limiter la rétroactivité du dispositif",
@@ -820,7 +1257,17 @@
    ],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
+   "findings": [
+    {
+     "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000044363192",
+      "legifrance:JORFTEXT000044362034",
+      "senat:current/30"
+     ]
+    }
+   ],
    "lobby_pour": [],
    "lobby_contre": [],
    "lobby_both": [],
@@ -840,11 +1287,54 @@
    ],
    "senate_by_group": {},
    "past_amendments": [],
-   "findings": [],
-   "lobby_pour": [],
+   "findings": [
+    {
+     "text": "L'article L. 122-5-3 du code de la propriété intellectuelle, visé par 1 amendement(s) de cette mesure, a connu 1 version(s) depuis le 2021-11-26, issues de 1 texte(s) ; la dernière modification vient de : Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE (version en vigueur depuis le 2021-11-26).",
+     "source": "Légifrance",
+     "refs": [
+      "legifrance:LEGIARTI000044363192",
+      "legifrance:JORFTEXT000044362034",
+      "senat:current/29"
+     ]
+    },
+    {
+     "text": "1 organisation(s) ont déclaré au répertoire HATVP une action en faveur de cette mesure : Marine Mathé Conseil.",
+     "source": "HATVP",
+     "refs": [
+      "hatvp:PVXIM76V"
+     ]
+    }
+   ],
+   "lobby_pour": [
+    {
+     "name": "Marine Mathé Conseil",
+     "hatvp_id": "H902713106",
+     "category": "Travailleur indépendant",
+     "consultancy": false,
+     "fiches": [
+      "PVXIM76V"
+     ],
+     "years": [
+      2025
+     ]
+    }
+   ],
    "lobby_contre": [],
    "lobby_both": [],
-   "lobby_quotes": []
+   "lobby_quotes": [
+    {
+     "org": "Marine Mathé Conseil",
+     "hatvp_id": "H902713106",
+     "side": "pour",
+     "quote": "promotion d'une solution technique permettant d’opérationnaliser l’opt-out des créateurs lors de l’entrainement des modèles d'IA.",
+     "fiche": "PVXIM76V",
+     "year": 2025,
+     "on_behalf_of": [
+      "J&L CABINET"
+     ],
+     "derived_from": null
+    }
+   ]
   },
   "etendre-obligations-tous-fournisseurs": {
    "theme": "Étendre les obligations à tous les fournisseurs en France",
@@ -934,6 +1424,26 @@
   }
  },
  "refs": {
+  "senat:current/36": {
+   "source": "Sénat",
+   "label": "Amendement n° 36 (an/17, texte n° 2864)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2864/AN/36"
+  },
+  "senat:current/26": {
+   "source": "Sénat",
+   "label": "Amendement n° 26 (an/17, texte n° 2864)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2864/AN/26"
+  },
+  "senat:current/30": {
+   "source": "Sénat",
+   "label": "Amendement n° 30 (an/17, texte n° 2864)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2864/AN/30"
+  },
+  "senat:current/29": {
+   "source": "Sénat",
+   "label": "Amendement n° 29 (an/17, texte n° 2864)",
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2864/AN/29"
+  },
   "legifrance:LEGIARTI000006410261": {
    "source": "Légifrance",
    "label": "article 138 du code de procédure civile",
@@ -943,6 +1453,63 @@
    "source": "Légifrance",
    "label": "article 142 du code de procédure civile",
    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006410265"
+  },
+  "legifrance:LEGIARTI000037266553": {
+   "source": "Légifrance",
+   "label": "article L. 151-1 du code de commerce",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037266553"
+  },
+  "legifrance:LEGIARTI000044363192": {
+   "source": "Légifrance",
+   "label": "article L. 122-5-3 du code de la propriété intellectuelle",
+   "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044363192"
+  },
+  "legifrance:JORFTEXT000037262111": {
+   "source": "Légifrance",
+   "label": "LOI n° 2018-670 du 30 juillet 2018 relative à la protection du secret des affaires (1)",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037262111",
+   "date": "2018-07-30"
+  },
+  "legifrance:JORFTEXT000044362034": {
+   "source": "Légifrance",
+   "label": "Ordonnance n° 2021-1518 du 24 novembre 2021 complétant la transposition de la directive 2019/790 du Parlement européen et du Conseil du 17 avril 2019 sur le droit d'auteur et les droits voisins dans le marché unique numérique et modifiant les directives 96/9/CE et 2001/29/CE",
+   "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044362034",
+   "date": "2021-11-24"
+  },
+  "hatvp:DHMWTNYV": {
+   "source": "HATVP",
+   "label": "GOOGLE FRANCE — fiche d'activité DHMWTNYV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=443061841"
+  },
+  "hatvp:LV199FDH": {
+   "source": "HATVP",
+   "label": "OPENAI FRANCE — fiche d'activité LV199FDH (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=932455231"
+  },
+  "hatvp:PVXIM76V": {
+   "source": "HATVP",
+   "label": "Marine Mathé Conseil — fiche d'activité PVXIM76V (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=H902713106"
+  },
+  "hatvp:Z0V57N0H": {
+   "source": "HATVP",
+   "label": "FEDER NATION PRESSE INFORMAT SPECIALIS — fiche d'activité Z0V57N0H (2019)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=303241814"
+  },
+  "hatvp:9V0KAOIV": {
+   "source": "HATVP",
+   "label": "SOC AUTEUR COMPOSITEUR EDITEUR MUSIQUE — fiche d'activité 9V0KAOIV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=775675739"
+  },
+  "hatvp:UHQ1IAUV": {
+   "source": "HATVP",
+   "label": "IMAGE 7 — fiche d'activité UHQ1IAUV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=532572112"
+  },
+  "hatvp:X3C99LMV": {
+   "source": "HATVP",
+   "label": "SOC CIV ADMIN DROIT ARTIST MUSIC INTERPR — fiche d'activité X3C99LMV (2025)",
+   "url": "https://www.hatvp.fr/fiche-organisation/?organisation=784412900"
   }
  }
 }

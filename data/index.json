@@ -63,6 +63,15 @@
     "n_measures": 0
   },
   {
+    "chamber": "senat",
+    "session": "2026-2027",
+    "number": "89",
+    "title": "Projet de loi : Protection des enfants",
+    "path": "data/2026-2027/89",
+    "generated_at": null,
+    "n_measures": 0
+  },
+  {
     "chamber": "an",
     "session": "17",
     "number": "2864",
@@ -79,5 +88,14 @@
     "path": "data/an/17/3210",
     "generated_at": null,
     "n_measures": 2
+  },
+  {
+    "chamber": "an",
+    "session": "17",
+    "number": "3468",
+    "title": "Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle",
+    "path": "data/an/17/3468",
+    "generated_at": null,
+    "n_measures": 3
   }
 ]

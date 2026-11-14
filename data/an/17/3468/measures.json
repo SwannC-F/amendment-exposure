@@ -1,0 +1,26 @@
+[
+  {
+    "key": "debloquer-epargne-achat-biens-services",
+    "theme": "Débloquer l'épargne salariale pour acheter des biens ou services",
+    "amendments": [
+      "1"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "faciliter-fcpe-reprise-transmission",
+    "theme": "Faciliter les FCPE de reprise pour la transmission d'entreprise",
+    "amendments": [
+      "2"
+    ],
+    "opposes": null
+  },
+  {
+    "key": "inscrire-deblocage-evenements-familiaux",
+    "theme": "Inscrire le déblocage anticipé pour événements familiaux",
+    "amendments": [
+      "3"
+    ],
+    "opposes": null
+  }
+]

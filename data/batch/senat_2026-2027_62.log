@@ -1,0 +1,48 @@
+
+== fetch (fetch_amendments.py 2026-2027 62)
+titre : Proposition de loi : Reconnaître une politique nationale d'adaptation au changement climatique
+50 amendments, 2 pending -> data/2026-2027/62/amendments.json
+   fetch : 2 s
+
+== extract (extract.py 2026-2027 62)
+2 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/62/criteria.json
+  n°33 rect.  --                                 [citation non retrouvée]
+  n°35        --                                 [citation non retrouvée]
+   extract : 0 s
+
+== group (group.py 2026-2027 62)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/62/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 62)
+0 mesures -> data/2026-2027/62/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 62)
+
+0 mesures, 0 amendements -> data/2026-2027/62/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 62)
+0 mesures -> data/2026-2027/62/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 62)
+text 2026-2027/62: Proposition de loi : Reconnaître une politique nationale d'adaptation au changement climatique — 2 amendments, 0 measures, stages [('2025-2026', '530', 'commission'), ('2026-2027', '62', 'seance')]
+bill text https://www.senat.fr/leg/ppl26-062.html: 69 alinéas in 7 articles
+articles: []
+search terms: ['adaptation au changement climatique', "politique nationale d'adaptation", 'adaptation climatique', 'réchauffement climatique', 'résilience climatique', "stratégie d'adaptation", "plan national d'adaptation", 'PNACC']
+title search failed résilience climatique /search failed: IncompleteRead(757958 bytes read)
+families: [("Code de l'environnement", 'L229'), ("Code de la construction et de l'habitation", 'L132'), ('Code des assurances', 'L121'), ('Code des assurances', 'L125'), ('Code de commerce', 'L526'), ('Code de commerce', 'L125'), ('Code de commerce', 'L431'), ('Code monétaire et financier', 'L214')] regex: (?:adaptation[sx]?[\s\-']?au[sx]?[\s\-']?changement[sx]?[\s\-']?climatique[sx]?)|(?:politique[sx]?[\s\-']?nationale[sx]?[\s\-']?d[sx]?[\s\-']?adaptation[sx]?)|(?:adaptation[sx]?[\s\-']?climatique[sx]?)|(?:rechauffement[sx]?[\s\-']?climatique[sx]?)|(?:resilience[sx]?[\s\-']?climatique[sx]?)|(?:strategie[sx]?[\s\-']?d[sx]?[\s\-']?adaptation[sx]?)|(?:plan[sx]?[\s\-']?national[sx]?[\s\-']?d[sx]?[\s\-']?adaptation[sx]?)|(?:pnacc[sx]?)|(?:l\.?\s?229\b)|(?:l\.?\s?132\b)|(?:l\.?\s?121\b)|(?:l\.?\s?125\b)|(?:l\.?\s?526\b)|(?:l\.?\s?125\b)|(?:l\.?\s?431\b)|(?:l\.?\s?214\b)
+ameli 2025-2026/530 commission: 16 rows, 15 relevant (dossier en cours)
+ameli: 15 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 212 fiches match
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/62/history.json: 0 measures, 0 findings
+   history : 490 s
+
+== engine (engine.py 2026-2027 62)
+0 mesures -> data/2026-2027/62/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/62/

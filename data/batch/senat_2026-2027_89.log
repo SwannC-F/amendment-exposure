@@ -1,0 +1,67 @@
+
+== fetch (fetch_amendments.py 2026-2027 89)
+titre : Projet de loi : Protection des enfants
+478 amendments, 10 pending -> data/2026-2027/89/amendments.json
+   fetch : 2 s
+
+== extract (extract.py 2026-2027 89)
+10 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/89/criteria.json
+  n°25 rect. sexies --                                 [citation non retrouvée]
+  n°107 rect. --                                 [citation non retrouvée]
+  n°110 rect. --                                 [citation non retrouvée]
+  n°115 rect. --                                 [citation non retrouvée]
+  n°116 rect. --                                 [citation non retrouvée]
+  n°117 rect. --                                 [citation non retrouvée]
+  n°118 rect. --                                 [citation non retrouvée]
+  n°119 rect. --                                 [citation non retrouvée]
+  n°134 rect. quater --                                 [citation non retrouvée]
+  n°363 rect. bis --                                 [citation non retrouvée]
+   extract : 0 s
+
+== group (group.py 2026-2027 89)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/89/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 89)
+0 mesures -> data/2026-2027/89/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 89)
+
+0 mesures, 0 amendements -> data/2026-2027/89/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 89)
+0 mesures -> data/2026-2027/89/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 89)
+text 2026-2027/89: Projet de loi : Protection des enfants — 10 amendments, 0 measures, stages [('2025-2026', '911', 'commission'), ('2026-2027', '89', 'seance')]
+bill text https://www.senat.fr/leg/pjl26-089.html: 646 alinéas in 38 articles
+articles: []
+search terms: ["protection de l'enfance", 'protection des mineurs', 'enfance en danger', 'mineurs en danger', "Aide sociale à l'enfance", "droits de l'enfant", 'maltraitance des mineurs', 'sécurité des mineurs']
+families: [("Code de l'action sociale et des familles", 'L222'), ("Code de l'action sociale et des familles", 'L226'), ("Code de l'action sociale et des familles", 'L223'), ("Code de l'action sociale et des familles", 'L221'), ("Code de l'action sociale et des familles", 'L224'), ('Code civil', 'L221'), ('Code civil', 'L228'), ('Code général des collectivités territoriales', 'L1614'), ('Code de la santé publique', 'L2112'), ('Code de la santé publique', 'L421'), ('Code pénal', 'L421'), ('Code pénal', 'L422'), ('Code pénal', 'L423'), ("Code de l'action sociale et des familles", 'L421'), ('Code de la santé publique', 'L3421'), ('Code de procédure pénale', 'L227'), ('Code de procédure pénale', 'L911'), ('Code de procédure pénale', 'L914'), ('Code du sport', 'L212'), ('Code civil', 'L225'), ('Code civil', 'L227'), ('Code civil', 'L551'), ('Code du sport', 'L135'), ('Code du sport', 'L133'), ('Code de la défense', 'L4132'), ('Code de la défense', 'L4138'), ('Code de la défense', 'L4153'), ('Code de la défense', 'L4211'), ('Code de la défense', 'L401'), ('Code de la défense', 'L425'), ('Code de la défense', 'L911'), ('Code de la défense', 'L914'), ('Code rural et de la pêche maritime', 'L810'), ('Code de la santé publique', 'L1191'), ("Code de l'entrée et du séjour des étrangers et du droit d'asile", 'L551'), ("Code de la construction et de l'habitation", 'L631'), ('Code de la justice pénale des mineurs', 'L241'), ('Code de la justice pénale des mineurs', 'L3111'), ('Code de la justice pénale des mineurs', 'L5547'), ('Code de la sécurité intérieure', 'L612'), ('Code pénitentiaire', 'L113'), ('Code pénitentiaire', 'L120'), ('Code pénitentiaire', 'L133'), ("Code de l'action sociale et des familles", 'L133'), ('Code civil', 'L421'), ('Code civil', 'L321'), ('Code civil', 'L229'), ('Code civil', 'L312'), ('Code civil', 'L331'), ('Code civil', 'L313'), ("Code de l'action sociale et des familles", 'L321'), ("Code de l'action sociale et des familles", 'L229'), ('Code de la santé publique', 'L1111'), ('Code de la santé publique', 'L121'), ('Code de la santé publique', 'L226'), ("Code de l'éducation", 'L551'), ("Code de l'action sociale et des familles", 'L543'), ("Code de l'action sociale et des familles", 'L322'), ("Code de l'action sociale et des familles", 'L1521'), ("Code de l'action sociale et des familles", 'L1541'), ("Code de l'action sociale et des familles", 'L1111'), ("Code de l'action sociale et des familles", 'L495'), ("Code de l'action sociale et des familles", 'L496'), ("Code de l'action sociale et des familles", 'L497'), ("Code de l'action sociale et des familles", 'L975'), ("Code de l'action sociale et des familles", 'L976'), ("Code de l'action sociale et des familles", 'L977')] regex: (?:protection[sx]?[\s\-']?de[sx]?[\s\-']?l[sx]?[\s\-']?enfance[sx]?)|(?:protection[sx]?[\s\-']?des[sx]?[\s\-']?mineurs[sx]?)|(?:enfance[sx]?[\s\-']?en[sx]?[\s\-']?danger[sx]?)|(?:mineurs[sx]?[\s\-']?en[sx]?[\s\-']?danger[sx]?)|(?:aide[sx]?[\s\-']?sociale[sx]?[\s\-']?a[sx]?[\s\-']?l[sx]?[\s\-']?enfance[sx]?)|(?:droits[sx]?[\s\-']?de[sx]?[\s\-']?l[sx]?[\s\-']?enfant[sx]?)|(?:maltraitance[sx]?[\s\-']?des[sx]?[\s\-']?mineurs[sx]?)|(?:securite[sx]?[\s\-']?des[sx]?[\s\-']?mineurs[sx]?)|(?:l\.?\s?222\b)|(?:l\.?\s?226\b)|(?:l\.?\s?223\b)|(?:l\.?\s?221\b)|(?:l\.?\s?224\b)|(?:l\.?\s?221\b)|(?:l\.?\s?228\b)|(?:l\.?\s?1614\b)|(?:l\.?\s?2112\b)|(?:l\.?\s?421\b)|(?:l\.?\s?421\b)|(?:l\.?\s?422\b)|(?:l\.?\s?423\b)|(?:l\.?\s?421\b)|(?:l\.?\s?3421\b)|(?:l\.?\s?227\b)|(?:l\.?\s?911\b)|(?:l\.?\s?914\b)|(?:l\.?\s?212\b)|(?:l\.?\s?225\b)|(?:l\.?\s?227\b)|(?:l\.?\s?551\b)|(?:l\.?\s?135\b)|(?:l\.?\s?133\b)|(?:l\.?\s?4132\b)|(?:l\.?\s?4138\b)|(?:l\.?\s?4153\b)|(?:l\.?\s?4211\b)|(?:l\.?\s?401\b)|(?:l\.?\s?425\b)|(?:l\.?\s?911\b)|(?:l\.?\s?914\b)|(?:l\.?\s?810\b)|(?:l\.?\s?1191\b)|(?:l\.?\s?551\b)|(?:l\.?\s?631\b)|(?:l\.?\s?241\b)|(?:l\.?\s?3111\b)|(?:l\.?\s?5547\b)|(?:l\.?\s?612\b)|(?:l\.?\s?113\b)|(?:l\.?\s?120\b)|(?:l\.?\s?133\b)|(?:l\.?\s?133\b)|(?:l\.?\s?421\b)|(?:l\.?\s?321\b)|(?:l\.?\s?229\b)|(?:l\.?\s?312\b)|(?:l\.?\s?331\b)|(?:l\.?\s?313\b)|(?:l\.?\s?321\b)|(?:l\.?\s?229\b)|(?:l\.?\s?1111\b)|(?:l\.?\s?121\b)|(?:l\.?\s?226\b)|(?:l\.?\s?551\b)|(?:l\.?\s?543\b)|(?:l\.?\s?322\b)|(?:l\.?\s?1521\b)|(?:l\.?\s?1541\b)|(?:l\.?\s?1111\b)|(?:l\.?\s?495\b)|(?:l\.?\s?496\b)|(?:l\.?\s?497\b)|(?:l\.?\s?975\b)|(?:l\.?\s?976\b)|(?:l\.?\s?977\b)
+ameli 2025-2026/911 commission: 377 rows, 222 relevant (dossier en cours)
+ameli 2022-2023/241 commission: 3 rows, 2 relevant (travaux préparatoires de LOI n° 2024-201 du 8 mars 2024 visant à renforcer la protection des mineurs et l)
+ameli 2022-2023/700 seance: 5 rows, 3 relevant (travaux préparatoires de LOI n° 2024-201 du 8 mars 2024 visant à renforcer la protection des mineurs et l)
+ameli 2019-2020/288 commission: 33 rows, 10 relevant (travaux préparatoires de LOI n° 2020-692 du 8 juin 2020 visant à améliorer les droits des travailleurs et)
+ameli 2019-2020/350 seance: 26 rows, 0 relevant (travaux préparatoires de LOI n° 2020-692 du 8 juin 2020 visant à améliorer les droits des travailleurs et)
+ameli 2006-2007/154 seance: 62 rows, 30 relevant (travaux préparatoires de LOI n° 2007-293 du 5 mars 2007 réformant la protection de l'enfance)
+ameli 2005-2006/330 seance: 142 rows, 88 relevant (travaux préparatoires de LOI n° 2007-293 du 5 mars 2007 réformant la protection de l'enfance)
+ameli 2003-2004/97 seance: 4 rows, 0 relevant (travaux préparatoires de LOI n° 2004-1 du 2 janvier 2004 relative à l'accueil et à la protection de l'enf)
+ameli 2002-2003/434 seance: 26 rows, 11 relevant (travaux préparatoires de LOI n° 2004-1 du 2 janvier 2004 relative à l'accueil et à la protection de l'enf)
+ameli LLM batch failed LLM failed: no JSON in reply: 
+ameli LLM batch failed LLM failed: no JSON in reply: 
+ameli LLM batch failed LLM failed: no JSON in reply: 
+ameli LLM batch failed LLM failed: no JSON in reply: 
+ameli: 366 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 297 fiches match
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/89/history.json: 0 measures, 0 findings
+   history : 1034 s
+
+== engine (engine.py 2026-2027 89)
+0 mesures -> data/2026-2027/89/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/89/

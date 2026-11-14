@@ -1,0 +1,47 @@
+
+== fetch (fetch_amendments.py 2026-2027 14)
+titre : Proposition de loi : Dispositif des stocks de sécurité des médicaments
+9 amendments, 2 pending -> data/2026-2027/14/amendments.json
+   fetch : 2 s
+
+== extract (extract.py 2026-2027 14)
+2 amendements, 0 avec critères, 0/0 citations vérifiées, 0 erreurs -> data/2026-2027/14/criteria.json
+  n°3         --                                 [citation non retrouvée]
+  n°4         --                                 [citation non retrouvée]
+   extract : 0 s
+
+== group (group.py 2026-2027 14)
+aucun amendement ne vise d'acteur identifiable -> 0 mesure -> data/2026-2027/14/measures.json
+   group : 0 s
+
+== signals (signals.py 2026-2027 14)
+0 mesures -> data/2026-2027/14/signals.json
+   signals : 0 s
+
+== exposure (exposure.py 2026-2027 14)
+
+0 mesures, 0 amendements -> data/2026-2027/14/exposure.json
+   exposure : 0 s
+
+== chiffrage (chiffrage.py 2026-2027 14)
+0 mesures -> data/2026-2027/14/chiffrage.json
+   chiffrage : 0 s
+
+== history (history.py 2026-2027 14)
+text 2026-2027/14: Proposition de loi : Dispositif des stocks de sécurité des médicaments — 2 amendments, 0 measures, stages [('2025-2026', '610', 'commission'), ('2026-2027', '14', 'seance')]
+bill text https://www.senat.fr/leg/ppl26-014.html: 18 alinéas in 3 articles
+articles: []
+search terms: ['stock de sécurité des médicaments', 'pénurie de médicaments', 'rupture de stock de médicaments', "continuité d'approvisionnement en médicaments", 'stock stratégique de médicaments', "tensions d'approvisionnement", 'réserve de médicaments']
+families: [('Code de la santé publique', 'L5121')] regex: (?:stock[sx]?[\s\-']?de[sx]?[\s\-']?securite[sx]?[\s\-']?des[sx]?[\s\-']?medicaments[sx]?)|(?:penurie[sx]?[\s\-']?de[sx]?[\s\-']?medicaments[sx]?)|(?:rupture[sx]?[\s\-']?de[sx]?[\s\-']?stock[sx]?[\s\-']?de[sx]?[\s\-']?medicaments[sx]?)|(?:continuite[sx]?[\s\-']?d[sx]?[\s\-']?approvisionnement[sx]?[\s\-']?en[sx]?[\s\-']?medicaments[sx]?)|(?:stock[sx]?[\s\-']?strategique[sx]?[\s\-']?de[sx]?[\s\-']?medicaments[sx]?)|(?:tensions[sx]?[\s\-']?d[sx]?[\s\-']?approvisionnement[sx]?)|(?:reserve[sx]?[\s\-']?de[sx]?[\s\-']?medicaments[sx]?)|(?:l\.?\s?5121\b)
+ameli 2025-2026/610 commission: 7 rows, 5 relevant (dossier en cours)
+ameli: 5 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 83 fiches match
+hatvp: 0 sides kept, 0 rejected (quote not found)
+wrote data/2026-2027/14/history.json: 0 measures, 0 findings
+   history : 241 s
+
+== engine (engine.py 2026-2027 14)
+0 mesures -> data/2026-2027/14/engine.json
+   engine : 0 s
+
+Terminé -> data/2026-2027/14/

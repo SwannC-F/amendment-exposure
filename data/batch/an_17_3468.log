@@ -1,0 +1,81 @@
+
+== fetch (fetch_amendments_an.py 17 3468)
+examen : EXANR5L17PO838901BTC3468P0D1 En cours
+titre : Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle
+4 amendments, 4 pending -> data/an/17/3468/amendments.json
+   fetch : 1 s
+
+== extract (extract.py an/17 3468)
+4 amendements, 3 avec critères, 4/4 citations vérifiées, 0 erreurs -> data/an/17/3468/criteria.json
+  n°1         OK 66.19A                         Autorise les salariés à débloquer par anticipation, une fois, jusqu'à 
+  n°2         OK 66.19A                         Lève les freins techniques au recours aux FCPE « de reprise » permetta
+  n°3         OK                                Inscrit dans la loi le déblocage anticipé de la participation et de l'
+  n°5         --                                Demande au Gouvernement un rapport comparant les effets économiques de
+   extract : 37 s
+
+== group (group.py an/17 3468)
+3 amendements -> 3 mesures -> data/an/17/3468/measures.json
+  Débloquer l'épargne salariale pour acheter des biens ou services n° 1
+  Faciliter les FCPE de reprise pour la transmission d'entreprise n° 2
+  Inscrire le déblocage anticipé pour événements familiaux n° 3
+   group : 27 s
+
+== signals (signals.py an/17 3468)
+3 mesures -> data/an/17/3468/signals.json
+  1 groupes            Débloquer l'épargne salariale pour acheter des biens ou services Droite Républicaine
+  1 groupes            Faciliter les FCPE de reprise pour la transmission d'entreprise Droite Républicaine
+  1 groupes            Inscrire le déblocage anticipé pour événements familiaux Droite Républicaine
+   signals : 0 s
+
+== exposure (exposure.py an/17 3468)
+66.19A:   36,570 entreprises,     25,349–46,747 employés
+
+3 mesures, 3 amendements -> data/an/17/3468/exposure.json
+   exposure : 57 s
+
+== chiffrage (chiffrage.py an/17 3468)
+… debloquer-epargne-achat-biens-services (1 amend.)
+… faciliter-fcpe-reprise-transmission (1 amend.)
+… inscrire-deblocage-evenements-familiaux (1 amend.)
+3 mesures -> data/an/17/3468/chiffrage.json
+
+■ debloquer-epargne-achat-biens-services : 1 300.0 M€ – 3 900.0 M€ /an
+   ✓ base  1.3e+09–3.9e+09 €/an  n°5 « En 2022, 1,3 milliard (309 000 demandes). | En 2008, 1,6 million de personnes avaient fait »
+   ✓ delta 1–1 part  n°1 « Les droits au titre de la participation aux résultats de l'entreprise affectés avant le 1  »
+
+■ faciliter-fcpe-reprise-transmission : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. L'amendement ne contient aucun chiffre : ni montant d'épargne salariale concerné par les FCPE de repr
+
+■ inscrire-deblocage-evenements-familiaux : non chiffrable
+   → Non chiffrable : assiette annuelle en € et écart absents des amendements ou citation non vérifiée. Le texte de l'amendement ne contient aucun chiffre sur le montant total de l'épargne salariale concer
+   chiffrage : 756 s
+
+== history (history.py an/17 3468)
+text an/17/3468: Proposition de loi visant au renforcement de l'attractivité de l'épargne salariale et à la mise en oeuvre d'une procédure de déblocage exceptionnelle — 4 amendments, 3 measures, stages []
+bill text None: 0 alinéas in 0 articles
+articles: ['article L. 3323-2 du code du travail', 'article L. 3323-5 du code du travail', 'article L. 3332-17 du code du travail', 'article L. 3315-2 du code du travail', 'article L. 3332-25 du code du travail', 'article L. 3322-6 du code du travail', 'article L. 3322-7 du code du travail', 'article L. 3344-1 du code du travail', 'article L. 214-165 du code monétaire et financier', 'article L. 214-166 du code monétaire et financier', 'article L. 3312-4 du code du travail', 'article L. 3325-1 du code du travail', 'article L. 3325-2 du code du travail', 'article L. 3334-2 du code du travail', 'article L. 3334-4 du code du travail', 'article L. 224-27 du code monétaire et financier', 'article L. 3332-16 du code du travail']
+legifrance search failed Code du travail L3332-17 /search failed: Remote end closed connection without response
+legifrance getArticle failed Code du travail L3315-2 /consult/getArticle failed: IncompleteRead(15250 bytes read)
+legifrance getArticle failed Code du travail L3332-25 /consult/getArticle failed: Remote end closed connection without response
+legifrance getArticle failed Code du travail L3322-7 /consult/getArticle failed: Remote end closed connection without response
+legifrance getArticle failed Code du travail L3344-1 /consult/getArticle failed: IncompleteRead(15236 bytes read)
+legifrance getArticle failed Code monétaire et financier L214-166 /consult/getArticle failed: Remote end closed connection without response
+legifrance search failed Code du travail L3325-2 /search failed: Remote end closed connection without response
+legifrance search failed Code du travail L3334-2 /search failed: Remote end closed connection without response
+legifrance getArticle failed Code monétaire et financier L224-27 /consult/getArticle failed: Remote end closed connection without response
+search terms: ['épargne salariale', 'déblocage anticipé', 'FCPE', 'FCPE de reprise', 'PERCO', "Plan d'Épargne Entreprise"]
+families: [] regex: (?:epargne[sx]?[\s\-']?salariale[sx]?)|(?:deblocage[sx]?[\s\-']?anticipe[sx]?)|(?:fcpe[sx]?)|(?:fcpe[sx]?[\s\-']?de[sx]?[\s\-']?reprise[sx]?)|(?:perco[sx]?)|(?:plan[sx]?[\s\-']?d[sx]?[\s\-']?epargne[sx]?[\s\-']?entreprise[sx]?)
+ameli: 0 relevant, 0 attached, 0 rejected (quote not found)
+hatvp: 92 fiches match
+hatvp: 6 sides kept, 0 rejected (quote not found)
+wrote data/an/17/3468/history.json: 3 measures, 7 findings
+   history : 618 s
+
+== engine (engine.py an/17 3468)
+3 mesures -> data/an/17/3468/engine.json
+  1 gr. Débloquer l'épargne salariale pour acheter NAF  1 rôles ['autre:organismes gestionnaires', 'employeurs', 'menages'] taux 0  1300–3900 M€/an
+  1 gr. Faciliter les FCPE de reprise pour la tran NAF  1 rôles ['emetteurs', 'employeurs', 'menages'] taux 0  non chiffrable
+  1 gr. Inscrire le déblocage anticipé pour événem NAF  0 rôles ['employeurs', 'menages'] taux 0  non chiffrable
+   engine : 0 s
+
+Terminé -> data/an/17/3468/
