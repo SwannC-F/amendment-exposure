@@ -196,16 +196,27 @@ def check_param(p, kind, allowed, amendments, own=()):
         if not where:
             return None, f"{name} : citation introuvable mot pour mot dans les amendements de la mesure (« {q[:80]} »)"
         found.append(where[0])
-    if kind == "delta" and not any(verify_quote(q, amendment_texts(amendments.get(n, {}))[0])
-                                   for q in parts for n in own):
-        return None, (f"{name} : le changement n'est écrit dans le dispositif d'aucun amendement de la mesure "
-                      f"(citation tirée de l'objet ou d'un autre amendement)")
     nums = set().union(*(quoted_numbers(q) for q in parts))
-    for v in {low, high}:
-        if kind == "delta" and v == 1:
-            continue  # the whole flow changes hands: a mechanism, not a figure (base still needs its quote)
-        if not supported(v, nums, kind):
-            return None, f"{name} : le chiffre {v:g} ne se retrouve pas dans la citation"
+    if kind == "delta":
+        # The change is what the measure writes into the law: its figures must come from the parts of
+        # the quote found in the DISPOSITIF of one of the measure's amendments. A difference is allowed
+        # only if one of its two terms is such a figure (current rate from the objet − cap from the
+        # dispositif); a past trend quoted in an objet (« passée de 46,5 % à 34,3 % ») is not a change.
+        disp = [q for q in parts if any(verify_quote(q, amendment_texts(amendments.get(n, {}))[0]) for n in own)]
+        if not disp:
+            return None, (f"{name} : le changement n'est écrit dans le dispositif d'aucun amendement de la mesure "
+                          f"(citation tirée de l'objet ou d'un autre amendement)")
+        disp_nums = set().union(*(quoted_numbers(q) for q in disp))
+        for v in {low, high}:
+            if v == 1:
+                continue  # the whole flow changes hands: a mechanism, not a figure (base still needs its quote)
+            if not (any(close(v, d) for d in disp_nums)
+                    or any(close(v, abs(a - d)) for d in disp_nums for a in nums if a != d)):
+                return None, f"{name} : le chiffre {v:g} ne vient pas du dispositif d'un amendement de la mesure"
+    else:
+        for v in {low, high}:
+            if not supported(v, nums, kind):
+                return None, f"{name} : le chiffre {v:g} ne se retrouve pas dans la citation"
     clean = {"name": name, "low": low, "high": high,
              "unit": {"base": "€/an", "delta": "part", "share": "part"}[kind],
              "quote": " | ".join(parts), "amendment": " | ".join(dict.fromkeys(found))}
@@ -252,7 +263,9 @@ def compute(measure, answer, allowed, amendments, own):
         reason = f"Non chiffrable : {' et '.join(missing)} absent{'s' if len(missing) > 1 else ''} des amendements " \
                  f"ou citation non vérifiée." + (f" {reason}" if reason else "")
     rates = []
-    if delta:
+    # delta = 1: the whole flow (e.g. expired titres) changes hands; a sector's revenue paid in titres is
+    # not that flow, so share × delta would mean nothing: total only, no per-sector rate.
+    if delta and delta["high"] < 1:
         for s in shares:
             rates.append({"nafs": s["nafs"], "role": s["role"], "rate_low": s["low"] * delta["low"],
                           "rate_high": s["high"] * delta["high"],
@@ -347,8 +360,8 @@ def run(session, texte, workers=4):
     print(f"{len(out)} mesures -> {d / 'chiffrage.json'}")
     report(out)
     failed = [k for k, c in out.items() if c.get("error")]
-    if failed:
-        sys.exit(f"\n{len(failed)} appel(s) au modèle en échec : {', '.join(failed)} — relancer (cache conservé)")
+    if failed:  # those measures are marked not computable; the pipeline goes on (rerun to retry, cache kept)
+        print(f"\n⚠ {len(failed)} appel(s) au modèle en échec : {', '.join(failed)} — relancer pour réessayer")
     return out
 
 
