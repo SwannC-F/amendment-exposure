@@ -62,7 +62,36 @@ def fetch(n, session=SESSION):
     return [dict(zip(header, (c.strip() for c in r))) for r in rows[1:] if len(r) >= len(header) - 1]
 
 
+TEXT_PAGE = "https://www.senat.fr/amendements/{s}/{n}/accueil.html"
+
+
+def text_title(session, n):
+    """Bill title from the Sénat amendments page, e.g. 'Proposition de loi : … – 1ère lecture'."""
+    try:
+        raw = download(TEXT_PAGE.format(s=session, n=n))  # decoded as latin-1 for the CSVs
+        try:
+            raw = raw.encode("latin-1").decode("utf-8")   # the HTML page is UTF-8
+        except UnicodeError:
+            pass
+        page = html.unescape(re.sub(r"<[^>]+>", " ", raw))
+    except Exception:
+        return None
+    m = re.search(r"((?:Proposition|Projet) de loi[^\n]{5,250}?)(?:\s{2,}|$)", page)
+    return re.sub(r"\s+", " ", m.group(1)).strip() if m else None
+
+
+def write_text_meta(session, n):
+    title = text_title(session, n)
+    d = text_dir(session, n)
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "text.json").write_text(json.dumps(
+        {"session": session, "number": str(n), "chamber": "Sénat", "title": title,
+         "url": TEXT_PAGE.format(s=session, n=n)}, ensure_ascii=False, indent=2))
+    return title
+
+
 def main(session, n):
+    print("titre :", write_text_meta(session, n))
     rows = fetch(n, session)
     groups = senator_groups()
     out = []
