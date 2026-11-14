@@ -506,6 +506,7 @@ const roleKey = r => norm(r).replace(/[^a-z]/g, "");
 const ROLE_PLURAL = { employeurs: "Employeurs", emetteurs: "Émetteurs", plateformes: "Plateformes", associations: "Associations",
   collectivites: "Collectivités", etat: "État", menages: "Ménages" };
 const hasEmployees = c => !!c.band && c.band !== "NN" && c.band !== "00";
+const orgName = o => typeof o === "string" ? o : o?.name || o?.org || "";
 const isNaf = s => /^\d\d\.\d\d[A-Z]$/.test(String(s || ""));
 
 const nf1 = new Intl.NumberFormat("fr-FR", { maximumFractionDigits: 1 });
@@ -824,7 +825,7 @@ async function probeHealth(base, ms) {
     const hist = m.history ? { ...m.history } : null;
     if (hist) {
       const self = company.nafOnly ? null : norm(profName()).split(/[^a-z0-9]+/).find(w => w.length >= 3);
-      const notSelf = arr => (arr || []).filter(o => !self || !norm(o).split(/[^a-z0-9]+/).includes(self));
+      const notSelf = arr => (arr || []).filter(o => orgName(o) && (!self || !norm(orgName(o)).split(/[^a-z0-9]+/).includes(self)));
       hist.allies = notSelf(you.sign === "gain" ? hist.lobby_pour : you.sign === "perte" ? hist.lobby_contre : []);
       hist.opponents = notSelf(you.sign === "gain" ? hist.lobby_contre : you.sign === "perte" ? hist.lobby_pour : []);
     }
@@ -1069,10 +1070,13 @@ async function probeHealth(base, ms) {
 
   function history(hh) {
     if (!hh) return { main: [], det: [] };
+    // organisations: old format = strings, pipeline format = {name, hatvp_id, category, consultancy, fiches[], years[]}
+    const orgTip = o => typeof o === "string" ? o : [o.category, o.consultancy ? "cabinet de conseil" : "",
+      (o.years || []).length ? `années ${o.years.join(", ")}` : "", (o.fiches || []).length ? `fiches HATVP ${o.fiches.join(", ")}` : ""].filter(Boolean).join(" · ");
     const list = (arr, cls) => {
-      const names = (arr || []).map(titleCase);
-      return [names.slice(0, 4).map(n => h("span", { class: `chip ${cls}` }, n)),
-        names.length > 4 ? h("span", { class: "chip legend", title: names.slice(4).join(", ") }, `+${names.length - 4}`) : null];
+      const orgs = (arr || []).filter(o => orgName(o));
+      return [orgs.slice(0, 4).map(o => h("span", { class: `chip ${cls}`, title: orgTip(o) }, titleCase(orgName(o)))),
+        orgs.length > 4 ? h("span", { class: "chip legend", title: orgs.slice(4).map(o => titleCase(orgName(o))).join(", ") }, `+${orgs.length - 4}`) : null];
     };
     const rows = [];
     if (hh.allies?.length) rows.push(h("div", { class: "sides" }, h("span", { class: "lab" }, "Vos alliés :"), list(hh.allies, "w")));
@@ -1084,6 +1088,17 @@ async function probeHealth(base, ms) {
     const det = [];
     if ((hh.findings || []).length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Ce qui s'est déjà passé"),
       h("ul", { class: "params" }, hh.findings.map(x => h("li", null, x.text, x.source ? h("span", { class: "src" }, " — ", sourceNodes(x.source)) : null))));
+    const past = (hh.past_amendments || []).filter(a => a && typeof a === "object");
+    if (past.length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, `Amendements passés sur ce sujet${past.length > 5 ? ` (5 sur ${past.length})` : ""}`),
+      h("ul", { class: "params" }, past.slice(0, 5).map(a => h("li", null,
+        a.url ? ext(a.url, `n°${a.number}`) : h("b", null, `n°${a.number}`),
+        a.text_number ? ` · texte n°${a.text_number}${a.session ? ` (${a.session})` : ""}` : "",
+        a.stage ? ` · ${a.stage}` : "",
+        a.author ? ` · ${a.author}${a.group ? ` (${GROUP(a.group)})` : ""}` : "",
+        a.filed ? ` · ${String(a.filed).split("-").reverse().join("/")}` : "",
+        a.outcome ? ` · ${a.outcome}` : "",
+        a.stance ? [" · ", h("span", { class: `side ${/contre/i.test(a.stance) ? "l" : "w"}` }, a.stance)] : null,
+        a.quote ? h("i", null, `« ${a.quote} »`) : null))));
     const groups = Object.entries(hh.senate_by_group || {});
     if (groups.length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Amendements déjà déposés au Sénat, par groupe"),
       h("table", { class: "hist" },
@@ -1092,7 +1107,7 @@ async function probeHealth(base, ms) {
           h("td", null, s.rejected ?? "—"), h("td", { class: "pc w" }, s.pour ?? "—"), h("td", { class: "pc l" }, s.contre ?? "—"),
           h("td", null, (s.years || []).join(", ")))))));
     if ((hh.lobby_quotes || []).length) det.push(h("p", { class: "k", style: "margin-bottom:0" }, "Positions déclarées à la HATVP"),
-      h("ul", { class: "params" }, hh.lobby_quotes.map(q => h("li", null, h("b", null, titleCase(q.org)), ` · ${q.year ?? ""} · `,
+      h("ul", { class: "params" }, hh.lobby_quotes.map(q => h("li", null, h("b", null, titleCase(orgName(q.org) || q.org)), ` · ${q.year ?? ""} · `,
         h("span", { class: `side ${q.side === "contre" ? "l" : "w"}` }, q.side || ""),
         q.quote ? h("i", null, `« ${q.quote} »`) : null, q.fiche ? h("span", { class: "src" }, `fiche HATVP ${q.fiche}`) : null))));
     return { main, det };
